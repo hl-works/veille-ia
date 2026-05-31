@@ -54,7 +54,10 @@ def run(config_path: str, *, dry_run: bool) -> int:
         if not settings.send_when_empty:
             logging.info("`send_when_empty` est false → on ne publie rien.")
             return 0
-        digest = "<b>Veille IA</b>\n\nRien de notable dans les dernières 24 h. 😴"
+        digest = (
+            "Bonjour ☀️ Journée plutôt calme côté IA, rien de majeur à "
+            "signaler ces dernières 24 h. Bonne journée !"
+        )
     else:
         digest = build_digest(tweets, settings)
 

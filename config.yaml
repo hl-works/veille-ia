@@ -82,4 +82,5 @@ language: français
 
 # ── Comportement ──────────────────────────────────────────────
 #  Publier un message même quand il n'y a aucune actu ?
-send_when_empty: false
+#  true = un « bonjour, journée calme » est envoyé même les jours vides.
+send_when_empty: true

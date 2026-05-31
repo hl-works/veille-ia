@@ -6,9 +6,9 @@ name: Veille IA
 # ─────────────────────────────────────────────────────────────
 on:
   schedule:
-    # 06:00 UTC ≈ 7h à Paris en hiver / 8h en été.
-    # (GitHub Actions raisonne en UTC ; ajuste si besoin.)
-    - cron: "0 6 * * *"
+    # 05:00 UTC = 7h à Paris en été (heure actuelle) / 6h en hiver.
+    # (GitHub Actions raisonne en UTC, sans heure d'été : on vise ~7h le matin.)
+    - cron: "0 5 * * *"
   workflow_dispatch:
     inputs:
       dry_run:
