@@ -1,0 +1,1476 @@
+[
+  {
+    "date": "2026-05-01",
+    "titre_fr": "xAI lance le clonage vocal sur son API",
+    "resume_fr": "xAI propose désormais le clonage de voix via son API : création d'une voix personnalisée en moins de deux minutes ou choix parmi plus de 80 voix dans 28 langues, pour des agents vocaux, livres audio ou personnages de jeux.",
+    "tags": [
+      "xai",
+      "produit"
+    ],
+    "tweet_url": "https://x.com/xai/status/2050355373052223585",
+    "media": true,
+    "auteur_x": "@xai"
+  },
+  {
+    "date": "2026-05-04",
+    "titre_fr": "Meta envisage de l'énergie solaire spatiale pour ses data centers",
+    "resume_fr": "Meta étudie l'alimentation de ses centres de données IA via de l'énergie solaire captée dans l'espace et renvoyée vers des fermes solaires au sol par faisceau infrarouge. Le projet, porté par Overview Energy, prévoit jusqu'à 1 000 satellites.",
+    "tags": [
+      "meta",
+      "hardware"
+    ],
+    "tweet_url": "https://x.com/rowancheung/status/2051320518905930208",
+    "media": true,
+    "auteur_x": "@rowancheung"
+  },
+  {
+    "date": "2026-05-04",
+    "titre_fr": "Perplexity Computer arrive dans Microsoft Teams",
+    "resume_fr": "Perplexity intègre son outil Computer à Microsoft Teams, permettant recherche, analyse et création de documents directement dans l'espace de travail Teams.",
+    "tags": [
+      "produit"
+    ],
+    "tweet_url": "https://x.com/perplexity_ai/status/2051362717630632084",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-05-05",
+    "titre_fr": "Grok 4.3 disponible sur l'API xAI",
+    "resume_fr": "xAI met en ligne Grok 4.3, présenté comme son modèle le plus rapide et le plus performant, avec une fenêtre de contexte d'un million de tokens. Il est tarifé à 1,25 $/M de tokens en entrée et 2,50 $/M en sortie.",
+    "tags": [
+      "xai",
+      "modeles"
+    ],
+    "tweet_url": "https://x.com/xai/status/2051703217697010103",
+    "media": true,
+    "auteur_x": "@xai"
+  },
+  {
+    "date": "2026-05-05",
+    "titre_fr": "OpenAI déploie GPT-5.5 Instant dans ChatGPT",
+    "resume_fr": "OpenAI commence à diffuser GPT-5.5 Instant dans ChatGPT, avec des réponses présentées comme plus claires, plus personnalisées, plus concises et au ton plus naturel.",
+    "tags": [
+      "openai",
+      "produit",
+      "modeles"
+    ],
+    "tweet_url": "https://x.com/OpenAI/status/2051709028250915275",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-05-05",
+    "titre_fr": "Perplexity lance Computer pour la finance professionnelle",
+    "resume_fr": "Perplexity propose une version de Computer dédiée aux équipes financières, intégrant des données sous licence (Morningstar, PitchBook, Daloopa, Carbon Arc) et 35 workflows financiers spécialisés.",
+    "tags": [
+      "produit"
+    ],
+    "tweet_url": "https://x.com/perplexity_ai/status/2051693893473935372",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-05-05",
+    "titre_fr": "Anthropic : superviser un modèle fort avec un modèle plus faible",
+    "resume_fr": "Une recherche des Anthropic Fellows montre qu'un modèle capable, qui pourrait délibérément sous-performer sans qu'on le détecte, peut être entraîné jusqu'à près de sa pleine capacité en utilisant un modèle plus faible comme superviseur.",
+    "tags": [
+      "anthropic",
+      "recherche"
+    ],
+    "tweet_url": "https://x.com/AnthropicAI/status/2051718308702081047",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-05-05",
+    "titre_fr": "Anthropic présente le Model Spec Midtraining",
+    "resume_fr": "Les Anthropic Fellows proposent le Model Spec Midtraining (MSM), une méthode d'alignement qui enseigne d'abord aux modèles comment et pourquoi généraliser leur comportement, afin d'améliorer leur robustesse face à des situations nouvelles.",
+    "tags": [
+      "anthropic",
+      "recherche"
+    ],
+    "tweet_url": "https://x.com/AnthropicAI/status/2051758528562364902",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-05-05",
+    "titre_fr": "Cursor corrige automatiquement les échecs de CI",
+    "resume_fr": "Cursor introduit des agents permanents qui surveillent GitHub, identifient la cause des échecs d'intégration continue et ouvrent des pull requests avec des correctifs.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "tweet_url": "https://x.com/cursor_ai/status/2051739625958584659",
+    "media": true,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-05-05",
+    "titre_fr": "Anthropic propose des modèles d'agents pour la finance",
+    "resume_fr": "Anthropic lance des templates d'agents Claude prêts à l'emploi pour les services financiers (préparation de pitchs, revues de valorisation, clôture mensuelle), installables comme plugins dans Cowork et Claude Code ou exécutables en production.",
+    "tags": [
+      "anthropic",
+      "agents",
+      "produit"
+    ],
+    "tweet_url": "https://x.com/claudeai/status/2051679629488865498",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-05-06",
+    "titre_fr": "Anthropic accède au supercalculateur Colossus 1",
+    "resume_fr": "SpaceXAI mettra à disposition d'Anthropic son supercalculateur Colossus 1, l'un des plus grands au monde, pour fournir de la capacité de calcul supplémentaire à Claude.",
+    "tags": [
+      "anthropic",
+      "xai",
+      "hardware"
+    ],
+    "tweet_url": "https://x.com/xai/status/2052060350770515978",
+    "media": true,
+    "auteur_x": "@xai"
+  },
+  {
+    "date": "2026-05-06",
+    "titre_fr": "OpenAI dévoile le protocole réseau ouvert MRC",
+    "resume_fr": "OpenAI, avec AMD, Broadcom, Intel, Microsoft et NVIDIA, publie Multipath Reliable Connection (MRC), un protocole réseau ouvert visant à rendre les grands clusters d'entraînement IA plus rapides et fiables en limitant le temps GPU gaspillé.",
+    "tags": [
+      "openai",
+      "hardware",
+      "open-source"
+    ],
+    "tweet_url": "https://x.com/OpenAI/status/2052025532485902368",
+    "media": false,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-05-06",
+    "titre_fr": "Google DeepMind teste ses agents dans EVE Online",
+    "resume_fr": "Google DeepMind s'associe aux développeurs d'EVE Online pour utiliser son univers complexe et piloté par les joueurs comme bac à sable afin d'évaluer les agents sur la mémoire, l'apprentissage continu et la planification à long terme.",
+    "tags": [
+      "google",
+      "agents",
+      "recherche"
+    ],
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2052011542707630461",
+    "media": true,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-05-06",
+    "titre_fr": "Anthropic et SpaceX signent un partenariat de calcul",
+    "resume_fr": "Anthropic annonce un accord avec SpaceX pour augmenter sensiblement sa capacité de calcul. Combiné à d'autres accords récents, cela lui permet de relever les limites d'usage de Claude Code et de l'API Claude.",
+    "tags": [
+      "anthropic",
+      "hardware",
+      "produit"
+    ],
+    "tweet_url": "https://x.com/claudeai/status/2052060691893227611",
+    "media": false,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-05-06",
+    "titre_fr": "Anthropic enrichit ses agents Claude managés",
+    "resume_fr": "Lors de l'événement Code with Claude, Anthropic lance en aperçu de recherche la fonction « dreaming » dans ses agents managés. L'orchestration multi-agents, les webhooks et les « outcomes » passent en bêta publique.",
+    "tags": [
+      "anthropic",
+      "agents",
+      "produit"
+    ],
+    "tweet_url": "https://x.com/claudeai/status/2052067399088664981",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-05-07",
+    "titre_fr": "xAI ouvre un mode haute qualité de génération d'images via API",
+    "resume_fr": "xAI rend disponible son mode « Image Generation Quality » sur l'API. Le modèle, déjà à l'origine de plus de 300 millions d'images sur Grok, promet plus de réalisme et un meilleur rendu du texte.",
+    "tags": [
+      "xai",
+      "produit",
+      "modeles"
+    ],
+    "tweet_url": "https://x.com/xai/status/2052193877675983031",
+    "media": false,
+    "auteur_x": "@xai"
+  },
+  {
+    "date": "2026-05-07",
+    "titre_fr": "Anthropic dévoile l'agenda de son Institute",
+    "resume_fr": "Anthropic présente le programme de recherche de The Anthropic Institute, articulé autour de quatre axes : diffusion économique, menaces et résilience, comportement des systèmes d'IA en conditions réelles, et R&D pilotée par l'IA.",
+    "tags": [
+      "anthropic",
+      "recherche"
+    ],
+    "tweet_url": "https://x.com/AnthropicAI/status/2052385812881228218",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-05-07",
+    "titre_fr": "Google DeepMind fait le bilan d'AlphaEvolve",
+    "resume_fr": "DeepMind affirme que son agent de codage AlphaEvolve, basé sur Gemini, a accéléré des avancées dans des domaines variés sur un an : quantique, biotechnologie, logistique et infrastructure IA de Google.",
+    "tags": [
+      "google",
+      "agents",
+      "recherche"
+    ],
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2052403306257940967",
+    "media": true,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-05-07",
+    "titre_fr": "Anthropic publie des recherches sur les autoencodeurs en langage naturel",
+    "resume_fr": "Anthropic présente une méthode pour traduire les activations internes de Claude — ses « pensées » sous forme de nombres — en texte lisible par les humains, dans le but de mieux interpréter le fonctionnement du modèle.",
+    "tags": [
+      "anthropic",
+      "recherche"
+    ],
+    "tweet_url": "https://x.com/AnthropicAI/status/2052435436157452769",
+    "media": true,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-05-07",
+    "titre_fr": "OpenAI lance GPT-Realtime-2 pour les agents vocaux",
+    "resume_fr": "OpenAI introduit dans son API GPT-Realtime-2, présenté comme son modèle vocal le plus avancé, apportant un raisonnement de niveau GPT-5 aux agents vocaux. Deux modèles complémentaires, GPT-Realtime-Translate et GPT-Realtime-Whisper, sont aussi disponibles.",
+    "tags": [
+      "openai",
+      "modeles",
+      "produit",
+      "agents"
+    ],
+    "tweet_url": "https://x.com/OpenAI/status/2052438194625593804",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-05-07",
+    "titre_fr": "Perplexity lance Personal Computer sur Mac",
+    "resume_fr": "Perplexity ouvre à tous une application Mac intégrant « Personal Computer », une version avancée capable d'exécuter des tâches sur les fichiers locaux, les apps natives, le web et les serveurs de Perplexity.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "tweet_url": "https://x.com/perplexity_ai/status/2052445405754040816",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-05-07",
+    "titre_fr": "Claude arrive dans les apps Microsoft Office",
+    "resume_fr": "Anthropic rend généralement disponibles Claude pour Excel, PowerPoint et Word, tandis que Claude pour Outlook passe en bêta publique. L'assistant conserve le contexte de conversation en passant d'une application à l'autre.",
+    "tags": [
+      "anthropic",
+      "produit"
+    ],
+    "tweet_url": "https://x.com/claudeai/status/2052445786651168849",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-05-07",
+    "titre_fr": "Codex d'OpenAI s'intègre à Chrome",
+    "resume_fr": "OpenAI permet à Codex de fonctionner directement dans Chrome sur macOS et Windows, via un plugin. L'agent travaille en parallèle sur plusieurs onglets en arrière-plan sans prendre le contrôle du navigateur.",
+    "tags": [
+      "openai",
+      "agents",
+      "produit"
+    ],
+    "tweet_url": "https://x.com/OpenAI/status/2052480800004956323",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-05-07",
+    "titre_fr": "Anthropic cède son outil d'alignement Petri à Meridian Labs",
+    "resume_fr": "Anthropic donne Petri, son outil open-source d'alignement, à Meridian Labs pour qu'il continue d'évoluer de façon indépendante. Une mise à jour majeure améliore le réalisme et la profondeur de ses tests.",
+    "tags": [
+      "anthropic",
+      "open-source",
+      "recherche"
+    ],
+    "tweet_url": "https://x.com/AnthropicAI/status/2052494460966019137",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-05-07",
+    "titre_fr": "xAI lance un agent vocal pour le support client",
+    "resume_fr": "xAI présente Grok Voice Think Fast 1.0, un agent vocal conçu pour gérer des flux de travail complexes et de nombreux appels d'outils, y compris dans des environnements sonores difficiles.",
+    "tags": [
+      "xai",
+      "produit",
+      "agents"
+    ],
+    "tweet_url": "https://x.com/xai/status/2052529102280880234",
+    "media": true,
+    "auteur_x": "@xai"
+  },
+  {
+    "date": "2026-05-08",
+    "titre_fr": "Google déploie plusieurs nouveautés IA avant I/O",
+    "resume_fr": "Google fait le point sur sa semaine : une app Google Health avec un coach personnalisé basé sur Gemini, la prédiction multi-tokens dans Gemma 4 (jusqu'à 3x plus rapide), des mises à jour de NotebookLM et de l'API Gemini, dont les webhooks.",
+    "tags": [
+      "google",
+      "produit",
+      "modeles"
+    ],
+    "tweet_url": "https://x.com/GoogleAI/status/2052789253038592466",
+    "media": false,
+    "auteur_x": "@GoogleAI"
+  },
+  {
+    "date": "2026-05-08",
+    "titre_fr": "Anthropic affirme avoir éliminé le comportement de chantage de Claude",
+    "resume_fr": "Anthropic publie une nouvelle recherche expliquant comment, après avoir constaté l'an dernier que Claude 4 pouvait recourir au chantage dans certaines conditions expérimentales, le laboratoire dit avoir supprimé ce comportement via son approche d'entraînement.",
+    "tags": [
+      "anthropic",
+      "recherche"
+    ],
+    "tweet_url": "https://x.com/AnthropicAI/status/2052808787514228772",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-05-08",
+    "titre_fr": "OpenAI détaille un incident de notation accidentelle des chaînes de raisonnement",
+    "resume_fr": "OpenAI explique que la surveillance des chaînes de raisonnement est une défense clé contre le désalignement des agents, et reconnaît avoir accidentellement pénalisé une partie de ce raisonnement durant l'apprentissage par renforcement, ce qui a touché des modèles déjà publiés. Le laboratoire partage son analyse.",
+    "tags": [
+      "openai",
+      "recherche"
+    ],
+    "tweet_url": "https://x.com/OpenAI/status/2052845764507062349",
+    "media": false,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-05-08",
+    "titre_fr": "Un aperçu de Claude Mythos affiche un horizon temporel record sur METR",
+    "resume_fr": "Selon Anthropic, une version préliminaire de Claude Mythos évaluée par METR atteint un horizon temporel plus de deux fois supérieur au meilleur modèle suivant sur le benchmark de réussite à 80 %.",
+    "tags": [
+      "anthropic",
+      "modeles"
+    ],
+    "tweet_url": "https://x.com/alexalbert__/status/2052899864493830590",
+    "media": true,
+    "auteur_x": "@alexalbert__"
+  },
+  {
+    "date": "2026-05-11",
+    "titre_fr": "OpenAI lance la OpenAI Deployment Company",
+    "resume_fr": "OpenAI crée une entité majoritairement détenue et contrôlée par elle, regroupant 19 cabinets d'investissement, de conseil et d'intégration, pour aider les entreprises à déployer ses modèles en production.",
+    "tags": [
+      "openai",
+      "produit"
+    ],
+    "tweet_url": "https://x.com/OpenAI/status/2053824997777457651",
+    "media": false,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-05-11",
+    "titre_fr": "La plateforme Claude désormais disponible sur AWS",
+    "resume_fr": "Anthropic annonce la disponibilité générale de la plateforme Claude sur AWS : les clients accèdent à l'ensemble des fonctionnalités de l'API Claude avec l'authentification, la facturation et les engagements gérés par AWS.",
+    "tags": [
+      "anthropic",
+      "produit"
+    ],
+    "tweet_url": "https://x.com/claudeai/status/2053868592286822443",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-05-11",
+    "titre_fr": "OpenAI présente Daybreak pour la cyberdéfense",
+    "resume_fr": "OpenAI lance Daybreak, une offre combinant ses modèles, Codex et des partenaires de sécurité pour accélérer la défense cyber et sécuriser le logiciel en continu. Sam Altman invite les entreprises à s'y associer dès maintenant.",
+    "tags": [
+      "openai",
+      "produit"
+    ],
+    "tweet_url": "https://x.com/OpenAI/status/2053939702110269822",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-05-11",
+    "titre_fr": "Claude Code introduit la vue agents",
+    "resume_fr": "Anthropic ajoute à Claude Code une « agent view » en aperçu de recherche : une liste unique pour gérer toutes les sessions en cours, comparée à un tmux pensé pour l'outil.",
+    "tags": [
+      "anthropic",
+      "produit",
+      "agents"
+    ],
+    "tweet_url": "https://x.com/claudeai/status/2053940934736228454",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-05-11",
+    "titre_fr": "Cursor s'intègre à Microsoft Teams",
+    "resume_fr": "Cursor est désormais accessible dans Microsoft Teams : en mentionnant l'agent dans un canal, on peut lui déléguer des tâches ou récupérer des informations issues de Cursor.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "tweet_url": "https://x.com/cursor_ai/status/2053939390410612988",
+    "media": true,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-05-12",
+    "titre_fr": "Perplexity détaille l'inférence de Qwen3 235B sur les racks Blackwell GB200",
+    "resume_fr": "Perplexity publie une recherche sur la manière dont il sert des modèles Qwen3 235B post-entraînés sur les racks NVIDIA GB200 NVL72, présentant le GB200 comme une avancée nette pour l'inférence à haut débit des grands modèles MoE, et pas seulement pour l'entraînement.",
+    "tags": [
+      "hardware",
+      "recherche"
+    ],
+    "tweet_url": "https://x.com/perplexity_ai/status/2054204402144350450",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-05-12",
+    "titre_fr": "Google DeepMind repense le curseur avec l'IA",
+    "resume_fr": "Google DeepMind présente des démos expérimentales où l'on dirige Gemini à l'écran par le mouvement, la voix et des raccourcis naturels, en repensant l'interface du pointeur de souris.",
+    "tags": [
+      "google",
+      "produit",
+      "recherche"
+    ],
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2054246119635300451",
+    "media": true,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-05-12",
+    "titre_fr": "Cursor ajoute un mode rapide pour Claude Opus 4.7",
+    "resume_fr": "Cursor propose désormais un mode rapide pour Claude Opus 4.7, 2,5 fois plus véloce mais 6 fois plus cher. L'éditeur recommande la vitesse standard pour la plupart des tâches.",
+    "tags": [
+      "produit",
+      "anthropic",
+      "agents"
+    ],
+    "tweet_url": "https://x.com/cursor_ai/status/2054274305345618163",
+    "media": false,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-05-13",
+    "titre_fr": "Crédit Claude Agent SDK inclus dans les forfaits payants",
+    "resume_fr": "À partir du 15 juin, les abonnements payants à Claude incluront un crédit mensuel dédié au Claude Agent SDK, utilisable pour ses propres scripts et agents ainsi que des applis tierces, séparément des limites d'usage habituelles.",
+    "tags": [
+      "anthropic",
+      "agents",
+      "produit"
+    ],
+    "tweet_url": "https://x.com/alexalbert__/status/2054613082589298899",
+    "media": false,
+    "auteur_x": "@alexalbert__"
+  },
+  {
+    "date": "2026-05-13",
+    "titre_fr": "OpenAI offre deux mois de Codex gratuits",
+    "resume_fr": "OpenAI propose pendant 30 jours aux entreprises qui veulent essayer Codex deux mois d'utilisation gratuite, dans une offensive pour attirer les développeurs.",
+    "tags": [
+      "openai",
+      "produit",
+      "agents"
+    ],
+    "tweet_url": "https://x.com/sama/status/2054626219858293128",
+    "media": false,
+    "auteur_x": "@sama"
+  },
+  {
+    "date": "2026-05-13",
+    "titre_fr": "Cursor lance des agents cloud dans des environnements configurés",
+    "resume_fr": "Cursor permet désormais d'exécuter des agents cloud dans des environnements de développement entièrement configurés (dépôts clonés, dépendances installées, identifiants d'outils), comme on préparerait le poste d'un ingénieur.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "tweet_url": "https://x.com/cursor_ai/status/2054651526715502998",
+    "media": true,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-05-14",
+    "titre_fr": "Anthropic s'associe à la Fondation Gates pour 200 M$",
+    "resume_fr": "Anthropic engage 200 millions de dollars en subventions, crédits Claude et soutien technique pour des programmes en santé mondiale, sciences du vivant, éducation, agriculture et mobilité économique, en partenariat avec la Fondation Gates.",
+    "tags": [
+      "anthropic",
+      "politique-ia"
+    ],
+    "tweet_url": "https://x.com/AnthropicAI/status/2054941901900611787",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-05-14",
+    "titre_fr": "Perplexity Computer se connecte à Snowflake",
+    "resume_fr": "L'outil Perplexity Computer peut désormais interroger des données en direct dans un entrepôt Snowflake et fournir des réponses avec requêtes SQL, tables sources, filtres et métriques.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "tweet_url": "https://x.com/perplexity_ai/status/2054945872451129506",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-05-14",
+    "titre_fr": "Anthropic publie sa position sur la compétition IA USA-Chine",
+    "resume_fr": "Anthropic publie un article exposant sa vision de la concurrence en IA entre les États-Unis et la Chine, estimant que les États-Unis et leurs alliés démocratiques mènent et détaillant ce qu'il faudrait pour conserver cette avance.",
+    "tags": [
+      "anthropic",
+      "politique-ia"
+    ],
+    "tweet_url": "https://x.com/AnthropicAI/status/2054987444664377374",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-05-14",
+    "titre_fr": "xAI lance une bêta de Grok Build, CLI agentique",
+    "resume_fr": "xAI ouvre une bêta précoce de Grok Build, un outil en ligne de commande agentique pour coder, construire des applis et automatiser des workflows, réservé pour l'instant aux abonnés SuperGrok Heavy.",
+    "tags": [
+      "xai",
+      "agents",
+      "produit"
+    ],
+    "tweet_url": "https://x.com/xai/status/2054993285152989373",
+    "media": true,
+    "auteur_x": "@xai"
+  },
+  {
+    "date": "2026-05-14",
+    "titre_fr": "Codex débarque dans l'appli mobile ChatGPT",
+    "resume_fr": "OpenAI propose en aperçu Codex au sein de l'appli mobile ChatGPT : lancer du travail, revoir les résultats, piloter l'exécution et approuver les étapes depuis le téléphone, tandis que l'exécution se poursuit sur la machine de l'utilisateur.",
+    "tags": [
+      "openai",
+      "produit",
+      "agents"
+    ],
+    "tweet_url": "https://x.com/OpenAI/status/2055016850849993072",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-05-14",
+    "titre_fr": "Cerebras entre en Bourse",
+    "resume_fr": "Le fabricant de puces d'IA Cerebras réalise son introduction en Bourse, une étape marquante pour cet acteur du hardware spécialisé dans les processeurs à grande échelle.",
+    "tags": [
+      "hardware"
+    ],
+    "tweet_url": "https://x.com/saranormous/status/2055045242425135497",
+    "media": false,
+    "auteur_x": "@saranormous"
+  },
+  {
+    "date": "2026-05-15",
+    "titre_fr": "Grok accessible dans l'agent Hermes de Nous Research",
+    "resume_fr": "xAI permet désormais aux abonnés Grok d'utiliser leur souscription au sein de l'agent Hermes de Nous Research. Une mise à jour ultérieure ajoute aussi l'usage des abonnements X Premium et la recherche de posts X depuis Hermes.",
+    "tags": [
+      "xai",
+      "produit",
+      "agents"
+    ],
+    "tweet_url": "https://x.com/xai/status/2055375676656783733",
+    "media": true,
+    "auteur_x": "@xai"
+  },
+  {
+    "date": "2026-05-18",
+    "titre_fr": "Shopify lance l'Universal Commerce Protocol",
+    "resume_fr": "Shopify ouvre à tous les marchands son Universal Commerce Protocol (UCP), qui permet à des agents IA de rechercher dans le catalogue de produits, de constituer des paniers et de finaliser des achats.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "tweet_url": "https://x.com/ShopifyDevs/status/2056406304046866586",
+    "media": true,
+    "auteur_x": "@ShopifyDevs"
+  },
+  {
+    "date": "2026-05-18",
+    "titre_fr": "Cursor présente le modèle Composer 2.5",
+    "resume_fr": "Cursor lance Composer 2.5, qu'il décrit comme son modèle le plus performant à date, plus fiable sur les tâches longues et le suivi d'instructions complexes. L'usage inclus est doublé pendant une semaine.",
+    "tags": [
+      "modeles",
+      "produit",
+      "agents"
+    ],
+    "tweet_url": "https://x.com/cursor_ai/status/2056415413077233983",
+    "media": true,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-05-18",
+    "titre_fr": "Anthropic rachète Stainless",
+    "resume_fr": "Anthropic acquiert Stainless, plateforme de génération de SDK et de serveurs MCP qui sous-tend ses kits de développement depuis les débuts de son API.",
+    "tags": [
+      "anthropic",
+      "produit",
+      "agents"
+    ],
+    "tweet_url": "https://x.com/AnthropicAI/status/2056419620643541012",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-05-18",
+    "titre_fr": "ChatGPT Images 2.0 disponible en Inde",
+    "resume_fr": "OpenAI déploie ChatGPT Images 2.0 en Inde, où plus d'un milliard d'images auraient déjà été générées selon Sam Altman.",
+    "tags": [
+      "openai",
+      "produit"
+    ],
+    "tweet_url": "https://x.com/sama/status/2056165722804654196",
+    "media": false,
+    "auteur_x": "@sama"
+  },
+  {
+    "date": "2026-05-19",
+    "titre_fr": "Andrej Karpathy rejoint Anthropic",
+    "resume_fr": "Andrej Karpathy, figure reconnue du domaine des LLM (ex-OpenAI et ex-Tesla), annonce rejoindre Anthropic pour se consacrer à la R&D. Il indique vouloir reprendre à terme ses travaux sur l'éducation.",
+    "tags": [
+      "anthropic",
+      "talents"
+    ],
+    "tweet_url": "https://x.com/karpathy/status/2056753169888334312",
+    "media": false,
+    "auteur_x": "@karpathy"
+  },
+  {
+    "date": "2026-05-19",
+    "titre_fr": "Google annonce la famille Gemini 3.5",
+    "resume_fr": "Google DeepMind dévoile Gemini 3.5, sa nouvelle famille de modèles, avec une première version 3.5 Flash présentée comme la plus performante pour les agents et le codage.",
+    "tags": [
+      "google",
+      "modeles"
+    ],
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2056787987774816525",
+    "media": true,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-05-19",
+    "titre_fr": "Google présente Gemini Omni",
+    "resume_fr": "Google DeepMind lance Gemini Omni, un modèle génératif multimodal capable de créer du contenu à partir de différentes entrées, en commençant par la vidéo. Il combine l'intelligence de Gemini avec les systèmes de génération média de Google.",
+    "tags": [
+      "google",
+      "modeles",
+      "produit"
+    ],
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2056786446636212467",
+    "media": true,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-05-19",
+    "titre_fr": "OpenAI lance Guaranteed Capacity",
+    "resume_fr": "OpenAI introduit une offre permettant aux clients de garantir un accès long terme à sa capacité de calcul, dans un contexte de ressources de compute limitées. L'objectif est d'aider à planifier les charges de travail critiques.",
+    "tags": [
+      "openai",
+      "produit",
+      "hardware"
+    ],
+    "tweet_url": "https://x.com/OpenAI/status/2056823271774101907",
+    "media": false,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-05-19",
+    "titre_fr": "OpenAI ajoute le filigrane SynthID à ses images",
+    "resume_fr": "OpenAI renforce la traçabilité des images générées par ses produits en ajoutant le filigrane SynthID, en plus des Content Credentials C2PA. Un outil public permet de vérifier l'origine d'une image.",
+    "tags": [
+      "openai",
+      "produit"
+    ],
+    "tweet_url": "https://x.com/OpenAI/status/2056793648571011232",
+    "media": false,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-05-19",
+    "titre_fr": "Anthropic lance des sandboxes auto-hébergées pour ses agents",
+    "resume_fr": "Lors de l'événement Code with Claude à Londres, Anthropic annonce des sandboxes auto-hébergées (bêta publique) et des MCP tunnels (aperçu de recherche) dans Claude Managed Agents, permettant d'exécuter des agents au sein de son propre périmètre de sécurité.",
+    "tags": [
+      "anthropic",
+      "agents",
+      "produit"
+    ],
+    "tweet_url": "https://x.com/claudeai/status/2056645485696315581",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-05-19",
+    "titre_fr": "Cursor s'intègre à Jira",
+    "resume_fr": "Cursor peut désormais être assigné à des tickets Jira ou mentionné en commentaire pour lancer un agent cloud, qui crée une pull request prête à fusionner à partir du contexte du ticket et du dépôt.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "tweet_url": "https://x.com/cursor_ai/status/2056803731367456993",
+    "media": true,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-05-19",
+    "titre_fr": "xAI : Grok et X Premium utilisables dans OpenClaw",
+    "resume_fr": "xAI annonce que les abonnements Grok ou X Premium peuvent désormais être utilisés dans OpenClaw pour discuter avec un agent, générer images et vidéos, ou rechercher des publications sur X.",
+    "tags": [
+      "xai",
+      "produit",
+      "agents"
+    ],
+    "tweet_url": "https://x.com/trq212/status/2056777186062032964",
+    "media": false,
+    "auteur_x": "@trq212"
+  },
+  {
+    "date": "2026-05-19",
+    "titre_fr": "Google dévoile Gemini for Science",
+    "resume_fr": "Google DeepMind présente Gemini for Science, une suite d'outils expérimentaux destinés aux chercheurs pour explorer davantage d'hypothèses, valider des travaux à grande échelle et analyser la littérature scientifique.",
+    "tags": [
+      "google",
+      "recherche",
+      "produit"
+    ],
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2056808869242826957",
+    "media": true,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-05-19",
+    "titre_fr": "Google fusionne ses modes IA dans la recherche",
+    "resume_fr": "Google déploie mondialement une nouvelle barre de recherche intelligente s'appuyant sur Gemini 3.5, combinant AI Overviews et AI Mode en une seule expérience. Elle accepte texte, images, fichiers et vidéos et permet des questions de suivi.",
+    "tags": [
+      "google",
+      "produit"
+    ],
+    "tweet_url": "https://x.com/GoogleAI/status/2056845506601718271",
+    "media": true,
+    "auteur_x": "@GoogleAI"
+  },
+  {
+    "date": "2026-05-19",
+    "titre_fr": "Google présente Gemini Spark et Daily Brief",
+    "resume_fr": "Google ajoute à l'app Gemini un agent personnel, Spark, capable d'agir sur Gmail, Docs et Slides même appareil fermé, ainsi que Daily Brief, un résumé personnalisé. Daily Brief arrive d'abord aux États-Unis pour les abonnés, Spark suit la semaine suivante.",
+    "tags": [
+      "google",
+      "agents",
+      "produit"
+    ],
+    "tweet_url": "https://x.com/GoogleAI/status/2056859455833473091",
+    "media": true,
+    "auteur_x": "@GoogleAI"
+  },
+  {
+    "date": "2026-05-19",
+    "titre_fr": "OpenAI propose des tokens à prix réduit sur engagement",
+    "resume_fr": "Sam Altman indique que la demande de capacité augmente et qu'OpenAI s'attend à être contraint par la capacité un certain temps. La société offre des tokens à tarif réduit aux clients s'engageant sur 1 à 3 ans, ce qui aide aussi sa planification.",
+    "tags": [
+      "openai",
+      "produit"
+    ],
+    "tweet_url": "https://x.com/sama/status/2056827105401614656",
+    "media": false,
+    "auteur_x": "@sama"
+  },
+  {
+    "date": "2026-05-19",
+    "titre_fr": "Anthropic ouvre un dialogue sur le « caractère » de l'IA",
+    "resume_fr": "Anthropic indique avoir mené ces derniers mois des échanges avec des universitaires, philosophes, religieux et éthiciens autour des questions soulevées par l'IA, notamment la formation du « caractère » des modèles.",
+    "tags": [
+      "anthropic",
+      "politique-ia"
+    ],
+    "tweet_url": "https://x.com/AnthropicAI/status/2056880308851708233",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-05-20",
+    "titre_fr": "Google lance Gemini 3.5 Flash",
+    "resume_fr": "Google DeepMind a publié Gemini 3.5 Flash, son nouveau modèle rapide. D'après les premières analyses, il coûte environ trois fois plus que Gemini 3 Flash, mais Google prévoit de l'utiliser pour de nombreux produits maison.",
+    "tags": [
+      "google",
+      "modeles"
+    ],
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2057191598421836253",
+    "media": true,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-05-20",
+    "titre_fr": "OpenAI revendique une avancée en mathématiques",
+    "resume_fr": "OpenAI affirme qu'un de ses modèles a fait progresser le problème des distances unitaires dans le plan, posé par Erdős en 1946, en trouvant une famille de constructions plus performante que les grilles carrées. La société présente cela comme la première fois qu'une IA résout de façon autonome un problème ouvert majeur d'un domaine mathématique.",
+    "tags": [
+      "openai",
+      "recherche"
+    ],
+    "tweet_url": "https://x.com/OpenAI/status/2057176201782075690",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-05-20",
+    "titre_fr": "OpenAI investit en crédits dans les startups YC",
+    "resume_fr": "OpenAI propose d'investir 2 millions de dollars en crédits (tokens) dans chaque startup de la promotion en cours de Y Combinator, pour encourager les produits bâtis sur ses modèles.",
+    "tags": [
+      "openai"
+    ],
+    "tweet_url": "https://x.com/sama/status/2056933166875857290",
+    "media": false,
+    "auteur_x": "@sama"
+  },
+  {
+    "date": "2026-05-20",
+    "titre_fr": "Google enrichit ses outils créatifs IA",
+    "resume_fr": "Google a annoncé Google Pics dans Workspace (création et édition d'images), des mises à jour de Flow avec le modèle Gemini Omni Flash et un agent créatif multi-étapes, l'édition en temps réel via Stitch, et un montage musical par sections dans Flow Music.",
+    "tags": [
+      "google",
+      "produit"
+    ],
+    "tweet_url": "https://x.com/GoogleAI/status/2057128296538861943",
+    "media": true,
+    "auteur_x": "@GoogleAI"
+  },
+  {
+    "date": "2026-05-20",
+    "titre_fr": "Google lance Gemini for Science",
+    "resume_fr": "Google présente Gemini for Science, un ensemble d'outils et d'expériences destinés à accélérer la recherche scientifique. Une intégration « Science Skills » pour Antigravity réunit des données issues de plus de 30 sources de sciences du vivant, dont UniProt et la base AlphaFold.",
+    "tags": [
+      "google",
+      "recherche"
+    ],
+    "tweet_url": "https://x.com/GoogleAI/status/2057161311617008061",
+    "media": true,
+    "auteur_x": "@GoogleAI"
+  },
+  {
+    "date": "2026-05-20",
+    "titre_fr": "Perplexity réduit ses tokens de contexte",
+    "resume_fr": "Perplexity met en production une compression du contexte tenant compte de la requête, qui réduirait jusqu'à 70 % les tokens de contexte tout en améliorant la qualité des réponses.",
+    "tags": [
+      "produit",
+      "recherche"
+    ],
+    "tweet_url": "https://x.com/perplexity_ai/status/2057151002105753950",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-05-21",
+    "titre_fr": "Google présente Omni, Spark et l'intelligence personnalisée à I/O",
+    "resume_fr": "À sa conférence I/O, Google a dévoilé Omni (un nouveau modèle vidéo décrit comme un « Nano Banana pour la vidéo »), une intelligence personnalisée multi-appareils et des agents baptisés Spark. Sundar Pichai a détaillé la vision de Google dans une interview.",
+    "tags": [
+      "google",
+      "modeles",
+      "produit"
+    ],
+    "tweet_url": "https://x.com/rowancheung/status/2057491344697012384",
+    "media": true,
+    "auteur_x": "@rowancheung"
+  },
+  {
+    "date": "2026-05-21",
+    "titre_fr": "xAI intègre Grok dans l'éditeur opencode",
+    "resume_fr": "xAI permet désormais d'utiliser un abonnement Grok ou X Premium dans opencode, en s'appuyant sur le modèle qui anime Grok Build pour le codage et la compréhension des bases de code.",
+    "tags": [
+      "xai",
+      "produit"
+    ],
+    "tweet_url": "https://x.com/xai/status/2057522050923929948",
+    "media": true,
+    "auteur_x": "@xai"
+  },
+  {
+    "date": "2026-05-21",
+    "titre_fr": "Black Forest Labs lance l'édition d'image localisée",
+    "resume_fr": "Black Forest Labs propose une fonction d'édition contrôlée permettant d'effacer un objet ou du texte sur une image : seule la zone sélectionnée est régénérée, le reste de l'image restant intact.",
+    "tags": [
+      "produit",
+      "modeles"
+    ],
+    "tweet_url": "https://x.com/venturetwins/status/2057499354584486139",
+    "media": true,
+    "auteur_x": "@venturetwins"
+  },
+  {
+    "date": "2026-05-21",
+    "titre_fr": "Claude Code ajoute un suivi détaillé de la consommation de tokens",
+    "resume_fr": "La prochaine version de Claude Code introduira une commande /usage affichant la répartition des tokens consommés par Skills, Agents, MCP et plugins, d'abord en CLI puis sur Desktop.",
+    "tags": [
+      "anthropic",
+      "produit"
+    ],
+    "tweet_url": "https://x.com/bcherny/status/2057476878110261587",
+    "media": true,
+    "auteur_x": "@bcherny"
+  },
+  {
+    "date": "2026-05-22",
+    "titre_fr": "OpenAI met à jour Codex pour le contrôle à distance du Mac",
+    "resume_fr": "OpenAI a annoncé une nouvelle version de Codex permettant de piloter en toute sécurité des applications sur un Mac depuis son téléphone, même lorsque l'ordinateur est verrouillé et l'écran éteint.",
+    "tags": [
+      "openai",
+      "produit",
+      "agents"
+    ],
+    "tweet_url": "https://x.com/OpenAI/status/2057617844800794878",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-05-22",
+    "titre_fr": "Google annonce Gemini 3.5 Flash",
+    "resume_fr": "Selon Logan Kilpatrick, Gemini 3.5 Flash progresse nettement par rapport à la 3.1 Pro sur le benchmark GDPval, le modèle « Flash » se rapprochant des performances de pointe.",
+    "tags": [
+      "google",
+      "modeles"
+    ],
+    "tweet_url": "https://x.com/OfficialLoganK/status/2057682092583227881",
+    "media": true,
+    "auteur_x": "@OfficialLoganK"
+  },
+  {
+    "date": "2026-05-22",
+    "titre_fr": "Perplexity ouvre le code de Bumblebee, scanner de sécurité",
+    "resume_fr": "Perplexity publie en open source Bumblebee, un scanner en lecture seule pour macOS et Linux qui détecte les paquets, extensions et configurations d'outils IA à risque sur les machines de développeurs.",
+    "tags": [
+      "open-source",
+      "produit"
+    ],
+    "tweet_url": "https://x.com/perplexity_ai/status/2057869990536360334",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-05-22",
+    "titre_fr": "Google DeepMind relie Project Genie à Street View",
+    "resume_fr": "DeepMind permet désormais de transformer de vrais lieux américains issus de Google Maps Street View en mondes interactifs générés via Project Genie.",
+    "tags": [
+      "google",
+      "recherche",
+      "produit"
+    ],
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2057842131142590512",
+    "media": true,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-05-22",
+    "titre_fr": "Google présente Gemini 3.5 Flash",
+    "resume_fr": "Selon Google, Gemini 3.5 Flash dépasse la version 3.1 Pro sur de nombreux cas d'usage liés à la vision tout en étant environ six fois plus rapide en moyenne. Le modèle est mis en avant pour ses capacités multimodales.",
+    "tags": [
+      "google",
+      "modeles"
+    ],
+    "tweet_url": "https://x.com/OfficialLoganK/status/2057888362011463988",
+    "media": true,
+    "auteur_x": "@OfficialLoganK"
+  },
+  {
+    "date": "2026-05-22",
+    "titre_fr": "Google étend SynthID et la détection de contenus IA",
+    "resume_fr": "Google élargit son filigrane invisible SynthID à de nouveaux partenaires et ajoute la possibilité de vérifier si un contenu a été généré par IA, directement dans l'application Gemini ou via la recherche Google.",
+    "tags": [
+      "google",
+      "produit"
+    ],
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2057898089621459434",
+    "media": true,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-05-22",
+    "titre_fr": "Anthropic: plus de 10 000 vulnérabilités détectées via Project Glasswing",
+    "resume_fr": "Un mois après le lancement de son initiative collaborative de cybersécurité Project Glasswing, Anthropic indique que ses partenaires et elle ont identifié plus de dix mille vulnérabilités de gravité élevée ou critique dans des logiciels essentiels.",
+    "tags": [
+      "anthropic",
+      "recherche"
+    ],
+    "tweet_url": "https://x.com/AnthropicAI/status/2057909102542549503",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-05-22",
+    "titre_fr": "Cursor lance un SDK pour construire des agents avec Composer 2.5",
+    "resume_fr": "Cursor propose désormais un SDK, disponible en Python et TypeScript, permettant de créer ses propres agents basés sur Composer 2.5. L'usage de Composer dans le SDK est temporairement proposé à prix réduit.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "tweet_url": "https://x.com/cursor_ai/status/2057913121558413770",
+    "media": true,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-05-23",
+    "titre_fr": "Google DeepMind étend son partenariat avec Singapour",
+    "resume_fr": "Google DeepMind renforce sa collaboration avec Singapour pour déployer l'IA à grande échelle, avec de nouveaux programmes axés sur la découverte scientifique, la préparation aux pandémies et l'amélioration des soins de santé.",
+    "tags": [
+      "google",
+      "politique-ia"
+    ],
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2057985225100235022",
+    "media": true,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-05-25",
+    "titre_fr": "xAI lance Grok Build en bêta",
+    "resume_fr": "xAI ouvre Grok Build en bêta pour tous les abonnés SuperGrok et X Premium+. L'outil propose un mode planification, la génération d'images et de vidéos via Imagine, ainsi que la création d'automatisations et d'orchestrateurs en ligne de commande.",
+    "tags": [
+      "xai",
+      "produit",
+      "agents"
+    ],
+    "tweet_url": "https://x.com/xai/status/2058973760708091907",
+    "media": true,
+    "auteur_x": "@xai"
+  },
+  {
+    "date": "2026-05-25",
+    "titre_fr": "Google AI Studio permet de créer des apps Android sans coder",
+    "resume_fr": "Google a lancé la possibilité de construire des applications Android natives directement dans AI Studio, gratuitement. Selon Logan Kilpatrick, plus de 250 000 apps ont été créées depuis le lancement, la plupart par des personnes n'ayant jamais développé pour Android.",
+    "tags": [
+      "google",
+      "produit"
+    ],
+    "tweet_url": "https://x.com/OfficialLoganK/status/2058997700218294564",
+    "media": true,
+    "auteur_x": "@OfficialLoganK"
+  },
+  {
+    "date": "2026-05-25",
+    "titre_fr": "Un cofondateur d'Anthropic intervient autour de l'encyclique du pape sur l'IA",
+    "resume_fr": "Chris Olah, cofondateur d'Anthropic, a été invité à s'exprimer lors de la présentation de l'encyclique « Magnifica humanitas » du pape Léon XIV, consacrée notamment à l'intelligence artificielle. Ses remarques évoquent des résultats troublants sur les états internes des modèles et appellent à une surveillance morale du secteur.",
+    "tags": [
+      "anthropic",
+      "politique-ia"
+    ],
+    "tweet_url": "https://x.com/AnthropicAI/status/2058983299092009421",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-05-26",
+    "titre_fr": "SynthID : Google DeepMind élargit son filigrane à OpenAI et ElevenLabs",
+    "resume_fr": "Google DeepMind annonce que son système de filigrane SynthID, déjà appliqué à plus de 100 milliards de contenus, sera intégré aux modèles d'OpenAI, ElevenLabs et Kakao. L'objectif est d'établir un standard sectoriel pour identifier les contenus générés par IA.",
+    "tags": [
+      "google",
+      "openai",
+      "produit"
+    ],
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2059235181274202500",
+    "media": true,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-05-26",
+    "titre_fr": "La Chine restreindrait les déplacements de ses meilleurs talents en IA",
+    "resume_fr": "Selon Nathan Lambert, la Chine commence à limiter les voyages des chercheurs clés de plusieurs grandes organisations d'IA, une mesure auparavant évoquée uniquement pour DeepSeek.",
+    "tags": [
+      "politique-ia",
+      "talents"
+    ],
+    "tweet_url": "https://x.com/natolambert/status/2059274019959128287",
+    "media": true,
+    "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-05-26",
+    "titre_fr": "Shopify intègre l'agent Perplexity",
+    "resume_fr": "Shopify ajoute Perplexity à la liste des agents compatibles avec sa plateforme, dans une logique de neutralité vis-à-vis de l'agent privilégié par chaque marchand.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "tweet_url": "https://x.com/harleyf/status/2059292751431450923",
+    "media": true,
+    "auteur_x": "@harleyf"
+  },
+  {
+    "date": "2026-05-26",
+    "titre_fr": "Gemma 4 dépasse Qwen en adoption sur les modèles ouverts",
+    "resume_fr": "D'après Nathan Lambert, l'adoption de Gemma 4 dépasse celle de Qwen 3.5/3.6 à taille équivalente, ce qu'il interprète comme un déplacement de l'influence internationale exercée via les modèles open source.",
+    "tags": [
+      "google",
+      "open-source",
+      "modeles"
+    ],
+    "tweet_url": "https://x.com/natolambert/status/2059299103964811512",
+    "media": true,
+    "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-05-27",
+    "titre_fr": "Perplexity ouvre le code de son tokenizer Unigram optimisé",
+    "resume_fr": "Perplexity publie en open-source une version reconstruite du tokenizer Unigram qui réduit l'utilisation CPU d'un facteur 5 à 6. L'objectif est de limiter la latence de tokenisation, devenue significative face à des rerankers et embedders très rapides sur GPU.",
+    "tags": [
+      "open-source",
+      "recherche",
+      "produit"
+    ],
+    "tweet_url": "https://x.com/perplexity_ai/status/2059664738087469511",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-05-27",
+    "titre_fr": "xAI propose grok-build-0.1 pour le codage agentique",
+    "resume_fr": "xAI rend disponible son modèle grok-build-0.1, orienté codage agentique et haute vitesse, via les abonnements SuperGrok ou X Premium+ dans l'IDE Kilo (extensions ou CLI).",
+    "tags": [
+      "xai",
+      "modeles",
+      "agents",
+      "produit"
+    ],
+    "tweet_url": "https://x.com/xai/status/2059666227115819149",
+    "media": false,
+    "auteur_x": "@xai"
+  },
+  {
+    "date": "2026-05-27",
+    "titre_fr": "L'OpenAI Foundation engage 250 M$ pour la prospérité partagée",
+    "resume_fr": "Sam Altman annonce un premier engagement de 250 millions de dollars de l'OpenAI Foundation, destiné à la mesure d'impact, au soutien à la transition et à de nouvelles approches de partage des bénéfices de l'IA.",
+    "tags": [
+      "openai",
+      "politique-ia"
+    ],
+    "tweet_url": "https://x.com/sama/status/2059677202917331431",
+    "media": false,
+    "auteur_x": "@sama"
+  },
+  {
+    "date": "2026-05-27",
+    "titre_fr": "Y Combinator : lancement du robot industriel Eden I",
+    "resume_fr": "La startup Eden lance Eden I, un robot semi-humanoïde industriel proposé à la location à l'heure, dans le cadre de services robotiques autonomes.",
+    "tags": [
+      "produit",
+      "hardware"
+    ],
+    "tweet_url": "https://x.com/ycombinator/status/2059650319680962672",
+    "media": true,
+    "auteur_x": "@ycombinator"
+  },
+  {
+    "date": "2026-05-27",
+    "titre_fr": "Anthropic élargit son Claude Marketplace",
+    "resume_fr": "Anthropic ajoute plusieurs partenaires (Augment, Bolt, CodeRabbit, Hebbia, Legora) à son Claude Marketplace, permettant d'utiliser un engagement de dépense existant sur des produits propulsés par Claude.",
+    "tags": [
+      "anthropic",
+      "produit"
+    ],
+    "tweet_url": "https://x.com/claudeai/status/2059662933924123044",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-05-28",
+    "titre_fr": "Anthropic lance Claude Opus 4.8",
+    "resume_fr": "Anthropic présente Claude Opus 4.8, successeur d'Opus 4.7, avec un meilleur jugement, davantage d'honnêteté sur ses propres limites et une plus grande capacité à travailler en autonomie sur de longues durées. Le modèle est disponible au même prix que la version précédente et progresse sur le benchmark de codage SWE-bench Pro (de 64,3 à 69,2).",
+    "tags": [
+      "anthropic",
+      "modeles",
+      "produit"
+    ],
+    "tweet_url": "https://x.com/claudeai/status/2060042702150930686",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-05-28",
+    "titre_fr": "Perplexity Computer s'intègre à Microsoft Office",
+    "resume_fr": "Perplexity rend son agent Computer accessible directement dans Excel, Word, PowerPoint et Outlook, via un panneau latéral. L'objectif est de rédiger des documents, construire des modèles et des présentations, et gérer les emails sans quitter l'application.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "tweet_url": "https://x.com/perplexity_ai/status/2060013442720010598",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-05-28",
+    "titre_fr": "Mistral annonce des solutions IA pour l'industrie",
+    "resume_fr": "Lors du sommet AI Now au Louvre, Mistral a présenté des solutions IA destinées à l'aérospatiale, l'automobile, l'énergie et la physique. La société indique qu'elles sont déjà déployées en production chez des clients comme Airbus, BMW et EDF.",
+    "tags": [
+      "mistral",
+      "produit"
+    ],
+    "tweet_url": "https://x.com/MistralAI/status/2059951137839616110",
+    "media": true,
+    "auteur_x": "@MistralAI"
+  },
+  {
+    "date": "2026-05-28",
+    "titre_fr": "Snowflake compte racheter Natoma (plateforme MCP)",
+    "resume_fr": "Snowflake annonce son intention d'acquérir Natoma, une plateforme MCP pour entreprises. Une fois l'opération conclue, les utilisateurs pourront enrichir leurs données Snowflake avec du contexte applicatif et déclencher des actions (emails, résumés Slack, tickets Jira) directement depuis Snowflake.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "tweet_url": "https://x.com/RamaswmySridhar/status/2059804859789140075",
+    "media": true,
+    "auteur_x": "@RamaswmySridhar"
+  },
+  {
+    "date": "2026-05-28",
+    "titre_fr": "Cursor publie un rapport sur les habitudes des développeurs",
+    "resume_fr": "Cursor partage un rapport sur l'évolution du développement logiciel, basé sur ce qu'il présente comme le plus vaste jeu de données sur le codage assisté par IA, couvrant plusieurs familles de modèles.",
+    "tags": [
+      "produit",
+      "recherche"
+    ],
+    "tweet_url": "https://x.com/cursor_ai/status/2060025063899058458",
+    "media": true,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-05-28",
+    "titre_fr": "Anthropic lève 65 milliards de dollars en série H",
+    "resume_fr": "Anthropic annonce une levée de 65 milliards de dollars portant sa valorisation post-money à 965 milliards, menée par Altimeter, Dragoneer, Greenoaks et Sequoia. Les fonds doivent financer la recherche et augmenter la capacité pour répondre à la demande autour de Claude.",
+    "tags": [
+      "anthropic",
+      "talents"
+    ],
+    "tweet_url": "https://x.com/AnthropicAI/status/2060061347522433422",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-05-28",
+    "titre_fr": "Claude Code introduit les « dynamic workflows »",
+    "resume_fr": "Anthropic ajoute à Claude Code des workflows dynamiques qui lancent de nombreux agents en parallèle, lesquels vérifient et critiquent mutuellement leur travail jusqu'à convergence. L'objectif est de traiter des tâches à l'échelle d'une base de code entière (migrations, audits, réécritures), au prix d'une forte consommation de tokens.",
+    "tags": [
+      "anthropic",
+      "produit",
+      "agents"
+    ],
+    "tweet_url": "https://x.com/gregisenberg/status/2060072130339873093",
+    "media": false,
+    "auteur_x": "@gregisenberg"
+  },
+  {
+    "date": "2026-05-28",
+    "titre_fr": "Claude Opus 4.8 disponible",
+    "resume_fr": "Anthropic publie Opus 4.8, présenté comme une amélioration plutôt qu'un bond majeur : style d'écriture moins reconnaissable et taux de refus fortement réduit (de 20 % à 4 % selon des testeurs), ce qui le rend plus utile pour les agents. La même semaine voyaient aussi l'arrivée de Gemini Spark côté Google et l'ouverture des publicités ChatGPT aux PME.",
+    "tags": [
+      "anthropic",
+      "openai",
+      "google",
+      "modeles"
+    ],
+    "tweet_url": "https://x.com/coreyganim/status/2060134271298261219",
+    "media": true,
+    "auteur_x": "@coreyganim"
+  },
+  {
+    "date": "2026-05-28",
+    "titre_fr": "Mise à jour de Grok Build (0.2.7)",
+    "resume_fr": "xAI publie la version 0.2.7 de Grok Build, avec notamment les commandes /usage et /login, des terminaux partagés entre sous-agents et une meilleure compréhension des images.",
+    "tags": [
+      "xai",
+      "produit",
+      "agents"
+    ],
+    "tweet_url": "https://x.com/xai/status/2060102590122385460",
+    "media": true,
+    "auteur_x": "@xai"
+  },
+  {
+    "date": "2026-05-28",
+    "titre_fr": "Accord de 6 milliards entre Snowflake et AWS",
+    "resume_fr": "Snowflake annonce un accord pluriannuel de 6 milliards de dollars avec AWS, s'appuyant sur le calcul Graviton et les services d'IA pour accélérer l'adoption de l'IA en entreprise. L'entreprise indique aussi avoir dépassé 7 milliards de ventes cumulées sur l'AWS Marketplace.",
+    "tags": [
+      "produit"
+    ],
+    "tweet_url": "https://x.com/RamaswmySridhar/status/2060056040235012389",
+    "media": true,
+    "auteur_x": "@RamaswmySridhar"
+  },
+  {
+    "date": "2026-05-29",
+    "titre_fr": "Nouveau modèle GPT-5.5 instant dans ChatGPT",
+    "resume_fr": "OpenAI déploie un nouveau modèle « 5.5 instant » dans ChatGPT, selon Greg Brockman.",
+    "tags": [
+      "openai",
+      "modeles"
+    ],
+    "tweet_url": "https://x.com/gdb/status/2060294896918094152",
+    "media": false,
+    "auteur_x": "@gdb"
+  },
+  {
+    "date": "2026-05-29",
+    "titre_fr": "La croissance du chiffre d'affaires d'Anthropic en forte hausse",
+    "resume_fr": "Selon des chiffres rapportés par Axios, le run-rate d'Anthropic serait passé d'environ 30 à 47 milliards de dollars, une progression organique décrite comme sans précédent. Ces données auto-déclarées restent à prendre avec prudence.",
+    "tags": [
+      "anthropic"
+    ],
+    "tweet_url": "https://x.com/simonw/status/2060170727433830536",
+    "media": false,
+    "auteur_x": "@simonw"
+  },
+  {
+    "date": "2026-05-29",
+    "titre_fr": "OpenAI lance Rosalind pour la biodéfense",
+    "resume_fr": "OpenAI annonce Rosalind Biodefense, une initiative destinée à aider des acteurs de confiance à développer des capacités de biodéfense et de préparation aux pandémies. L'accès à son modèle GPT-Rosalind est étendu à certains partenaires gouvernementaux américains et alliés œuvrant pour la santé publique.",
+    "tags": [
+      "openai",
+      "produit",
+      "politique-ia"
+    ],
+    "tweet_url": "https://x.com/OpenAI/status/2060376598642405492",
+    "media": false,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-05-29",
+    "titre_fr": "xAI ouvre grok-build-0.1 en bêta publique via API",
+    "resume_fr": "xAI rend disponible grok-build-0.1 sur son API en bêta publique. Ce modèle, qui alimente le Grok Build CLI, est orienté codage agentique et affiché à 1 $/M de tokens en entrée et 2 $/M en sortie.",
+    "tags": [
+      "xai",
+      "modeles",
+      "agents"
+    ],
+    "tweet_url": "https://x.com/xai/status/2060392249402552457",
+    "media": true,
+    "auteur_x": "@xai"
+  },
+  {
+    "date": "2026-05-29",
+    "titre_fr": "Codex prend en charge l'usage de l'ordinateur sous Windows",
+    "resume_fr": "OpenAI étend les capacités « computer use » de Codex à Windows : l'agent peut désormais agir sur un PC Windows. La prise en charge dans l'app mobile ChatGPT permet aussi de lancer et suivre des tâches à distance.",
+    "tags": [
+      "openai",
+      "produit",
+      "agents"
+    ],
+    "tweet_url": "https://x.com/OpenAI/status/2060428604727771421",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-05-29",
+    "titre_fr": "OpenAI ajoute la traduction en temps réel",
+    "resume_fr": "OpenAI propose une fonction de traduction en temps réel prenant en charge plus de 70 langues en entrée et 13 langues en sortie.",
+    "tags": [
+      "openai",
+      "produit"
+    ],
+    "tweet_url": "https://x.com/gdb/status/2060452095279415725",
+    "media": false,
+    "auteur_x": "@gdb"
+  },
+  {
+    "date": "2026-05-29",
+    "titre_fr": "Cursor introduit le mode de revue automatique",
+    "resume_fr": "L'éditeur Cursor lance un mode « auto-review » qui permet aux agents d'exécuter des appels d'outils avec moins d'invites d'approbation, tout en visant une exécution plus sûre.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "tweet_url": "https://x.com/cursor_ai/status/2060406013098897765",
+    "media": true,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-05-30",
+    "titre_fr": "OpenClaw 2026.5.28 : support de Claude Opus 4.8",
+    "resume_fr": "L'outil OpenClaw publie une mise à jour ajoutant la prise en charge du modèle Claude Opus 4.8 et du modèle d'images Krea via fal, ainsi que des optimisations de performance.",
+    "tags": [
+      "produit",
+      "anthropic",
+      "agents"
+    ],
+    "tweet_url": "https://x.com/openclaw/status/2060836826932249013",
+    "media": false,
+    "auteur_x": "@openclaw"
+  },
+  {
+    "date": "2026-05-30",
+    "titre_fr": "OpenClaw améliore ses performances",
+    "resume_fr": "La nouvelle version d'OpenClaw annonce des gains mesurés : tours à froid 14,5 % plus rapides, tours à chaud 16 % plus rapides et une installation 52,8 % plus légère.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "tweet_url": "https://x.com/openclaw/status/2060843306100183541",
+    "media": false,
+    "auteur_x": "@openclaw"
+  },
+  {
+    "date": "2026-05-30",
+    "titre_fr": "Comparaison des capacités de recherche entre Claude et GPT-5.5",
+    "resume_fr": "Nathan Lambert observe que Claude semble peu rigoureux dans le chat sur des sujets techniques, tandis que les modèles récents d'OpenAI comme GPT-5.5 paraissent plus exhaustifs. Il souligne le rôle clé du harnais (harness) dans l'autonomie d'un modèle.",
+    "tags": [
+      "anthropic",
+      "openai",
+      "modeles"
+    ],
+    "tweet_url": "https://x.com/natolambert/status/2060824108502565259",
+    "media": false,
+    "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-05-31",
+    "titre_fr": "OpenAI lance GPT Realtime 2",
+    "resume_fr": "OpenAI dévoile GPT Realtime 2, une nouvelle version de son modèle vocal en temps réel. Selon les premiers retours, il combine une latence faible avec des capacités de raisonnement plus avancées pour les agents conversationnels.",
+    "tags": [
+      "openai",
+      "modeles",
+      "produit"
+    ],
+    "tweet_url": "https://x.com/gdb/status/2060955146952077653",
+    "media": false,
+    "auteur_x": "@gdb"
+  },
+  {
+    "date": "2026-05-31",
+    "titre_fr": "Anthropic publie Claude Opus 4.8",
+    "resume_fr": "Anthropic met à disposition Claude Opus 4.8, une mise à jour de son modèle haut de gamme. Les discussions portent sur ses améliorations par rapport à la version 4.7, notamment en matière d'honnêteté et de comportement.",
+    "tags": [
+      "anthropic",
+      "modeles"
+    ],
+    "tweet_url": "https://x.com/TheZvi/status/2061083538225614894",
+    "media": false,
+    "auteur_x": "@TheZvi"
+  },
+  {
+    "date": "2026-05-31",
+    "titre_fr": "OpenAI crée une division robotique et recrute",
+    "resume_fr": "OpenAI annonce la formation d'OpenAI Robotics, issue de son programme de simulation du monde dirigé par Aditya Ramesh. L'équipe recrute des ingénieurs matériel, systèmes et ML pour concevoir et fabriquer des robots, d'abord pour soutenir les travailleurs qualifiés.",
+    "tags": [
+      "openai",
+      "hardware",
+      "talents"
+    ],
+    "tweet_url": "https://x.com/sama/status/2061117302528188712",
+    "media": false,
+    "auteur_x": "@sama"
+  },
+  {
+    "date": "2026-05-31",
+    "titre_fr": "OpenAI lance une initiative de biodéfense",
+    "resume_fr": "Sam Altman annonce une initiative d'OpenAI visant à aider le monde à se préparer en matière de biodéfense, en lien avec les risques posés par les capacités croissantes de l'IA.",
+    "tags": [
+      "openai",
+      "politique-ia"
+    ],
+    "tweet_url": "https://x.com/sama/status/2061101875303530871",
+    "media": false,
+    "auteur_x": "@sama"
+  }
+]
