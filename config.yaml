@@ -10,8 +10,11 @@ accounts:
   # — Labs & produits IA —
   - perplexity_ai      # Perplexity
   - AskPerplexity      # Perplexity (compte produit)
-  - AnthropicAI        # Anthropic (Claude)
+  - AnthropicAI        # Anthropic
+  - claudeai           # Claude (l'assistant d'Anthropic)
   - GoogleAI           # Google AI
+  - GoogleDeepMind     # Google DeepMind
+  - OpenAI             # OpenAI
   - MistralAI          # Mistral AI
   - stitchbygoogle     # Stitch by Google (génération d'UI)
 
@@ -24,9 +27,13 @@ accounts:
   - gdb                # Greg Brockman (OpenAI)
   - sama               # Sam Altman (OpenAI)
   - DarioAmodei        # Dario Amodei (CEO Anthropic)
+  - AmandaAskell       # Amanda Askell (philosophe / éthique, Anthropic)
   - DrJimFan           # Jim Fan (NVIDIA, robotique / AGI physique)
   - emollick           # Ethan Mollick (IA appliquée, Wharton)
-  - fchollet           # François Chollet (créateur de Keras)
+  - fchollet           # François Chollet (créateur de Keras, ARC-AGI)
+  - goodfellow_ian     # Ian Goodfellow (inventeur des GANs)
+  - GaryMarcus         # Gary Marcus (regard critique sur l'IA générative)
+  - ylecun             # Yann LeCun (Turing Award, ex-Meta)
   - RamaswmySridhar    # Sridhar Ramaswamy (CEO Snowflake)
 
   # — Investisseurs & écosystème —
@@ -41,6 +48,7 @@ accounts:
   - bcherny            # Boris Cherny (Claude Code, Anthropic)
   - jordymaui          # Jordy (agents, communauté)
   - OfficialLoganK     # Logan Kilpatrick (Gemini, Google)
+  - openclaw           # OpenClaw (agent IA : emails, agenda, domotique)
 
   # — IA × business / Shopify / e-commerce —
   - mikefutia          # Mike Futia (IA pour pub & e-commerce)
@@ -49,17 +57,14 @@ accounts:
   - harleyf            # Harley Finkelstein (Président Shopify)
   - coreyganim         # Corey Ganim (IA pour entrepreneurs non-tech)
 
-  # ── SUGGESTIONS (dans ton style) ────────────────────────────
-  #  Comptes complémentaires que je te propose. Supprime ce bloc
-  #  d'un coup si tu n'en veux pas.
-  - OpenAI             # OpenAI (le compte du labo, pas juste ses fondateurs)
-  - GoogleDeepMind     # Google DeepMind (recherche de pointe)
-  - xai                # xAI / Grok (labo frontière qui manque à ta liste)
-  - alexalbert__       # Alex Albert (Anthropic, dans la lignée Claude Code)
-  - cursor_ai          # Cursor (éditeur de code IA, pour les builders)
-  - rowancheung        # Rowan Cheung (actu IA synthétique, grand public)
-  - gregisenberg       # Greg Isenberg (idées startup × IA, fibre entrepreneur)
-  - ylecun             # Yann LeCun (grande voix IA / débats de fond)
+  # ── SUGGESTIONS (désactivées) ───────────────────────────────
+  #  Comptes complémentaires dans ton style, à activer plus tard si
+  #  tu veux élargir. Enlève le « # » devant la ligne pour l'ajouter.
+  # - xai              # xAI / Grok
+  # - alexalbert__     # Alex Albert (Anthropic, Claude)
+  # - cursor_ai        # Cursor (éditeur de code IA)
+  # - rowancheung      # Rowan Cheung (actu IA synthétique, grand public)
+  # - gregisenberg     # Greg Isenberg (idées startup × IA)
 
 # ── Fenêtre de récupération ───────────────────────────────────
 #  On ne garde que les tweets publiés dans les N dernières heures.
