@@ -16,6 +16,7 @@ accounts:
   - GoogleDeepMind     # Google DeepMind
   - OpenAI             # OpenAI
   - MistralAI          # Mistral AI
+  - xai                # xAI / Grok
   - stitchbygoogle     # Stitch by Google (génération d'UI)
 
   # — Chercheurs & figures de l'IA —
@@ -46,9 +47,11 @@ accounts:
   - AlexReibman        # Alex Reibman (AgentOps)
   - trq212             # Thariq (Claude Code, Anthropic)
   - bcherny            # Boris Cherny (Claude Code, Anthropic)
+  - alexalbert__       # Alex Albert (Claude Relations, Anthropic)
   - jordymaui          # Jordy (agents, communauté)
   - OfficialLoganK     # Logan Kilpatrick (Gemini, Google)
   - openclaw           # OpenClaw (agent IA : emails, agenda, domotique)
+  - cursor_ai          # Cursor (éditeur de code IA)
 
   # — IA × business / Shopify / e-commerce —
   - mikefutia          # Mike Futia (IA pour pub & e-commerce)
@@ -56,15 +59,8 @@ accounts:
   - ShopifyDevs        # Shopify Developers
   - harleyf            # Harley Finkelstein (Président Shopify)
   - coreyganim         # Corey Ganim (IA pour entrepreneurs non-tech)
-
-  # ── SUGGESTIONS (désactivées) ───────────────────────────────
-  #  Comptes complémentaires dans ton style, à activer plus tard si
-  #  tu veux élargir. Enlève le « # » devant la ligne pour l'ajouter.
-  # - xai              # xAI / Grok
-  # - alexalbert__     # Alex Albert (Anthropic, Claude)
-  # - cursor_ai        # Cursor (éditeur de code IA)
-  # - rowancheung      # Rowan Cheung (actu IA synthétique, grand public)
-  # - gregisenberg     # Greg Isenberg (idées startup × IA)
+  - gregisenberg       # Greg Isenberg (idées startup × IA)
+  - rowancheung        # Rowan Cheung (actu IA synthétique, grand public)
 
 # ── Fenêtre de récupération ───────────────────────────────────
 #  On ne garde que les tweets publiés dans les N dernières heures.
