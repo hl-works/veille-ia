@@ -71,21 +71,43 @@ jobs:
         if: ${{ !inputs.dry_run && secrets.KH_REPO_TOKEN != '' }}
         env:
           KH_REPO_TOKEN: ${{ secrets.KH_REPO_TOKEN }}
-          # Ajuste ces 2 valeurs au repo/chemin réels du site si besoin.
           KH_REPO: hugolahutte/knowledge-hub
-          KH_FEED_PATH: public/feed.json
+          KH_BRANCH: main
+          KH_FEED_PATH: veille-ia/feed.json
         run: |
           set -e
-          git clone --depth 1 "https://x-access-token:${KH_REPO_TOKEN}@github.com/${KH_REPO}.git" kh
-          mkdir -p "kh/$(dirname "$KH_FEED_PATH")"
-          cp feed.json "kh/${KH_FEED_PATH}"
+          # Garde-fou : ne jamais pousser un JSON invalide (sinon la page site
+          # affiche « Veille indisponible »).
+          python -c "import json; json.load(open('feed.json'))"
+          echo "✓ feed.json est un JSON valide."
+
+          # Clone complet (pas --depth 1) pour pouvoir rebaser avant push.
+          git clone "https://x-access-token:${KH_REPO_TOKEN}@github.com/${KH_REPO}.git" kh
           cd kh
-          if [ -n "$(git status --porcelain "$KH_FEED_PATH")" ]; then
-            git config user.name "veille-bot"
-            git config user.email "veille-bot@users.noreply.github.com"
-            git add "$KH_FEED_PATH"
-            git commit -m "data: maj feed.json depuis veille-ia ($(date -u +%F))"
-            git push
-          else
-            echo "feed.json déjà à jour dans knowledge-hub."
+          git config user.name "veille-bot"
+          git config user.email "veille-bot@users.noreply.github.com"
+
+          mkdir -p "$(dirname "$KH_FEED_PATH")"
+          cp ../feed.json "$KH_FEED_PATH"
+
+          if [ -z "$(git status --porcelain "$KH_FEED_PATH")" ]; then
+            echo "feed.json déjà à jour dans knowledge-hub, rien à pousser."
+            exit 0
           fi
+
+          git add "$KH_FEED_PATH"
+          git commit -m "data: maj feed.json depuis veille-ia ($(date -u +%F))"
+
+          # Plusieurs sources poussent sur main → rebase avant push, et retry
+          # en cas de course (rejet non-fast-forward).
+          for attempt in 1 2 3; do
+            git pull --rebase origin "$KH_BRANCH"
+            if git push origin "HEAD:$KH_BRANCH"; then
+              echo "✓ feed.json publié sur ${KH_REPO}@${KH_BRANCH}."
+              exit 0
+            fi
+            echo "Push rejeté (tentative $attempt), nouvelle tentative…"
+            sleep 3
+          done
+          echo "Échec du push vers knowledge-hub après 3 tentatives." >&2
+          exit 1
