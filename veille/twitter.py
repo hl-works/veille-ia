@@ -250,15 +250,18 @@ def advanced_search(
     *,
     since: datetime,
     until: datetime,
+    max_per_account: int,
     max_total: int,
     max_pages_per_account: int = 5,
     include_retweets: bool = False,
     include_replies: bool = False,
     timeout: int = 30,
 ) -> list[Tweet]:
-    """Récupère les tweets d'une période donnée (backfill). Borné par
-    `max_total` pour ne PAS faire exploser le budget (leçon Patel : 1 run,
-    cap strict, pas de boucle infinie).
+    """Récupère les tweets d'une période donnée (backfill), équitablement
+    réparti : chaque compte contribue jusqu'à `max_per_account`, et `max_total`
+    sert de garde-fou global ultime (leçon Patel : pas de boucle infinie, cap
+    strict). Le quota par compte évite que les premiers comptes de la liste
+    raflent tout le budget.
 
     Utilise l'endpoint `advanced_search` de twitterapi.io avec une requête
     `from:<compte> since:<date> until:<date>` et la pagination par curseur.
@@ -270,13 +273,14 @@ def advanced_search(
 
     for account in accounts:
         if len(collected) >= max_total:
-            log.warning("Plafond max_total=%d atteint, on arrête la collecte.", max_total)
+            log.warning("Plafond global max_total=%d atteint, on arrête.", max_total)
             break
 
         query = f"from:{account} since:{since_str} until:{until_str}"
         cursor = ""
+        kept_this_account = 0
         for _ in range(max_pages_per_account):
-            if len(collected) >= max_total:
+            if kept_this_account >= max_per_account or len(collected) >= max_total:
                 break
             params = {"query": query, "queryType": "Latest"}
             if cursor:
@@ -296,6 +300,8 @@ def advanced_search(
 
             raw_tweets = _extract_tweet_list(payload)
             for r in raw_tweets:
+                if kept_this_account >= max_per_account or len(collected) >= max_total:
+                    break
                 tw = _normalize(r, account)
                 if not tw or not tw.text or not tw.id:
                     continue
@@ -307,16 +313,18 @@ def advanced_search(
                     continue
                 seen_ids.add(tw.id)
                 collected.append(tw)
-                if len(collected) >= max_total:
-                    break
+                kept_this_account += 1
 
             # Pagination : has_next_page / next_cursor
             if not payload.get("has_next_page") or not payload.get("next_cursor"):
                 break
             cursor = payload["next_cursor"]
 
-        log.info("Backfill @%s : %d tweets cumulés", account, len(collected))
+        log.info("Backfill @%s : %d tweets (total %d)", account, kept_this_account, len(collected))
 
     collected.sort(key=lambda t: t.created_at or datetime.min.replace(tzinfo=timezone.utc))
-    log.info("Backfill : %d tweets sur %s → %s (plafond %d)", len(collected), since_str, until_str, max_total)
+    log.info(
+        "Backfill : %d tweets sur %s → %s (%d/compte, plafond global %d)",
+        len(collected), since_str, until_str, max_per_account, max_total,
+    )
     return collected

@@ -16,10 +16,14 @@ on:
         description: "Date de fin (YYYY-MM-DD, exclue)"
         type: string
         default: "2026-06-01"
-      max_tweets:
-        description: "Plafond strict de tweets (garde-fou budget)"
+      max_per_account:
+        description: "Quota de tweets par compte (équité entre les 45 comptes)"
         type: string
-        default: "600"
+        default: "25"
+      max_tweets:
+        description: "Garde-fou global strict (budget)"
+        type: string
+        default: "1500"
       write:
         description: "Écrire feed.json (sinon dry-run d'aperçu)"
         type: boolean
@@ -49,6 +53,7 @@ jobs:
           python -m veille.backfill
           --since "${{ inputs.since }}"
           --until "${{ inputs.until }}"
+          --max-per-account "${{ inputs.max_per_account }}"
           --max-tweets "${{ inputs.max_tweets }}"
           ${{ inputs.write && '--write' || '' }}
         env:

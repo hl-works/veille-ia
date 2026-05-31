@@ -42,6 +42,7 @@ def run_backfill(
     *,
     since: datetime,
     until: datetime,
+    max_per_account: int,
     max_tweets: int,
     batch_size: int,
     write: bool,
@@ -52,8 +53,8 @@ def run_backfill(
     settings.require_secrets(need_telegram=False)  # le backfill ne touche pas Telegram
 
     logging.info(
-        "Backfill %s → %s, plafond %d tweets, %d comptes.",
-        since.date(), until.date(), max_tweets, len(settings.accounts),
+        "Backfill %s → %s, %d/compte, plafond global %d, %d comptes.",
+        since.date(), until.date(), max_per_account, max_tweets, len(settings.accounts),
     )
 
     tweets = advanced_search(
@@ -61,6 +62,7 @@ def run_backfill(
         settings.twitterapi_io_key,
         since=since,
         until=until,
+        max_per_account=max_per_account,
         max_total=max_tweets,
         include_retweets=settings.include_retweets,
         include_replies=settings.include_replies,
@@ -103,7 +105,8 @@ def main() -> int:
     parser.add_argument("--config", default="config.yaml")
     parser.add_argument("--since", default="2026-05-01", help="Date de début (YYYY-MM-DD, incluse).")
     parser.add_argument("--until", default="2026-06-01", help="Date de fin (YYYY-MM-DD, exclue).")
-    parser.add_argument("--max-tweets", type=int, default=600, help="Plafond strict de tweets récupérés.")
+    parser.add_argument("--max-per-account", type=int, default=25, help="Quota de tweets par compte (équité).")
+    parser.add_argument("--max-tweets", type=int, default=1500, help="Garde-fou global strict (budget).")
     parser.add_argument("--batch-size", type=int, default=40, help="Tweets par appel Claude.")
     parser.add_argument("--write", action="store_true", help="Écrit feed.json/seen.json (sinon dry-run).")
     parser.add_argument("--feed", default="feed.json")
@@ -116,6 +119,7 @@ def main() -> int:
             args.config,
             since=_parse_day(args.since),
             until=_parse_day(args.until),
+            max_per_account=args.max_per_account,
             max_tweets=args.max_tweets,
             batch_size=args.batch_size,
             write=args.write,
