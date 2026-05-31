@@ -38,6 +38,7 @@ class Tweet:
     retweet_count: int = 0
     is_retweet: bool = False
     is_reply: bool = False
+    has_media: bool = False
 
 
 def _parse_date(value) -> datetime | None:
@@ -152,7 +153,24 @@ def _normalize(raw: dict, fallback_author: str) -> Tweet | None:
         retweet_count=_as_int(raw.get("retweetCount") or raw.get("retweet_count")),
         is_retweet=is_retweet,
         is_reply=is_reply,
+        has_media=_detect_media(raw),
     )
+
+
+def _detect_media(raw: dict) -> bool:
+    """Détecte la présence d'une image/vidéo dans le tweet (pour `media` du
+    feed). On regarde plusieurs emplacements possibles selon la forme de l'API."""
+    # Champs « entities/extended_entities » façon API Twitter classique.
+    for key in ("extendedEntities", "extended_entities", "entities"):
+        ent = raw.get(key)
+        if isinstance(ent, dict) and ent.get("media"):
+            return True
+    # Champs à plat parfois exposés par twitterapi.io.
+    for key in ("media", "mediaUrls", "photos", "videos", "extendedMedia"):
+        val = raw.get(key)
+        if val:  # liste/objet non vide
+            return True
+    return False
 
 
 def fetch_user_tweets(username: str, api_key: str, *, timeout: int = 30) -> list[Tweet]:
@@ -220,4 +238,85 @@ def collect_recent_tweets(
 
     collected.sort(key=lambda t: t.created_at or datetime.min.replace(tzinfo=timezone.utc), reverse=True)
     log.info("Total : %d tweets retenus sur la fenêtre de %dh", len(collected), lookback_hours)
+    return collected
+
+
+ADVANCED_SEARCH_PATH = "/twitter/tweet/advanced_search"
+
+
+def advanced_search(
+    accounts: list[str],
+    api_key: str,
+    *,
+    since: datetime,
+    until: datetime,
+    max_total: int,
+    max_pages_per_account: int = 5,
+    include_retweets: bool = False,
+    include_replies: bool = False,
+    timeout: int = 30,
+) -> list[Tweet]:
+    """Récupère les tweets d'une période donnée (backfill). Borné par
+    `max_total` pour ne PAS faire exploser le budget (leçon Patel : 1 run,
+    cap strict, pas de boucle infinie).
+
+    Utilise l'endpoint `advanced_search` de twitterapi.io avec une requête
+    `from:<compte> since:<date> until:<date>` et la pagination par curseur.
+    """
+    since_str = since.strftime("%Y-%m-%d_%H:%M:%S_UTC")
+    until_str = until.strftime("%Y-%m-%d_%H:%M:%S_UTC")
+    seen_ids: set[str] = set()
+    collected: list[Tweet] = []
+
+    for account in accounts:
+        if len(collected) >= max_total:
+            log.warning("Plafond max_total=%d atteint, on arrête la collecte.", max_total)
+            break
+
+        query = f"from:{account} since:{since_str} until:{until_str}"
+        cursor = ""
+        for _ in range(max_pages_per_account):
+            if len(collected) >= max_total:
+                break
+            params = {"query": query, "queryType": "Latest"}
+            if cursor:
+                params["cursor"] = cursor
+            try:
+                resp = requests.get(
+                    BASE_URL + ADVANCED_SEARCH_PATH,
+                    params=params,
+                    headers={"X-API-Key": api_key},
+                    timeout=timeout,
+                )
+                resp.raise_for_status()
+                payload = resp.json()
+            except (requests.RequestException, ValueError) as exc:
+                log.error("advanced_search @%s : %s", account, exc)
+                break
+
+            raw_tweets = _extract_tweet_list(payload)
+            for r in raw_tweets:
+                tw = _normalize(r, account)
+                if not tw or not tw.text or not tw.id:
+                    continue
+                if not include_retweets and tw.is_retweet:
+                    continue
+                if not include_replies and tw.is_reply:
+                    continue
+                if tw.id in seen_ids:
+                    continue
+                seen_ids.add(tw.id)
+                collected.append(tw)
+                if len(collected) >= max_total:
+                    break
+
+            # Pagination : has_next_page / next_cursor
+            if not payload.get("has_next_page") or not payload.get("next_cursor"):
+                break
+            cursor = payload["next_cursor"]
+
+        log.info("Backfill @%s : %d tweets cumulés", account, len(collected))
+
+    collected.sort(key=lambda t: t.created_at or datetime.min.replace(tzinfo=timezone.utc))
+    log.info("Backfill : %d tweets sur %s → %s (plafond %d)", len(collected), since_str, until_str, max_total)
     return collected

@@ -21,6 +21,10 @@ concurrency:
   group: veille-ia
   cancel-in-progress: false
 
+# Autorise le job à committer feed.json/seen.json dans ce repo.
+permissions:
+  contents: write
+
 jobs:
   veille:
     runs-on: ubuntu-latest
@@ -44,3 +48,44 @@ jobs:
           TWITTERAPI_IO_KEY: ${{ secrets.TWITTERAPI_IO_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+
+      # Persiste feed.json (cumulatif) et seen.json (mémoire dédup) dans CE repo.
+      # Sauté en dry-run (rien n'a été écrit).
+      - name: Sauvegarder feed.json / seen.json
+        if: ${{ !inputs.dry_run }}
+        run: |
+          if [ -n "$(git status --porcelain feed.json seen.json)" ]; then
+            git config user.name "veille-bot"
+            git config user.email "veille-bot@users.noreply.github.com"
+            git add feed.json seen.json
+            git commit -m "data: maj feed.json/seen.json ($(date -u +%F))"
+            git push
+          else
+            echo "Aucun changement de données à committer."
+          fi
+
+      # Bridge vers le site : pousse feed.json dans knowledge-hub.
+      # NE S'ACTIVE QUE si le secret KH_REPO_TOKEN est défini → tant que le
+      # site n'est pas prêt, cette étape est silencieusement sautée.
+      - name: Publier feed.json vers knowledge-hub
+        if: ${{ !inputs.dry_run && secrets.KH_REPO_TOKEN != '' }}
+        env:
+          KH_REPO_TOKEN: ${{ secrets.KH_REPO_TOKEN }}
+          # Ajuste ces 2 valeurs au repo/chemin réels du site si besoin.
+          KH_REPO: hugolahutte/knowledge-hub
+          KH_FEED_PATH: public/feed.json
+        run: |
+          set -e
+          git clone --depth 1 "https://x-access-token:${KH_REPO_TOKEN}@github.com/${KH_REPO}.git" kh
+          mkdir -p "kh/$(dirname "$KH_FEED_PATH")"
+          cp feed.json "kh/${KH_FEED_PATH}"
+          cd kh
+          if [ -n "$(git status --porcelain "$KH_FEED_PATH")" ]; then
+            git config user.name "veille-bot"
+            git config user.email "veille-bot@users.noreply.github.com"
+            git add "$KH_FEED_PATH"
+            git commit -m "data: maj feed.json depuis veille-ia ($(date -u +%F))"
+            git push
+          else
+            echo "feed.json déjà à jour dans knowledge-hub."
+          fi

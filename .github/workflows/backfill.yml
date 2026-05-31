@@ -1,0 +1,69 @@
+name: Backfill feed.json
+
+# ─────────────────────────────────────────────────────────────
+#  One-shot manuel : génère le feed.json initial sur une période
+#  passée (par défaut mai 2026). À lancer une seule fois pour le
+#  contenu de lancement du site. Borné en budget (plafond tweets).
+# ─────────────────────────────────────────────────────────────
+on:
+  workflow_dispatch:
+    inputs:
+      since:
+        description: "Date de début (YYYY-MM-DD, incluse)"
+        type: string
+        default: "2026-05-01"
+      until:
+        description: "Date de fin (YYYY-MM-DD, exclue)"
+        type: string
+        default: "2026-06-01"
+      max_tweets:
+        description: "Plafond strict de tweets (garde-fou budget)"
+        type: string
+        default: "600"
+      write:
+        description: "Écrire feed.json (sinon dry-run d'aperçu)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le code
+        uses: actions/checkout@v4
+
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Installer les dépendances
+        run: pip install -r requirements.txt
+
+      - name: Lancer le backfill
+        run: >-
+          python -m veille.backfill
+          --since "${{ inputs.since }}"
+          --until "${{ inputs.until }}"
+          --max-tweets "${{ inputs.max_tweets }}"
+          ${{ inputs.write && '--write' || '' }}
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          TWITTERAPI_IO_KEY: ${{ secrets.TWITTERAPI_IO_KEY }}
+
+      - name: Sauvegarder feed.json / seen.json
+        if: ${{ inputs.write }}
+        run: |
+          if [ -n "$(git status --porcelain feed.json seen.json)" ]; then
+            git config user.name "veille-bot"
+            git config user.email "veille-bot@users.noreply.github.com"
+            git add feed.json seen.json
+            git commit -m "data: backfill feed.json (${{ inputs.since }} → ${{ inputs.until }})"
+            git push
+          else
+            echo "Aucune donnée générée."
+          fi

@@ -18,6 +18,7 @@ from datetime import datetime, timezone
 
 from .config import load_settings
 from .digest import build_digest
+from .feed import append_entries, select_and_write_entries
 from .telegram import send_message
 from .twitter import collect_recent_tweets
 
@@ -49,6 +50,16 @@ def run(config_path: str, *, dry_run: bool) -> int:
         include_replies=settings.include_replies,
     )
 
+    # ── Sortie b) feed.json (pour le site) — à partir de la même collecte ──
+    #  En dry-run on n'écrit pas le feed (juste un aperçu du nombre d'entrées).
+    if tweets:
+        feed_entries = select_and_write_entries(tweets, settings, label="quotidien")
+        if dry_run:
+            logging.info("[dry-run] %d entrées feed.json seraient ajoutées.", len(feed_entries))
+        else:
+            append_entries(feed_entries, feed_path=settings.feed_path, seen_path=settings.seen_path)
+
+    # ── Sortie a) digest Telegram ─────────────────────────────────────────
     if not tweets:
         logging.info("Aucun tweet pertinent sur la fenêtre.")
         if not settings.send_when_empty:

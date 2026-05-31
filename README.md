@@ -71,6 +71,59 @@ python -m veille.main
 Le mode `--dry-run` n'a même pas besoin des secrets Telegram : il affiche
 juste le digest qui *serait* publié.
 
+## Deux sorties à partir de la même collecte
+
+À chaque run, le bot produit :
+
+1. **Digest Telegram** (push quotidien ~7h) — résumé thématique sur le canal.
+2. **`feed.json`** — donnée structurée que le **site** (`knowledge-hub`) consomme.
+   Cumulatif : chaque run *append* les nouveaux sujets marquants sans réécrire,
+   en dédupliquant via `seen.json`.
+
+### Contrat `feed.json`
+
+Tableau d'entrées, une par sujet marquant (jour creux = aucune entrée) :
+
+```json
+[
+  {
+    "date": "2026-05-19",
+    "titre_fr": "Titre court factuel",
+    "resume_fr": "Résumé FR neutre, transformatif (jamais de recopie du tweet).",
+    "tags": ["anthropic", "talents"],
+    "tweet_url": "https://x.com/.../status/...",
+    "media": true,
+    "auteur_x": "@..."
+  }
+]
+```
+
+> **Copyright (règle dure)** : jamais de tweet recopié mot pour mot. Toujours
+> résumé / traduction FR (notre texte) + lien source.
+
+### Backfill (contenu de lancement)
+
+Pour générer un `feed.json` initial couvrant une période passée (mai 2026) :
+
+```bash
+# Aperçu sans rien écrire (borné à 600 tweets par défaut) :
+python -m veille.backfill
+
+# Génère réellement feed.json + seen.json :
+python -m veille.backfill --write
+```
+
+Ou via GitHub : onglet **Actions → Backfill feed.json → Run workflow** (coche
+« Écrire feed.json »). ⚠️ Consomme du budget twitterapi.io — plafond strict.
+
+### Bridge vers le site (`knowledge-hub`)
+
+Le run pousse `feed.json` dans le repo du site **uniquement si** le secret
+`KH_REPO_TOKEN` est défini (un token avec accès en écriture à `knowledge-hub`).
+Tant qu'il n'existe pas, l'étape est silencieusement sautée et `feed.json` reste
+versionné dans ce repo. Ajuste `KH_REPO` / `KH_FEED_PATH` dans
+`.github/workflows/veille.yml` au repo et chemin réels du site.
+
 ## Structure du projet
 
 ```
@@ -78,14 +131,19 @@ veille-ia/
 ├── config.yaml              ← les comptes à suivre + réglages (à éditer)
 ├── requirements.txt
 ├── .env.example             ← modèle pour tester en local
+├── feed.json                ← donnée structurée pour le site (généré, cumulatif)
+├── seen.json                ← mémoire des tweets déjà traités (dédup)
 ├── veille/
 │   ├── config.py            ← chargement config + secrets
-│   ├── twitter.py           ← récupération des tweets (twitterapi.io)
-│   ├── digest.py            ← rédaction du digest (Claude)
+│   ├── twitter.py           ← récupération des tweets + advanced_search (backfill)
+│   ├── digest.py            ← rédaction du digest Telegram (Claude)
+│   ├── feed.py              ← génération feed.json structuré (Claude) + dédup
 │   ├── telegram.py          ← publication sur Telegram
-│   └── main.py              ← orchestration
+│   ├── backfill.py          ← génération one-shot du feed.json initial
+│   └── main.py              ← orchestration (Telegram + feed.json)
 └── .github/workflows/
-    └── veille.yml           ← le cron quotidien
+    ├── veille.yml           ← le cron quotidien (Telegram + feed.json + bridge)
+    └── backfill.yml         ← backfill manuel
 ```
 
 ## Réglages utiles (`config.yaml`)

@@ -23,6 +23,8 @@ class Settings:
     model: str = "claude-opus-4-8"
     language: str = "français"
     send_when_empty: bool = False
+    feed_path: str = "feed.json"
+    seen_path: str = "seen.json"
 
     # Secrets (depuis l'environnement / GitHub Secrets)
     anthropic_api_key: str = ""
@@ -77,6 +79,8 @@ def load_settings(config_path: str | Path = "config.yaml") -> Settings:
         model=str(raw.get("model", "claude-opus-4-8")),
         language=str(raw.get("language", "français")),
         send_when_empty=bool(raw.get("send_when_empty", False)),
+        feed_path=str(raw.get("feed_path", "feed.json")),
+        seen_path=str(raw.get("seen_path", "seen.json")),
         anthropic_api_key=os.environ.get("ANTHROPIC_API_KEY", ""),
         twitterapi_io_key=os.environ.get("TWITTERAPI_IO_KEY", ""),
         telegram_bot_token=os.environ.get("TELEGRAM_BOT_TOKEN", ""),
