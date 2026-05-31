@@ -1,0 +1,41 @@
+name: Veille IA
+
+# ─────────────────────────────────────────────────────────────
+#  Lance le bot automatiquement chaque matin, et permet aussi un
+#  déclenchement manuel depuis l'onglet "Actions" de GitHub.
+# ─────────────────────────────────────────────────────────────
+on:
+  schedule:
+    # 06:00 UTC ≈ 7h à Paris en hiver / 8h en été.
+    # (GitHub Actions raisonne en UTC ; ajuste si besoin.)
+    - cron: "0 6 * * *"
+  workflow_dispatch: {}
+
+# Évite deux exécutions simultanées.
+concurrency:
+  group: veille-ia
+  cancel-in-progress: false
+
+jobs:
+  veille:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le code
+        uses: actions/checkout@v4
+
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Installer les dépendances
+        run: pip install -r requirements.txt
+
+      - name: Lancer la veille
+        run: python -m veille.main
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          TWITTERAPI_IO_KEY: ${{ secrets.TWITTERAPI_IO_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}

@@ -1,0 +1,14 @@
+# Secrets — ne JAMAIS committer
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.python-version
+
+# Sorties locales / debug
+*.log
+digest_*.html

@@ -1,0 +1,41 @@
+# ═══════════════════════════════════════════════════════════════
+#  Configuration du bot de veille IA
+#  C'est LE fichier à éditer au quotidien. Pas besoin de toucher au code.
+# ═══════════════════════════════════════════════════════════════
+
+# ── Comptes Twitter / X à suivre ──────────────────────────────
+#  Mets le nom du compte SANS le @ (un par ligne, précédé d'un tiret).
+#  Tu peux en ajouter/retirer autant que tu veux.
+accounts:
+  - AnthropicAI        # Anthropic (Claude)
+  - OpenAI             # OpenAI (ChatGPT)
+  - GoogleDeepMind     # Google DeepMind
+  - sama               # Sam Altman
+  - karpathy           # Andrej Karpathy
+  - AndrewYNg          # Andrew Ng
+  - mistralai          # Mistral AI
+  - huggingface        # Hugging Face
+  - _akhaliq           # AK (résumés de papiers IA)
+  - rowancheung        # Rowan Cheung (actu IA grand public)
+
+# ── Fenêtre de récupération ───────────────────────────────────
+#  On ne garde que les tweets publiés dans les N dernières heures.
+#  24 = la dernière journée (parfait pour un digest quotidien).
+lookback_hours: 24
+
+#  Nombre max de tweets récupérés par compte (avant filtrage).
+max_tweets_per_account: 20
+
+# ── Filtres anti-bruit ────────────────────────────────────────
+include_retweets: false   # ignorer les simples retweets
+include_replies: false    # ignorer les réponses à d'autres tweets
+
+# ── Rédaction du digest ───────────────────────────────────────
+#  Modèle Claude utilisé pour rédiger. claude-opus-4-8 = le plus
+#  qualitatif. Pour réduire le coût, tu peux mettre claude-sonnet-4-6.
+model: claude-opus-4-8
+language: français
+
+# ── Comportement ──────────────────────────────────────────────
+#  Publier un message même quand il n'y a aucune actu ?
+send_when_empty: false
