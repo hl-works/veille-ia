@@ -7,16 +7,59 @@
 #  Mets le nom du compte SANS le @ (un par ligne, précédé d'un tiret).
 #  Tu peux en ajouter/retirer autant que tu veux.
 accounts:
+  # — Labs & produits IA —
+  - perplexity_ai      # Perplexity
+  - AskPerplexity      # Perplexity (compte produit)
   - AnthropicAI        # Anthropic (Claude)
-  - OpenAI             # OpenAI (ChatGPT)
-  - GoogleDeepMind     # Google DeepMind
-  - sama               # Sam Altman
+  - GoogleAI           # Google AI
+  - MistralAI          # Mistral AI
+  - stitchbygoogle     # Stitch by Google (génération d'UI)
+
+  # — Chercheurs & figures de l'IA —
   - karpathy           # Andrej Karpathy
-  - AndrewYNg          # Andrew Ng
-  - mistralai          # Mistral AI
-  - huggingface        # Hugging Face
-  - _akhaliq           # AK (résumés de papiers IA)
-  - rowancheung        # Rowan Cheung (actu IA grand public)
+  - TheZvi             # Zvi Mowshowitz (analyses IA / risques)
+  - simonw             # Simon Willison (outils, LLM en pratique)
+  - natolambert        # Nathan Lambert (Allen AI, modèles ouverts)
+  - polynoamial        # Noam Brown (raisonnement, OpenAI)
+  - gdb                # Greg Brockman (OpenAI)
+  - sama               # Sam Altman (OpenAI)
+  - DarioAmodei        # Dario Amodei (CEO Anthropic)
+  - DrJimFan           # Jim Fan (NVIDIA, robotique / AGI physique)
+  - emollick           # Ethan Mollick (IA appliquée, Wharton)
+  - fchollet           # François Chollet (créateur de Keras)
+  - RamaswmySridhar    # Sridhar Ramaswamy (CEO Snowflake)
+
+  # — Investisseurs & écosystème —
+  - venturetwins       # Justine Moore (a16z)
+  - saranormous        # Sarah Guo (Conviction)
+  - ycombinator        # Y Combinator
+  - garrytan           # Garry Tan (CEO Y Combinator)
+
+  # — Builders / Claude Code / agents —
+  - AlexReibman        # Alex Reibman (AgentOps)
+  - trq212             # Thariq (Claude Code, Anthropic)
+  - bcherny            # Boris Cherny (Claude Code, Anthropic)
+  - jordymaui          # Jordy (agents, communauté)
+  - OfficialLoganK     # Logan Kilpatrick (Gemini, Google)
+
+  # — IA × business / Shopify / e-commerce —
+  - mikefutia          # Mike Futia (IA pour pub & e-commerce)
+  - jessicarhertz      # Jessica Hertz (COO Shopify)
+  - ShopifyDevs        # Shopify Developers
+  - harleyf            # Harley Finkelstein (Président Shopify)
+  - coreyganim         # Corey Ganim (IA pour entrepreneurs non-tech)
+
+  # ── SUGGESTIONS (dans ton style) ────────────────────────────
+  #  Comptes complémentaires que je te propose. Supprime ce bloc
+  #  d'un coup si tu n'en veux pas.
+  - OpenAI             # OpenAI (le compte du labo, pas juste ses fondateurs)
+  - GoogleDeepMind     # Google DeepMind (recherche de pointe)
+  - xai                # xAI / Grok (labo frontière qui manque à ta liste)
+  - alexalbert__       # Alex Albert (Anthropic, dans la lignée Claude Code)
+  - cursor_ai          # Cursor (éditeur de code IA, pour les builders)
+  - rowancheung        # Rowan Cheung (actu IA synthétique, grand public)
+  - gregisenberg       # Greg Isenberg (idées startup × IA, fibre entrepreneur)
+  - ylecun             # Yann LeCun (grande voix IA / débats de fond)
 
 # ── Fenêtre de récupération ───────────────────────────────────
 #  On ne garde que les tweets publiés dans les N dernières heures.
