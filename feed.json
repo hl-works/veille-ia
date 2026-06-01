@@ -1472,5 +1472,19 @@
     "tweet_url": "https://x.com/sama/status/2061101875303530871",
     "media": false,
     "auteur_x": "@sama"
+  },
+  {
+    "date": "2026-05-31",
+    "titre_fr": "OpenAI met à jour son modèle vocal temps réel",
+    "resume_fr": "GPT Realtime 2.0 apporte un raisonnement de niveau GPT-5 aux agents vocaux, avec traduction multilingue en temps réel (70+ langues en entrée) et un contexte étendu. L'enjeu présenté est de rendre les assistants vocaux capables de « réfléchir » pendant qu'ils parlent.",
+    "tags": [
+      "openai",
+      "modeles",
+      "produit",
+      "agents"
+    ],
+    "tweet_url": "https://x.com/gregisenberg/status/2061129813750915508",
+    "media": false,
+    "auteur_x": "@gregisenberg"
   }
 ]
