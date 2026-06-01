@@ -65,10 +65,10 @@ jobs:
           fi
 
       # Bridge vers le site : pousse feed.json dans knowledge-hub.
-      # NE S'ACTIVE QUE si le secret KH_REPO_TOKEN est défini → tant que le
-      # site n'est pas prêt, cette étape est silencieusement sautée.
+      # Le garde-fou « token absent → on saute » est dans le script (le
+      # contexte `secrets` n'est PAS autorisé dans un `if:` GitHub Actions).
       - name: Publier feed.json vers knowledge-hub
-        if: ${{ !inputs.dry_run && secrets.KH_REPO_TOKEN != '' }}
+        if: ${{ !inputs.dry_run }}
         env:
           KH_REPO_TOKEN: ${{ secrets.KH_REPO_TOKEN }}
           KH_REPO: hugolahutte/knowledge-hub
@@ -76,6 +76,11 @@ jobs:
           KH_FEED_PATH: veille-ia/feed.json
         run: |
           set -e
+          # Tant que le site n'est pas prêt (pas de token), on saute proprement.
+          if [ -z "$KH_REPO_TOKEN" ]; then
+            echo "KH_REPO_TOKEN absent → bridge désactivé, publication site sautée."
+            exit 0
+          fi
           # Garde-fou : ne jamais pousser un JSON invalide (sinon la page site
           # affiche « Veille indisponible »).
           python -c "import json; json.load(open('feed.json'))"
