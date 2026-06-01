@@ -5,11 +5,14 @@
     "resume_fr": "xAI propose désormais le clonage de voix via son API : création d'une voix personnalisée en moins de deux minutes ou choix parmi plus de 80 voix dans 28 langues, pour des agents vocaux, livres audio ou personnages de jeux.",
     "tags": [
       "xai",
-      "produit"
+      "produit",
+      "service-client",
+      "automatisation"
     ],
     "tweet_url": "https://x.com/xai/status/2050355373052223585",
     "media": true,
-    "auteur_x": "@xai"
+    "auteur_x": "@xai",
+    "score": 62
   },
   {
     "date": "2026-05-04",
@@ -21,18 +24,22 @@
     ],
     "tweet_url": "https://x.com/rowancheung/status/2051320518905930208",
     "media": true,
-    "auteur_x": "@rowancheung"
+    "auteur_x": "@rowancheung",
+    "score": 22
   },
   {
     "date": "2026-05-04",
     "titre_fr": "Perplexity Computer arrive dans Microsoft Teams",
     "resume_fr": "Perplexity intègre son outil Computer à Microsoft Teams, permettant recherche, analyse et création de documents directement dans l'espace de travail Teams.",
     "tags": [
-      "produit"
+      "produit",
+      "automatisation",
+      "saas"
     ],
     "tweet_url": "https://x.com/perplexity_ai/status/2051362717630632084",
     "media": true,
-    "auteur_x": "@perplexity_ai"
+    "auteur_x": "@perplexity_ai",
+    "score": 54
   },
   {
     "date": "2026-05-05",
@@ -44,7 +51,8 @@
     ],
     "tweet_url": "https://x.com/xai/status/2051703217697010103",
     "media": true,
-    "auteur_x": "@xai"
+    "auteur_x": "@xai",
+    "score": 50
   },
   {
     "date": "2026-05-05",
@@ -57,7 +65,8 @@
     ],
     "tweet_url": "https://x.com/OpenAI/status/2051709028250915275",
     "media": true,
-    "auteur_x": "@OpenAI"
+    "auteur_x": "@OpenAI",
+    "score": 70
   },
   {
     "date": "2026-05-05",
@@ -68,7 +77,8 @@
     ],
     "tweet_url": "https://x.com/perplexity_ai/status/2051693893473935372",
     "media": true,
-    "auteur_x": "@perplexity_ai"
+    "auteur_x": "@perplexity_ai",
+    "score": 40
   },
   {
     "date": "2026-05-05",
@@ -80,7 +90,8 @@
     ],
     "tweet_url": "https://x.com/AnthropicAI/status/2051718308702081047",
     "media": false,
-    "auteur_x": "@AnthropicAI"
+    "auteur_x": "@AnthropicAI",
+    "score": 20
   },
   {
     "date": "2026-05-05",
@@ -92,7 +103,8 @@
     ],
     "tweet_url": "https://x.com/AnthropicAI/status/2051758528562364902",
     "media": false,
-    "auteur_x": "@AnthropicAI"
+    "auteur_x": "@AnthropicAI",
+    "score": 18
   },
   {
     "date": "2026-05-05",
@@ -104,7 +116,8 @@
     ],
     "tweet_url": "https://x.com/cursor_ai/status/2051739625958584659",
     "media": true,
-    "auteur_x": "@cursor_ai"
+    "auteur_x": "@cursor_ai",
+    "score": 32
   },
   {
     "date": "2026-05-05",
@@ -117,7 +130,8 @@
     ],
     "tweet_url": "https://x.com/claudeai/status/2051679629488865498",
     "media": true,
-    "auteur_x": "@claudeai"
+    "auteur_x": "@claudeai",
+    "score": 45
   },
   {
     "date": "2026-05-06",
@@ -130,7 +144,8 @@
     ],
     "tweet_url": "https://x.com/xai/status/2052060350770515978",
     "media": true,
-    "auteur_x": "@xai"
+    "auteur_x": "@xai",
+    "score": 28
   },
   {
     "date": "2026-05-06",
@@ -143,7 +158,8 @@
     ],
     "tweet_url": "https://x.com/OpenAI/status/2052025532485902368",
     "media": false,
-    "auteur_x": "@OpenAI"
+    "auteur_x": "@OpenAI",
+    "score": 20
   },
   {
     "date": "2026-05-06",
@@ -156,7 +172,8 @@
     ],
     "tweet_url": "https://x.com/GoogleDeepMind/status/2052011542707630461",
     "media": true,
-    "auteur_x": "@GoogleDeepMind"
+    "auteur_x": "@GoogleDeepMind",
+    "score": 25
   },
   {
     "date": "2026-05-06",
@@ -169,7 +186,8 @@
     ],
     "tweet_url": "https://x.com/claudeai/status/2052060691893227611",
     "media": false,
-    "auteur_x": "@claudeai"
+    "auteur_x": "@claudeai",
+    "score": 35
   },
   {
     "date": "2026-05-06",
@@ -182,7 +200,8 @@
     ],
     "tweet_url": "https://x.com/claudeai/status/2052067399088664981",
     "media": true,
-    "auteur_x": "@claudeai"
+    "auteur_x": "@claudeai",
+    "score": 40
   },
   {
     "date": "2026-05-07",
@@ -191,11 +210,14 @@
     "tags": [
       "xai",
       "produit",
-      "modeles"
+      "modeles",
+      "marketing",
+      "pub"
     ],
     "tweet_url": "https://x.com/xai/status/2052193877675983031",
     "media": false,
-    "auteur_x": "@xai"
+    "auteur_x": "@xai",
+    "score": 62
   },
   {
     "date": "2026-05-07",
@@ -207,7 +229,8 @@
     ],
     "tweet_url": "https://x.com/AnthropicAI/status/2052385812881228218",
     "media": false,
-    "auteur_x": "@AnthropicAI"
+    "auteur_x": "@AnthropicAI",
+    "score": 18
   },
   {
     "date": "2026-05-07",
@@ -220,7 +243,8 @@
     ],
     "tweet_url": "https://x.com/GoogleDeepMind/status/2052403306257940967",
     "media": true,
-    "auteur_x": "@GoogleDeepMind"
+    "auteur_x": "@GoogleDeepMind",
+    "score": 28
   },
   {
     "date": "2026-05-07",
@@ -232,7 +256,8 @@
     ],
     "tweet_url": "https://x.com/AnthropicAI/status/2052435436157452769",
     "media": true,
-    "auteur_x": "@AnthropicAI"
+    "auteur_x": "@AnthropicAI",
+    "score": 15
   },
   {
     "date": "2026-05-07",
@@ -242,11 +267,13 @@
       "openai",
       "modeles",
       "produit",
-      "agents"
+      "agents",
+      "service-client"
     ],
     "tweet_url": "https://x.com/OpenAI/status/2052438194625593804",
     "media": true,
-    "auteur_x": "@OpenAI"
+    "auteur_x": "@OpenAI",
+    "score": 62
   },
   {
     "date": "2026-05-07",
@@ -254,11 +281,13 @@
     "resume_fr": "Perplexity ouvre à tous une application Mac intégrant « Personal Computer », une version avancée capable d'exécuter des tâches sur les fichiers locaux, les apps natives, le web et les serveurs de Perplexity.",
     "tags": [
       "produit",
-      "agents"
+      "agents",
+      "automatisation"
     ],
     "tweet_url": "https://x.com/perplexity_ai/status/2052445405754040816",
     "media": true,
-    "auteur_x": "@perplexity_ai"
+    "auteur_x": "@perplexity_ai",
+    "score": 52
   },
   {
     "date": "2026-05-07",
@@ -266,11 +295,14 @@
     "resume_fr": "Anthropic rend généralement disponibles Claude pour Excel, PowerPoint et Word, tandis que Claude pour Outlook passe en bêta publique. L'assistant conserve le contexte de conversation en passant d'une application à l'autre.",
     "tags": [
       "anthropic",
-      "produit"
+      "produit",
+      "automatisation",
+      "saas"
     ],
     "tweet_url": "https://x.com/claudeai/status/2052445786651168849",
     "media": true,
-    "auteur_x": "@claudeai"
+    "auteur_x": "@claudeai",
+    "score": 72
   },
   {
     "date": "2026-05-07",
@@ -283,7 +315,8 @@
     ],
     "tweet_url": "https://x.com/OpenAI/status/2052480800004956323",
     "media": true,
-    "auteur_x": "@OpenAI"
+    "auteur_x": "@OpenAI",
+    "score": 34
   },
   {
     "date": "2026-05-07",
@@ -296,7 +329,8 @@
     ],
     "tweet_url": "https://x.com/AnthropicAI/status/2052494460966019137",
     "media": false,
-    "auteur_x": "@AnthropicAI"
+    "auteur_x": "@AnthropicAI",
+    "score": 15
   },
   {
     "date": "2026-05-07",
@@ -305,11 +339,13 @@
     "tags": [
       "xai",
       "produit",
-      "agents"
+      "agents",
+      "service-client"
     ],
     "tweet_url": "https://x.com/xai/status/2052529102280880234",
     "media": true,
-    "auteur_x": "@xai"
+    "auteur_x": "@xai",
+    "score": 65
   },
   {
     "date": "2026-05-08",
@@ -322,7 +358,8 @@
     ],
     "tweet_url": "https://x.com/GoogleAI/status/2052789253038592466",
     "media": false,
-    "auteur_x": "@GoogleAI"
+    "auteur_x": "@GoogleAI",
+    "score": 52
   },
   {
     "date": "2026-05-08",
@@ -334,7 +371,8 @@
     ],
     "tweet_url": "https://x.com/AnthropicAI/status/2052808787514228772",
     "media": false,
-    "auteur_x": "@AnthropicAI"
+    "auteur_x": "@AnthropicAI",
+    "score": 40
   },
   {
     "date": "2026-05-08",
@@ -346,7 +384,8 @@
     ],
     "tweet_url": "https://x.com/OpenAI/status/2052845764507062349",
     "media": false,
-    "auteur_x": "@OpenAI"
+    "auteur_x": "@OpenAI",
+    "score": 34
   },
   {
     "date": "2026-05-08",
@@ -358,7 +397,8 @@
     ],
     "tweet_url": "https://x.com/alexalbert__/status/2052899864493830590",
     "media": true,
-    "auteur_x": "@alexalbert__"
+    "auteur_x": "@alexalbert__",
+    "score": 40
   },
   {
     "date": "2026-05-11",
@@ -366,11 +406,13 @@
     "resume_fr": "OpenAI crée une entité majoritairement détenue et contrôlée par elle, regroupant 19 cabinets d'investissement, de conseil et d'intégration, pour aider les entreprises à déployer ses modèles en production.",
     "tags": [
       "openai",
-      "produit"
+      "produit",
+      "automatisation"
     ],
     "tweet_url": "https://x.com/OpenAI/status/2053824997777457651",
     "media": false,
-    "auteur_x": "@OpenAI"
+    "auteur_x": "@OpenAI",
+    "score": 58
   },
   {
     "date": "2026-05-11",
@@ -378,11 +420,13 @@
     "resume_fr": "Anthropic annonce la disponibilité générale de la plateforme Claude sur AWS : les clients accèdent à l'ensemble des fonctionnalités de l'API Claude avec l'authentification, la facturation et les engagements gérés par AWS.",
     "tags": [
       "anthropic",
-      "produit"
+      "produit",
+      "saas"
     ],
     "tweet_url": "https://x.com/claudeai/status/2053868592286822443",
     "media": true,
-    "auteur_x": "@claudeai"
+    "auteur_x": "@claudeai",
+    "score": 50
   },
   {
     "date": "2026-05-11",
@@ -394,7 +438,8 @@
     ],
     "tweet_url": "https://x.com/OpenAI/status/2053939702110269822",
     "media": true,
-    "auteur_x": "@OpenAI"
+    "auteur_x": "@OpenAI",
+    "score": 42
   },
   {
     "date": "2026-05-11",
@@ -407,7 +452,8 @@
     ],
     "tweet_url": "https://x.com/claudeai/status/2053940934736228454",
     "media": true,
-    "auteur_x": "@claudeai"
+    "auteur_x": "@claudeai",
+    "score": 40
   },
   {
     "date": "2026-05-11",
@@ -415,11 +461,13 @@
     "resume_fr": "Cursor est désormais accessible dans Microsoft Teams : en mentionnant l'agent dans un canal, on peut lui déléguer des tâches ou récupérer des informations issues de Cursor.",
     "tags": [
       "produit",
-      "agents"
+      "agents",
+      "automatisation"
     ],
     "tweet_url": "https://x.com/cursor_ai/status/2053939390410612988",
     "media": true,
-    "auteur_x": "@cursor_ai"
+    "auteur_x": "@cursor_ai",
+    "score": 46
   },
   {
     "date": "2026-05-12",
@@ -431,7 +479,8 @@
     ],
     "tweet_url": "https://x.com/perplexity_ai/status/2054204402144350450",
     "media": true,
-    "auteur_x": "@perplexity_ai"
+    "auteur_x": "@perplexity_ai",
+    "score": 30
   },
   {
     "date": "2026-05-12",
@@ -444,7 +493,8 @@
     ],
     "tweet_url": "https://x.com/GoogleDeepMind/status/2054246119635300451",
     "media": true,
-    "auteur_x": "@GoogleDeepMind"
+    "auteur_x": "@GoogleDeepMind",
+    "score": 48
   },
   {
     "date": "2026-05-12",
@@ -457,7 +507,8 @@
     ],
     "tweet_url": "https://x.com/cursor_ai/status/2054274305345618163",
     "media": false,
-    "auteur_x": "@cursor_ai"
+    "auteur_x": "@cursor_ai",
+    "score": 35
   },
   {
     "date": "2026-05-13",
@@ -470,7 +521,8 @@
     ],
     "tweet_url": "https://x.com/alexalbert__/status/2054613082589298899",
     "media": false,
-    "auteur_x": "@alexalbert__"
+    "auteur_x": "@alexalbert__",
+    "score": 42
   },
   {
     "date": "2026-05-13",
@@ -483,7 +535,8 @@
     ],
     "tweet_url": "https://x.com/sama/status/2054626219858293128",
     "media": false,
-    "auteur_x": "@sama"
+    "auteur_x": "@sama",
+    "score": 46
   },
   {
     "date": "2026-05-13",
@@ -495,7 +548,8 @@
     ],
     "tweet_url": "https://x.com/cursor_ai/status/2054651526715502998",
     "media": true,
-    "auteur_x": "@cursor_ai"
+    "auteur_x": "@cursor_ai",
+    "score": 38
   },
   {
     "date": "2026-05-14",
@@ -507,7 +561,8 @@
     ],
     "tweet_url": "https://x.com/AnthropicAI/status/2054941901900611787",
     "media": false,
-    "auteur_x": "@AnthropicAI"
+    "auteur_x": "@AnthropicAI",
+    "score": 45
   },
   {
     "date": "2026-05-14",
@@ -515,11 +570,14 @@
     "resume_fr": "L'outil Perplexity Computer peut désormais interroger des données en direct dans un entrepôt Snowflake et fournir des réponses avec requêtes SQL, tables sources, filtres et métriques.",
     "tags": [
       "produit",
-      "agents"
+      "agents",
+      "automatisation",
+      "saas"
     ],
     "tweet_url": "https://x.com/perplexity_ai/status/2054945872451129506",
     "media": true,
-    "auteur_x": "@perplexity_ai"
+    "auteur_x": "@perplexity_ai",
+    "score": 46
   },
   {
     "date": "2026-05-14",
@@ -531,7 +589,8 @@
     ],
     "tweet_url": "https://x.com/AnthropicAI/status/2054987444664377374",
     "media": false,
-    "auteur_x": "@AnthropicAI"
+    "auteur_x": "@AnthropicAI",
+    "score": 40
   },
   {
     "date": "2026-05-14",
@@ -544,7 +603,8 @@
     ],
     "tweet_url": "https://x.com/xai/status/2054993285152989373",
     "media": true,
-    "auteur_x": "@xai"
+    "auteur_x": "@xai",
+    "score": 40
   },
   {
     "date": "2026-05-14",
@@ -557,7 +617,8 @@
     ],
     "tweet_url": "https://x.com/OpenAI/status/2055016850849993072",
     "media": true,
-    "auteur_x": "@OpenAI"
+    "auteur_x": "@OpenAI",
+    "score": 48
   },
   {
     "date": "2026-05-14",
@@ -568,7 +629,8 @@
     ],
     "tweet_url": "https://x.com/saranormous/status/2055045242425135497",
     "media": false,
-    "auteur_x": "@saranormous"
+    "auteur_x": "@saranormous",
+    "score": 45
   },
   {
     "date": "2026-05-15",
@@ -581,7 +643,8 @@
     ],
     "tweet_url": "https://x.com/xai/status/2055375676656783733",
     "media": true,
-    "auteur_x": "@xai"
+    "auteur_x": "@xai",
+    "score": 30
   },
   {
     "date": "2026-05-18",
@@ -589,11 +652,17 @@
     "resume_fr": "Shopify ouvre à tous les marchands son Universal Commerce Protocol (UCP), qui permet à des agents IA de rechercher dans le catalogue de produits, de constituer des paniers et de finaliser des achats.",
     "tags": [
       "produit",
-      "agents"
+      "agents",
+      "commerce",
+      "shopify",
+      "vente",
+      "paiement",
+      "automatisation"
     ],
     "tweet_url": "https://x.com/ShopifyDevs/status/2056406304046866586",
     "media": true,
-    "auteur_x": "@ShopifyDevs"
+    "auteur_x": "@ShopifyDevs",
+    "score": 86
   },
   {
     "date": "2026-05-18",
@@ -606,7 +675,8 @@
     ],
     "tweet_url": "https://x.com/cursor_ai/status/2056415413077233983",
     "media": true,
-    "auteur_x": "@cursor_ai"
+    "auteur_x": "@cursor_ai",
+    "score": 42
   },
   {
     "date": "2026-05-18",
@@ -619,7 +689,8 @@
     ],
     "tweet_url": "https://x.com/AnthropicAI/status/2056419620643541012",
     "media": false,
-    "auteur_x": "@AnthropicAI"
+    "auteur_x": "@AnthropicAI",
+    "score": 35
   },
   {
     "date": "2026-05-18",
@@ -627,11 +698,13 @@
     "resume_fr": "OpenAI déploie ChatGPT Images 2.0 en Inde, où plus d'un milliard d'images auraient déjà été générées selon Sam Altman.",
     "tags": [
       "openai",
-      "produit"
+      "produit",
+      "marketing"
     ],
     "tweet_url": "https://x.com/sama/status/2056165722804654196",
     "media": false,
-    "auteur_x": "@sama"
+    "auteur_x": "@sama",
+    "score": 46
   },
   {
     "date": "2026-05-19",
@@ -643,7 +716,8 @@
     ],
     "tweet_url": "https://x.com/karpathy/status/2056753169888334312",
     "media": false,
-    "auteur_x": "@karpathy"
+    "auteur_x": "@karpathy",
+    "score": 55
   },
   {
     "date": "2026-05-19",
@@ -655,7 +729,8 @@
     ],
     "tweet_url": "https://x.com/GoogleDeepMind/status/2056787987774816525",
     "media": true,
-    "auteur_x": "@GoogleDeepMind"
+    "auteur_x": "@GoogleDeepMind",
+    "score": 75
   },
   {
     "date": "2026-05-19",
@@ -664,11 +739,13 @@
     "tags": [
       "google",
       "modeles",
-      "produit"
+      "produit",
+      "marketing"
     ],
     "tweet_url": "https://x.com/GoogleDeepMind/status/2056786446636212467",
     "media": true,
-    "auteur_x": "@GoogleDeepMind"
+    "auteur_x": "@GoogleDeepMind",
+    "score": 64
   },
   {
     "date": "2026-05-19",
@@ -681,7 +758,8 @@
     ],
     "tweet_url": "https://x.com/OpenAI/status/2056823271774101907",
     "media": false,
-    "auteur_x": "@OpenAI"
+    "auteur_x": "@OpenAI",
+    "score": 34
   },
   {
     "date": "2026-05-19",
@@ -693,7 +771,8 @@
     ],
     "tweet_url": "https://x.com/OpenAI/status/2056793648571011232",
     "media": false,
-    "auteur_x": "@OpenAI"
+    "auteur_x": "@OpenAI",
+    "score": 45
   },
   {
     "date": "2026-05-19",
@@ -706,7 +785,8 @@
     ],
     "tweet_url": "https://x.com/claudeai/status/2056645485696315581",
     "media": true,
-    "auteur_x": "@claudeai"
+    "auteur_x": "@claudeai",
+    "score": 40
   },
   {
     "date": "2026-05-19",
@@ -718,7 +798,8 @@
     ],
     "tweet_url": "https://x.com/cursor_ai/status/2056803731367456993",
     "media": true,
-    "auteur_x": "@cursor_ai"
+    "auteur_x": "@cursor_ai",
+    "score": 40
   },
   {
     "date": "2026-05-19",
@@ -731,7 +812,8 @@
     ],
     "tweet_url": "https://x.com/trq212/status/2056777186062032964",
     "media": false,
-    "auteur_x": "@trq212"
+    "auteur_x": "@trq212",
+    "score": 38
   },
   {
     "date": "2026-05-19",
@@ -744,7 +826,8 @@
     ],
     "tweet_url": "https://x.com/GoogleDeepMind/status/2056808869242826957",
     "media": true,
-    "auteur_x": "@GoogleDeepMind"
+    "auteur_x": "@GoogleDeepMind",
+    "score": 30
   },
   {
     "date": "2026-05-19",
@@ -752,11 +835,13 @@
     "resume_fr": "Google déploie mondialement une nouvelle barre de recherche intelligente s'appuyant sur Gemini 3.5, combinant AI Overviews et AI Mode en une seule expérience. Elle accepte texte, images, fichiers et vidéos et permet des questions de suivi.",
     "tags": [
       "google",
-      "produit"
+      "produit",
+      "marketing"
     ],
     "tweet_url": "https://x.com/GoogleAI/status/2056845506601718271",
     "media": true,
-    "auteur_x": "@GoogleAI"
+    "auteur_x": "@GoogleAI",
+    "score": 72
   },
   {
     "date": "2026-05-19",
@@ -765,11 +850,13 @@
     "tags": [
       "google",
       "agents",
-      "produit"
+      "produit",
+      "automatisation"
     ],
     "tweet_url": "https://x.com/GoogleAI/status/2056859455833473091",
     "media": true,
-    "auteur_x": "@GoogleAI"
+    "auteur_x": "@GoogleAI",
+    "score": 68
   },
   {
     "date": "2026-05-19",
@@ -781,7 +868,8 @@
     ],
     "tweet_url": "https://x.com/sama/status/2056827105401614656",
     "media": false,
-    "auteur_x": "@sama"
+    "auteur_x": "@sama",
+    "score": 44
   },
   {
     "date": "2026-05-19",
@@ -793,7 +881,8 @@
     ],
     "tweet_url": "https://x.com/AnthropicAI/status/2056880308851708233",
     "media": false,
-    "auteur_x": "@AnthropicAI"
+    "auteur_x": "@AnthropicAI",
+    "score": 25
   },
   {
     "date": "2026-05-20",
@@ -805,7 +894,8 @@
     ],
     "tweet_url": "https://x.com/GoogleDeepMind/status/2057191598421836253",
     "media": true,
-    "auteur_x": "@GoogleDeepMind"
+    "auteur_x": "@GoogleDeepMind",
+    "score": 60
   },
   {
     "date": "2026-05-20",
@@ -817,7 +907,8 @@
     ],
     "tweet_url": "https://x.com/OpenAI/status/2057176201782075690",
     "media": true,
-    "auteur_x": "@OpenAI"
+    "auteur_x": "@OpenAI",
+    "score": 40
   },
   {
     "date": "2026-05-20",
@@ -828,7 +919,8 @@
     ],
     "tweet_url": "https://x.com/sama/status/2056933166875857290",
     "media": false,
-    "auteur_x": "@sama"
+    "auteur_x": "@sama",
+    "score": 36
   },
   {
     "date": "2026-05-20",
@@ -836,11 +928,13 @@
     "resume_fr": "Google a annoncé Google Pics dans Workspace (création et édition d'images), des mises à jour de Flow avec le modèle Gemini Omni Flash et un agent créatif multi-étapes, l'édition en temps réel via Stitch, et un montage musical par sections dans Flow Music.",
     "tags": [
       "google",
-      "produit"
+      "produit",
+      "marketing"
     ],
     "tweet_url": "https://x.com/GoogleAI/status/2057128296538861943",
     "media": true,
-    "auteur_x": "@GoogleAI"
+    "auteur_x": "@GoogleAI",
+    "score": 60
   },
   {
     "date": "2026-05-20",
@@ -852,7 +946,8 @@
     ],
     "tweet_url": "https://x.com/GoogleAI/status/2057161311617008061",
     "media": true,
-    "auteur_x": "@GoogleAI"
+    "auteur_x": "@GoogleAI",
+    "score": 28
   },
   {
     "date": "2026-05-20",
@@ -864,7 +959,8 @@
     ],
     "tweet_url": "https://x.com/perplexity_ai/status/2057151002105753950",
     "media": true,
-    "auteur_x": "@perplexity_ai"
+    "auteur_x": "@perplexity_ai",
+    "score": 30
   },
   {
     "date": "2026-05-21",
@@ -877,7 +973,8 @@
     ],
     "tweet_url": "https://x.com/rowancheung/status/2057491344697012384",
     "media": true,
-    "auteur_x": "@rowancheung"
+    "auteur_x": "@rowancheung",
+    "score": 62
   },
   {
     "date": "2026-05-21",
@@ -889,7 +986,8 @@
     ],
     "tweet_url": "https://x.com/xai/status/2057522050923929948",
     "media": true,
-    "auteur_x": "@xai"
+    "auteur_x": "@xai",
+    "score": 35
   },
   {
     "date": "2026-05-21",
@@ -897,11 +995,13 @@
     "resume_fr": "Black Forest Labs propose une fonction d'édition contrôlée permettant d'effacer un objet ou du texte sur une image : seule la zone sélectionnée est régénérée, le reste de l'image restant intact.",
     "tags": [
       "produit",
-      "modeles"
+      "modeles",
+      "marketing"
     ],
     "tweet_url": "https://x.com/venturetwins/status/2057499354584486139",
     "media": true,
-    "auteur_x": "@venturetwins"
+    "auteur_x": "@venturetwins",
+    "score": 52
   },
   {
     "date": "2026-05-21",
@@ -913,7 +1013,8 @@
     ],
     "tweet_url": "https://x.com/bcherny/status/2057476878110261587",
     "media": true,
-    "auteur_x": "@bcherny"
+    "auteur_x": "@bcherny",
+    "score": 30
   },
   {
     "date": "2026-05-22",
@@ -926,7 +1027,8 @@
     ],
     "tweet_url": "https://x.com/OpenAI/status/2057617844800794878",
     "media": true,
-    "auteur_x": "@OpenAI"
+    "auteur_x": "@OpenAI",
+    "score": 42
   },
   {
     "date": "2026-05-22",
@@ -938,7 +1040,8 @@
     ],
     "tweet_url": "https://x.com/OfficialLoganK/status/2057682092583227881",
     "media": true,
-    "auteur_x": "@OfficialLoganK"
+    "auteur_x": "@OfficialLoganK",
+    "score": 56
   },
   {
     "date": "2026-05-22",
@@ -950,7 +1053,8 @@
     ],
     "tweet_url": "https://x.com/perplexity_ai/status/2057869990536360334",
     "media": true,
-    "auteur_x": "@perplexity_ai"
+    "auteur_x": "@perplexity_ai",
+    "score": 30
   },
   {
     "date": "2026-05-22",
@@ -963,7 +1067,8 @@
     ],
     "tweet_url": "https://x.com/GoogleDeepMind/status/2057842131142590512",
     "media": true,
-    "auteur_x": "@GoogleDeepMind"
+    "auteur_x": "@GoogleDeepMind",
+    "score": 38
   },
   {
     "date": "2026-05-22",
@@ -971,11 +1076,13 @@
     "resume_fr": "Selon Google, Gemini 3.5 Flash dépasse la version 3.1 Pro sur de nombreux cas d'usage liés à la vision tout en étant environ six fois plus rapide en moyenne. Le modèle est mis en avant pour ses capacités multimodales.",
     "tags": [
       "google",
-      "modeles"
+      "modeles",
+      "produit"
     ],
     "tweet_url": "https://x.com/OfficialLoganK/status/2057888362011463988",
     "media": true,
-    "auteur_x": "@OfficialLoganK"
+    "auteur_x": "@OfficialLoganK",
+    "score": 62
   },
   {
     "date": "2026-05-22",
@@ -987,7 +1094,8 @@
     ],
     "tweet_url": "https://x.com/GoogleDeepMind/status/2057898089621459434",
     "media": true,
-    "auteur_x": "@GoogleDeepMind"
+    "auteur_x": "@GoogleDeepMind",
+    "score": 55
   },
   {
     "date": "2026-05-22",
@@ -999,7 +1107,8 @@
     ],
     "tweet_url": "https://x.com/AnthropicAI/status/2057909102542549503",
     "media": false,
-    "auteur_x": "@AnthropicAI"
+    "auteur_x": "@AnthropicAI",
+    "score": 40
   },
   {
     "date": "2026-05-22",
@@ -1011,7 +1120,8 @@
     ],
     "tweet_url": "https://x.com/cursor_ai/status/2057913121558413770",
     "media": true,
-    "auteur_x": "@cursor_ai"
+    "auteur_x": "@cursor_ai",
+    "score": 38
   },
   {
     "date": "2026-05-23",
@@ -1023,7 +1133,8 @@
     ],
     "tweet_url": "https://x.com/GoogleDeepMind/status/2057985225100235022",
     "media": true,
-    "auteur_x": "@GoogleDeepMind"
+    "auteur_x": "@GoogleDeepMind",
+    "score": 35
   },
   {
     "date": "2026-05-25",
@@ -1032,11 +1143,13 @@
     "tags": [
       "xai",
       "produit",
-      "agents"
+      "agents",
+      "automatisation"
     ],
     "tweet_url": "https://x.com/xai/status/2058973760708091907",
     "media": true,
-    "auteur_x": "@xai"
+    "auteur_x": "@xai",
+    "score": 54
   },
   {
     "date": "2026-05-25",
@@ -1044,11 +1157,14 @@
     "resume_fr": "Google a lancé la possibilité de construire des applications Android natives directement dans AI Studio, gratuitement. Selon Logan Kilpatrick, plus de 250 000 apps ont été créées depuis le lancement, la plupart par des personnes n'ayant jamais développé pour Android.",
     "tags": [
       "google",
-      "produit"
+      "produit",
+      "no-code",
+      "automatisation"
     ],
     "tweet_url": "https://x.com/OfficialLoganK/status/2058997700218294564",
     "media": true,
-    "auteur_x": "@OfficialLoganK"
+    "auteur_x": "@OfficialLoganK",
+    "score": 70
   },
   {
     "date": "2026-05-25",
@@ -1060,7 +1176,8 @@
     ],
     "tweet_url": "https://x.com/AnthropicAI/status/2058983299092009421",
     "media": false,
-    "auteur_x": "@AnthropicAI"
+    "auteur_x": "@AnthropicAI",
+    "score": 28
   },
   {
     "date": "2026-05-26",
@@ -1073,7 +1190,8 @@
     ],
     "tweet_url": "https://x.com/GoogleDeepMind/status/2059235181274202500",
     "media": true,
-    "auteur_x": "@GoogleDeepMind"
+    "auteur_x": "@GoogleDeepMind",
+    "score": 57
   },
   {
     "date": "2026-05-26",
@@ -1085,7 +1203,8 @@
     ],
     "tweet_url": "https://x.com/natolambert/status/2059274019959128287",
     "media": true,
-    "auteur_x": "@natolambert"
+    "auteur_x": "@natolambert",
+    "score": 33
   },
   {
     "date": "2026-05-26",
@@ -1093,11 +1212,15 @@
     "resume_fr": "Shopify ajoute Perplexity à la liste des agents compatibles avec sa plateforme, dans une logique de neutralité vis-à-vis de l'agent privilégié par chaque marchand.",
     "tags": [
       "produit",
-      "agents"
+      "agents",
+      "shopify",
+      "commerce",
+      "vente"
     ],
     "tweet_url": "https://x.com/harleyf/status/2059292751431450923",
     "media": true,
-    "auteur_x": "@harleyf"
+    "auteur_x": "@harleyf",
+    "score": 80
   },
   {
     "date": "2026-05-26",
@@ -1110,7 +1233,8 @@
     ],
     "tweet_url": "https://x.com/natolambert/status/2059299103964811512",
     "media": true,
-    "auteur_x": "@natolambert"
+    "auteur_x": "@natolambert",
+    "score": 38
   },
   {
     "date": "2026-05-27",
@@ -1123,7 +1247,8 @@
     ],
     "tweet_url": "https://x.com/perplexity_ai/status/2059664738087469511",
     "media": true,
-    "auteur_x": "@perplexity_ai"
+    "auteur_x": "@perplexity_ai",
+    "score": 25
   },
   {
     "date": "2026-05-27",
@@ -1137,7 +1262,8 @@
     ],
     "tweet_url": "https://x.com/xai/status/2059666227115819149",
     "media": false,
-    "auteur_x": "@xai"
+    "auteur_x": "@xai",
+    "score": 38
   },
   {
     "date": "2026-05-27",
@@ -1149,7 +1275,8 @@
     ],
     "tweet_url": "https://x.com/sama/status/2059677202917331431",
     "media": false,
-    "auteur_x": "@sama"
+    "auteur_x": "@sama",
+    "score": 40
   },
   {
     "date": "2026-05-27",
@@ -1161,7 +1288,8 @@
     ],
     "tweet_url": "https://x.com/ycombinator/status/2059650319680962672",
     "media": true,
-    "auteur_x": "@ycombinator"
+    "auteur_x": "@ycombinator",
+    "score": 35
   },
   {
     "date": "2026-05-27",
@@ -1169,11 +1297,13 @@
     "resume_fr": "Anthropic ajoute plusieurs partenaires (Augment, Bolt, CodeRabbit, Hebbia, Legora) à son Claude Marketplace, permettant d'utiliser un engagement de dépense existant sur des produits propulsés par Claude.",
     "tags": [
       "anthropic",
-      "produit"
+      "produit",
+      "saas"
     ],
     "tweet_url": "https://x.com/claudeai/status/2059662933924123044",
     "media": true,
-    "auteur_x": "@claudeai"
+    "auteur_x": "@claudeai",
+    "score": 48
   },
   {
     "date": "2026-05-28",
@@ -1186,7 +1316,8 @@
     ],
     "tweet_url": "https://x.com/claudeai/status/2060042702150930686",
     "media": true,
-    "auteur_x": "@claudeai"
+    "auteur_x": "@claudeai",
+    "score": 72
   },
   {
     "date": "2026-05-28",
@@ -1194,11 +1325,14 @@
     "resume_fr": "Perplexity rend son agent Computer accessible directement dans Excel, Word, PowerPoint et Outlook, via un panneau latéral. L'objectif est de rédiger des documents, construire des modèles et des présentations, et gérer les emails sans quitter l'application.",
     "tags": [
       "produit",
-      "agents"
+      "agents",
+      "automatisation",
+      "saas"
     ],
     "tweet_url": "https://x.com/perplexity_ai/status/2060013442720010598",
     "media": true,
-    "auteur_x": "@perplexity_ai"
+    "auteur_x": "@perplexity_ai",
+    "score": 72
   },
   {
     "date": "2026-05-28",
@@ -1210,7 +1344,8 @@
     ],
     "tweet_url": "https://x.com/MistralAI/status/2059951137839616110",
     "media": true,
-    "auteur_x": "@MistralAI"
+    "auteur_x": "@MistralAI",
+    "score": 55
   },
   {
     "date": "2026-05-28",
@@ -1218,11 +1353,14 @@
     "resume_fr": "Snowflake annonce son intention d'acquérir Natoma, une plateforme MCP pour entreprises. Une fois l'opération conclue, les utilisateurs pourront enrichir leurs données Snowflake avec du contexte applicatif et déclencher des actions (emails, résumés Slack, tickets Jira) directement depuis Snowflake.",
     "tags": [
       "produit",
-      "agents"
+      "agents",
+      "automatisation",
+      "saas"
     ],
     "tweet_url": "https://x.com/RamaswmySridhar/status/2059804859789140075",
     "media": true,
-    "auteur_x": "@RamaswmySridhar"
+    "auteur_x": "@RamaswmySridhar",
+    "score": 45
   },
   {
     "date": "2026-05-28",
@@ -1234,7 +1372,8 @@
     ],
     "tweet_url": "https://x.com/cursor_ai/status/2060025063899058458",
     "media": true,
-    "auteur_x": "@cursor_ai"
+    "auteur_x": "@cursor_ai",
+    "score": 33
   },
   {
     "date": "2026-05-28",
@@ -1246,7 +1385,8 @@
     ],
     "tweet_url": "https://x.com/AnthropicAI/status/2060061347522433422",
     "media": false,
-    "auteur_x": "@AnthropicAI"
+    "auteur_x": "@AnthropicAI",
+    "score": 62
   },
   {
     "date": "2026-05-28",
@@ -1255,11 +1395,13 @@
     "tags": [
       "anthropic",
       "produit",
-      "agents"
+      "agents",
+      "automatisation"
     ],
     "tweet_url": "https://x.com/gregisenberg/status/2060072130339873093",
     "media": false,
-    "auteur_x": "@gregisenberg"
+    "auteur_x": "@gregisenberg",
+    "score": 44
   },
   {
     "date": "2026-05-28",
@@ -1269,11 +1411,13 @@
       "anthropic",
       "openai",
       "google",
-      "modeles"
+      "modeles",
+      "pub"
     ],
     "tweet_url": "https://x.com/coreyganim/status/2060134271298261219",
     "media": true,
-    "auteur_x": "@coreyganim"
+    "auteur_x": "@coreyganim",
+    "score": 70
   },
   {
     "date": "2026-05-28",
@@ -1286,18 +1430,21 @@
     ],
     "tweet_url": "https://x.com/xai/status/2060102590122385460",
     "media": true,
-    "auteur_x": "@xai"
+    "auteur_x": "@xai",
+    "score": 24
   },
   {
     "date": "2026-05-28",
     "titre_fr": "Accord de 6 milliards entre Snowflake et AWS",
     "resume_fr": "Snowflake annonce un accord pluriannuel de 6 milliards de dollars avec AWS, s'appuyant sur le calcul Graviton et les services d'IA pour accélérer l'adoption de l'IA en entreprise. L'entreprise indique aussi avoir dépassé 7 milliards de ventes cumulées sur l'AWS Marketplace.",
     "tags": [
-      "produit"
+      "produit",
+      "saas"
     ],
     "tweet_url": "https://x.com/RamaswmySridhar/status/2060056040235012389",
     "media": true,
-    "auteur_x": "@RamaswmySridhar"
+    "auteur_x": "@RamaswmySridhar",
+    "score": 44
   },
   {
     "date": "2026-05-29",
@@ -1305,11 +1452,13 @@
     "resume_fr": "OpenAI déploie un nouveau modèle « 5.5 instant » dans ChatGPT, selon Greg Brockman.",
     "tags": [
       "openai",
-      "modeles"
+      "modeles",
+      "produit"
     ],
     "tweet_url": "https://x.com/gdb/status/2060294896918094152",
     "media": false,
-    "auteur_x": "@gdb"
+    "auteur_x": "@gdb",
+    "score": 62
   },
   {
     "date": "2026-05-29",
@@ -1320,7 +1469,8 @@
     ],
     "tweet_url": "https://x.com/simonw/status/2060170727433830536",
     "media": false,
-    "auteur_x": "@simonw"
+    "auteur_x": "@simonw",
+    "score": 47
   },
   {
     "date": "2026-05-29",
@@ -1333,7 +1483,8 @@
     ],
     "tweet_url": "https://x.com/OpenAI/status/2060376598642405492",
     "media": false,
-    "auteur_x": "@OpenAI"
+    "auteur_x": "@OpenAI",
+    "score": 29
   },
   {
     "date": "2026-05-29",
@@ -1346,7 +1497,8 @@
     ],
     "tweet_url": "https://x.com/xai/status/2060392249402552457",
     "media": true,
-    "auteur_x": "@xai"
+    "auteur_x": "@xai",
+    "score": 30
   },
   {
     "date": "2026-05-29",
@@ -1355,11 +1507,13 @@
     "tags": [
       "openai",
       "produit",
-      "agents"
+      "agents",
+      "automatisation"
     ],
     "tweet_url": "https://x.com/OpenAI/status/2060428604727771421",
     "media": true,
-    "auteur_x": "@OpenAI"
+    "auteur_x": "@OpenAI",
+    "score": 55
   },
   {
     "date": "2026-05-29",
@@ -1367,11 +1521,13 @@
     "resume_fr": "OpenAI propose une fonction de traduction en temps réel prenant en charge plus de 70 langues en entrée et 13 langues en sortie.",
     "tags": [
       "openai",
-      "produit"
+      "produit",
+      "service-client"
     ],
     "tweet_url": "https://x.com/gdb/status/2060452095279415725",
     "media": false,
-    "auteur_x": "@gdb"
+    "auteur_x": "@gdb",
+    "score": 63
   },
   {
     "date": "2026-05-29",
@@ -1383,7 +1539,8 @@
     ],
     "tweet_url": "https://x.com/cursor_ai/status/2060406013098897765",
     "media": true,
-    "auteur_x": "@cursor_ai"
+    "auteur_x": "@cursor_ai",
+    "score": 30
   },
   {
     "date": "2026-05-30",
@@ -1396,7 +1553,8 @@
     ],
     "tweet_url": "https://x.com/openclaw/status/2060836826932249013",
     "media": false,
-    "auteur_x": "@openclaw"
+    "auteur_x": "@openclaw",
+    "score": 20
   },
   {
     "date": "2026-05-30",
@@ -1408,7 +1566,8 @@
     ],
     "tweet_url": "https://x.com/openclaw/status/2060843306100183541",
     "media": false,
-    "auteur_x": "@openclaw"
+    "auteur_x": "@openclaw",
+    "score": 18
   },
   {
     "date": "2026-05-30",
@@ -1421,7 +1580,8 @@
     ],
     "tweet_url": "https://x.com/natolambert/status/2060824108502565259",
     "media": false,
-    "auteur_x": "@natolambert"
+    "auteur_x": "@natolambert",
+    "score": 34
   },
   {
     "date": "2026-05-31",
@@ -1430,11 +1590,14 @@
     "tags": [
       "openai",
       "modeles",
-      "produit"
+      "produit",
+      "agents",
+      "service-client"
     ],
     "tweet_url": "https://x.com/gdb/status/2060955146952077653",
     "media": false,
-    "auteur_x": "@gdb"
+    "auteur_x": "@gdb",
+    "score": 61
   },
   {
     "date": "2026-05-31",
@@ -1446,7 +1609,8 @@
     ],
     "tweet_url": "https://x.com/TheZvi/status/2061083538225614894",
     "media": false,
-    "auteur_x": "@TheZvi"
+    "auteur_x": "@TheZvi",
+    "score": 50
   },
   {
     "date": "2026-05-31",
@@ -1459,7 +1623,8 @@
     ],
     "tweet_url": "https://x.com/sama/status/2061117302528188712",
     "media": false,
-    "auteur_x": "@sama"
+    "auteur_x": "@sama",
+    "score": 44
   },
   {
     "date": "2026-05-31",
@@ -1471,7 +1636,8 @@
     ],
     "tweet_url": "https://x.com/sama/status/2061101875303530871",
     "media": false,
-    "auteur_x": "@sama"
+    "auteur_x": "@sama",
+    "score": 28
   },
   {
     "date": "2026-05-31",
@@ -1481,10 +1647,12 @@
       "openai",
       "modeles",
       "produit",
-      "agents"
+      "agents",
+      "service-client"
     ],
     "tweet_url": "https://x.com/gregisenberg/status/2061129813750915508",
     "media": false,
-    "auteur_x": "@gregisenberg"
+    "auteur_x": "@gregisenberg",
+    "score": 61
   }
 ]
