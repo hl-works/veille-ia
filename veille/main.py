@@ -90,12 +90,23 @@ def run(config_path: str, *, dry_run: bool) -> int:
         print("=" * 70 + "\n")
         return 0
 
-    send_message(
-        message,
-        bot_token=settings.telegram_bot_token,
-        chat_id=settings.telegram_chat_id,
-    )
-    logging.info("Veille publiée avec succès. ✅")
+    # L'envoi Telegram ne doit JAMAIS bloquer la livraison du feed au site :
+    # en cas d'échec (bot pas admin du canal, réseau, 403…), on logue et on
+    # continue. Le feed.json a déjà été produit plus haut.
+    try:
+        send_message(
+            message,
+            bot_token=settings.telegram_bot_token,
+            chat_id=settings.telegram_chat_id,
+        )
+        logging.info("Veille publiée sur Telegram. ✅")
+    except Exception as exc:  # noqa: BLE001
+        logging.warning(
+            "Publication Telegram échouée (%s) — sans impact sur le feed du site. "
+            "Si c'est un 403 « bot is not a member », ajoute le bot comme "
+            "administrateur du canal.",
+            exc,
+        )
     return 0
 
 
