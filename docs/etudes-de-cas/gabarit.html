@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ════════════════════════════════════════════════════════════════
+     GABARIT Knowledge Hub — étude de cas / guide (3 niveaux de lecture)
+     Reconstruit d'après les décisions documentées. À aligner sur ton
+     style.css réel : remplace les TOKENS ci-dessous par les tiens.
+     Zéro dépendance, zéro build. Sert en local en ouvrant le fichier.
+     ════════════════════════════════════════════════════════════════ -->
+
+<title>Un site + un bot IA en un week-end — Knowledge Hub</title>
+<meta name="description" content="Comment un non-développeur a livré un site statique complet et un bot de veille IA en un week-end, avec Claude Code. Temps et coûts réels.">
+
+<!-- Anti-FOUC : applique le thème AVANT le premier rendu. Seul JS bloquant toléré. -->
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem('theme') || 'auto';
+      var dark = t === 'dark' || (t === 'auto' &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches);
+      document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+      document.documentElement.dataset.themeChoice = t;
+    } catch (e) {}
+  })();
+</script>
+
+<!-- Favicon SVG inline (placeholder « inspiré Claude » — remplace par le tien). -->
+<link rel="icon" href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'&gt;&lt;rect width='32' height='32' rx='7' fill='%23da7756'/&gt;&lt;path d='M9 22 L16 9 L23 22' stroke='%23fff' stroke-width='2.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/&gt;&lt;/svg&gt;">
+
+<!-- En prod : <link rel="stylesheet" href="/style.css?v=2026-06-01"> (cache-busting). -->
+<style>
+  /* ── TOKENS (à remplacer par ceux de ton design system) ─────────── */
+  :root, [data-theme="light"] {
+    --bg:        #faf8f5;   /* fond clair, chaud */
+    --surface:   #ffffff;
+    --text:      #1f1b18;
+    --muted:     #6b625b;
+    --border:    #e7e0d8;
+    --accent:    #c8623f;   /* terracotta façon Claude */
+    --accent-soft:#f4e3da;
+    --shadow:    0 1px 3px rgba(31,27,24,.08);
+    --serif: Georgia, 'Times New Roman', serif;
+    --sans:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  }
+  [data-theme="dark"] {
+    --bg:        #1a1613;   /* anthracite CHAUD, pas noir pur */
+    --surface:   #221d19;
+    --text:      #efe9e3;
+    --muted:     #a89e95;
+    --border:    #352e28;
+    --accent:    #e08a66;
+    --accent-soft:#3a2a22;
+    --shadow:    0 1px 3px rgba(0,0,0,.4);
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: var(--sans); line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    transition: background .25s ease, color .25s ease;
+  }
+  a { color: var(--accent); text-underline-offset: 3px; }
+
+  /* ── Header allégé ──────────────────────────────────────────────── */
+  .site-header {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 1rem; padding: .9rem 1.25rem; border-bottom: 1px solid var(--border);
+    position: sticky; top: 0; background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: blur(8px); z-index: 10;
+  }
+  .brand { display: flex; align-items: center; gap: .6rem; font-weight: 700;
+           text-decoration: none; color: var(--text); }
+  .brand svg { width: 26px; height: 26px; }
+  .nav { display: flex; gap: 1.1rem; align-items: center; font-size: .92rem; }
+  .nav a { color: var(--muted); text-decoration: none; }
+  .nav a:hover { color: var(--text); }
+
+  /* ── Toggle thème Auto / Clair / Sombre ─────────────────────────── */
+  .theme-toggle { display: inline-flex; border: 1px solid var(--border);
+    border-radius: 999px; overflow: hidden; }
+  .theme-toggle button {
+    border: 0; background: transparent; color: var(--muted);
+    padding: .3rem .6rem; cursor: pointer; font-size: .8rem; line-height: 1;
+  }
+  .theme-toggle button[aria-pressed="true"] { background: var(--accent-soft); color: var(--text); }
+
+  /* ── Article ────────────────────────────────────────────────────── */
+  main { max-width: 720px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+  .breadcrumb { font-size: .82rem; color: var(--muted); margin-bottom: 1.2rem; }
+  .breadcrumb a { color: var(--muted); }
+  h1 { font-family: var(--serif); font-size: 2.1rem; line-height: 1.2; margin: .2rem 0 1rem; }
+  h2 { font-family: var(--serif); font-size: 1.4rem; margin: 2.4rem 0 .8rem; }
+  h3 { font-size: 1.08rem; margin: 1.6rem 0 .5rem; }
+  .meta { color: var(--muted); font-size: .9rem; margin-bottom: 2rem; }
+
+  /* Niveau 1 : « En 30 s » */
+  .tldr {
+    background: var(--accent-soft); border-left: 3px solid var(--accent);
+    border-radius: 10px; padding: 1.1rem 1.25rem; margin: 1.5rem 0 2.5rem;
+  }
+  .tldr h2 { margin: 0 0 .5rem; font-size: 1.05rem; font-family: var(--sans);
+             text-transform: uppercase; letter-spacing: .04em; color: var(--accent); }
+
+  .callout { background: var(--surface); border: 1px solid var(--border);
+    border-radius: 10px; padding: 1rem 1.2rem; margin: 1.4rem 0; box-shadow: var(--shadow); }
+
+  /* ── Embed X / Twitter, avec repli vignette+lien (média b + fallback a) ── */
+  .tweet-card { border: 1px solid var(--border); border-radius: 12px;
+    padding: 1rem 1.2rem; margin: 1.4rem 0; background: var(--surface); }
+  .tweet-card .fallback { display: flex; gap: .8rem; align-items: flex-start; }
+  .tweet-card .avatar { width: 40px; height: 40px; border-radius: 50%;
+    background: var(--accent-soft); flex: 0 0 auto; }
+  .tweet-card .src { font-size: .85rem; color: var(--muted); }
+
+  /* ── Partage ────────────────────────────────────────────────────── */
+  .share { display: flex; gap: .6rem; margin: 2.5rem 0; flex-wrap: wrap; }
+  .share a { display: inline-flex; align-items: center; gap: .4rem;
+    border: 1px solid var(--border); border-radius: 999px; padding: .45rem .9rem;
+    text-decoration: none; color: var(--text); font-size: .88rem; }
+  .share a:hover { border-color: var(--accent); }
+
+  /* ── Footer enrichi ─────────────────────────────────────────────── */
+  .site-footer { border-top: 1px solid var(--border); padding: 2.5rem 1.25rem;
+    color: var(--muted); font-size: .88rem; }
+  .footer-grid { max-width: 720px; margin: 0 auto; display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1.5rem; }
+  .footer-grid h4 { color: var(--text); font-size: .82rem; text-transform: uppercase;
+    letter-spacing: .05em; margin: 0 0 .6rem; }
+  .footer-grid a { display: block; color: var(--muted); text-decoration: none; padding: .15rem 0; }
+  .footer-grid a:hover { color: var(--accent); }
+</style>
+
+<!-- ── GEO : données structurées (TechArticle + fil + auteur) ──────── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Un site + un bot IA en un week-end",
+  "inLanguage": "fr",
+  "datePublished": "2026-06-01",
+  "author": { "@type": "Person", "@id": "https://hugolahutte.github.io/#hugo", "name": "Hugo Lahutte" },
+  "publisher": { "@type": "Person", "@id": "https://hugolahutte.github.io/#hugo" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://hugolahutte.github.io/" },
+    { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://hugolahutte.github.io/guides/" },
+    { "@type": "ListItem", "position": 3, "name": "Site + bot IA en un week-end" }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<header class="site-header">
+  <a class="brand" href="/">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="var(--accent)"/><path d="M9 22 L16 9 L23 22" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Knowledge Hub
+  </a>
+  <nav class="nav">
+    <a href="/guides/">Guides</a>
+    <a href="/veille-ia/">Veille IA</a>
+    <a href="/lexique/">Lexique</a>
+    <div class="theme-toggle" role="group" aria-label="Thème">
+      <button data-set="auto">Auto</button>
+      <button data-set="light">Clair</button>
+      <button data-set="dark">Sombre</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <p class="breadcrumb"><a href="/">Accueil</a> › <a href="/guides/">Guides</a> › Site + bot IA en un week-end</p>
+
+  <h1>Un non-développeur peut-il livrer un vrai site + un bot IA en un week-end ?</h1>
+  <p class="meta">Par Hugo Lahutte · cas d'usage « build in public » · ~2 jours</p>
+
+  <!-- NIVEAU 1 -->
+  <div class="tldr">
+    <h2>En 30 secondes</h2>
+    <p><strong>Oui.</strong> En un week-end, sans savoir coder, j'ai mis en prod
+    un <strong>site statique complet</strong> (journal, guides, lexique, recherche,
+    dark mode, GEO) et un <strong>bot de veille IA</strong> sans serveur qui résume
+    l'actu et la publie chaque matin sur Telegram + sur le site. Le secret n'est pas
+    technique : c'est <strong>bien décider</strong> et laisser l'IA frapper le code
+    pendant que je vérifie le rendu et les faits.</p>
+  </div>
+
+  <!-- NIVEAU 2 -->
+  <h2>Le corps</h2>
+
+  <h3>1. Partir du besoin, pas de la techno</h3>
+  <p>Le déclencheur n'était pas « je veux un site », mais « j'en ai marre de
+  réexpliquer ce que je fais avec l'IA — il me faut un endroit unique ».</p>
+
+  <h3>2. La stack la plus bête possible</h3>
+  <p>Site en HTML/CSS/JS <strong>vanilla</strong>, zéro framework, zéro build, sur
+  GitHub Pages. Bot en Python orchestré par GitHub Actions (un cron gratuit). Pas
+  de serveur à gérer.</p>
+
+  <div class="callout">
+    💡 <strong>Pourquoi si simple ?</strong> Un non-dev doit pouvoir
+    <strong>maintenir</strong> son projet seul. Chaque dépendance ajoutée est une
+    dette future.
+  </div>
+
+  <h3>3. Une actu, telle qu'elle s'affiche dans la veille</h3>
+  <!-- Embed X officiel + repli automatique. En prod : widgets.js chargé SEULEMENT
+       au moment d'un embed (RGPD), avec data-fallback si l'embed ne rend pas. -->
+  <div class="tweet-card">
+    <div class="fallback">
+      <div class="avatar"></div>
+      <div>
+        <p style="margin:.1rem 0;"><strong>@AnthropicAI</strong> <span class="src">· sur X</span></p>
+        <p style="margin:.3rem 0;">Résumé FR reformulé de l'actu (jamais le tweet recopié — règle copyright dure), suivi du lien source.</p>
+        <a href="https://x.com/AnthropicAI" rel="noopener">Voir le post sur X ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NIVEAU 3 -->
+  <h2>Pour aller plus loin</h2>
+  <ul>
+    <li><a href="./01-knowledge-hub.md">Étude de cas — le site Knowledge Hub</a> (coût au token : zéro)</li>
+    <li><a href="./02-veille-ia.md">Étude de cas — le bot de veille IA</a> (~quelques centimes/jour)</li>
+    <li><a href="./03-making-of.md">Making-of — du dîner entre amis au « beau bébé en 2 jours »</a></li>
+  </ul>
+
+  <!-- Partage LinkedIn + X -->
+  <div class="share">
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://hugolahutte.github.io/guides/site-bot-ia-week-end/" target="_blank" rel="noopener">in · Partager sur LinkedIn</a>
+    <a href="https://x.com/intent/tweet?text=Un%20site%20%2B%20un%20bot%20IA%20en%20un%20week-end&url=https://hugolahutte.github.io/guides/site-bot-ia-week-end/" target="_blank" rel="noopener">𝕏 · Partager</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <h4>Le site</h4>
+      <a href="/guides/">Guides</a>
+      <a href="/veille-ia/">Veille IA</a>
+      <a href="/lexique/">Lexique</a>
+      <a href="/journal/">Journal</a>
+    </div>
+    <div>
+      <h4>Me suivre</h4>
+      <a href="https://www.linkedin.com/in/hugolahutte/" rel="me noopener">LinkedIn</a>
+      <a href="https://t.me/VeilleIA_HL" rel="noopener">Canal Telegram</a>
+      <a href="mailto:hugo.lahutte@gmail.com">Email</a>
+    </div>
+    <div>
+      <h4>À propos</h4>
+      <a href="/making-of/">Making-of</a>
+      <a href="/">Accueil</a>
+    </div>
+  </div>
+</footer>
+
+<!-- JS du toggle (non bloquant, en fin de body). -->
+<script>
+  (function () {
+    var root = document.documentElement;
+    var btns = document.querySelectorAll('.theme-toggle button');
+    function apply(choice) {
+      localStorage.setItem('theme', choice);
+      var dark = choice === 'dark' || (choice === 'auto' &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches);
+      root.setAttribute('data-theme', dark ? 'dark' : 'light');
+      root.dataset.themeChoice = choice;
+      btns.forEach(function (b) {
+        b.setAttribute('aria-pressed', String(b.dataset.set === choice));
+      });
+    }
+    btns.forEach(function (b) { b.addEventListener('click', function () { apply(b.dataset.set); }); });
+    apply(localStorage.getItem('theme') || 'auto');
+    // Suit l'OS en mode Auto.
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function () {
+      if ((localStorage.getItem('theme') || 'auto') === 'auto') apply('auto');
+    });
+  })();
+</script>
+</body>
+</html>
