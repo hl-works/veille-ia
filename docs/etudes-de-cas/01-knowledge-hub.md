@@ -13,8 +13,16 @@
 
 ## 1. Le déclic / le besoin de départ
 
-Le site avait déjà un journal riche — 43 entrées — mais **peu de contenu
-evergreen**. Or un journal, ça vit dans l'instant et ça date vite. Il me
+**L'étincelle.** Vendredi soir 29 mai 2026, dîner entre amis. Je reparle de ce
+que je fais avec l'IA — et comme j'avais déjà raconté la même chose au déjeuner
+le midi, je me dis qu'il est temps d'avoir **un endroit unique** où tout montrer
+plutôt que de le réexpliquer à chaque fois. **Samedi matin, je lance le site.**
+De fil en aiguille, les idées s'enchaînent et passent en prod presque aussitôt :
+journal, lexique, tags, recherche, dark mode, page Veille IA, bot… un **beau bébé
+sorti en ~2 jours**.
+
+Côté besoin de fond : le site avait déjà un journal riche — 43 entrées — mais
+**peu de contenu evergreen**. Or un journal, ça vit dans l'instant et ça date vite. Il me
 manquait du contenu qui **fait autorité dans la durée** : lisible par un humain
 pressé, et **citable par les LLM** (le fameux GEO, *Generative Engine
 Optimization* — être référencé par les IA quand elles répondent).
@@ -56,6 +64,7 @@ Décisions structurantes de cette session :
 | **Header allégé / footer enrichi** | Lexique & réseaux descendent en footer | — |
 | **Anti-FOUC** : script inline dans le `<head>` (~3 lignes, seul JS bloquant toléré) | Éviter le flash de thème au chargement | — |
 | **Faits vérifiés, jamais de versions de modèles** | Rester evergreen | Citer des numéros de version qui périment |
+| **Favicon / logo maison inspiré de Claude**, intégré à ma direction artistique | Cohérence visuelle globale du site | Logo générique / pas d'identité |
 
 > Exemples de faits vérifiés et figés : Karpathy → Anthropic (mai 2026),
 > *Compound Engineering* attribué à Klaassen & Shipper / Every, « AI is the new
@@ -120,12 +129,12 @@ Le déroulé réel de la session :
   guides, lexique, dark mode, nav/footer).
 - Découpé en **plusieurs sessions courtes** dans la journée (matin / après-midi /
   soir, d'après l'horodatage Git).
+- **Temps assis réel :** l'essentiel s'est joué le **samedi (30 mai)**,
+  **plusieurs heures effectives** — et encore, **en parallèle d'un autre projet**
+  (nom de code « Cobra ») mené de front. Le reste s'est étalé en sessions courtes
+  le dimanche et le lundi.
 - **Coût : aucun au token** — tout passe par l'abonnement Claude, pas d'API.
   Pour ce cas, on parle **temps**, pas coût.
-
-> 🔧 **À confirmer par Hugo :** la **durée active réelle** (« temps assis »).
-> Git donne les jalons (3 jours, ~70 commits), pas le temps réellement passé
-> devant l'écran. Donne-moi le chiffre que tu assumes et je remplace cette note.
 
 ## 7. Ce que ça illustre
 
@@ -139,7 +148,3 @@ Le déroulé réel de la session :
 - **L'honnêteté est une feature.** Assumer un socle préexistant, des ordres de
   grandeur plutôt que de faux chiffres, des claims prudents sur les sujets
   sensibles (GEO = champ émergent) → ça rend le tout crédible et citable.
-
-> 🔧 **À confirmer / personnaliser :** la morale ci-dessus est un brouillon.
-> Dis-moi si tu veux insister sur un angle (autonomie du non-dev, GEO, vitesse,
-> coût nul…) et je réécris.

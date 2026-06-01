@@ -42,10 +42,12 @@ Double finalité dès le départ :
 | **Média des tweets : embed X officiel + repli automatique vignette+lien** | Les embeds X sont fragiles (visiteur non connecté) → l'utilisateur n'est jamais bloqué | Embed seul (casse souvent) |
 | **Résumés FR transformatifs, jamais le tweet recopié** | Règle copyright **dure** | Recopier le tweet (interdit) |
 
-> **À préciser (arbitrage non figé) :** la catégorisation. Au départ 2 axes côté
-> site (biz / global) ; le modèle a finalement été **piloté par tags** dans le
-> schéma `feed.json`. Hugo : confirme si on reste tags-only ou si on réintroduit
-> 2 catégories.
+> **Catégorisation — tranché : tags only.** Au départ j'avais imaginé classer
+> chaque actu sur 2 axes (« business » vs « IA globale »). Finalement, le système
+> retenu est plus simple : **chaque entrée porte des tags** (`anthropic`,
+> `openai`, `modeles`, `agents`, `produit`…) et le site **filtre par tag**, sans
+> imposer 2 grandes cases rigides. Plus souple, plus fin, et ça évite de devoir
+> ranger de force une actu dans une seule catégorie.
 
 ## 3. Le « vibe coding » : comment ça s'est construit, étape par étape
 
@@ -139,25 +141,22 @@ Le tout tourne **sans serveur** : deux workflows **GitHub Actions**
   - ~23h42–23h43 : 4ᵉ secret + écran « pas encore de workflow ».
   - **Amplitude ~8h30** sur la soirée — mais ce sont des **écarts d'horloge entre
     captures, pas du temps de travail effectif** (entre les blocs, je faisais
-    autre chose). Le **travail réel est nettement plus court**.
-
-> 🔧 **À confirmer par Hugo :** le chiffre publiable que tu assumes. Proposition
-> défendable : *« cadrage + mise en route étalés sur une soirée (~8h30
-> d'amplitude le 31 mai), pour un temps de travail effectif bien moindre. »*
+    autre chose). Le **travail réel est nettement plus court** : la mise en route
+    bout à bout (créer les comptes, coller les 4 secrets, brancher le workflow)
+    se compte en **dizaines de minutes**, pas en heures.
 
 **Coût** (contrairement au site, ici on paie à l'usage)
 
-- **twitterapi.io** : ~quelques centimes/jour pour suivre ~45 comptes.
+- **twitterapi.io** : j'ai chargé **100 € en prépayé « pour voir »** — alors que
+  Claude me conseillait même de **démarrer à zéro**. C'est un **plafond de
+  confort, pas une dépense** : la conso réelle pour suivre ~45 comptes reste de
+  l'ordre de **quelques centimes/jour**, donc ces 100 € durent très longtemps.
 - **API Claude** : un digest quotidien = une poignée de centimes. `claude-opus-4-8`
   par défaut ; `claude-sonnet-4-6` pour réduire encore.
 - **GitHub Actions** : gratuit dans la limite des dépôts publics.
 - **Garde-fous budget** (« leçon Patel ») : 1 run/jour, caps RSS/tweets, solde
   prépayé bas, **backfill borné** (pas de boucle sur `advanced_search`, plafond
   strict ~1500 tweets).
-
-> 🔧 **À confirmer / affiner :** ordres de grandeur réels constatés sur la facture
-> Anthropic + twitterapi.io après quelques jours de run, si tu veux des chiffres
-> précis plutôt que « quelques centimes/jour ».
 
 ## 7. Ce que ça illustre
 
@@ -173,6 +172,12 @@ Le tout tourne **sans serveur** : deux workflows **GitHub Actions**
   recopie) ; ligne éditoriale neutre et anti-hype, même quand l'info n'est pas
   flatteuse pour Anthropic.
 
-> 🔧 **À confirmer / personnaliser :** brouillon de morale. Dis-moi l'angle à
-> appuyer (autonomie non-dev, coût dérisoire, robustesse, neutralité éditoriale…)
-> et je réécris.
+## À venir / la suite
+
+- **Documenter le projet Telegram / veille IA global** (guide pas-à-pas « Mon
+  agent de veille IA »).
+- **Post épinglé d'accueil** sur le canal Telegram.
+- **Page Guides filtrable par tag** côté site.
+- **Com LinkedIn** : annoncer le projet — c'est un **beau bébé sorti en ~2
+  jours**, et le suivre dans la durée (le site *et* la veille IA) fait **deux
+  bons cas d'usage** concrets, chiffrés en temps et en coût.
