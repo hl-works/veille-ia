@@ -41,6 +41,24 @@ BASE_TAGS = [
     "talents", "politique-ia", "hardware",
 ]
 
+# ── Vocabulaire marchand ──────────────────────────────────────────────────
+#  Tags reconnus par le filtre « Marchands » du site. À AJUSTER en un seul
+#  endroit si la session knowledge-hub confirme une liste différente.
+#  Claude ne les pose QUE si le contenu du tweet s'y prête réellement
+#  (pas par réflexe) → pertinence + filtrabilité.
+MERCHANT_TAGS = [
+    "commerce",          # e-commerce / retail en général
+    "shopify",           # mentions explicites de Shopify
+    "marketing",         # marketing, growth, contenu
+    "pub",               # publicité / ads
+    "vente",             # vente, conversion, closing
+    "paiement",          # paiement, checkout, fintech commerçant
+    "service-client",    # support / SAV / chatbots clients
+    "automatisation",    # automatisation de tâches métier
+    "no-code",           # outils no-code / low-code
+    "saas",              # logiciels SaaS pour entreprises
+]
+
 # Schéma de sortie strict imposé à Claude (structured outputs).
 FEED_SCHEMA = {
     "type": "object",
@@ -54,8 +72,9 @@ FEED_SCHEMA = {
                     "titre_fr": {"type": "string"},
                     "resume_fr": {"type": "string"},
                     "tags": {"type": "array", "items": {"type": "string"}},
+                    "score": {"type": "integer"},
                 },
-                "required": ["tweet_id", "titre_fr", "resume_fr", "tags"],
+                "required": ["tweet_id", "titre_fr", "resume_fr", "tags", "score"],
                 "additionalProperties": False,
             },
         }
@@ -96,10 +115,23 @@ POUR CHAQUE ENTRÉE :
 - `titre_fr` : un titre court et factuel en français (pas de clickbait).
 - `resume_fr` : 1 à 3 phrases en français, neutres, qui expliquent l'info
   simplement. Pas de jargon inutile.
-- `tags` : 1 à 4 tags en minuscules parmi cette liste de départ quand ils
-  s'appliquent : {tags}. Tu peux en ajouter un nouveau si vraiment nécessaire,
-  mais reste sobre et utile au filtrage.\
-""".replace("{tags}", ", ".join(BASE_TAGS))
+- `tags` : 1 à 4 tags THÉMATIQUES en minuscules parmi : {tags}. Tu peux en
+  ajouter un nouveau si vraiment nécessaire, mais reste sobre.
+- `tags` (marchands, EN PLUS quand c'est PERTINENT) : ajoute aussi, le cas
+  échéant, un ou plusieurs tags de cette liste UNIQUEMENT si le contenu s'y
+  prête vraiment (utilité concrète pour un commerçant / une PME) — ne les pose
+  PAS par réflexe : {merchant_tags}.
+  Exemples : une annonce d'agent qui gère le service client → "service-client" ;
+  un outil de génération de fiches produit / pub → "commerce", "marketing" ;
+  une intégration e-commerce → "commerce" (et "shopify" si Shopify est cité).
+- `score` : un ENTIER de 0 à 100 = importance ÉDITORIALE pour une audience de
+  commerçants, dirigeants de PME et indépendants curieux d'IA. Barème indicatif :
+    • 80-100 : lancement/MAJ majeur ET directement actionnable pour leur business.
+    • 60-79  : annonce importante du secteur, impact indirect mais réel.
+    • 40-59  : intéressant à suivre, portée moyenne.
+    • 0-39   : niche, très technique ou faible utilité pour cette audience.
+  Note de façon discriminante (évite que tout se ressemble).\
+""".replace("{tags}", ", ".join(BASE_TAGS)).replace("{merchant_tags}", ", ".join(MERCHANT_TAGS))
 
 
 def _tweets_block(tweets: list[Tweet]) -> str:
@@ -167,6 +199,7 @@ def select_and_write_entries(
                 "titre_fr": str(raw.get("titre_fr", "")).strip(),
                 "resume_fr": str(raw.get("resume_fr", "")).strip(),
                 "tags": [str(t).strip().lower() for t in raw.get("tags", []) if str(t).strip()],
+                "score": _clamp_score(raw.get("score")),
                 "tweet_url": src.url,
                 "media": bool(src.has_media),
                 "auteur_x": f"@{src.author}" if not src.author.startswith("@") else src.author,
@@ -175,6 +208,14 @@ def select_and_write_entries(
             }
         )
     return entries
+
+
+def _clamp_score(value) -> int:
+    """Garantit un entier 0-100 (le site trie dessus). Défaut 50 si absent/invalide."""
+    try:
+        return max(0, min(100, int(value)))
+    except (TypeError, ValueError):
+        return 50
 
 
 # ── Persistance : feed.json (cumulatif) + seen.json (mémoire dédup) ──────────

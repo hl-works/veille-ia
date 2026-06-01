@@ -1,0 +1,92 @@
+name: Enrichir feed.json (score + tags marchands)
+
+# ─────────────────────────────────────────────────────────────
+#  One-shot manuel : (re)calcule `score` (0-100) et complète les
+#  tags marchands sur les entrées existantes de feed.json, SANS
+#  re-collecter de tweets (que des appels Claude → ~gratuit).
+# ─────────────────────────────────────────────────────────────
+on:
+  workflow_dispatch:
+    inputs:
+      write:
+        description: "Écrire feed.json (sinon dry-run d'aperçu)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le code
+        uses: actions/checkout@v4
+
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Installer les dépendances
+        run: pip install -r requirements.txt
+
+      - name: Lancer l'enrichissement
+        run: python -m veille.enrich ${{ inputs.write && '--write' || '' }}
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          TWITTERAPI_IO_KEY: ${{ secrets.TWITTERAPI_IO_KEY }}
+
+      - name: Sauvegarder feed.json
+        if: ${{ inputs.write }}
+        run: |
+          if [ -n "$(git status --porcelain feed.json)" ]; then
+            git config user.name "veille-bot"
+            git config user.email "veille-bot@users.noreply.github.com"
+            git add feed.json
+            git commit -m "data: enrichissement feed.json (score + tags marchands)"
+            git push
+          else
+            echo "Aucun changement à committer."
+          fi
+
+      # Republie vers le site (même logique d'écrasement que veille.yml).
+      - name: Publier feed.json vers knowledge-hub
+        if: ${{ inputs.write }}
+        env:
+          KH_REPO_TOKEN: ${{ secrets.KH_REPO_TOKEN }}
+          KH_REPO: hugolahutte/knowledge-hub
+          KH_BRANCH: main
+          KH_FEED_PATH: veille-ia/feed.json
+        run: |
+          set -e
+          if [ -z "$KH_REPO_TOKEN" ]; then
+            echo "KH_REPO_TOKEN absent → publication site sautée."
+            exit 0
+          fi
+          python -c "import json; json.load(open('feed.json'))"
+          git clone "https://x-access-token:${KH_REPO_TOKEN}@github.com/${KH_REPO}.git" kh
+          cd kh
+          git config user.name "veille-bot"
+          git config user.email "veille-bot@users.noreply.github.com"
+          for attempt in 1 2 3; do
+            git fetch origin "$KH_BRANCH"
+            git reset --hard "origin/$KH_BRANCH"
+            mkdir -p "$(dirname "$KH_FEED_PATH")"
+            cp ../feed.json "$KH_FEED_PATH"
+            if [ -z "$(git status --porcelain "$KH_FEED_PATH")" ]; then
+              echo "feed.json déjà à jour dans knowledge-hub."
+              exit 0
+            fi
+            git add "$KH_FEED_PATH"
+            git commit -m "data: maj feed.json (enrichissement) depuis veille-ia ($(date -u +%F))"
+            if git push origin "HEAD:$KH_BRANCH"; then
+              echo "✓ feed.json publié sur ${KH_REPO}@${KH_BRANCH}."
+              exit 0
+            fi
+            echo "Push rejeté (tentative $attempt), resynchronisation…"
+            sleep 3
+          done
+          echo "Échec du push après 3 tentatives." >&2
+          exit 1
