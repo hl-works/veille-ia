@@ -38,8 +38,10 @@ def run(config_path: str, *, dry_run: bool) -> int:
         logging.error("Aucun compte dans config.yaml (champ `accounts`). Rien à faire.")
         return 1
 
-    # En dry-run on n'envoie pas sur Telegram : pas besoin de ses secrets.
-    settings.require_secrets(need_telegram=not dry_run)
+    # Secrets indispensables : la collecte + la rédaction (Anthropic, twitterapi).
+    # Telegram est optionnel : s'il n'est pas configuré, on alimente quand même
+    # le site et on saute simplement la publication Telegram.
+    settings.require_secrets()
 
     tweets = collect_recent_tweets(
         settings.accounts,
@@ -59,7 +61,12 @@ def run(config_path: str, *, dry_run: bool) -> int:
         else:
             append_entries(feed_entries, feed_path=settings.feed_path, seen_path=settings.seen_path)
 
-    # ── Sortie a) digest Telegram ─────────────────────────────────────────
+    # ── Sortie a) digest Telegram (optionnel) ─────────────────────────────
+    if not settings.telegram_ready:
+        logging.info("Telegram non configuré → publication Telegram sautée "
+                     "(le feed.json pour le site est quand même produit).")
+        return 0
+
     if not tweets:
         logging.info("Aucun tweet pertinent sur la fenêtre.")
         if not settings.send_when_empty:

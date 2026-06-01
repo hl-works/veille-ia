@@ -32,19 +32,20 @@ class Settings:
     telegram_bot_token: str = ""
     telegram_chat_id: str = ""
 
-    def require_secrets(self, *, need_telegram: bool = True) -> None:
-        """Vérifie que les secrets nécessaires sont présents, sinon lève une
-        erreur claire indiquant lesquels manquent."""
+    @property
+    def telegram_ready(self) -> bool:
+        """Telegram est utilisable seulement si ses deux secrets sont présents.
+        Sinon on saute la publication Telegram sans planter."""
+        return bool(self.telegram_bot_token and self.telegram_chat_id)
+
+    def require_secrets(self) -> None:
+        """Vérifie les secrets INDISPENSABLES (collecte + rédaction). Telegram
+        est optionnel et géré séparément via `telegram_ready`."""
         missing: list[str] = []
         if not self.anthropic_api_key:
             missing.append("ANTHROPIC_API_KEY")
         if not self.twitterapi_io_key:
             missing.append("TWITTERAPI_IO_KEY")
-        if need_telegram:
-            if not self.telegram_bot_token:
-                missing.append("TELEGRAM_BOT_TOKEN")
-            if not self.telegram_chat_id:
-                missing.append("TELEGRAM_CHAT_ID")
         if missing:
             raise RuntimeError(
                 "Secrets manquants : "
@@ -84,5 +85,7 @@ def load_settings(config_path: str | Path = "config.yaml") -> Settings:
         anthropic_api_key=os.environ.get("ANTHROPIC_API_KEY", ""),
         twitterapi_io_key=os.environ.get("TWITTERAPI_IO_KEY", ""),
         telegram_bot_token=os.environ.get("TELEGRAM_BOT_TOKEN", ""),
-        telegram_chat_id=os.environ.get("TELEGRAM_CHAT_ID", ""),
+        # Accepte les deux noms (TELEGRAM_CHAT_ID historique + TELEGRAM_CHANNEL_ID).
+        telegram_chat_id=os.environ.get("TELEGRAM_CHAT_ID")
+        or os.environ.get("TELEGRAM_CHANNEL_ID", ""),
     )
