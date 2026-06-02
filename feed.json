@@ -1654,5 +1654,101 @@
     "media": false,
     "auteur_x": "@gregisenberg",
     "score": 61
+  },
+  {
+    "date": "2026-06-01",
+    "titre_fr": "Les modèles d'OpenAI et Codex débarquent sur AWS Bedrock",
+    "resume_fr": "OpenAI rend ses modèles de pointe et son outil de code Codex disponibles pour les entreprises via Amazon Bedrock. L'objectif : permettre aux sociétés de bâtir des solutions IA dans l'environnement de sécurité et de conformité qu'elles utilisent déjà.",
+    "tags": [
+      "openai",
+      "produit",
+      "modeles"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/OpenAI/status/2061564502160892138",
+    "media": false,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-06-01",
+    "titre_fr": "Anthropic dépose un projet d'introduction en Bourse",
+    "resume_fr": "Anthropic a soumis de façon confidentielle un projet de document d'enregistrement (S-1) à la SEC américaine, ce qui lui donne l'option de lancer une introduction en Bourse une fois l'examen réglementaire terminé.",
+    "tags": [
+      "anthropic",
+      "politique-ia"
+    ],
+    "score": 70,
+    "tweet_url": "https://x.com/AnthropicAI/status/2061478052257841495",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-06-01",
+    "titre_fr": "xAI lance Composer 2.5 dans Grok Build",
+    "resume_fr": "xAI déploie Composer 2.5 dans son environnement Grok Build, un modèle rapide présenté comme performant sur les tâches longues et le suivi d'instructions complexes.",
+    "tags": [
+      "xai",
+      "modeles",
+      "produit"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/xai/status/2061510464325206163",
+    "media": true,
+    "auteur_x": "@xai"
+  },
+  {
+    "date": "2026-06-01",
+    "titre_fr": "Google AI Studio se connecte à Gmail, Drive et Sheets",
+    "resume_fr": "Google permet désormais de créer dans AI Studio des applications reliées directement à Gmail, Drive et Sheets, sans passer par d'autres outils. L'ajout de testeurs se fait sur place et le partage public est annoncé.",
+    "tags": [
+      "google",
+      "produit",
+      "no-code"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/OfficialLoganK/status/2061568290984800740",
+    "media": true,
+    "auteur_x": "@OfficialLoganK"
+  },
+  {
+    "date": "2026-06-01",
+    "titre_fr": "Perplexity présente Search as Code pour les agents",
+    "resume_fr": "Perplexity introduit une nouvelle architecture de recherche pour agents IA : au lieu d'enchaîner des appels de fonctions un par un, le système écrit du code Python qui interroge directement la pile de recherche. Disponible dans l'API Agent.",
+    "tags": [
+      "produit",
+      "agents",
+      "recherche"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/perplexity_ai/status/2061506359326384319",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-06-01",
+    "titre_fr": "Nvidia publie un modèle ouvert de 550 milliards de paramètres",
+    "resume_fr": "Selon Nathan Lambert, Nvidia accélère ses efforts sur les modèles ouverts avec la sortie d'un modèle de 550 milliards de paramètres, accompagné de données d'entraînement précieuses également rendues disponibles.",
+    "tags": [
+      "hardware",
+      "open-source",
+      "modeles"
+    ],
+    "score": 56,
+    "tweet_url": "https://x.com/natolambert/status/2061443368056664115",
+    "media": false,
+    "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-06-01",
+    "titre_fr": "Cursor relève ses limites d'usage et ajoute un siège Premium",
+    "resume_fr": "Cursor augmente les limites d'utilisation pour tous les utilisateurs de son offre Teams et introduit un siège Premium offrant 5 fois plus d'usage pour 3 fois le prix.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/cursor_ai/status/2061550723503194426",
+    "media": false,
+    "auteur_x": "@cursor_ai"
   }
 ]
