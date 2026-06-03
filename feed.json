@@ -1750,5 +1750,171 @@
     "tweet_url": "https://x.com/cursor_ai/status/2061550723503194426",
     "media": false,
     "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-06-02",
+    "titre_fr": "OpenAI étend les plugins de Codex aux métiers",
+    "resume_fr": "OpenAI ajoute à son agent Codex des plugins qui le transforment en spécialiste d'un rôle précis, sans coder. Codex accède désormais à 62 applications populaires et 110 compétences couvrant la vente, l'analyse de données, la production créative, le design produit et l'investissement.",
+    "tags": [
+      "openai",
+      "agents",
+      "produit",
+      "automatisation",
+      "vente"
+    ],
+    "score": 72,
+    "tweet_url": "https://x.com/OpenAI/status/2061887650391625870",
+    "media": false,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-06-02",
+    "titre_fr": "OpenAI lance Sites pour créer apps et sites avec Codex",
+    "resume_fr": "Avec Sites, Codex peut transformer un travail, une idée ou un plan en site web ou application interactive partageable via une simple URL. La fonctionnalité est d'abord déployée pour les abonnements Business et Enterprise.",
+    "tags": [
+      "openai",
+      "produit",
+      "no-code",
+      "automatisation"
+    ],
+    "score": 65,
+    "tweet_url": "https://x.com/OpenAI/status/2061845949170045346",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-06-02",
+    "titre_fr": "Perplexity connecte les données de santé",
+    "resume_fr": "Perplexity peut désormais se connecter à Apple Health sur iPhone (sommeil, activité, HRV) et intègre Function dans Perplexity Health pour analyser résultats de laboratoire et biomarqueurs.",
+    "tags": [
+      "produit"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/perplexity_ai/status/2061902688686887326",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-06-02",
+    "titre_fr": "Perplexity Computer mise sur l'inférence hybride locale et cloud",
+    "resume_fr": "Perplexity annonce une inférence agentique hybride pour Computer : les tâches sont réparties entre un modèle local sur la machine et des modèles de pointe dans le cloud, afin de garder les données privées sur l'appareil. À venir prochainement.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/perplexity_ai/status/2061861293569765847",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-06-02",
+    "titre_fr": "OpenClaw arrive dans l'écosystème Microsoft et Windows",
+    "resume_fr": "OpenClaw s'associe à Microsoft pour rendre ses agents utilisables de façon sécurisée en entreprise, au sein des environnements Microsoft et Windows.",
+    "tags": [
+      "agents",
+      "produit",
+      "automatisation"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/openclaw/status/2061869633624580452",
+    "media": true,
+    "auteur_x": "@openclaw"
+  },
+  {
+    "date": "2026-06-02",
+    "titre_fr": "Google DeepMind dévoile Co-Scientist",
+    "resume_fr": "Google DeepMind présente Co-Scientist, un système multi-agents basé sur Gemini conçu pour générer, débattre et faire évoluer des hypothèses scientifiques sur des problèmes complexes, comme partenaire de recherche.",
+    "tags": [
+      "google",
+      "agents",
+      "recherche"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2061857539977842793",
+    "media": true,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-06-02",
+    "titre_fr": "Microsoft publie MAI-Thinking-1",
+    "resume_fr": "Microsoft a sorti son modèle de raisonnement MAI-Thinking-1, mais ses scores restent difficiles à interpréter (GPQA et Terminal Bench 2.0 étonnamment bas) et l'accès limité au modèle rend l'évaluation indépendante compliquée.",
+    "tags": [
+      "modeles",
+      "recherche"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/emollick/status/2061907785768489127",
+    "media": false,
+    "auteur_x": "@emollick"
+  },
+  {
+    "date": "2026-06-02",
+    "titre_fr": "Claude Code introduit les Workflows",
+    "resume_fr": "Anthropic ajoute les Workflows à Claude Code, présentés comme la plus grosse amélioration depuis les skills et subagents. L'outil ouvre notamment des cas d'usage pour des tâches non techniques.",
+    "tags": [
+      "anthropic",
+      "agents",
+      "produit",
+      "automatisation"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/trq212/status/2061907538741006796",
+    "media": false,
+    "auteur_x": "@trq212"
+  },
+  {
+    "date": "2026-06-02",
+    "titre_fr": "Nathan Lambert quitte Ai2",
+    "resume_fr": "Nathan Lambert annonce son départ d'Ai2 après plus de 2,5 ans à travailler sur les modèles ouverts Olmo et Tulu. Il continuera dans l'écosystème open source et open science, avec des annonces à venir.",
+    "tags": [
+      "talents",
+      "open-source"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/natolambert/status/2061813361848029631",
+    "media": true,
+    "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-06-02",
+    "titre_fr": "Anthropic étend Project Glasswing",
+    "resume_fr": "Anthropic élargit l'accès à Claude Mythos Preview à environ 150 organisations supplémentaires réparties dans plus de quinze pays, dans le cadre du Project Glasswing.",
+    "tags": [
+      "anthropic",
+      "modeles"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/AnthropicAI/status/2061796327986454883",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-06-02",
+    "titre_fr": "Gemini surpasse des professeurs de droit dans une étude",
+    "resume_fr": "Dans une expérience où des questions d'étudiants en droit ont été soumises à l'aveugle à des juges, Gemini 2.5 a remporté 75 % des comparaisons face aux professeurs, avec des réponses jugées moins risquées. Les modèles plus récents feraient encore mieux.",
+    "tags": [
+      "google",
+      "recherche",
+      "modeles"
+    ],
+    "score": 47,
+    "tweet_url": "https://x.com/emollick/status/2061876620638486584",
+    "media": false,
+    "auteur_x": "@emollick"
+  },
+  {
+    "date": "2026-06-03",
+    "titre_fr": "Nouveau décret américain sur l'IA",
+    "resume_fr": "Un nouveau décret présidentiel sur l'IA aux États-Unis suscite de nombreuses réactions. Sam Altman et Anthropic le saluent comme un pas important pour le leadership américain, tandis que des critiques estiment qu'il marque la fin de la période de dérégulation totale.",
+    "tags": [
+      "politique-ia",
+      "openai",
+      "anthropic"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/sama/status/2061973280655904815",
+    "media": false,
+    "auteur_x": "@sama"
   }
 ]
