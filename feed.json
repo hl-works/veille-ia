@@ -1916,5 +1916,147 @@
     "tweet_url": "https://x.com/sama/status/2061973280655904815",
     "media": false,
     "auteur_x": "@sama"
+  },
+  {
+    "date": "2026-06-03",
+    "titre_fr": "OpenAI étend GPT-Rosalind aux sciences de la vie",
+    "resume_fr": "OpenAI muscle sa série de modèles GPT-Rosalind, conçue pour la recherche en sciences de la vie à l'échelle entreprise. Elle combine les capacités agentiques et d'usage d'outils de GPT-5.5 avec une intelligence renforcée pour la découverte, l'analyse et la conception de médicaments.",
+    "tags": [
+      "openai",
+      "modeles",
+      "recherche"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/OpenAI/status/2062281977122996256",
+    "media": false,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-06-03",
+    "titre_fr": "Perplexity Computer cible les entreprises",
+    "resume_fr": "Perplexity présente Computer pour les entreprises en croissance, avec des connexions à plus de 400 outils dont QuickBooks, Shopify, Vercel et Canva. L'idée est d'automatiser des tâches métier à travers les applications déjà utilisées.",
+    "tags": [
+      "produit",
+      "agents",
+      "automatisation",
+      "commerce",
+      "shopify"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/perplexity_ai/status/2062221423104704753",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-06-03",
+    "titre_fr": "Perplexity Computer arrive sur Windows",
+    "resume_fr": "Perplexity déploie son outil Computer sur Windows. Il fonctionne en local et orchestre les actions entre les applications et fichiers de l'utilisateur, d'abord pour les abonnés payants Max et Enterprise Max inscrits sur liste d'attente.",
+    "tags": [
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/perplexity_ai/status/2062189045728596080",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-06-03",
+    "titre_fr": "xAI et Gopuff lancent un assistant de shopping",
+    "resume_fr": "xAI et Gopuff présentent Go, un assistant personnel de shopping qui anticipe les besoins et livre en quelques minutes. Il s'appuie sur les modèles texte, audio et image de Grok.",
+    "tags": [
+      "xai",
+      "produit",
+      "commerce",
+      "vente"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/xai/status/2062252902438342735",
+    "media": false,
+    "auteur_x": "@xai"
+  },
+  {
+    "date": "2026-06-03",
+    "titre_fr": "Ideogram 4.0, nouveau modèle d'image en poids ouverts",
+    "resume_fr": "Le modèle de génération d'images Ideogram 4.0 sort en poids ouverts. Il se distingue par un rendu de texte de qualité, des images haute résolution et de bonnes performances pour le design.",
+    "tags": [
+      "modeles",
+      "open-source",
+      "marketing"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/venturetwins/status/2062207215961014735",
+    "media": true,
+    "auteur_x": "@venturetwins"
+  },
+  {
+    "date": "2026-06-03",
+    "titre_fr": "OpenClaw 2026.6.1 : support Windows et agents auto-apprenants",
+    "resume_fr": "La version 2026.6.1 d'OpenClaw ajoute un hôte natif Windows, un Skill Workshop pour des agents qui apprennent de leurs tâches répétées, une orchestration par Workboard et le support du modèle MiniMax M3.",
+    "tags": [
+      "produit",
+      "agents",
+      "open-source",
+      "automatisation"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/openclaw/status/2062288421406785710",
+    "media": false,
+    "auteur_x": "@openclaw"
+  },
+  {
+    "date": "2026-06-03",
+    "titre_fr": "Anthropic analyse les cyberattaques assistées par IA",
+    "resume_fr": "Anthropic a étudié 832 comptes malveillants et cartographié leur activité sur une base de données reconnue de tactiques d'attaquants, afin d'évaluer la résistance des techniques de sécurité face aux menaces dopées à l'IA.",
+    "tags": [
+      "anthropic",
+      "recherche",
+      "politique-ia"
+    ],
+    "score": 47,
+    "tweet_url": "https://x.com/AnthropicAI/status/2062243425580367905",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-06-03",
+    "titre_fr": "Uber plafonne ses agents de code à 1 500 $/mois par employé",
+    "resume_fr": "Selon des informations rapportées, Uber limiterait chaque salarié à 1 500 dollars par mois et par outil pour les agents de codage. Un plafond qui donne aussi un indice sur la valeur que l'entreprise attribue à ces outils.",
+    "tags": [
+      "agents",
+      "produit"
+    ],
+    "score": 46,
+    "tweet_url": "https://x.com/simonw/status/2062143151184465964",
+    "media": false,
+    "auteur_x": "@simonw"
+  },
+  {
+    "date": "2026-06-03",
+    "titre_fr": "Snowflake dévoile une vague de produits IA à son Summit",
+    "resume_fr": "Lors du Snowflake Summit, l'éditeur a présenté plusieurs nouveautés axées sur l'entreprise agentique : CoWork, CoCo, Datastream, Horizon Context, CoCo Desktop et Cortex Sense.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/RamaswmySridhar/status/2062242281609134363",
+    "media": true,
+    "auteur_x": "@RamaswmySridhar"
+  },
+  {
+    "date": "2026-06-03",
+    "titre_fr": "a16z investit dans Town, assistant IA personnel",
+    "resume_fr": "Andreessen Horowitz annonce un investissement dans Town, un assistant IA à mémoire contextuelle qui gère e-mails, listes de tâches et préparation de réunions, et peut exécuter des actions à la place de l'utilisateur.",
+    "tags": [
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/venturetwins/status/2062180943381876964",
+    "media": true,
+    "auteur_x": "@venturetwins"
   }
 ]
