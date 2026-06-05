@@ -2058,5 +2058,129 @@
     "tweet_url": "https://x.com/venturetwins/status/2062180943381876964",
     "media": true,
     "auteur_x": "@venturetwins"
+  },
+  {
+    "date": "2026-06-04",
+    "titre_fr": "Helion lève 465 M$ pour la fusion commerciale",
+    "resume_fr": "La startup Helion Energy a bouclé un tour de 465 M$ pour une valorisation de 15,5 milliards. Son prototype Polaris a dépassé 150 millions de degrés Celsius, et un accord d'approvisionnement a été signé avec Microsoft pour fournir 50 MW à ses data centers d'ici 2028.",
+    "tags": [
+      "hardware",
+      "recherche"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/ycombinator/status/2062649272911438132",
+    "media": false,
+    "auteur_x": "@ycombinator"
+  },
+  {
+    "date": "2026-06-04",
+    "titre_fr": "Supabase lève 500 M$ à 10 milliards de valorisation",
+    "resume_fr": "La plateforme de bases de données Supabase a réalisé une série F de 500 M$. Selon l'entreprise, plus de 60% des nouvelles bases sont désormais créées via des outils d'IA, signe de l'essor du développement assisté par IA.",
+    "tags": [
+      "produit",
+      "saas"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/ycombinator/status/2062646410022195230",
+    "media": true,
+    "auteur_x": "@ycombinator"
+  },
+  {
+    "date": "2026-06-04",
+    "titre_fr": "Anthropic : Claude écrit déjà 80% du code de l'entreprise",
+    "resume_fr": "Anthropic affirme que plus de 80% du code intégré à sa base est désormais écrit par Claude, et que ses ingénieurs livrent 8 fois plus de code qu'en 2024. L'entreprise évoque une possible auto-amélioration récursive, ce que des critiques relativisent en y voyant surtout de meilleures performances de codage sous contrôle humain.",
+    "tags": [
+      "anthropic",
+      "modeles",
+      "recherche"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/alexalbert__/status/2062580571214389510",
+    "media": false,
+    "auteur_x": "@alexalbert__"
+  },
+  {
+    "date": "2026-06-04",
+    "titre_fr": "ChatGPT déploie une mémoire plus avancée",
+    "resume_fr": "OpenAI déploie une nouvelle version de la mémoire de ChatGPT, capable de mieux conserver le contexte d'une conversation à l'autre et de rester utile dans la durée.",
+    "tags": [
+      "openai",
+      "produit"
+    ],
+    "score": 64,
+    "tweet_url": "https://x.com/OpenAI/status/2062567556524003631",
+    "media": false,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-06-04",
+    "titre_fr": "Codex Sites : des applications qui se mettent à jour seules",
+    "resume_fr": "OpenAI propose avec Codex Sites de construire des applications (tableaux de bord, outils internes) que l'agent continue d'améliorer de façon autonome, sans intervention manuelle. Le produit reste limité (domaines, base de données, authentification) mais illustre la tendance vers des apps « auto-entretenues ».",
+    "tags": [
+      "openai",
+      "agents",
+      "produit",
+      "automatisation",
+      "no-code"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/gregisenberg/status/2062603989691044244",
+    "media": true,
+    "auteur_x": "@gregisenberg"
+  },
+  {
+    "date": "2026-06-04",
+    "titre_fr": "Shopify s'intègre à v0, Replit et Manus",
+    "resume_fr": "Shopify a lancé des intégrations avec trois outils de création d'applications par IA (v0, Replit, Manus). On peut décrire son activité, laisser ces outils construire la boutique, puis la connecter à Shopify pour vendre.",
+    "tags": [
+      "produit",
+      "commerce",
+      "shopify",
+      "no-code"
+    ],
+    "score": 72,
+    "tweet_url": "https://x.com/harleyf/status/2062590057794691268",
+    "media": true,
+    "auteur_x": "@harleyf"
+  },
+  {
+    "date": "2026-06-04",
+    "titre_fr": "Perplexity et la SBA lancent un accélérateur IA pour les PME",
+    "resume_fr": "Perplexity s'associe à l'agence américaine des petites entreprises pour offrir 25 M$ de crédits, soit 250 $ chacun pour jusqu'à 100 000 entreprises éligibles, afin de favoriser l'adoption de l'IA par les petites structures.",
+    "tags": [
+      "produit",
+      "politique-ia"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/perplexity_ai/status/2062556000394379710",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-06-04",
+    "titre_fr": "Un modèle d'OpenAI trouve un contre-exemple à une conjecture d'Erdős",
+    "resume_fr": "OpenAI raconte comment l'un de ses modèles a trouvé un contre-exemple à une conjecture mathématique vieille de 80 ans, illustrant une collaboration entre mathématiciens et IA pour de nouvelles découvertes.",
+    "tags": [
+      "openai",
+      "recherche"
+    ],
+    "score": 44,
+    "tweet_url": "https://x.com/OpenAI/status/2062630454537424930",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-06-04",
+    "titre_fr": "Nvidia publie un nouveau rapport sur ses modèles de pointe",
+    "resume_fr": "Nvidia a diffusé un rapport technique de 65 pages sur ses modèles Nemotron, adoptant des méthodes de post-entraînement (distillation multi-enseignants on-policy) devenues standard dans l'industrie. Les laboratoires américains de modèles ouverts gagnent en visibilité.",
+    "tags": [
+      "modeles",
+      "open-source",
+      "hardware"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/natolambert/status/2062529566623813724",
+    "media": true,
+    "auteur_x": "@natolambert"
   }
 ]
