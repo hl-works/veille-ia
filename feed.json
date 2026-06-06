@@ -2182,5 +2182,119 @@
     "tweet_url": "https://x.com/natolambert/status/2062529566623813724",
     "media": true,
     "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-06-05",
+    "titre_fr": "Google détaille ses sorties de la semaine : Nano Banana 2, Gemma 4 et Co-Scientist",
+    "resume_fr": "Google annonce la disponibilité générale de ses générateurs d'images Nano Banana 2 et Pro via l'API Gemini et AI Studio, ainsi que Gemma 4 12B (modèle multimodal fonctionnant hors ligne sur ordinateur portable), un système multi-agents scientifique Co-Scientist et un modèle de musique en temps réel en open-weights.",
+    "tags": [
+      "google",
+      "modeles",
+      "produit",
+      "open-source"
+    ],
+    "score": 72,
+    "tweet_url": "https://x.com/GoogleAI/status/2062942864288387430",
+    "media": false,
+    "auteur_x": "@GoogleAI"
+  },
+  {
+    "date": "2026-06-05",
+    "titre_fr": "Nemotron 3 Ultra de Nvidia arrive sur Perplexity",
+    "resume_fr": "Perplexity ouvre l'accès au nouveau modèle ouvert de Nvidia, Nemotron 3 Ultra, conçu pour les agents à exécution longue, pour ses abonnés Pro et Max.",
+    "tags": [
+      "modeles",
+      "hardware",
+      "agents",
+      "open-source"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/perplexity_ai/status/2062976272436002825",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-06-05",
+    "titre_fr": "Chute des valeurs IA et rumeur d'aide publique pour OpenAI",
+    "resume_fr": "Forte baisse des actions liées à l'IA (Nvidia, Broadcom, Oracle, CoreWeave, Nebius) sur fond de rumeurs selon lesquelles OpenAI chercherait un investissement de l'État américain. Le débat s'intensifie sur l'opportunité d'une participation publique dans les entreprises d'IA, perçue par certains comme un signe de faiblesse.",
+    "tags": [
+      "openai",
+      "politique-ia"
+    ],
+    "score": 65,
+    "tweet_url": "https://x.com/GaryMarcus/status/2063000883466801397",
+    "media": false,
+    "auteur_x": "@GaryMarcus"
+  },
+  {
+    "date": "2026-06-05",
+    "titre_fr": "Anthropic teste Claude comme assistant en chimie",
+    "resume_fr": "Anthropic publie une étude montrant qu'Opus 4.7 égale, voire dépasse sur certaines tâches, les logiciels dédiés de spectroscopie RMN utilisés par les chimistes pour analyser la structure des molécules.",
+    "tags": [
+      "anthropic",
+      "recherche",
+      "modeles"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/AnthropicAI/status/2062979607448682731",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-06-05",
+    "titre_fr": "Le créateur d'OpenClaw rejoint OpenAI",
+    "resume_fr": "Peter Steinberger, à l'origine de l'agent IA open-source OpenClaw devenu le dépôt logiciel le plus suivi sur GitHub (346k+ étoiles) en moins de cinq mois, travaille désormais chez OpenAI sur la prochaine génération d'agents personnels.",
+    "tags": [
+      "openai",
+      "talents",
+      "agents",
+      "open-source"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/ycombinator/status/2062942526856941994",
+    "media": true,
+    "auteur_x": "@ycombinator"
+  },
+  {
+    "date": "2026-06-05",
+    "titre_fr": "Claude Cowork double ses limites d'usage pour un mois",
+    "resume_fr": "Anthropic double temporairement les limites d'utilisation de Claude Cowork, permettant de déléguer des tâches plus volumineuses et complexes durant le mois à venir.",
+    "tags": [
+      "anthropic",
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/claudeai/status/2063018337567670285",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-06-05",
+    "titre_fr": "Cursor introduit un mode Design pour modifier l'interface",
+    "resume_fr": "L'éditeur de code Cursor lance Design Mode, qui permet de pointer, dessiner ou parler pour modifier directement une interface utilisateur.",
+    "tags": [
+      "produit",
+      "no-code"
+    ],
+    "score": 47,
+    "tweet_url": "https://x.com/cursor_ai/status/2062950344687272144",
+    "media": true,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-06-06",
+    "titre_fr": "ChatGPT intègre la messagerie e-mail",
+    "resume_fr": "OpenAI ajoute une intégration e-mail à ChatGPT, permettant de connecter sa boîte mail à l'assistant.",
+    "tags": [
+      "openai",
+      "produit",
+      "automatisation"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/gdb/status/2063056196735504796",
+    "media": false,
+    "auteur_x": "@gdb"
   }
 ]
