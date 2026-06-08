@@ -2296,5 +2296,47 @@
     "tweet_url": "https://x.com/gdb/status/2063056196735504796",
     "media": false,
     "auteur_x": "@gdb"
+  },
+  {
+    "date": "2026-06-07",
+    "titre_fr": "OpenAI lance Codex Sites pour créer des sites complets",
+    "resume_fr": "OpenAI a déployé Codex Sites, capable de générer des sites web et applications complètes avec base de données, paiements et domaine intégrés. L'idée évoquée : offrir le site et facturer le service derrière, comme la génération de leads pour des commerces locaux.",
+    "tags": [
+      "openai",
+      "produit",
+      "no-code",
+      "commerce"
+    ],
+    "score": 74,
+    "tweet_url": "https://x.com/coreyganim/status/2063717306736185385",
+    "media": true,
+    "auteur_x": "@coreyganim"
+  },
+  {
+    "date": "2026-06-07",
+    "titre_fr": "Édition vidéo ciblée avec Omni",
+    "resume_fr": "Une démonstration montre Omni effectuant des modifications très ciblées dans une vidéo (transformer un élément précis) tout en laissant le reste inchangé, ce qui pourrait être utile pour des workflows professionnels.",
+    "tags": [
+      "produit",
+      "modeles"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/venturetwins/status/2063720212541874457",
+    "media": true,
+    "auteur_x": "@venturetwins"
+  },
+  {
+    "date": "2026-06-08",
+    "titre_fr": "Claude Opus mis en avant pour les tâches longues et autonomes",
+    "resume_fr": "Anthropic met en avant Claude Opus pour les travaux de longue durée, avec des conseils pour le faire tourner en autonomie pendant des heures : mode auto pour les permissions, orchestration de nombreux agents, exécution dans le cloud et vérification automatique du travail.",
+    "tags": [
+      "anthropic",
+      "agents",
+      "produit"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/bcherny/status/2063792263067754658",
+    "media": false,
+    "auteur_x": "@bcherny"
   }
 ]
