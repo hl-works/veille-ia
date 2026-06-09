@@ -2338,5 +2338,116 @@
     "tweet_url": "https://x.com/bcherny/status/2063792263067754658",
     "media": false,
     "auteur_x": "@bcherny"
+  },
+  {
+    "date": "2026-06-08",
+    "titre_fr": "OpenAI et Anthropic déposent des projets d'introduction en bourse",
+    "resume_fr": "Les deux laboratoires ont déposé des documents confidentiels (S-1) auprès du régulateur boursier américain, Anthropic le 1er juin. Cela laisse présager de futures introductions en bourse pour les deux acteurs majeurs de l'IA.",
+    "tags": [
+      "openai",
+      "anthropic",
+      "politique-ia"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/simonw/status/2064094592300134652",
+    "media": false,
+    "auteur_x": "@simonw"
+  },
+  {
+    "date": "2026-06-08",
+    "titre_fr": "OpenAI publie sa feuille de route",
+    "resume_fr": "Sam Altman et Greg Brockman ont partagé le plan actuel d'OpenAI, articulé autour de sa mission et de l'idée d'« élargir le pouvoir d'agir » des humains à mesure que l'IA progresse.",
+    "tags": [
+      "openai",
+      "produit"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/sama/status/2064088940932641225",
+    "media": false,
+    "auteur_x": "@sama"
+  },
+  {
+    "date": "2026-06-08",
+    "titre_fr": "Perplexity et Harvard mesurent les gains des agents autonomes",
+    "resume_fr": "Une étude menée avec Harvard sur trois mois indique que les travailleurs utilisant l'agent « Computer » de Perplexity accomplissent leurs tâches en 87 % de temps en moins et à un coût 94 % inférieur par rapport à la recherche seule, avec une satisfaction accrue.",
+    "tags": [
+      "produit",
+      "agents",
+      "automatisation",
+      "recherche"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/perplexity_ai/status/2064023455453110286",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-06-08",
+    "titre_fr": "Anthropic : pourquoi l'IA progresse plus vite en code qu'en biologie",
+    "resume_fr": "Dans un billet scientifique, Anthropic explique que les bases de données biologiques sont mal adaptées aux agents IA, car conçues pour d'autres usages, et s'interroge sur les infrastructures à bâtir pour les rendre exploitables.",
+    "tags": [
+      "anthropic",
+      "recherche",
+      "agents"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/AnthropicAI/status/2064054837294354677",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-06-08",
+    "titre_fr": "Claude Code, un an après : retour d'expérience",
+    "resume_fr": "Les équipes d'Anthropic reviennent sur l'évolution de Claude Code depuis sa disponibilité générale : usage du mode auto, correction automatique de bugs et développement depuis le mobile.",
+    "tags": [
+      "anthropic",
+      "produit",
+      "agents"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/bcherny/status/2064034799711588805",
+    "media": false,
+    "auteur_x": "@bcherny"
+  },
+  {
+    "date": "2026-06-08",
+    "titre_fr": "Un nouveau benchmark de code résiste encore aux modèles",
+    "resume_fr": "Après la saturation des tests de codage de METR, Cognition a publié FrontierCode Diamond, où le meilleur modèle (Claude Opus 4.8) ne dépasse pas 13,4 %, signe qu'il reste une marge de progression importante.",
+    "tags": [
+      "modeles",
+      "recherche",
+      "anthropic"
+    ],
+    "score": 46,
+    "tweet_url": "https://x.com/GaryMarcus/status/2064127368999137697",
+    "media": false,
+    "auteur_x": "@GaryMarcus"
+  },
+  {
+    "date": "2026-06-09",
+    "titre_fr": "OpenAI et Anthropic évoquent un possible ralentissement de l'IA",
+    "resume_fr": "Dans leurs récentes publications sur l'avenir de l'IA, les deux laboratoires mentionnent l'éventualité de ralentir le développement, tout en précisant qu'un tel geste nécessiterait une coordination mondiale dont les modalités restent à définir.",
+    "tags": [
+      "openai",
+      "anthropic",
+      "politique-ia"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/emollick/status/2064158792145609114",
+    "media": true,
+    "auteur_x": "@emollick"
+  },
+  {
+    "date": "2026-06-09",
+    "titre_fr": "Perplexity lance le concours « Billion Pound Build »",
+    "resume_fr": "Annoncée à la London Tech Week, cette compétition propose 1 M£ de crédits aux équipes qui utilisent l'outil Computer de Perplexity pour bâtir leur entreprise. La phase de présentation est ouverte jusqu'au 6 juillet.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/perplexity_ai/status/2064247043250639341",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
   }
 ]
