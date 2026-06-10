@@ -2449,5 +2449,76 @@
     "tweet_url": "https://x.com/perplexity_ai/status/2064247043250639341",
     "media": true,
     "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-06-09",
+    "titre_fr": "Anthropic lance Claude Fable 5, son modèle le plus capable",
+    "resume_fr": "Anthropic dévoile Claude Fable 5, présenté comme une version « Mythos-class » sécurisée pour un usage général. Ses capacités dépassent celles de tous les modèles rendus publics par l'entreprise jusqu'ici, avec un bond particulièrement marqué pour le code et les tâches longues et complexes.",
+    "tags": [
+      "anthropic",
+      "modeles",
+      "produit"
+    ],
+    "score": 86,
+    "tweet_url": "https://x.com/claudeai/status/2064394146916229443",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-06-09",
+    "titre_fr": "Google présente Gemini 3.5 Live Translate",
+    "resume_fr": "Google lance Gemini 3.5 Live Translate, un modèle audio de traduction vocale en temps réel prenant en charge plus de 70 langues. La traduction démarre dès le début de la phrase et préserve le rythme et l'intonation, sans pauses gênantes. Disponible dans l'API Gemini, AI Studio et Google Translate, et bientôt dans Google Meet.",
+    "tags": [
+      "google",
+      "modeles",
+      "produit"
+    ],
+    "score": 74,
+    "tweet_url": "https://x.com/GoogleAI/status/2064366504112505266",
+    "media": true,
+    "auteur_x": "@GoogleAI"
+  },
+  {
+    "date": "2026-06-09",
+    "titre_fr": "Claude Fable 5 disponible dans Cursor",
+    "resume_fr": "L'éditeur de code Cursor intègre Claude Fable 5, qui établit un nouveau record sur son benchmark interne CursorBench avec 72,9 %, soit 8 points au-dessus du précédent meilleur score.",
+    "tags": [
+      "anthropic",
+      "produit",
+      "agents"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/cursor_ai/status/2064394824313376787",
+    "media": true,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-06-09",
+    "titre_fr": "xAI développe un assistant shopping pour Gopuff",
+    "resume_fr": "xAI annonce un partenariat avec Gopuff pour construire un assistant d'achat personnalisé combinant chat, voix et modèles d'image. Un cas concret d'IA appliquée au commerce de détail.",
+    "tags": [
+      "xai",
+      "produit",
+      "commerce",
+      "service-client"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/xai/status/2064426048146800780",
+    "media": true,
+    "auteur_x": "@xai"
+  },
+  {
+    "date": "2026-06-09",
+    "titre_fr": "Polémique sur l'accès par abonnement à Fable",
+    "resume_fr": "La sortie de Fable s'accompagne de critiques : Anthropic envisagerait de retirer l'accès au modèle via abonnement après deux semaines, le réservant aux offres payantes à l'usage. Plusieurs observateurs estiment que cela décourage l'expérimentation et soulèvent aussi des questions sur des politiques de sécurité jugées inégales.",
+    "tags": [
+      "anthropic",
+      "produit",
+      "politique-ia"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/emollick/status/2064471456914772172",
+    "media": false,
+    "auteur_x": "@emollick"
   }
 ]
