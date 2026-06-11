@@ -2520,5 +2520,126 @@
     "tweet_url": "https://x.com/emollick/status/2064471456914772172",
     "media": false,
     "auteur_x": "@emollick"
+  },
+  {
+    "date": "2026-06-10",
+    "titre_fr": "Claude Fable 5, le nouveau modèle haut de gamme d'Anthropic",
+    "resume_fr": "Anthropic a lancé Claude Fable 5, présenté comme son modèle le plus performant pour les tâches longues et complexes. Il est déjà intégré ailleurs, notamment comme modèle orchestrateur dans Perplexity Computer pour les abonnés Pro et Max.",
+    "tags": [
+      "anthropic",
+      "modeles",
+      "produit"
+    ],
+    "score": 78,
+    "tweet_url": "https://x.com/perplexity_ai/status/2064771411894567373",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-06-10",
+    "titre_fr": "Dario Amodei publie un essai sur la régulation de l'IA",
+    "resume_fr": "Le PDG d'Anthropic, Dario Amodei, signe un essai affirmant que l'IA progresse bien plus vite que les processus réglementaires. Anthropic lance trois initiatives pour combler ce décalage.",
+    "tags": [
+      "anthropic",
+      "politique-ia"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/DarioAmodei/status/2064781775247950326",
+    "media": false,
+    "auteur_x": "@DarioAmodei"
+  },
+  {
+    "date": "2026-06-10",
+    "titre_fr": "xAI lance Grok Voice",
+    "resume_fr": "xAI présente Grok Voice, son mode vocal mettant en avant un timing, un ton et une chaleur proches de l'humain, à un tarif inférieur à celui des concurrents.",
+    "tags": [
+      "xai",
+      "produit"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/xai/status/2064777588036530309",
+    "media": false,
+    "auteur_x": "@xai"
+  },
+  {
+    "date": "2026-06-10",
+    "titre_fr": "Google DeepMind dévoile DiffusionGemma",
+    "resume_fr": "Google DeepMind présente DiffusionGemma, un modèle ouvert expérimental qui génère des blocs de texte simultanément plutôt que mot à mot, offrant jusqu'à 4x plus de vitesse sur GPU dédiés et la capacité de s'auto-corriger.",
+    "tags": [
+      "google",
+      "modeles",
+      "open-source"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2064741061352636762",
+    "media": true,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-06-10",
+    "titre_fr": "Anthropic étend ses agents lors de Code with Claude Tokyo",
+    "resume_fr": "Anthropic annonce des déploiements planifiés et des variables d'environnement sécurisées en bêta publique pour les Claude Managed Agents, ainsi que la disponibilité générale des workflows dynamiques dans Claude Code. Les agents peuvent désormais s'exécuter selon un calendrier et prendre en charge des tâches plus lourdes.",
+    "tags": [
+      "anthropic",
+      "agents",
+      "automatisation"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/claudeai/status/2064741174317924421",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-06-10",
+    "titre_fr": "Cursor accélère son agent de revue de code",
+    "resume_fr": "L'agent de revue de code de Cursor est désormais plus de 3x plus rapide, 22% moins cher et détecte 10% de bugs en plus. La commande /review permet aussi de lancer Bugbot localement avant de pousser le code.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/cursor_ai/status/2064774675021119825",
+    "media": true,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-06-10",
+    "titre_fr": "Polémique autour d'un changement d'accès aux modèles d'Anthropic",
+    "resume_fr": "Un changement d'API non annoncé d'Anthropic (passage obligatoire à l'adaptive-thinking pour Fable 5) a cassé des intégrations existantes et restreint l'accès de certains utilisateurs aux modèles de pointe, suscitant la colère de plusieurs membres de la communauté IA.",
+    "tags": [
+      "anthropic",
+      "modeles"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/natolambert/status/2064699044145095104",
+    "media": false,
+    "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-06-10",
+    "titre_fr": "Sortie d'ESMFold2 et ESM Atlas en biologie",
+    "resume_fr": "Un nouvel épisode de NoPriors présente la mission du Biohub avec Priscilla Chan, Mark Zuckerberg et Alex Rives, ainsi que la sortie des modèles ESMFold2 et ESM Atlas, annoncés comme dépassant AlphaFold pour la prédiction de structures biologiques.",
+    "tags": [
+      "meta",
+      "recherche",
+      "modeles"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/saranormous/status/2064858000519844037",
+    "media": true,
+    "auteur_x": "@saranormous"
+  },
+  {
+    "date": "2026-06-11",
+    "titre_fr": "OpenAI envisagerait des baisses de prix importantes",
+    "resume_fr": "Selon une information du Wall Street Journal, OpenAI réfléchirait à des coupes tarifaires drastiques sur ses produits. Une décision interprétée comme un signe d'intensification de la guerre des prix entre fournisseurs de modèles.",
+    "tags": [
+      "openai",
+      "produit"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/GaryMarcus/status/2064914277191016795",
+    "media": true,
+    "auteur_x": "@GaryMarcus"
   }
 ]
