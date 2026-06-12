@@ -2641,5 +2641,143 @@
     "tweet_url": "https://x.com/GaryMarcus/status/2064914277191016795",
     "media": true,
     "auteur_x": "@GaryMarcus"
+  },
+  {
+    "date": "2026-06-11",
+    "titre_fr": "Perplexity intègre Deep Research dans son agent Computer",
+    "resume_fr": "Perplexity ajoute Deep Research comme compétence native de son agent Computer, avec accès à la recherche, à la génération de code, aux sandboxes longues durées et aux connecteurs. Disponible pour les abonnés Pro et Max.",
+    "tags": [
+      "produit",
+      "agents",
+      "recherche"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/perplexity_ai/status/2065124930463916317",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-06-11",
+    "titre_fr": "Google annonce Gemini Omni Flash pour la vidéo",
+    "resume_fr": "Google présente Gemini Omni Flash, qu'il présente comme état de l'art en génération image-vers-vidéo, texte-vers-vidéo et édition vidéo, avec une arrivée prévue dans l'API pour les développeurs.",
+    "tags": [
+      "google",
+      "modeles",
+      "produit"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/OfficialLoganK/status/2065118111360303414",
+    "media": true,
+    "auteur_x": "@OfficialLoganK"
+  },
+  {
+    "date": "2026-06-11",
+    "titre_fr": "xAI lance la marketplace de plugins Grok Build en bêta",
+    "resume_fr": "xAI ouvre en bêta une marketplace de plugins pour Grok, permettant de construire depuis le terminal avec des intégrations comme MongoDB, Vercel, Sentry, Cloudflare et Chrome DevTools.",
+    "tags": [
+      "xai",
+      "produit",
+      "agents"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/xai/status/2065099299541893577",
+    "media": true,
+    "auteur_x": "@xai"
+  },
+  {
+    "date": "2026-06-11",
+    "titre_fr": "Cursor active l'auto-revue par défaut",
+    "resume_fr": "Cursor active par défaut pour tous les nouveaux utilisateurs une revue automatique : un sous-agent classifieur analyse les actions en contexte pour autoriser, bloquer ou demander une approbation, avec une précision annoncée de 97 %.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/cursor_ai/status/2065137803084857845",
+    "media": true,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-06-11",
+    "titre_fr": "Shopify met en avant son assistant commerce Sidekick",
+    "resume_fr": "Shopify défend l'idée que l'IA commerce doit comprendre en profondeur le métier d'un marchand (stocks, marges, prix, paiements, fraude, retours) et positionne son assistant Sidekick comme intégrant 20 ans de données commerciales, par opposition aux IA génériques.",
+    "tags": [
+      "produit",
+      "commerce",
+      "shopify",
+      "service-client"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/harleyf/status/2065114178788974785",
+    "media": false,
+    "auteur_x": "@harleyf"
+  },
+  {
+    "date": "2026-06-11",
+    "titre_fr": "Polémique autour de la sécurité du dernier modèle d'Anthropic",
+    "resume_fr": "Le chercheur Nathan Lambert détaille les critiques visant le lancement du dernier modèle d'Anthropic : application inégale des garde-fous, soupçon de manipulation silencieuse des utilisateurs et restriction d'accès pour la recherche en IA. Anthropic a réagi rapidement selon lui.",
+    "tags": [
+      "anthropic",
+      "modeles",
+      "politique-ia"
+    ],
+    "score": 54,
+    "tweet_url": "https://x.com/natolambert/status/2065082135682383950",
+    "media": false,
+    "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-06-11",
+    "titre_fr": "Anthropic lance le programme Claude Corps",
+    "resume_fr": "Anthropic crée Claude Corps, un programme national de bourses qui forme 1 000 personnes en début de carrière à l'usage de Claude et les rémunère pour aider des associations américaines à faire avancer leurs missions.",
+    "tags": [
+      "anthropic",
+      "produit"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/AnthropicAI/status/2065057393927467084",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-06-11",
+    "titre_fr": "Google DeepMind finance la recherche sur les comportements collectifs d'agents",
+    "resume_fr": "Avec plusieurs partenaires, Google DeepMind lance un fonds de recherche de 10 M$ pour comprendre les comportements collectifs émergents lorsque des millions d'agents IA interagissent entre eux.",
+    "tags": [
+      "google",
+      "agents",
+      "recherche"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2065031279213441309",
+    "media": true,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-06-11",
+    "titre_fr": "Ferveret propose un refroidissement de data centers inspiré du nucléaire",
+    "resume_fr": "Soutenue par Y Combinator, la startup Ferveret développe un système de refroidissement inspiré des réacteurs nucléaires, annoncé 15 % plus performant que le refroidissement liquide de pointe et délivrant 35 % de tokens en plus à puissance égale, sans consommation d'eau.",
+    "tags": [
+      "hardware",
+      "recherche"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/ycombinator/status/2065181630374011049",
+    "media": false,
+    "auteur_x": "@ycombinator"
+  },
+  {
+    "date": "2026-06-12",
+    "titre_fr": "OpenAI permet de reporter les resets de limites sur Codex",
+    "resume_fr": "OpenAI déploie la possibilité de sauvegarder les réinitialisations de limites d'usage de Codex pour les utiliser plus tard, d'abord pour les comptes Go, Plus, Pro et Business avec un reset gratuit.",
+    "tags": [
+      "openai",
+      "produit",
+      "agents"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/OpenAI/status/2065225362544726371",
+    "media": true,
+    "auteur_x": "@OpenAI"
   }
 ]
