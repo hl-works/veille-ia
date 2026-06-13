@@ -2779,5 +2779,90 @@
     "tweet_url": "https://x.com/OpenAI/status/2065225362544726371",
     "media": true,
     "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-06-12",
+    "titre_fr": "Google annonce plusieurs nouveautés IA cette semaine",
+    "resume_fr": "Google a présenté Gemini 3.5 Live Translate (traduction vocale en temps réel), une mise à jour majeure de NotebookLM avec des capacités agentiques et de nouveaux formats de sortie, l'ouverture de Project Genie aux abonnés AI Ultra, l'extension des Notebooks à l'Europe, et DiffusionGemma, un modèle open expérimental basé sur la diffusion de texte.",
+    "tags": [
+      "google",
+      "modeles",
+      "produit",
+      "open-source"
+    ],
+    "score": 70,
+    "tweet_url": "https://x.com/GoogleAI/status/2065478191247130703",
+    "media": false,
+    "auteur_x": "@GoogleAI"
+  },
+  {
+    "date": "2026-06-12",
+    "titre_fr": "Figma permet de copier un site web en calques éditables",
+    "resume_fr": "Figma propose une extension Chrome qui importe n'importe quel site web en direct sous forme de calques éditables plutôt que de simples captures d'écran. Combinée à un modèle d'IA, elle permet de reconstruire des pages dans sa propre charte graphique, un atout pour les marques et agences.",
+    "tags": [
+      "produit",
+      "google",
+      "marketing",
+      "commerce"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/venturetwins/status/2065525567273714161",
+    "media": true,
+    "auteur_x": "@venturetwins"
+  },
+  {
+    "date": "2026-06-12",
+    "titre_fr": "Google DeepMind lance un accélérateur robotique en Europe",
+    "resume_fr": "Google DeepMind a ouvert un programme de trois mois réunissant 15 startups travaillant sur l'IA physique en Europe. Les entreprises auront accès à la pile technologique de Google, aux modèles Gemini Robotics et à un accompagnement des équipes.",
+    "tags": [
+      "google",
+      "produit",
+      "recherche"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2065388989146628563",
+    "media": true,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-06-13",
+    "titre_fr": "Le gouvernement américain force Anthropic à couper l'accès à Fable 5 et Mythos 5",
+    "resume_fr": "Invoquant la sécurité nationale, l'administration américaine a émis une directive de contrôle des exportations suspendant l'accès aux modèles Fable 5 et Mythos 5 pour tout ressortissant étranger, y compris les employés étrangers d'Anthropic. Pour se conformer, Anthropic a dû désactiver ces deux modèles pour l'ensemble de ses clients ; les autres modèles Claude restent accessibles.",
+    "tags": [
+      "anthropic",
+      "politique-ia",
+      "modeles"
+    ],
+    "score": 82,
+    "tweet_url": "https://x.com/AnthropicAI/status/2065597531644743999",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-06-13",
+    "titre_fr": "OpenAI visé par une assignation officielle de grande ampleur",
+    "resume_fr": "OpenAI fait l'objet d'une assignation portant sur de nombreux aspects de son activité : publicité, engagement et rétention des utilisateurs, gestion des données personnelles et de santé, pratiques envers les mineurs et les personnes âgées, ainsi que ses modèles et politiques internes.",
+    "tags": [
+      "openai",
+      "politique-ia"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/GaryMarcus/status/2065667991258505559",
+    "media": false,
+    "auteur_x": "@GaryMarcus"
+  },
+  {
+    "date": "2026-06-13",
+    "titre_fr": "OpenAI dispose d'un modèle vocal amélioré, gpt-realtime-2",
+    "resume_fr": "OpenAI a développé une version améliorée de son modèle de conversation vocale, gpt-realtime-2, pas encore intégrée dans ChatGPT. Des développeurs l'utilisent déjà via l'API, notamment pour dialoguer à propos d'un document fourni.",
+    "tags": [
+      "openai",
+      "modeles",
+      "produit"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/simonw/status/2065586404630139080",
+    "media": false,
+    "auteur_x": "@simonw"
   }
 ]
