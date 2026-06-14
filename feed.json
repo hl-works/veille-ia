@@ -2864,5 +2864,94 @@
     "tweet_url": "https://x.com/simonw/status/2065586404630139080",
     "media": false,
     "auteur_x": "@simonw"
+  },
+  {
+    "date": "2026-06-13",
+    "titre_fr": "Tour d'horizon produits : agent business Meta, Gemma 4, Ideogram et baisse de prix Google",
+    "resume_fr": "Plusieurs annonces concrètes sont sorties dans la semaine : Meta lance un agent business qui répond aux clients 24/7 sur WhatsApp et Messenger, Google abaisse son offre AI Plus à 4,99 $, Ideogram propose un modèle d'image open qui gère enfin le texte, et Gemma 4 tourne en local sur un ordinateur portable.",
+    "tags": [
+      "meta",
+      "google",
+      "produit",
+      "modeles",
+      "service-client",
+      "commerce"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/coreyganim/status/2065747624905351326",
+    "media": true,
+    "auteur_x": "@coreyganim"
+  },
+  {
+    "date": "2026-06-13",
+    "titre_fr": "Un assistant d'analyse publicitaire bâti dans Claude Code",
+    "resume_fr": "Un créateur décrit un système monté dans Claude Code qui scrape les publicités Meta de concurrents, les analyse avec Gemini puis génère dix concepts d'annonces dans la voix de la marque. Présenté comme un gain de temps pour les marques DTC et agences, à coût d'API faible.",
+    "tags": [
+      "anthropic",
+      "produit",
+      "marketing",
+      "pub",
+      "automatisation"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/mikefutia/status/2065917959139434795",
+    "media": true,
+    "auteur_x": "@mikefutia"
+  },
+  {
+    "date": "2026-06-13",
+    "titre_fr": "Guide pratique pour passer aux modèles d'IA locaux",
+    "resume_fr": "Suite à la suspension de Fable 5, plusieurs voix recommandent de maîtriser les modèles locaux (Ollama, LM Studio, Qwen, Gemma, quantization) pour garder le contrôle de son outillage. L'argument : ne pas bâtir tout son flux de travail sur un service qui peut disparaître du jour au lendemain.",
+    "tags": [
+      "open-source",
+      "modeles",
+      "hardware",
+      "automatisation"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/gregisenberg/status/2065773938915889253",
+    "media": false,
+    "auteur_x": "@gregisenberg"
+  },
+  {
+    "date": "2026-06-13",
+    "titre_fr": "Aster lance un laboratoire de recherche autonome",
+    "resume_fr": "Soutenue par Y Combinator, la startup Aster fait tourner des milliers d'agents IA en parallèle pour accélérer la recherche scientifique. Elle annonce un record sur le benchmark ProteinGym établi en 30 minutes.",
+    "tags": [
+      "agents",
+      "recherche",
+      "produit"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/ycombinator/status/2065871828430827583",
+    "media": true,
+    "auteur_x": "@ycombinator"
+  },
+  {
+    "date": "2026-06-13",
+    "titre_fr": "Mistral peine à suivre les laboratoires de pointe",
+    "resume_fr": "Un débat émerge sur le retard de Mistral face aux trois grands américains et aux laboratoires chinois. Malgré du talent et un soutien national, le seul laboratoire frontière européen n'arrive pas à combler l'écart.",
+    "tags": [
+      "mistral",
+      "modeles"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/emollick/status/2065837438388326474",
+    "media": false,
+    "auteur_x": "@emollick"
+  },
+  {
+    "date": "2026-06-14",
+    "titre_fr": "Le modèle Fable 5 d'Anthropic suspendu par le gouvernement",
+    "resume_fr": "Lors du Build Day d'Anthropic, l'accès au nouveau modèle Fable 5 a été bloqué par une décision gouvernementale, obligeant les développeurs à se rabattre sur Opus 4.8. L'affaire alimente un débat sur l'opacité et l'arbitraire des contrôles publics sur les modèles de pointe.",
+    "tags": [
+      "anthropic",
+      "modeles",
+      "politique-ia"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/AlexReibman/status/2066076568821367048",
+    "media": true,
+    "auteur_x": "@AlexReibman"
   }
 ]
