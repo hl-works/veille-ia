@@ -2953,5 +2953,72 @@
     "tweet_url": "https://x.com/AlexReibman/status/2066076568821367048",
     "media": true,
     "auteur_x": "@AlexReibman"
+  },
+  {
+    "date": "2026-06-14",
+    "titre_fr": "Le modèle Fable 5 visé par une intervention du gouvernement américain",
+    "resume_fr": "Plusieurs observateurs évoquent une décision des autorités américaines ayant conduit au retrait ou au blocage du modèle Fable 5, justifiée par des risques de jailbreak et de distillation. Le débat porte sur le caractère sélectif de l'application des règles et sur l'avenir de la gouvernance de l'IA face à des modèles de plus en plus puissants.",
+    "tags": [
+      "politique-ia",
+      "modeles",
+      "open-source"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/natolambert/status/2066219967775985801",
+    "media": false,
+    "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-06-14",
+    "titre_fr": "Crainte d'un bannissement des modèles open-weight chinois",
+    "resume_fr": "Nathan Lambert estime probable qu'une avancée majeure des modèles ouverts chinois déclenche un bannissement de l'ensemble de l'écosystème par l'appareil de sécurité nationale américain, au détriment des modèles à poids ouverts.",
+    "tags": [
+      "politique-ia",
+      "open-source",
+      "modeles"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/natolambert/status/2066221103023030507",
+    "media": false,
+    "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-06-14",
+    "titre_fr": "Débat: les modèles généralistes dépasseraient les IA médicales spécialisées",
+    "resume_fr": "Un nouvel article suggère que des modèles d'IA généralistes surpasseraient des systèmes spécialement conçus pour la médecine, relançant le débat méthodologique sur l'évaluation des IA dans le domaine médical.",
+    "tags": [
+      "recherche",
+      "modeles"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/emollick/status/2066303566449418739",
+    "media": false,
+    "auteur_x": "@emollick"
+  },
+  {
+    "date": "2026-06-14",
+    "titre_fr": "Les modèles transmettent des habitudes étranges à leurs successeurs",
+    "resume_fr": "Un chercheur de Google DeepMind explique que lorsqu'un modèle d'IA en entraîne un autre, le nouveau modèle hérite de comportements parfois indésirables difficiles à filtrer, ce qui expliquerait la ressemblance entre modèles d'une même famille.",
+    "tags": [
+      "recherche",
+      "google"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/emollick/status/2066301578194166046",
+    "media": false,
+    "auteur_x": "@emollick"
+  },
+  {
+    "date": "2026-06-15",
+    "titre_fr": "World of Claudecraft, un MMO open source créé via génération de code",
+    "resume_fr": "Un jeu en ligne multijoueur open source, baptisé World of Claudecraft, a été conçu à l'aide du modèle Fable 5. Il propose quêtes, échanges d'objets, duels et interactions entre joueurs en temps réel, illustrant le potentiel du \"vibecoding\" pour créer des jeux.",
+    "tags": [
+      "produit",
+      "open-source"
+    ],
+    "score": 40,
+    "tweet_url": "https://x.com/venturetwins/status/2066353114404565422",
+    "media": true,
+    "auteur_x": "@venturetwins"
   }
 ]
