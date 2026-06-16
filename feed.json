@@ -3020,5 +3020,76 @@
     "tweet_url": "https://x.com/venturetwins/status/2066353114404565422",
     "media": true,
     "auteur_x": "@venturetwins"
+  },
+  {
+    "date": "2026-06-15",
+    "titre_fr": "Grok de xAI disponible dans l'éditeur Warp",
+    "resume_fr": "xAI annonce que les abonnés SuperGrok ou X Premium peuvent désormais utiliser le modèle Grok Build directement dans l'outil de développement Warp, via les paramètres d'agent.",
+    "tags": [
+      "xai",
+      "produit",
+      "modeles"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/xai/status/2066625790704521699",
+    "media": false,
+    "auteur_x": "@xai"
+  },
+  {
+    "date": "2026-06-15",
+    "titre_fr": "Le modèle Claude Fable indisponible après un blocage réglementaire",
+    "resume_fr": "Plusieurs observateurs évoquent l'arrêt du modèle Claude Fable d'Anthropic, peu après son lancement, dans le contexte d'un blocage à l'export décidé par le gouvernement américain. Son retour rapide ne semble pas attendu.",
+    "tags": [
+      "anthropic",
+      "modeles",
+      "politique-ia"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/simonw/status/2066495053221286271",
+    "media": true,
+    "auteur_x": "@simonw"
+  },
+  {
+    "date": "2026-06-15",
+    "titre_fr": "Anthropic ajoute une collecte de \"données de vérification\" à sa politique",
+    "resume_fr": "Simon Willison souligne qu'Anthropic a publié une nouvelle politique de confidentialité mentionnant la collecte de \"données de vérification\", juste avant la sortie de Claude Fable 5 et l'interdiction d'export américaine.",
+    "tags": [
+      "anthropic",
+      "politique-ia"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/simonw/status/2066541206402969672",
+    "media": true,
+    "auteur_x": "@simonw"
+  },
+  {
+    "date": "2026-06-15",
+    "titre_fr": "Perplexity : pause des tâches planifiées dans Computer",
+    "resume_fr": "Perplexity permet désormais de mettre en pause ou d'arrêter une tâche planifiée directement depuis le tableau de bord de son agent Computer, disponible sur le web pour tous les utilisateurs.",
+    "tags": [
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 38,
+    "tweet_url": "https://x.com/AskPerplexity/status/2066506113466732794",
+    "media": true,
+    "auteur_x": "@AskPerplexity"
+  },
+  {
+    "date": "2026-06-16",
+    "titre_fr": "Claude Code se connecte aux boutiques Shopify",
+    "resume_fr": "Un utilisateur met en avant l'intégration permettant à Claude Code de se connecter directement à une boutique Shopify pour réécrire fiches produits, métadonnées, créer des sections Liquid, des upsells au checkout et auditer la boutique. Présentation promotionnelle, à vérifier en pratique, mais l'intégration e-commerce est notable.",
+    "tags": [
+      "anthropic",
+      "agents",
+      "commerce",
+      "shopify",
+      "marketing"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/mikefutia/status/2066679907854496131",
+    "media": true,
+    "auteur_x": "@mikefutia"
   }
 ]
