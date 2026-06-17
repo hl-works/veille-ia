@@ -3091,5 +3091,146 @@
     "tweet_url": "https://x.com/mikefutia/status/2066679907854496131",
     "media": true,
     "auteur_x": "@mikefutia"
+  },
+  {
+    "date": "2026-06-16",
+    "titre_fr": "GLM-5.2, modèle ouvert chinois, rivalise avec les meilleurs",
+    "resume_fr": "Le modèle GLM-5.2 (licence MIT, poids ouverts) se classe très haut sur les classements de l'Arena, certains estimant son agent supérieur à celui de Gemini. Un signal fort de la montée en puissance des labos chinois et de l'open weights.",
+    "tags": [
+      "open-source",
+      "modeles",
+      "recherche"
+    ],
+    "score": 70,
+    "tweet_url": "https://x.com/natolambert/status/2066968753221624303",
+    "media": true,
+    "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-06-16",
+    "titre_fr": "Cursor lance Origin, hébergement et gestion de code",
+    "resume_fr": "Cursor annonce Origin, une offre d'hébergement Git et de stockage de code permettant aux équipes et aux agents de collaborer et réviser le code. Disponibilité prévue à l'automne, sur liste d'attente.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/cursor_ai/status/2067012220832329782",
+    "media": false,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-06-16",
+    "titre_fr": "Ideogram publie un modèle d'image open weight performant",
+    "resume_fr": "Ideogram sort un modèle de génération d'images à poids ouverts, assez léger pour tourner sur un GPU grand public tout en rivalisant avec Nano Banana et GPT Image, notamment pour le design.",
+    "tags": [
+      "open-source",
+      "modeles",
+      "produit",
+      "marketing"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/venturetwins/status/2066913350672589192",
+    "media": true,
+    "auteur_x": "@venturetwins"
+  },
+  {
+    "date": "2026-06-16",
+    "titre_fr": "NVIDIA fait s'auto-améliorer un labo de robots avec des agents",
+    "resume_fr": "Le labo GEAR de NVIDIA présente ENPIRE : 8 agents Codex pilotent une flotte de robots et des GPU pour résoudre seuls des tâches de précision (serrer des colliers, installer des cartes). Le code doit être ouvert pour reproduire l'expérience.",
+    "tags": [
+      "recherche",
+      "agents",
+      "hardware"
+    ],
+    "score": 57,
+    "tweet_url": "https://x.com/DrJimFan/status/2066921736369766762",
+    "media": true,
+    "auteur_x": "@DrJimFan"
+  },
+  {
+    "date": "2026-06-16",
+    "titre_fr": "Cursor s'associe à SpaceX sur l'IA",
+    "resume_fr": "Cursor annonce un partenariat avec SpaceX pour faire progresser l'IA utile, promettant des améliorations notables de son outil à venir.",
+    "tags": [
+      "produit",
+      "talents"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/cursor_ai/status/2066875698346954891",
+    "media": false,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-06-16",
+    "titre_fr": "Barnes & Noble passe sur Shopify",
+    "resume_fr": "La chaîne de librairies Barnes & Noble bascule son commerce en ligne sur Shopify, illustrant l'adoption de la plateforme par de grandes enseignes historiques.",
+    "tags": [
+      "produit",
+      "commerce",
+      "shopify",
+      "vente"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/harleyf/status/2066902962249609717",
+    "media": true,
+    "auteur_x": "@harleyf"
+  },
+  {
+    "date": "2026-06-16",
+    "titre_fr": "Anthropic publie une étude sur les usages de Claude Code",
+    "resume_fr": "Anthropic présente un cadre pour suivre l'adoption de Claude Code : qui l'utilise, pour quelles tâches, comment la valeur des tâches évolue et le rôle de l'expertise métier dans la réussite des sessions.",
+    "tags": [
+      "anthropic",
+      "recherche",
+      "agents"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/AnthropicAI/status/2066969532380721386",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-06-16",
+    "titre_fr": "OpenAI teste les modèles avant lancement sur des requêtes réelles",
+    "resume_fr": "OpenAI partage une méthode pour anticiper le comportement de ses modèles : simuler leur déploiement avec des requêtes utilisateurs récentes et anonymisées afin d'étudier les réponses candidates avant la mise en production.",
+    "tags": [
+      "openai",
+      "recherche"
+    ],
+    "score": 46,
+    "tweet_url": "https://x.com/OpenAI/status/2066969635099144682",
+    "media": false,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-06-17",
+    "titre_fr": "OpenAI dévoile GPT-Realtime-2",
+    "resume_fr": "OpenAI présente GPT-Realtime-2, un nouveau modèle orienté interactions en temps réel. Peu de détails techniques pour l'instant, mais cela vise les usages vocaux et conversationnels instantanés.",
+    "tags": [
+      "openai",
+      "modeles",
+      "produit",
+      "service-client"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/gdb/status/2067100786098831681",
+    "media": false,
+    "auteur_x": "@gdb"
+  },
+  {
+    "date": "2026-06-17",
+    "titre_fr": "xAI lance Grok Imagine Video 1.5",
+    "resume_fr": "xAI sort Grok Imagine Video 1.5, son modèle image-vers-vidéo, avec un réalisme accru, une meilleure simulation physique et des générations plus rapides.",
+    "tags": [
+      "xai",
+      "modeles",
+      "produit",
+      "marketing"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/xai/status/2067092897951109427",
+    "media": true,
+    "auteur_x": "@xai"
   }
 ]
