@@ -3232,5 +3232,184 @@
     "tweet_url": "https://x.com/xai/status/2067092897951109427",
     "media": true,
     "auteur_x": "@xai"
+  },
+  {
+    "date": "2026-06-17",
+    "titre_fr": "Shopify dévoile son Édition Printemps 2026 : plus de 150 nouveautés",
+    "resume_fr": "Shopify a publié sa mise à jour semestrielle avec plus de 150 nouvelles fonctionnalités, sous le thème « le commerce, partout ». L'accent est mis sur l'IA et la visibilité des produits dans les assistants conversationnels.",
+    "tags": [
+      "produit",
+      "commerce",
+      "shopify"
+    ],
+    "score": 78,
+    "tweet_url": "https://x.com/harleyf/status/2067278502458740739",
+    "media": true,
+    "auteur_x": "@harleyf"
+  },
+  {
+    "date": "2026-06-17",
+    "titre_fr": "Shopify lance Campaign Autopilot, marketing IA intégré",
+    "resume_fr": "Campaign Autopilot construit automatiquement des campagnes marketing complètes : le marchand fixe son budget et ses garde-fous, l'outil gère le reste. Objectif affiché : rendre le marketing accessible aux commerçants sans agence ni expertise.",
+    "tags": [
+      "produit",
+      "marketing",
+      "commerce",
+      "shopify"
+    ],
+    "score": 75,
+    "tweet_url": "https://x.com/harleyf/status/2067302571799388497",
+    "media": true,
+    "auteur_x": "@harleyf"
+  },
+  {
+    "date": "2026-06-17",
+    "titre_fr": "Shop intègre un assistant d'achat personnalisé",
+    "resume_fr": "L'application Shop de Shopify propose désormais un assistant d'achat qui recommande des produits en langage naturel, en s'appuyant sur l'historique et les goûts de l'utilisateur. Pour les marchands, c'est une visibilité accrue sans budget publicitaire.",
+    "tags": [
+      "produit",
+      "commerce",
+      "shopify",
+      "vente"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/harleyf/status/2067362970720682176",
+    "media": true,
+    "auteur_x": "@harleyf"
+  },
+  {
+    "date": "2026-06-17",
+    "titre_fr": "Shopify ajoute une section agentique pour suivre la visibilité IA",
+    "resume_fr": "L'admin Shopify intègre une nouvelle section permettant aux marchands de voir comment l'IA découvre, présente et recommande leurs produits, afin d'améliorer leur présence dans les conversations IA.",
+    "tags": [
+      "produit",
+      "commerce",
+      "shopify",
+      "agents"
+    ],
+    "score": 63,
+    "tweet_url": "https://x.com/harleyf/status/2067332773585867153",
+    "media": true,
+    "auteur_x": "@harleyf"
+  },
+  {
+    "date": "2026-06-17",
+    "titre_fr": "Cursor permet de basculer ses agents locaux dans le cloud",
+    "resume_fr": "Cursor facilite le passage d'agents de codage locaux vers le cloud : on peut lancer des tâches depuis son téléphone, exécuter plusieurs agents en parallèle et récupérer des pull requests, même ordinateur fermé.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/cursor_ai/status/2067366343817805899",
+    "media": true,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-06-17",
+    "titre_fr": "Grok 4.3 disponible sur Amazon Bedrock",
+    "resume_fr": "xAI rend Grok 4.3 accessible via Amazon Bedrock, permettant aux développeurs AWS de l'utiliser dans l'environnement d'inférence sécurisé de la plateforme.",
+    "tags": [
+      "xai",
+      "produit",
+      "modeles"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/xai/status/2067263498359624012",
+    "media": true,
+    "auteur_x": "@xai"
+  },
+  {
+    "date": "2026-06-17",
+    "titre_fr": "Mise à jour de Claude Design",
+    "resume_fr": "Anthropic met à jour Claude Design : respect du système de design d'une marque entre projets, édition directe sur le canevas, synchronisation avec Claude Code et connexion à davantage d'outils.",
+    "tags": [
+      "anthropic",
+      "produit"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/claudeai/status/2067325887909884315",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-06-17",
+    "titre_fr": "GPT-5.4 contribue à un résultat en chimie médicinale",
+    "resume_fr": "OpenAI rapporte que GPT-5.4, combiné à un assistant IA spécialisé et un laboratoire, a proposé une manière inattendue d'améliorer une réaction utilisée en découverte de médicaments, du passage en revue de la littérature jusqu'à une validation expérimentale.",
+    "tags": [
+      "openai",
+      "recherche"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/OpenAI/status/2067293745075442171",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-06-17",
+    "titre_fr": "OpenAI publie LifeSciBench pour les sciences du vivant",
+    "resume_fr": "OpenAI présente LifeSciBench, un référentiel de 750 tâches rédigées par 173 scientifiques pour évaluer la qualité du soutien de l'IA à la recherche en biotechnologie et pharmacie.",
+    "tags": [
+      "openai",
+      "recherche"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/OpenAI/status/2067346916929937827",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-06-17",
+    "titre_fr": "Google DeepMind teste l'IA pour les permis de construire au Royaume-Uni",
+    "resume_fr": "Google DeepMind collabore avec des organismes publics britanniques sur un prototype d'IA pour les demandes d'urbanisme liées au logement, visant à réduire les délais de traitement jusqu'à 50 % en allégeant les tâches répétitives.",
+    "tags": [
+      "google",
+      "politique-ia"
+    ],
+    "score": 44,
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2067188693694136664",
+    "media": true,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-06-17",
+    "titre_fr": "Google teste Stitch avec une agence de design",
+    "resume_fr": "Google Labs a confié son outil Stitch à une agence de design pour un cas client réel : en 24 heures, l'équipe est passée du brainstorming à un prototype d'application mobile interactif multi-écrans plutôt que de simples maquettes.",
+    "tags": [
+      "google",
+      "produit"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/stitchbygoogle/status/2067336761190363137",
+    "media": true,
+    "auteur_x": "@stitchbygoogle"
+  },
+  {
+    "date": "2026-06-18",
+    "titre_fr": "Noam Shazeer rejoint OpenAI",
+    "resume_fr": "OpenAI annonce l'arrivée de Noam Shazeer, figure majeure de l'IA (co-inventeur de l'architecture Transformer et fondateur de Character.AI). Sam Altman souligne l'avoir voulu dans l'équipe depuis les débuts d'OpenAI.",
+    "tags": [
+      "openai",
+      "talents",
+      "modeles"
+    ],
+    "score": 70,
+    "tweet_url": "https://x.com/sama/status/2067427421083652131",
+    "media": false,
+    "auteur_x": "@sama"
+  },
+  {
+    "date": "2026-06-18",
+    "titre_fr": "xAI présente Grok Imagine Video 1.5",
+    "resume_fr": "xAI continue d'itérer sur la génération vidéo avec Grok Imagine Video 1.5, axé sur la rapidité et la qualité. Les premiers tests évoquent des résultats générés en un seul essai à partir d'une image.",
+    "tags": [
+      "xai",
+      "modeles",
+      "produit"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/venturetwins/status/2067444215425155112",
+    "media": true,
+    "auteur_x": "@venturetwins"
   }
 ]
