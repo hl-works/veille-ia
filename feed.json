@@ -3411,5 +3411,233 @@
     "tweet_url": "https://x.com/venturetwins/status/2067444215425155112",
     "media": true,
     "auteur_x": "@venturetwins"
+  },
+  {
+    "date": "2026-06-18",
+    "titre_fr": "GPT-5.5 Instant atteint le niveau des modèles avancés sur la santé",
+    "resume_fr": "OpenAI annonce que GPT-5.5 Instant rivalise désormais avec ses modèles de raisonnement pour les questions de santé : meilleure détection des situations urgentes et explications plus claires. Le modèle étant accessible aux utilisateurs gratuits, ces progrès touchent un large public.",
+    "tags": [
+      "openai",
+      "modeles",
+      "produit"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/OpenAI/status/2067672740539306261",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-06-18",
+    "titre_fr": "Une étude clinique montre l'apport d'OpenAI sur des maladies rares non diagnostiquées",
+    "resume_fr": "OpenAI, avec le Boston Children's Hospital et Harvard, publie dans NEJM AI une étude où o3 Deep Research a aidé des cliniciens à rouvrir des cas pédiatriques rares non résolus et à trouver des réponses pour des familles en attente depuis des années.",
+    "tags": [
+      "openai",
+      "recherche"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/OpenAI/status/2067625110199247353",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-06-18",
+    "titre_fr": "Shopify ouvre l'achat aux agents IA",
+    "resume_fr": "Shopify détaille des fonctionnalités permettant à un agent IA de rechercher parmi des milliards de produits, de constituer un panier et de finaliser un achat, via la recherche par image, la recherche produit et un nouvel outil UCP CLI.",
+    "tags": [
+      "produit",
+      "agents",
+      "commerce",
+      "shopify",
+      "vente"
+    ],
+    "score": 78,
+    "tweet_url": "https://x.com/ShopifyDevs/status/2067639219443454256",
+    "media": false,
+    "auteur_x": "@ShopifyDevs"
+  },
+  {
+    "date": "2026-06-18",
+    "titre_fr": "Perplexity lance Brain, une mémoire continue pour son agent Computer",
+    "resume_fr": "Perplexity présente Brain, un système de mémoire qui apprend en continu : chaque tâche exécutée sur Computer alimente un graphe de contexte, rendant l'agent plus persistant à chaque utilisation. Disponible en aperçu pour les abonnés Max.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/perplexity_ai/status/2067642139014742348",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-06-18",
+    "titre_fr": "Artifacts arrive dans Claude Code",
+    "resume_fr": "Anthropic ajoute les Artifacts à Claude Code : des pages interactives générées depuis une session (synthèse de PR, tableau de bord de projet) que l'on peut partager avec son équipe via un lien privé. En bêta sur les offres Team et Enterprise.",
+    "tags": [
+      "anthropic",
+      "produit"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/claudeai/status/2067671912038240487",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-06-18",
+    "titre_fr": "Dean Ball rejoint OpenAI pour la politique IA",
+    "resume_fr": "OpenAI recrute Dean Ball, voix indépendante reconnue sur les questions de réglementation, pour contribuer à façonner sa politique IA. Plusieurs observateurs saluent l'arrivée tout en regrettant le départ d'une voix critique du débat public.",
+    "tags": [
+      "openai",
+      "talents",
+      "politique-ia"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/polynoamial/status/2067638167495479522",
+    "media": false,
+    "auteur_x": "@polynoamial"
+  },
+  {
+    "date": "2026-06-18",
+    "titre_fr": "Anthropic teste Claude pour programmer un robot-chien",
+    "resume_fr": "Dans la phase 2 du projet Fetch de son équipe Frontier Red Team, Anthropic indique qu'Opus 4.7 a programmé un robot-chien environ 20 fois plus vite que la meilleure équipe humaine de l'an dernier — même si le robot a échoué à rapporter le ballon.",
+    "tags": [
+      "anthropic",
+      "recherche"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/AnthropicAI/status/2067651699486200091",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-06-18",
+    "titre_fr": "Proposition de loi américaine pour saisir 50% des startups IA dépassant 200M$",
+    "resume_fr": "Bernie Sanders aurait déposé un projet de loi visant à prendre 50% du capital de toute startup IA franchissant 200 M$ de revenus. La mesure suscite de vives critiques d'investisseurs qui y voient un frein majeur à la création d'entreprises.",
+    "tags": [
+      "politique-ia"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/garrytan/status/2067636692794875923",
+    "media": true,
+    "auteur_x": "@garrytan"
+  },
+  {
+    "date": "2026-06-18",
+    "titre_fr": "Google DeepMind publie sa feuille de route sur le contrôle de l'IA",
+    "resume_fr": "Google DeepMind présente son AI Control Roadmap, un cadre pour construire et encadrer les IA avancées déployées en interne en partant de l'hypothèse qu'un système pourrait ne pas faire ce qui est prévu.",
+    "tags": [
+      "google",
+      "recherche",
+      "politique-ia"
+    ],
+    "score": 46,
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2067594863785173257",
+    "media": true,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-06-18",
+    "titre_fr": "xAI lance Grok TTS",
+    "resume_fr": "xAI annonce Grok TTS, son moteur de synthèse vocale qu'il présente comme produisant une voix particulièrement proche de l'humain.",
+    "tags": [
+      "xai",
+      "produit",
+      "modeles"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/xai/status/2067654108123910495",
+    "media": false,
+    "auteur_x": "@xai"
+  },
+  {
+    "date": "2026-06-18",
+    "titre_fr": "Les modèles Grok disponibles sur Databricks Agent Bricks",
+    "resume_fr": "xAI rend ses modèles Grok accessibles dans Databricks Agent Bricks, permettant aux entreprises de les appliquer à leurs propres données pour créer des agents IA.",
+    "tags": [
+      "xai",
+      "produit",
+      "agents"
+    ],
+    "score": 44,
+    "tweet_url": "https://x.com/xai/status/2067638691275907084",
+    "media": true,
+    "auteur_x": "@xai"
+  },
+  {
+    "date": "2026-06-18",
+    "titre_fr": "Soupçons sur les résultats de Llama 4 de Meta",
+    "resume_fr": "Selon des propos relayés, Meta aurait embelli les résultats de Llama 4, un point évoqué par Yann LeCun après son départ de l'entreprise.",
+    "tags": [
+      "meta",
+      "modeles"
+    ],
+    "score": 40,
+    "tweet_url": "https://x.com/GaryMarcus/status/2067632036349874532",
+    "media": false,
+    "auteur_x": "@GaryMarcus"
+  },
+  {
+    "date": "2026-06-18",
+    "titre_fr": "OpenAI publie des travaux sur des modèles durablement bénéfiques",
+    "resume_fr": "OpenAI présente une recherche visant à entraîner ses modèles à conserver un comportement sûr et bénéfique au-delà de leur domaine d'entraînement, y compris sous pression, à mesure que l'IA prend en charge des tâches plus longues et à fort enjeu.",
+    "tags": [
+      "openai",
+      "recherche"
+    ],
+    "score": 43,
+    "tweet_url": "https://x.com/OpenAI/status/2067722688165232654",
+    "media": false,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-06-18",
+    "titre_fr": "Cursor introduit /automate pour configurer des automatisations",
+    "resume_fr": "Cursor lance /automate, une compétence permettant aux agents de mettre en place des automatisations à partir d'une description en langage naturel : l'outil configure lui-même déclencheurs, instructions et outils.",
+    "tags": [
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/cursor_ai/status/2067683814516858962",
+    "media": true,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-06-18",
+    "titre_fr": "Codex apprend désormais par démonstration",
+    "resume_fr": "OpenAI indique que Codex peut maintenant être entraîné par démonstration, l'utilisateur montrant la marche à suivre pour que l'outil reproduise la tâche.",
+    "tags": [
+      "openai",
+      "produit",
+      "agents"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/gdb/status/2067700691062464887",
+    "media": false,
+    "auteur_x": "@gdb"
+  },
+  {
+    "date": "2026-06-18",
+    "titre_fr": "Accenture chute en Bourse malgré ses paris sur l'IA",
+    "resume_fr": "Accenture, fortement engagé dans le conseil en IA, voit son titre reculer fortement après des revenus trimestriels en légère baisse, malgré les promesses de transformation par l'IA mises en avant l'an dernier.",
+    "tags": [
+      "politique-ia"
+    ],
+    "score": 41,
+    "tweet_url": "https://x.com/GaryMarcus/status/2067668667077402715",
+    "media": false,
+    "auteur_x": "@GaryMarcus"
+  },
+  {
+    "date": "2026-06-18",
+    "titre_fr": "Midjourney annonce un projet matériel de scan 3D corporel",
+    "resume_fr": "Midjourney dévoile un projet hardware visant à réaliser des scans 3D internes du corps entier sans IRM, une orientation inhabituelle pour l'entreprise connue pour sa génération d'images.",
+    "tags": [
+      "hardware"
+    ],
+    "score": 38,
+    "tweet_url": "https://x.com/fchollet/status/2067589665830375682",
+    "media": false,
+    "auteur_x": "@fchollet"
   }
 ]
