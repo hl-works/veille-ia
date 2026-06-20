@@ -3639,5 +3639,60 @@
     "tweet_url": "https://x.com/fchollet/status/2067589665830375682",
     "media": false,
     "auteur_x": "@fchollet"
+  },
+  {
+    "date": "2026-06-19",
+    "titre_fr": "Perplexity lance le Command Panel dans son Computer",
+    "resume_fr": "Perplexity ajoute un panneau de commandes accessible via la touche « / » qui affiche tous les modes et compétences disponibles dans son outil Computer, dont la recherche approfondie et le mode planification. Disponible sur le web pour tous les utilisateurs.",
+    "tags": [
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/AskPerplexity/status/2068072081515053512",
+    "media": true,
+    "auteur_x": "@AskPerplexity"
+  },
+  {
+    "date": "2026-06-19",
+    "titre_fr": "Ploy, plateforme de site et marketing pilotée par IA",
+    "resume_fr": "Le cofondateur de Webflow, Bryant Chou, revient avec Ploy, une plateforme qui ne se contente pas de créer un site mais se connecte aux analytics, au CRM et à la Search Console pour optimiser le marketing en continu. Positionnée comme « anti-slop » côté design.",
+    "tags": [
+      "produit",
+      "marketing",
+      "no-code"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/ycombinator/status/2067982056379043924",
+    "media": true,
+    "auteur_x": "@ycombinator"
+  },
+  {
+    "date": "2026-06-19",
+    "titre_fr": "OpenAI : son modèle o3 aide des familles face à des maladies génétiques rares",
+    "resume_fr": "OpenAI met en avant l'utilisation de son modèle o3, déjà âgé d'un an, pour aider des familles confrontées à des maladies génétiques rares, suggérant un potentiel encore plus grand avec les modèles actuels.",
+    "tags": [
+      "openai",
+      "recherche",
+      "modeles"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/gdb/status/2068016345451831480",
+    "media": false,
+    "auteur_x": "@gdb"
+  },
+  {
+    "date": "2026-06-19",
+    "titre_fr": "Débat politique : interdire l'IA open source serait une erreur",
+    "resume_fr": "Le chercheur Nathan Lambert plaide publiquement contre toute interdiction de l'IA open source, estimant que réduire la transparence et l'innovation serait plus risqué que de gérer les dangers de la frontière ouverte.",
+    "tags": [
+      "open-source",
+      "politique-ia"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/natolambert/status/2067974681135862167",
+    "media": false,
+    "auteur_x": "@natolambert"
   }
 ]
