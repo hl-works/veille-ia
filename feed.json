@@ -3694,5 +3694,49 @@
     "tweet_url": "https://x.com/natolambert/status/2067974681135862167",
     "media": false,
     "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-06-20",
+    "titre_fr": "GLM 5.2 : un modèle open-source qui tourne en local",
+    "resume_fr": "Le modèle GLM 5.2, sous licence MIT et doté d'une fenêtre de contexte d'un million de tokens, est présenté comme l'un des meilleurs modèles ouverts pour le code. Il peut s'exécuter localement via Ollama ou LM Studio, ce qui rend l'IA performante accessible sans dépendre du cloud.",
+    "tags": [
+      "modeles",
+      "open-source",
+      "produit"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/gregisenberg/status/2068372696690315650",
+    "media": false,
+    "auteur_x": "@gregisenberg"
+  },
+  {
+    "date": "2026-06-21",
+    "titre_fr": "GPT-5.5 Pro utilisé pour réviser un article scientifique",
+    "resume_fr": "Ethan Mollick raconte avoir confié à GPT-5.5 Pro l'un de ses anciens articles de recherche : le modèle a trouvé des erreurs, intégré de nouvelles données et étendu l'argument principal avec des fichiers reproductibles. Une illustration concrète des capacités d'analyse des derniers modèles.",
+    "tags": [
+      "openai",
+      "modeles",
+      "recherche"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/emollick/status/2068507998343885284",
+    "media": true,
+    "auteur_x": "@emollick"
+  },
+  {
+    "date": "2026-06-21",
+    "titre_fr": "Cloner des pages de vente performantes avec Claude Code",
+    "resume_fr": "Un marketeur décrit un système basé sur Claude Code qui analyse une page advertorial à succès et en reconstruit une version prête à l'emploi pour une autre marque, exportable directement vers Shopify. Démarche autopromotionnelle, mais qui illustre l'usage de l'IA pour produire rapidement des pages de vente.",
+    "tags": [
+      "anthropic",
+      "produit",
+      "marketing",
+      "commerce",
+      "shopify"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/mikefutia/status/2068490390869782773",
+    "media": true,
+    "auteur_x": "@mikefutia"
   }
 ]
