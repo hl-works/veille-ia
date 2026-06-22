@@ -3738,5 +3738,61 @@
     "tweet_url": "https://x.com/mikefutia/status/2068490390869782773",
     "media": true,
     "auteur_x": "@mikefutia"
+  },
+  {
+    "date": "2026-06-21",
+    "titre_fr": "GLM 5.2 : un modèle open-weights performant en codage",
+    "resume_fr": "Le modèle open-weights GLM 5.2 est présenté comme très utile dans les outils de codage, à un coût nettement inférieur aux modèles propriétaires. Plusieurs observateurs confirment sa solidité et sa facilité de mise en place.",
+    "tags": [
+      "modeles",
+      "open-source",
+      "recherche"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/natolambert/status/2068695675299336270",
+    "media": false,
+    "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-06-22",
+    "titre_fr": "Grok Imagine 1.5 : génération vidéo avec lèvres et audio synchronisés",
+    "resume_fr": "xAI a mis à jour son générateur de vidéo Grok Imagine en version 1.5, capable de produire des clips proches d'une publicité TV avec synchronisation labiale et audio. Des limites subsistent toutefois sur les détails les plus fins.",
+    "tags": [
+      "xai",
+      "produit",
+      "modeles",
+      "marketing"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/coreyganim/status/2069004168392589419",
+    "media": true,
+    "auteur_x": "@coreyganim"
+  },
+  {
+    "date": "2026-06-22",
+    "titre_fr": "Adobe parmi les grands gagnants de l'IA générative selon Chollet",
+    "resume_fr": "François Chollet souligne qu'Adobe, traité par le marché comme une entreprise en déclin, figure en réalité parmi les sociétés IA les plus rentables et à forte croissance, profitant largement de l'essor de l'IA générative.",
+    "tags": [
+      "produit"
+    ],
+    "score": 40,
+    "tweet_url": "https://x.com/fchollet/status/2068866514233827741",
+    "media": false,
+    "auteur_x": "@fchollet"
+  },
+  {
+    "date": "2026-06-22",
+    "titre_fr": "Un scraper d'avis Shopify codé via Codex",
+    "resume_fr": "Un développeur a créé un outil open source qui extrait en quelques secondes les avis clients d'un produit Shopify concurrent et les exporte en CSV, pour analyser le langage client et nourrir la création publicitaire.",
+    "tags": [
+      "shopify",
+      "commerce",
+      "marketing",
+      "automatisation"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/mikefutia/status/2068857460547633439",
+    "media": true,
+    "auteur_x": "@mikefutia"
   }
 ]
