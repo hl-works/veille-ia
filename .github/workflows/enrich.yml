@@ -56,9 +56,9 @@ jobs:
         if: ${{ inputs.write }}
         env:
           KH_REPO_TOKEN: ${{ secrets.KH_REPO_TOKEN }}
-          KH_REPO: hugolahutte/knowledge-hub
+          KH_REPO: hl-works/knowledge-hub
           KH_BRANCH: main
-          KH_FEED_PATH: veille-ia/feed.json
+          KH_FEED_PATH: knowledge-hub/veille-ia/feed.json
         run: |
           set -e
           if [ -z "$KH_REPO_TOKEN" ]; then
