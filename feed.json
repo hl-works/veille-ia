@@ -3794,5 +3794,99 @@
     "tweet_url": "https://x.com/mikefutia/status/2068857460547633439",
     "media": true,
     "auteur_x": "@mikefutia"
+  },
+  {
+    "date": "2026-06-22",
+    "titre_fr": "OpenAI étend Daybreak à la cybersécurité",
+    "resume_fr": "OpenAI lance plusieurs outils de cybersécurité : un plugin Codex Security pour détecter, valider et corriger les vulnérabilités, la version complète du modèle GPT-5.5-Cyber pour les défenseurs, et un programme partenaire. L'objectif affiché est d'aider à corriger les failles logicielles, y compris dans des projets open source critiques.",
+    "tags": [
+      "openai",
+      "produit",
+      "modeles"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/OpenAI/status/2069104283824640023",
+    "media": false,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-06-22",
+    "titre_fr": "GLM-5.2 hisse les agents au niveau frontière en open source",
+    "resume_fr": "Le modèle ouvert GLM-5.2 est présenté comme un tournant pour les agents, rendant les meilleures capacités agentiques accessibles dans des modèles libres. Plusieurs observateurs notent qu'il rivalise avec les modèles propriétaires à une fraction du prix.",
+    "tags": [
+      "modeles",
+      "open-source",
+      "agents"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/natolambert/status/2069073545632813193",
+    "media": false,
+    "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-06-22",
+    "titre_fr": "Google lance son Interactions API en disponibilité générale",
+    "resume_fr": "Google rend disponible son Interactions API, conçue pour orchestrer plusieurs modèles et agents dans une même interface. Elle devient l'API par défaut, positionnée comme socle pour les usages d'agents.",
+    "tags": [
+      "google",
+      "produit",
+      "agents"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/OfficialLoganK/status/2069115284519346263",
+    "media": false,
+    "auteur_x": "@OfficialLoganK"
+  },
+  {
+    "date": "2026-06-22",
+    "titre_fr": "Cursor entraîne un nouveau modèle avec SpaceX",
+    "resume_fr": "Lors de sa conférence Compile, l'éditeur Cursor a fait trois annonces, dont l'entraînement d'un nouveau modèle en partenariat avec SpaceX. Le détail technique reste limité à ce stade.",
+    "tags": [
+      "produit",
+      "modeles"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/cursor_ai/status/2069149296436330776",
+    "media": true,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-06-22",
+    "titre_fr": "Partenariat de recherche entre Google DeepMind et A24",
+    "resume_fr": "Google DeepMind annonce une collaboration avec le studio A24 pour que les futurs outils créatifs soient façonnés en lien avec les créateurs qui les utilisent.",
+    "tags": [
+      "google",
+      "recherche"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2069066675895337405",
+    "media": true,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-06-22",
+    "titre_fr": "Baseten lève 1,5 milliard de dollars pour son cloud d'inférence",
+    "resume_fr": "La plateforme Baseten, spécialisée dans l'inférence d'IA, annonce une nouvelle levée de 1,5 milliard de dollars pour investir dans sa capacité, son infrastructure et ses produits de recherche, au service de clients IA exigeants.",
+    "tags": [
+      "hardware",
+      "produit"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/saranormous/status/2069152235389616325",
+    "media": false,
+    "auteur_x": "@saranormous"
+  },
+  {
+    "date": "2026-06-22",
+    "titre_fr": "Mistral atteint 1 000 employés",
+    "resume_fr": "La start-up française Mistral indique compter désormais 1 000 collaborateurs dans le monde et poursuit ses recrutements sur l'ensemble de ses fonctions.",
+    "tags": [
+      "mistral",
+      "talents"
+    ],
+    "score": 40,
+    "tweet_url": "https://x.com/MistralAI/status/2069077356266795207",
+    "media": true,
+    "auteur_x": "@MistralAI"
   }
 ]
