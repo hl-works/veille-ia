@@ -3888,5 +3888,18 @@
     "tweet_url": "https://x.com/MistralAI/status/2069077356266795207",
     "media": true,
     "auteur_x": "@MistralAI"
+  },
+  {
+    "date": "2026-06-22",
+    "titre_fr": "Grok se connecte à Interactive Brokers",
+    "resume_fr": "xAI permet désormais de relier Grok à Interactive Brokers pour obtenir des informations à jour sur son portefeuille d'investissement.",
+    "tags": [
+      "xai",
+      "produit"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/xai/status/2069200658633469970",
+    "media": false,
+    "auteur_x": "@xai"
   }
 ]
