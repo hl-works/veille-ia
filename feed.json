@@ -3901,5 +3901,63 @@
     "tweet_url": "https://x.com/xai/status/2069200658633469970",
     "media": false,
     "auteur_x": "@xai"
+  },
+  {
+    "date": "2026-06-23",
+    "titre_fr": "Anthropic lance Claude Tag dans Slack",
+    "resume_fr": "Anthropic présente Claude Tag, une nouvelle façon d'intégrer Claude comme un membre d'équipe dans Slack. On peut le mentionner dans un canal pour lui déléguer des tâches, avec accès aux outils et à la mémoire, en mode proactif et collaboratif.",
+    "tags": [
+      "anthropic",
+      "agents",
+      "produit",
+      "automatisation",
+      "service-client"
+    ],
+    "score": 74,
+    "tweet_url": "https://x.com/claudeai/status/2069468693017268244",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-06-23",
+    "titre_fr": "Mistral lance Mistral OCR 4",
+    "resume_fr": "Mistral dévoile la version 4 de son outil de reconnaissance de documents. Il structure les contenus avec des cadres de délimitation, une classification des blocs et des scores de confiance, dans 170 langues.",
+    "tags": [
+      "mistral",
+      "produit",
+      "modeles",
+      "automatisation"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/MistralAI/status/2069420263825895917",
+    "media": true,
+    "auteur_x": "@MistralAI"
+  },
+  {
+    "date": "2026-06-23",
+    "titre_fr": "OpenAI ouvre les candidatures pour DevDay 2026",
+    "resume_fr": "OpenAI annonce l'ouverture des inscriptions à son événement développeurs DevDay 2026, prévu le 29 septembre à San Francisco. Les candidatures sont à déposer avant le 10 juillet.",
+    "tags": [
+      "openai",
+      "produit"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/OpenAI/status/2069483224158646739",
+    "media": false,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-06-23",
+    "titre_fr": "Plus d'un million d'apps Android créées dans Google AI Studio",
+    "resume_fr": "Selon Logan Kilpatrick (Google), plus d'un million d'applications Android natives ont été générées en un mois directement dans Google AI Studio, illustrant l'essor des outils de création d'applis assistés par IA.",
+    "tags": [
+      "google",
+      "produit",
+      "no-code"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/OfficialLoganK/status/2069443708790132996",
+    "media": false,
+    "auteur_x": "@OfficialLoganK"
   }
 ]
