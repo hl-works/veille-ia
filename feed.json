@@ -3959,5 +3959,73 @@
     "tweet_url": "https://x.com/OfficialLoganK/status/2069443708790132996",
     "media": false,
     "auteur_x": "@OfficialLoganK"
+  },
+  {
+    "date": "2026-06-24",
+    "titre_fr": "OpenAI dévoile sa première puce IA, Jalapeño",
+    "resume_fr": "OpenAI annonce avoir conçu sa propre puce d'inférence, baptisée Jalapeño, produite en partenariat avec Broadcom. Pensée pour les charges de travail des LLM (ChatGPT, Codex, API), elle vise à réduire la dépendance aux fournisseurs externes et à mieux maîtriser ses coûts d'infrastructure.",
+    "tags": [
+      "openai",
+      "hardware"
+    ],
+    "score": 78,
+    "tweet_url": "https://x.com/OpenAI/status/2069770172802773292",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-06-24",
+    "titre_fr": "OpenAI met à jour GPT-5.5 Instant",
+    "resume_fr": "OpenAI déploie une nouvelle version de GPT-5.5 Instant, son modèle le plus utilisé, présentée comme plus naturelle dans la conversation et meilleure pour comprendre l'intention. Elle gère mieux les contraintes complexes et améliore les recommandations de shopping et de commerces locaux.",
+    "tags": [
+      "openai",
+      "modeles",
+      "produit",
+      "commerce"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/OpenAI/status/2069843083701915755",
+    "media": false,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-06-24",
+    "titre_fr": "Perplexity lance Computer for Counsel pour les juristes",
+    "resume_fr": "Perplexity propose un outil qui connecte ses fonctions de recherche aux bases de données juridiques et systèmes de gestion utilisés par les avocats (midpage, LegalZoom, Docusign, NetDocuments…), avec citations sourçables. Disponible pour les abonnés Pro et Max.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/perplexity_ai/status/2069866668671766804",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-06-24",
+    "titre_fr": "Cursor délègue des tâches depuis Notion",
+    "resume_fr": "Cursor permet désormais d'assigner des tâches à ses agents cloud directement depuis Notion. Construit sur le SDK Cursor, chaque agent utilise les mêmes modèles et environnement d'exécution, et peut ouvrir une pull request à relire en équipe.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/cursor_ai/status/2069872515548340407",
+    "media": true,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-06-24",
+    "titre_fr": "Un modèle open-source établit un record sur ARC-AGI-2",
+    "resume_fr": "Selon François Chollet, GLM (de Zai) réalise la meilleure performance d'un modèle open-source sur le benchmark ARC-AGI-2. L'écart avec les modèles fermés resterait d'environ 8 à 12 mois, ces modèles ouverts restant plus inégaux selon les tâches.",
+    "tags": [
+      "open-source",
+      "modeles",
+      "recherche"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/fchollet/status/2069858556552298519",
+    "media": false,
+    "auteur_x": "@fchollet"
   }
 ]
