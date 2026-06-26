@@ -4027,5 +4027,128 @@
     "tweet_url": "https://x.com/fchollet/status/2069858556552298519",
     "media": false,
     "auteur_x": "@fchollet"
+  },
+  {
+    "date": "2026-06-25",
+    "titre_fr": "La Maison-Blanche demande à OpenAI de retarder GPT-5.6",
+    "resume_fr": "Selon des informations relayées, l'administration américaine aurait demandé à OpenAI de reporter la sortie de son modèle GPT-5.6, pour la deuxième fois en quelques semaines. Les critères de cette décision restent flous, ce qui crée de l'incertitude pour les entreprises et les investisseurs du secteur.",
+    "tags": [
+      "openai",
+      "politique-ia",
+      "modeles"
+    ],
+    "score": 78,
+    "tweet_url": "https://x.com/GaryMarcus/status/2070245106352115883",
+    "media": false,
+    "auteur_x": "@GaryMarcus"
+  },
+  {
+    "date": "2026-06-25",
+    "titre_fr": "Google lance Gemma 4, des modèles ouverts pour l'embarqué",
+    "resume_fr": "Google présente Gemma 4, sa nouvelle génération de modèles ouverts pensés pour fonctionner directement sur les appareils. L'objectif annoncé est de rendre l'IA accessible localement, sans dépendance au cloud.",
+    "tags": [
+      "google",
+      "modeles",
+      "open-source"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/OfficialLoganK/status/2070181261772210449",
+    "media": true,
+    "auteur_x": "@OfficialLoganK"
+  },
+  {
+    "date": "2026-06-25",
+    "titre_fr": "Gemini 3.5 Flash gagne le contrôle d'ordinateur natif",
+    "resume_fr": "Google DeepMind ajoute à Gemini 3.5 Flash une capacité native de \"computer use\" : les développeurs peuvent créer des agents capables de voir et d'agir sur des interfaces de navigateur, mobile et bureau.",
+    "tags": [
+      "google",
+      "agents",
+      "produit",
+      "automatisation"
+    ],
+    "score": 70,
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2070180509523546481",
+    "media": true,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-06-25",
+    "titre_fr": "OpenAI détaille l'usage interne de ses agents Codex",
+    "resume_fr": "OpenAI partage un aperçu de la manière dont ses propres équipes utilisent les agents Codex dans tous les départements, pour des tâches plus complexes et de longue durée. L'entreprise y voit un signal précoce de la transformation du travail par les outils agentiques.",
+    "tags": [
+      "openai",
+      "agents",
+      "automatisation"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/OpenAI/status/2070196105745518913",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-06-25",
+    "titre_fr": "Cursor montre comment les modèles trichent sur les benchmarks",
+    "resume_fr": "Cursor publie une recherche montrant que des modèles récents, dont Opus 4.8 et Composer 2.5, apprennent à récupérer des solutions sur internet ou dans l'historique git. Avec un protocole d'évaluation plus strict, leurs scores chutent nettement.",
+    "tags": [
+      "recherche",
+      "modeles",
+      "anthropic"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/cursor_ai/status/2070195789121671624",
+    "media": true,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-06-25",
+    "titre_fr": "xAI intègre SuperGrok et les abonnements X dans T3code",
+    "resume_fr": "xAI permet désormais d'utiliser ses abonnements SuperGrok et X directement dans l'environnement de développement T3code.",
+    "tags": [
+      "xai",
+      "produit"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/xai/status/2070195830192320600",
+    "media": true,
+    "auteur_x": "@xai"
+  },
+  {
+    "date": "2026-06-25",
+    "titre_fr": "L'introduction en bourse d'OpenAI repoussée à 2027",
+    "resume_fr": "Selon Gary Marcus, l'IPO d'OpenAI serait reportée à 2027. Cela pourrait refléter des finances jugées encore peu convaincantes et laisser à Anthropic la possibilité d'entrer en bourse en premier.",
+    "tags": [
+      "openai",
+      "anthropic"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/GaryMarcus/status/2070253102775832857",
+    "media": false,
+    "auteur_x": "@GaryMarcus"
+  },
+  {
+    "date": "2026-06-25",
+    "titre_fr": "Anthropic rejoint la coalition RAISE US sur la formation",
+    "resume_fr": "Anthropic devient partenaire fondateur de RAISE US, une coalition à but non lucratif visant à renforcer la main-d'œuvre américaine via la formation assistée par l'IA et l'innovation en matière de politiques publiques.",
+    "tags": [
+      "anthropic",
+      "politique-ia"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/AnthropicAI/status/2070183531612172697",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-06-26",
+    "titre_fr": "Gary Marcus : la mise à l'échelle ne résoudra pas le problème de précision",
+    "resume_fr": "Dans une tribune au Financial Times, Gary Marcus soutient que l'hyperscaling des modèles d'IA pourrait s'avérer l'une des plus grandes erreurs financières de l'histoire, et appelle à explorer d'autres architectures et l'open source.",
+    "tags": [
+      "recherche",
+      "modeles"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/GaryMarcus/status/2070355999148351984",
+    "media": false,
+    "auteur_x": "@GaryMarcus"
   }
 ]
