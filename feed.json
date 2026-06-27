@@ -4150,5 +4150,89 @@
     "tweet_url": "https://x.com/GaryMarcus/status/2070355999148351984",
     "media": false,
     "auteur_x": "@GaryMarcus"
+  },
+  {
+    "date": "2026-06-26",
+    "titre_fr": "OpenAI lance la famille GPT-5.6 (Sol, Terra, Luna)",
+    "resume_fr": "OpenAI dévoile GPT-5.6 en aperçu limité : Sol, son nouveau modèle de pointe, Terra pour un usage quotidien efficace, et Luna pour les tâches à fort volume à bas coût. Le lancement est restreint à la demande du gouvernement américain, OpenAI affirmant travailler vers une disponibilité générale.",
+    "tags": [
+      "openai",
+      "modeles",
+      "politique-ia"
+    ],
+    "score": 86,
+    "tweet_url": "https://x.com/OpenAI/status/2070555272230384038",
+    "media": false,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-06-26",
+    "titre_fr": "Sam Altman précise la tarification et les contraintes de GPT-5.6",
+    "resume_fr": "Selon Altman, Sol est au même prix que GPT-5.5 et Terra offre des performances de niveau 5.5 pour moitié prix. Le déploiement reste en aperçu limité à la demande du gouvernement, OpenAI cherchant à établir un processus d'accès anticipé plus transparent.",
+    "tags": [
+      "openai",
+      "modeles",
+      "politique-ia"
+    ],
+    "score": 70,
+    "tweet_url": "https://x.com/sama/status/2070607488274358364",
+    "media": false,
+    "auteur_x": "@sama"
+  },
+  {
+    "date": "2026-06-26",
+    "titre_fr": "Claude Opus 4.7 produit en 14 h un travail estimé à plusieurs semaines d'ingénierie",
+    "resume_fr": "Une expérience de codage de bout en bout montre Opus 4.7 construisant en 14 heures un logiciel équivalent à 2 à 17 semaines de travail humain, pour un coût d'environ 251 dollars. Les modèles restent imparfaits mais progressent vite sur les tâches ambitieuses.",
+    "tags": [
+      "anthropic",
+      "modeles",
+      "recherche",
+      "automatisation"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/emollick/status/2070537422027342085",
+    "media": true,
+    "auteur_x": "@emollick"
+  },
+  {
+    "date": "2026-06-26",
+    "titre_fr": "Débat sur l'interdiction des modèles ouverts",
+    "resume_fr": "Nathan Lambert souligne qu'interdire l'usage des modèles open source aux entreprises américaines n'arrêterait ni le progrès mondial de ces modèles ni leur emploi par des acteurs malveillants, posant la question de l'utilité réelle d'une telle restriction.",
+    "tags": [
+      "open-source",
+      "politique-ia"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/natolambert/status/2070582348203389035",
+    "media": false,
+    "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-06-27",
+    "titre_fr": "Anthropic rétablit l'accès à Claude Mythos 5 pour des infrastructures critiques",
+    "resume_fr": "Après une suspension depuis le 12 juin, Anthropic indique que le gouvernement américain autorise le redéploiement de Mythos 5, son modèle le plus avancé en cybersécurité, auprès d'organisations défendant des infrastructures critiques. La société continue de négocier un élargissement de l'accès, dont une remise à disposition de Fable 5.",
+    "tags": [
+      "anthropic",
+      "modeles",
+      "politique-ia"
+    ],
+    "score": 66,
+    "tweet_url": "https://x.com/AnthropicAI/status/2070665903440871779",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-06-27",
+    "titre_fr": "Près de 200 000 apps déployées via Google AI Studio en un mois",
+    "resume_fr": "Google indique que près de 200 000 applications créées dans AI Studio ont été déployées et partagées gratuitement sur le dernier mois, signe d'une adoption rapide de ses outils de création no-code assistés par IA.",
+    "tags": [
+      "google",
+      "produit",
+      "no-code"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/OfficialLoganK/status/2070704787444887998",
+    "media": false,
+    "auteur_x": "@OfficialLoganK"
   }
 ]
