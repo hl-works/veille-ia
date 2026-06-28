@@ -4234,5 +4234,20 @@
     "tweet_url": "https://x.com/OfficialLoganK/status/2070704787444887998",
     "media": false,
     "auteur_x": "@OfficialLoganK"
+  },
+  {
+    "date": "2026-06-27",
+    "titre_fr": "Débat sur l'open-source : accusation de « capture réglementaire » visant Anthropic",
+    "resume_fr": "Le chercheur Nathan Lambert accuse la pression politique d'Anthropic sur la distillation de modèles de constituer une forme de capture réglementaire au détriment de l'open-source. Le débat met en lumière les tensions entre sécurité affichée et ouverture, et le fait que les modèles à poids ouverts de pointe dépendent largement de quelques entreprises chinoises.",
+    "tags": [
+      "politique-ia",
+      "open-source",
+      "anthropic",
+      "talents"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/natolambert/status/2070891931362799834",
+    "media": false,
+    "auteur_x": "@natolambert"
   }
 ]
