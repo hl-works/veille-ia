@@ -4249,5 +4249,46 @@
     "tweet_url": "https://x.com/natolambert/status/2070891931362799834",
     "media": false,
     "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-06-28",
+    "titre_fr": "GLM-5.2 : un modèle ouvert qui se rapproche de la frontière",
+    "resume_fr": "Selon Ethan Mollick, le nouveau modèle ouvert GLM-5.2 reste en dessous des meilleurs modèles fermés (GPT-5.5, Opus 4.8) mais atteint un niveau comparable à GPT-5.2, signe que les modèles open weights continuent de combler l'écart avec les leaders.",
+    "tags": [
+      "modeles",
+      "open-source"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/emollick/status/2071284966139568440",
+    "media": false,
+    "auteur_x": "@emollick"
+  },
+  {
+    "date": "2026-06-28",
+    "titre_fr": "Un outil maison d'analyse des commentaires publicitaires via Claude Code",
+    "resume_fr": "Un praticien marketing décrit un outil construit dans Claude Code, connecté à l'API Meta, qui récupère et classe les commentaires sous les publicités (objections, questions, preuves) pour générer des angles publicitaires inspirés du vrai langage client. Exemple concret d'usage pour les marques DTC et agences.",
+    "tags": [
+      "agents",
+      "marketing",
+      "pub",
+      "automatisation"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/mikefutia/status/2071315811504201796",
+    "media": true,
+    "auteur_x": "@mikefutia"
+  },
+  {
+    "date": "2026-06-29",
+    "titre_fr": "Benchmark AA-Briefcase : progrès rapides, écart open/closed visible",
+    "resume_fr": "Artificial Analysis a publié un nouveau benchmark simulant des missions de conseil complexes sur plusieurs semaines. Les résultats montrent des gains rapides des modèles, mais un écart encore net entre modèles ouverts et fermés.",
+    "tags": [
+      "modeles",
+      "recherche"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/emollick/status/2071449550662127927",
+    "media": true,
+    "auteur_x": "@emollick"
   }
 ]
