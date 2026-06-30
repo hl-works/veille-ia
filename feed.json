@@ -4290,5 +4290,72 @@
     "tweet_url": "https://x.com/emollick/status/2071449550662127927",
     "media": true,
     "auteur_x": "@emollick"
+  },
+  {
+    "date": "2026-06-29",
+    "titre_fr": "Claude disponible sur Microsoft Foundry (Azure)",
+    "resume_fr": "Anthropic annonce la disponibilité générale de ses modèles Claude (Opus 4.8 et Haiku 4.5) sur Microsoft Foundry, hébergés sur Azure. Les clients Azure bénéficient de l'authentification, de la facturation et des engagements Azure.",
+    "tags": [
+      "anthropic",
+      "modeles",
+      "produit"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/claudeai/status/2071653958905467027",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-06-29",
+    "titre_fr": "Cursor lance son application iOS",
+    "resume_fr": "L'éditeur de code IA Cursor propose désormais une app iOS permettant de lancer des agents cloud toujours actifs ou de piloter à distance les agents tournant sur son ordinateur. Composer 2.5 est proposé à -75% dans l'app jusqu'au 5 juillet.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/cursor_ai/status/2071641103191998810",
+    "media": true,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-06-29",
+    "titre_fr": "OpenClaw arrive sur iOS et Android",
+    "resume_fr": "La plateforme d'agents OpenClaw lance ses applications mobiles natives, permettant de gérer agents, canaux, tâches et réponses depuis un smartphone.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/openclaw/status/2071688039114342592",
+    "media": false,
+    "auteur_x": "@openclaw"
+  },
+  {
+    "date": "2026-06-29",
+    "titre_fr": "Claude Code : les sous-agents tournent en arrière-plan",
+    "resume_fr": "La prochaine version de Claude Code exécutera les sous-agents en arrière-plan par défaut, ce qui permet de continuer à dialoguer avec Claude pendant qu'ils travaillent.",
+    "tags": [
+      "anthropic",
+      "agents",
+      "produit"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/bcherny/status/2071647677591466098",
+    "media": false,
+    "auteur_x": "@bcherny"
+  },
+  {
+    "date": "2026-06-29",
+    "titre_fr": "xAI propose ses API vocales via Vercel AI Gateway",
+    "resume_fr": "xAI rend ses API vocales accessibles à travers le Vercel AI Gateway, facilitant leur intégration pour les développeurs.",
+    "tags": [
+      "xai",
+      "produit"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/xai/status/2071661034683969977",
+    "media": false,
+    "auteur_x": "@xai"
   }
 ]
