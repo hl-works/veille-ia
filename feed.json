@@ -4357,5 +4357,104 @@
     "tweet_url": "https://x.com/xai/status/2071661034683969977",
     "media": false,
     "auteur_x": "@xai"
+  },
+  {
+    "date": "2026-06-30",
+    "titre_fr": "Anthropic lance Claude Sonnet 5",
+    "resume_fr": "Anthropic présente Claude Sonnet 5, son modèle Sonnet le plus autonome, capable de planifier des tâches et d'utiliser des outils comme le navigateur et le terminal de façon indépendante. Il est déjà intégré chez des partenaires comme Cursor (57% vs 49% sur CursorBench) et Perplexity.",
+    "tags": [
+      "anthropic",
+      "modeles",
+      "agents",
+      "automatisation"
+    ],
+    "score": 78,
+    "tweet_url": "https://x.com/claudeai/status/2072017450611142835",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-06-30",
+    "titre_fr": "Google lance Nano Banana 2 Lite et Gemini Omni Flash",
+    "resume_fr": "Google déploie deux nouveaux modèles génératifs : Nano Banana 2 Lite, très rapide (image en moins de 4s) et bon marché (0,034$/1K images), et Gemini Omni Flash pour la génération et l'édition vidéo (0,10$/sec). Ils sont disponibles via l'API Gemini et AI Studio et pensés pour être combinés.",
+    "tags": [
+      "google",
+      "modeles",
+      "produit",
+      "marketing"
+    ],
+    "score": 72,
+    "tweet_url": "https://x.com/OfficialLoganK/status/2071988351083921690",
+    "media": true,
+    "auteur_x": "@OfficialLoganK"
+  },
+  {
+    "date": "2026-06-30",
+    "titre_fr": "Anthropic présente Claude Science",
+    "resume_fr": "Anthropic lance en bêta Claude Science, une application dédiée à la recherche, permettant de tracer les artefacts jusqu'à leur code, de gérer des environnements à la demande et de connecter plus de 60 bases de données scientifiques.",
+    "tags": [
+      "anthropic",
+      "produit",
+      "recherche"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/claudeai/status/2072002740830842899",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-06-30",
+    "titre_fr": "OpenAI dévoile le benchmark GeneBench-Pro",
+    "resume_fr": "OpenAI introduit GeneBench-Pro, un banc d'essai de niveau recherche évaluant la capacité des modèles à naviguer dans des données biologiques complexes et à faire des choix d'analyse pertinents. Les problèmes demanderaient 20 à 40 heures à un expert humain ; GPT-5.6 Sol y marque un net progrès.",
+    "tags": [
+      "openai",
+      "recherche",
+      "modeles"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/OpenAI/status/2072004836674167294",
+    "media": false,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-06-30",
+    "titre_fr": "ASPIRE : une bibliothèque de compétences robotiques auto-évolutive",
+    "resume_fr": "NVIDIA (Jim Fan) présente ASPIRE, un système où des robots accumulent et affinent des compétences dans une bibliothèque qui se complexifie en continu, plutôt que de réentraîner des poids. L'approche vise à faciliter le transfert simulation-réel et entre robots, avec un stack qui sera open-source.",
+    "tags": [
+      "recherche",
+      "open-source",
+      "hardware"
+    ],
+    "score": 40,
+    "tweet_url": "https://x.com/DrJimFan/status/2072004190856212902",
+    "media": true,
+    "auteur_x": "@DrJimFan"
+  },
+  {
+    "date": "2026-07-01",
+    "titre_fr": "Claude Fable 5 de retour avec de nouveaux garde-fous",
+    "resume_fr": "Après des échanges avec le gouvernement américain et la levée de contrôles à l'export, Anthropic redéploie mondialement Claude Fable 5 avec de nouveaux classificateurs ciblant les usages cybersécurité malveillants. Certaines tâches de code routinières basculeront temporairement vers Opus 4.8. Un cadre commun avec Amazon, Microsoft et Google est aussi en préparation.",
+    "tags": [
+      "anthropic",
+      "politique-ia",
+      "modeles"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/AnthropicAI/status/2072163884430229756",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-07-01",
+    "titre_fr": "ChatGPT ajoute la gestion de finances personnelles",
+    "resume_fr": "OpenAI déploie une fonctionnalité de finances personnelles pour les abonnés ChatGPT Plus aux États-Unis.",
+    "tags": [
+      "openai",
+      "produit"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/gdb/status/2072113363543580690",
+    "media": false,
+    "auteur_x": "@gdb"
   }
 ]
