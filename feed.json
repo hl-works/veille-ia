@@ -4456,5 +4456,75 @@
     "tweet_url": "https://x.com/gdb/status/2072113363543580690",
     "media": false,
     "auteur_x": "@gdb"
+  },
+  {
+    "date": "2026-07-01",
+    "titre_fr": "Anthropic remet Fable 5 en ligne",
+    "resume_fr": "Le modèle de pointe d'Anthropic, Fable 5, est de nouveau disponible après une interruption. Il est réintégré dans plusieurs outils (Cursor, Perplexity) et se présente comme le modèle le plus performant mais aussi le plus coûteux par tâche selon les premiers retours.",
+    "tags": [
+      "anthropic",
+      "modeles",
+      "produit"
+    ],
+    "score": 78,
+    "tweet_url": "https://x.com/claudeai/status/2072402636813607381",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-07-01",
+    "titre_fr": "xAI lance Voice Agent Builder",
+    "resume_fr": "xAI présente Voice Agent Builder, une plateforme no-code pour créer des agents vocaux réalistes basés sur Grok Voice. Disponible dès maintenant à 0,05 $ la minute, l'outil vise notamment les usages type accueil téléphonique et service client.",
+    "tags": [
+      "xai",
+      "agents",
+      "produit",
+      "no-code",
+      "service-client"
+    ],
+    "score": 72,
+    "tweet_url": "https://x.com/xai/status/2072342803787702422",
+    "media": true,
+    "auteur_x": "@xai"
+  },
+  {
+    "date": "2026-07-01",
+    "titre_fr": "Google fait le point sur SynthID",
+    "resume_fr": "Google DeepMind détaille l'avancée de SynthID, sa technologie de filigrane invisible pour contenus générés par IA. Elle couvre désormais images, vidéo, audio et texte, a marqué plus de 100 milliards d'images/vidéos, et est vérifiable via Google Search et l'app Gemini. Google collabore avec OpenAI, Nvidia et Apple sur la provenance des contenus.",
+    "tags": [
+      "google",
+      "recherche",
+      "politique-ia"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/GoogleAI/status/2072318809277390940",
+    "media": true,
+    "auteur_x": "@GoogleAI"
+  },
+  {
+    "date": "2026-07-01",
+    "titre_fr": "Anthropic recrute le responsable EECS de Berkeley",
+    "resume_fr": "Anthropic poursuit une vague de recrutements en attirant le responsable du département EECS de l'Université de Berkeley, illustrant la course aux talents entre laboratoires d'IA.",
+    "tags": [
+      "anthropic",
+      "talents"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/garrytan/status/2072331451270606933",
+    "media": false,
+    "auteur_x": "@garrytan"
+  },
+  {
+    "date": "2026-07-01",
+    "titre_fr": "Anthropic dévoile Sonnet 5",
+    "resume_fr": "Anthropic sort Sonnet 5, un modèle positionné en alternative plus légère à Opus 4.8. Les premiers commentaires s'interrogent sur les cas d'usage où il serait préférable au modèle haut de gamme.",
+    "tags": [
+      "anthropic",
+      "modeles"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/TheZvi/status/2072342751341846629",
+    "media": false,
+    "auteur_x": "@TheZvi"
   }
 ]
