@@ -4526,5 +4526,85 @@
     "tweet_url": "https://x.com/TheZvi/status/2072342751341846629",
     "media": false,
     "auteur_x": "@TheZvi"
+  },
+  {
+    "date": "2026-07-02",
+    "titre_fr": "Anthropic élargit Claude Code et lance Claude Fable 5",
+    "resume_fr": "Anthropic revient sur l'évolution de son outil de développement Claude Code vers un usage plus large en interne, et annonce la disponibilité de Claude Fable 5 dans son environnement. L'outil serait désormais capable de tâches autonomes longues, y compris pour des non-développeurs.",
+    "tags": [
+      "anthropic",
+      "produit",
+      "agents"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/claudeai/status/2072725610061803522",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-07-02",
+    "titre_fr": "Les Artifacts arrivent dans Claude Code pour Pro et Max",
+    "resume_fr": "Anthropic étend la fonctionnalité Artifacts au sein de Claude Code aux abonnements Pro et Max, permettant de générer et manipuler des livrables directement dans l'outil.",
+    "tags": [
+      "anthropic",
+      "produit"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/bcherny/status/2072777472970563995",
+    "media": false,
+    "auteur_x": "@bcherny"
+  },
+  {
+    "date": "2026-07-02",
+    "titre_fr": "Grok Build intégré aux sandboxes Railway",
+    "resume_fr": "xAI annonce que son outil Grok Build est désormais disponible dans les environnements sandbox de la plateforme Railway, facilitant son usage par les développeurs.",
+    "tags": [
+      "xai",
+      "produit"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/xai/status/2072738598663946648",
+    "media": false,
+    "auteur_x": "@xai"
+  },
+  {
+    "date": "2026-07-02",
+    "titre_fr": "Hackathon Built with Claude dédié aux sciences du vivant",
+    "resume_fr": "Anthropic organise avec le Gladstone Institute un hackathon virtuel mondial autour de la recherche en sciences du vivant, avec 100 000 dollars de crédits à la clé pour les participants utilisant Claude Science et Claude Code.",
+    "tags": [
+      "anthropic",
+      "recherche"
+    ],
+    "score": 40,
+    "tweet_url": "https://x.com/claudeai/status/2072681853971001849",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-07-02",
+    "titre_fr": "Seedance 2 en 4K : qualité impressionnante mais coûteuse",
+    "resume_fr": "Le générateur vidéo Seedance 2 produit des clips 4K jugés bluffants de réalisme, mais à un coût élevé : environ 47 dollars pour un extrait de 15 secondes.",
+    "tags": [
+      "modeles",
+      "produit"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/venturetwins/status/2072724744554905908",
+    "media": true,
+    "auteur_x": "@venturetwins"
+  },
+  {
+    "date": "2026-07-02",
+    "titre_fr": "L'API Catalog de Shopify fait émerger de nouvelles applications",
+    "resume_fr": "Des développeurs construisent des applications (et non des boutiques) à partir de l'API Catalog de Shopify, ouvrant la voie à un nouveau type d'entrepreneur bâtissant des produits sur les données commerçantes.",
+    "tags": [
+      "produit",
+      "commerce",
+      "shopify"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/harleyf/status/2072748693384741155",
+    "media": false,
+    "auteur_x": "@harleyf"
   }
 ]
