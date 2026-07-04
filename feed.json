@@ -4606,5 +4606,32 @@
     "tweet_url": "https://x.com/harleyf/status/2072748693384741155",
     "media": false,
     "auteur_x": "@harleyf"
+  },
+  {
+    "date": "2026-07-03",
+    "titre_fr": "Anthropic remet Fable 5 en accès temporaire jusqu'au 7 juillet",
+    "resume_fr": "Le modèle Fable 5 d'Anthropic est de nouveau disponible via Claude, mais uniquement inclus dans les abonnements jusqu'au 7 juillet ; après cette date, il passera à une tarification à l'usage (10/50 $ par million de tokens), le plus cher vendu par Anthropic. Il propose une fenêtre de contexte de 1M de tokens mais consomme le quota environ deux fois plus vite qu'Opus.",
+    "tags": [
+      "anthropic",
+      "modeles",
+      "produit"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/gregisenberg/status/2073103521981882861",
+    "media": false,
+    "auteur_x": "@gregisenberg"
+  },
+  {
+    "date": "2026-07-03",
+    "titre_fr": "Mistral met en avant une IA appartenant aux entreprises clientes",
+    "resume_fr": "Mistral rappelle son positionnement : aider les entreprises, institutions publiques et industries à bâtir leur propre intelligence, afin que la valeur issue de leurs données, workflows et modèles leur revienne plutôt qu'aux fournisseurs de modèles.",
+    "tags": [
+      "mistral",
+      "produit"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/MistralAI/status/2073163455910330528",
+    "media": false,
+    "auteur_x": "@MistralAI"
   }
 ]
