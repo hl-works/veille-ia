@@ -4633,5 +4633,34 @@
     "tweet_url": "https://x.com/MistralAI/status/2073163455910330528",
     "media": false,
     "auteur_x": "@MistralAI"
+  },
+  {
+    "date": "2026-07-04",
+    "titre_fr": "Exemple concret d'une pile d'agents IA pour automatiser une petite structure",
+    "resume_fr": "Un praticien détaille sa stack combinant Codex/Claude Code, des agents connectés via Slack, un CRM et un « second cerveau » sur GitHub, permettant de déployer un agent spécialisé en quelques minutes. Utile comme illustration pour PME curieuses d'automatisation.",
+    "tags": [
+      "agents",
+      "automatisation",
+      "no-code",
+      "service-client"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/coreyganim/status/2073528277788979608",
+    "media": false,
+    "auteur_x": "@coreyganim"
+  },
+  {
+    "date": "2026-07-05",
+    "titre_fr": "Claude déniche cinq bugs bloquants avant une mise en production",
+    "resume_fr": "Le développeur Simon Willison rapporte avoir fait relire son logiciel par un agent Claude, qui a identifié et corrigé cinq problèmes critiques avant la sortie. Il note toutefois un coût non subventionné estimé à environ 150 dollars pour cette revue.",
+    "tags": [
+      "anthropic",
+      "agents",
+      "produit"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/simonw/status/2073574214280544746",
+    "media": false,
+    "auteur_x": "@simonw"
   }
 ]
