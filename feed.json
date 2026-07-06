@@ -4662,5 +4662,33 @@
     "tweet_url": "https://x.com/simonw/status/2073574214280544746",
     "media": false,
     "auteur_x": "@simonw"
+  },
+  {
+    "date": "2026-07-05",
+    "titre_fr": "Cas d'usage concrets d'agents IA pour les PME de services",
+    "resume_fr": "Un fil détaille plusieurs applications d'agents IA orientées petites entreprises : relance des factures impayées, transformation des transcriptions d'appels en notes CRM, suivi des renouvellements de conformité, réactivation de clients dormants et traitement des demandes de garantie. L'auteur y voit des prestations facturables et reproductibles.",
+    "tags": [
+      "agents",
+      "automatisation",
+      "service-client",
+      "vente"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/coreyganim/status/2073710478057242933",
+    "media": false,
+    "auteur_x": "@coreyganim"
+  },
+  {
+    "date": "2026-07-06",
+    "titre_fr": "Étude : les scores aux benchmarks ne garantissent pas la fiabilité de l'IA médicale",
+    "resume_fr": "Une étude relayée par Gary Marcus alerte sur le fait que de bons résultats aux tests standardisés en IA médicale ne signifient pas que les modèles sont réellement prêts et dignes de confiance dans un cadre clinique. Un rappel utile sur l'écart entre performance mesurée et fiabilité réelle.",
+    "tags": [
+      "recherche",
+      "politique-ia"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/GaryMarcus/status/2073988672782053541",
+    "media": false,
+    "auteur_x": "@GaryMarcus"
   }
 ]
