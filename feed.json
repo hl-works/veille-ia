@@ -4690,5 +4690,46 @@
     "tweet_url": "https://x.com/GaryMarcus/status/2073988672782053541",
     "media": false,
     "auteur_x": "@GaryMarcus"
+  },
+  {
+    "date": "2026-07-06",
+    "titre_fr": "Google DeepMind étend son partenariat robotique avec Apptronik",
+    "resume_fr": "Google DeepMind collabore avec Apptronik : les données du monde réel collectées par le robot humanoïde Apollo 2 serviront à entraîner et améliorer Gemini Robotics. Le partenariat s'accompagne de l'expansion du site Robot Park.",
+    "tags": [
+      "google",
+      "recherche",
+      "hardware"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2074157282477154597",
+    "media": true,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-07-06",
+    "titre_fr": "Anthropic publie une étude sur un « espace de travail global » dans les modèles",
+    "resume_fr": "Anthropic décrit une recherche montrant qu'à l'image du cerveau humain, seule une fraction du traitement interne de Claude serait consciemment accessible. L'étude explore comment cette structure organise l'information dans le modèle.",
+    "tags": [
+      "anthropic",
+      "recherche"
+    ],
+    "score": 38,
+    "tweet_url": "https://x.com/AnthropicAI/status/2074185348142280912",
+    "media": true,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-07-07",
+    "titre_fr": "Tencent lance Hy3, un modèle MoE de 295B gratuit sur OpenRouter",
+    "resume_fr": "Tencent (Hunyuan) propose son modèle Hy3 gratuitement sur OpenRouter jusqu'au 21 juillet. Il s'agit d'un modèle de type MoE de 295 milliards de paramètres avec une fenêtre de contexte de 256K, conçu pour le code, le raisonnement, les agents et l'utilisation fiable d'outils.",
+    "tags": [
+      "modeles",
+      "open-source",
+      "agents"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/openclaw/status/2074346288238457094",
+    "media": true,
+    "auteur_x": "@openclaw"
   }
 ]
