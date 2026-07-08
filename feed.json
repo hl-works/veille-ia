@@ -4731,5 +4731,107 @@
     "tweet_url": "https://x.com/openclaw/status/2074346288238457094",
     "media": true,
     "auteur_x": "@openclaw"
+  },
+  {
+    "date": "2026-07-07",
+    "titre_fr": "Claude Cowork arrive sur mobile et web",
+    "resume_fr": "Anthropic étend Claude Cowork au mobile et au web : on peut confier une tâche depuis son ordinateur et récupérer le travail terminé sur son téléphone. Le déploiement en bêta commence par le plan Max avant d'autres formules.",
+    "tags": [
+      "anthropic",
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 70,
+    "tweet_url": "https://x.com/claudeai/status/2074525815820169320",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-07-07",
+    "titre_fr": "Google enrichit les Managed Agents de l'API Gemini",
+    "resume_fr": "Google ajoute à ses Managed Agents dans l'API Gemini le support des tâches en arrière-plan, l'appel de fonctions et de MCP distants, ainsi que le rafraîchissement des identifiants réseau. La fonctionnalité est désormais accessible via le palier gratuit.",
+    "tags": [
+      "google",
+      "agents",
+      "produit"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/OfficialLoganK/status/2074552932318765376",
+    "media": false,
+    "auteur_x": "@OfficialLoganK"
+  },
+  {
+    "date": "2026-07-07",
+    "titre_fr": "Shopify élargit la rémunération de ses partenaires",
+    "resume_fr": "Shopify met à jour son programme partenaires : ceux-ci pourront désormais toucher une part sur l'abonnement mais aussi sur les ventes générées par les marchands qu'ils accompagnent. L'objectif affiché est d'aligner les incitations sur la croissance des commerçants.",
+    "tags": [
+      "produit",
+      "commerce",
+      "shopify",
+      "vente"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/harleyf/status/2074518057159188508",
+    "media": false,
+    "auteur_x": "@harleyf"
+  },
+  {
+    "date": "2026-07-07",
+    "titre_fr": "xAI propose un créateur d'agents vocaux avec numéro de téléphone gratuit",
+    "resume_fr": "xAI a lancé un outil permettant de construire un agent vocal capable de passer et recevoir de vrais appels, avec un numéro de téléphone inclus, contournant les délais de vérification habituels (type Twilio). L'annonce fait partie d'une série de sorties récentes autour des agents.",
+    "tags": [
+      "xai",
+      "agents",
+      "produit",
+      "service-client",
+      "automatisation"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/coreyganim/status/2074426194418926020",
+    "media": true,
+    "auteur_x": "@coreyganim"
+  },
+  {
+    "date": "2026-07-07",
+    "titre_fr": "Le modèle MAI-1 de Microsoft en deçà de Sonnet 4.6",
+    "resume_fr": "Selon les benchmarks publiés par Microsoft (encore sans validation indépendante), son modèle MAI-1 semble moins performant que Claude Sonnet 4.6. Son intérêt comme copilote dans Excel et Outlook reste à démontrer face aux plugins existants.",
+    "tags": [
+      "meta",
+      "modeles",
+      "recherche"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/emollick/status/2074595359364411651",
+    "media": true,
+    "auteur_x": "@emollick"
+  },
+  {
+    "date": "2026-07-07",
+    "titre_fr": "Google DeepMind aide à déchiffrer les textes anciens",
+    "resume_fr": "Google DeepMind présente une compétence « Predicting the Past » dans Antigravity, qui s'appuie sur Gemini et ses modèles Aeneas et Ithaca pour permettre aux historiens d'étudier des textes grecs et latins en langage courant.",
+    "tags": [
+      "google",
+      "recherche",
+      "produit"
+    ],
+    "score": 40,
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2074513661750546762",
+    "media": true,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-07-08",
+    "titre_fr": "OpenAI lance GPT-5.6 Sol, Terra et Luna jeudi",
+    "resume_fr": "OpenAI annonce la sortie publique de ses nouveaux modèles GPT-5.6 « Sol », ainsi que Terra et Luna, ce jeudi. L'accès en préversion est déjà étendu au niveau mondial. Selon les premiers testeurs, Sol est rapide et interactif, différent du modèle Fable d'Anthropic.",
+    "tags": [
+      "openai",
+      "modeles",
+      "produit"
+    ],
+    "score": 85,
+    "tweet_url": "https://x.com/OpenAI/status/2074704958419792299",
+    "media": true,
+    "auteur_x": "@OpenAI"
   }
 ]
