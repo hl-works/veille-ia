@@ -4833,5 +4833,89 @@
     "tweet_url": "https://x.com/OpenAI/status/2074704958419792299",
     "media": true,
     "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-07-08",
+    "titre_fr": "OpenAI lance GPT-Live, sa nouvelle voix conversationnelle",
+    "resume_fr": "OpenAI déploie GPT-Live, une nouvelle génération de modèles vocaux pensés pour des conversations plus naturelles et fluides avec l'IA. Le déploiement dans ChatGPT commence pour les utilisateurs Go, Plus et Pro, puis les comptes gratuits, avec une API prévue.",
+    "tags": [
+      "openai",
+      "produit",
+      "modeles",
+      "service-client"
+    ],
+    "score": 78,
+    "tweet_url": "https://x.com/OpenAI/status/2074907025537224840",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-07-08",
+    "titre_fr": "Cursor a co-entraîné Grok 4.5 avec xAI",
+    "resume_fr": "L'éditeur de code Cursor annonce un partenariat avec xAI pour entraîner Grok 4.5, présenté comme son modèle le plus puissant et le premier conçu au-delà du seul développement logiciel.",
+    "tags": [
+      "xai",
+      "modeles",
+      "produit"
+    ],
+    "score": 65,
+    "tweet_url": "https://x.com/cursor_ai/status/2074915744999969059",
+    "media": true,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-07-08",
+    "titre_fr": "Mistral présente Robostral Navigate pour la robotique",
+    "resume_fr": "Mistral dévoile son premier modèle dédié à la navigation robotique embarquée : un modèle de 8B qui guide des robots pour exécuter des tâches décrites en langage naturel, à partir d'une simple caméra RGB. Il revendique l'état de l'art sur le benchmark R2R-CE.",
+    "tags": [
+      "mistral",
+      "modeles",
+      "recherche"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/MistralAI/status/2074856309438980145",
+    "media": true,
+    "auteur_x": "@MistralAI"
+  },
+  {
+    "date": "2026-07-08",
+    "titre_fr": "OpenAI juge le benchmark SWE-Bench Pro peu fiable",
+    "resume_fr": "Après audit, OpenAI estime que SWE-Bench Pro, l'un des benchmarks de codage les plus utilisés, ne mesure plus fidèlement les capacités de pointe : environ 30% des tâches seraient cassées. L'entreprise retire sa recommandation de l'utiliser comme évaluation de référence.",
+    "tags": [
+      "openai",
+      "recherche"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/OpenAI/status/2074972179385720836",
+    "media": false,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-07-08",
+    "titre_fr": "Google AI Studio permet d'importer depuis GitHub",
+    "resume_fr": "Google déploie une fonction d'import depuis GitHub dans AI Studio Build : un dépôt est automatiquement converti pour être compatible avec l'environnement, puis peut être itéré et déployé directement dans l'outil.",
+    "tags": [
+      "google",
+      "produit",
+      "no-code"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/OfficialLoganK/status/2074902342512845206",
+    "media": true,
+    "auteur_x": "@OfficialLoganK"
+  },
+  {
+    "date": "2026-07-08",
+    "titre_fr": "Claude Code ajoute la commande /checkup",
+    "resume_fr": "Anthropic ajoute à Claude Code une commande /checkup qui nettoie les skills, MCP et plugins inutilisés, déduplique les fichiers CLAUDE.md, désactive les hooks lents et met à jour l'outil, avec confirmation avant toute modification.",
+    "tags": [
+      "anthropic",
+      "produit",
+      "agents"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/bcherny/status/2074997570317779038",
+    "media": false,
+    "auteur_x": "@bcherny"
   }
 ]
