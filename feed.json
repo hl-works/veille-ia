@@ -4917,5 +4917,116 @@
     "tweet_url": "https://x.com/bcherny/status/2074997570317779038",
     "media": false,
     "auteur_x": "@bcherny"
+  },
+  {
+    "date": "2026-07-09",
+    "titre_fr": "OpenAI lance la famille GPT-5.6 (Sol, Terra, Luna)",
+    "resume_fr": "OpenAI a annoncé sa nouvelle génération de modèles GPT-5.6, déclinée en trois versions : Sol (haut de gamme), Terra et Luna (plus économiques). Le déploiement débute dans ChatGPT, Codex et l'API, avec un accent sur le codage, le travail intellectuel et un meilleur coût par tâche.",
+    "tags": [
+      "openai",
+      "modeles",
+      "produit"
+    ],
+    "score": 88,
+    "tweet_url": "https://x.com/OpenAI/status/2075271421149020426",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-07-09",
+    "titre_fr": "OpenAI dévoile ChatGPT Work, un agent pour les tâches professionnelles",
+    "resume_fr": "OpenAI introduit ChatGPT Work, un agent propulsé par Codex et GPT-5.6 capable d'agir sur vos applications et fichiers, de rester sur un projet pendant des heures et de transformer un objectif en travail finalisé. Accessible depuis mobile, web et bureau.",
+    "tags": [
+      "openai",
+      "agents",
+      "produit",
+      "automatisation"
+    ],
+    "score": 82,
+    "tweet_url": "https://x.com/OpenAI/status/2075274271845404744",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-07-09",
+    "titre_fr": "Ollama lève 65 M$ en série B",
+    "resume_fr": "Ollama, plateforme facilitant l'exécution locale de modèles open source, annonce une série B de 65 millions de dollars. L'entreprise revendique 8,9 millions de développeurs et une adoption par 85 % des entreprises du Fortune 500, avec seulement 14 employés.",
+    "tags": [
+      "open-source",
+      "talents",
+      "produit"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/ycombinator/status/2075271225262432442",
+    "media": true,
+    "auteur_x": "@ycombinator"
+  },
+  {
+    "date": "2026-07-09",
+    "titre_fr": "Perplexity teste un modèle orchestrateur basé sur GLM 5.2",
+    "resume_fr": "Perplexity publie une préversion de recherche d'un nouveau modèle orchestrateur dans Perplexity Computer, adapté à partir de GLM 5.2. Il promet des performances proches de la frontière pour environ un tiers du coût d'Opus.",
+    "tags": [
+      "modeles",
+      "recherche",
+      "produit"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/perplexity_ai/status/2075224548476440779",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-07-09",
+    "titre_fr": "Ben Bernanke rejoint le Long-Term Benefit Trust d'Anthropic",
+    "resume_fr": "Anthropic annonce la nomination de l'ancien président de la Réserve fédérale américaine, Ben Bernanke, au sein de son Long-Term Benefit Trust, l'organe chargé de superviser la mission d'intérêt public de l'entreprise.",
+    "tags": [
+      "anthropic",
+      "talents",
+      "politique-ia"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/AnthropicAI/status/2075257492716879967",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-07-09",
+    "titre_fr": "GPT-5.6 disponible dans Cursor",
+    "resume_fr": "L'éditeur de code Cursor intègre les modèles GPT-5.6 Sol, Terra et Luna. Sur son propre benchmark CursorBench, Sol obtient un score de 67,2 %.",
+    "tags": [
+      "openai",
+      "produit",
+      "modeles"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/cursor_ai/status/2075265504105611674",
+    "media": false,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-07-09",
+    "titre_fr": "Claude ajoute un récapitulatif mensuel d'usage",
+    "resume_fr": "Anthropic déploie une fonctionnalité « Reflect » permettant aux utilisateurs de visualiser quand et sur quoi ils utilisent Claude, avec des options de plages horaires calmes et des rappels de pause.",
+    "tags": [
+      "anthropic",
+      "produit"
+    ],
+    "score": 40,
+    "tweet_url": "https://x.com/claudeai/status/2075225957711929667",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-07-09",
+    "titre_fr": "Départ de Fidji Simo d'OpenAI",
+    "resume_fr": "Sam Altman a exprimé sa gratitude et sa tristesse à l'annonce du départ de Fidji Simo d'OpenAI, en lui souhaitant un prompt rétablissement. Un mouvement de direction notable au sein de l'entreprise.",
+    "tags": [
+      "openai",
+      "talents"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/sama/status/2075354679031067058",
+    "media": false,
+    "auteur_x": "@sama"
   }
 ]
