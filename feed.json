@@ -5028,5 +5028,156 @@
     "tweet_url": "https://x.com/sama/status/2075354679031067058",
     "media": false,
     "auteur_x": "@sama"
+  },
+  {
+    "date": "2026-07-10",
+    "titre_fr": "OpenAI lance GPT-5.6, axé sur la santé et la baisse des coûts",
+    "resume_fr": "OpenAI présente GPT-5.6, présenté comme une avancée majeure pour les usages liés à la santé. La firme met en avant de meilleures performances à moindre coût, la version Luna dépassant GPT-5.5 tout en étant nettement moins chère.",
+    "tags": [
+      "openai",
+      "modeles"
+    ],
+    "score": 78,
+    "tweet_url": "https://x.com/OpenAI/status/2075686461693898868",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-07-10",
+    "titre_fr": "Meta dévoile Muse Spark 1.1, un modèle agentique à bas prix",
+    "resume_fr": "Meta a lancé Muse Spark 1.1, présenté comme l'un des modèles agentiques les plus performants, avec des tarifs cassant ceux d'OpenAI et Anthropic. L'action Meta a progressé de plus de 10% depuis l'annonce.",
+    "tags": [
+      "meta",
+      "modeles",
+      "agents"
+    ],
+    "score": 72,
+    "tweet_url": "https://x.com/rowancheung/status/2075634108324089943",
+    "media": true,
+    "auteur_x": "@rowancheung"
+  },
+  {
+    "date": "2026-07-10",
+    "titre_fr": "Grok 4.5 séduit par son rapport performance/prix",
+    "resume_fr": "Grok 4.5 de xAI est présenté comme une option très compétitive : environ 60% moins cher qu'Opus 4.8 tout en restant rapide, ce qui le rend attractif pour faire tourner des agents autonomes.",
+    "tags": [
+      "xai",
+      "modeles",
+      "agents",
+      "automatisation"
+    ],
+    "score": 65,
+    "tweet_url": "https://x.com/gregisenberg/status/2075708908631429488",
+    "media": true,
+    "auteur_x": "@gregisenberg"
+  },
+  {
+    "date": "2026-07-10",
+    "titre_fr": "Perplexity intègre Grok 4.5 comme orchestrateur dans Computer",
+    "resume_fr": "Perplexity ajoute Grok 4.5 en tant que modèle orchestrateur dans son produit Computer pour les abonnés Pro et Max. Selon leurs évaluations, il devance les autres configurations pour environ la moitié du coût d'Opus 4.8.",
+    "tags": [
+      "produit",
+      "xai",
+      "agents"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/perplexity_ai/status/2075660058625790159",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-07-10",
+    "titre_fr": "GPT-5.6 devient le modèle par défaut de Microsoft 365 Copilot",
+    "resume_fr": "Sam Altman annonce que GPT-5.6 est désormais le modèle privilégié dans Microsoft 365 Copilot, ce qui étend sa présence auprès des utilisateurs professionnels.",
+    "tags": [
+      "openai",
+      "produit"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/sama/status/2075585386441789605",
+    "media": false,
+    "auteur_x": "@sama"
+  },
+  {
+    "date": "2026-07-10",
+    "titre_fr": "OpenAI déploie ChatGPT Work, des agents à grande échelle",
+    "resume_fr": "OpenAI met en avant ChatGPT Work, qui apporte des agents utilisables directement depuis le mobile, sans ordinateur. L'objectif est de rendre les tâches agentiques accessibles pour un usage personnel comme professionnel.",
+    "tags": [
+      "openai",
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 63,
+    "tweet_url": "https://x.com/gdb/status/2075628596232884556",
+    "media": false,
+    "auteur_x": "@gdb"
+  },
+  {
+    "date": "2026-07-10",
+    "titre_fr": "GPT-5.6 Sol Ultra résout une conjecture mathématique vieille de 50 ans",
+    "resume_fr": "OpenAI affirme que GPT-5.6 Sol Ultra a produit la preuve d'un problème mathématique resté ouvert depuis 50 ans, en accélérant fortement le temps de calcul grâce à un traitement parallèle. Fait notable : le modèle est disponible publiquement.",
+    "tags": [
+      "openai",
+      "recherche",
+      "modeles"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/polynoamial/status/2075647948906533297",
+    "media": true,
+    "auteur_x": "@polynoamial"
+  },
+  {
+    "date": "2026-07-10",
+    "titre_fr": "Cursor ajoute les \"side chats\" pour explorer sans interrompre",
+    "resume_fr": "Cursor introduit les side chats, des conversations d'agent parallèles et persistantes que l'on peut mentionner pour réinjecter leur contexte dans la discussion principale.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/cursor_ai/status/2075686268113916023",
+    "media": true,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-07-10",
+    "titre_fr": "OpenAI renforce son programme de bug bounty sur la biosécurité",
+    "resume_fr": "OpenAI transforme son Bio Bug Bounty en programme privé permanent et double les récompenses à 50 000 dollars. Elle invite des experts en red teaming et biosécurité à tenter de contourner ses garde-fous sur les modèles de pointe.",
+    "tags": [
+      "openai",
+      "politique-ia",
+      "recherche"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/OpenAI/status/2075647722766614733",
+    "media": false,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-07-10",
+    "titre_fr": "OpenAI met en avant la nouvelle voix de ChatGPT",
+    "resume_fr": "OpenAI présente une nouvelle version de ChatGPT Voice, avec des conversations plus naturelles (interruptions, vérification en direct). L'entreprise y voit une interface plus fluide, moins dépendante des écrans.",
+    "tags": [
+      "openai",
+      "produit"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/gdb/status/2075594946791555208",
+    "media": false,
+    "auteur_x": "@gdb"
+  },
+  {
+    "date": "2026-07-10",
+    "titre_fr": "Fidji Simo quitte ses fonctions chez OpenAI pour raisons de santé",
+    "resume_fr": "Greg Brockman remercie Fidji Simo pour sa contribution à OpenAI, évoquant son départ pour se concentrer sur sa santé. Un mouvement notable au sein de la direction de l'entreprise.",
+    "tags": [
+      "openai",
+      "talents"
+    ],
+    "score": 54,
+    "tweet_url": "https://x.com/gdb/status/2075592729736995209",
+    "media": false,
+    "auteur_x": "@gdb"
   }
 ]
