@@ -5179,5 +5179,75 @@
     "tweet_url": "https://x.com/gdb/status/2075592729736995209",
     "media": false,
     "auteur_x": "@gdb"
+  },
+  {
+    "date": "2026-07-11",
+    "titre_fr": "OpenAI présente GPT-5.6 Sol",
+    "resume_fr": "OpenAI communique autour de son nouveau modèle GPT-5.6 « Sol », présenté comme parmi les plus performants du marché. Sam Altman met notamment en avant des résultats sur des réponses médicales jugées de meilleure qualité que celles rédigées par des médecins.",
+    "tags": [
+      "openai",
+      "modeles"
+    ],
+    "score": 72,
+    "tweet_url": "https://x.com/sama/status/2075985056846451123",
+    "media": false,
+    "auteur_x": "@sama"
+  },
+  {
+    "date": "2026-07-11",
+    "titre_fr": "GPT-5.6 Sol pilote un ordinateur pendant 5 heures pour gagner un jeu",
+    "resume_fr": "Ethan Mollick rapporte avoir laissé GPT-5.6 Sol via Codex contrôler son ordinateur pour remporter le défi quotidien de Slay the Spire 2, avec des facteurs aléatoires empêchant la triche. Le modèle a travaillé cinq heures en enchaînant des décisions complexes.",
+    "tags": [
+      "openai",
+      "agents",
+      "modeles"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/emollick/status/2075950897029374334",
+    "media": true,
+    "auteur_x": "@emollick"
+  },
+  {
+    "date": "2026-07-11",
+    "titre_fr": "Altman : l'IA aurait été créatrice nette d'emplois jusqu'ici",
+    "resume_fr": "Sam Altman estime que, jusqu'à présent, l'IA a globalement créé plus d'emplois qu'elle n'en a détruit, un constat qu'il ne s'attendait pas à faire à ce niveau de capacités des modèles.",
+    "tags": [
+      "openai",
+      "politique-ia"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/sama/status/2076036901824532530",
+    "media": false,
+    "auteur_x": "@sama"
+  },
+  {
+    "date": "2026-07-11",
+    "titre_fr": "Nouveau modèle d'images de Meta et son filtre « sitcom »",
+    "resume_fr": "Meta a lancé un nouveau modèle de génération d'images. Justine Moore recommande d'essayer son filtre « sitcom », qui transforme les photos dans un style de série télévisée.",
+    "tags": [
+      "meta",
+      "modeles",
+      "produit"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/venturetwins/status/2075983239311958291",
+    "media": true,
+    "auteur_x": "@venturetwins"
+  },
+  {
+    "date": "2026-07-12",
+    "titre_fr": "Chaîne de production publicitaire IA via Higgsfield et Claude Code",
+    "resume_fr": "Un tutoriel montre comment connecter Higgsfield à Claude Code pour créer des publicités entièrement en IA : brief de marque, visuels avec GPT Image 2, animation avec Seedance 2.0 et contenus type UGC, sans quitter l'environnement Claude.",
+    "tags": [
+      "produit",
+      "agents",
+      "marketing",
+      "pub",
+      "automatisation"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/mikefutia/status/2076119050795487518",
+    "media": true,
+    "auteur_x": "@mikefutia"
   }
 ]
