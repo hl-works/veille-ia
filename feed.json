@@ -5249,5 +5249,78 @@
     "tweet_url": "https://x.com/mikefutia/status/2076119050795487518",
     "media": true,
     "auteur_x": "@mikefutia"
+  },
+  {
+    "date": "2026-07-12",
+    "titre_fr": "Anthropic prolonge l'accès à Claude Fable 5",
+    "resume_fr": "Anthropic annonce l'extension de l'accès à Claude Fable 5 sur tous les forfaits payants, et maintient les limites hebdomadaires de Claude Code relevées de 50% jusqu'au 19 juillet.",
+    "tags": [
+      "anthropic",
+      "modeles",
+      "produit"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/claudeai/status/2076351399999557669",
+    "media": false,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-07-12",
+    "titre_fr": "Risque réglementaire pour les modèles open source aux États-Unis",
+    "resume_fr": "Nathan Lambert alerte sur un flou du régime de licences envisagé par la Maison-Blanche, qui pourrait, selon lui, freiner durablement l'économie des modèles ouverts dans les prochains mois. Il propose des pistes pour s'y préparer.",
+    "tags": [
+      "open-source",
+      "politique-ia",
+      "modeles"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/natolambert/status/2076351049926078681",
+    "media": false,
+    "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-07-12",
+    "titre_fr": "Exemple concret d'automatisation d'une tâche récurrente avec Claude",
+    "resume_fr": "Un consultant détaille comment il a automatisé un processus manuel de mise en relation pour un groupe de 50 personnes (extraction de membres, appariement, rédaction de 25 emails) via des compétences Claude connectées aux outils métier. Passage de 2 heures à 5 minutes par mois.",
+    "tags": [
+      "anthropic",
+      "agents",
+      "automatisation",
+      "service-client"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/coreyganim/status/2076444744746762466",
+    "media": false,
+    "auteur_x": "@coreyganim"
+  },
+  {
+    "date": "2026-07-13",
+    "titre_fr": "OpenAI lance ChatGPT Work",
+    "resume_fr": "OpenAI présente ChatGPT Work, une déclinaison de ChatGPT destinée aux usages professionnels. Greg Brockman met en avant le travail de l'équipe et invite les utilisateurs à explorer ses possibilités.",
+    "tags": [
+      "openai",
+      "produit",
+      "automatisation"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/gdb/status/2076518764112445861",
+    "media": false,
+    "auteur_x": "@gdb"
+  },
+  {
+    "date": "2026-07-13",
+    "titre_fr": "Génération de publicités à partir de ChatGPT Images 2.0",
+    "resume_fr": "Un praticien décrit un pipeline combinant Claude Code et ChatGPT Images 2.0 pour produire des dizaines de visuels publicitaires cohérents avec l'identité d'une marque à partir d'une simple URL. Illustration de l'usage de l'IA image pour le marketing e-commerce.",
+    "tags": [
+      "openai",
+      "anthropic",
+      "marketing",
+      "pub",
+      "commerce"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/mikefutia/status/2076490384830783547",
+    "media": true,
+    "auteur_x": "@mikefutia"
   }
 ]
