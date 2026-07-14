@@ -5322,5 +5322,89 @@
     "tweet_url": "https://x.com/mikefutia/status/2076490384830783547",
     "media": true,
     "auteur_x": "@mikefutia"
+  },
+  {
+    "date": "2026-07-13",
+    "titre_fr": "Utiliser des « boucles » d'agents pour piloter un business en continu",
+    "resume_fr": "Greg Isenberg décrit comment des agents IA en boucle (objectif, vérification, itération) peuvent gérer des tâches business sur la durée : SEO, optimisation des pubs, amélioration de prompts. L'idée : automatiser des processus mesurables jusqu'à atteindre un objectif chiffré.",
+    "tags": [
+      "agents",
+      "automatisation",
+      "marketing",
+      "vente"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/gregisenberg/status/2076756046039630268",
+    "media": true,
+    "auteur_x": "@gregisenberg"
+  },
+  {
+    "date": "2026-07-13",
+    "titre_fr": "Anthropic étudie les « valeurs » exprimées par Claude selon la langue",
+    "resume_fr": "Anthropic publie une recherche analysant plus de 300 000 conversations pour comprendre comment les valeurs exprimées par Claude (honnêteté, chaleur…) varient d'un modèle à l'autre et selon les langues.",
+    "tags": [
+      "anthropic",
+      "recherche"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/AnthropicAI/status/2076719540785012872",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-07-13",
+    "titre_fr": "Richard Sutton juge le deep learning « faible et inefficace »",
+    "resume_fr": "Le pionnier de l'apprentissage par renforcement Richard Sutton affirme que les méthodes actuelles de deep learning nécessitent des idées fondamentalement nouvelles plutôt que de simples ajustements. Une prise de position qui relance le débat sur les limites de l'IA actuelle.",
+    "tags": [
+      "recherche"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/GaryMarcus/status/2076686812978798842",
+    "media": false,
+    "auteur_x": "@GaryMarcus"
+  },
+  {
+    "date": "2026-07-13",
+    "titre_fr": "Google DeepMind applique l'IA à l'archéologie via Antigravity",
+    "resume_fr": "Google DeepMind montre comment sa fonction « Predicting the Past » dans Antigravity aide à reconstituer des réseaux historiques, cartographier des cultes anciens et retracer des objets antiques à partir de sources fragmentaires.",
+    "tags": [
+      "google",
+      "produit",
+      "recherche"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2076686114631340046",
+    "media": true,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-07-14",
+    "titre_fr": "GPT-5.6 disponible sur AWS Bedrock",
+    "resume_fr": "OpenAI annonce que son modèle GPT-5.6 est désormais accessible de façon générale via Amazon Bedrock, ce qui facilite son intégration pour les entreprises déjà sur AWS.",
+    "tags": [
+      "openai",
+      "modeles",
+      "hardware"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/gdb/status/2076878421314195745",
+    "media": false,
+    "auteur_x": "@gdb"
+  },
+  {
+    "date": "2026-07-14",
+    "titre_fr": "Un vérificateur de conformité pour pubs Meta bâti dans Claude Code",
+    "resume_fr": "Un utilisateur a construit un outil qui compare le texte d'une publicité aux règles publicitaires actuelles de Meta avant soumission, pour anticiper les rejets et proposer des reformulations. Utile aux acheteurs média et marques e-commerce.",
+    "tags": [
+      "anthropic",
+      "agents",
+      "marketing",
+      "pub",
+      "automatisation"
+    ],
+    "score": 66,
+    "tweet_url": "https://x.com/mikefutia/status/2076826576680108166",
+    "media": true,
+    "auteur_x": "@mikefutia"
   }
 ]
