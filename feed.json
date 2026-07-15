@@ -5406,5 +5406,100 @@
     "tweet_url": "https://x.com/mikefutia/status/2076826576680108166",
     "media": true,
     "auteur_x": "@mikefutia"
+  },
+  {
+    "date": "2026-07-14",
+    "titre_fr": "OpenAI : GPT-5.6 « sol » moins cher et plus efficace",
+    "resume_fr": "Sam Altman annonce que GPT-5.6 (nom de code « sol ») coûte environ moitié moins cher et consomme deux fois moins de jetons que le modèle « fable » pour accomplir des tâches équivalentes, ce qui se traduit par un prix nettement réduit.",
+    "tags": [
+      "openai",
+      "modeles"
+    ],
+    "score": 72,
+    "tweet_url": "https://x.com/sama/status/2077036999303999910",
+    "media": false,
+    "auteur_x": "@sama"
+  },
+  {
+    "date": "2026-07-14",
+    "titre_fr": "Claude pour les enseignants aux États-Unis",
+    "resume_fr": "Anthropic ouvre un accès gratuit aux fonctionnalités premium de Claude pour les enseignants vérifiés du primaire et du secondaire américains, avec une bibliothèque de compétences pédagogiques alignées sur les programmes des 50 États.",
+    "tags": [
+      "anthropic",
+      "produit"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/claudeai/status/2077047278078931243",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-07-14",
+    "titre_fr": "Shopify s'intègre à DoorDash pour la livraison le jour même",
+    "resume_fr": "Les marchands américains peuvent désormais connecter leur boutique Shopify à DoorDash pour proposer la livraison le jour même aux clients à proximité, une option jusque-là réservée aux grands distributeurs.",
+    "tags": [
+      "produit",
+      "commerce",
+      "shopify",
+      "vente"
+    ],
+    "score": 70,
+    "tweet_url": "https://x.com/harleyf/status/2077026115768467818",
+    "media": false,
+    "auteur_x": "@harleyf"
+  },
+  {
+    "date": "2026-07-14",
+    "titre_fr": "Perplexity ouvre son benchmark WANDR",
+    "resume_fr": "Perplexity met en open source WANDR, un banc d'essai interne développé pour concevoir les capacités de recherche approfondie de son produit Perplexity Computer.",
+    "tags": [
+      "open-source",
+      "recherche"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/perplexity_ai/status/2077099503723946121",
+    "media": false,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-07-14",
+    "titre_fr": "Anthropic finance la recherche en IA au Canada",
+    "resume_fr": "Anthropic s'engage à verser 10 millions de dollars canadiens et noue des partenariats avec des institutions canadiennes pour soutenir de nouveaux travaux de recherche en IA.",
+    "tags": [
+      "anthropic",
+      "recherche",
+      "politique-ia"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/AnthropicAI/status/2077026346375540870",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-07-14",
+    "titre_fr": "Chai Discovery lève 400 M$ et déploie avec de grands laboratoires",
+    "resume_fr": "La start-up Chai Discovery annonce des déploiements avec Eli Lilly, Pfizer et Novartis ainsi qu'un nouveau financement de 400 millions de dollars, dans le domaine de l'IA appliquée à la découverte de médicaments.",
+    "tags": [
+      "recherche",
+      "talents"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/saranormous/status/2077052187314925997",
+    "media": false,
+    "auteur_x": "@saranormous"
+  },
+  {
+    "date": "2026-07-15",
+    "titre_fr": "Meta lance Muse Spark 1.1, modèle multimodal",
+    "resume_fr": "Meta déploie Muse Spark 1.1, un modèle de raisonnement multimodal orienté vers le codage agentique, l'usage d'outils et le contrôle d'ordinateur, désormais disponible dans l'application OpenClaw.",
+    "tags": [
+      "meta",
+      "modeles",
+      "agents"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/openclaw/status/2077204506425864275",
+    "media": true,
+    "auteur_x": "@openclaw"
   }
 ]
