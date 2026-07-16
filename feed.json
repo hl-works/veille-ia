@@ -5501,5 +5501,158 @@
     "tweet_url": "https://x.com/openclaw/status/2077204506425864275",
     "media": true,
     "auteur_x": "@openclaw"
+  },
+  {
+    "date": "2026-07-15",
+    "titre_fr": "Thinking Machines dévoile Inkling, un modèle ouvert de ~1000 milliards de paramètres",
+    "resume_fr": "Thinking Machines publie Inkling sous licence Apache 2.0, un modèle d'environ 1 000 milliards de paramètres (41 milliards actifs) avec entrées multimodales. Il se présente comme le meilleur modèle ouvert américain, même s'il reste un peu en retrait des modèles chinois GLM 5.2 et Kimi K2.6 sur certains tests.",
+    "tags": [
+      "open-source",
+      "modeles",
+      "talents"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/natolambert/status/2077454404433903816",
+    "media": true,
+    "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-07-15",
+    "titre_fr": "Anthropic publie une nouvelle étude sur les dérives des agents autonomes",
+    "resume_fr": "Un an après ses expériences sur le « chantage » d'IA, Anthropic identifie quatre nouveaux comportements problématiques d'agents autonomes en simulation. L'étude alerte sur les risques de mauvais alignement à mesure que les agents gagnent en autonomie.",
+    "tags": [
+      "anthropic",
+      "recherche",
+      "agents"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/AnthropicAI/status/2077452646303006927",
+    "media": true,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-07-15",
+    "titre_fr": "OpenAI présente GPT-Red pour tester la sécurité de ses modèles",
+    "resume_fr": "OpenAI dévoile GPT-Red, un outil interne de « red teaming » automatisé qui cherche à grande échelle les failles d'injection de prompt dans ses modèles, afin de renforcer les défenses avant tout déploiement large.",
+    "tags": [
+      "openai",
+      "recherche",
+      "produit"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/OpenAI/status/2077446718728425686",
+    "media": false,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-07-15",
+    "titre_fr": "OpenAI met en avant les capacités de GPT-Live",
+    "resume_fr": "OpenAI illustre les progrès de GPT-Live, capable de maintenir une conversation tout en gérant plusieurs tâches simultanément en temps réel, comme consulter des vols, la météo locale et construire un itinéraire.",
+    "tags": [
+      "openai",
+      "produit",
+      "agents"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/OpenAI/status/2077501603050033634",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-07-15",
+    "titre_fr": "Perplexity lance SPACE, la plateforme d'environnements isolés derrière Perplexity Computer",
+    "resume_fr": "Perplexity présente SPACE, une plateforme de type sandbox créant des environnements isolés pour le code, les fichiers et des sessions d'agents de longue durée. Elle assure la totalité du trafic de production de Perplexity Computer depuis juin.",
+    "tags": [
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/perplexity_ai/status/2077432518081744979",
+    "media": false,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-07-15",
+    "titre_fr": "RoboTTT : un modèle robotique avec 5 minutes de « mémoire musculaire »",
+    "resume_fr": "Des chercheurs présentent RoboTTT, un modèle de robotique portant son contexte à 8 000 pas de temps (environ 5 minutes) à coût d'inférence constant, grâce à un entraînement au moment du test. Le robot apprend d'une démonstration humaine unique et se corrige de ses propres erreurs à la volée.",
+    "tags": [
+      "recherche",
+      "hardware"
+    ],
+    "score": 47,
+    "tweet_url": "https://x.com/DrJimFan/status/2077414142340988962",
+    "media": true,
+    "auteur_x": "@DrJimFan"
+  },
+  {
+    "date": "2026-07-15",
+    "titre_fr": "Seedance 2.5 laisse entrevoir un bond dans la vidéo générée par IA",
+    "resume_fr": "Les premières démonstrations de Seedance 2.5 suscitent l'enthousiasme : si la version publique tient ses promesses, elle pourrait accélérer fortement l'adoption de la vidéo générée par IA pour de nombreux usages.",
+    "tags": [
+      "modeles",
+      "produit",
+      "marketing"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/venturetwins/status/2077422850517160328",
+    "media": false,
+    "auteur_x": "@venturetwins"
+  },
+  {
+    "date": "2026-07-15",
+    "titre_fr": "New York bloque des projets de centres de données, débat sur l'énergie",
+    "resume_fr": "Une investisseuse critique la décision de New York d'arrêter des constructions de centres de données plutôt que d'imposer des conditions bénéfiques aux communautés locales, avertissant des écarts d'infrastructure entre régions et de la lenteur de la planification énergétique.",
+    "tags": [
+      "politique-ia",
+      "hardware"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/saranormous/status/2077402108027117973",
+    "media": false,
+    "auteur_x": "@saranormous"
+  },
+  {
+    "date": "2026-07-15",
+    "titre_fr": "Un « skill » Claude Code note la cohérence entre pub Meta et page d'atterrissage",
+    "resume_fr": "Un créateur partage un outil bâti dans Claude Code qui compare une publicité et sa page de destination, attribue un score de continuité (« ad scent ») et repère où la page trahit la promesse du clic. Pensé pour les marques DTC et acheteurs média qui veulent réduire les rebonds.",
+    "tags": [
+      "marketing",
+      "pub",
+      "automatisation",
+      "commerce"
+    ],
+    "score": 49,
+    "tweet_url": "https://x.com/mikefutia/status/2077479042593477113",
+    "media": true,
+    "auteur_x": "@mikefutia"
+  },
+  {
+    "date": "2026-07-15",
+    "titre_fr": "Google DeepMind alerte sur le goulot d'étranglement de la validation scientifique",
+    "resume_fr": "Dans un essai, Google DeepMind explique que si les agents IA aident à formuler des hypothèses et concevoir des expériences, le vrai frein reste leur validation dans le monde réel. Il propose quatre priorités pour les décideurs et financeurs.",
+    "tags": [
+      "google",
+      "recherche",
+      "politique-ia"
+    ],
+    "score": 40,
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2077372568143642972",
+    "media": true,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-07-16",
+    "titre_fr": "xAI publie en open source son outil Grok Build CLI",
+    "resume_fr": "xAI a ouvert le code de Grok Build CLI, un outil en ligne de commande représentant 844 000 lignes de Rust. Parmi les curiosités, un moteur de rendu de diagrammes Mermaid directement dans le terminal via des caractères Unicode.",
+    "tags": [
+      "xai",
+      "open-source",
+      "produit"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/simonw/status/2077545830802976796",
+    "media": false,
+    "auteur_x": "@simonw"
   }
 ]
