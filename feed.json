@@ -5654,5 +5654,115 @@
     "tweet_url": "https://x.com/simonw/status/2077545830802976796",
     "media": false,
     "auteur_x": "@simonw"
+  },
+  {
+    "date": "2026-07-16",
+    "titre_fr": "Kimi K3 : un modèle open-weights proche de la frontière",
+    "resume_fr": "Le nouveau modèle chinois Kimi K3 impressionne et se rapproche des meilleurs modèles fermés, tout en restant en poids ouverts. Plusieurs observateurs saluent ses capacités mais rappellent qu'il reste en retrait sur l'analyse complexe et qu'un bon score sur Arena ne fait pas tout.",
+    "tags": [
+      "modeles",
+      "open-source",
+      "recherche"
+    ],
+    "score": 72,
+    "tweet_url": "https://x.com/simonw/status/2077852005129933247",
+    "media": false,
+    "auteur_x": "@simonw"
+  },
+  {
+    "date": "2026-07-16",
+    "titre_fr": "Gemini API : contrôles de coûts et déclencheurs pour les agents",
+    "resume_fr": "Google déploie de nouvelles fonctions pour ses agents gérés dans l'API Gemini : un palier gratuit pour tester, des contrôles de coûts et des déclencheurs permettant de lancer des tâches d'agents selon un calendrier.",
+    "tags": [
+      "google",
+      "agents",
+      "produit",
+      "automatisation"
+    ],
+    "score": 63,
+    "tweet_url": "https://x.com/OfficialLoganK/status/2077810190179762366",
+    "media": false,
+    "auteur_x": "@OfficialLoganK"
+  },
+  {
+    "date": "2026-07-16",
+    "titre_fr": "Netflix a utilisé l'IA générative sur plus de 300 productions",
+    "resume_fr": "Le PDG de Netflix indique que la plateforme a déjà eu recours à l'IA générative dans plus de 300 titres, parfois pour des plans clés qui auraient été abandonnés pour des raisons de coût, et a sorti un documentaire comprenant 17 minutes de séquences améliorées par IA.",
+    "tags": [
+      "produit",
+      "modeles"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/venturetwins/status/2077884565830660233",
+    "media": true,
+    "auteur_x": "@venturetwins"
+  },
+  {
+    "date": "2026-07-16",
+    "titre_fr": "GPT-5.6 résout des problèmes mathématiques de pointe",
+    "resume_fr": "Selon un chercheur d'OpenAI, GPT-5.6 parvient désormais à résoudre en un essai des questions mathématiques et statistiques réputées difficiles, signe de la progression rapide des modèles sur le raisonnement mathématique.",
+    "tags": [
+      "openai",
+      "modeles",
+      "recherche"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/polynoamial/status/2077762676932165996",
+    "media": false,
+    "auteur_x": "@polynoamial"
+  },
+  {
+    "date": "2026-07-16",
+    "titre_fr": "Google DeepMind s'associe à Isomorphic Labs sur la biosécurité",
+    "resume_fr": "Google DeepMind annonce un partenariat avec Isomorphic Labs pour appliquer l'IA de pointe à la « biorésilience » et développer des défenses proactives face aux futures épidémies.",
+    "tags": [
+      "google",
+      "recherche"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2077721122116640969",
+    "media": true,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-07-16",
+    "titre_fr": "OpenAI : le nouveau modèle vocal franchit un cap",
+    "resume_fr": "Sam Altman affirme parler désormais davantage à ChatGPT qu'il ne tape, estimant que le nouveau modèle vocal a franchi un seuil de qualité dans l'usage à la voix.",
+    "tags": [
+      "openai",
+      "produit"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/sama/status/2077842579232895286",
+    "media": false,
+    "auteur_x": "@sama"
+  },
+  {
+    "date": "2026-07-16",
+    "titre_fr": "Un drop exclusif vendu en direct sur Twitch via Shopify",
+    "resume_fr": "Le streamer Kai Cenat a ouvert en direct devant plus de 430 000 spectateurs un drop réservé aux abonnés de sa marque, épuisé en moins de cinq minutes, l'opération étant propulsée par Shopify. Exemple concret de vente événementielle en ligne.",
+    "tags": [
+      "produit",
+      "commerce",
+      "shopify",
+      "vente"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/harleyf/status/2077856350709932241",
+    "media": true,
+    "auteur_x": "@harleyf"
+  },
+  {
+    "date": "2026-07-16",
+    "titre_fr": "L'écosystème des modèles open-weights se densifie",
+    "resume_fr": "Plusieurs modèles ouverts récents (Kimi K3, GLM 5.2, Inkling, DeepSeek v4 Flash) offrent désormais des options solides aux forces variées, dans ce que certains décrivent comme le moment le plus riche pour l'open depuis DeepSeek R1.",
+    "tags": [
+      "open-source",
+      "modeles"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/natolambert/status/2077777436553720019",
+    "media": false,
+    "auteur_x": "@natolambert"
   }
 ]
