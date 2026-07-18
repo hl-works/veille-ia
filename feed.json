@@ -5764,5 +5764,102 @@
     "tweet_url": "https://x.com/natolambert/status/2077777436553720019",
     "media": false,
     "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-07-17",
+    "titre_fr": "OpenAI présente GPT-5.6 Sol, axé cybersécurité",
+    "resume_fr": "OpenAI annonce GPT-5.6 Sol, qui établit un nouveau record sur un banc d'essai de cybersécurité. Le modèle est proposé via Codex Security pour aider les équipes à détecter, valider et corriger des vulnérabilités dans du code réel.",
+    "tags": [
+      "openai",
+      "modeles",
+      "produit"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/OpenAI/status/2078243667081617826",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-07-17",
+    "titre_fr": "Les modèles open-weights chinois montent en puissance avec Kimi K3",
+    "resume_fr": "Selon Ethan Mollick, les modèles ouverts chinois deviennent très performants : Kimi K3 dépasserait GLM-5.2, lui-même supérieur à DeepSeek v4. La concurrence s'intensifie et pose la question de savoir combien de ces acteurs pourront rester dans la course.",
+    "tags": [
+      "modeles",
+      "open-source"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/emollick/status/2078140637845598638",
+    "media": false,
+    "auteur_x": "@emollick"
+  },
+  {
+    "date": "2026-07-17",
+    "titre_fr": "Sierra lance Horizon, des agents orientés résultats",
+    "resume_fr": "La plateforme Sierra dévoile Horizon, une extension vers des agents personnalisables facturés selon les résultats obtenus (ROI) plutôt qu'à l'usage. L'approche vise à renforcer la relation client des entreprises utilisatrices.",
+    "tags": [
+      "agents",
+      "produit",
+      "service-client"
+    ],
+    "score": 57,
+    "tweet_url": "https://x.com/saranormous/status/2078136316731044288",
+    "media": false,
+    "auteur_x": "@saranormous"
+  },
+  {
+    "date": "2026-07-17",
+    "titre_fr": "Decart présente Lucy 2.5 pour le livestream de personnages",
+    "resume_fr": "Le modèle Lucy 2.5 de DecartAI permet de diffuser en direct en incarnant n'importe quel personnage, avec une faible latence et une bonne cohérence visuelle. Il peut aussi modifier ou restyliser l'environnement de la scène en temps réel.",
+    "tags": [
+      "modeles",
+      "produit",
+      "marketing"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/venturetwins/status/2078169574340706600",
+    "media": true,
+    "auteur_x": "@venturetwins"
+  },
+  {
+    "date": "2026-07-17",
+    "titre_fr": "AfterLab sort de l'ombre avec une nouvelle approche de l'IA",
+    "resume_fr": "Un nouveau laboratoire de recherche, AfterLab, sort de la discrétion en annonçant son financement et une approche différente axée sur une « intelligence fluide » plus efficiente.",
+    "tags": [
+      "recherche",
+      "talents"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/fchollet/status/2078256981480182250",
+    "media": false,
+    "auteur_x": "@fchollet"
+  },
+  {
+    "date": "2026-07-18",
+    "titre_fr": "Anthropic revoit l'accès à Claude Fable 5 dans ses forfaits",
+    "resume_fr": "À partir du 20 juillet, Fable 5 sera inclus dans les forfaits Max et Team Premium mais limité à 50% des quotas habituels. Les abonnés Pro et Team Standard passeront par des crédits d'usage et recevront 100$ de crédit unique, Anthropic invoquant une demande difficile à anticiper.",
+    "tags": [
+      "anthropic",
+      "produit",
+      "modeles"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/claudeai/status/2078302415804379218",
+    "media": false,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-07-18",
+    "titre_fr": "Codex pilote un ordinateur pour installer et utiliser Blender",
+    "resume_fr": "Une démonstration montre l'agent Codex d'OpenAI prenant le contrôle d'un PC Windows pour télécharger, installer Blender et créer une petite animation 3D, avec une seule intervention humaine pour autoriser l'installation. Illustration concrète des agents qui manipulent des logiciels de bout en bout.",
+    "tags": [
+      "openai",
+      "agents",
+      "produit",
+      "automatisation"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/emollick/status/2078318882473796029",
+    "media": true,
+    "auteur_x": "@emollick"
   }
 ]
