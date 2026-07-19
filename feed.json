@@ -5861,5 +5861,45 @@
     "tweet_url": "https://x.com/emollick/status/2078318882473796029",
     "media": true,
     "auteur_x": "@emollick"
+  },
+  {
+    "date": "2026-07-18",
+    "titre_fr": "Expérience : un agent GPT-5.6 chargé de « gagner de l'argent » en autonomie",
+    "resume_fr": "Un développeur a confié à un agent basé sur GPT-5.6 un accès complet (Mac mini, app iOS publiée, adresse e-mail, compte bancaire et carte avec 350 $) avec pour seule consigne de générer un maximum de revenus. Une démonstration des capacités et des limites des agents autonomes, à prendre comme une expérimentation et non un produit fini.",
+    "tags": [
+      "openai",
+      "agents",
+      "automatisation"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/AlexReibman/status/2078392050261856464",
+    "media": true,
+    "auteur_x": "@AlexReibman"
+  },
+  {
+    "date": "2026-07-18",
+    "titre_fr": "Anthropic annonce le lancement de « Fable »",
+    "resume_fr": "Un ingénieur d'Anthropic évoque la sortie de « Fable », fruit d'un effort intense des équipes. Les détails restent limités à ce stade.",
+    "tags": [
+      "anthropic",
+      "produit"
+    ],
+    "score": 38,
+    "tweet_url": "https://x.com/trq212/status/2078514180051906864",
+    "media": false,
+    "auteur_x": "@trq212"
+  },
+  {
+    "date": "2026-07-19",
+    "titre_fr": "Claude Code embarque une version non publiée de Bun réécrite en Rust",
+    "resume_fr": "Selon Simon Willison, les utilisateurs de Claude Code exécutent déjà une version encore non officielle de Bun, réécrite en Rust. Une information surtout technique pour les développeurs.",
+    "tags": [
+      "anthropic",
+      "produit"
+    ],
+    "score": 30,
+    "tweet_url": "https://x.com/simonw/status/2078692298301587758",
+    "media": true,
+    "auteur_x": "@simonw"
   }
 ]
