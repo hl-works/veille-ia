@@ -5901,5 +5901,72 @@
     "tweet_url": "https://x.com/simonw/status/2078692298301587758",
     "media": true,
     "auteur_x": "@simonw"
+  },
+  {
+    "date": "2026-07-19",
+    "titre_fr": "Kimi K3 : le nouveau modèle chinois fait réagir",
+    "resume_fr": "Le modèle Kimi K3 du laboratoire chinois Moonshot suscite de nombreuses réactions dans la communauté IA, plusieurs observateurs le comparant favorablement aux modèles occidentaux sur des tâches variées comme l'écriture. Il illustre la montée en puissance des laboratoires chinois.",
+    "tags": [
+      "modeles",
+      "open-source"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/TheZvi/status/2078834967224729799",
+    "media": false,
+    "auteur_x": "@TheZvi"
+  },
+  {
+    "date": "2026-07-19",
+    "titre_fr": "Qwen : vers l'ouverture des plus gros modèles",
+    "resume_fr": "Selon Nathan Lambert, les plus grands modèles de Qwen (Alibaba), jusqu'ici gardés fermés, pourraient devenir open weights, sous l'impulsion d'une volonté chinoise de renforcer la compétition. Un possible tournant dans la course à l'IA ouverte.",
+    "tags": [
+      "modeles",
+      "open-source"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/natolambert/status/2078822507684249811",
+    "media": false,
+    "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-07-19",
+    "titre_fr": "ChatGPT Work tourne dans le cloud",
+    "resume_fr": "Greg Brockman (OpenAI) met en avant une fonctionnalité de ChatGPT Work : l'exécution des agents dans le cloud, ce qui permet de lancer des tâches depuis mobile ou avec l'ordinateur portable fermé, sans devoir garder une machine allumée.",
+    "tags": [
+      "openai",
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/gdb/status/2078922461660533120",
+    "media": false,
+    "auteur_x": "@gdb"
+  },
+  {
+    "date": "2026-07-19",
+    "titre_fr": "Huawei et les puces d'inférence soutenues par l'État",
+    "resume_fr": "Nathan Lambert évoque un possible soutien massif du gouvernement chinois à Huawei pour fabriquer des puces d'inférence, signe d'un renforcement de l'autonomie chinoise en matière de matériel IA.",
+    "tags": [
+      "hardware",
+      "politique-ia"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/natolambert/status/2078860825322991806",
+    "media": false,
+    "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-07-19",
+    "titre_fr": "Tension réglementaire entre modèles fermés et ouverts",
+    "resume_fr": "Ethan Mollick souligne la tension croissante entre un régime d'approbation réglementaire pour les modèles fermés de pointe aux États-Unis et l'absence d'un tel cadre pour les modèles ouverts. Une question qui devra être tranchée avec des conséquences importantes.",
+    "tags": [
+      "politique-ia",
+      "open-source"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/emollick/status/2078847609309991342",
+    "media": false,
+    "auteur_x": "@emollick"
   }
 ]
