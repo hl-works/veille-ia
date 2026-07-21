@@ -5968,5 +5968,86 @@
     "tweet_url": "https://x.com/emollick/status/2078847609309991342",
     "media": false,
     "auteur_x": "@emollick"
+  },
+  {
+    "date": "2026-07-20",
+    "titre_fr": "Kimi K3 : les labos chinois s'imposent dans le top des modèles ouverts",
+    "resume_fr": "Selon l'analyse de Nathan Lambert, les laboratoires chinois placent désormais trois modèles dans le top 8 en intelligence et réaffirment leur pari sur l'open-source. Le modèle Kimi K3 illustre leur avantage d'efficacité et pose la question du positionnement des labos occidentaux face aux modèles ouverts.",
+    "tags": [
+      "modeles",
+      "open-source",
+      "recherche"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/natolambert/status/2079260118131318996",
+    "media": false,
+    "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-07-20",
+    "titre_fr": "OpenAI alerte sur les risques des modèles à horizon long",
+    "resume_fr": "OpenAI publie ce qu'elle a appris en étudiant un modèle capable de tâches longues et persistantes : cette persistance peut créer des risques de sécurité invisibles pour les évaluations à court terme. L'entreprise dit adapter ses méthodes d'évaluation, d'alignement et de surveillance.",
+    "tags": [
+      "openai",
+      "recherche",
+      "agents"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/polynoamial/status/2079260550895382965",
+    "media": false,
+    "auteur_x": "@polynoamial"
+  },
+  {
+    "date": "2026-07-20",
+    "titre_fr": "Anthropic finance la recherche sur les maladies rares",
+    "resume_fr": "Anthropic offre jusqu'à 50 000 $ de crédits Claude à des chercheurs travaillant sur des traitements de maladies rares. C'est le premier appel ciblé de son programme AI for Science destiné à accélérer la découverte scientifique.",
+    "tags": [
+      "anthropic",
+      "recherche",
+      "produit"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/AnthropicAI/status/2079256626771665098",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-07-20",
+    "titre_fr": "Cursor : une équipe d'agents reconstruit SQLite en Rust",
+    "resume_fr": "Cursor rapporte qu'une équipe d'agents a recréé SQLite à partir de son manuel de 835 pages, produisant une version en Rust qui passe 100 % d'une suite de tests séparée. Le coût variait toutefois d'un facteur 15 selon le mélange de modèles utilisé.",
+    "tags": [
+      "agents",
+      "produit"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/cursor_ai/status/2079256614238814551",
+    "media": true,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-07-20",
+    "titre_fr": "Y Combinator lance un cluster GPU dédié avec Together AI",
+    "resume_fr": "Y Combinator s'associe à Together AI pour mettre en ligne son premier cluster GPU réservé aux startups, afin de leur donner un accès plus simple à la puissance de calcul, devenue un goulot d'étranglement majeur pour les entreprises d'IA.",
+    "tags": [
+      "hardware",
+      "produit"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/ycombinator/status/2079233101453296021",
+    "media": true,
+    "auteur_x": "@ycombinator"
+  },
+  {
+    "date": "2026-07-21",
+    "titre_fr": "Google améliore l'infra de son API Batch Gemini",
+    "resume_fr": "Google annonce des gains importants sur l'API Batch de Gemini : latence p95 réduite de 80 %, taux de succès des lots supérieur à 99,99 % et prise en charge des lots partiels. Utile pour les traitements en masse à moindre coût.",
+    "tags": [
+      "google",
+      "produit"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/OfficialLoganK/status/2079367218438324367",
+    "media": false,
+    "auteur_x": "@OfficialLoganK"
   }
 ]
