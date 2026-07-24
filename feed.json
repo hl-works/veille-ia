@@ -6260,5 +6260,116 @@
     "tweet_url": "https://x.com/ycombinator/status/2080161562413953053",
     "media": true,
     "auteur_x": "@ycombinator"
+  },
+  {
+    "date": "2026-07-23",
+    "titre_fr": "ChatGPT Voice arrive dans l'application desktop",
+    "resume_fr": "OpenAI déploie le mode vocal de ChatGPT dans son application de bureau sur macOS et Windows. Propulsé par GPT-Live, il permet de piloter des agents et de coordonner du travail à la voix, pour les forfaits Plus, Pro, Business, Edu et Enterprise.",
+    "tags": [
+      "openai",
+      "produit",
+      "agents"
+    ],
+    "score": 72,
+    "tweet_url": "https://x.com/OpenAI/status/2080378182469857576",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-07-23",
+    "titre_fr": "OpenAI lance « Health » dans ChatGPT aux États-Unis",
+    "resume_fr": "ChatGPT peut désormais se connecter de façon sécurisée à Apple Health et à certains dossiers médicaux pour contextualiser les réponses santé. Le déploiement commence aux États-Unis, où 300 millions d'utilisateurs poseraient déjà des questions de santé chaque semaine.",
+    "tags": [
+      "openai",
+      "produit"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/OpenAI/status/2080339982288568709",
+    "media": false,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-07-23",
+    "titre_fr": "Claude améliore son mode vocal",
+    "resume_fr": "Anthropic fait tourner le mode vocal de Claude sur ses modèles plus performants, avec accès aux outils connectés en cours de conversation et le support de nombreuses langues supplémentaires.",
+    "tags": [
+      "anthropic",
+      "produit"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/claudeai/status/2080376094939603366",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-07-23",
+    "titre_fr": "Google dévoile Gemini 3.5 Flash Cyber pour la sécurité",
+    "resume_fr": "Google DeepMind présente un modèle léger spécialisé pour aider les équipes de sécurité à repérer et corriger des vulnérabilités avant qu'elles soient exploitées.",
+    "tags": [
+      "google",
+      "modeles",
+      "recherche"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2080321516814647630",
+    "media": true,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-07-23",
+    "titre_fr": "FLUX 3 : génération vidéo multi-plans jusqu'à 20 secondes",
+    "resume_fr": "Le nouveau modèle FLUX 3 génère jusqu'à 20 secondes de vidéo répartie sur plusieurs plans à partir d'un seul prompt, avec un rendu jugé très réaliste dans les détails.",
+    "tags": [
+      "modeles",
+      "produit",
+      "marketing"
+    ],
+    "score": 57,
+    "tweet_url": "https://x.com/venturetwins/status/2080318877154852912",
+    "media": true,
+    "auteur_x": "@venturetwins"
+  },
+  {
+    "date": "2026-07-23",
+    "titre_fr": "ChatGPT Sites : créer et déployer des sites publics",
+    "resume_fr": "En mode « Work », ChatGPT peut désormais construire et déployer des sites web publics hébergés sur Cloudflare Workers, avec persistance via SQLite. Une fonctionnalité peu documentée par OpenAI.",
+    "tags": [
+      "openai",
+      "produit",
+      "no-code"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/simonw/status/2080315993101115485",
+    "media": false,
+    "auteur_x": "@simonw"
+  },
+  {
+    "date": "2026-07-23",
+    "titre_fr": "Retard américain sur les modèles ouverts face à la Chine",
+    "resume_fr": "Nathan Lambert (Ai2) alerte sur le retard des États-Unis en matière de modèles open weight, largement dominés par la Chine et Qwen. Un tableau de bord mis à jour quotidiennement suit l'adoption par pays et par organisation.",
+    "tags": [
+      "open-source",
+      "recherche",
+      "politique-ia"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/natolambert/status/2080300577901428974",
+    "media": true,
+    "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-07-24",
+    "titre_fr": "Meta publie son propre MCP natif pour les publicités",
+    "resume_fr": "Meta a lancé un serveur MCP natif permettant de connecter des agents comme Claude Code directement à un compte publicitaire. Des utilisateurs l'exploitent déjà pour auditer et noter automatiquement leurs campagnes Ads.",
+    "tags": [
+      "meta",
+      "agents",
+      "pub",
+      "marketing"
+    ],
+    "score": 54,
+    "tweet_url": "https://x.com/mikefutia/status/2080473657944551535",
+    "media": true,
+    "auteur_x": "@mikefutia"
   }
 ]
