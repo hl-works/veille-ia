@@ -6371,5 +6371,116 @@
     "tweet_url": "https://x.com/mikefutia/status/2080473657944551535",
     "media": true,
     "auteur_x": "@mikefutia"
+  },
+  {
+    "date": "2026-07-24",
+    "titre_fr": "Anthropic lance Claude Opus 5",
+    "resume_fr": "Anthropic présente Claude Opus 5, un modèle proactif qui s'approche des performances de son modèle haut de gamme Fable 5 pour moitié moins cher. Il vise le codage, l'analyse de données, le travail de bureau et affiche un nouveau record sur le benchmark de raisonnement ARC-AGI-3.",
+    "tags": [
+      "anthropic",
+      "modeles",
+      "produit"
+    ],
+    "score": 85,
+    "tweet_url": "https://x.com/claudeai/status/2080699495453528290",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-07-24",
+    "titre_fr": "Opus 5 présenté comme très résistant aux injections de prompt",
+    "resume_fr": "Selon Anthropic, Opus 5 serait leur modèle le plus difficile à détourner par injection de prompt. En combinant l'alignement du modèle, des sondes de détection et un mode automatique dans Claude Code, le taux de réussite des attaques tomberait proche de zéro, un point important pour les usages professionnels.",
+    "tags": [
+      "anthropic",
+      "modeles",
+      "agents"
+    ],
+    "score": 66,
+    "tweet_url": "https://x.com/bcherny/status/2080713091688583312",
+    "media": true,
+    "auteur_x": "@bcherny"
+  },
+  {
+    "date": "2026-07-24",
+    "titre_fr": "Claude Opus 5 arrive dans Cursor",
+    "resume_fr": "L'éditeur de code assisté par IA Cursor intègre Opus 5. Il égalerait Fable 5 sur le benchmark maison CursorBench pour moitié prix, et il est compatible avec la conservation zéro des données.",
+    "tags": [
+      "anthropic",
+      "produit"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/cursor_ai/status/2080700479940759919",
+    "media": false,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-07-24",
+    "titre_fr": "Opus 5 disponible dans Perplexity",
+    "resume_fr": "Perplexity ajoute Claude Opus 5 à sa plateforme. D'après ses tests internes sur le benchmark WANDR, le modèle devance la plupart des concurrents tout en coûtant 57 % moins cher qu'une des alternatives.",
+    "tags": [
+      "anthropic",
+      "produit"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/perplexity_ai/status/2080778151962214575",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-07-24",
+    "titre_fr": "Perplexity Computer sait gérer plusieurs sessions",
+    "resume_fr": "L'agent Computer de Perplexity peut désormais lancer et coordonner d'autres sessions à partir d'une simple consigne, découper le travail en tâches parallèles et renvoyer les liens. Il est aussi possible de lister, renommer ou dupliquer des sessions.",
+    "tags": [
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/AskPerplexity/status/2080639190543593913",
+    "media": true,
+    "auteur_x": "@AskPerplexity"
+  },
+  {
+    "date": "2026-07-24",
+    "titre_fr": "FLUX 3 génère des timelapses à partir d'une seule image",
+    "resume_fr": "Le modèle d'images FLUX 3 produit des vidéos en timelapse à partir d'une unique photo, par exemple en reconstituant l'installation d'un événement dans une salle vide. Un outil potentiellement utile pour la création de contenu visuel.",
+    "tags": [
+      "modeles",
+      "produit",
+      "marketing"
+    ],
+    "score": 54,
+    "tweet_url": "https://x.com/venturetwins/status/2080782461840371980",
+    "media": true,
+    "auteur_x": "@venturetwins"
+  },
+  {
+    "date": "2026-07-24",
+    "titre_fr": "Cloner des publicités UGC avec Seedance 2.0",
+    "resume_fr": "Un praticien décrit un flux de travail pour dupliquer une publicité UGC gagnante avec de nouveaux visages, voix et décors grâce à Seedance 2.0, sans reshoot ni réservation de créateur. Présenté comme un moyen pour les marques DTC de tester à moindre coût un script déjà performant.",
+    "tags": [
+      "marketing",
+      "pub",
+      "automatisation",
+      "commerce"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/mikefutia/status/2080734489529971056",
+    "media": true,
+    "auteur_x": "@mikefutia"
+  },
+  {
+    "date": "2026-07-24",
+    "titre_fr": "Débat sur les modèles ouverts et la distillation",
+    "resume_fr": "Une prise de position sur la politique IA distingue la distillation (utiliser les sorties d'un modèle pour en entraîner un autre), jugée légitime, des extractions illégales de valeur sur des modèles fermés. Les auteurs appellent à ne pas confondre les deux dans la régulation, dans un contexte de rivalité États-Unis/Chine sur les modèles ouverts.",
+    "tags": [
+      "politique-ia",
+      "open-source",
+      "modeles"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/natolambert/status/2080659216113803567",
+    "media": false,
+    "auteur_x": "@natolambert"
   }
 ]
