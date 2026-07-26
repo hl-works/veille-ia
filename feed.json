@@ -6482,5 +6482,61 @@
     "tweet_url": "https://x.com/natolambert/status/2080659216113803567",
     "media": false,
     "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-07-25",
+    "titre_fr": "Lettre pour les modèles à poids ouverts : Google signe à son tour",
+    "resume_fr": "Une lettre soutenue par Microsoft en faveur des modèles à poids ouverts et du leadership américain en IA a rassemblé plusieurs signataires, dont Google. Le débat porte notamment sur l'engagement concret des labs, certains appelant Google à publier un grand modèle Gemma pour confirmer sa position.",
+    "tags": [
+      "google",
+      "open-source",
+      "politique-ia"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/natolambert/status/2081117613644709985",
+    "media": false,
+    "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-07-25",
+    "titre_fr": "Jack Dorsey mise sur le « compute partagé » avec Buzz",
+    "resume_fr": "Le projet Buzz de Jack Dorsey, présenté comme un rival de Slack, repose sur l'idée de calcul partagé : une communauté fait tourner ensemble un modèle open source (comme Gemma) sur sa propre machine, l'entraîne sur ses données privées et en garde le contrôle. Une approche qui pourrait faire émerger des IA verticales détenues collectivement.",
+    "tags": [
+      "produit",
+      "open-source",
+      "hardware"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/gregisenberg/status/2081088155793465783",
+    "media": false,
+    "auteur_x": "@gregisenberg"
+  },
+  {
+    "date": "2026-07-25",
+    "titre_fr": "OpenAI présente ChatGPT Work pour les sites nécessitant une connexion",
+    "resume_fr": "OpenAI évoque une fonctionnalité « ChatGPT Work » permettant d'utiliser des sites web qui exigent une authentification. L'objectif est d'étendre les usages professionnels de l'assistant aux services protégés par identifiants.",
+    "tags": [
+      "openai",
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/gdb/status/2080939030062178512",
+    "media": false,
+    "auteur_x": "@gdb"
+  },
+  {
+    "date": "2026-07-26",
+    "titre_fr": "Anthropic lance Claude Opus 5",
+    "resume_fr": "Anthropic a sorti Opus 5, la nouvelle version de son modèle haut de gamme, qui suscite de nombreuses réactions dans la communauté IA. Les premiers retours cherchent à évaluer les progrès par rapport aux versions précédentes.",
+    "tags": [
+      "anthropic",
+      "modeles"
+    ],
+    "score": 72,
+    "tweet_url": "https://x.com/TheZvi/status/2081177390386950643",
+    "media": false,
+    "auteur_x": "@TheZvi"
   }
 ]
