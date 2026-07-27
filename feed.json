@@ -6538,5 +6538,74 @@
     "tweet_url": "https://x.com/TheZvi/status/2081177390386950643",
     "media": false,
     "auteur_x": "@TheZvi"
+  },
+  {
+    "date": "2026-07-26",
+    "titre_fr": "Anthropic lance Opus 5 et OpenAI ajoute un mode vocal à Codex",
+    "resume_fr": "Deux nouveautés majeures sont sorties le même vendredi : le modèle Opus 5 chez Anthropic et un mode vocal pour Codex chez OpenAI. Le rythme des sorties devient difficile à suivre, même pour les observateurs attentifs.",
+    "tags": [
+      "anthropic",
+      "openai",
+      "modeles",
+      "produit"
+    ],
+    "score": 78,
+    "tweet_url": "https://x.com/emollick/status/2081475928086003869",
+    "media": false,
+    "auteur_x": "@emollick"
+  },
+  {
+    "date": "2026-07-26",
+    "titre_fr": "ChatGPT « work » : un agent qui exécute des tâches complètes",
+    "resume_fr": "Sam Altman décrit une nouvelle capacité de ChatGPT capable, à partir d'une seule requête, de planifier un voyage, de créer un site web de coordination, de faire des réservations et de rédiger un email. OpenAI positionne cet agent comme un assistant autonome de plus en plus polyvalent.",
+    "tags": [
+      "openai",
+      "agents",
+      "produit",
+      "automatisation"
+    ],
+    "score": 72,
+    "tweet_url": "https://x.com/sama/status/2081396796174282900",
+    "media": false,
+    "auteur_x": "@sama"
+  },
+  {
+    "date": "2026-07-26",
+    "titre_fr": "Flux 3 impressionne en génération d'images",
+    "resume_fr": "Le nouveau modèle d'image Flux 3 permet de produire des visuels très réalistes à partir d'un seul prompt, au point d'envisager des rendus dignes d'un documentaire. Un signe de la montée en qualité des générateurs d'images pour un usage commercial.",
+    "tags": [
+      "modeles",
+      "produit",
+      "marketing"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/venturetwins/status/2081515687944822800",
+    "media": true,
+    "auteur_x": "@venturetwins"
+  },
+  {
+    "date": "2026-07-26",
+    "titre_fr": "Nouvelles réglementations chinoises sur l'IA",
+    "resume_fr": "La Chine met en place de nouvelles règles encadrant l'IA, rapportées par The Information. Certaines mesures pourraient inspirer des débats réglementaires aux États-Unis et ailleurs.",
+    "tags": [
+      "politique-ia"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/GaryMarcus/status/2081427921810727163",
+    "media": true,
+    "auteur_x": "@GaryMarcus"
+  },
+  {
+    "date": "2026-07-27",
+    "titre_fr": "Fable génère des jeux vidéo jouables sur demande",
+    "resume_fr": "La plateforme Fable a créé un jeu de construction de ville entièrement conçu par IA, avec ses propres mécaniques de jeu inédites. Un exemple concret de démos interactives générées à la demande.",
+    "tags": [
+      "produit",
+      "modeles"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/emollick/status/2081562248246415752",
+    "media": true,
+    "auteur_x": "@emollick"
   }
 ]
