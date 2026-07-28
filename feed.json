@@ -6607,5 +6607,126 @@
     "tweet_url": "https://x.com/emollick/status/2081562248246415752",
     "media": true,
     "auteur_x": "@emollick"
+  },
+  {
+    "date": "2026-07-27",
+    "titre_fr": "Anthropic clarifie sa position sur les modèles à poids ouverts",
+    "resume_fr": "Face aux spéculations, Anthropic a publié une prise de position détaillée sur les modèles open-weight. Le débat suscite des critiques, notamment sur l'interdiction de la distillation.",
+    "tags": [
+      "anthropic",
+      "open-source",
+      "modeles"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/AnthropicAI/status/2081864750296658008",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-07-27",
+    "titre_fr": "Kimi K3 arrive dans Cursor",
+    "resume_fr": "Le modèle Kimi K3 est désormais disponible dans Cursor, avec un score proche de la frontière sur CursorBench. L'inférence est hébergée aux États-Unis via Fireworks, Together et Baseten, avec support de la rétention zéro des données.",
+    "tags": [
+      "modeles",
+      "produit",
+      "open-source"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/cursor_ai/status/2081848014444876166",
+    "media": false,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-07-27",
+    "titre_fr": "Kimi K3 : une licence ouverte mais restrictive commercialement",
+    "resume_fr": "La licence de Kimi K3 s'inspire du MIT mais reste non-commerciale : toute entreprise réalisant plus de 20 M$/an doit négocier un accord spécifique, avec obligation d'afficher la mention Kimi K3 au-delà de certains seuils d'usage ou de revenus.",
+    "tags": [
+      "modeles",
+      "open-source",
+      "politique-ia"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/natolambert/status/2081760901020201086",
+    "media": true,
+    "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-07-27",
+    "titre_fr": "GPT-Live disponible dans ChatGPT Voice pour les offres pro",
+    "resume_fr": "OpenAI déploie GPT-Live dans le mode vocal de ChatGPT pour les plans Edu, Business et Enterprise à l'échelle mondiale.",
+    "tags": [
+      "openai",
+      "produit"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/OpenAI/status/2081794871795589485",
+    "media": false,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-07-27",
+    "titre_fr": "OpenAI incite les entreprises à essayer ChatGPT Work",
+    "resume_fr": "OpenAI propose jusqu'à 200 $ de crédits aux clients ChatGPT Enterprise dont les collaborateurs testent le nouveau produit ChatGPT Work avant le 21 août.",
+    "tags": [
+      "openai",
+      "produit"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/gdb/status/2081877298538746165",
+    "media": false,
+    "auteur_x": "@gdb"
+  },
+  {
+    "date": "2026-07-27",
+    "titre_fr": "OpenAI étudie l'usage de l'IA dans les petites entreprises",
+    "resume_fr": "OpenAI publie une étude montrant comment l'IA devient un outil généraliste pour les petites équipes, aidant chacun à travailler au-delà de son rôle habituel.",
+    "tags": [
+      "openai",
+      "automatisation"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/OpenAI/status/2081833350323720219",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-07-27",
+    "titre_fr": "Weave Robotics ouvre les précommandes d'un robot domestique à 8 000 $",
+    "resume_fr": "Weave Robotics propose en précommande un robot à 8 000 $ capable de plier le linge et faire le lit, avec des livraisons prévues cet automne.",
+    "tags": [
+      "hardware",
+      "produit"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/rowancheung/status/2081767853326495911",
+    "media": true,
+    "auteur_x": "@rowancheung"
+  },
+  {
+    "date": "2026-07-27",
+    "titre_fr": "Snowflake et NVIDIA rejoignent l'Open Secure AI Alliance",
+    "resume_fr": "Snowflake s'associe à NVIDIA au sein de l'Open Secure AI Alliance pour renforcer la sécurité de l'IA. Son dirigeant plaide pour une coexistence des modèles ouverts et fermés.",
+    "tags": [
+      "politique-ia",
+      "hardware"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/RamaswmySridhar/status/2081768113029419373",
+    "media": false,
+    "auteur_x": "@RamaswmySridhar"
+  },
+  {
+    "date": "2026-07-28",
+    "titre_fr": "Cursor lance une offre abordable en Inde à 649 ₹/mois",
+    "resume_fr": "L'éditeur de code IA Cursor introduit un forfait « Start » à environ 649 roupies par mois destiné aux développeurs indiens. Il inclut un accès à Grok 4.5 et à Composer pour planifier, coder, tester et déployer avec des agents.",
+    "tags": [
+      "produit",
+      "agents",
+      "xai"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/cursor_ai/status/2081978255004053560",
+    "media": true,
+    "auteur_x": "@cursor_ai"
   }
 ]
