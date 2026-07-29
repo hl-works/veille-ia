@@ -6728,5 +6728,98 @@
     "tweet_url": "https://x.com/cursor_ai/status/2081978255004053560",
     "media": true,
     "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-07-28",
+    "titre_fr": "Anthropic utilise Claude pour repérer des failles cryptographiques",
+    "resume_fr": "Anthropic annonce que son modèle Claude Mythos Preview a aidé ses chercheurs à identifier des faiblesses dans des algorithmes cryptographiques, ceux qui protègent la confidentialité des données. Une application concrète de l'IA à la sécurité.",
+    "tags": [
+      "anthropic",
+      "recherche"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/AnthropicAI/status/2082153297670992134",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-07-28",
+    "titre_fr": "Perplexity ajoute le modèle Kimi K3",
+    "resume_fr": "Perplexity intègre le modèle Kimi K3 à ses offres Pro et Max, hébergé exclusivement sur des serveurs américains. Une option supplémentaire pour les utilisateurs de la plateforme de recherche.",
+    "tags": [
+      "produit",
+      "modeles"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/perplexity_ai/status/2082188732585972120",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-07-28",
+    "titre_fr": "OpenAI et d'autres labos évoquent un « ralentissement » du développement de l'IA",
+    "resume_fr": "OpenAI dit vouloir contribuer, avec le gouvernement américain, d'autres laboratoires et la communauté open-source, à développer des mécanismes permettant de réguler le rythme des avancées si l'accélération devenait trop rapide. Anthropic soutient une pétition similaire signée par plus de 1 100 employés du secteur.",
+    "tags": [
+      "openai",
+      "anthropic",
+      "politique-ia"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/OpenAI/status/2082208694142730340",
+    "media": false,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-07-28",
+    "titre_fr": "Google enrichit son API d'agents Gemini",
+    "resume_fr": "Google déploie des mises à jour de son API Gemini Managed Agents : hooks d'environnement (blocage, lint), sélection d'un modèle spécifique (3.6 Flash), support d'un palier gratuit et nouvel agent par défaut basé sur 3.6 Flash.",
+    "tags": [
+      "google",
+      "agents",
+      "produit"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/OfficialLoganK/status/2082138993546899711",
+    "media": false,
+    "auteur_x": "@OfficialLoganK"
+  },
+  {
+    "date": "2026-07-28",
+    "titre_fr": "Perplexity lance Model Council dans son app Computer",
+    "resume_fr": "Perplexity introduit Model Council, une fonction qui exécute une même analyse sur plusieurs modèles de pointe et produit un rapport unique et sourcé montrant les points d'accord, de désaccord et les découvertes propres à chaque modèle.",
+    "tags": [
+      "produit"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/perplexity_ai/status/2082142599671107737",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-07-28",
+    "titre_fr": "Zuckerberg dévoile sa méthode pour le labo superintelligence de Meta",
+    "resume_fr": "Dans une interview, Mark Zuckerberg explique gérer le laboratoire superintelligence de Meta comme une petite équipe (50 à 100 personnes), sans hiérarchie non-technique ni délais imposés, en recrutant personnellement les meilleurs chercheurs.",
+    "tags": [
+      "meta",
+      "talents"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/rowancheung/status/2082130571086745634",
+    "media": true,
+    "auteur_x": "@rowancheung"
+  },
+  {
+    "date": "2026-07-29",
+    "titre_fr": "OpenAI publie Codex Security CLI en open source",
+    "resume_fr": "OpenAI a discrètement mis en ligne un outil open-source, Codex Security CLI, qui scanne des dépôts de code, suit les vulnérabilités entre exécutions, vérifie les correctifs et ajoute des contrôles de sécurité aux pipelines CI/CD. Encore en version préliminaire.",
+    "tags": [
+      "openai",
+      "open-source",
+      "produit"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/OpenAI/status/2082263717916586117",
+    "media": true,
+    "auteur_x": "@OpenAI"
   }
 ]
