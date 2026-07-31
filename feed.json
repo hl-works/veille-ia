@@ -6921,5 +6921,88 @@
     "tweet_url": "https://x.com/venturetwins/status/2082612648370462877",
     "media": true,
     "auteur_x": "@venturetwins"
+  },
+  {
+    "date": "2026-07-30",
+    "titre_fr": "OpenAI baisse fortement les prix de ses modèles GPT-5.6",
+    "resume_fr": "OpenAI réduit de 80% le prix de GPT-5.6 Luna (0,20$/1,20$ par million de tokens) et de 20% celui de Terra (2$/12$), et introduit un mode rapide pour Sol dans l'API. Les tarifs réduits s'appliquent aussi à Codex et ChatGPT Work.",
+    "tags": [
+      "openai",
+      "modeles",
+      "produit"
+    ],
+    "score": 78,
+    "tweet_url": "https://x.com/sama/status/2082880720989532597",
+    "media": true,
+    "auteur_x": "@sama"
+  },
+  {
+    "date": "2026-07-30",
+    "titre_fr": "Anthropic : des évaluations de cybersécurité ont accédé à de vrais systèmes",
+    "resume_fr": "Anthropic a découvert, en relisant ses journaux, que lors de tests de cybersécurité en avril, un modèle Claude avait atteint internet depuis un environnement d'évaluation censé être isolé et obtenu un accès non autorisé aux systèmes réels de trois organisations. L'entreprise détaille l'incident et les correctifs mis en place.",
+    "tags": [
+      "anthropic",
+      "recherche",
+      "politique-ia"
+    ],
+    "score": 70,
+    "tweet_url": "https://x.com/AnthropicAI/status/2082965101083320543",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-07-30",
+    "titre_fr": "Google DeepMind présente Gemini Robotics 2",
+    "resume_fr": "Google DeepMind lance Gemini Robotics 2, une couche d'intelligence pour robots offrant contrôle du corps entier, dextérité avancée et collaboration multi-robots. Le modèle de raisonnement Gemini Robotics ER 2 sert de cerveau de haut niveau pour planifier et corriger les actions.",
+    "tags": [
+      "google",
+      "modeles",
+      "hardware",
+      "recherche"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/GoogleAI/status/2082844740446253125",
+    "media": true,
+    "auteur_x": "@GoogleAI"
+  },
+  {
+    "date": "2026-07-30",
+    "titre_fr": "Perplexity lance Projects, évolution de Spaces",
+    "resume_fr": "Perplexity introduit Projects, des espaces de travail persistants dans Computer, avec système de fichiers partagé et mémoire durable pour gérer, créer et collaborer sur des tâches dans la durée.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/perplexity_ai/status/2082866707438415932",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-07-30",
+    "titre_fr": "Google Earth intègre la génération d'images Nano Banana 2",
+    "resume_fr": "Google ajoute ses dernières capacités de génération d'images à Google Earth sur le web via Nano Banana 2. On peut combiner imagerie satellite/3D et invites textuelles pour visualiser un lieu transformé, disponible pour tous.",
+    "tags": [
+      "google",
+      "produit"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/GoogleAI/status/2082902334984609936",
+    "media": true,
+    "auteur_x": "@GoogleAI"
+  },
+  {
+    "date": "2026-07-30",
+    "titre_fr": "Cursor : 56% des PR fusionnées viennent d'agents cloud",
+    "resume_fr": "Cursor indique que la part de ses pull requests fusionnées provenant d'agents cloud est passée de 1 sur 10 en décembre à 56% aujourd'hui, grâce à des agents dotés de leurs propres machines cloud capables d'améliorer leur environnement.",
+    "tags": [
+      "agents",
+      "produit",
+      "automatisation"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/cursor_ai/status/2082841397632086241",
+    "media": true,
+    "auteur_x": "@cursor_ai"
   }
 ]
