@@ -7004,5 +7004,91 @@
     "tweet_url": "https://x.com/cursor_ai/status/2082841397632086241",
     "media": true,
     "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-07-31",
+    "titre_fr": "Google enchaîne les sorties : Gemini Robotics 2, Gemini 3.6 Flash, Nano Banana 2",
+    "resume_fr": "Google a récapitulé une série d'annonces récentes : Gemini Robotics 2 (intelligence corporelle pour robots), plusieurs modèles Gemini 3.5/3.6 Flash plus rapides et économiques, un modèle spécialisé cybersécurité, Nano Banana 2 dans Google Earth, le modèle musical Lyria 3.5 et de nouvelles fonctions pour Gemini Notebook.",
+    "tags": [
+      "google",
+      "modeles",
+      "produit",
+      "automatisation"
+    ],
+    "score": 72,
+    "tweet_url": "https://x.com/GoogleAI/status/2083221445375668654",
+    "media": false,
+    "auteur_x": "@GoogleAI"
+  },
+  {
+    "date": "2026-07-31",
+    "titre_fr": "Seedance 2.5 : édition ciblée dans les vidéos générées",
+    "resume_fr": "Le modèle vidéo Seedance 2.5 permet de reproduire une publicité existante en remplaçant précisément un élément (par exemple une paire de chaussures), ouvrant des usages en publicité et post-production sans nouveau tournage.",
+    "tags": [
+      "modeles",
+      "produit",
+      "marketing",
+      "pub"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/venturetwins/status/2083263263899574475",
+    "media": true,
+    "auteur_x": "@venturetwins"
+  },
+  {
+    "date": "2026-07-31",
+    "titre_fr": "Un outil pour mesurer la visibilité d'une marque dans les IA de recherche",
+    "resume_fr": "Une compétence Claude Code fait passer les questions typiques des acheteurs d'une catégorie dans Google AI Overview, ChatGPT et Perplexity, puis indique si la marque est citée, quels concurrents le sont à sa place et quoi corriger. Pensé pour les marques DTC et agences.",
+    "tags": [
+      "produit",
+      "marketing",
+      "commerce",
+      "automatisation"
+    ],
+    "score": 56,
+    "tweet_url": "https://x.com/mikefutia/status/2083247994892091519",
+    "media": true,
+    "auteur_x": "@mikefutia"
+  },
+  {
+    "date": "2026-07-31",
+    "titre_fr": "Modèle pour concevoir des agents IA fiables en entreprise",
+    "resume_fr": "Un cadre pratique pour déployer des agents IA de confiance en PME : confier une seule fonction précise à l'agent, séparer la couche de connaissance de la couche d'action, définir ce qu'il peut lire, modifier ou ce qui nécessite validation, et prévoir des tests d'acceptation ainsi qu'un responsable humain.",
+    "tags": [
+      "agents",
+      "automatisation",
+      "service-client"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/coreyganim/status/2083225928793203058",
+    "media": false,
+    "auteur_x": "@coreyganim"
+  },
+  {
+    "date": "2026-08-01",
+    "titre_fr": "MiniMax 3 (Hailuo) : un modèle vidéo open source qui passe un test symbolique",
+    "resume_fr": "Le modèle de génération vidéo MiniMax 3 de l'équipe Hailuo réussit à écrire correctement du texte lisible dans une vidéo, chose qu'aucun modèle testé n'avait accompli jusqu'ici. Il est de plus proposé en open source.",
+    "tags": [
+      "modeles",
+      "open-source",
+      "produit"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/venturetwins/status/2083374347155304926",
+    "media": true,
+    "auteur_x": "@venturetwins"
+  },
+  {
+    "date": "2026-08-01",
+    "titre_fr": "DeepSeek-V4-Flash : qualité variable selon le niveau de raisonnement",
+    "resume_fr": "Des premiers tests du modèle DeepSeek-V4-Flash montrent des résultats médiocres en mode raisonnement par défaut, mais nettement meilleurs quand on augmente le niveau de raisonnement.",
+    "tags": [
+      "modeles",
+      "open-source"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/simonw/status/2083342783071621224",
+    "media": true,
+    "auteur_x": "@simonw"
   }
 ]
