@@ -7090,5 +7090,76 @@
     "tweet_url": "https://x.com/simonw/status/2083342783071621224",
     "media": true,
     "auteur_x": "@simonw"
+  },
+  {
+    "date": "2026-08-01",
+    "titre_fr": "OpenAI dévoile Astra, sa prochaine famille de modèles axée raisonnement scientifique",
+    "resume_fr": "OpenAI annonce qu'une version interne d'Astra, sa prochaine grande famille de modèles, a résolu 10 problèmes ouverts en mathématiques, complexité quantique et informatique théorique. L'entreprise présente cela comme une avancée pour le raisonnement scientifique, avec un coût de génération des preuves inférieur à 2000 dollars selon ses propres chiffres.",
+    "tags": [
+      "openai",
+      "modeles",
+      "recherche"
+    ],
+    "score": 72,
+    "tweet_url": "https://x.com/polynoamial/status/2083467194663571701",
+    "media": true,
+    "auteur_x": "@polynoamial"
+  },
+  {
+    "date": "2026-08-01",
+    "titre_fr": "Gary Marcus tempère l'enthousiasme autour d'Astra",
+    "resume_fr": "Le chercheur Gary Marcus reconnaît qu'Astra est impressionnant en mathématiques mais met en garde contre le raccourci consistant à déduire une intelligence générale à partir de succès dans des domaines formalisables. Il souligne que l'expertise dans un domaine ne garantit pas la fiabilité ni la performance ailleurs.",
+    "tags": [
+      "openai",
+      "recherche"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/GaryMarcus/status/2083703275543835095",
+    "media": true,
+    "auteur_x": "@GaryMarcus"
+  },
+  {
+    "date": "2026-08-01",
+    "titre_fr": "Seedance 2.5 clone voix et image à partir de quelques échantillons",
+    "resume_fr": "Un utilisateur montre que Seedance 2.5 peut, à partir d'une photo, d'un extrait vocal et de quelques images d'un lieu, générer une vidéo réaliste d'une personne faisant une visite guidée, le tout en un seul prompt. Illustration des progrès rapides de la génération vidéo.",
+    "tags": [
+      "produit",
+      "modeles"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/venturetwins/status/2083641481911492619",
+    "media": true,
+    "auteur_x": "@venturetwins"
+  },
+  {
+    "date": "2026-08-02",
+    "titre_fr": "ChatGPT Work : navigateur intégré et déploiement d'applis web",
+    "resume_fr": "De nouvelles fonctionnalités de ChatGPT Work sont repérées : l'outil dispose d'un navigateur capable de prendre des captures d'écran et peut déployer des applications web sur Cloudflare Workers. Un pas de plus vers des usages agentiques concrets.",
+    "tags": [
+      "openai",
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/simonw/status/2083704964233462075",
+    "media": false,
+    "auteur_x": "@simonw"
+  },
+  {
+    "date": "2026-08-02",
+    "titre_fr": "Workflow de publicités éditables avec Claude Code, Higgsfield et Figma",
+    "resume_fr": "Un créateur détaille une méthode combinant Claude Code, Higgsfield et Figma pour produire des visuels publicitaires dont le texte, le logo et les CTA restent des calques modifiables, plutôt que des images figées avec texte incrusté. Pensé pour les marques DTC et agences.",
+    "tags": [
+      "produit",
+      "marketing",
+      "pub",
+      "commerce",
+      "automatisation"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/mikefutia/status/2083711881223746004",
+    "media": true,
+    "auteur_x": "@mikefutia"
   }
 ]
