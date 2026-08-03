@@ -7161,5 +7161,89 @@
     "tweet_url": "https://x.com/mikefutia/status/2083711881223746004",
     "media": true,
     "auteur_x": "@mikefutia"
+  },
+  {
+    "date": "2026-08-02",
+    "titre_fr": "OpenAI Astra : Gary Marcus dénonce une avancée surestimée",
+    "resume_fr": "Selon Gary Marcus, le nouveau modèle Astra d'OpenAI ne serait qu'incrémental et non la rupture annoncée, notamment car la démonstration ne comportait pas de groupe de contrôle. Le débat sur la portée réelle du modèle reste ouvert.",
+    "tags": [
+      "openai",
+      "modeles",
+      "recherche"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/GaryMarcus/status/2084064797088452835",
+    "media": true,
+    "auteur_x": "@GaryMarcus"
+  },
+  {
+    "date": "2026-08-02",
+    "titre_fr": "Seedance 2.5 génère des pubs vidéo à partir d'une simple photo produit",
+    "resume_fr": "Un utilisateur montre que Seedance 2.5 peut créer une vidéo d'influenceur utilisant un produit, à partir d'une photo, en gardant la cohérence du produit. Un cas d'usage direct pour la publicité e-commerce.",
+    "tags": [
+      "produit",
+      "marketing",
+      "pub",
+      "commerce"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/venturetwins/status/2083987704111583602",
+    "media": true,
+    "auteur_x": "@venturetwins"
+  },
+  {
+    "date": "2026-08-02",
+    "titre_fr": "Modèles ouverts : la consolidation attendue n'a pas eu lieu",
+    "resume_fr": "Nathan Lambert observe que, contrairement aux prévisions, de plus en plus d'acteurs entraînent des modèles puissants et les publient ouvertement. Thinking Machines, par exemple, générerait des centaines de millions de revenus avec ses modèles ouverts made in USA.",
+    "tags": [
+      "modeles",
+      "open-source",
+      "recherche"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/natolambert/status/2083917557560721890",
+    "media": false,
+    "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-08-03",
+    "titre_fr": "Qwen 3.8 Max : nouveau modèle géant d'Alibaba",
+    "resume_fr": "Alibaba a publié Qwen 3.8 Max, son plus gros modèle. Les premiers tests le jugent solide mais pas encore au niveau des meilleurs (Kimi K3). Son adoption dépendra du prix et de la licence.",
+    "tags": [
+      "modeles",
+      "open-source"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/natolambert/status/2084122774185074710",
+    "media": false,
+    "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-08-03",
+    "titre_fr": "Vague de modèles ouverts : Qwen 3.8 Max et MiniMax-H3 le même jour",
+    "resume_fr": "Deux modèles de pointe à poids ouverts, Qwen 3.8 Max et MiniMax-H3, sont sortis à quelques heures d'intervalle, illustrant la cadence intense des laboratoires chinois.",
+    "tags": [
+      "modeles",
+      "open-source"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/simonw/status/2084122690189918549",
+    "media": false,
+    "auteur_x": "@simonw"
+  },
+  {
+    "date": "2026-08-03",
+    "titre_fr": "Un agent Claude pour extraire des angles publicitaires depuis Reddit",
+    "resume_fr": "Une compétence gratuite pour Claude analyse des discussions Reddit afin d'en tirer points de douleur, objections et angles publicitaires formulés dans les mots des clients. Pensé pour les marques DTC et agences.",
+    "tags": [
+      "anthropic",
+      "agents",
+      "marketing",
+      "commerce"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/mikefutia/status/2084081504599113989",
+    "media": true,
+    "auteur_x": "@mikefutia"
   }
 ]
