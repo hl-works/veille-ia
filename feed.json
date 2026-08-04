@@ -7245,5 +7245,88 @@
     "tweet_url": "https://x.com/mikefutia/status/2084081504599113989",
     "media": true,
     "auteur_x": "@mikefutia"
+  },
+  {
+    "date": "2026-08-03",
+    "titre_fr": "OpenAI présente GPT-Live, nouvelle architecture audio temps réel",
+    "resume_fr": "OpenAI a repensé toute sa pile vocale pour permettre à son IA d'écouter tout en parlant. L'objectif : garder la conversation fluide et naturelle même pendant les phases de raisonnement ou d'utilisation d'outils, à l'échelle de ChatGPT.",
+    "tags": [
+      "openai",
+      "produit",
+      "modeles"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/OpenAI/status/2084378415818579975",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-08-03",
+    "titre_fr": "OpenAI affirme que son prochain modèle a résolu des problèmes mathématiques ouverts",
+    "resume_fr": "Une version interne du prochain grand modèle d'OpenAI aurait produit dix résultats nouveaux sur des problèmes ouverts en mathématiques et informatique théorique, pour environ 2000 $ de tokens. Une annonce à prendre avec prudence en attendant vérification indépendante.",
+    "tags": [
+      "openai",
+      "recherche",
+      "modeles"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/OpenAI/status/2084352161404920316",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-08-03",
+    "titre_fr": "Cursor s'intègre à Google Workspace",
+    "resume_fr": "L'éditeur de code Cursor permet désormais à ses agents de lire, écrire et agir dans Gmail, Google Drive, Agenda, Docs et Sheets via de nouveaux plugins, élargissant leur champ d'action au-delà du code.",
+    "tags": [
+      "produit",
+      "agents",
+      "google",
+      "automatisation"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/cursor_ai/status/2084376701539405904",
+    "media": true,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-08-03",
+    "titre_fr": "Perplexity dote son agent d'une mémoire auto-améliorante",
+    "resume_fr": "Le système « Brain » de l'agent Computer de Perplexity pré-remplit désormais un wiki de vos projets, contacts et préférences dans chaque session, avec des gains mesurés sur les benchmarks de mémoire longue.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/AskPerplexity/status/2084263093488734716",
+    "media": true,
+    "auteur_x": "@AskPerplexity"
+  },
+  {
+    "date": "2026-08-03",
+    "titre_fr": "Interconnects lance l'Artifacts Hub pour suivre les modèles ouverts",
+    "resume_fr": "Nathan Lambert présente un outil gratuit qui recense et compare les modèles open-weight tendance sur Hugging Face (adoption, intelligence, popularité), couvrant près de 800 modèles et illustrant notamment l'écart États-Unis / Chine.",
+    "tags": [
+      "open-source",
+      "recherche",
+      "modeles"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/natolambert/status/2084283667606544474",
+    "media": true,
+    "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-08-04",
+    "titre_fr": "Gemini : Maps et Search utilisables simultanément",
+    "resume_fr": "L'API Gemini permet maintenant d'utiliser en même temps les outils Google Maps et Google Search avec les modèles Gemini 3.5 Flash et 3.6 Flash, une demande de longue date des développeurs.",
+    "tags": [
+      "google",
+      "produit"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/OfficialLoganK/status/2084469065322729817",
+    "media": false,
+    "auteur_x": "@OfficialLoganK"
   }
 ]
