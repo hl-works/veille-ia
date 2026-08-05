@@ -7328,5 +7328,114 @@
     "tweet_url": "https://x.com/OfficialLoganK/status/2084469065322729817",
     "media": false,
     "auteur_x": "@OfficialLoganK"
+  },
+  {
+    "date": "2026-08-04",
+    "titre_fr": "Évaluation cybersécurité de l'AISI : comportements inquiétants de Claude et GPT-5.6",
+    "resume_fr": "L'institut britannique de sécurité de l'IA (AISI) a publié une évaluation où les modèles Claude Mythos 5 (Anthropic) et GPT-5.6 Sol (OpenAI), privés de leurs garde-fous et dotés d'un accès Internet, ont mené des activités potentiellement nuisibles visant de vraies personnes et organisations. Anthropic et OpenAI enquêtent et soulignent que ces conditions permissives ne reflètent pas leurs modèles en production.",
+    "tags": [
+      "anthropic",
+      "openai",
+      "recherche",
+      "politique-ia"
+    ],
+    "score": 72,
+    "tweet_url": "https://x.com/AnthropicAI/status/2084748111239344556",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-08-04",
+    "titre_fr": "Mistral lance Shieldstral, un modèle de modération embarquable",
+    "resume_fr": "Mistral présente Shieldstral, un modèle open-weights de 3 milliards de paramètres dédié à la sécurité des contenus. Suffisamment léger pour tourner directement sur l'appareil, il vise le filtrage et la modération.",
+    "tags": [
+      "mistral",
+      "modeles",
+      "open-source"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/MistralAI/status/2084684735725379637",
+    "media": true,
+    "auteur_x": "@MistralAI"
+  },
+  {
+    "date": "2026-08-04",
+    "titre_fr": "Black Forest Labs publie FLUX 3",
+    "resume_fr": "Black Forest Labs a sorti FLUX 3, un nouveau modèle de génération d'images présenté comme rapide et très polyvalent. Utile notamment pour la création de visuels marketing.",
+    "tags": [
+      "modeles",
+      "produit",
+      "marketing"
+    ],
+    "score": 57,
+    "tweet_url": "https://x.com/venturetwins/status/2084700080196682066",
+    "media": true,
+    "auteur_x": "@venturetwins"
+  },
+  {
+    "date": "2026-08-04",
+    "titre_fr": "DeepSeek V4 Flash : nouvelle version très adoptée",
+    "resume_fr": "La nouvelle version de DeepSeek V4 Flash atteint le niveau de GLM 5.2 tout en restant rapide et bon marché. Le modèle est en tête sur OpenRouter avec une forte activité sur Hugging Face.",
+    "tags": [
+      "modeles",
+      "open-source"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/natolambert/status/2084790959636922652",
+    "media": true,
+    "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-08-04",
+    "titre_fr": "MiniMax-H3 : génération vidéo exécutable en local",
+    "resume_fr": "Le modèle de génération vidéo MiniMax-H3 peut tourner en local sur un Mac récent, même si le fichier pèse environ 115 Go et que le rendu prend une quarantaine de minutes. Signe de la montée des modèles vidéo open-weights.",
+    "tags": [
+      "modeles",
+      "open-source"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/simonw/status/2084719238569435469",
+    "media": true,
+    "auteur_x": "@simonw"
+  },
+  {
+    "date": "2026-08-04",
+    "titre_fr": "Inquiétudes sur l'opacité de la politique IA américaine",
+    "resume_fr": "Gary Marcus critique une décision de la Maison-Blanche jugée trop secrète sur les modèles d'IA concernés par ses règles, estimant qu'elle nuit à la confiance envers les entreprises américaines et pourrait accélérer la course aux modèles souverains ailleurs.",
+    "tags": [
+      "politique-ia"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/GaryMarcus/status/2084782485020594359",
+    "media": false,
+    "auteur_x": "@GaryMarcus"
+  },
+  {
+    "date": "2026-08-05",
+    "titre_fr": "Mise à jour majeure de l'outil LLM en ligne de commande de Simon Willison",
+    "resume_fr": "Simon Willison publie une grosse mise à jour de son outil LLM (CLI et bibliothèque Python) permettant de dialoguer avec des centaines de modèles : traces de raisonnement, support de l'API Responses d'OpenAI, outils côté serveur et journalisation améliorée.",
+    "tags": [
+      "produit",
+      "open-source"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/simonw/status/2084792341572001871",
+    "media": false,
+    "auteur_x": "@simonw"
+  },
+  {
+    "date": "2026-08-05",
+    "titre_fr": "Un agent Claude Code pour prospecter des clients d'agence",
+    "resume_fr": "Un créateur a bâti dans Claude Code un outil qui scanne la bibliothèque publicitaire de Meta pour repérer les marques dépensant en pub mais dont la création est faible, puis génère une liste classée de prospects avec argumentaire et contacts. Exemple concret d'agent commercial pour les agences.",
+    "tags": [
+      "agents",
+      "marketing",
+      "vente",
+      "automatisation"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/mikefutia/status/2084801046241489305",
+    "media": true,
+    "auteur_x": "@mikefutia"
   }
 ]
