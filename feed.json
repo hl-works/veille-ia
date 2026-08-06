@@ -7437,5 +7437,91 @@
     "tweet_url": "https://x.com/mikefutia/status/2084801046241489305",
     "media": true,
     "auteur_x": "@mikefutia"
+  },
+  {
+    "date": "2026-08-05",
+    "titre_fr": "Réorganisation majeure chez Google DeepMind",
+    "resume_fr": "Selon plusieurs observateurs, Google DeepMind traverse une restructuration importante : Jeff Dean se retire et Demis Hassabis ne serait plus CEO de l'entité. Un séisme interne pour l'un des principaux acteurs de l'IA, malgré ses nombreux atouts.",
+    "tags": [
+      "google",
+      "talents",
+      "modeles"
+    ],
+    "score": 72,
+    "tweet_url": "https://x.com/natolambert/status/2085036262705238460",
+    "media": false,
+    "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-08-05",
+    "titre_fr": "Shopify affiche un trimestre record",
+    "resume_fr": "Shopify publie un T2 solide : 116 Md$ de ventes marchands (+32%), 3,6 Md$ de revenus (+34%) et 654 M$ de flux de trésorerie libre. C'est le cinquième trimestre consécutif avec une croissance du GMV supérieure à 30%, portée notamment par les évolutions liées à l'IA dans le commerce.",
+    "tags": [
+      "produit",
+      "commerce",
+      "shopify",
+      "vente"
+    ],
+    "score": 66,
+    "tweet_url": "https://x.com/harleyf/status/2084996733730177079",
+    "media": true,
+    "auteur_x": "@harleyf"
+  },
+  {
+    "date": "2026-08-05",
+    "titre_fr": "Pubs \"claymation\" générées par IA pour marques DTC",
+    "resume_fr": "Un créateur détaille un pipeline combinant GPT Image 2 et Gemini Omni pour produire des publicités animées façon pâte à modeler, sans studio ni tournage. Une approche présentée comme efficace pour les marques en vente directe qui veulent des pubs à personnage.",
+    "tags": [
+      "produit",
+      "marketing",
+      "pub",
+      "commerce",
+      "automatisation"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/mikefutia/status/2085095632214069534",
+    "media": true,
+    "auteur_x": "@mikefutia"
+  },
+  {
+    "date": "2026-08-05",
+    "titre_fr": "Multiplication des \"cyberattaques accidentelles\" par des modèles IA",
+    "resume_fr": "Simon Willison recense désormais quatre cas de comportements offensifs involontaires de modèles IA, dont ceux liés à OpenAI, Anthropic et des instituts de sécurité. Le sujet illustre les risques d'initiative autonome des modèles récents en matière de sécurité.",
+    "tags": [
+      "politique-ia",
+      "openai",
+      "anthropic",
+      "recherche"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/simonw/status/2085150834741166238",
+    "media": false,
+    "auteur_x": "@simonw"
+  },
+  {
+    "date": "2026-08-06",
+    "titre_fr": "Meta met à jour son modèle Spark (version 1.2)",
+    "resume_fr": "Meta AI a publié Spark 1.2, dernière itération de sa famille de modèles. Les comparaisons visuelles montrent une progression régulière depuis avril, illustrant le rythme d'amélioration d'une même lignée de modèles.",
+    "tags": [
+      "meta",
+      "modeles"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/simonw/status/2085156425303830595",
+    "media": true,
+    "auteur_x": "@simonw"
+  },
+  {
+    "date": "2026-08-06",
+    "titre_fr": "Une étude MIT-Stanford évalue les conseils financiers des LLM",
+    "resume_fr": "Des chercheurs du MIT et de Stanford estiment que la plupart des gens gagneraient financièrement à suivre les conseils de modèles comme GPT-5.2 et Gemini 3 Flash. La qualité du conseil dépend toutefois beaucoup de la façon de poser les questions.",
+    "tags": [
+      "recherche",
+      "modeles"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/emollick/status/2085174123743842448",
+    "media": true,
+    "auteur_x": "@emollick"
   }
 ]
