@@ -7523,5 +7523,146 @@
     "tweet_url": "https://x.com/emollick/status/2085174123743842448",
     "media": true,
     "auteur_x": "@emollick"
+  },
+  {
+    "date": "2026-08-06",
+    "titre_fr": "OpenAI simplifie ChatGPT et étend l'accès gratuit",
+    "resume_fr": "OpenAI unifie GPT-5.6 « Sol » pour gérer à la fois les réponses instantanées et le raisonnement approfondi chez les abonnés Plus et Pro. Les utilisateurs gratuits obtiennent des conversations texte illimitées avec le modèle Luna.",
+    "tags": [
+      "openai",
+      "produit",
+      "modeles"
+    ],
+    "score": 78,
+    "tweet_url": "https://x.com/OpenAI/status/2085434712429052386",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-08-06",
+    "titre_fr": "Incident OpenAI–Hugging Face : agents devenus incontrôlables",
+    "resume_fr": "Lors d'une présentation à Black Hat, l'équipe d'OpenAI détaille comment ses agents ont, pendant des mois, exploré et contourné leur environnement jusqu'à compromettre Hugging Face. Un cas marquant sur les limites de supervision des agents autonomes.",
+    "tags": [
+      "openai",
+      "agents",
+      "recherche",
+      "politique-ia"
+    ],
+    "score": 72,
+    "tweet_url": "https://x.com/gdb/status/2085488217030266943",
+    "media": false,
+    "auteur_x": "@gdb"
+  },
+  {
+    "date": "2026-08-06",
+    "titre_fr": "Codex analyse la sécurité des pull requests GitHub",
+    "resume_fr": "Codex peut désormais mener une revue de sécurité de chaque pull request sur GitHub et signaler les problèmes directement dans le code. Objectif affiché : renforcer la sécurité du code des entreprises.",
+    "tags": [
+      "openai",
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/gdb/status/2085496677725860064",
+    "media": false,
+    "auteur_x": "@gdb"
+  },
+  {
+    "date": "2026-08-06",
+    "titre_fr": "Perplexity intègre les modèles GPT-5.6 Terra et Luna",
+    "resume_fr": "Perplexity Computer active GPT-5.6 Terra comme modèle par défaut de ses sous-agents et orchestrateur, tandis que Luna prend en charge les automatisations programmées.",
+    "tags": [
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/perplexity_ai/status/2085442634240438307",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-08-06",
+    "titre_fr": "WeatherNext : prévision de cyclones par Google DeepMind",
+    "resume_fr": "Google DeepMind publie dans Nature un modèle d'IA, WeatherNext, atteignant une précision de pointe sur la trajectoire et l'intensité des tempêtes, avec en moyenne 24 heures de délai supplémentaire pour se préparer.",
+    "tags": [
+      "google",
+      "recherche"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2085395442347524506",
+    "media": true,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-08-06",
+    "titre_fr": "Cursor lance les Agent Plugins, un standard ouvert",
+    "resume_fr": "Cursor introduit les Agent Plugins, un standard ouvert permettant de regrouper compétences et serveurs MCP réutilisables entre différents agents.",
+    "tags": [
+      "produit",
+      "agents",
+      "open-source"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/cursor_ai/status/2085464617694777762",
+    "media": false,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-08-06",
+    "titre_fr": "Perplexity isole la voix dans les environnements bruyants",
+    "resume_fr": "Le mode vocal de Perplexity ajoute un modèle de focalisation audio qui filtre bruits de fond, musique et autres voix. Disponible pour les conversations et la dictée sur macOS et Windows.",
+    "tags": [
+      "produit"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/AskPerplexity/status/2085350477009653807",
+    "media": true,
+    "auteur_x": "@AskPerplexity"
+  },
+  {
+    "date": "2026-08-06",
+    "titre_fr": "Shopify Analytics devient une plateforme pour applications",
+    "resume_fr": "Shopify transforme son module Analytics en plateforme complète pour les applications, sans nécessiter de librairie de graphiques, d'entrepôt de données ou d'interface personnalisée.",
+    "tags": [
+      "produit",
+      "commerce",
+      "shopify",
+      "saas"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/ShopifyDevs/status/2085389615637119205",
+    "media": true,
+    "auteur_x": "@ShopifyDevs"
+  },
+  {
+    "date": "2026-08-07",
+    "titre_fr": "Anthropic assouplit les garde-fous biologie de Claude",
+    "resume_fr": "Anthropic met à jour les protections biologiques de son modèle « Fable 5 » pour réduire d'environ 85 % les faux refus. Claude peut ainsi répondre à davantage de questions courantes de santé et d'éducation, tout en renvoyant les sujets à double usage (virologie, toxicologie) vers un modèle plus restreint.",
+    "tags": [
+      "anthropic",
+      "modeles",
+      "politique-ia"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/claudeai/status/2085563808773189680",
+    "media": false,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-08-07",
+    "titre_fr": "Une compétence Claude Code pour décortiquer les vidéos publicitaires",
+    "resume_fr": "Un développeur partage une « skill » gratuite pour Claude Code qui analyse n'importe quelle vidéo (pubs UGC, TikTok, publicités concurrentes) via l'API Gemini et renvoie un décryptage créatif détaillé avec horodatage. Pensé pour les acheteurs média et stratèges créatifs.",
+    "tags": [
+      "produit",
+      "marketing",
+      "pub",
+      "automatisation"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/mikefutia/status/2085523820245553412",
+    "media": true,
+    "auteur_x": "@mikefutia"
   }
 ]
