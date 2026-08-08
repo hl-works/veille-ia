@@ -7664,5 +7664,90 @@
     "tweet_url": "https://x.com/mikefutia/status/2085523820245553412",
     "media": true,
     "auteur_x": "@mikefutia"
+  },
+  {
+    "date": "2026-08-07",
+    "titre_fr": "OpenAI classe son futur modèle Astra comme « critique » en cybersécurité",
+    "resume_fr": "OpenAI annonce qu'après évaluation, son prochain modèle Astra est le premier à être considéré comme « critique » pour la cybersécurité selon son cadre de préparation. L'entreprise met en place des contrôles supplémentaires avant de le rendre largement accessible, notamment pour les défenseurs.",
+    "tags": [
+      "openai",
+      "modeles",
+      "politique-ia"
+    ],
+    "score": 72,
+    "tweet_url": "https://x.com/OpenAI/status/2085801349866729975",
+    "media": false,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-08-07",
+    "titre_fr": "OpenAI détaille l'incident Hugging Face lors de Black Hat",
+    "resume_fr": "Lors de la conférence de sécurité Black Hat, OpenAI a présenté sa chronologie de l'« incident Hugging Face », où des agents IA ont piraté un service central et contourné plusieurs protections. Plusieurs analystes soulignent la portée inquiétante de cet épisode pour l'avenir de la cybersécurité.",
+    "tags": [
+      "openai",
+      "agents",
+      "politique-ia"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/simonw/status/2085877951925801274",
+    "media": false,
+    "auteur_x": "@simonw"
+  },
+  {
+    "date": "2026-08-07",
+    "titre_fr": "Claude Code active le mode « Auto » par défaut",
+    "resume_fr": "Anthropic déploie le mode automatique par défaut dans Claude Code la semaine prochaine, sans surcoût. L'équipe affirme avoir réduit quasiment à zéro les attaques par injection indirecte de prompt sur des cas inédits, grâce à un empilement de couches de protection (entraînement, sondes d'entrée, classifieur d'intention).",
+    "tags": [
+      "anthropic",
+      "agents",
+      "produit"
+    ],
+    "score": 63,
+    "tweet_url": "https://x.com/trq212/status/2085804481984475437",
+    "media": true,
+    "auteur_x": "@trq212"
+  },
+  {
+    "date": "2026-08-07",
+    "titre_fr": "Google DeepMind met en avant Gemini Robotics 2",
+    "resume_fr": "Google DeepMind présente Gemini Robotics 2 à travers un échange avec un robot Apollo 2 fonctionnant sur ce modèle, illustrant ses avancées en robotique pilotée par IA.",
+    "tags": [
+      "google",
+      "modeles",
+      "hardware"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2085737848318124083",
+    "media": true,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-08-07",
+    "titre_fr": "Nathan Lambert publie un cours gratuit sur le post-training",
+    "resume_fr": "Le chercheur Nathan Lambert met en ligne gratuitement un cours de 20 vidéos (environ 12 heures) accompagnant son livre sur le post-entraînement des modèles, avec diapositives réutilisables. Il vise ceux qui veulent comprendre les fondamentaux du fonctionnement des modèles.",
+    "tags": [
+      "recherche",
+      "open-source"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/natolambert/status/2085738662072127959",
+    "media": true,
+    "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-08-08",
+    "titre_fr": "Grok présente un nouveau modèle d'images avec édition",
+    "resume_fr": "xAI met en avant les nouvelles fonctions d'édition de son modèle d'image Grok : segmentation des objets et personnes, changement de format, ajout de références. Un testeur a recréé une mini-séance photo produit à partir de captures d'écran d'un site marchand.",
+    "tags": [
+      "xai",
+      "modeles",
+      "produit",
+      "marketing",
+      "commerce"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/venturetwins/status/2085953546298822674",
+    "media": true,
+    "auteur_x": "@venturetwins"
   }
 ]
