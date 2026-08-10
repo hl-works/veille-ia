@@ -139,10 +139,22 @@ rss_feeds:
 #  ⚠️ Pour une chaîne GÉNÉRALISTE (Micode, Underscore_…), active
 #  `youtube_ai_filter: true` plus haut pour ne garder que les vidéos IA.
 youtube_channels:
-  - UCbfYPyITQ-7l4upoX8nvctg   # Two Minute Papers (résumés de papers IA)
-  - UCHmD-oSpV0sNfAUnpYpj8KA   # Yannic Kilcher (recherche / LLM)
-  - UCNJ1Ymd5yFuUPtn21xtRbbw   # AI Explained (analyses IA)
-  - UCawZsQWqfGSbCI5yjkdVkTA   # Matthew Berman (outils & agents IA)
+  # — FR · vulgarisation & IA appliquée business (cœur d'audience) —
+  - UCnEHCrot2HkySxMTmDPhZyg   # Defend Intelligence (Anis Ayari) — vulgarisation IA
+  - UCnJAGhDDEPdvY2g4ipf9PMQ   # Elliott Pierret — IA concrète / no-code
+  - UCQtcTVT51-70p10i2fXN6wg   # Mr Automatisations — automatisation IA (Make/n8n)
+  - UCQqCRXWEYwvLH3Ws5n4X5Jg   # Naier Saidane — IA & automatisation pour entrepreneurs
+  # — EN · actus & IA appliquée —
+  - UCHhYXsLBEVVnbvsq57n1MTQ   # The AI Advantage — usages productifs de l'IA
+  - UChpleBmo18P08aKCIgti38g   # Matt Wolfe — actus & nouveaux outils IA
+  - UCawZsQWqfGSbCI5yjkdVkTA   # Matthew Berman — sorties de modèles & agents
+  - UCNJ1Ymd5yFuUPtn21xtRbbw   # AI Explained — analyses posées, anti-hype
+  # — EN · technique / recherche (pour les curieux) —
+  - UCbfYPyITQ-7l4upoX8nvctg   # Two Minute Papers — papers IA vulgarisés
+  - UCHmD-oSpV0sNfAUnpYpj8KA   # Yannic Kilcher — recherche / LLM
+  - UCYO_jab_esuFRV4b17AJtAw   # Andrej Karpathy — ex-OpenAI/Tesla (rare mais top)
+  # Généralistes possibles (Micode, Underscore_, Science4All…) : à ajouter AVEC
+  # `youtube_ai_filter: true` plus haut, sinon leurs vidéos non-IA passeraient.
 
 # ── Comportement ──────────────────────────────────────────────
 #  Publier un message même quand il n'y a aucune actu ?
