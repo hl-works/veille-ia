@@ -218,6 +218,94 @@ def fetch_rss(
     return collected
 
 
+# ── YouTube (flux RSS par chaîne, sans clé API) ──────────────────────────────
+_YT_FEED = "https://www.youtube.com/feeds/videos.xml?channel_id={}"
+
+
+def _resolve_youtube_channel_id(spec: str, *, timeout: int = 12) -> str | None:
+    """Renvoie un ID de chaîne (UC…). Accepte directement un ID, ou une URL/handle
+    (`https://youtube.com/@xxx`) qu'on résout en lisant la page. Défensif."""
+    spec = spec.strip()
+    if spec.startswith("UC") and len(spec) >= 20 and "/" not in spec:
+        return spec
+    # Sinon : une URL complète, ou un simple handle (@xxx) → page de la chaîne.
+    url = spec if spec.startswith("http") else f"https://www.youtube.com/@{spec.lstrip('@')}"
+    try:
+        r = requests.get(url, timeout=timeout, headers={"User-Agent": "Mozilla/5.0"})
+        r.raise_for_status()
+        m = re.search(r'"channelId":"(UC[\w-]{20,})"', r.text) or re.search(r"channel/(UC[\w-]{20,})", r.text)
+        return m.group(1) if m else None
+    except requests.RequestException:
+        return None
+
+
+def fetch_youtube(
+    channels: list[str],
+    *,
+    lookback_hours: int,
+    max_per_channel: int = 3,
+    ai_filter: bool = False,
+    timeout: int = 15,
+) -> list[Tweet]:
+    """Récupère les vidéos récentes d'une liste de chaînes YouTube via leur flux
+    RSS public (aucune clé API). `channels` = IDs `UC…` ou URLs/handles. Si
+    `ai_filter`, on ne garde que les titres liés à l'IA (utile pour des chaînes
+    généralistes). Défensif : une chaîne injoignable est ignorée."""
+    if not channels:
+        return []
+    try:
+        import feedparser
+    except ImportError:
+        log.warning("feedparser non installé — source YouTube ignorée.")
+        return []
+
+    cutoff = datetime.now(timezone.utc) - timedelta(hours=lookback_hours)
+    collected: list[Tweet] = []
+    for spec in channels:
+        cid = _resolve_youtube_channel_id(spec)
+        if not cid:
+            log.warning("YouTube : chaîne non résolue (%s) — ignorée.", spec)
+            continue
+        try:
+            resp = requests.get(_YT_FEED.format(cid), timeout=timeout, headers={"User-Agent": "veille-ia/1.0"})
+            resp.raise_for_status()
+            parsed = feedparser.parse(resp.content)
+        except (requests.RequestException, Exception) as exc:  # noqa: BLE001
+            log.warning("YouTube %s : flux indisponible (%s) — ignoré.", spec, exc)
+            continue
+
+        channel = str(parsed.feed.get("title", "")).strip() or spec
+        kept = 0
+        for entry in getattr(parsed, "entries", []) or []:
+            if kept >= max_per_channel:
+                break
+            title = str(getattr(entry, "title", "")).strip()
+            link = str(getattr(entry, "link", "")).strip()
+            if not title or not link:
+                continue
+            if ai_filter and not _looks_ai_related(title):
+                continue
+            created_at = _entry_datetime(entry)
+            if created_at is not None and created_at < cutoff:
+                continue
+            collected.append(
+                Tweet(
+                    id=f"yt:{link}",
+                    author=channel,
+                    text=title,
+                    url=link,
+                    created_at=created_at,
+                    source="youtube",
+                )
+            )
+            kept += 1
+        if kept:
+            log.info("YouTube %s : %d vidéo(s) récente(s).", channel, kept)
+
+    log.info("YouTube : %d vidéo(s) au total sur %d chaîne(s).", len(collected), len(channels))
+    return collected
+
+
 def collect_extra_sources(settings, *, lookback_hours: int) -> list[Tweet]:
     """Agrège les sources complémentaires activées dans la config. Renvoie une
     liste d'items `Tweet` (source ≠ 'x'), à fusionner avec les tweets pour le
@@ -232,5 +320,11 @@ def collect_extra_sources(settings, *, lookback_hours: int) -> list[Tweet]:
         items += fetch_rss(
             getattr(settings, "rss_feeds", []),
             lookback_hours=lookback_hours,
+        )
+    if getattr(settings, "include_youtube", False):
+        items += fetch_youtube(
+            getattr(settings, "youtube_channels", []),
+            lookback_hours=lookback_hours,
+            ai_filter=getattr(settings, "youtube_ai_filter", False),
         )
     return items

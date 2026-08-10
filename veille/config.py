@@ -32,6 +32,9 @@ class Settings:
     hackernews_min_score: int = 60
     include_rss: bool = False
     rss_feeds: list[str] = field(default_factory=list)
+    include_youtube: bool = False
+    youtube_channels: list[str] = field(default_factory=list)
+    youtube_ai_filter: bool = False
     feed_path: str = "feed.json"
     seen_path: str = "seen.json"
 
@@ -88,9 +91,10 @@ def load_settings(config_path: str | Path = "config.yaml") -> Settings:
     depth = str(raw.get("digest_depth", "detaille")).strip().lower()
     depth = "essentiel" if depth in {"essentiel", "court", "concis"} else "detaille"
 
-    # Sources complémentaires (bloc `sources:` optionnel + liste `rss_feeds:`).
+    # Sources complémentaires (bloc `sources:` optionnel + listes dédiées).
     src = raw.get("sources") or {}
     rss_feeds = [str(u).strip() for u in (raw.get("rss_feeds") or []) if str(u).strip()]
+    youtube_channels = [str(c).strip() for c in (raw.get("youtube_channels") or []) if str(c).strip()]
 
     return Settings(
         accounts=accounts,
@@ -106,6 +110,9 @@ def load_settings(config_path: str | Path = "config.yaml") -> Settings:
         hackernews_min_score=int(src.get("hacker_news_min_score", 60)),
         include_rss=bool(src.get("rss", False)),
         rss_feeds=rss_feeds,
+        include_youtube=bool(src.get("youtube", False)),
+        youtube_channels=youtube_channels,
+        youtube_ai_filter=bool(src.get("youtube_ai_filter", False)),
         feed_path=str(raw.get("feed_path", "feed.json")),
         seen_path=str(raw.get("seen_path", "seen.json")),
         anthropic_api_key=os.environ.get("ANTHROPIC_API_KEY", ""),

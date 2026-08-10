@@ -16,9 +16,10 @@ Comptes Twitter/X  →  twitterapi.io  →  Claude rédige le digest  →  Teleg
    tweets des dernières 24 h via [twitterapi.io](https://twitterapi.io)
    (Twitter ayant fermé ses accès gratuits). En plus de X, le digest peut être
    enrichi par d'**autres sources** (voir plus bas) : **Hacker News** (les
-   meilleures actus IA, gratuit et sans clé) et les **blogs officiels via RSS**
-   (OpenAI, DeepMind, Hugging Face…). Ces sources n'alimentent que le digest
-   Telegram — **pas `feed.json`** (le site reste inchangé).
+   meilleures actus IA), les **blogs officiels via RSS** (OpenAI, DeepMind,
+   Hugging Face…) et **YouTube** (nouvelles vidéos de chaînes suivies) — le tout
+   **gratuit et sans clé**. Ces sources n'alimentent que le digest Telegram —
+   **pas `feed.json`** (le site reste inchangé).
 2. **Filtrage** — on enlève le bruit (retweets, réponses à d'autres comptes,
    hors fenêtre). Les **fils d'un même auteur** (plusieurs tweets qui se suivent)
    sont **recollés en un seul contenu** : rien du propos n'est perdu, sans pour
@@ -229,6 +230,9 @@ veille-ia/
 | `sources.hacker_news_min_score` | Score minimum (points HN) pour retenir une actu. |
 | `sources.rss` | Inclure les billets récents des blogs officiels (via `rss_feeds`). |
 | `rss_feeds` | Liste des flux RSS suivis (un flux mort est ignoré, jamais bloquant). |
+| `sources.youtube` | Inclure les nouvelles vidéos des chaînes de `youtube_channels`. |
+| `sources.youtube_ai_filter` | `true` = ne garder que les vidéos au titre « IA » (pour chaînes généralistes). |
+| `youtube_channels` | Chaînes suivies : ID `UC…` **ou** handle/URL `@MaChaine` (l'ID est résolu tout seul). |
 | `send_when_empty` | Publier un message même sans actu. |
 
 > 🔌 **Sources en plus de X.** Hacker News et les flux RSS **enrichissent le

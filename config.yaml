@@ -117,6 +117,9 @@ sources:
   hacker_news: true            # meilleures actus IA de Hacker News (gratuit, sans clé)
   hacker_news_min_score: 60    # score minimum (points) pour retenir une actu
   rss: true                    # billets récents des blogs officiels (via RSS)
+  youtube: true                # nouvelles vidéos des chaînes YouTube suivies (via RSS, sans clé)
+  youtube_ai_filter: false     # true = ne garder que les vidéos au titre « IA »
+                               #  (utile si tu ajoutes des chaînes GÉNÉRALISTES type Micode)
 
 #  Flux RSS suivis (édite librement). Un flux mort/injoignable est simplement
 #  ignoré — jamais bloquant. Astuce : garde des sources PRIMAIRES (blogs des
@@ -129,6 +132,17 @@ rss_feeds:
   - https://blog.google/technology/ai/rss/                              # Google AI
   - https://jack-clark.net/feed/                                        # Import AI (Jack Clark)
   - https://www.technologyreview.com/topic/artificial-intelligence/feed/ # MIT Tech Review — IA
+
+#  Chaînes YouTube suivies. Mets l'ID de chaîne (UC…) OU un handle/URL
+#  (ex. « @MaChaine » ou « https://youtube.com/@MaChaine ») — je résous l'ID
+#  automatiquement. Socle 100 % IA ci-dessous ; ajoute/retire librement.
+#  ⚠️ Pour une chaîne GÉNÉRALISTE (Micode, Underscore_…), active
+#  `youtube_ai_filter: true` plus haut pour ne garder que les vidéos IA.
+youtube_channels:
+  - UCbfYPyITQ-7l4upoX8nvctg   # Two Minute Papers (résumés de papers IA)
+  - UCHmD-oSpV0sNfAUnpYpj8KA   # Yannic Kilcher (recherche / LLM)
+  - UCNJ1Ymd5yFuUPtn21xtRbbw   # AI Explained (analyses IA)
+  - UCawZsQWqfGSbCI5yjkdVkTA   # Matthew Berman (outils & agents IA)
 
 # ── Comportement ──────────────────────────────────────────────
 #  Publier un message même quand il n'y a aucune actu ?

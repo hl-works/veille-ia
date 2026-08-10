@@ -149,6 +149,8 @@ def _source_header(tw: Tweet, index: int, date: str) -> str:
         )
     if source == "rss":
         return f"[{index}] {tw.author} — blog officiel ({date})"
+    if source == "youtube":
+        return f"[{index}] {tw.author} — vidéo YouTube ({date})"
     # X / Twitter (défaut)
     media = " [média]" if tw.has_media else ""
     thread = (
