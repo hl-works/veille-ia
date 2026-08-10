@@ -48,11 +48,12 @@ BOT_COMMANDS = [
 
 HELP_TEXT = (
     "🤖 <b>Commandes de la Veille IA</b>\n\n"
-    "• <code>/maj</code> — republie le dernier jour au nouveau format\n"
-    "• <code>/maj N</code> — republie les N derniers jours (ex. <code>/maj 7</code>, "
-    f"max {MAX_DAYS})\n"
+    "• <code>/maj</code> — republie <b>hier</b> (jour complet) au nouveau format\n"
+    "• <code>/maj N</code> — republie les N derniers jours complets (ex. "
+    f"<code>/maj 7</code> = la semaine, max {MAX_DAYS})\n"
     "• <code>/aide</code> — affiche ce message\n\n"
-    "Le digest quotidien de 7h reste automatique, rien à faire pour lui."
+    "La journée en cours n'est pas rejouée (recherche historique peu fiable sur "
+    "les dernières heures) — mais elle est déjà couverte par le digest de 7h."
 )
 
 

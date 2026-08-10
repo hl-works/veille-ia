@@ -46,16 +46,21 @@ def _setup_logging() -> None:
 
 
 def _day_windows(days: int, *, now: datetime) -> list[tuple[datetime, datetime]]:
-    """Renvoie les fenêtres [début, fin) UTC des N derniers jours calendaires,
-    du plus ANCIEN au plus RÉCENT. Le dernier jour (aujourd'hui) est borné à
-    l'instant présent."""
+    """Renvoie les fenêtres [début, fin) UTC des N derniers jours COMPLETS
+    (hier et avant), du plus ANCIEN au plus RÉCENT.
+
+    On EXCLUT volontairement la journée EN COURS : elle est partielle et surtout
+    mal indexée par advanced_search (la recherche historique ne « voit » pas bien
+    les toutes dernières heures). La journée du jour est de toute façon déjà
+    couverte par le digest quotidien de 7h (qui, lui, utilise le flux temps réel).
+    Ainsi `/maj` = hier (jour complet), `/maj 7` = les 7 jours complets précédents.
+    """
     today_start = now.replace(hour=0, minute=0, second=0, microsecond=0)
     windows: list[tuple[datetime, datetime]] = []
-    for offset in range(days - 1, -1, -1):
+    for offset in range(days, 0, -1):
         start = today_start - timedelta(days=offset)
-        end = min(start + timedelta(days=1), now)
-        if end > start:
-            windows.append((start, end))
+        end = start + timedelta(days=1)
+        windows.append((start, end))
     return windows
 
 

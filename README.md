@@ -113,9 +113,13 @@ Tu peux déclencher le rejeu en écrivant directement au bot, en **message priv�
 
 | Commande | Effet |
 |---|---|
-| `/maj` | republie le **dernier jour** au nouveau format |
-| `/maj 7` | republie les **7 derniers jours** (max 14) |
+| `/maj` | republie **hier** (jour complet) au nouveau format |
+| `/maj 7` | republie les **7 derniers jours complets** (max 14) |
 | `/aide` | rappelle les commandes |
+
+> La **journée en cours** n'est pas rejouée : la recherche historique est peu
+> fiable sur les toutes dernières heures, et ce jour est de toute façon déjà
+> couvert par le digest automatique de 7h.
 
 Comment ça marche (sans serveur) : le workflow **« Commandes Telegram »**
 (`.github/workflows/telegram-commands.yml`) **sonde** Telegram toutes les ~5 min
