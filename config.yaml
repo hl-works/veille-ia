@@ -110,6 +110,26 @@ language: français
 #   • essentiel → digest court à l'ancienne (survol rapide, moins de tokens).
 digest_depth: detaille
 
+# ── Sources complémentaires (en plus de X) ────────────────────
+#  Ces sources enrichissent le DIGEST TELEGRAM uniquement — elles ne
+#  touchent PAS au feed.json du site.
+sources:
+  hacker_news: true            # meilleures actus IA de Hacker News (gratuit, sans clé)
+  hacker_news_min_score: 60    # score minimum (points) pour retenir une actu
+  rss: true                    # billets récents des blogs officiels (via RSS)
+
+#  Flux RSS suivis (édite librement). Un flux mort/injoignable est simplement
+#  ignoré — jamais bloquant. Astuce : garde des sources PRIMAIRES (blogs des
+#  labos) pour croiser avec X et fiabiliser l'info.
+rss_feeds:
+  - https://simonwillison.net/atom/everything/                          # Simon Willison (LLM en pratique)
+  - https://huggingface.co/blog/feed.xml                                # Hugging Face (open source)
+  - https://openai.com/news/rss.xml                                     # OpenAI (blog officiel)
+  - https://deepmind.google/blog/rss.xml                                # Google DeepMind
+  - https://blog.google/technology/ai/rss/                              # Google AI
+  - https://jack-clark.net/feed/                                        # Import AI (Jack Clark)
+  - https://www.technologyreview.com/topic/artificial-intelligence/feed/ # MIT Tech Review — IA
+
 # ── Comportement ──────────────────────────────────────────────
 #  Publier un message même quand il n'y a aucune actu ?
 #  true = un « bonjour, journée calme » est envoyé même les jours vides.

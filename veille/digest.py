@@ -26,10 +26,15 @@ Tu es le rédacteur d'une veille quotidienne sur l'intelligence artificielle, \
 publiée sur un canal Telegram destiné à un public curieux mais non technique \
 (commerçants, dirigeants de PME, indépendants).
 
-À partir d'une liste de tweets récents de comptes de référence sur l'IA, \
-rédige un digest clair et fiable.
+À partir d'une liste d'éléments récents issus de PLUSIEURS sources — X/Twitter \
+(comptes de référence), Hacker News (actus tech les mieux notées) et blogs \
+officiels (via RSS) — rédige un digest clair et fiable.
 
 RÈGLES DE FOND :
+- Croise les sources : un même événement rapporté par plusieurs sources (ex. un \
+tweet + Hacker News + le blog officiel) est plus important et plus sûr — \
+regroupe-les en UN sujet et privilégie le lien le plus fiable (souvent le blog \
+officiel). Ne compte pas deux fois le même événement.
 - Ne retiens QUE les informations vraiment fortes : lancements de modèles ou \
 de produits, mises à jour majeures, annonces importantes, débats marquants. \
 Ignore sans pitié le bavardage, l'autopromotion, les opinions mineures, les \
@@ -134,21 +139,34 @@ def _system_prompt(depth: str) -> str:
     return _COMMON_RULES + "\n" + body
 
 
+def _source_header(tw: Tweet, index: int, date: str) -> str:
+    """Ligne d'en-tête d'un item, adaptée à sa source (X, Hacker News, RSS)."""
+    source = getattr(tw, "source", "x")
+    if source == "hn":
+        return (
+            f"[{index}] Hacker News ({date}) — {tw.like_count} points, "
+            f"{tw.retweet_count} commentaires"
+        )
+    if source == "rss":
+        return f"[{index}] {tw.author} — blog officiel ({date})"
+    # X / Twitter (défaut)
+    media = " [média]" if tw.has_media else ""
+    thread = (
+        f" [FIL de {tw.thread_parts} tweets du même auteur]"
+        if getattr(tw, "is_thread", False) else ""
+    )
+    return (
+        f"[{index}] @{tw.author} ({date}) — {tw.like_count} likes, "
+        f"{tw.retweet_count} RT{media}{thread}"
+    )
+
+
 def _tweets_to_text(tweets: list[Tweet]) -> str:
-    """Met les tweets en forme texte pour les passer à Claude."""
+    """Met les items (tweets + Hacker News + RSS) en forme texte pour Claude."""
     lines: list[str] = []
     for i, tw in enumerate(tweets, 1):
         date = tw.created_at.strftime("%Y-%m-%d %H:%M") if tw.created_at else "date inconnue"
-        media = " [média]" if tw.has_media else ""
-        # On signale les fils recollés : Claude sait que le texte contient TOUT
-        # le propos (plusieurs tweets du même auteur) et doit le restituer en entier.
-        thread = f" [FIL de {tw.thread_parts} tweets du même auteur]" if getattr(tw, "is_thread", False) else ""
-        lines.append(
-            f"[{i}] @{tw.author} ({date}) — {tw.like_count} likes, "
-            f"{tw.retweet_count} RT{media}{thread}\n"
-            f"{tw.text}\n"
-            f"URL : {tw.url}"
-        )
+        lines.append(f"{_source_header(tw, i, date)}\n{tw.text}\nURL : {tw.url}")
     return "\n\n".join(lines)
 
 

@@ -46,6 +46,9 @@ class Tweet:
     # Rempli quand plusieurs tweets d'un même auteur ont été recollés en un seul.
     is_thread: bool = False
     thread_parts: int = 1
+    # Provenance : "x" (Twitter/X), "hn" (Hacker News), "rss" (blog). Permet au
+    # digest d'attribuer et de formuler correctement selon la source.
+    source: str = "x"
 
 
 def _parse_date(value) -> datetime | None:

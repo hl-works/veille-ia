@@ -26,6 +26,12 @@ class Settings:
     # Profondeur du digest Telegram : « detaille » (développé, lecture hors ligne)
     # ou « essentiel » (survol court à l'ancienne).
     digest_depth: str = "detaille"
+    # Sources complémentaires (en plus de X) — alimentent le digest Telegram
+    # uniquement, jamais feed.json.
+    include_hackernews: bool = False
+    hackernews_min_score: int = 60
+    include_rss: bool = False
+    rss_feeds: list[str] = field(default_factory=list)
     feed_path: str = "feed.json"
     seen_path: str = "seen.json"
 
@@ -82,6 +88,10 @@ def load_settings(config_path: str | Path = "config.yaml") -> Settings:
     depth = str(raw.get("digest_depth", "detaille")).strip().lower()
     depth = "essentiel" if depth in {"essentiel", "court", "concis"} else "detaille"
 
+    # Sources complémentaires (bloc `sources:` optionnel + liste `rss_feeds:`).
+    src = raw.get("sources") or {}
+    rss_feeds = [str(u).strip() for u in (raw.get("rss_feeds") or []) if str(u).strip()]
+
     return Settings(
         accounts=accounts,
         lookback_hours=int(raw.get("lookback_hours", 24)),
@@ -92,6 +102,10 @@ def load_settings(config_path: str | Path = "config.yaml") -> Settings:
         language=str(raw.get("language", "français")),
         send_when_empty=bool(raw.get("send_when_empty", False)),
         digest_depth=depth,
+        include_hackernews=bool(src.get("hacker_news", False)),
+        hackernews_min_score=int(src.get("hacker_news_min_score", 60)),
+        include_rss=bool(src.get("rss", False)),
+        rss_feeds=rss_feeds,
         feed_path=str(raw.get("feed_path", "feed.json")),
         seen_path=str(raw.get("seen_path", "seen.json")),
         anthropic_api_key=os.environ.get("ANTHROPIC_API_KEY", ""),

@@ -14,7 +14,11 @@ Comptes Twitter/X  →  twitterapi.io  →  Claude rédige le digest  →  Teleg
 
 1. **Récupération** — pour chaque compte de `config.yaml`, on récupère les
    tweets des dernières 24 h via [twitterapi.io](https://twitterapi.io)
-   (Twitter ayant fermé ses accès gratuits).
+   (Twitter ayant fermé ses accès gratuits). En plus de X, le digest peut être
+   enrichi par d'**autres sources** (voir plus bas) : **Hacker News** (les
+   meilleures actus IA, gratuit et sans clé) et les **blogs officiels via RSS**
+   (OpenAI, DeepMind, Hugging Face…). Ces sources n'alimentent que le digest
+   Telegram — **pas `feed.json`** (le site reste inchangé).
 2. **Filtrage** — on enlève le bruit (retweets, réponses à d'autres comptes,
    hors fenêtre). Les **fils d'un même auteur** (plusieurs tweets qui se suivent)
    sont **recollés en un seul contenu** : rien du propos n'est perdu, sans pour
@@ -221,7 +225,16 @@ veille-ia/
 | `include_retweets` / `include_replies` | Inclure ou non retweets/réponses. |
 | `model` | Modèle Claude (`claude-opus-4-8`, ou `claude-sonnet-4-6` pour réduire le coût). |
 | `digest_depth` | `detaille` (défaut, lecture autonome hors ligne) ou `essentiel` (survol court). |
+| `sources.hacker_news` | Inclure les meilleures actus IA de Hacker News (gratuit, sans clé). |
+| `sources.hacker_news_min_score` | Score minimum (points HN) pour retenir une actu. |
+| `sources.rss` | Inclure les billets récents des blogs officiels (via `rss_feeds`). |
+| `rss_feeds` | Liste des flux RSS suivis (un flux mort est ignoré, jamais bloquant). |
 | `send_when_empty` | Publier un message même sans actu. |
+
+> 🔌 **Sources en plus de X.** Hacker News et les flux RSS **enrichissent le
+> digest Telegram uniquement** (jamais `feed.json`). Le digest croise les
+> sources : un événement rapporté par X **+** Hacker News **+** le blog officiel
+> est regroupé en un seul sujet et jugé plus fiable. Édite `rss_feeds` librement.
 
 ## Coûts
 
