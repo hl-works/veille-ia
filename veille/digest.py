@@ -54,6 +54,9 @@ FORMAT DE SORTIE (HTML compatible Telegram, UNIQUEMENT ces balises) :
 - <b>gras</b> pour les titres de section, <i>italique</i> pour les nuances.
 - <a href="URL">texte</a> pour les liens. Utilise TOUJOURS l'URL exacte fournie \
 avec le tweet (ne fabrique jamais d'URL).
+- <blockquote expandable>…</blockquote> pour un bloc « détails » repliable que le \
+lecteur touche pour dérouler (voir la structure ci-dessous). Ne JAMAIS imbriquer \
+un blockquote dans un autre.
 - Pas de <ul>/<li>/<h1>/<h2> (non supportés). Utilise des puces « • » en début de ligne.
 - Pas de bloc de code, pas de Markdown (ni #, ni **, ni []()).
 
@@ -66,34 +69,44 @@ Réponds UNIQUEMENT avec le digest. Aucun préambule, aucune phrase du type \
 « Voici le digest ». Commence directement par le contenu.\
 """
 
-# ── Corps « détaillé » : lecture autonome, hors ligne ────────────────────────
+# ── Corps « détaillé » : deux niveaux (survol visible + détails repliables) ──
 _DETAILED_BODY = """\
 
-OBJECTIF CLÉ — LECTURE AUTONOME (TRÈS IMPORTANT) :
-Le lecteur consulte souvent ce digest HORS LIGNE et n'ouvrira AUCUN lien. Il doit \
-donc tout comprendre rien qu'en te lisant. Chaque info marquante est DÉVELOPPÉE : \
-le fait précis, les détails/chiffres qui comptent, et surtout le « pourquoi c'est \
-important » (concrètement, pour un commerçant / une PME quand c'est pertinent). \
-Les liens restent présents mais 100 % optionnels — jamais nécessaires à la compréhension.
+OBJECTIF CLÉ — LECTURE AUTONOME, HORS LIGNE, 100 % EN FRANÇAIS (TRÈS IMPORTANT) :
+Le lecteur consulte souvent ce digest HORS LIGNE et n'ouvrira AUCUN lien externe. \
+Tout doit se comprendre rien qu'en te lisant, et TOUT est rédigé en français — y \
+compris les blocs « détails ». Les liens X ne servent que de référence, jamais à \
+la compréhension.
+
+Le digest a DEUX niveaux : un survol visible d'un coup d'œil, et, pour chaque \
+sujet, un bloc « détails » que le lecteur touche pour le dérouler.
 
 STRUCTURE ATTENDUE (dans cet ordre) :
+
 1. <b>⚡ L'essentiel en 30 secondes</b>
-   2 à 4 puces « • » ultra-courtes (une ligne chacune) : le TL;DR des faits majeurs du jour.
+   2 à 4 puces « • » ultra-courtes (une ligne chacune) : le TL;DR des faits majeurs.
 
-2. Le corps, regroupé en 3 à 6 thèmes. Pour CHAQUE sujet marquant :
-   • un titre de section en <b>gras</b> précédé d'un emoji pertinent ;
-   • 2 à 5 phrases DÉVELOPPÉES : quoi exactement, les détails concrets (ce qui \
-     est nouveau, ce que ça remplace, à qui ça s'adresse), et l'implication réelle \
-     (« ce que ça change pour vous ») ;
-   • si utile, une micro-définition d'un terme technique entre parenthèses ;
-   • termine par la source, discrète, en fin de bloc : <a href="URL">source</a> \
-     (tu peux préciser le compte, ex. « source : @OpenAI »). Regroupe plusieurs \
-     sources si le sujet en combine (ex. <a href="U1">annonce</a> · <a href="U2">détails</a>).
+2. Le corps : 3 à 6 thèmes. Pour CHAQUE sujet marquant, écris DEUX niveaux :
+   a) une ACCROCHE visible, sur une seule ligne : « <b>🚀 Titre du sujet</b> — » \
+      suivie d'une phrase qui donne le fait principal ;
+   b) juste en dessous (retour à la ligne simple), le bloc « détails » repliable, \
+      ENTIÈREMENT EN FRANÇAIS, qui reprend le sujet EN ENTIER : le fait complet, \
+      les chiffres et détails concrets, le contexte utile, et « ce que ça change \
+      pour vous » (commerçant / PME quand c'est pertinent). Termine-le par la ou \
+      les source(s). Format EXACT du bloc :
+      <blockquote expandable>🔎 <b>En détail —</b> …4 à 8 phrases développées… \
+Source : <a href="URL">@compte</a></blockquote>
 
-3. <b>✨ La phrase du jour</b> (optionnel) : une idée forte ou une prise de recul \
-   reformulée à partir d'un tweet, seulement si un tweet s'y prête vraiment.
+3. <b>✨ La phrase du jour</b> (optionnel) : une idée forte reformulée, si un \
+   tweet s'y prête vraiment.
 
-Vise un digest riche mais digeste. Mieux vaut 4 sujets bien expliqués que 8 survolés.\
+RÈGLES DE MISE EN FORME :
+- Sépare chaque sujet par une LIGNE VIDE. À l'intérieur d'un sujet (accroche + \
+  bloc détails), n'utilise que des retours à la ligne SIMPLES, pas de ligne vide.
+- Ne mets PAS de blockquote autour de « l'essentiel » ni des accroches : le bloc \
+  repliable est réservé aux détails d'un sujet.
+- Garde chaque bloc « détails » autonome et raisonnable (≈ 4 à 8 phrases) : mieux \
+  vaut 4 sujets bien traités que 8 survolés.\
 """
 
 # ── Corps « essentiel » : survol rapide à l'ancienne ─────────────────────────

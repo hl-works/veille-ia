@@ -17,15 +17,20 @@ Comptes Twitter/X  →  twitterapi.io  →  Claude rédige le digest  →  Teleg
    (Twitter ayant fermé ses accès gratuits).
 2. **Filtrage** — on enlève le bruit (retweets, réponses, hors fenêtre).
 3. **Rédaction** — Claude (`claude-opus-4-8`) regroupe l'info par thème et
-   rédige un digest factuel. Par défaut il est **développé** : pensé pour être
-   lu **sans ouvrir aucun lien** (idéal hors ligne), avec un « l'essentiel en
-   30 s » en tête puis chaque sujet expliqué à fond (le fait, les détails, le
-   *pourquoi c'est important*). Les liens sources restent présents mais optionnels.
+   rédige un digest factuel sur **deux niveaux** (mode `detaille`, par défaut) :
+   - un **survol visible** — « l'essentiel en 30 s » + une accroche d'une ligne
+     par sujet ;
+   - sous chaque sujet, un **bloc « détails » repliable** (`<blockquote
+     expandable>` : le lecteur le touche pour le dérouler) qui reprend le sujet
+     **en entier et 100 % en français** — le fait complet, les chiffres, le
+     contexte, le *pourquoi c'est important*. Tout est dans le message Telegram :
+     **pas besoin d'ouvrir X**, ça marche **hors ligne**. Les liens sources
+     restent en référence, optionnels.
 4. **Publication** — le digest est envoyé sur ton canal Telegram.
 
 > 🔎 **Digest court ou développé ?** Règle `digest_depth` dans `config.yaml` :
-> `detaille` (défaut, lecture autonome hors ligne) ou `essentiel` (survol
-> rapide, moins de tokens).
+> `detaille` (défaut, survol + détails repliables FR, lecture autonome hors
+> ligne) ou `essentiel` (survol rapide sans blocs repliables, moins de tokens).
 
 ## Mise en route
 

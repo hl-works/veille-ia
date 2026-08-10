@@ -1,12 +1,18 @@
 """Publication du digest sur Telegram via l'API Bot.
 
 On découpe les messages trop longs (limite Telegram : 4096 caractères) en
-plusieurs envois, en coupant de préférence sur des sauts de paragraphe.
+plusieurs envois, en coupant de préférence entre les blocs (paragraphes).
+
+Subtilité : le digest « détaillé » contient des blocs repliables
+`<blockquote expandable>…</blockquote>`. Il ne faut JAMAIS couper un message au
+milieu d'un tel bloc, sinon le HTML devient invalide (balise non fermée) et
+Telegram rejette l'envoi. Le découpage ci-dessous respecte ces blocs.
 """
 
 from __future__ import annotations
 
 import logging
+import re
 import time
 
 import requests
@@ -18,27 +24,95 @@ TELEGRAM_MAX_LEN = 4096
 CHUNK_LIMIT = 3900
 
 
+def _top_level_blocks(text: str) -> list[str]:
+    """Découpe le texte en blocs séparés par une ligne vide, MAIS garde entier
+    tout `<blockquote>…</blockquote>` (même s'il contient des lignes vides)."""
+    parts = text.split("\n\n")
+    blocks: list[str] = []
+    buf = ""
+    for part in parts:
+        buf = part if not buf else buf + "\n\n" + part
+        # Tant qu'un <blockquote> est ouvert sans être refermé, on accumule.
+        if buf.count("<blockquote") <= buf.count("</blockquote>"):
+            blocks.append(buf)
+            buf = ""
+    if buf:
+        blocks.append(buf)
+    return blocks
+
+
+def _hard_line_split(text: str, budget: int) -> list[str]:
+    """Coupe `text` en morceaux <= budget, de préférence sur les retours à la
+    ligne, sinon en coupant net une ligne trop longue."""
+    pieces: list[str] = []
+    cur = ""
+    for line in text.split("\n"):
+        cand = line if not cur else cur + "\n" + line
+        if len(cand) <= budget:
+            cur = cand
+            continue
+        if cur:
+            pieces.append(cur)
+        cur = line
+        while len(cur) > budget:  # ligne unique trop longue : coupe nette
+            pieces.append(cur[:budget])
+            cur = cur[budget:]
+    if cur:
+        pieces.append(cur)
+    return pieces
+
+
+def _split_oversized_block(block: str, limit: int) -> list[str]:
+    """Cas rare : un seul bloc (un sujet) dépasse la limite. On garde un HTML
+    valide. S'il contient un `<blockquote>`, on isole l'accroche, puis on refend
+    le contenu du bloc repliable en refermant/rouvrant la balise à chaque morceau
+    (l'attribut « expandable » est donc préservé sur chaque part)."""
+    m = re.search(r"<blockquote[^>]*>", block)
+    if not m or "</blockquote>" not in block:
+        return _hard_line_split(block, limit)  # pas de blockquote : coupe à plat
+
+    open_tag = m.group(0)
+    close_start = block.rfind("</blockquote>")
+    before = block[: m.start()].rstrip("\n")
+    inner = block[m.end() : close_start]
+    after = block[close_start + len("</blockquote>") :].lstrip("\n")
+
+    pieces: list[str] = []
+    if before.strip():
+        pieces.extend(_hard_line_split(before, limit))
+    budget = max(1, limit - len(open_tag) - len("</blockquote>"))
+    pieces.extend(open_tag + p + "</blockquote>" for p in _hard_line_split(inner, budget))
+    if after.strip():
+        pieces.extend(_hard_line_split(after, limit))
+    return pieces
+
+
 def _split_message(text: str, limit: int = CHUNK_LIMIT) -> list[str]:
-    """Découpe un long message en morceaux <= limit, en cassant sur les
-    sauts de ligne quand c'est possible."""
+    """Découpe un long message en morceaux <= limit, en cassant entre les blocs
+    (jamais au milieu d'un `<blockquote>`)."""
     if len(text) <= limit:
         return [text]
 
     chunks: list[str] = []
-    remaining = text
-    while len(remaining) > limit:
-        window = remaining[:limit]
-        # Cherche le dernier saut de paragraphe, puis de ligne, dans la fenêtre.
-        cut = window.rfind("\n\n")
-        if cut == -1:
-            cut = window.rfind("\n")
-        if cut == -1:
-            cut = limit  # aucun saut : on coupe net
-        chunks.append(remaining[:cut].strip())
-        remaining = remaining[cut:].strip()
-    if remaining:
-        chunks.append(remaining)
-    return [c for c in chunks if c]
+    cur = ""
+    for block in _top_level_blocks(text):
+        if len(block) > limit:
+            # Bloc à lui seul trop grand : on vide l'accumulateur puis on le
+            # découpe proprement (en préservant le blockquote).
+            if cur:
+                chunks.append(cur)
+                cur = ""
+            chunks.extend(_split_oversized_block(block, limit))
+            continue
+        candidate = block if not cur else cur + "\n\n" + block
+        if len(candidate) <= limit:
+            cur = candidate
+        else:
+            chunks.append(cur)
+            cur = block
+    if cur:
+        chunks.append(cur)
+    return [c.strip() for c in chunks if c.strip()]
 
 
 def send_message(
