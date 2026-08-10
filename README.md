@@ -107,6 +107,31 @@ règle `days` (1 pour tester, 7 pour la semaine) et `dry_run` (coché = aperçu 
 les logs, décoché = publie vraiment). ⚠️ Consomme du budget twitterapi.io
 (plafonds par compte/jour intégrés).
 
+### Menu Telegram : lancer la MAJ depuis le bot (sans passer par GitHub)
+
+Tu peux déclencher le rejeu en écrivant directement au bot, en **message privé** :
+
+| Commande | Effet |
+|---|---|
+| `/maj` | republie le **dernier jour** au nouveau format |
+| `/maj 7` | republie les **7 derniers jours** (max 14) |
+| `/aide` | rappelle les commandes |
+
+Comment ça marche (sans serveur) : le workflow **« Commandes Telegram »**
+(`.github/workflows/telegram-commands.yml`) **sonde** Telegram toutes les ~5 min
+et exécute la commande. Compte donc **~5-15 min de latence** (GitHub peut retarder
+les crons courts) ; tu peux aussi lancer ce workflow à la main pour traiter tout
+de suite. Le bot t'accuse réception (« ⏳ lancé… » puis « ✅ terminé »).
+
+**Activation (une seule fois) :**
+1. Écris `/start` au bot en privé (pour qu'il puisse te répondre).
+2. Récupère ton **ID Telegram numérique** via [@userinfobot](https://t.me/userinfobot).
+3. Ajoute-le en secret du dépôt : **Settings → Secrets and variables → Actions →
+   New repository secret**, nom `TELEGRAM_AUTHORIZED_USER_ID`, valeur = ton ID.
+
+> 🔒 Sans ce secret, **aucune** commande n'est exécutée. Et seule **ta** commande
+> (ton ID) est acceptée : personne d'autre ne peut déclencher de coûts.
+
 ## Deux sorties à partir de la même collecte
 
 À chaque run, le bot produit :

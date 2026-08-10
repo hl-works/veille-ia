@@ -1,0 +1,61 @@
+name: Commandes Telegram
+
+# ─────────────────────────────────────────────────────────────
+#  « Menu Telegram » sans serveur : cette Action sonde Telegram
+#  régulièrement et réagit aux commandes que TU envoies au bot en
+#  message privé (DM) :
+#     /maj        → republie le dernier jour (nouveau format)
+#     /maj 7      → republie les 7 derniers jours
+#     /aide       → l'aide
+#
+#  Prérequis (une seule fois) :
+#   1. Écris /start au bot en DM (pour qu'il puisse te répondre).
+#   2. Ajoute le secret TELEGRAM_AUTHORIZED_USER_ID = ton ID Telegram
+#      numérique (obtenu via @userinfobot). Sans lui, aucune commande
+#      n'est exécutée (sécurité).
+#
+#  Note : GitHub peut retarder les crons courts → compte ~5-15 min de
+#  latence entre ta commande et l'exécution. Tu peux aussi déclencher
+#  ce workflow à la main (Run workflow) pour traiter tout de suite.
+# ─────────────────────────────────────────────────────────────
+on:
+  schedule:
+    - cron: "*/5 * * * *"   # toutes les ~5 min (best effort côté GitHub)
+  workflow_dispatch:
+    inputs:
+      setup_menu:
+        description: "Publier seulement le menu de commandes du bot, puis sortir"
+        type: boolean
+        default: false
+
+# Un seul poll à la fois : si un rejeu est en cours, le tick suivant attend.
+concurrency:
+  group: veille-ia-telegram
+  cancel-in-progress: false
+
+jobs:
+  listen:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le code
+        uses: actions/checkout@v5
+
+      - name: Installer Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Installer les dépendances
+        run: pip install -r requirements.txt
+
+      - name: Écouter / traiter les commandes Telegram
+        run: >-
+          python -m veille.listen
+          ${{ inputs.setup_menu && '--setup-menu' || '' }}
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          TWITTERAPI_IO_KEY: ${{ secrets.TWITTERAPI_IO_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+          TELEGRAM_AUTHORIZED_USER_ID: ${{ secrets.TELEGRAM_AUTHORIZED_USER_ID }}

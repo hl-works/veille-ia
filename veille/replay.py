@@ -31,6 +31,12 @@ from .telegram import send_message
 from .twitter import advanced_search
 
 
+# Plafonds par défaut du rejeu (réutilisés par l'écouteur de commandes Telegram).
+DEFAULT_MAX_PER_ACCOUNT = 12
+DEFAULT_MAX_PER_DAY = 400
+DEFAULT_MAX_PAGES = 4
+
+
 def _setup_logging() -> None:
     logging.basicConfig(
         level=logging.INFO,
@@ -142,9 +148,9 @@ def main() -> int:
     )
     parser.add_argument("--config", default="config.yaml")
     parser.add_argument("--days", type=int, default=1, help="Nombre de derniers jours à rejouer (défaut 1).")
-    parser.add_argument("--max-per-account", type=int, default=12, help="Quota de tweets par compte et par jour.")
-    parser.add_argument("--max-per-day", type=int, default=400, help="Garde-fou global strict par jour (budget).")
-    parser.add_argument("--max-pages", type=int, default=4, help="Pages advanced_search max par compte et par jour.")
+    parser.add_argument("--max-per-account", type=int, default=DEFAULT_MAX_PER_ACCOUNT, help="Quota de tweets par compte et par jour.")
+    parser.add_argument("--max-per-day", type=int, default=DEFAULT_MAX_PER_DAY, help="Garde-fou global strict par jour (budget).")
+    parser.add_argument("--max-pages", type=int, default=DEFAULT_MAX_PAGES, help="Pages advanced_search max par compte et par jour.")
     parser.add_argument("--dry-run", action="store_true", help="Affiche les digests sans publier sur Telegram.")
     parser.add_argument("--sleep", type=float, default=3.0, help="Pause (s) entre deux jours publiés.")
     args = parser.parse_args()
