@@ -7749,5 +7749,77 @@
     "tweet_url": "https://x.com/venturetwins/status/2085953546298822674",
     "media": true,
     "auteur_x": "@venturetwins"
+  },
+  {
+    "date": "2026-08-09",
+    "titre_fr": "Anthropic dit avoir largement neutralisé l'injection de prompt",
+    "resume_fr": "Anthropic affirme avoir entraîné ses modèles Claude à résister aux attaques par injection de prompt, où une page web piégée pousse un agent à exécuter des instructions malveillantes (ex. exfiltrer des clés ou mots de passe). Un benchmark indépendant montre de bons résultats, un point important pour la sécurité des agents en entreprise.",
+    "tags": [
+      "anthropic",
+      "agents",
+      "recherche",
+      "service-client"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/bcherny/status/2086520950259118464",
+    "media": true,
+    "auteur_x": "@bcherny"
+  },
+  {
+    "date": "2026-08-09",
+    "titre_fr": "Piratages de labos IA : les leçons à en tirer",
+    "resume_fr": "Nathan Lambert publie une analyse des récents incidents de sécurité touchant des laboratoires d'IA (dont un épisode chez OpenAI). Son constat : même quand les problèmes techniques semblent solubles, les incitations économiques font que les correctifs arrivent souvent après des dégâts sérieux.",
+    "tags": [
+      "politique-ia",
+      "recherche",
+      "openai"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/natolambert/status/2086469399905796403",
+    "media": true,
+    "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-08-09",
+    "titre_fr": "23 usages concrets d'agents IA pour faire croître une PME",
+    "resume_fr": "Greg Isenberg partage une liste d'applications pratiques d'agents IA branchés sur les outils d'une entreprise : relancer les clients perdus, réagir aux pannes d'un concurrent, prioriser les leads, automatiser le changelog ou détecter les comptes à risque de désabonnement. Un aperçu utile de ce que les agents marketing/ventes peuvent automatiser.",
+    "tags": [
+      "agents",
+      "automatisation",
+      "marketing",
+      "vente"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/gregisenberg/status/2086534549341610457",
+    "media": false,
+    "auteur_x": "@gregisenberg"
+  },
+  {
+    "date": "2026-08-10",
+    "titre_fr": "Claude Opus 5 : indices dans le prompt système",
+    "resume_fr": "Le développeur Simon Willison a repéré que le prompt système de Claude Opus 5 intègre des informations sur une situation d'export récente, afin que le modèle puisse répondre aux questions sur un sujet postérieur à sa date de coupure de connaissances. Cela confirme l'existence et le déploiement de cette nouvelle version d'Anthropic.",
+    "tags": [
+      "anthropic",
+      "modeles"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/simonw/status/2086604364656107964",
+    "media": true,
+    "auteur_x": "@simonw"
+  },
+  {
+    "date": "2026-08-10",
+    "titre_fr": "Un générateur de campagnes Google Ads dans Claude Code",
+    "resume_fr": "Un créateur a mis à disposition gratuitement un outil bâti sur Claude Code qui transforme une simple URL en campagne Google Search prête à lancer : mots-clés, groupes d'annonces, titres et descriptions calibrés aux limites de Google, liste de mots-clés négatifs et export CSV importable. Pensé pour les marques DTC et les agences.",
+    "tags": [
+      "anthropic",
+      "pub",
+      "marketing",
+      "automatisation"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/mikefutia/status/2086610982739276077",
+    "media": true,
+    "auteur_x": "@mikefutia"
   }
 ]
