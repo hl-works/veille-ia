@@ -1,0 +1,53 @@
+name: Rejeu digest Telegram
+
+# ─────────────────────────────────────────────────────────────
+#  Republie le digest Telegram (nouveau format détaillé) pour les
+#  N derniers jours — un message par jour. Déclenchement MANUEL
+#  uniquement (jamais de cron) pour éviter tout envoi surprise.
+#
+#  Onglet Actions → « Rejeu digest Telegram » → Run workflow :
+#   • days    : nombre de derniers jours à rejouer (1 = test du dernier jour)
+#   • dry_run : true = aperçu dans les logs SANS publier sur Telegram
+# ─────────────────────────────────────────────────────────────
+on:
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "Nombre de derniers jours à rejouer (ex. 1 pour tester, 7 pour la semaine)"
+        type: string
+        default: "1"
+      dry_run:
+        description: "Aperçu seul (ne publie pas sur Telegram)"
+        type: boolean
+        default: true
+
+concurrency:
+  group: veille-ia-replay
+  cancel-in-progress: false
+
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le code
+        uses: actions/checkout@v5
+
+      - name: Installer Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Installer les dépendances
+        run: pip install -r requirements.txt
+
+      - name: Rejouer les N derniers jours
+        run: >-
+          python -m veille.replay
+          --days "${{ inputs.days }}"
+          ${{ inputs.dry_run && '--dry-run' || '' }}
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          TWITTERAPI_IO_KEY: ${{ secrets.TWITTERAPI_IO_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}

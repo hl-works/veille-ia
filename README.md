@@ -15,17 +15,20 @@ Comptes Twitter/X  →  twitterapi.io  →  Claude rédige le digest  →  Teleg
 1. **Récupération** — pour chaque compte de `config.yaml`, on récupère les
    tweets des dernières 24 h via [twitterapi.io](https://twitterapi.io)
    (Twitter ayant fermé ses accès gratuits).
-2. **Filtrage** — on enlève le bruit (retweets, réponses, hors fenêtre).
+2. **Filtrage** — on enlève le bruit (retweets, réponses à d'autres comptes,
+   hors fenêtre). Les **fils d'un même auteur** (plusieurs tweets qui se suivent)
+   sont **recollés en un seul contenu** : rien du propos n'est perdu, sans pour
+   autant ramasser la conversation des autres.
 3. **Rédaction** — Claude (`claude-opus-4-8`) regroupe l'info par thème et
    rédige un digest factuel sur **deux niveaux** (mode `detaille`, par défaut) :
-   - un **survol visible** — « l'essentiel en 30 s » + une accroche d'une ligne
-     par sujet ;
+   - **« 📌 L'essentiel du jour »** — le corps visible, pensé pour **1 à 2 minutes
+     de lecture** : chaque sujet a 2 à 4 phrases directement lisibles ;
    - sous chaque sujet, un **bloc « détails » repliable** (`<blockquote
      expandable>` : le lecteur le touche pour le dérouler) qui reprend le sujet
-     **en entier et 100 % en français** — le fait complet, les chiffres, le
-     contexte, le *pourquoi c'est important*. Tout est dans le message Telegram :
-     **pas besoin d'ouvrir X**, ça marche **hors ligne**. Les liens sources
-     restent en référence, optionnels.
+     **en entier et 100 % en français** — tout le contenu (y compris les **fils**
+     complets), les chiffres, le contexte, le *pourquoi c'est important*. Tout est
+     dans le message Telegram : **pas besoin d'ouvrir X**, ça marche **hors ligne**.
+     Les liens sources restent en référence, optionnels.
 4. **Publication** — le digest est envoyé sur ton canal Telegram.
 
 > 🔎 **Digest court ou développé ?** Règle `digest_depth` dans `config.yaml` :
@@ -82,6 +85,27 @@ python -m veille.main
 
 Le mode `--dry-run` n'a même pas besoin des secrets Telegram : il affiche
 juste le digest qui *serait* publié.
+
+## Rejouer les derniers jours sur Telegram (nouveau format)
+
+Pour « rattraper » le canal avec le format détaillé sans attendre le cron, le
+module `replay` régénère un digest **par jour** sur les N derniers jours et le
+**publie en nouveaux messages** (datés, du plus ancien au plus récent). Il ne
+modifie pas les anciens messages et ne touche ni à `feed.json` ni à `seen.json`.
+
+```bash
+# Aperçu du DERNIER jour (rien n'est publié) — le test recommandé :
+python -m veille.replay --dry-run
+
+# Publier le dernier jour, puis la semaine :
+python -m veille.replay --days 1
+python -m veille.replay --days 7
+```
+
+Ou, sans terminal : onglet **Actions → « Rejeu digest Telegram » → Run workflow**,
+règle `days` (1 pour tester, 7 pour la semaine) et `dry_run` (coché = aperçu dans
+les logs, décoché = publie vraiment). ⚠️ Consomme du budget twitterapi.io
+(plafonds par compte/jour intégrés).
 
 ## Deux sorties à partir de la même collecte
 

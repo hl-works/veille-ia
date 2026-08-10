@@ -78,35 +78,43 @@ Tout doit se comprendre rien qu'en te lisant, et TOUT est rédigé en français 
 compris les blocs « détails ». Les liens X ne servent que de référence, jamais à \
 la compréhension.
 
-Le digest a DEUX niveaux : un survol visible d'un coup d'œil, et, pour chaque \
-sujet, un bloc « détails » que le lecteur touche pour le dérouler.
+Le digest a DEUX niveaux :
+- « L'ESSENTIEL » : une lecture visible et confortable d'environ 1 à 2 MINUTES \
+  (pas un simple TL;DR de 30 secondes). C'est le cœur : le lecteur doit y trouver \
+  l'info et le pourquoi, sans avoir à dérouler quoi que ce soit.
+- Les « DÉTAILS » : sous chaque sujet, un bloc repliable que le lecteur touche \
+  pour aller plus loin — la version longue et exhaustive.
 
 STRUCTURE ATTENDUE (dans cet ordre) :
 
-1. <b>⚡ L'essentiel en 30 secondes</b>
-   2 à 4 puces « • » ultra-courtes (une ligne chacune) : le TL;DR des faits majeurs.
-
-2. Le corps : 3 à 6 thèmes. Pour CHAQUE sujet marquant, écris DEUX niveaux :
-   a) une ACCROCHE visible, sur une seule ligne : « <b>🚀 Titre du sujet</b> — » \
-      suivie d'une phrase qui donne le fait principal ;
-   b) juste en dessous (retour à la ligne simple), le bloc « détails » repliable, \
-      ENTIÈREMENT EN FRANÇAIS, qui reprend le sujet EN ENTIER : le fait complet, \
-      les chiffres et détails concrets, le contexte utile, et « ce que ça change \
-      pour vous » (commerçant / PME quand c'est pertinent). Termine-le par la ou \
-      les source(s). Format EXACT du bloc :
-      <blockquote expandable>🔎 <b>En détail —</b> …4 à 8 phrases développées… \
+1. <b>📌 L'essentiel du jour</b>
+   Le corps principal, pensé pour 1 à 2 minutes de lecture. Regroupe l'info en \
+   3 à 6 thèmes. Pour CHAQUE sujet marquant :
+   a) un titre de section en <b>gras</b> précédé d'un emoji pertinent ;
+   b) 2 à 4 phrases VISIBLES (pas repliées) qui donnent vraiment l'info : quoi, \
+      les éléments clés, et pourquoi ça compte. C'est lisible directement, sans \
+      rien ouvrir. Reste clair et sans jargon.
+   c) JUSTE en dessous (retour à la ligne simple), un bloc « détails » repliable, \
+      ENTIÈREMENT EN FRANÇAIS, qui reprend le sujet EN ENTIER pour qui veut creuser : \
+      tout le contenu (surtout si la source est un FIL de plusieurs tweets du même \
+      auteur — reprends alors TOUT le propos, pas seulement le début), les chiffres \
+      et détails, le contexte, et « ce que ça change pour vous » (commerçant / PME \
+      quand c'est pertinent). Termine par la ou les source(s). Format EXACT du bloc :
+      <blockquote expandable>🔎 <b>Pour aller plus loin —</b> …6 à 12 phrases…  \
 Source : <a href="URL">@compte</a></blockquote>
 
-3. <b>✨ La phrase du jour</b> (optionnel) : une idée forte reformulée, si un \
+2. <b>✨ La phrase du jour</b> (optionnel) : une idée forte reformulée, si un \
    tweet s'y prête vraiment.
 
 RÈGLES DE MISE EN FORME :
-- Sépare chaque sujet par une LIGNE VIDE. À l'intérieur d'un sujet (accroche + \
-  bloc détails), n'utilise que des retours à la ligne SIMPLES, pas de ligne vide.
-- Ne mets PAS de blockquote autour de « l'essentiel » ni des accroches : le bloc \
-  repliable est réservé aux détails d'un sujet.
-- Garde chaque bloc « détails » autonome et raisonnable (≈ 4 à 8 phrases) : mieux \
-  vaut 4 sujets bien traités que 8 survolés.\
+- Sépare chaque sujet par une LIGNE VIDE. À l'intérieur d'un sujet (essentiel \
+  visible + bloc détails), n'utilise que des retours à la ligne SIMPLES.
+- Ne mets PAS de blockquote autour du texte visible : le bloc repliable est \
+  réservé aux « détails » d'un sujet.
+- Le texte VISIBLE (« l'essentiel ») doit se suffire à lui-même. Le bloc \
+  « détails » est un bonus de profondeur — jamais indispensable, jamais une \
+  simple répétition : il apporte réellement plus (le fil complet, les chiffres, \
+  les implications).\
 """
 
 # ── Corps « essentiel » : survol rapide à l'ancienne ─────────────────────────
@@ -132,26 +140,30 @@ def _tweets_to_text(tweets: list[Tweet]) -> str:
     for i, tw in enumerate(tweets, 1):
         date = tw.created_at.strftime("%Y-%m-%d %H:%M") if tw.created_at else "date inconnue"
         media = " [média]" if tw.has_media else ""
+        # On signale les fils recollés : Claude sait que le texte contient TOUT
+        # le propos (plusieurs tweets du même auteur) et doit le restituer en entier.
+        thread = f" [FIL de {tw.thread_parts} tweets du même auteur]" if getattr(tw, "is_thread", False) else ""
         lines.append(
             f"[{i}] @{tw.author} ({date}) — {tw.like_count} likes, "
-            f"{tw.retweet_count} RT{media}\n"
+            f"{tw.retweet_count} RT{media}{thread}\n"
             f"{tw.text}\n"
             f"URL : {tw.url}"
         )
     return "\n\n".join(lines)
 
 
-def build_digest(tweets: list[Tweet], settings) -> str:
-    """Appelle Claude et renvoie le texte HTML du digest."""
+def build_digest(tweets: list[Tweet], settings, *, for_date: datetime | None = None) -> str:
+    """Appelle Claude et renvoie le texte HTML du digest. `for_date` permet de
+    dater le digest d'un jour passé (rejeu multi-jours) ; défaut = aujourd'hui."""
     client = anthropic.Anthropic(api_key=settings.anthropic_api_key)
 
     depth = getattr(settings, "digest_depth", "detaille")
     system_prompt = _system_prompt(depth)
 
-    today = datetime.now(timezone.utc).strftime("%d/%m/%Y")
+    day = (for_date or datetime.now(timezone.utc)).strftime("%d/%m/%Y")
     user_content = (
-        f"Voici les tweets récents (langue du digest : {settings.language}). "
-        f"Rédige le digest du {today}.\n\n"
+        f"Voici les tweets (langue du digest : {settings.language}). "
+        f"Rédige le digest du {day}.\n\n"
         f"{_tweets_to_text(tweets)}"
     )
 

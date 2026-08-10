@@ -39,6 +39,13 @@ class Tweet:
     is_retweet: bool = False
     is_reply: bool = False
     has_media: bool = False
+    # Chaînage de fil : à quel tweet (et quel compte) celui-ci répond. Sert à
+    # recoller les FILS d'un même auteur (self-thread) sans ramasser la conv.
+    reply_to_tweet_id: str | None = None
+    reply_to_user: str | None = None
+    # Rempli quand plusieurs tweets d'un même auteur ont été recollés en un seul.
+    is_thread: bool = False
+    thread_parts: int = 1
 
 
 def _parse_date(value) -> datetime | None:
@@ -136,10 +143,21 @@ def _normalize(raw: dict, fallback_author: str) -> Tweet | None:
         or raw.get("isRetweet")
         or str(text).startswith("RT @")
     )
+
+    # À quel tweet celui-ci répond (parent direct) et à quel compte.
+    reply_to_tweet_id = raw.get("inReplyToId") or raw.get("in_reply_to_status_id") \
+        or raw.get("in_reply_to_status_id_str")
+    reply_to_tweet_id = str(reply_to_tweet_id) if reply_to_tweet_id else None
+    reply_to_user = (
+        raw.get("inReplyToUsername")
+        or raw.get("in_reply_to_screen_name")
+        or raw.get("inReplyToUserName")
+    )
+    reply_to_user = str(reply_to_user).lstrip("@") if reply_to_user else None
+
     is_reply = bool(
         raw.get("isReply")
-        or raw.get("in_reply_to_status_id")
-        or raw.get("inReplyToId")
+        or reply_to_tweet_id
         or raw.get("replyTo")
     )
 
@@ -154,6 +172,8 @@ def _normalize(raw: dict, fallback_author: str) -> Tweet | None:
         is_retweet=is_retweet,
         is_reply=is_reply,
         has_media=_detect_media(raw),
+        reply_to_tweet_id=reply_to_tweet_id,
+        reply_to_user=reply_to_user,
     )
 
 
@@ -171,6 +191,79 @@ def _detect_media(raw: dict) -> bool:
         if val:  # liste/objet non vide
             return True
     return False
+
+
+def _stitch_threads(tweets: list[Tweet]) -> list[Tweet]:
+    """Recolle les FILS d'un même auteur : quand un compte poste plusieurs tweets
+    qui se répondent à eux-mêmes (self-thread / tweetstorm), on fusionne tout le
+    contenu en UNE seule entrée (au tweet racine), pour ne rien perdre du propos.
+
+    On ne touche PAS aux réponses adressées à d'autres comptes (la « conv ») :
+    comme la liste passée ici ne contient que les tweets d'UN auteur, un lien de
+    réponse dont la cible est dans la liste = forcément une suite du même auteur.
+    """
+    by_id = {t.id: t for t in tweets if t.id}
+    children_of: dict[str, list[Tweet]] = {}
+    child_ids: set[str] = set()
+    for t in tweets:
+        parent = t.reply_to_tweet_id
+        if parent and parent in by_id and parent != t.id:
+            children_of.setdefault(parent, []).append(t)
+            child_ids.add(t.id)
+
+    if not child_ids:  # aucun fil : rien à faire
+        return tweets
+
+    def _newest(t: Tweet) -> datetime:
+        return t.created_at or datetime.min.replace(tzinfo=timezone.utc)
+
+    result: list[Tweet] = []
+    for t in tweets:
+        if t.id in child_ids:
+            continue  # sera fusionné dans sa racine
+        # Rassemble la racine + tous ses descendants (fil linéaire ou ramifié).
+        chain: list[Tweet] = []
+        stack = [t]
+        seen: set[str] = set()
+        while stack:
+            node = stack.pop()
+            if node.id in seen:
+                continue
+            seen.add(node.id)
+            chain.append(node)
+            stack.extend(children_of.get(node.id, []))
+        if len(chain) == 1:
+            result.append(t)
+            continue
+        chain.sort(key=_newest)  # ordre chronologique de lecture du fil
+        result.append(_merge_chain(chain))
+    return result
+
+
+def _merge_chain(chain: list[Tweet]) -> Tweet:
+    """Fusionne un fil (déjà trié) en un seul Tweet, ancré sur le tweet racine."""
+    root = chain[0]
+    combined = "\n\n".join(p.text for p in chain if p.text)
+    latest = max(
+        (p.created_at for p in chain if p.created_at),
+        default=root.created_at,
+    )
+    return Tweet(
+        id=root.id,
+        author=root.author,
+        text=combined,
+        url=root.url,
+        created_at=latest,  # activité la plus récente du fil (pour la fenêtre)
+        like_count=max((p.like_count for p in chain), default=0),
+        retweet_count=max((p.retweet_count for p in chain), default=0),
+        is_retweet=False,
+        is_reply=False,  # une fois recollé, le fil est un contenu autonome
+        has_media=any(p.has_media for p in chain),
+        reply_to_tweet_id=root.reply_to_tweet_id,
+        reply_to_user=root.reply_to_user,
+        is_thread=True,
+        thread_parts=len(chain),
+    )
 
 
 def fetch_user_tweets(username: str, api_key: str, *, timeout: int = 30) -> list[Tweet]:
@@ -197,7 +290,12 @@ def fetch_user_tweets(username: str, api_key: str, *, timeout: int = 30) -> list
 
     raw_tweets = _extract_tweet_list(payload)
     tweets = [t for t in (_normalize(r, username) for r in raw_tweets) if t and t.text]
-    log.info("@%s : %d tweets récupérés", username, len(tweets))
+    tweets = _stitch_threads(tweets)  # recolle les fils du même auteur
+    threads = sum(1 for t in tweets if t.is_thread)
+    log.info(
+        "@%s : %d tweets récupérés%s", username, len(tweets),
+        f" (dont {threads} fil(s) recollé(s))" if threads else "",
+    )
     return tweets
 
 
@@ -278,10 +376,11 @@ def advanced_search(
 
         query = f"from:{account} since:{since_str} until:{until_str}"
         cursor = ""
-        kept_this_account = 0
+        # On collecte d'abord TOUT le brut du compte (self-replies compris) pour
+        # pouvoir recoller les fils AVANT de filtrer les réponses. Sinon les
+        # suites d'un thread (qui sont des self-replies) seraient jetées.
+        raw_account: list[Tweet] = []
         for _ in range(max_pages_per_account):
-            if kept_this_account >= max_per_account or len(collected) >= max_total:
-                break
             params = {"query": query, "queryType": "Latest"}
             if cursor:
                 params["cursor"] = cursor
@@ -298,29 +397,38 @@ def advanced_search(
                 log.error("advanced_search @%s : %s", account, exc)
                 break
 
-            raw_tweets = _extract_tweet_list(payload)
-            for r in raw_tweets:
-                if kept_this_account >= max_per_account or len(collected) >= max_total:
-                    break
+            for r in _extract_tweet_list(payload):
                 tw = _normalize(r, account)
-                if not tw or not tw.text or not tw.id:
-                    continue
-                if not include_retweets and tw.is_retweet:
-                    continue
-                if not include_replies and tw.is_reply:
-                    continue
-                if tw.id in seen_ids:
-                    continue
-                seen_ids.add(tw.id)
-                collected.append(tw)
-                kept_this_account += 1
+                if tw and tw.text and tw.id:
+                    raw_account.append(tw)
 
             # Pagination : has_next_page / next_cursor
             if not payload.get("has_next_page") or not payload.get("next_cursor"):
                 break
             cursor = payload["next_cursor"]
 
-        log.info("Backfill @%s : %d tweets (total %d)", account, kept_this_account, len(collected))
+        # Recolle les fils du compte, puis filtre (retweets/réponses/dédup) et
+        # applique le quota par compte.
+        kept_this_account = 0
+        for tw in _stitch_threads(raw_account):
+            if kept_this_account >= max_per_account or len(collected) >= max_total:
+                break
+            if not include_retweets and tw.is_retweet:
+                continue
+            if not include_replies and tw.is_reply:
+                continue
+            if tw.id in seen_ids:
+                continue
+            seen_ids.add(tw.id)
+            collected.append(tw)
+            kept_this_account += 1
+
+        threads = sum(1 for t in collected[len(collected) - kept_this_account:] if t.is_thread)
+        log.info(
+            "Backfill @%s : %d tweets%s (total %d)",
+            account, kept_this_account,
+            f" (dont {threads} fil(s))" if threads else "", len(collected),
+        )
 
     collected.sort(key=lambda t: t.created_at or datetime.min.replace(tzinfo=timezone.utc))
     log.info(
