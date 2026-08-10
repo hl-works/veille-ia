@@ -20,8 +20,9 @@ import requests
 log = logging.getLogger(__name__)
 
 TELEGRAM_MAX_LEN = 4096
-# On garde une marge sous la limite stricte pour être tranquille.
-CHUNK_LIMIT = 3900
+# On garde une marge sous la limite stricte (4096) pour rester tranquille, même
+# après ajout du petit repère « (i/n) » sur les messages découpés.
+CHUNK_LIMIT = 4000
 
 
 def _top_level_blocks(text: str) -> list[str]:
@@ -122,14 +123,19 @@ def send_message(
     chat_id: str,
     timeout: int = 30,
 ) -> None:
-    """Envoie `text` sur le chat/canal Telegram, en plusieurs messages si besoin."""
+    """Envoie `text` sur le chat/canal Telegram, en plusieurs messages si besoin.
+    Quand le texte dépasse la limite Telegram (4096 car.) et se découpe, on ajoute
+    un repère « (i/n) » en tête de chaque message pour montrer que c'est une suite."""
     url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
     chunks = _split_message(text)
+    total = len(chunks)
 
     for i, chunk in enumerate(chunks, 1):
-        _send_chunk(url, chat_id, chunk, index=i, total=len(chunks), timeout=timeout)
-        log.info("Message Telegram envoyé (%d/%d).", i, len(chunks))
-        if i < len(chunks):
+        # Repère de pagination seulement s'il y a plusieurs messages.
+        body = f"<i>({i}/{total})</i>\n{chunk}" if total > 1 else chunk
+        _send_chunk(url, chat_id, body, index=i, total=total, timeout=timeout)
+        log.info("Message Telegram envoyé (%d/%d).", i, total)
+        if i < total:
             time.sleep(1)  # petite pause pour rester sous les limites de débit
 
 
