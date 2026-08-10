@@ -17,8 +17,15 @@ Comptes Twitter/X  →  twitterapi.io  →  Claude rédige le digest  →  Teleg
    (Twitter ayant fermé ses accès gratuits).
 2. **Filtrage** — on enlève le bruit (retweets, réponses, hors fenêtre).
 3. **Rédaction** — Claude (`claude-opus-4-8`) regroupe l'info par thème et
-   rédige un digest court, factuel, avec les liens des tweets sources.
+   rédige un digest factuel. Par défaut il est **développé** : pensé pour être
+   lu **sans ouvrir aucun lien** (idéal hors ligne), avec un « l'essentiel en
+   30 s » en tête puis chaque sujet expliqué à fond (le fait, les détails, le
+   *pourquoi c'est important*). Les liens sources restent présents mais optionnels.
 4. **Publication** — le digest est envoyé sur ton canal Telegram.
+
+> 🔎 **Digest court ou développé ?** Règle `digest_depth` dans `config.yaml` :
+> `detaille` (défaut, lecture autonome hors ligne) ou `essentiel` (survol
+> rapide, moins de tokens).
 
 ## Mise en route
 
@@ -155,6 +162,7 @@ veille-ia/
 | `max_tweets_per_account` | Plafond de tweets récupérés par compte. |
 | `include_retweets` / `include_replies` | Inclure ou non retweets/réponses. |
 | `model` | Modèle Claude (`claude-opus-4-8`, ou `claude-sonnet-4-6` pour réduire le coût). |
+| `digest_depth` | `detaille` (défaut, lecture autonome hors ligne) ou `essentiel` (survol court). |
 | `send_when_empty` | Publier un message même sans actu. |
 
 ## Coûts

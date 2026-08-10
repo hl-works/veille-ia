@@ -1,7 +1,12 @@
 """Rédaction du digest par Claude.
 
 On donne à Claude la liste des tweets récents et on lui demande un digest
-court, regroupé par thème, prêt à publier sur Telegram (HTML compatible).
+regroupé par thème, prêt à publier sur Telegram (HTML compatible).
+
+Deux profondeurs possibles (réglage `digest_depth` dans config.yaml) :
+- « detaille » (défaut) : digest DÉVELOPPÉ, pensé pour une lecture 100 % autonome
+  (hors ligne, sans ouvrir aucun lien). Chaque info marquante est expliquée à fond.
+- « essentiel » : digest court à l'ancienne (survol rapide).
 """
 
 from __future__ import annotations
@@ -15,15 +20,14 @@ from .twitter import Tweet
 
 log = logging.getLogger(__name__)
 
-# Système figé → mis en cache (prompt caching). On y met les consignes stables ;
-# les tweets du jour (volatils) vont dans le message utilisateur.
-SYSTEM_PROMPT = """\
+# ── Consignes communes aux deux modes (format + fond + copyright) ────────────
+_COMMON_RULES = """\
 Tu es le rédacteur d'une veille quotidienne sur l'intelligence artificielle, \
 publiée sur un canal Telegram destiné à un public curieux mais non technique \
 (commerçants, dirigeants de PME, indépendants).
 
 À partir d'une liste de tweets récents de comptes de référence sur l'IA, \
-rédige un digest clair et synthétique.
+rédige un digest clair et fiable.
 
 RÈGLES DE FOND :
 - Ne retiens QUE les informations vraiment fortes : lancements de modèles ou \
@@ -31,12 +35,14 @@ de produits, mises à jour majeures, annonces importantes, débats marquants. \
 Ignore sans pitié le bavardage, l'autopromotion, les opinions mineures, les \
 détails techniques anecdotiques.
 - Regroupe l'info par thème (ex. nouveaux modèles, annonces produit, IA pour \
-les entreprises, débats), pas compte par compte.
-- Sois factuel et neutre. Ne invente RIEN : si une info n'est pas dans les \
-tweets, ne l'ajoute pas. Pas de chiffres ni de dates inventés.
-- Explique simplement, sans jargon inutile. Si un terme technique est \
-indispensable, glisse une courte explication.
-- Vise la concision : 3 à 6 thèmes maximum, quelques lignes chacun.
+les entreprises, débats), jamais compte par compte.
+- Sois factuel et neutre. N'invente RIEN : si une info (chiffre, date, prix, \
+nom) n'est pas dans les tweets, ne l'écris pas. Tu peux rappeler un contexte \
+largement connu pour éclairer, mais sans affirmer de fait nouveau absent des tweets.
+- Couvre tous les acteurs de la même façon (OpenAI, Google, Mistral, Meta, xAI, \
+Anthropic…), y compris quand l'info n'est pas flatteuse pour l'un d'eux.
+- Explique simplement. Si un terme technique est indispensable, glisse une \
+courte définition entre parenthèses.
 
 CAS « JOURNÉE CALME » :
 - Si rien ne mérite vraiment d'être signalé (que du bruit, des broutilles), ne \
@@ -46,14 +52,65 @@ dernières 24 h. Bonne journée ! » (adapte la formulation). Toujours en HTML T
 
 FORMAT DE SORTIE (HTML compatible Telegram, UNIQUEMENT ces balises) :
 - <b>gras</b> pour les titres de section, <i>italique</i> pour les nuances.
-- <a href="URL">texte</a> pour les liens. Mets le lien du tweet source sur \
-chaque info importante, en utilisant l'URL fournie.
-- Pas de <ul>/<li>/<h1> (non supportés). Utilise des puces « • » en début de ligne.
-- Pas de bloc de code, pas de Markdown.
+- <a href="URL">texte</a> pour les liens. Utilise TOUJOURS l'URL exacte fournie \
+avec le tweet (ne fabrique jamais d'URL).
+- Pas de <ul>/<li>/<h1>/<h2> (non supportés). Utilise des puces « • » en début de ligne.
+- Pas de bloc de code, pas de Markdown (ni #, ni **, ni []()).
+
+RÈGLE COPYRIGHT (DURE) :
+- Ne recopie JAMAIS un tweet mot pour mot. Tout ce que tu écris est TA \
+reformulation / traduction française. Le lien source sert de référence, pas de \
+copier-coller.
 
 Réponds UNIQUEMENT avec le digest. Aucun préambule, aucune phrase du type \
 « Voici le digest ». Commence directement par le contenu.\
 """
+
+# ── Corps « détaillé » : lecture autonome, hors ligne ────────────────────────
+_DETAILED_BODY = """\
+
+OBJECTIF CLÉ — LECTURE AUTONOME (TRÈS IMPORTANT) :
+Le lecteur consulte souvent ce digest HORS LIGNE et n'ouvrira AUCUN lien. Il doit \
+donc tout comprendre rien qu'en te lisant. Chaque info marquante est DÉVELOPPÉE : \
+le fait précis, les détails/chiffres qui comptent, et surtout le « pourquoi c'est \
+important » (concrètement, pour un commerçant / une PME quand c'est pertinent). \
+Les liens restent présents mais 100 % optionnels — jamais nécessaires à la compréhension.
+
+STRUCTURE ATTENDUE (dans cet ordre) :
+1. <b>⚡ L'essentiel en 30 secondes</b>
+   2 à 4 puces « • » ultra-courtes (une ligne chacune) : le TL;DR des faits majeurs du jour.
+
+2. Le corps, regroupé en 3 à 6 thèmes. Pour CHAQUE sujet marquant :
+   • un titre de section en <b>gras</b> précédé d'un emoji pertinent ;
+   • 2 à 5 phrases DÉVELOPPÉES : quoi exactement, les détails concrets (ce qui \
+     est nouveau, ce que ça remplace, à qui ça s'adresse), et l'implication réelle \
+     (« ce que ça change pour vous ») ;
+   • si utile, une micro-définition d'un terme technique entre parenthèses ;
+   • termine par la source, discrète, en fin de bloc : <a href="URL">source</a> \
+     (tu peux préciser le compte, ex. « source : @OpenAI »). Regroupe plusieurs \
+     sources si le sujet en combine (ex. <a href="U1">annonce</a> · <a href="U2">détails</a>).
+
+3. <b>✨ La phrase du jour</b> (optionnel) : une idée forte ou une prise de recul \
+   reformulée à partir d'un tweet, seulement si un tweet s'y prête vraiment.
+
+Vise un digest riche mais digeste. Mieux vaut 4 sujets bien expliqués que 8 survolés.\
+"""
+
+# ── Corps « essentiel » : survol rapide à l'ancienne ─────────────────────────
+_CONCISE_BODY = """\
+
+STRUCTURE ATTENDUE :
+- Regroupe l'info par thème. 3 à 6 thèmes maximum, quelques lignes chacun.
+- Titres de section en <b>gras</b>, puces « • ».
+- Mets le lien du tweet source sur chaque info importante.
+- Vise la concision : un survol rapide, pas un dossier de fond.\
+"""
+
+
+def _system_prompt(depth: str) -> str:
+    """Assemble le prompt système selon la profondeur voulue."""
+    body = _CONCISE_BODY if depth == "essentiel" else _DETAILED_BODY
+    return _COMMON_RULES + "\n" + body
 
 
 def _tweets_to_text(tweets: list[Tweet]) -> str:
@@ -61,9 +118,10 @@ def _tweets_to_text(tweets: list[Tweet]) -> str:
     lines: list[str] = []
     for i, tw in enumerate(tweets, 1):
         date = tw.created_at.strftime("%Y-%m-%d %H:%M") if tw.created_at else "date inconnue"
+        media = " [média]" if tw.has_media else ""
         lines.append(
             f"[{i}] @{tw.author} ({date}) — {tw.like_count} likes, "
-            f"{tw.retweet_count} RT\n"
+            f"{tw.retweet_count} RT{media}\n"
             f"{tw.text}\n"
             f"URL : {tw.url}"
         )
@@ -74,6 +132,9 @@ def build_digest(tweets: list[Tweet], settings) -> str:
     """Appelle Claude et renvoie le texte HTML du digest."""
     client = anthropic.Anthropic(api_key=settings.anthropic_api_key)
 
+    depth = getattr(settings, "digest_depth", "detaille")
+    system_prompt = _system_prompt(depth)
+
     today = datetime.now(timezone.utc).strftime("%d/%m/%Y")
     user_content = (
         f"Voici les tweets récents (langue du digest : {settings.language}). "
@@ -81,17 +142,23 @@ def build_digest(tweets: list[Tweet], settings) -> str:
         f"{_tweets_to_text(tweets)}"
     )
 
-    log.info("Rédaction du digest avec %s (%d tweets en entrée)…", settings.model, len(tweets))
+    # Le mode détaillé produit un texte plus long → on desserre le plafond de sortie.
+    max_tokens = 8000 if depth == "essentiel" else 14000
+
+    log.info(
+        "Rédaction du digest (%s, mode « %s ») — %d tweets en entrée…",
+        settings.model, depth, len(tweets),
+    )
 
     response = client.messages.create(
         model=settings.model,
-        max_tokens=8000,
+        max_tokens=max_tokens,
         thinking={"type": "adaptive"},
         output_config={"effort": "medium"},
         system=[
             {
                 "type": "text",
-                "text": SYSTEM_PROMPT,
+                "text": system_prompt,
                 "cache_control": {"type": "ephemeral"},
             }
         ],

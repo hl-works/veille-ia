@@ -6,10 +6,14 @@
 # ── Comptes Twitter / X à suivre ──────────────────────────────
 #  Mets le nom du compte SANS le @ (un par ligne, précédé d'un tiret).
 #  Tu peux en ajouter/retirer autant que tu veux.
+#  🆕 Les comptes marqués « [nouveau] » ont été ajoutés lors de la dernière
+#  passe « stars & montantes » (agents IA · IA générale · vue commerce).
+#  Retire ceux qui ne t'intéressent pas : chaque compte est facturé à chaque run.
 accounts:
   # — Labs & produits IA —
   - perplexity_ai      # Perplexity
   - AskPerplexity      # Perplexity (compte produit)
+  - AravSrinivas       # [nouveau] Aravind Srinivas — CEO Perplexity (star montante)
   - AnthropicAI        # Anthropic
   - claudeai           # Claude (l'assistant d'Anthropic)
   - GoogleAI           # Google AI
@@ -18,6 +22,8 @@ accounts:
   - MistralAI          # Mistral AI
   - xai                # xAI / Grok
   - stitchbygoogle     # Stitch by Google (génération d'UI)
+  - huggingface        # [nouveau] Hugging Face — le hub des modèles open-source
+  - thinkymachines     # [nouveau] Thinking Machines Lab — nouveau labo (Mira Murati)
 
   # — Chercheurs & figures de l'IA —
   - karpathy           # Andrej Karpathy
@@ -36,12 +42,19 @@ accounts:
   - GaryMarcus         # Gary Marcus (regard critique sur l'IA générative)
   - ylecun             # Yann LeCun (Turing Award, ex-Meta)
   - RamaswmySridhar    # Sridhar Ramaswamy (CEO Snowflake)
+  - demishassabis      # [nouveau] Demis Hassabis — CEO Google DeepMind (Nobel/Turing)
+  - JeffDean           # [nouveau] Jeff Dean — Chief Scientist Google
+  - AndrewYNg          # [nouveau] Andrew Ng — DeepLearning.AI, la pédagogie IA
+  - mustafasuleyman    # [nouveau] Mustafa Suleyman — CEO Microsoft AI
+  - miramurati         # [nouveau] Mira Murati — ex-CTO OpenAI, fondatrice Thinking Machines
 
   # — Investisseurs & écosystème —
   - venturetwins       # Justine Moore (a16z)
   - saranormous        # Sarah Guo (Conviction)
   - ycombinator        # Y Combinator
   - garrytan           # Garry Tan (CEO Y Combinator)
+  - a16z               # [nouveau] Andreessen Horowitz — le fonds (thèses IA)
+  - swyx               # [nouveau] Shawn Wang — « AI Engineer », Latent Space
 
   # — Builders / Claude Code / agents —
   - AlexReibman        # Alex Reibman (AgentOps)
@@ -52,6 +65,12 @@ accounts:
   - OfficialLoganK     # Logan Kilpatrick (Gemini, Google)
   - openclaw           # OpenClaw (agent IA : emails, agenda, domotique)
   - cursor_ai          # Cursor (éditeur de code IA)
+  - hwchase17          # [nouveau] Harrison Chase — CEO LangChain (frameworks d'agents)
+  - LangChainAI        # [nouveau] LangChain — l'un des standards des agents IA
+  - jerryjliu0         # [nouveau] Jerry Liu — CEO LlamaIndex (RAG / agents sur tes données)
+  - amasad             # [nouveau] Amjad Masad — CEO Replit (créer des apps par IA)
+  - rauchg             # [nouveau] Guillermo Rauch — CEO Vercel (v0, génération d'apps)
+  - mckaywrigley       # [nouveau] Mckay Wrigley — builder IA, démos & tutos d'agents
 
   # — IA × business / Shopify / e-commerce —
   - mikefutia          # Mike Futia (IA pour pub & e-commerce)
@@ -61,6 +80,10 @@ accounts:
   - coreyganim         # Corey Ganim (IA pour entrepreneurs non-tech)
   - gregisenberg       # Greg Isenberg (idées startup × IA)
   - rowancheung        # Rowan Cheung (actu IA synthétique, grand public)
+  - tobi               # [nouveau] Tobi Lütke — CEO Shopify (IA × e-commerce, au sommet)
+  - dharmesh           # [nouveau] Dharmesh Shah — CTO HubSpot, fondateur agent.ai
+  - rileybrown_ai      # [nouveau] Riley Brown — IA pour non-tech, « vibe coding » d'apps
+  - shl                # [nouveau] Sahil Lavingia — Gumroad, IA pour créateurs/indés
 
 # ── Fenêtre de récupération ───────────────────────────────────
 #  On ne garde que les tweets publiés dans les N dernières heures.
@@ -79,6 +102,13 @@ include_replies: false    # ignorer les réponses à d'autres tweets
 #  qualitatif. Pour réduire le coût, tu peux mettre claude-sonnet-4-6.
 model: claude-opus-4-8
 language: français
+
+#  Profondeur du digest Telegram :
+#   • detaille  (défaut) → digest DÉVELOPPÉ, pensé pour être lu SANS ouvrir les
+#                liens (parfait hors ligne) : « l'essentiel en 30 s » + chaque
+#                sujet expliqué à fond (le fait, les détails, le pourquoi).
+#   • essentiel → digest court à l'ancienne (survol rapide, moins de tokens).
+digest_depth: detaille
 
 # ── Comportement ──────────────────────────────────────────────
 #  Publier un message même quand il n'y a aucune actu ?

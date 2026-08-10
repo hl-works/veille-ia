@@ -23,6 +23,9 @@ class Settings:
     model: str = "claude-opus-4-8"
     language: str = "français"
     send_when_empty: bool = False
+    # Profondeur du digest Telegram : « detaille » (développé, lecture hors ligne)
+    # ou « essentiel » (survol court à l'ancienne).
+    digest_depth: str = "detaille"
     feed_path: str = "feed.json"
     seen_path: str = "seen.json"
 
@@ -38,9 +41,11 @@ class Settings:
         Sinon on saute la publication Telegram sans planter."""
         return bool(self.telegram_bot_token and self.telegram_chat_id)
 
-    def require_secrets(self) -> None:
+    def require_secrets(self, need_telegram: bool = False) -> None:
         """Vérifie les secrets INDISPENSABLES (collecte + rédaction). Telegram
-        est optionnel et géré séparément via `telegram_ready`."""
+        est optionnel et géré séparément via `telegram_ready` ; le paramètre
+        `need_telegram` est accepté (compat backfill) mais Telegram n'est jamais
+        bloquant ici."""
         missing: list[str] = []
         if not self.anthropic_api_key:
             missing.append("ANTHROPIC_API_KEY")
@@ -68,8 +73,14 @@ def load_settings(config_path: str | Path = "config.yaml") -> Settings:
     raw = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
 
     accounts = raw.get("accounts") or []
-    # Nettoyage : retire les @ et les espaces éventuels
-    accounts = [str(a).strip().lstrip("@") for a in accounts if str(a).strip()]
+    # Nettoyage : retire les @ et les espaces éventuels, et dédoublonne en
+    # gardant l'ordre (un doublon = un compte facturé deux fois pour rien).
+    cleaned = [str(a).strip().lstrip("@") for a in accounts if str(a).strip()]
+    accounts = list(dict.fromkeys(cleaned))
+
+    # Profondeur du digest : on tolère quelques variantes d'écriture.
+    depth = str(raw.get("digest_depth", "detaille")).strip().lower()
+    depth = "essentiel" if depth in {"essentiel", "court", "concis"} else "detaille"
 
     return Settings(
         accounts=accounts,
@@ -80,6 +91,7 @@ def load_settings(config_path: str | Path = "config.yaml") -> Settings:
         model=str(raw.get("model", "claude-opus-4-8")),
         language=str(raw.get("language", "français")),
         send_when_empty=bool(raw.get("send_when_empty", False)),
+        digest_depth=depth,
         feed_path=str(raw.get("feed_path", "feed.json")),
         seen_path=str(raw.get("seen_path", "seen.json")),
         anthropic_api_key=os.environ.get("ANTHROPIC_API_KEY", ""),
