@@ -7821,5 +7821,116 @@
     "tweet_url": "https://x.com/mikefutia/status/2086610982739276077",
     "media": true,
     "auteur_x": "@mikefutia"
+  },
+  {
+    "date": "2026-08-10",
+    "titre_fr": "Microsoft place MAI-Image-2.6 au 2e rang mondial en génération d'images",
+    "resume_fr": "Microsoft annonce que son modèle texte-vers-image MAI-Image-2.6 se classe deuxième au classement Arena, devançant notamment Nano Banana, le modèle de Meta et Grok. Il est accessible pour test sur Arena.",
+    "tags": [
+      "produit",
+      "modeles",
+      "marketing"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/mustafasuleyman/status/2086944832258236781",
+    "media": false,
+    "auteur_x": "@mustafasuleyman"
+  },
+  {
+    "date": "2026-08-10",
+    "titre_fr": "OpenAI dévoile GPT-5.6-Cyber pour la cybersécurité défensive",
+    "resume_fr": "OpenAI élargit son initiative Daybreak et lance GPT-5.6-Cyber, un modèle dédié au travail de cybersécurité autorisé. L'objectif affiché est de fournir des capacités avancées aux défenseurs avant que les attaquants ne déploient l'IA offensive à grande échelle.",
+    "tags": [
+      "openai",
+      "modeles",
+      "politique-ia"
+    ],
+    "score": 63,
+    "tweet_url": "https://x.com/OpenAI/status/2086864365379010729",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-08-10",
+    "titre_fr": "Anthropic rend permanent le prix réduit de Claude Sonnet 5",
+    "resume_fr": "Anthropic annonce que le tarif de lancement de Claude Sonnet 5 (2 $ par million de tokens en entrée, 10 $ en sortie), initialement prévu jusqu'au 31 août, devient permanent.",
+    "tags": [
+      "anthropic",
+      "produit"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/claudeai/status/2086891169217122586",
+    "media": false,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-08-10",
+    "titre_fr": "Une version de recherche de Claude progresse sur l'hypothèse de Riemann",
+    "resume_fr": "Anthropic indique qu'une version non publiée de Claude n'a pas résolu l'hypothèse de Riemann mais a fait avancer un problème lié, en relevant la borne inférieure de la fraction de zéros vérifiant l'hypothèse de 41,6 % à 67,2 %. Des observateurs relativisent la nouveauté du résultat.",
+    "tags": [
+      "anthropic",
+      "recherche"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/AnthropicAI/status/2086867246073401655",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-08-10",
+    "titre_fr": "Cloudflare permet de facturer l'accès des agents IA aux sites web",
+    "resume_fr": "Cloudflare rend possible de faire payer les agents IA pour accéder à un site, une brique vers un web où les agents deviennent des clients qui paient pour utiliser des ressources en ligne. Un changement potentiellement structurant pour les éditeurs et commerçants en ligne.",
+    "tags": [
+      "produit",
+      "agents",
+      "paiement",
+      "commerce"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/gregisenberg/status/2086881493641568698",
+    "media": true,
+    "auteur_x": "@gregisenberg"
+  },
+  {
+    "date": "2026-08-10",
+    "titre_fr": "Les agents de « computer use » passent du démo au déployable",
+    "resume_fr": "Selon des données compilées par a16z, le meilleur modèle d'agent pilotant un ordinateur est passé de 42 % à 85 % sur le benchmark de référence en un an, dépassant le score humain d'environ 72 %. Une heure d'agent (6-8 $) devient parfois moins chère qu'une heure de travail humain externalisé.",
+    "tags": [
+      "agents",
+      "automatisation",
+      "recherche"
+    ],
+    "score": 57,
+    "tweet_url": "https://x.com/a16z/status/2086832770895290624",
+    "media": true,
+    "auteur_x": "@a16z"
+  },
+  {
+    "date": "2026-08-10",
+    "titre_fr": "Perplexity héberge le modèle Kimi K3 sur son API agent",
+    "resume_fr": "Perplexity propose désormais une version hébergée aux États-Unis du modèle Kimi K3 (Moonshot AI) via son API agent, une option pour les développeurs souhaitant un modèle chinois performant servi localement.",
+    "tags": [
+      "produit",
+      "modeles",
+      "agents"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/AravSrinivas/status/2086902500880478657",
+    "media": false,
+    "auteur_x": "@AravSrinivas"
+  },
+  {
+    "date": "2026-08-11",
+    "titre_fr": "Meta lance Muse Glimmer 30B sous licence Apache 2.0",
+    "resume_fr": "Meta publie Muse Glimmer, un modèle de 30 milliards de paramètres, son premier modèle à poids ouverts sous une vraie licence open source (Apache 2.0), contrairement aux licences plus restrictives des modèles Llama. Il est déjà disponible sur Hugging Face.",
+    "tags": [
+      "meta",
+      "open-source",
+      "modeles"
+    ],
+    "score": 72,
+    "tweet_url": "https://x.com/simonw/status/2086972895256007160",
+    "media": false,
+    "auteur_x": "@simonw"
   }
 ]
