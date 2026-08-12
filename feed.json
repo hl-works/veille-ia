@@ -7932,5 +7932,131 @@
     "tweet_url": "https://x.com/simonw/status/2086972895256007160",
     "media": false,
     "auteur_x": "@simonw"
+  },
+  {
+    "date": "2026-08-11",
+    "titre_fr": "Mistral dévoile sa stratégie d'infrastructure et de modèles ouverts pour l'Europe",
+    "resume_fr": "Mistral annonce vouloir rassembler infrastructure d'inférence, modèles ouverts et engagements de long terme pour donner à l'Europe le contrôle de son avenir en IA, et présente une feuille de route à cette ambition.",
+    "tags": [
+      "mistral",
+      "modeles",
+      "open-source",
+      "politique-ia"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/MistralAI/status/2087305196841922782",
+    "media": true,
+    "auteur_x": "@MistralAI"
+  },
+  {
+    "date": "2026-08-11",
+    "titre_fr": "L'application Gemini franchit le milliard d'utilisateurs mensuels",
+    "resume_fr": "Google annonce que son application Gemini atteint un milliard d'utilisateurs actifs par mois, ainsi qu'un milliard de téléchargements pour la famille de modèles Gemma. Il s'agirait de la croissance la plus rapide jamais atteinte par un produit maison.",
+    "tags": [
+      "google",
+      "modeles",
+      "produit"
+    ],
+    "score": 70,
+    "tweet_url": "https://x.com/demishassabis/status/2087255967549243425",
+    "media": false,
+    "auteur_x": "@demishassabis"
+  },
+  {
+    "date": "2026-08-11",
+    "titre_fr": "Microsoft lance un nouveau modèle de code plus efficace dans GitHub Copilot",
+    "resume_fr": "Mustafa Suleyman présente le dernier modèle de code maison : 25% plus efficace, de meilleure qualité et quatre fois moins cher que la version de juin. Il est désormais disponible dans GitHub Copilot.",
+    "tags": [
+      "microsoft",
+      "modeles",
+      "produit"
+    ],
+    "score": 66,
+    "tweet_url": "https://x.com/mustafasuleyman/status/2087223229718917177",
+    "media": true,
+    "auteur_x": "@mustafasuleyman"
+  },
+  {
+    "date": "2026-08-11",
+    "titre_fr": "ChatGPT débarque en preview sur Linux",
+    "resume_fr": "OpenAI ouvre en avant-première son application ChatGPT pour Linux, incluant ChatGPT, ChatGPT Work et Codex, avec la prise en charge des projets et des flux de travail dans le navigateur.",
+    "tags": [
+      "openai",
+      "produit"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/OpenAI/status/2087231350134980830",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-08-11",
+    "titre_fr": "Meta ouvre les poids de son modèle Muse Glimmer",
+    "resume_fr": "Meta annonce l'ouverture des poids de son modèle Muse Glimmer, avec Muse Spark 1.2 à venir. Zuckerberg reconnaît que Llama 4 n'était pas à la hauteur des attentes et explique avoir reconstruit son laboratoire d'IA.",
+    "tags": [
+      "meta",
+      "modeles",
+      "open-source"
+    ],
+    "score": 64,
+    "tweet_url": "https://x.com/rowancheung/status/2087204267568615724",
+    "media": true,
+    "auteur_x": "@rowancheung"
+  },
+  {
+    "date": "2026-08-11",
+    "titre_fr": "Anthropic va filigraner les textes générés par Claude",
+    "resume_fr": "Anthropic prévoit d'ajouter un filigrane aux textes produits par Claude, en réponse aux exigences du règlement européen sur l'IA. Le laboratoire annonce aussi une API de détection de texte généré par IA. D'autres labos suivent des démarches similaires.",
+    "tags": [
+      "anthropic",
+      "politique-ia"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/trq212/status/2087258090169414008",
+    "media": false,
+    "auteur_x": "@trq212"
+  },
+  {
+    "date": "2026-08-11",
+    "titre_fr": "ExtractBench : un benchmark pour l'extraction de documents d'entreprise",
+    "resume_fr": "LlamaIndex publie ExtractBench, un benchmark couvrant 4869 pages et 67 types de documents. Principal constat : au-delà de 50 pages, les modèles de vision commerciaux chutent sous 35% de rappel en tronquant silencieusement les tableaux. Un nouvel outil d'extraction est aussi présenté.",
+    "tags": [
+      "recherche",
+      "modeles",
+      "automatisation"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/jerryjliu0/status/2087195936225108171",
+    "media": true,
+    "auteur_x": "@jerryjliu0"
+  },
+  {
+    "date": "2026-08-11",
+    "titre_fr": "Le trafic issu de l'IA vers les boutiques Shopify a triplé en un an",
+    "resume_fr": "Selon un dirigeant de Shopify, le trafic et les commandes provenant des canaux IA vers les boutiques Shopify ont triplé sur un an. Un signal fort pour les marchands sur l'importance croissante de la recherche via IA.",
+    "tags": [
+      "commerce",
+      "shopify",
+      "marketing",
+      "vente"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/harleyf/status/2087180029101031579",
+    "media": false,
+    "auteur_x": "@harleyf"
+  },
+  {
+    "date": "2026-08-12",
+    "titre_fr": "Perplexity ouvre Nemotron 3.5 Lightning à tous les développeurs",
+    "resume_fr": "Le modèle Nemotron 3.5 Lightning est désormais disponible pour tous via l'API Agent de Perplexity, à des tarifs très bas (0,0115 $ par million de tokens en entrée, 0,17 $ en sortie).",
+    "tags": [
+      "produit",
+      "modeles",
+      "agents"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/AravSrinivas/status/2087352727923998941",
+    "media": false,
+    "auteur_x": "@AravSrinivas"
   }
 ]
