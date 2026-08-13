@@ -8058,5 +8058,76 @@
     "tweet_url": "https://x.com/AravSrinivas/status/2087352727923998941",
     "media": false,
     "auteur_x": "@AravSrinivas"
+  },
+  {
+    "date": "2026-08-12",
+    "titre_fr": "Microsoft lance MAI-Thinking-1, son premier modèle de raisonnement",
+    "resume_fr": "Mustafa Suleyman annonce MAI-Thinking-1, le premier modèle de raisonnement conçu en interne par Microsoft, désormais disponible dans Microsoft Foundry. C'est une étape pour l'autonomie de Microsoft face à sa dépendance à OpenAI.",
+    "tags": [
+      "modeles",
+      "recherche",
+      "produit"
+    ],
+    "score": 72,
+    "tweet_url": "https://x.com/mustafasuleyman/status/2087570047967408396",
+    "media": true,
+    "auteur_x": "@mustafasuleyman"
+  },
+  {
+    "date": "2026-08-12",
+    "titre_fr": "Seedance 2.5 disponible sur le AI Gateway de Vercel",
+    "resume_fr": "Le modèle de génération vidéo Seedance 2.5 est désormais accessible via la passerelle IA de Vercel, facilitant son intégration dans les applications des développeurs.",
+    "tags": [
+      "modeles",
+      "produit"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/rauchg/status/2087631388359242050",
+    "media": true,
+    "auteur_x": "@rauchg"
+  },
+  {
+    "date": "2026-08-12",
+    "titre_fr": "ExtractBench : un banc d'essai pour l'extraction de documents",
+    "resume_fr": "LlamaIndex publie ExtractBench, un benchmark détaillé pour évaluer l'extraction structurée de données à partir de documents d'entreprise réels, comparant plus de 14 systèmes sur la précision et le coût. Utile pour qui automatise le traitement de factures, formulaires et contrats.",
+    "tags": [
+      "recherche",
+      "agents",
+      "automatisation"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/jerryjliu0/status/2087559475540459746",
+    "media": true,
+    "auteur_x": "@jerryjliu0"
+  },
+  {
+    "date": "2026-08-13",
+    "titre_fr": "Grok 4.6 salué pour son rapport intelligence/prix",
+    "resume_fr": "Le nouveau modèle Grok 4.6 de xAI reçoit de bons retours de développeurs, notamment pour son coût très compétitif rapport à ses performances. xAI se positionne désormais fermement face à OpenAI et Anthropic sur les modèles de pointe.",
+    "tags": [
+      "xai",
+      "modeles"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/mckaywrigley/status/2087704102524625061",
+    "media": false,
+    "auteur_x": "@mckaywrigley"
+  },
+  {
+    "date": "2026-08-13",
+    "titre_fr": "Un « skill » Claude Code pour automatiser des pubs animées",
+    "resume_fr": "Un créateur a construit une compétence dans Claude Code qui génère de bout en bout des publicités en style pâte à modeler : à partir d'une photo produit, l'outil écrit le script, crée les personnages, génère les images, enregistre la voix off et monte la vidéo. Pensé pour les marques DTC et agences cherchant à tester des créas sans studio.",
+    "tags": [
+      "anthropic",
+      "agents",
+      "produit",
+      "marketing",
+      "pub",
+      "commerce"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/mikefutia/status/2087698146189009320",
+    "media": true,
+    "auteur_x": "@mikefutia"
   }
 ]
