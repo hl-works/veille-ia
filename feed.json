@@ -8129,5 +8129,143 @@
     "tweet_url": "https://x.com/mikefutia/status/2087698146189009320",
     "media": true,
     "auteur_x": "@mikefutia"
+  },
+  {
+    "date": "2026-08-13",
+    "titre_fr": "Google lance Gemini 3.7 Flash",
+    "resume_fr": "Google déploie Gemini 3.7 Flash, un modèle rapide orienté code, développement web et travail de connaissance. Il alimente déjà l'agent Gemini Spark dans Workspace et est proposé à un tarif de lancement moitié moins cher que le 3.6 Flash jusqu'à fin 2026 (0,75$/M tokens en entrée).",
+    "tags": [
+      "google",
+      "modeles",
+      "agents",
+      "automatisation"
+    ],
+    "score": 78,
+    "tweet_url": "https://x.com/GoogleAI/status/2087949042961514983",
+    "media": true,
+    "auteur_x": "@GoogleAI"
+  },
+  {
+    "date": "2026-08-13",
+    "titre_fr": "OpenAI teste un mode « Ultrafast » pour GPT-5.6",
+    "resume_fr": "OpenAI met en avant un mode Ultrafast permettant de faire tourner GPT-5.6 Sol jusqu'à 14 fois plus vite. Il démarre dans l'API pour un groupe restreint de clients, avec un élargissement prévu au fil de la montée en capacité.",
+    "tags": [
+      "openai",
+      "modeles",
+      "produit"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/OpenAI/status/2087947721936359705",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-08-13",
+    "titre_fr": "ChatGPT mémorise votre activité sur l'ordinateur",
+    "resume_fr": "OpenAI introduit « Computer History » dans l'app desktop de ChatGPT : l'assistant peut désormais se souvenir de votre activité entre apps et sites web pour des interactions plus personnalisées. Une fonctionnalité qui soulève des questions de vie privée.",
+    "tags": [
+      "openai",
+      "produit"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/OpenAI/status/2087996496088297746",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-08-13",
+    "titre_fr": "Grok 4.6 disponible dans Perplexity",
+    "resume_fr": "Perplexity intègre Grok 4.6 (xAI) dans son moteur et son Computer. Selon leurs tests sur le benchmark WANDR, le modèle atteint des performances comparables à Fable 5 pour un coût plus de 60% inférieur.",
+    "tags": [
+      "xai",
+      "modeles",
+      "produit"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/perplexity_ai/status/2087972364009308204",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-08-13",
+    "titre_fr": "Cursor acquiert l'équipe Firetiger",
+    "resume_fr": "L'éditeur de code IA Cursor recrute l'équipe de Firetiger pour développer des agents capables de suivre leur travail jusqu'en production et de corriger les problèmes qui surviennent.",
+    "tags": [
+      "produit",
+      "agents",
+      "talents"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/cursor_ai/status/2087991786279251993",
+    "media": false,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-08-13",
+    "titre_fr": "LlamaIndex présente LlamaExtract Agentic Plus",
+    "resume_fr": "LlamaIndex lance un moteur d'extraction de documents présenté comme très précis sur des documents d'entreprise réels (scans, écriture manuscrite, tableaux complexes), avec une sortie structurée. Le prix serait 25 à 50% de celui de solutions basées sur Claude Code ou Codex.",
+    "tags": [
+      "produit",
+      "automatisation",
+      "agents"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/jerryjliu0/status/2087898625934250095",
+    "media": true,
+    "auteur_x": "@jerryjliu0"
+  },
+  {
+    "date": "2026-08-13",
+    "titre_fr": "Anthropic teste Claude pour la maintenance quotidienne d'apps",
+    "resume_fr": "Un ingénieur d'Anthropic décrit une expérience où Claude gère des routines de maintenance quotidiennes (recherche de crashs, suppression de code mort, unification d'abstractions) sur plusieurs plateformes. En quelques semaines, 388 PR ont été ouvertes, dont 180 fusionnées après revue humaine.",
+    "tags": [
+      "anthropic",
+      "agents",
+      "automatisation"
+    ],
+    "score": 57,
+    "tweet_url": "https://x.com/bcherny/status/2088014489438621990",
+    "media": true,
+    "auteur_x": "@bcherny"
+  },
+  {
+    "date": "2026-08-13",
+    "titre_fr": "Google DeepMind dévoile SL2T, modèle langue des signes vers texte",
+    "resume_fr": "Google DeepMind présente SL2T, un modèle permettant de signer directement vers son téléphone pour convertir la langue des signes en texte. Il a été développé en collaboration avec la communauté sourde.",
+    "tags": [
+      "google",
+      "recherche",
+      "modeles"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/demishassabis/status/2087885303855944001",
+    "media": false,
+    "auteur_x": "@demishassabis"
+  },
+  {
+    "date": "2026-08-13",
+    "titre_fr": "Cursor accélère le démarrage de ses agents cloud",
+    "resume_fr": "Cursor annonce que ses agents cloud démarrent trois fois plus vite grâce à des environnements de développement préparés en continu en arrière-plan, permettant de leur confier des tâches longues de bout en bout.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/cursor_ai/status/2087941307624980753",
+    "media": true,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-08-14",
+    "titre_fr": "Perplexity ouvre son Agent API",
+    "resume_fr": "Perplexity met en avant son Agent API destinée à la recherche web et aux agents de navigation, positionnée comme une brique pour construire des agents accédant au web.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/AravSrinivas/status/2088087990048600107",
+    "media": false,
+    "auteur_x": "@AravSrinivas"
   }
 ]
