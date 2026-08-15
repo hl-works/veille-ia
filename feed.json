@@ -8267,5 +8267,113 @@
     "tweet_url": "https://x.com/AravSrinivas/status/2088087990048600107",
     "media": false,
     "auteur_x": "@AravSrinivas"
+  },
+  {
+    "date": "2026-08-14",
+    "titre_fr": "Cursor racheté par SpaceX pour rejoindre l'équipe Grok/xAI",
+    "resume_fr": "Cursor (Anysphere), l'éditeur de code assisté par IA, annonce la clôture de son acquisition par SpaceX. Ses équipes rejoignent SpaceXAI pour développer Grok et améliorer Grok Build, Grok Bot, l'API et Cursor lui-même.",
+    "tags": [
+      "xai",
+      "produit",
+      "talents"
+    ],
+    "score": 78,
+    "tweet_url": "https://x.com/cursor_ai/status/2088249881718919393",
+    "media": false,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-08-14",
+    "titre_fr": "Google : Gemini 3.7 Flash, gamme Pixel 11 et WeatherNext 2 en open source",
+    "resume_fr": "Google déploie Gemini 3.7 Flash, son modèle 'workhorse' orienté code et agents, via l'API et ses applications grand public et entreprise. En parallèle, la nouvelle gamme Pixel 11 mise sur l'IA agentique 'Gemini Intelligence', et l'outil de prévision météo WeatherNext 2 de DeepMind passe en open source.",
+    "tags": [
+      "google",
+      "modeles",
+      "produit"
+    ],
+    "score": 74,
+    "tweet_url": "https://x.com/GoogleAI/status/2088332438753681700",
+    "media": false,
+    "auteur_x": "@GoogleAI"
+  },
+  {
+    "date": "2026-08-14",
+    "titre_fr": "GLM 5.3 : les modèles chinois confirment leur montée en puissance",
+    "resume_fr": "Le chercheur Nathan Lambert publie ses notes sur GLM 5.3 et invite à cesser de s'étonner de la force des modèles chinois. Il souligne l'efficacité de Z.ai (rythme de sortie en jours, forte efficacité de calcul), tout en nuançant les accusations de 'benchmaxxing'.",
+    "tags": [
+      "modeles",
+      "open-source",
+      "recherche"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/natolambert/status/2088377248156205084",
+    "media": false,
+    "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-08-14",
+    "titre_fr": "Anthropic détaille son marquage (watermarking) pour l'EU AI Act",
+    "resume_fr": "Anthropic publie une FAQ sur le filigranage des textes générés par Claude, mis en place pour se conformer à l'AI Act européen. La firme assure que le procédé n'altère ni la qualité ni le contenu, n'ajoute pas de caractères cachés, ne coûte pas plus cher et ne permet pas d'identifier une personne.",
+    "tags": [
+      "anthropic",
+      "politique-ia"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/AnthropicAI/status/2088343978873966687",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-08-14",
+    "titre_fr": "Hugging Face : l'état des modèles ouverts à l'été 2026",
+    "resume_fr": "Selon le rapport de Hugging Face, les modèles de frontière grossissent mais les petits modèles dominent l'usage réel. Qwen mène l'inférence locale devant Gemma, et les agents IA deviennent une force majeure sur la plateforme.",
+    "tags": [
+      "open-source",
+      "modeles",
+      "recherche"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/huggingface/status/2088301795890044975",
+    "media": false,
+    "auteur_x": "@huggingface"
+  },
+  {
+    "date": "2026-08-14",
+    "titre_fr": "Perplexity ouvre son Search SDK aux agents tiers",
+    "resume_fr": "Perplexity rend son Search SDK disponible dans n'importe quel environnement agentique, permettant d'intégrer ses capacités de recherche web large et approfondie à des outils externes.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/AravSrinivas/status/2088311070368870873",
+    "media": false,
+    "auteur_x": "@AravSrinivas"
+  },
+  {
+    "date": "2026-08-14",
+    "titre_fr": "Qwen 3.7 27B tourne en local sur un ordinateur portable",
+    "resume_fr": "Le développeur Simon Willison rapporte que le nouveau Qwen 3.7 27B, en version GGUF de 17 Go, tourne localement sur son portable et produit selon lui les meilleurs résultats qu'il ait vus d'un modèle exécutable sur une machine personnelle.",
+    "tags": [
+      "open-source",
+      "modeles"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/simonw/status/2088361426662637714",
+    "media": true,
+    "auteur_x": "@simonw"
+  },
+  {
+    "date": "2026-08-14",
+    "titre_fr": "Une étude d'OpenAI ne trouve pas de lien entre usage de l'IA et salaire",
+    "resume_fr": "Relayée par Gary Marcus, une étude d'OpenAI conclurait à l'absence de corrélation entre la fréquence d'utilisation de l'IA par les employés et leurs revenus. Un signal de plus sur l'incertitude du retour sur investissement de la vague IA.",
+    "tags": [
+      "openai",
+      "recherche"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/GaryMarcus/status/2088235919187079608",
+    "media": false,
+    "auteur_x": "@GaryMarcus"
   }
 ]
