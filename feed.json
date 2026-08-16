@@ -8375,5 +8375,57 @@
     "tweet_url": "https://x.com/GaryMarcus/status/2088235919187079608",
     "media": false,
     "auteur_x": "@GaryMarcus"
+  },
+  {
+    "date": "2026-08-15",
+    "titre_fr": "Dario Amodei détaille sa vision de la régulation de l'IA",
+    "resume_fr": "Le PDG d'Anthropic explique pourquoi il rejette l'opposition binaire entre régulation et concentration du pouvoir. Il défend des règles ciblant surtout les modèles de pointe (tests avant déploiement), exemptant les petites entreprises et laissant de la place aux modèles ouverts, et se dit favorable à l'approche de tests évoquée par l'administration américaine.",
+    "tags": [
+      "anthropic",
+      "politique-ia"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/DarioAmodei/status/2088758816376807762",
+    "media": false,
+    "auteur_x": "@DarioAmodei"
+  },
+  {
+    "date": "2026-08-15",
+    "titre_fr": "LlamaIndex publie ExtractBench pour l'extraction de documents",
+    "resume_fr": "LlamaIndex présente un benchmark et un extracteur \"agentic\" dans LlamaParse capables de traiter de très longs documents (des centaines de pages, jusqu'à 100 000 champs). L'équipe note que les modèles de vision commerciaux perdent en fiabilité sur ce type de documents massifs.",
+    "tags": [
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/jerryjliu0/status/2088733158766501952",
+    "media": true,
+    "auteur_x": "@jerryjliu0"
+  },
+  {
+    "date": "2026-08-15",
+    "titre_fr": "Qwen 3.8 27B testé en local",
+    "resume_fr": "Le modèle Qwen 3.8 27B tourne dans LM Studio et, en mode raisonnement \"extra high\", il a tendance à trop réfléchir. Un signe de la disponibilité croissante de modèles ouverts performants utilisables localement.",
+    "tags": [
+      "modeles",
+      "open-source"
+    ],
+    "score": 40,
+    "tweet_url": "https://x.com/simonw/status/2088646238933840153",
+    "media": true,
+    "auteur_x": "@simonw"
+  },
+  {
+    "date": "2026-08-15",
+    "titre_fr": "Écart massif d'adoption de l'IA entre entreprises",
+    "resume_fr": "Selon des données partagées par a16z, le top 1% des entreprises qui dépensent le plus en IA dépense plus de 600 fois plus que l'entreprise médiane. Un fossé d'adoption considérable entre pionniers et retardataires.",
+    "tags": [
+      "politique-ia"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/a16z/status/2088658228959953052",
+    "media": true,
+    "auteur_x": "@a16z"
   }
 ]
