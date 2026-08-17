@@ -8427,5 +8427,85 @@
     "tweet_url": "https://x.com/a16z/status/2088658228959953052",
     "media": true,
     "auteur_x": "@a16z"
+  },
+  {
+    "date": "2026-08-16",
+    "titre_fr": "GLM 5.3 : évaluations en cybersécurité pour un modèle ouvert",
+    "resume_fr": "Vercel a mené des évaluations sur les capacités en cybersécurité de GLM 5.3, décrit comme la nouvelle frontière ouverte. Son coût réduit permettrait de multiplier les analyses défensives de sécurité.",
+    "tags": [
+      "modeles",
+      "open-source",
+      "recherche"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/rauchg/status/2089126690043916495",
+    "media": false,
+    "auteur_x": "@rauchg"
+  },
+  {
+    "date": "2026-08-16",
+    "titre_fr": "Qwen 3.8 27B : un modèle local salué par Simon Willison",
+    "resume_fr": "Simon Willison publie une critique très positive de Qwen 3.8 27B, un modèle qu'il fait tourner sur ses propres machines et qu'il décrit comme particulièrement plaisant à utiliser en local.",
+    "tags": [
+      "modeles",
+      "open-source"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/simonw/status/2089112517796827439",
+    "media": false,
+    "auteur_x": "@simonw"
+  },
+  {
+    "date": "2026-08-16",
+    "titre_fr": "LlamaExtract Agentic Plus : extraction documentaire à grande échelle",
+    "resume_fr": "LlamaIndex annonce un agent spécialisé dans l'extraction de données sur des documents longs (50+ pages, jusqu'à 100k champs) avec plus de 94% de précision. Chaque champ extrait comporte un score de confiance et sa localisation dans le document.",
+    "tags": [
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/jerryjliu0/status/2089099864554831995",
+    "media": true,
+    "auteur_x": "@jerryjliu0"
+  },
+  {
+    "date": "2026-08-16",
+    "titre_fr": "CoreWeave dépasse les grands clouds à un stade équivalent",
+    "resume_fr": "Selon a16z, CoreWeave génère désormais plus de revenus trimestriels qu'Azure, AWS ou Google Cloud n'en réalisaient au même stade de leur histoire, portée par la demande en GPU liée à l'IA.",
+    "tags": [
+      "hardware"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/a16z/status/2089076704543469956",
+    "media": true,
+    "auteur_x": "@a16z"
+  },
+  {
+    "date": "2026-08-17",
+    "titre_fr": "OpenAI présente ChatGPT pour la navigation web",
+    "resume_fr": "OpenAI a évoqué une fonctionnalité de ChatGPT dédiée à l'utilisation du navigateur, permettant à l'assistant d'agir directement sur le web. Peu de détails ont été communiqués à ce stade.",
+    "tags": [
+      "openai",
+      "produit",
+      "agents"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/gdb/status/2089181834580250870",
+    "media": false,
+    "auteur_x": "@gdb"
+  },
+  {
+    "date": "2026-08-17",
+    "titre_fr": "MiniMax H3 : génération vidéo en local sur une machine perso",
+    "resume_fr": "Ethan Mollick rapporte avoir généré une vidéo avec son en trois minutes via MiniMax H3, un générateur vidéo à poids ouverts tournant entièrement en local. Il souligne la rapidité des progrès dans ce domaine.",
+    "tags": [
+      "modeles",
+      "open-source"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/emollick/status/2089185499197911391",
+    "media": true,
+    "auteur_x": "@emollick"
   }
 ]
