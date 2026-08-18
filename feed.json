@@ -8507,5 +8507,57 @@
     "tweet_url": "https://x.com/emollick/status/2089185499197911391",
     "media": true,
     "auteur_x": "@emollick"
+  },
+  {
+    "date": "2026-08-17",
+    "titre_fr": "Cursor lance Origin, sa plateforme d'hébergement de code",
+    "resume_fr": "Cursor a mis en ligne Origin, une plateforme d'hébergement de code intégrée à son éditeur, présentée comme rapide et permettant de synchroniser ses dépôts depuis GitHub. Elle s'accompagne d'un déploiement direct via Vercel.",
+    "tags": [
+      "produit"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/cursor_ai/status/2089399057659596847",
+    "media": true,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-08-17",
+    "titre_fr": "Perplexity affine les permissions de son agent Computer",
+    "resume_fr": "L'agent Computer de Perplexity permet désormais de régler chaque outil connecté sur Autoriser, Toujours demander ou Refuser, avec une gestion des approbations par fil de conversation. Disponible pour tous les utilisateurs sur le web.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/AskPerplexity/status/2089380410656768053",
+    "media": true,
+    "auteur_x": "@AskPerplexity"
+  },
+  {
+    "date": "2026-08-17",
+    "titre_fr": "Nvidia mise sur l'IA open-source pour éviter un monopole",
+    "resume_fr": "Nvidia développe ses modèles de manière ouverte en partant du principe que la recette d'entraînement, plus que les poids, est le vrai bien commun. Le pari : démocratiser l'accès à l'IA générera une explosion d'opportunités, à l'image de l'ouverture du web par Meta et Google.",
+    "tags": [
+      "hardware",
+      "open-source",
+      "modeles"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/natolambert/status/2089370522689606078",
+    "media": false,
+    "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-08-17",
+    "titre_fr": "OpenAI publie ses recommandations en cybersécurité",
+    "resume_fr": "Greg Brockman met en avant une initiative d'OpenAI sur la cybersécurité, appelant les organisations à renforcer leurs fondamentaux et à s'appuyer sur les meilleurs outils IA pour se défendre. Les défenseurs disposeraient d'une fenêtre étroite pour monter en niveau.",
+    "tags": [
+      "openai",
+      "politique-ia"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/gdb/status/2089326994714763665",
+    "media": false,
+    "auteur_x": "@gdb"
   }
 ]
