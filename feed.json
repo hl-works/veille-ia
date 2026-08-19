@@ -8559,5 +8559,159 @@
     "tweet_url": "https://x.com/gdb/status/2089326994714763665",
     "media": false,
     "auteur_x": "@gdb"
+  },
+  {
+    "date": "2026-08-18",
+    "titre_fr": "OpenAI met en pause son entraînement RL de pointe pour renforcer la sécurité",
+    "resume_fr": "OpenAI a temporairement suspendu l'entraînement par renforcement de ses modèles les plus avancés pendant deux semaines, le temps de durcir et tester ses environnements de recherche et d'élargir la surveillance. Le plus gros run RL prévu reste en attente en attendant de valider l'alignement.",
+    "tags": [
+      "openai",
+      "recherche",
+      "politique-ia",
+      "modeles"
+    ],
+    "score": 72,
+    "tweet_url": "https://x.com/OpenAI/status/2089777845187031262",
+    "media": false,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-08-18",
+    "titre_fr": "Claude peut désormais envoyer des e-mails Gmail et gérer Google Drive",
+    "resume_fr": "Anthropic permet à Claude de rédiger et envoyer des réponses dans Gmail et de gérer des fichiers dans Google Drive, avec un contrôle sur les actions nécessitant validation. Disponible sur tous les forfaits payants via le menu connecteurs.",
+    "tags": [
+      "anthropic",
+      "produit",
+      "agents",
+      "automatisation",
+      "service-client"
+    ],
+    "score": 74,
+    "tweet_url": "https://x.com/claudeai/status/2089806039088517356",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-08-18",
+    "titre_fr": "Claude conçoit des protéines de liaison pour la recherche pharmaceutique",
+    "resume_fr": "Anthropic rapporte que Claude a conçu de façon autonome des protéines capables de se lier à 14 cibles sur 15, à partir d'un prompt écrit par un expert. Adaptyv Bio et Twist Bioscience ont ensuite fabriqué et testé ces protéines de manière indépendante.",
+    "tags": [
+      "anthropic",
+      "recherche"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/AnthropicAI/status/2089842387845804246",
+    "media": true,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-08-18",
+    "titre_fr": "DeepSeek V4 Pro disponible sur Perplexity, hébergé aux États-Unis",
+    "resume_fr": "Perplexity ajoute DeepSeek V4 Pro à son offre Computer, hébergé aux États-Unis. Selon ses évaluations sur le benchmark WANDR, le modèle offre un bon rapport coût-performance, environ 62 % moins cher que l'alternative la plus proche.",
+    "tags": [
+      "produit",
+      "modeles",
+      "open-source"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/perplexity_ai/status/2089819655712210956",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-08-18",
+    "titre_fr": "Perplexity Computer fonctionne désormais par e-mail",
+    "resume_fr": "Perplexity permet de déléguer des tâches à son agent Computer directement par e-mail : il suffit d'envoyer, transférer ou mettre en copie une adresse dédiée. Chaque tâche s'exécute comme une session normale, avec traçabilité sur web et mobile.",
+    "tags": [
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/perplexity_ai/status/2089744150229131651",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-08-18",
+    "titre_fr": "Microsoft revendique la 3e place sur un benchmark d'édition d'images",
+    "resume_fr": "Mustafa Suleyman annonce que le modèle d'édition d'images de Microsoft atteint la 3e place d'un classement de référence, devant Nano Banana de Google et Muse Image de Meta.",
+    "tags": [
+      "modeles",
+      "produit"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/mustafasuleyman/status/2089766508373176726",
+    "media": false,
+    "auteur_x": "@mustafasuleyman"
+  },
+  {
+    "date": "2026-08-18",
+    "titre_fr": "Hugging Face franchit les 3 millions de modèles",
+    "resume_fr": "La plateforme Hugging Face a dépassé les 3 millions de modèles hébergés, signe de l'accélération de l'écosystème d'IA ouverte et distribuée.",
+    "tags": [
+      "open-source",
+      "modeles"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/huggingface/status/2089673018737869242",
+    "media": true,
+    "auteur_x": "@huggingface"
+  },
+  {
+    "date": "2026-08-18",
+    "titre_fr": "Claude Cowork arrive sur mobile et web",
+    "resume_fr": "Anthropic rend Claude Cowork disponible sur mobile et web pour tous les forfaits payants.",
+    "tags": [
+      "anthropic",
+      "produit",
+      "agents"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/claudeai/status/2089756371570900999",
+    "media": false,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-08-18",
+    "titre_fr": "Snowflake ajoute le routage dynamique de modèles dans Cortex",
+    "resume_fr": "Snowflake introduit un routage dynamique de modèles dans son Cortex AI Gateway et ajoute la prise en charge de DeepSeek-V4-Flash et GLM-5.3, pour optimiser le coût et l'efficacité des usages IA en entreprise.",
+    "tags": [
+      "produit",
+      "modeles",
+      "saas"
+    ],
+    "score": 44,
+    "tweet_url": "https://x.com/RamaswmySridhar/status/2089708266540707972",
+    "media": true,
+    "auteur_x": "@RamaswmySridhar"
+  },
+  {
+    "date": "2026-08-18",
+    "titre_fr": "Les jeunes adultes américains plus inquiets qu'enthousiastes face à l'IA",
+    "resume_fr": "Un sondage Pew Research indique que les jeunes adultes aux États-Unis se disent désormais davantage préoccupés qu'enthousiastes concernant l'IA.",
+    "tags": [
+      "politique-ia"
+    ],
+    "score": 40,
+    "tweet_url": "https://x.com/GaryMarcus/status/2089775092947636732",
+    "media": true,
+    "auteur_x": "@GaryMarcus"
+  },
+  {
+    "date": "2026-08-19",
+    "titre_fr": "Un audit automatisé de comptes Meta Ads via Claude Code",
+    "resume_fr": "Une compétence gratuite pour Claude Code permet d'auditer un compte publicitaire Meta : elle compare les 7 derniers jours à la semaine précédente, note le compte sur 100 et propose les trois corrections prioritaires. Utile pour les marques DTC et acheteurs média.",
+    "tags": [
+      "anthropic",
+      "pub",
+      "marketing",
+      "automatisation",
+      "commerce"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/mikefutia/status/2089872473668165772",
+    "media": true,
+    "auteur_x": "@mikefutia"
   }
 ]
