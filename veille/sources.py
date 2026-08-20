@@ -25,6 +25,15 @@ from .twitter import Tweet
 
 log = logging.getLogger(__name__)
 
+# UA « navigateur ». Plusieurs sites et CDN renvoient 403 (ou une page vide) sur
+# un User-Agent de bot : le flux passe alors pour mort alors qu'il est bien
+# vivant. Le dépôt veille-hifi a dû faire exactement le même choix pour ses
+# flux RSS (cf. veille_hifi.py l. 42-44) — on s'aligne.
+USER_AGENT = (
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+)
+
 # ── Filtre de pertinence IA (Hacker News est généraliste) ────────────────────
 #  On matche des MOTS ENTIERS (bornes \b) : sinon « ai » matcherait « Fastmail »,
 #  « impairs »… et laisserait passer du bruit.
@@ -181,7 +190,7 @@ def fetch_rss(
     for url in feeds:
         try:
             # On télécharge nous-mêmes (timeout maîtrisé), puis on parse le contenu.
-            resp = requests.get(url, timeout=timeout, headers={"User-Agent": "veille-ia/1.0"})
+            resp = requests.get(url, timeout=timeout, headers={"User-Agent": USER_AGENT})
             resp.raise_for_status()
             parsed = feedparser.parse(resp.content)
         except (requests.RequestException, Exception) as exc:  # noqa: BLE001
@@ -267,7 +276,7 @@ def fetch_youtube(
             log.warning("YouTube : chaîne non résolue (%s) — ignorée.", spec)
             continue
         try:
-            resp = requests.get(_YT_FEED.format(cid), timeout=timeout, headers={"User-Agent": "veille-ia/1.0"})
+            resp = requests.get(_YT_FEED.format(cid), timeout=timeout, headers={"User-Agent": USER_AGENT})
             resp.raise_for_status()
             parsed = feedparser.parse(resp.content)
         except (requests.RequestException, Exception) as exc:  # noqa: BLE001
