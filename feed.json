@@ -8713,5 +8713,126 @@
     "tweet_url": "https://x.com/mikefutia/status/2089872473668165772",
     "media": true,
     "auteur_x": "@mikefutia"
+  },
+  {
+    "date": "2026-08-19",
+    "titre_fr": "Stripe rachète OpenRouter",
+    "resume_fr": "Stripe annonce l'acquisition d'OpenRouter, la plateforme de routage entre modèles d'IA. L'objectif affiché : devenir la couche d'infrastructure qui permet aux entreprises d'échanger de l'intelligence artificielle, comme Stripe le fait déjà pour les paiements.",
+    "tags": [
+      "produit",
+      "openai",
+      "paiement"
+    ],
+    "score": 72,
+    "tweet_url": "https://x.com/a16z/status/2090137309031379417",
+    "media": true,
+    "auteur_x": "@a16z"
+  },
+  {
+    "date": "2026-08-19",
+    "titre_fr": "OpenAI présente le \"Private Safety Processing\"",
+    "resume_fr": "OpenAI dévoile un mécanisme censé renforcer la sécurité sur les usages autonomes et professionnels sans que ses employés aient accès au contenu des données. L'entreprise maintient par ailleurs la rétention zéro des données pour ses modèles de pointe.",
+    "tags": [
+      "openai",
+      "politique-ia",
+      "produit"
+    ],
+    "score": 63,
+    "tweet_url": "https://x.com/OpenAI/status/2090165328290701800",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-08-19",
+    "titre_fr": "Microsoft : MAI-Image-2.5 en tête pour l'édition d'images",
+    "resume_fr": "Le modèle MAI-Image-2.5 de Microsoft se hisse à la première place du classement Artificial Analysis pour l'édition d'images, selon Mustafa Suleyman.",
+    "tags": [
+      "modeles",
+      "meta"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/mustafasuleyman/status/2090132085562347786",
+    "media": false,
+    "auteur_x": "@mustafasuleyman"
+  },
+  {
+    "date": "2026-08-19",
+    "titre_fr": "Google AI Studio ajoute la synchronisation GitHub",
+    "resume_fr": "Google AI Studio permet désormais d'importer des dépôts GitHub et propose une synchronisation bidirectionnelle (push/pull) ainsi qu'une interface pour les fusions et force pushes.",
+    "tags": [
+      "google",
+      "produit"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/OfficialLoganK/status/2090156520843657488",
+    "media": true,
+    "auteur_x": "@OfficialLoganK"
+  },
+  {
+    "date": "2026-08-19",
+    "titre_fr": "Replit s'associe à OpenAI",
+    "resume_fr": "Replit annonce un partenariat avec OpenAI, présenté comme un moyen de réduire le coût du développement logiciel assisté par agents. Les détails techniques restent limités.",
+    "tags": [
+      "openai",
+      "produit",
+      "agents"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/amasad/status/2090079496124674377",
+    "media": false,
+    "auteur_x": "@amasad"
+  },
+  {
+    "date": "2026-08-19",
+    "titre_fr": "Cursor améliore ses agents cloud",
+    "resume_fr": "Cursor renforce ses agents cloud, capables de reprendre du travail déclenché par des évènements, de garder un objectif jusqu'à son achèvement et de tenir le cap sur de longues sessions.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/cursor_ai/status/2090136956101414982",
+    "media": true,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-08-19",
+    "titre_fr": "GLM-5.2 accessible gratuitement via Vercel",
+    "resume_fr": "Vercel propose GLM-5.2 gratuitement pendant deux semaines (via Blackbox AI) et 50 % de réduction sur ChatGPT Sol pendant un mois via son AI Gateway. La demande dépasse les prévisions.",
+    "tags": [
+      "modeles",
+      "produit"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/rauchg/status/2090112319791776192",
+    "media": true,
+    "auteur_x": "@rauchg"
+  },
+  {
+    "date": "2026-08-19",
+    "titre_fr": "Gary Marcus : la croissance d'Anthropic pourrait ralentir",
+    "resume_fr": "Gary Marcus estime que les premiers signes d'un plateau apparaissent dans la croissance du chiffre d'affaires d'Anthropic, qu'il attribue aux modèles chinois et aux guerres de prix. Il s'agit d'une lecture personnelle sur un échantillon encore réduit.",
+    "tags": [
+      "anthropic",
+      "recherche"
+    ],
+    "score": 40,
+    "tweet_url": "https://x.com/GaryMarcus/status/2090162539317674287",
+    "media": false,
+    "auteur_x": "@GaryMarcus"
+  },
+  {
+    "date": "2026-08-20",
+    "titre_fr": "OpenAI : Codex testé sur la préparation fiscale",
+    "resume_fr": "Greg Brockman indique qu'un pilote de préparation de déclarations fiscales avec Codex a traité 7 000 dossiers et réduit d'environ un tiers le temps de préparation. OpenAI propose une infrastructure open-source pour construire ses propres produits.",
+    "tags": [
+      "openai",
+      "agents",
+      "automatisation"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/gdb/status/2090246288478814281",
+    "media": false,
+    "auteur_x": "@gdb"
   }
 ]
