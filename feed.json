@@ -8834,5 +8834,115 @@
     "tweet_url": "https://x.com/gdb/status/2090246288478814281",
     "media": false,
     "auteur_x": "@gdb"
+  },
+  {
+    "date": "2026-08-20",
+    "titre_fr": "Perplexity lance son Agent API pour développeurs",
+    "resume_fr": "Perplexity présente une plateforme destinée aux développeurs donnant accès à différents modèles (de pointe et plus légers) ainsi qu'à des outils pour les déployer en production. L'objectif est de couvrir toute la chaîne, de l'accès au modèle jusqu'aux charges de travail réelles.",
+    "tags": [
+      "produit",
+      "agents",
+      "modeles"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/AravSrinivas/status/2090577299838267739",
+    "media": false,
+    "auteur_x": "@AravSrinivas"
+  },
+  {
+    "date": "2026-08-20",
+    "titre_fr": "Anthropic ouvre Claude Academy, des formations gratuites",
+    "resume_fr": "Anthropic met en ligne Claude Academy, une plateforme de cours et tutoriels gratuits ouverte à tous, du débutant qui découvre l'IA à l'utilisateur quotidien de Claude. Un moyen simple de monter en compétence sur l'outil.",
+    "tags": [
+      "anthropic",
+      "produit",
+      "automatisation"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/claudeai/status/2090518650251804742",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-08-20",
+    "titre_fr": "Anthropic prépare des garanties de confidentialité pour ses clients entreprises",
+    "resume_fr": "Anthropic annonce, pour cet automne, des mesures permettant aux entreprises de garder le contrôle total de leurs données et de respecter leurs règles de conformité, l'éditeur ne conservant aucune donnée. Ces dispositifs accompagnent le déploiement de ses modèles plus puissants en contexte professionnel.",
+    "tags": [
+      "anthropic",
+      "politique-ia",
+      "service-client"
+    ],
+    "score": 54,
+    "tweet_url": "https://x.com/bcherny/status/2090537902912815536",
+    "media": false,
+    "auteur_x": "@bcherny"
+  },
+  {
+    "date": "2026-08-20",
+    "titre_fr": "Partenariat entre OpenAI et Replit",
+    "resume_fr": "Replit officialise un partenariat avec OpenAI, une collaboration que son fondateur qualifie d'attendue de longue date. L'annonce s'accompagne d'une anecdote sur les premiers contacts entre les deux entreprises via Y Combinator.",
+    "tags": [
+      "openai",
+      "produit",
+      "no-code"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/amasad/status/2090514571513708874",
+    "media": true,
+    "auteur_x": "@amasad"
+  },
+  {
+    "date": "2026-08-20",
+    "titre_fr": "GEN-1.5 : avancée notable en robotique d'apprentissage",
+    "resume_fr": "Jim Fan (NVIDIA) analyse l'engouement autour de GEN-1.5 en robotique, soulignant l'intérêt de collecter des données humaines directes (via des dispositifs portés à la main plutôt que de la téléopération) et de conserver les gestes ratés pour apprendre la récupération. Certaines tâches deviennent réalisables sans réentraînement.",
+    "tags": [
+      "recherche",
+      "hardware"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/DrJimFan/status/2090465981240086992",
+    "media": false,
+    "auteur_x": "@DrJimFan"
+  },
+  {
+    "date": "2026-08-20",
+    "titre_fr": "OpenAI met en avant Codex pour les migrations de code",
+    "resume_fr": "OpenAI présente Codex comme outil de migration de code capable de réduire des chantiers qui prenaient des années à quelques semaines. Un argument tourné vers les équipes techniques d'entreprise.",
+    "tags": [
+      "openai",
+      "produit",
+      "agents"
+    ],
+    "score": 47,
+    "tweet_url": "https://x.com/gdb/status/2090327069985268049",
+    "media": false,
+    "auteur_x": "@gdb"
+  },
+  {
+    "date": "2026-08-20",
+    "titre_fr": "NVIDIA aurait investi 6 milliards dans une « usine à modèles »",
+    "resume_fr": "Selon un podcast de Latent Space, NVIDIA a payé 6 milliards de dollars pour acquérir une structure produisant des modèles très performants. L'information reste à confirmer via des sources indépendantes.",
+    "tags": [
+      "hardware",
+      "modeles",
+      "talents"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/swyx/status/2090577677916807429",
+    "media": true,
+    "auteur_x": "@swyx"
+  },
+  {
+    "date": "2026-08-20",
+    "titre_fr": "Grok 4.6 mis en avant comme alternative peu coûteuse",
+    "resume_fr": "Un développeur recommande Grok 4.6 de xAI, jugé performant et très bon marché, notamment dans le contexte de changements tarifaires perçus comme défavorables sur Codex. Retour d'usage individuel plus qu'annonce officielle.",
+    "tags": [
+      "xai",
+      "modeles"
+    ],
+    "score": 40,
+    "tweet_url": "https://x.com/AlexReibman/status/2090554215798350315",
+    "media": false,
+    "auteur_x": "@AlexReibman"
   }
 ]
