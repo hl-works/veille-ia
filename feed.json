@@ -8944,5 +8944,129 @@
     "tweet_url": "https://x.com/AlexReibman/status/2090554215798350315",
     "media": false,
     "auteur_x": "@AlexReibman"
+  },
+  {
+    "date": "2026-08-21",
+    "titre_fr": "OpenAI baisse le prix de GPT-5.6 Sol de plus de 20%",
+    "resume_fr": "OpenAI réduit temporairement (3 mois) le tarif API et des crédits de son modèle GPT-5.6 Sol de plus de 20%. Une baisse directement utile pour les PME qui bâtissent sur l'API.",
+    "tags": [
+      "openai",
+      "modeles",
+      "produit",
+      "automatisation"
+    ],
+    "score": 72,
+    "tweet_url": "https://x.com/OpenAI/status/2090885187634905500",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-08-21",
+    "titre_fr": "Claude Mythos 5 pour l'analyse de sécurité du code",
+    "resume_fr": "Anthropic déploie ses scans de sécurité Claude sur son modèle Mythos 5, en bêta publique pour les clients Claude Enterprise. L'objectif : analyser le code sans accès séparé à un modèle dédié.",
+    "tags": [
+      "anthropic",
+      "produit"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/claudeai/status/2090852314319880425",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-08-21",
+    "titre_fr": "Thinking Machines ouvre l'accès gratuit à Inkling",
+    "resume_fr": "Thinking Machines rend son modèle Inkling gratuit sur OpenRouter pendant quelques semaines, uniquement via des environnements agentiques, afin de collecter des données (anonymisées) pour améliorer ses performances.",
+    "tags": [
+      "modeles",
+      "agents"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/thinkymachines/status/2090888586849878374",
+    "media": false,
+    "auteur_x": "@thinkymachines"
+  },
+  {
+    "date": "2026-08-21",
+    "titre_fr": "Le modèle ouvert Marin publié",
+    "resume_fr": "L'équipe Marin publie son modèle, salué par Nathan Lambert, avec une volonté d'impliquer la communauté dans le post-entraînement. Un ajout à l'écosystème open source.",
+    "tags": [
+      "open-source",
+      "modeles",
+      "recherche"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/natolambert/status/2090932648021500320",
+    "media": false,
+    "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-08-21",
+    "titre_fr": "Gemma franchit le milliard de téléchargements",
+    "resume_fr": "La famille de modèles ouverts Gemma de Google atteint le cap du milliard de téléchargements, signe de l'adoption large des modèles open weight.",
+    "tags": [
+      "google",
+      "open-source",
+      "modeles"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/AlexReibman/status/2090861047330828693",
+    "media": true,
+    "auteur_x": "@AlexReibman"
+  },
+  {
+    "date": "2026-08-21",
+    "titre_fr": "NVIDIA ouvre T-Rex, une méthode pour le toucher en robotique",
+    "resume_fr": "NVIDIA et Berkeley publient en open source T-Rex, une approche intégrant le sens du toucher comme modalité première des modèles de robotique, accompagnée du plus grand jeu de données tactiles jamais partagé (50 heures).",
+    "tags": [
+      "hardware",
+      "recherche",
+      "open-source"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/DrJimFan/status/2090832821036470626",
+    "media": true,
+    "auteur_x": "@DrJimFan"
+  },
+  {
+    "date": "2026-08-21",
+    "titre_fr": "Google DeepMind s'associe à Fenris pour l'IA dans les jeux",
+    "resume_fr": "Google DeepMind noue un partenariat de recherche avec Fenris Creations pour tester l'apprentissage continu, la mémoire longue et la planification à long terme dans des univers de jeu persistants.",
+    "tags": [
+      "google",
+      "recherche",
+      "agents"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2090772922818286080",
+    "media": true,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-08-22",
+    "titre_fr": "Gemini 3.7 : lancement le plus rapide de Google",
+    "resume_fr": "Selon Logan Kilpatrick, Gemini 3.7 est le modèle de Google connaissant l'adoption la plus rapide depuis un lancement. Le détail des nouveautés reste limité, mais la traction évoquée est notable.",
+    "tags": [
+      "google",
+      "modeles"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/OfficialLoganK/status/2091007303285887091",
+    "media": false,
+    "auteur_x": "@OfficialLoganK"
+  },
+  {
+    "date": "2026-08-22",
+    "titre_fr": "Harvey abandonnerait OpenAI au profit de Kimi",
+    "resume_fr": "D'après Gary Marcus, la plateforme juridique Harvey basculerait d'OpenAI vers le modèle Kimi (Moonshot), illustrant la tendance des entreprises à diversifier leurs fournisseurs de modèles. À prendre avec prudence.",
+    "tags": [
+      "openai",
+      "modeles",
+      "talents"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/GaryMarcus/status/2090970637989007627",
+    "media": false,
+    "auteur_x": "@GaryMarcus"
   }
 ]
