@@ -9068,5 +9068,59 @@
     "tweet_url": "https://x.com/GaryMarcus/status/2090970637989007627",
     "media": false,
     "auteur_x": "@GaryMarcus"
+  },
+  {
+    "date": "2026-08-22",
+    "titre_fr": "Les modèles open weight dépassent 60% des tokens sur Vercel",
+    "resume_fr": "Selon Vercel, les modèles à poids ouverts représentent désormais 62% des tokens traités sur son AI Gateway, contre 28% deux mois plus tôt. Un basculement rapide vers l'open source, encore au début de l'adoption entreprise.",
+    "tags": [
+      "open-source",
+      "modeles"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/rauchg/status/2091234105702887879",
+    "media": true,
+    "auteur_x": "@rauchg"
+  },
+  {
+    "date": "2026-08-22",
+    "titre_fr": "Les agents IA consomment désormais 5x plus de tokens que les humains",
+    "resume_fr": "Selon a16z, les agents autonomes brûlent près de cinq fois plus de tokens que les utilisateurs humains, une consommation multipliée par 14 depuis février. Un signe de l'essor rapide des usages agentiques.",
+    "tags": [
+      "agents",
+      "recherche"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/a16z/status/2091200032162857328",
+    "media": true,
+    "auteur_x": "@a16z"
+  },
+  {
+    "date": "2026-08-22",
+    "titre_fr": "Un plugin SEO pour Claude Code branché sur Search Console",
+    "resume_fr": "Un développeur propose un plugin gratuit qui connecte Claude Code à Google Search Console et GA4 pour identifier des opportunités SEO, rédiger les correctifs et générer un tableau de bord. Présenté comme une alternative aux outils payants type Ahrefs pour marques DTC et agences.",
+    "tags": [
+      "produit",
+      "marketing",
+      "automatisation"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/mikefutia/status/2091312553167106122",
+    "media": true,
+    "auteur_x": "@mikefutia"
+  },
+  {
+    "date": "2026-08-22",
+    "titre_fr": "Les agents de code, bons pour l'extraction de longs documents",
+    "resume_fr": "LlamaIndex observe que sur les documents longs, les agents de code (Claude Code, Codex) rivalisent avec les outils OCR spécialisés en coût et précision, tandis que ces derniers restent plus efficaces sur les documents courts. Résultats détaillés dans leur benchmark ParseBench.",
+    "tags": [
+      "recherche",
+      "agents",
+      "automatisation"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/jerryjliu0/status/2091231519293751458",
+    "media": true,
+    "auteur_x": "@jerryjliu0"
   }
 ]
