@@ -9122,5 +9122,76 @@
     "tweet_url": "https://x.com/jerryjliu0/status/2091231519293751458",
     "media": true,
     "auteur_x": "@jerryjliu0"
+  },
+  {
+    "date": "2026-08-23",
+    "titre_fr": "Stripe rachète OpenRouter pour 8 milliards de dollars",
+    "resume_fr": "Selon Greg Isenberg, Stripe aurait acquis OpenRouter pour 8 milliards, pari sur un web où les agents IA deviennent les principaux utilisateurs des logiciels. Signal fort d'une bascule vers des interfaces pensées pour les agents plutôt que pour les humains.",
+    "tags": [
+      "agents",
+      "produit",
+      "paiement"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/gregisenberg/status/2091600846857416973",
+    "media": false,
+    "auteur_x": "@gregisenberg"
+  },
+  {
+    "date": "2026-08-23",
+    "titre_fr": "L'adoption de Codex explose hors du secteur tech",
+    "resume_fr": "Selon des données d'a16z, l'usage de Codex progresse très fortement depuis février dans des métiers non techniques : juridique (x108), ventes et recrutement (x41), marketing (x26) et santé (x24). Signe que les outils de code IA débordent largement du monde des développeurs.",
+    "tags": [
+      "openai",
+      "agents",
+      "automatisation",
+      "marketing"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/a16z/status/2091623289869508979",
+    "media": true,
+    "auteur_x": "@a16z"
+  },
+  {
+    "date": "2026-08-23",
+    "titre_fr": "Baisses de prix du modèle Sol d'OpenAI sur Vercel",
+    "resume_fr": "Guillermo Rauch indique que les réductions de prix du modèle Sol d'OpenAI en font le modèle de pointe à plus forte croissance sur la passerelle IA de Vercel. Il souligne l'élasticité de la demande : quand le coût de l'inférence baisse, l'usage grimpe rapidement.",
+    "tags": [
+      "openai",
+      "produit",
+      "modeles"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/rauchg/status/2091671326897713424",
+    "media": true,
+    "auteur_x": "@rauchg"
+  },
+  {
+    "date": "2026-08-23",
+    "titre_fr": "LlamaIndex mise sur le traitement de documents en deux passes",
+    "resume_fr": "Jerry Liu détaille une tendance des agents (Codex, Cowork) consistant à traiter les documents en deux étapes : un premier passage rapide et léger pour filtrer, puis un passage VLM ciblé sur les pages pertinentes. LlamaIndex propose ses outils LiteParse et LlamaParse pour améliorer précision et coût.",
+    "tags": [
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/jerryjliu0/status/2091564183922077885",
+    "media": true,
+    "auteur_x": "@jerryjliu0"
+  },
+  {
+    "date": "2026-08-24",
+    "titre_fr": "Le projet Marin, un modèle entraîné en totale ouverture",
+    "resume_fr": "Andrew Ng met en avant le projet Marin du laboratoire de Percy Liang, qui publie non seulement le modèle mais aussi le code, les données, les recettes d'entraînement et les résultats expérimentaux. Un exemple rare d'ouverture complète dans un secteur devenu de plus en plus fermé.",
+    "tags": [
+      "open-source",
+      "recherche",
+      "modeles"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/AndrewYNg/status/2091688153048645650",
+    "media": false,
+    "auteur_x": "@AndrewYNg"
   }
 ]
