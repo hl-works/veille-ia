@@ -9193,5 +9193,87 @@
     "tweet_url": "https://x.com/AndrewYNg/status/2091688153048645650",
     "media": false,
     "auteur_x": "@AndrewYNg"
+  },
+  {
+    "date": "2026-08-24",
+    "titre_fr": "Mistral s'allie à HUMAIN pour l'IA en Arabie saoudite",
+    "resume_fr": "Mistral annonce une collaboration stratégique avec HUMAIN portant sur l'infrastructure IA, le développement de modèles et le déploiement de solutions dans la région. Les priorités initiales incluent la cybersécurité, la voix et des modèles performants en langues arabes.",
+    "tags": [
+      "mistral",
+      "modeles",
+      "politique-ia"
+    ],
+    "score": 66,
+    "tweet_url": "https://x.com/MistralAI/status/2091964930715013224",
+    "media": false,
+    "auteur_x": "@MistralAI"
+  },
+  {
+    "date": "2026-08-24",
+    "titre_fr": "Les modèles open-source chinois deviennent la référence de la recherche",
+    "resume_fr": "D'après une analyse de 500 000 articles arXiv, environ 40 % des papiers mentionnent désormais un modèle chinois (Qwen, DeepSeek…) contre 25-30 % pour un modèle américain ouvert. Qwen progresse régulièrement tandis que Llama recule depuis mi-2025.",
+    "tags": [
+      "open-source",
+      "recherche",
+      "modeles"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/natolambert/status/2091901559869165858",
+    "media": true,
+    "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-08-24",
+    "titre_fr": "Perplexity recrute le chercheur Andrew Gordon Wilson",
+    "resume_fr": "Perplexity annonce l'arrivée d'Andrew Gordon Wilson dans son équipe de recherche pour diriger de nouveaux travaux sur l'apprentissage continu, les données synthétiques et les architectures. L'entreprise poursuit son recrutement.",
+    "tags": [
+      "talents",
+      "recherche"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/AravSrinivas/status/2091909869796520394",
+    "media": false,
+    "auteur_x": "@AravSrinivas"
+  },
+  {
+    "date": "2026-08-24",
+    "titre_fr": "Thinking Machines lance des crédits Tinker pour la recherche en sûreté",
+    "resume_fr": "Thinking Machines propose jusqu'à 50 000 $ de crédits Tinker pour financer des projets de recherche en sûreté sur les modèles à poids ouverts, avec plusieurs pistes suggérées.",
+    "tags": [
+      "recherche",
+      "open-source"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/thinkymachines/status/2091979709915795759",
+    "media": false,
+    "auteur_x": "@thinkymachines"
+  },
+  {
+    "date": "2026-08-24",
+    "titre_fr": "Perplexity baisse le prix de GPT-5.6 Sol dans Computer",
+    "resume_fr": "Perplexity annonce une réduction de 20 % du prix en crédits pour GPT-5.6 Sol dans son produit Computer, valable jusqu'au 21 novembre 2026 sur toutes les plateformes.",
+    "tags": [
+      "produit",
+      "openai"
+    ],
+    "score": 40,
+    "tweet_url": "https://x.com/AskPerplexity/status/2091910928690446747",
+    "media": false,
+    "auteur_x": "@AskPerplexity"
+  },
+  {
+    "date": "2026-08-24",
+    "titre_fr": "Générer des pubs vidéo façon micro-trottoir avec l'IA",
+    "resume_fr": "Un workflow combinant génération de texte et Seedance produit des publicités vidéo type interview de rue tout en maintenant la cohérence du personnage sur plusieurs clips. Positionné pour les marques DTC et agences cherchant du contenu UGC sans tournage.",
+    "tags": [
+      "produit",
+      "marketing",
+      "pub",
+      "commerce"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/mikefutia/status/2091914961647763539",
+    "media": true,
+    "auteur_x": "@mikefutia"
   }
 ]
