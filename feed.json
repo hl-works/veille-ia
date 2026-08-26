@@ -9275,5 +9275,114 @@
     "tweet_url": "https://x.com/mikefutia/status/2091914961647763539",
     "media": true,
     "auteur_x": "@mikefutia"
+  },
+  {
+    "date": "2026-08-25",
+    "titre_fr": "OpenAI dévoile les performances de sa puce d'inférence maison « Jalapeño »",
+    "resume_fr": "OpenAI a partagé les premiers résultats de tests de sa première puce d'inférence conçue en interne, baptisée Jalapeño. L'entreprise met en avant un meilleur rendement énergétique, un débit plus élevé et une latence réduite, un signal fort de sa volonté de réduire sa dépendance aux fournisseurs de puces.",
+    "tags": [
+      "openai",
+      "hardware"
+    ],
+    "score": 70,
+    "tweet_url": "https://x.com/OpenAI/status/2092300846675505602",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-08-25",
+    "titre_fr": "OpenAI lance un forfait ChatGPT Business Premium à 100 $",
+    "resume_fr": "OpenAI introduit un nouveau siège « Premium » à 100 $ pour les entreprises, sans la limite d'usage de 5 heures et avec davantage de capacités. Il vise explicitement les petites structures et startups qui veulent des outils avancés pour des équipes réduites.",
+    "tags": [
+      "openai",
+      "produit",
+      "saas"
+    ],
+    "score": 72,
+    "tweet_url": "https://x.com/OpenAI/status/2092335305366069305",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-08-25",
+    "titre_fr": "Microsoft présente MAI-Image-2.6 pour l'édition d'images",
+    "resume_fr": "Mustafa Suleyman annonce que le modèle MAI-Image-2.6 se hisse en tête du classement Artificial Analysis pour l'édition d'images, Microsoft occupant désormais trois des cinq premières places. Un outil potentiellement utile pour la création de visuels marketing.",
+    "tags": [
+      "modeles",
+      "produit",
+      "marketing"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/mustafasuleyman/status/2092287421983441278",
+    "media": false,
+    "auteur_x": "@mustafasuleyman"
+  },
+  {
+    "date": "2026-08-25",
+    "titre_fr": "Perplexity lance « Portable Computer », un agent 100 % local",
+    "resume_fr": "Perplexity dévoile Portable Computer sur le NVIDIA DGX Spark : un runtime d'agent entièrement local (modèle orchestrateur, sous-agents et harnais) qui fonctionne sans dépendance au cloud. L'objectif est de faire tourner de l'inférence agentique sur du matériel personnel, pour plus de confidentialité et de maîtrise des coûts.",
+    "tags": [
+      "perplexity",
+      "agents",
+      "hardware"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/perplexity_ai/status/2092268362386780270",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-08-25",
+    "titre_fr": "Claude unifie sa mémoire entre chat et Cowork",
+    "resume_fr": "Anthropic déploie une mémoire unique partagée entre les conversations Claude et Claude Cowork, contrôlable par l'utilisateur. Une tâche confiée à Cowork peut ainsi s'appuyer sur le contexte des échanges précédents (projets, préférences, clients).",
+    "tags": [
+      "anthropic",
+      "produit",
+      "automatisation"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/claudeai/status/2092299704864284888",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-08-25",
+    "titre_fr": "OpenWorker, un agent open source pour la cybersécurité",
+    "resume_fr": "Andrew Ng présente une nouvelle version d'OpenWorker, un agent open source qui exécute des tâches sur votre ordinateur. Il intègre désormais des agents de cybersécurité (scan de code, dépendances, config cloud) et permet d'utiliser des modèles open-weight en local pour ne pas exposer de données sensibles.",
+    "tags": [
+      "agents",
+      "open-source",
+      "recherche"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/AndrewYNg/status/2092315079576555806",
+    "media": false,
+    "auteur_x": "@AndrewYNg"
+  },
+  {
+    "date": "2026-08-25",
+    "titre_fr": "Vercel Connect passe en disponibilité générale",
+    "resume_fr": "Vercel rend disponible Connect, un outil visant à simplifier la connexion sécurisée des agents aux services et données. Une simple commande crée un client MCP interrogeable au nom de l'utilisateur authentifié.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/rauchg/status/2092352411839193234",
+    "media": false,
+    "auteur_x": "@rauchg"
+  },
+  {
+    "date": "2026-08-25",
+    "titre_fr": "Sundar Pichai : vers une conversion universelle des contenus entre formats",
+    "resume_fr": "Dans une interview, le PDG de Google prédit que d'ici trois ans n'importe quel contenu pourra passer d'un format à un autre (vidéo en article, newsletter en podcast, etc.). Il estime que la surproduction de contenu perdra son avantage et que la qualité redeviendra décisive.",
+    "tags": [
+      "google",
+      "marketing"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/rowancheung/status/2092276652944593257",
+    "media": true,
+    "auteur_x": "@rowancheung"
   }
 ]
