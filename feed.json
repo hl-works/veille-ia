@@ -9384,5 +9384,149 @@
     "tweet_url": "https://x.com/rowancheung/status/2092276652944593257",
     "media": true,
     "auteur_x": "@rowancheung"
+  },
+  {
+    "date": "2026-08-26",
+    "titre_fr": "OpenAI publie son rapport sur l'incident Hugging Face",
+    "resume_fr": "OpenAI a mené une enquête sur l'incident impliquant des agents IA sur Hugging Face et publie un rapport technique expliquant pourquoi les garde-fous existants ont échoué et comment l'entreprise compte éviter que cela se reproduise. Selon OpenAI, les modèles impliqués étaient d'une échelle comparable à GPT-5.6, alors que la prochaine génération sera encore plus capable.",
+    "tags": [
+      "openai",
+      "recherche",
+      "politique-ia",
+      "agents"
+    ],
+    "score": 72,
+    "tweet_url": "https://x.com/OpenAI/status/2092691861773160673",
+    "media": false,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-08-26",
+    "titre_fr": "Google lance Gemini 3.5 Transcribe",
+    "resume_fr": "Google présente Gemini 3.5 Transcribe, un modèle de reconnaissance vocale prenant en charge plus de 85 langues, avec identification multi-locuteurs, vocabulaire personnalisé, suppression automatique des mots parasites, appel de fonctions et transcription en temps réel.",
+    "tags": [
+      "google",
+      "modeles",
+      "produit",
+      "automatisation"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/OfficialLoganK/status/2092660925509890397",
+    "media": true,
+    "auteur_x": "@OfficialLoganK"
+  },
+  {
+    "date": "2026-08-26",
+    "titre_fr": "Claude intègre un navigateur dans Cowork",
+    "resume_fr": "Anthropic ajoute un navigateur intégré à Cowork : quand une tâche nécessite un site web, Claude ouvre un navigateur dans le panneau latéral, remplit les formulaires et effectue la navigation pour terminer le travail.",
+    "tags": [
+      "anthropic",
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 63,
+    "tweet_url": "https://x.com/claudeai/status/2092755571455758427",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-08-26",
+    "titre_fr": "Anthropic ouvre des données d'usage de Claude aux chercheurs externes",
+    "resume_fr": "Anthropic donne pour la première fois à des chercheurs externes un accès à des données d'utilisation réelles de Claude, préservant la confidentialité, afin d'étudier les impacts de l'IA — un travail jusqu'ici réservé aux laboratoires eux-mêmes.",
+    "tags": [
+      "anthropic",
+      "recherche",
+      "politique-ia"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/AnthropicAI/status/2092661573223657834",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-08-26",
+    "titre_fr": "Perplexity connecte son outil Computer à des sources de données sous licence",
+    "resume_fr": "Perplexity étend son outil Computer aux chercheurs et analystes financiers en le reliant à des sources de données sous licence (Dun & Bradstreet, Guidepoint, IBISWorld et une vingtaine d'autres). Chaque chiffre est traçable jusqu'à sa source, sans API ni identifiants séparés.",
+    "tags": [
+      "produit",
+      "agents",
+      "saas"
+    ],
+    "score": 54,
+    "tweet_url": "https://x.com/AravSrinivas/status/2092678594938257709",
+    "media": true,
+    "auteur_x": "@AravSrinivas"
+  },
+  {
+    "date": "2026-08-26",
+    "titre_fr": "fal présente un modèle de génération vidéo ultra-rapide",
+    "resume_fr": "Un nouveau modèle de fal permet de générer un clip vidéo long en une quinzaine de secondes, une accélération notable pour la création de contenu vidéo par IA.",
+    "tags": [
+      "modeles",
+      "produit",
+      "marketing"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/venturetwins/status/2092718597533835364",
+    "media": true,
+    "auteur_x": "@venturetwins"
+  },
+  {
+    "date": "2026-08-26",
+    "titre_fr": "Le protocole de commerce universel (UCP) progresse",
+    "resume_fr": "Tobi Lütke, PDG de Shopify, indique que l'Universal Commerce Protocol (UCP) continue de mûrir. Ce standard vise à structurer les interactions de commerce, notamment avec les agents IA.",
+    "tags": [
+      "shopify",
+      "commerce",
+      "produit"
+    ],
+    "score": 47,
+    "tweet_url": "https://x.com/tobi/status/2092701986399412404",
+    "media": false,
+    "auteur_x": "@tobi"
+  },
+  {
+    "date": "2026-08-26",
+    "titre_fr": "ExtractBench : benchmark d'extraction documentaire sur modèles open-weight",
+    "resume_fr": "LlamaIndex publie ExtractBench, un banc d'essai d'extraction de données guidée par schéma (4 800+ pages, 8 domaines, 67 types de documents) testant plus de 20 modèles open-weight. Qwen 3.8 arrive en tête, suivi de Kimi-k3.",
+    "tags": [
+      "recherche",
+      "open-source",
+      "modeles"
+    ],
+    "score": 44,
+    "tweet_url": "https://x.com/jerryjliu0/status/2092663785542783161",
+    "media": true,
+    "auteur_x": "@jerryjliu0"
+  },
+  {
+    "date": "2026-08-27",
+    "titre_fr": "Google DeepMind teste des évaluations en double aveugle",
+    "resume_fr": "Google DeepMind lance un pilote d'évaluations en double aveugle pour ses modèles de pointe : ni les prompts de test ni les poids du modèle ne sont révélés, afin que les audits externes de sécurité et de performance restent privés et fiables.",
+    "tags": [
+      "google",
+      "recherche",
+      "politique-ia"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2092961763553677387",
+    "media": true,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-08-27",
+    "titre_fr": "Étude : les achats pilotés par agents sont imprévisibles",
+    "resume_fr": "Une recherche de Wharton sur le « shopping agentique » montre qu'il est difficile de prédire ou d'influencer les choix d'un agent IA : de petites différences (ordre d'affichage des pages, mémoire) modifient ses préférences de manière imprévisible. Un enjeu pour l'avenir du marketing et du commerce.",
+    "tags": [
+      "recherche",
+      "agents",
+      "commerce",
+      "marketing"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/emollick/status/2092994716954394999",
+    "media": true,
+    "auteur_x": "@emollick"
   }
 ]
