@@ -9528,5 +9528,136 @@
     "tweet_url": "https://x.com/emollick/status/2092994716954394999",
     "media": true,
     "auteur_x": "@emollick"
+  },
+  {
+    "date": "2026-08-27",
+    "titre_fr": "HubSpot lance YouSpot, un CRM \"solo\" nativement IA",
+    "resume_fr": "Dharmesh Shah (HubSpot) présente YouSpot, un CRM conçu uniquement pour les entreprises d'une personne (consultants, créateurs, indépendants). L'outil se connecte à Gmail, Calendar, LinkedIn et X pour construire un \"second cerveau\" et suggérer relances et opportunités, à un prix d'appel de 1 $/mois.",
+    "tags": [
+      "produit",
+      "agents",
+      "vente",
+      "automatisation",
+      "saas"
+    ],
+    "score": 63,
+    "tweet_url": "https://x.com/dharmesh/status/2093071931188597042",
+    "media": true,
+    "auteur_x": "@dharmesh"
+  },
+  {
+    "date": "2026-08-27",
+    "titre_fr": "Cursor permet de créer et déployer des applications web",
+    "resume_fr": "L'éditeur de code IA Cursor ajoute la possibilité de créer de nouvelles applications web, de stocker le code via Origin et de les déployer directement sur Vercel, dans une logique de développement de bout en bout.",
+    "tags": [
+      "produit",
+      "agents",
+      "no-code"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/cursor_ai/status/2093077548649570777",
+    "media": true,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-08-27",
+    "titre_fr": "Anthropic ouvre un plan Claude Team pour 10 000 scientifiques",
+    "resume_fr": "Anthropic lance un plan dédié aux chercheurs : les sièges standard sont gratuits et les sièges premium (5x d'usage) à 15 $/mois, soit 80 % de réduction pendant un an. Les responsables de laboratoires académiques et à but non lucratif peuvent inscrire leurs équipes.",
+    "tags": [
+      "anthropic",
+      "produit",
+      "recherche"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/claudeai/status/2093059087298601113",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-08-27",
+    "titre_fr": "Plus de 100 organisations appellent à un effort mondial de cyberdéfense IA",
+    "resume_fr": "OpenAI, Anthropic, AWS, Google, Microsoft, Oracle et d'autres cosignent une lettre ouverte réclamant un renforcement urgent des défenses informatiques à l'ère de l'IA, jugeant la fenêtre d'action limitée.",
+    "tags": [
+      "politique-ia",
+      "openai",
+      "anthropic",
+      "google"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/gdb/status/2093021551855812842",
+    "media": false,
+    "auteur_x": "@gdb"
+  },
+  {
+    "date": "2026-08-27",
+    "titre_fr": "ScaleBot génère des landing pages e-commerce à partir d'un prompt",
+    "resume_fr": "Un outil bâti sur le SDK d'agents de Claude qui, à partir d'un brief d'une ligne et de la charte de marque enregistrée, planifie, rédige, conçoit et publie une page (listicle, advertorial), avec export en un clic vers Shopify ou en HTML.",
+    "tags": [
+      "produit",
+      "marketing",
+      "commerce",
+      "shopify",
+      "automatisation"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/mikefutia/status/2093053890329813244",
+    "media": true,
+    "auteur_x": "@mikefutia"
+  },
+  {
+    "date": "2026-08-27",
+    "titre_fr": "Anthropic présente un standard pour piloter des équipements de labo",
+    "resume_fr": "Anthropic ouvre la première phase d'une preview de recherche du Model Hardware Standard (MHS), un cadre destiné à permettre à des agents IA de commander en sécurité des équipements physiques dans la recherche scientifique et la fabrication avancée.",
+    "tags": [
+      "anthropic",
+      "agents",
+      "hardware",
+      "recherche"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/AnthropicAI/status/2093038426140651791",
+    "media": true,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-08-28",
+    "titre_fr": "Google déploie de nouveaux modèles Gemini et une expérience Live enrichie",
+    "resume_fr": "Google a annoncé plusieurs nouveautés cette semaine : Gemini 3.5 Transcribe (transcription vocale plus précise), Gemini Omni 1.1 Flash pour la génération et l'édition vidéo, et une expérience Gemini Live capable de gérer des tâches complexes, dont la gestion de la boîte Gmail.",
+    "tags": [
+      "google",
+      "modeles",
+      "produit",
+      "automatisation"
+    ],
+    "score": 75,
+    "tweet_url": "https://x.com/GoogleAI/status/2093356767992279503",
+    "media": false,
+    "auteur_x": "@GoogleAI"
+  },
+  {
+    "date": "2026-08-28",
+    "titre_fr": "a16z crée un fonds de 1,1 milliard pour l'infrastructure physique de l'IA",
+    "resume_fr": "Le fonds Machine Age d'a16z vise les startups construisant le \"sous-sol\" de l'IA : puces, mémoire, réseau, logiciels systèmes, énergie et matériel physique. Les investisseurs estiment que le goulot d'étranglement n'est plus le modèle mais l'infrastructure sous-jacente.",
+    "tags": [
+      "hardware",
+      "recherche"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/a16z/status/2093340813174747432",
+    "media": true,
+    "auteur_x": "@a16z"
+  },
+  {
+    "date": "2026-08-28",
+    "titre_fr": "Nvidia : 96 Md$ de revenus trimestriels et 366 Md$ d'engagements futurs",
+    "resume_fr": "Gary Marcus met en avant deux chiffres du 10-Q de Nvidia : 96 milliards de dollars de revenus au T2 et environ 366 milliards d'engagements futurs (approvisionnement, cloud, baux de data centers, capex), signe de l'ampleur des dépenses liées à l'IA.",
+    "tags": [
+      "hardware",
+      "nvidia"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/GaryMarcus/status/2093359844854276481",
+    "media": false,
+    "auteur_x": "@GaryMarcus"
   }
 ]
