@@ -9659,5 +9659,101 @@
     "tweet_url": "https://x.com/GaryMarcus/status/2093359844854276481",
     "media": false,
     "auteur_x": "@GaryMarcus"
+  },
+  {
+    "date": "2026-08-28",
+    "titre_fr": "Anthropic teste l'auto-alignement par Claude",
+    "resume_fr": "Anthropic publie une recherche de ses Fellows : avec 48 heures et un seul GPU, Claude a proposé, entraîné et testé de manière autonome des méthodes pour améliorer l'alignement de petits modèles, avec des résultats jugés étonnamment bons.",
+    "tags": [
+      "anthropic",
+      "recherche",
+      "modeles"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/AnthropicAI/status/2093386528668172373",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-08-28",
+    "titre_fr": "Analyse de l'incident OpenAI / Hugging Face",
+    "resume_fr": "Gary Marcus et Zack Korman publient une analyse gratuite d'un incident impliquant OpenAI et Hugging Face, centrée moins sur le comportement de l'IA que sur ce qu'OpenAI aurait dû faire en matière de sécurité et de réponse.",
+    "tags": [
+      "openai",
+      "politique-ia"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/GaryMarcus/status/2093404702507737143",
+    "media": true,
+    "auteur_x": "@GaryMarcus"
+  },
+  {
+    "date": "2026-08-28",
+    "titre_fr": "GLM 5.3 disponible dans Perplexity",
+    "resume_fr": "Perplexity intègre GLM 5.3 à son environnement Computer. Le modèle, conçu pour les tâches d'agent multimodales à long contexte, dépasse la version précédente sur le benchmark de recherche maison de Perplexity.",
+    "tags": [
+      "modeles",
+      "produit",
+      "open-source"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/perplexity_ai/status/2093410587338575936",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-08-28",
+    "titre_fr": "Decagon utilise Perplexity pour le support client",
+    "resume_fr": "Decagon indique alimenter le support client de grandes marques (Delta, Ticketmaster, American Airlines, Deutsche Telekom) et s'appuie désormais sur la recherche de Perplexity pour fournir des réponses fondées sur des informations en ligne à jour.",
+    "tags": [
+      "agents",
+      "service-client",
+      "produit"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/AravSrinivas/status/2093389485384057223",
+    "media": false,
+    "auteur_x": "@AravSrinivas"
+  },
+  {
+    "date": "2026-08-29",
+    "titre_fr": "OpenAI met fin à son partenariat avec Cursor",
+    "resume_fr": "OpenAI annonce l'arrêt de son partenariat avec Cursor à la suite du rachat de ce dernier par SpaceX. L'accès direct des utilisateurs de Cursor aux modèles OpenAI doit prendre fin le 12 novembre, avec un accompagnement promis pour les développeurs concernés.",
+    "tags": [
+      "openai",
+      "produit",
+      "agents"
+    ],
+    "score": 82,
+    "tweet_url": "https://x.com/OpenAI/status/2093515564786540695",
+    "media": false,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-08-29",
+    "titre_fr": "Replit propose les modèles OpenAI gratuitement face à Cursor",
+    "resume_fr": "Replit met en avant l'accès gratuit aux modèles OpenAI sur sa plateforme et un routeur multi-modèles. L'entreprise se positionne comme alternative indépendante à Cursor et propose de financer la migration des entreprises.",
+    "tags": [
+      "produit",
+      "agents",
+      "openai"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/amasad/status/2093533378880667787",
+    "media": false,
+    "auteur_x": "@amasad"
+  },
+  {
+    "date": "2026-08-29",
+    "titre_fr": "Les résumés IA de Google pèseraient sur Wikipédia",
+    "resume_fr": "Ethan Mollick relaie des premiers signes suggérant que les AI Overviews de Google réduiraient le trafic de Wikipédia, à l'image de ce que les assistants de code ont fait subir à Stack Exchange.",
+    "tags": [
+      "google",
+      "recherche"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/emollick/status/2093530834124800046",
+    "media": true,
+    "auteur_x": "@emollick"
   }
 ]
