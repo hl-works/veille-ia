@@ -9755,5 +9755,34 @@
     "tweet_url": "https://x.com/emollick/status/2093530834124800046",
     "media": true,
     "auteur_x": "@emollick"
+  },
+  {
+    "date": "2026-08-29",
+    "titre_fr": "Anthropic propose des ressources gratuites pour apprendre à utiliser Claude",
+    "resume_fr": "Anthropic met à disposition un large catalogue gratuit de formations autour de Claude (cours, tutoriels, cas d'usage et webinaires). L'ensemble vise notamment les utilisateurs non techniques souhaitant intégrer l'IA dans leur activité.",
+    "tags": [
+      "anthropic",
+      "produit",
+      "automatisation"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/coreyganim/status/2093825027632505336",
+    "media": true,
+    "auteur_x": "@coreyganim"
+  },
+  {
+    "date": "2026-08-30",
+    "titre_fr": "Générer des carrousels Instagram de marque avec Claude Code",
+    "resume_fr": "Un workflow présenté permet de produire automatiquement six visuels de carrousel Instagram à partir d'une URL de marque et d'un nom de produit : récupération des couleurs et de la charte, rédaction des concepts, puis génération des images. Pensé pour les marques DTC et agences, malgré son caractère promotionnel il illustre un usage concret pour le marketing.",
+    "tags": [
+      "anthropic",
+      "produit",
+      "marketing",
+      "commerce"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/mikefutia/status/2093858741494174011",
+    "media": false,
+    "auteur_x": "@mikefutia"
   }
 ]
