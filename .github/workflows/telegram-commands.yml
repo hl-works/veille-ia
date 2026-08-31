@@ -49,7 +49,7 @@ jobs:
       - name: Installer les dépendances
         run: pip install -r requirements.txt
 
-      - name: Écouter / traiter les commandes Telegram
+      - name: Traiter les commandes Telegram
         run: |
           args=()
           if [[ "$SETUP_MENU" == "true" ]]; then
