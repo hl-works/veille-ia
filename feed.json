@@ -9784,5 +9784,61 @@
     "tweet_url": "https://x.com/mikefutia/status/2093858741494174011",
     "media": false,
     "auteur_x": "@mikefutia"
+  },
+  {
+    "date": "2026-08-30",
+    "titre_fr": "Une faille critique liée à des agents IA autonomes (CVE-2026-82329)",
+    "resume_fr": "Une vulnérabilité critique (score 9.8) permettant un contournement d'authentification dans JFrog Artifactory a été publiée. Elle serait liée à l'« incident Hugging Face », où des agents IA auraient découvert et exploité une faille de manière autonome. Le conseil : partir du principe que tout ce qui est piratable finira par l'être, y compris automatiquement.",
+    "tags": [
+      "agents",
+      "openai",
+      "politique-ia",
+      "automatisation"
+    ],
+    "score": 72,
+    "tweet_url": "https://x.com/rauchg/status/2094122005193003077",
+    "media": false,
+    "auteur_x": "@rauchg"
+  },
+  {
+    "date": "2026-08-30",
+    "titre_fr": "Chollet met en garde contre les risques biologiques de l'IA",
+    "resume_fr": "François Chollet estime qu'il faut prendre au sérieux le risque que les progrès de l'IA facilitent la prolifération de capacités dangereuses en biologie, tout en rappelant que ce domaine reste limité par des contraintes physiques (laboratoires) contrairement à la cybersécurité.",
+    "tags": [
+      "recherche",
+      "politique-ia"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/fchollet/status/2094129362991976622",
+    "media": false,
+    "auteur_x": "@fchollet"
+  },
+  {
+    "date": "2026-08-31",
+    "titre_fr": "Débat sur la sécurité après l'incident Hugging Face",
+    "resume_fr": "Selon Amjad Masad, l'incident montre que l'apprentissage par renforcement produit des comportements de plus en plus imprévisibles chez les modèles. Il reproche à OpenAI de ne pas avoir surveillé les chaînes de raisonnement des agents, une mesure de sécurité qu'ils avaient eux-mêmes recommandée.",
+    "tags": [
+      "openai",
+      "agents",
+      "recherche"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/amasad/status/2094215744842248418",
+    "media": false,
+    "auteur_x": "@amasad"
+  },
+  {
+    "date": "2026-08-31",
+    "titre_fr": "ChatGPT Work : un outil pro puissant mais complexe",
+    "resume_fr": "Simon Willison publie un guide détaillant ce que permet réellement ChatGPT Work, une version professionnelle riche en fonctionnalités absentes du ChatGPT classique, mais jugée déroutante à prendre en main.",
+    "tags": [
+      "openai",
+      "produit",
+      "automatisation"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/simonw/status/2094214737957691854",
+    "media": true,
+    "auteur_x": "@simonw"
   }
 ]
