@@ -37,10 +37,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Récupérer le code
-        uses: actions/checkout@v5
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
 
       - name: Installer Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
         with:
           python-version: "3.12"
           cache: pip
@@ -49,25 +49,37 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Lancer le backfill
-        run: >-
-          python -m veille.backfill
-          --since "${{ inputs.since }}"
-          --until "${{ inputs.until }}"
-          --max-per-account "${{ inputs.max_per_account }}"
-          --max-tweets "${{ inputs.max_tweets }}"
-          ${{ inputs.write && '--write' || '' }}
+        run: |
+          args=(
+            --since "$SINCE"
+            --until "$UNTIL"
+            --max-per-account "$MAX_PER_ACCOUNT"
+            --max-tweets "$MAX_TWEETS"
+          )
+          if [[ "$WRITE_OUTPUT" == "true" ]]; then
+            args+=(--write)
+          fi
+          python -m veille.backfill "${args[@]}"
         env:
+          SINCE: ${{ inputs.since }}
+          UNTIL: ${{ inputs.until }}
+          MAX_PER_ACCOUNT: ${{ inputs.max_per_account }}
+          MAX_TWEETS: ${{ inputs.max_tweets }}
+          WRITE_OUTPUT: ${{ inputs.write }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           TWITTERAPI_IO_KEY: ${{ secrets.TWITTERAPI_IO_KEY }}
 
       - name: Sauvegarder feed.json / seen.json
         if: ${{ inputs.write }}
+        env:
+          SINCE: ${{ inputs.since }}
+          UNTIL: ${{ inputs.until }}
         run: |
           if [ -n "$(git status --porcelain feed.json seen.json)" ]; then
             git config user.name "veille-bot"
             git config user.email "veille-bot@users.noreply.github.com"
             git add feed.json seen.json
-            git commit -m "data: backfill feed.json (${{ inputs.since }} → ${{ inputs.until }})"
+            git commit -m "data: backfill feed.json (${SINCE} → ${UNTIL})"
             git push
           else
             echo "Aucune donnée générée."
