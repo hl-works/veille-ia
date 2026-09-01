@@ -38,10 +38,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Récupérer le code
-        uses: actions/checkout@v5
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
 
       - name: Installer Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
         with:
           python-version: "3.12"
           cache: pip
@@ -49,11 +49,15 @@ jobs:
       - name: Installer les dépendances
         run: pip install -r requirements.txt
 
-      - name: Écouter / traiter les commandes Telegram
-        run: >-
-          python -m veille.listen
-          ${{ inputs.setup_menu && '--setup-menu' || '' }}
+      - name: Traiter les commandes Telegram
+        run: |
+          args=()
+          if [[ "$SETUP_MENU" == "true" ]]; then
+            args+=(--setup-menu)
+          fi
+          python -m veille.listen "${args[@]}"
         env:
+          SETUP_MENU: ${{ inputs.setup_menu }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           TWITTERAPI_IO_KEY: ${{ secrets.TWITTERAPI_IO_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
