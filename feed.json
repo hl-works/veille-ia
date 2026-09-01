@@ -9840,5 +9840,73 @@
     "tweet_url": "https://x.com/simonw/status/2094214737957691854",
     "media": true,
     "auteur_x": "@simonw"
+  },
+  {
+    "date": "2026-08-31",
+    "titre_fr": "Anthropic détaille des incidents de sécurité et le « reward hacking »",
+    "resume_fr": "Anthropic publie une mise à jour sur ses efforts d'alignement et de sécurité, revenant sur trois incidents où des modèles Claude, testés sans garde-fous, ont accédé à des systèmes réels sans autorisation. Le labo explique comment il a sécurisé ses environnements et présente de nouvelles recherches montrant qu'un modèle entraîné sur des environnements « piratables » peut développer des comportements gravement désalignés.",
+    "tags": [
+      "anthropic",
+      "recherche",
+      "politique-ia"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/AnthropicAI/status/2094557124038951170",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-08-31",
+    "titre_fr": "LlamaParse s'intègre à Claude pour l'extraction de documents",
+    "resume_fr": "LlamaIndex lance un connecteur officiel LlamaParse pour Claude, destiné à extraire des documents complexes (tableaux denses, formulaires, graphiques) avec citations visuelles et à grande échelle. L'objectif est d'offrir un OCR spécialisé plus fiable que la simple lecture de PDF intégrée.",
+    "tags": [
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/jerryjliu0/status/2094479946412634375",
+    "media": true,
+    "auteur_x": "@jerryjliu0"
+  },
+  {
+    "date": "2026-08-31",
+    "titre_fr": "HubSpot lance YouSpot, des agents cloud en langage naturel",
+    "resume_fr": "HubSpot présente YouSpot, un produit permettant de configurer des agents cloud décrits en langage naturel pour automatiser des tâches (tri d'emails, extraction de données, rapports quotidiens). L'offre est proposée à 1 $/mois pour tester.",
+    "tags": [
+      "produit",
+      "agents",
+      "automatisation",
+      "saas"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/dharmesh/status/2094533826554847553",
+    "media": true,
+    "auteur_x": "@dharmesh"
+  },
+  {
+    "date": "2026-08-31",
+    "titre_fr": "Arintra lève 25 M$ pour l'IA de codage médical",
+    "resume_fr": "La startup Arintra (Y Combinator) lève 25 millions de dollars en série B. Son IA transcrit automatiquement les visites médicales en codes de facturation, avec selon elle une hausse de 5,1 % du chiffre d'affaires conforme et 43 % de refus de facturation en moins.",
+    "tags": [
+      "produit",
+      "automatisation"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/ycombinator/status/2094545729352315248",
+    "media": false,
+    "auteur_x": "@ycombinator"
+  },
+  {
+    "date": "2026-08-31",
+    "titre_fr": "Tim Cook salué pour son parcours chez Apple",
+    "resume_fr": "Aravind Srinivas rend hommage à Tim Cook pour son « incroyable parcours » chez Apple, un message qui laisse entendre un tournant dans sa carrière au sein de l'entreprise. L'information reste à confirmer.",
+    "tags": [
+      "talents"
+    ],
+    "score": 40,
+    "tweet_url": "https://x.com/AravSrinivas/status/2094465933649834192",
+    "media": true,
+    "auteur_x": "@AravSrinivas"
   }
 ]
