@@ -9908,5 +9908,175 @@
     "tweet_url": "https://x.com/AravSrinivas/status/2094465933649834192",
     "media": true,
     "auteur_x": "@AravSrinivas"
+  },
+  {
+    "date": "2026-09-01",
+    "titre_fr": "Anthropic lance Claude Fable 5.1 et Mythos 5.1",
+    "resume_fr": "Anthropic présente deux nouveaux modèles, Claude Fable 5.1 et Mythos 5.1, positionnés comme ses plus avancés pour le code et le travail intellectuel. Les premiers retours saluent surtout les progrès sur les tâches longues et agentiques nécessitant du jugement, et le modèle est déjà disponible dans plusieurs plateformes (Cursor, Perplexity, Vercel).",
+    "tags": [
+      "anthropic",
+      "modeles",
+      "produit",
+      "agents"
+    ],
+    "score": 82,
+    "tweet_url": "https://x.com/claudeai/status/2094848572143407483",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-09-01",
+    "titre_fr": "Anthropic dévoile ses Enterprise Frontier Safeguards",
+    "resume_fr": "En marge de Fable 5.1, Anthropic annonce les Enterprise Frontier Safeguards (EFS), une couche de surveillance pour les agents en entreprise. L'idée : garder les données de l'entreprise dans son propre cloud tout en détectant automatiquement les comportements à risque des agents ayant accès aux systèmes internes.",
+    "tags": [
+      "anthropic",
+      "agents",
+      "produit",
+      "service-client"
+    ],
+    "score": 63,
+    "tweet_url": "https://x.com/alexalbert__/status/2094889286990446769",
+    "media": false,
+    "auteur_x": "@alexalbert__"
+  },
+  {
+    "date": "2026-09-01",
+    "titre_fr": "OpenAI annonce Astra et ralentit certains développements pour la sécurité",
+    "resume_fr": "Sam Altman annonce l'arrivée prochaine d'un nouveau modèle, Astra, décrit comme une avancée majeure en capacités et en alignement. OpenAI dit avoir passé l'été à travailler sur la sécurité et ralentir volontairement certains modèles suivants pour respecter ses standards.",
+    "tags": [
+      "openai",
+      "modeles",
+      "politique-ia"
+    ],
+    "score": 72,
+    "tweet_url": "https://x.com/sama/status/2094934592062959832",
+    "media": false,
+    "auteur_x": "@sama"
+  },
+  {
+    "date": "2026-09-01",
+    "titre_fr": "OpenAI : Astra atteint le seuil « critique » en cybersécurité",
+    "resume_fr": "OpenAI indique qu'Astra franchit le seuil « critique » de son cadre Preparedness en matière de cybersécurité. L'entreprise détaille comment elle a évalué le modèle et fait évoluer ses garde-fous en parallèle de ses capacités.",
+    "tags": [
+      "openai",
+      "modeles",
+      "politique-ia"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/OpenAI/status/2094885578173260259",
+    "media": false,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-09-01",
+    "titre_fr": "World Labs présente Atlas, un modèle de monde multimodal",
+    "resume_fr": "World Labs dévoile Atlas, un modèle capable de générer jusqu'à une minute de vidéo à partir de texte et d'images, avec un contrôle précis de la caméra et une cohérence spatiale. Un autre modèle permet même de refilmer une scène existante sous un nouvel angle.",
+    "tags": [
+      "recherche",
+      "modeles",
+      "produit"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/venturetwins/status/2094844047169061291",
+    "media": true,
+    "auteur_x": "@venturetwins"
+  },
+  {
+    "date": "2026-09-01",
+    "titre_fr": "Google apporte la compréhension vidéo agentique à Gemini",
+    "resume_fr": "Google DeepMind ajoute à ses modèles Gemini (dont 3.7 Flash) une analyse « agentique » des vidéos longues, avec une meilleure précision tout en consommant jusqu'à 88 % de tokens en moins. La fonction se pilote par vidéo via l'API Gemini.",
+    "tags": [
+      "google",
+      "produit",
+      "modeles"
+    ],
+    "score": 57,
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2094840179676660097",
+    "media": true,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-09-01",
+    "titre_fr": "Perplexity introduit le calcul hybride local/cloud",
+    "resume_fr": "Perplexity ajoute le « calcul hybride » à son application Mac : une tâche peut démarrer dans le cloud puis basculer vers un modèle local pour les étapes touchant des fichiers privés ou sensibles (documents fiscaux, médicaux, juridiques).",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/perplexity_ai/status/2094803515264978953",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-09-01",
+    "titre_fr": "Shopify : un petit modèle finetuné bat GPT pour une tâche spécialisée",
+    "resume_fr": "Selon Tobi Lütke, l'équipe ML de Shopify obtient d'excellents résultats en entraînant de tout petits modèles dédiés : un modèle de 0,8 milliard de paramètres surpasse un grand modèle généraliste sur une tâche très spécialisée. Une illustration de l'intérêt des modèles sur-mesure pour les usages métier.",
+    "tags": [
+      "shopify",
+      "modeles",
+      "commerce",
+      "automatisation"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/tobi/status/2094808564355191249",
+    "media": true,
+    "auteur_x": "@tobi"
+  },
+  {
+    "date": "2026-09-01",
+    "titre_fr": "Shopify s'intègre à Stripe Projects",
+    "resume_fr": "Shopify et Stripe étendent leur partenariat de longue date : il est désormais possible d'ajouter Shopify au sein de Stripe Projects, pour rapprocher les outils des entrepreneurs qui construisent leur activité.",
+    "tags": [
+      "shopify",
+      "paiement",
+      "commerce",
+      "produit"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/harleyf/status/2094839263649263753",
+    "media": false,
+    "auteur_x": "@harleyf"
+  },
+  {
+    "date": "2026-09-01",
+    "titre_fr": "Wafer lève 40 M$ pour son cloud d'inférence open source rapide",
+    "resume_fr": "La startup Wafer, qui optimise les GPU via des agents pour faire tourner des modèles open source à très basse latence, est passée de 0 à 8 M$ de revenus annuels en quatre mois et lève une série A de 40 M$. Un signe de l'engouement des entreprises pour les modèles ouverts alliant coût et rapidité.",
+    "tags": [
+      "hardware",
+      "open-source",
+      "talents"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/ycombinator/status/2094847763720577451",
+    "media": true,
+    "auteur_x": "@ycombinator"
+  },
+  {
+    "date": "2026-09-02",
+    "titre_fr": "Débat sur la surveillance des chaînes de raisonnement chez OpenAI",
+    "resume_fr": "Selon un article de The Information, OpenAI expérimenterait des techniques réduisant la « monitorabilité » des chaînes de raisonnement (chain of thought). Plusieurs chercheurs, dont Gary Marcus, alertent : cet outil de supervision imparfait reste l'un des rares filets de sécurité et le sacrifier pour des gains de performance inquiète.",
+    "tags": [
+      "openai",
+      "recherche",
+      "politique-ia"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/GaryMarcus/status/2094980909107978498",
+    "media": false,
+    "auteur_x": "@GaryMarcus"
+  },
+  {
+    "date": "2026-09-02",
+    "titre_fr": "Jakub nommé chief scientist d'OpenAI",
+    "resume_fr": "OpenAI a un nouveau directeur scientifique : Jakub, dont la nomination a été confirmée publiquement. Un mouvement notable dans la hiérarchie scientifique du laboratoire.",
+    "tags": [
+      "openai",
+      "talents"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/polynoamial/status/2095027255236087903",
+    "media": false,
+    "auteur_x": "@polynoamial"
   }
 ]
