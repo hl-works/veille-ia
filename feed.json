@@ -10078,5 +10078,131 @@
     "tweet_url": "https://x.com/polynoamial/status/2095027255236087903",
     "media": false,
     "auteur_x": "@polynoamial"
+  },
+  {
+    "date": "2026-09-02",
+    "titre_fr": "Google lance Gemini 3.8 Flash",
+    "resume_fr": "Google DeepMind présente Gemini 3.8 Flash, son modèle « workhorse » le plus performant, avec des gains sur le code, les tâches d'agents et le raisonnement multi-étapes. C'est déjà la troisième mise à jour de la gamme Flash en six semaines, avec des contrôles d'effort pour ajuster le coût selon la difficulté de la tâche.",
+    "tags": [
+      "google",
+      "modeles",
+      "agents"
+    ],
+    "score": 78,
+    "tweet_url": "https://x.com/OfficialLoganK/status/2095175881690173885",
+    "media": true,
+    "auteur_x": "@OfficialLoganK"
+  },
+  {
+    "date": "2026-09-02",
+    "titre_fr": "Gemini 3.8 Flash Cyber pour la cybersécurité défensive",
+    "resume_fr": "Google dévoile une variante Gemini 3.8 Flash Cyber spécialisée dans la détection de failles et la génération automatique de correctifs. Elle est déjà utilisée en interne (2,6x plus de correctifs corrects que les meilleurs modèles commerciaux selon Google) et proposée en priorité aux gouvernements et opérateurs d'infrastructures critiques.",
+    "tags": [
+      "google",
+      "modeles",
+      "recherche"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/GoogleAI/status/2095197704406065635",
+    "media": true,
+    "auteur_x": "@GoogleAI"
+  },
+  {
+    "date": "2026-09-02",
+    "titre_fr": "Shopify adopte les Claude Commerce Agents",
+    "resume_fr": "Anthropic a lancé ses Claude Commerce Agents et Shopify propose déjà une implémentation de référence. Les commerçants disposent d'outils prêts à l'emploi pour le commerce agentique, ainsi que de briques flexibles pour construire leurs propres agents.",
+    "tags": [
+      "anthropic",
+      "agents",
+      "commerce",
+      "shopify",
+      "vente"
+    ],
+    "score": 82,
+    "tweet_url": "https://x.com/harleyf/status/2095245362172944430",
+    "media": true,
+    "auteur_x": "@harleyf"
+  },
+  {
+    "date": "2026-09-02",
+    "titre_fr": "Claude peut utiliser votre ordinateur en arrière-plan",
+    "resume_fr": "Anthropic ajoute à Claude Cowork et Claude Code la capacité de piloter votre ordinateur en tâche de fond : Claude clique, tape et ouvre des applications à votre place pendant que vous travaillez sur autre chose.",
+    "tags": [
+      "anthropic",
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/claudeai/status/2095226833293685100",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-09-02",
+    "titre_fr": "Perplexity ouvre le code de Lily, son moteur d'inférence local",
+    "resume_fr": "Perplexity met en open source Lily, le moteur d'inférence local qui alimente le calcul hybride de son app sur Apple Silicon. Il est optimisé pour faire tourner un modèle Qwen3.6 directement sur l'appareil, sans passer par le cloud.",
+    "tags": [
+      "open-source",
+      "modeles",
+      "hardware"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/perplexity_ai/status/2095241544383226274",
+    "media": false,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-09-02",
+    "titre_fr": "Cursor fait tourner ses agents cloud sur votre infrastructure",
+    "resume_fr": "Cursor permet désormais d'exécuter ses agents cloud sur sa propre infrastructure, avec des pools de machines qui s'adaptent automatiquement à la demande. Les agents peuvent ainsi accéder aux services internes tout en gardant la boucle d'exécution dans Cursor.",
+    "tags": [
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/cursor_ai/status/2095257412781396114",
+    "media": true,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-09-02",
+    "titre_fr": "Fable 5.1 progresse sur l'extraction de documents",
+    "resume_fr": "Selon les benchmarks de LlamaIndex, Fable 5.1 améliore nettement les performances d'OCR et d'extraction de tableaux par rapport à Fable 5, un progrès rare sur la compréhension visuelle. À 15 centimes la page, il reste toutefois 10 à 15 fois plus cher qu'un outil d'extraction dédié.",
+    "tags": [
+      "modeles",
+      "recherche"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/jerryjliu0/status/2095185262003265790",
+    "media": true,
+    "auteur_x": "@jerryjliu0"
+  },
+  {
+    "date": "2026-09-02",
+    "titre_fr": "Conveo lève 50 M$ pour son intervieweur IA",
+    "resume_fr": "La startup Conveo (YC S24) lève une série A de 50 millions de dollars. Son IA mène des entretiens vidéo approfondis avec des milliers de consommateurs, permettant aux marques d'obtenir en quelques jours des insights qui prenaient auparavant des mois. Plus de 400 entreprises l'utilisent.",
+    "tags": [
+      "talents",
+      "marketing",
+      "produit"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/ycombinator/status/2095179231865258141",
+    "media": false,
+    "auteur_x": "@ycombinator"
+  },
+  {
+    "date": "2026-09-02",
+    "titre_fr": "Moderna : premier vaccin anticancer individualisé à passer la phase 3",
+    "resume_fr": "Moderna annonce les premiers résultats positifs de phase 3 pour un vaccin anticancer personnalisé à base d'ARNm, qui séquence la tumeur d'un patient pour cibler jusqu'à 34 mutations spécifiques. Un jalon après plus de 1000 essais cliniques échoués dans le domaine sur vingt ans.",
+    "tags": [
+      "recherche"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/a16z/status/2095179949296750851",
+    "media": true,
+    "auteur_x": "@a16z"
   }
 ]
