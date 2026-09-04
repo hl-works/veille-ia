@@ -10204,5 +10204,117 @@
     "tweet_url": "https://x.com/a16z/status/2095179949296750851",
     "media": true,
     "auteur_x": "@a16z"
+  },
+  {
+    "date": "2026-09-03",
+    "titre_fr": "OpenAI lance GPT-6 Astra, axé sur l'usage autonome de l'ordinateur",
+    "resume_fr": "OpenAI présente GPT-6 Astra, présenté comme son meilleur modèle pour l'utilisation d'ordinateur, le travail professionnel, la science, le code et la cybersécurité. L'entreprise met en avant des scores très élevés sur plusieurs benchmarks et un déploiement progressif, d'abord pour les abonnés Pro et les clients API. Le lancement a connu des ratés que Sam Altman a reconnus.",
+    "tags": [
+      "openai",
+      "modeles",
+      "agents",
+      "automatisation"
+    ],
+    "score": 92,
+    "tweet_url": "https://x.com/sama/status/2095600005772104059",
+    "media": false,
+    "auteur_x": "@sama"
+  },
+  {
+    "date": "2026-09-03",
+    "titre_fr": "Google DeepMind dévoile WeatherNext 3",
+    "resume_fr": "Google DeepMind et Google Research annoncent WeatherNext 3, un modèle de prévision météo qui apprend directement des observations satellites en temps réel. Il offre des prévisions jusqu'à cinq fois plus fines que la version précédente, mises à jour toutes les heures, utiles notamment pour l'agriculture et les énergies renouvelables.",
+    "tags": [
+      "google",
+      "modeles",
+      "recherche"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2095528012791902536",
+    "media": true,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-09-03",
+    "titre_fr": "Microsoft AI présente MAI-Transcribe-2",
+    "resume_fr": "Mustafa Suleyman annonce MAI-Transcribe-2, un modèle de transcription vocale présenté comme le plus rapide et le moins cher du marché, en tête sur le compromis précision/latence selon Artificial Analysis. Il serait nettement plus rapide que les offres concurrentes de transcription.",
+    "tags": [
+      "modeles",
+      "produit"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/mustafasuleyman/status/2095521337670312056",
+    "media": true,
+    "auteur_x": "@mustafasuleyman"
+  },
+  {
+    "date": "2026-09-03",
+    "titre_fr": "AWS AgentCore Payments passe en disponibilité générale",
+    "resume_fr": "AWS rend généralement disponible AgentCore Payments, qui permet à des agents IA d'effectuer des paiements plafonnés et validés par un humain pour des API payantes, des serveurs MCP ou du contenu web. Une brique intéressante pour encadrer les dépenses des agents autonomes.",
+    "tags": [
+      "agents",
+      "paiement",
+      "hardware"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/openclaw/status/2095541230793015684",
+    "media": false,
+    "auteur_x": "@openclaw"
+  },
+  {
+    "date": "2026-09-03",
+    "titre_fr": "LlamaIndex lance Extract Turbo pour l'extraction de documents",
+    "resume_fr": "LlamaIndex présente Extract Turbo, une solution d'extraction de documents basée sur un modèle vision-langage, annoncée comme 3 à 5 fois plus rapide que les alternatives OCR à précision équivalente ou supérieure. Utile pour automatiser le traitement de factures et documents en entreprise.",
+    "tags": [
+      "produit",
+      "automatisation",
+      "saas"
+    ],
+    "score": 47,
+    "tweet_url": "https://x.com/jerryjliu0/status/2095622647375651100",
+    "media": true,
+    "auteur_x": "@jerryjliu0"
+  },
+  {
+    "date": "2026-09-03",
+    "titre_fr": "Anthropic veut rendre Claude Code beaucoup plus extensible",
+    "resume_fr": "Anthropic partage un aperçu de sa réflexion pour rendre Claude Code nettement plus extensible et personnalisable, et sollicite les retours des utilisateurs sur cette direction encore expérimentale.",
+    "tags": [
+      "anthropic",
+      "produit",
+      "agents"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/bcherny/status/2095590515765060076",
+    "media": false,
+    "auteur_x": "@bcherny"
+  },
+  {
+    "date": "2026-09-03",
+    "titre_fr": "Perplexity rend son Portable Computer disponible sur Linux RTX",
+    "resume_fr": "Perplexity annonce que son Portable Computer, un runtime entièrement local de Perplexity Computer, est désormais compatible avec les GPU NVIDIA RTX sous Linux (24 Go de VRAM minimum), une version Windows étant prévue. L'entreprise prévoit aussi d'intégrer GPT-6 Astra à ses produits.",
+    "tags": [
+      "produit",
+      "agents",
+      "hardware"
+    ],
+    "score": 40,
+    "tweet_url": "https://x.com/AravSrinivas/status/2095550497314963788",
+    "media": false,
+    "auteur_x": "@AravSrinivas"
+  },
+  {
+    "date": "2026-09-04",
+    "titre_fr": "Gemini 3.8 Flash évalué sur l'analyse de documents",
+    "resume_fr": "Un test de LlamaIndex sur ParseBench montre que Gemini 3.8 Flash progresse légèrement sur les tableaux et la fidélité du contenu, mais recule un peu sur les graphiques et le formatage sémantique, restant globalement au niveau des versions précédentes. L'analyse fine de documents demeure un défi pour les modèles de pointe.",
+    "tags": [
+      "google",
+      "modeles",
+      "recherche"
+    ],
+    "score": 35,
+    "tweet_url": "https://x.com/jerryjliu0/status/2095665678523007375",
+    "media": true,
+    "auteur_x": "@jerryjliu0"
   }
 ]
