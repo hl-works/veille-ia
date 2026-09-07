@@ -1,14 +1,35 @@
 name: Veille IA
 
 # ─────────────────────────────────────────────────────────────
-#  Lance le bot automatiquement chaque matin, et permet aussi un
-#  déclenchement manuel depuis l'onglet "Actions" de GitHub.
+#  Objectif : le digest Telegram tombe vers 8h00-8h30 heure de Paris.
+#
+#  Pourquoi une FENÊTRE de tentatives et non un seul cron ?
+#  Les workflows `schedule` de GitHub partent d'une file d'attente
+#  « best effort » : un cron à 05:00 UTC a démarré entre 08:44 et
+#  11:26 UTC fin août / début septembre 2026 (digest reçu vers midi,
+#  à heure fluctuante). On tente donc toutes les 20 minutes sur une
+#  fenêtre : la PREMIÈRE tentative qui démarre réellement après
+#  PARIS_EARLIEST publie, les suivantes voient l'état du jour
+#  (.state/last_run.txt) et s'arrêtent immédiatement.
+#
+#  Les crons sont en UTC (GitHub ignore l'heure d'été). La fenêtre
+#  06:03 → 09:43 UTC couvre 08:03 → 11:43 à Paris en été et
+#  07:03 → 10:43 en hiver ; c'est le garde-fou ci-dessous qui
+#  raisonne en Europe/Paris, donc l'heure de publication NE BOUGE PAS
+#  au changement d'heure.
+#
+#  Réglage : PARIS_EARLIEST (plus bas) = heure de Paris à partir de
+#  laquelle la publication est autorisée. C'est le seul curseur à
+#  toucher pour avancer/reculer le digest.
 # ─────────────────────────────────────────────────────────────
 on:
   schedule:
-    # 05:00 UTC = 7h à Paris en été (heure actuelle) / 6h en hiver.
-    # (GitHub Actions raisonne en UTC, sans heure d'été : on vise ~7h le matin.)
-    - cron: "0 5 * * *"
+    # Minutes volontairement décalées (03/23/43) : les marques :00 et
+    # :30 sont les plus encombrées côté GitHub.
+    - cron: "3,23,43 6 * * *"
+    - cron: "3,23,43 7 * * *"
+    - cron: "3,23,43 8 * * *"
+    - cron: "3,23,43 9 * * *"
   workflow_dispatch:
     inputs:
       dry_run:
@@ -16,14 +37,21 @@ on:
         type: boolean
         default: false
 
-# Évite deux exécutions simultanées.
+# Évite deux exécutions simultanées (et met les tentatives en file,
+# donc chacune voit bien l'état laissé par la précédente).
 concurrency:
   group: veille-ia
   cancel-in-progress: false
 
-# Autorise le job à committer feed.json/seen.json dans ce repo.
+# Autorise le job à committer feed.json/seen.json/état dans ce repo.
 permissions:
   contents: write
+
+env:
+  # Heure de Paris à partir de laquelle on publie (HH:MM).
+  PARIS_EARLIEST: "08:00"
+  # Mémoire « digest déjà publié aujourd'hui ».
+  STATE_FILE: .state/last_run.txt
 
 jobs:
   veille:
@@ -32,16 +60,60 @@ jobs:
       - name: Récupérer le code
         uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
 
+      # ── Garde-fou horaire + anti-doublon ──────────────────────
+      #  Un déclenchement manuel passe toujours (c'est le but d'un
+      #  « Run workflow »).
+      - name: Faut-il publier maintenant ?
+        id: gate
+        env:
+          EVENT: ${{ github.event_name }}
+        run: |
+          python3 - <<'PY'
+          import os, pathlib
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+
+          now = datetime.now(ZoneInfo("Europe/Paris"))
+          today = now.strftime("%Y-%m-%d")
+          earliest = os.environ["PARIS_EARLIEST"]
+          hh, mm = (int(x) for x in earliest.split(":"))
+
+          state = pathlib.Path(os.environ["STATE_FILE"])
+          last = state.read_text().strip() if state.exists() else "(aucun)"
+
+          if os.environ["EVENT"] == "workflow_dispatch":
+              go, why = True, "déclenchement manuel → on publie sans condition"
+          elif last == today:
+              go, why = False, f"digest du {today} déjà publié → on s'arrête"
+          elif (now.hour, now.minute) < (hh, mm):
+              go, why = False, (
+                  f"trop tôt : {now:%H:%M} à Paris, fenêtre ouverte à partir de {earliest}"
+              )
+          else:
+              go, why = True, f"go : {now:%H:%M} à Paris, digest du jour pas encore parti"
+
+          print(f"Heure de Paris   : {now:%Y-%m-%d %H:%M}")
+          print(f"Dernier digest   : {last}")
+          print(f"Décision         : {why}")
+
+          with open(os.environ["GITHUB_OUTPUT"], "a") as out:
+              out.write(f"run={'true' if go else 'false'}\n")
+              out.write(f"today={today}\n")
+          PY
+
       - name: Installer Python
+        if: steps.gate.outputs.run == 'true'
         uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
         with:
           python-version: "3.12"
           cache: pip
 
       - name: Installer les dépendances
+        if: steps.gate.outputs.run == 'true'
         run: pip install -r requirements.txt
 
       - name: Lancer la veille
+        if: steps.gate.outputs.run == 'true'
         run: |
           args=()
           if [[ "$DRY_RUN" == "true" ]]; then
@@ -57,16 +129,23 @@ jobs:
           # ce nom. (Telegram est optionnel : absent → publication sautée.)
           TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
 
-      # Persiste feed.json (cumulatif) et seen.json (mémoire dédup) dans CE repo.
-      # Sauté en dry-run (rien n'a été écrit).
-      - name: Sauvegarder feed.json / seen.json
-        if: ${{ !inputs.dry_run }}
+      # Persiste feed.json (cumulatif), seen.json (mémoire dédup) et
+      # l'état du jour dans CE repo. Sauté en dry-run (rien n'a été écrit,
+      # et on ne veut pas marquer la journée comme faite).
+      - name: Sauvegarder feed.json / seen.json / état du jour
+        if: ${{ steps.gate.outputs.run == 'true' && !inputs.dry_run }}
+        env:
+          TODAY: ${{ steps.gate.outputs.today }}
         run: |
-          if [ -n "$(git status --porcelain feed.json seen.json)" ]; then
+          mkdir -p "$(dirname "$STATE_FILE")"
+          printf '%s\n' "$TODAY" > "$STATE_FILE"
+          if [ -n "$(git status --porcelain feed.json seen.json "$STATE_FILE")" ]; then
             git config user.name "veille-bot"
             git config user.email "veille-bot@users.noreply.github.com"
-            git add feed.json seen.json
-            git commit -m "data: maj feed.json/seen.json ($(date -u +%F))"
+            git add feed.json seen.json "$STATE_FILE"
+            git commit -m "data: maj feed.json/seen.json ($TODAY)"
+            # Une autre action a pu pousser entre-temps (enrichissement…).
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" || true
             git push
           else
             echo "Aucun changement de données à committer."
@@ -76,7 +155,7 @@ jobs:
       # Le garde-fou « token absent → on saute » est dans le script (le
       # contexte `secrets` n'est PAS autorisé dans un `if:` GitHub Actions).
       - name: Publier feed.json vers knowledge-hub
-        if: ${{ !inputs.dry_run }}
+        if: ${{ steps.gate.outputs.run == 'true' && !inputs.dry_run }}
         env:
           KH_REPO_TOKEN: ${{ secrets.KH_REPO_TOKEN }}
           KH_REPO: hl-works/knowledge-hub
