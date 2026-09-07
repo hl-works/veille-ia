@@ -10532,5 +10532,87 @@
     "tweet_url": "https://x.com/TheZvi/status/2096408618006376807",
     "media": false,
     "auteur_x": "@TheZvi"
+  },
+  {
+    "date": "2026-09-06",
+    "titre_fr": "OpenAI détaille l'accélération de sa recherche interne par ses propres agents",
+    "resume_fr": "OpenAI a publié un billet décrivant comment ses agents de codage accélèrent son travail de recherche en interne, avec une forte hausse de la consommation de tokens à l'été. L'entreprise dit aussi avoir cadencé le développement de ses modèles pour prioriser surveillance, alignement et sécurité.",
+    "tags": [
+      "openai",
+      "recherche",
+      "agents"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/polynoamial/status/2096638670703055312",
+    "media": true,
+    "auteur_x": "@polynoamial"
+  },
+  {
+    "date": "2026-09-06",
+    "titre_fr": "World Labs présente Atlas, un modèle unifiant reconstruction 3D et génération",
+    "resume_fr": "World Labs (Fei-Fei Li et Justin Johnson) a présenté Atlas, un modèle multimodal capable de faire à la fois de la reconstruction 3D et de la génération dans une seule architecture, en travaillant nativement sur texte, images, vidéos et positions de caméra.",
+    "tags": [
+      "modeles",
+      "recherche"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/a16z/status/2096644736874639388",
+    "media": true,
+    "auteur_x": "@a16z"
+  },
+  {
+    "date": "2026-09-06",
+    "titre_fr": "Suleyman : le coût d'inférence d'un modèle « GPT-4 » divisé par 300 en 3 ans",
+    "resume_fr": "Mustafa Suleyman souligne que le coût pour faire tourner une IA de niveau GPT-4 a chuté d'un facteur 300 en trois ans, une baisse qu'il juge sans équivalent dans l'histoire technologique. Un point clé pour la démocratisation de l'IA dans les entreprises.",
+    "tags": [
+      "modeles",
+      "microsoft"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/mustafasuleyman/status/2096632991191876023",
+    "media": false,
+    "auteur_x": "@mustafasuleyman"
+  },
+  {
+    "date": "2026-09-06",
+    "titre_fr": "ScaleBot : générer une landing page à partir de l'URL d'un concurrent",
+    "resume_fr": "L'outil ScaleBot propose un générateur de pages d'atterrissage : on colle l'URL d'un concurrent et il recrée la mise en page en l'adaptant à sa marque (couleurs, polices, images produit, texte), avec export en un clic vers Shopify.",
+    "tags": [
+      "produit",
+      "marketing",
+      "commerce",
+      "shopify"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/mikefutia/status/2096705739465412942",
+    "media": true,
+    "auteur_x": "@mikefutia"
+  },
+  {
+    "date": "2026-09-06",
+    "titre_fr": "Fable 5.1 : génération de plusieurs mini-jeux en une seule requête",
+    "resume_fr": "Ethan Mollick montre les progrès de Fable 5.1 en édition et génération : à partir d'une seule instruction, le modèle produit huit petits jeux distincts et jouables inspirés d'Edgar Allan Poe.",
+    "tags": [
+      "modeles",
+      "produit"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/emollick/status/2096640625902764073",
+    "media": true,
+    "auteur_x": "@emollick"
+  },
+  {
+    "date": "2026-09-07",
+    "titre_fr": "OpenAI lance GPT-6 « Astra » et revendique l'entrée dans « l'ère de l'AGI »",
+    "resume_fr": "OpenAI a dévoilé son nouveau modèle GPT-6 « Astra » (et une variante « Max »), présenté par ses dirigeants comme le début de « l'ère de l'AGI ». Cette affirmation, relayée aussi par Jensen Huang de Nvidia, est vivement contestée par des critiques comme Gary Marcus qui pointent l'absence de définition claire et des faiblesses réelles du modèle (code, exécution de tâches).",
+    "tags": [
+      "openai",
+      "modeles",
+      "xai"
+    ],
+    "score": 78,
+    "tweet_url": "https://x.com/gdb/status/2096794565499883839",
+    "media": false,
+    "auteur_x": "@gdb"
   }
 ]
