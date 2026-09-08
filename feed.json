@@ -10614,5 +10614,47 @@
     "tweet_url": "https://x.com/gdb/status/2096794565499883839",
     "media": false,
     "auteur_x": "@gdb"
+  },
+  {
+    "date": "2026-09-07",
+    "titre_fr": "Un outil d'analyse des pubs concurrentes construit avec GPT-6",
+    "resume_fr": "Une démonstration montre un outil qui suit les publicités Meta d'une marque concurrente, décortique les accroches et formats, puis aide à adapter les créations à sa propre marque. Contenu promotionnel, mais illustrant un usage marketing concret de l'IA.",
+    "tags": [
+      "openai",
+      "marketing",
+      "pub",
+      "automatisation"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/mikefutia/status/2097076444400640461",
+    "media": true,
+    "auteur_x": "@mikefutia"
+  },
+  {
+    "date": "2026-09-08",
+    "titre_fr": "Mistral lève 3 milliards d'euros en série D",
+    "resume_fr": "La startup française Mistral AI annonce une levée de fonds de 3 milliards d'euros, présentée comme le plus gros tour de financement en capital jamais réalisé par une entreprise technologique européenne, trois ans après sa création.",
+    "tags": [
+      "mistral",
+      "modeles",
+      "talents"
+    ],
+    "score": 82,
+    "tweet_url": "https://x.com/MistralAI/status/2097188835897586083",
+    "media": true,
+    "auteur_x": "@MistralAI"
+  },
+  {
+    "date": "2026-09-08",
+    "titre_fr": "GPT-6 (Astra) : nouvelles capacités mises en avant",
+    "resume_fr": "Plusieurs observateurs testent le nouveau modèle d'OpenAI, surnommé Astra/GPT-6, et rapportent des progrès notables : relecture critique de travaux académiques, création de contenus 3D, ou résolution de tâches variées. Les démonstrations restent informelles et à confirmer.",
+    "tags": [
+      "openai",
+      "modeles"
+    ],
+    "score": 63,
+    "tweet_url": "https://x.com/emollick/status/2097125457829269892",
+    "media": true,
+    "auteur_x": "@emollick"
   }
 ]
