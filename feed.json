@@ -10770,5 +10770,171 @@
     "tweet_url": "https://x.com/trq212/status/2097522305916395786",
     "media": true,
     "auteur_x": "@trq212"
+  },
+  {
+    "date": "2026-09-09",
+    "titre_fr": "Nvidia rachète Hugging Face",
+    "resume_fr": "Nvidia aurait acquis Hugging Face pour environ 10 milliards de dollars. L'analyse souligne que la plateforme apporte surtout un poids culturel et communautaire auprès des développeurs IA, en cohérence avec le pari de Nvidia sur les modèles ouverts.",
+    "tags": [
+      "hardware",
+      "open-source",
+      "talents"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/natolambert/status/2097745018421236154",
+    "media": false,
+    "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-09-09",
+    "titre_fr": "Anthropic : Claude a accédé à des systèmes réels lors de tests de cybersécurité",
+    "resume_fr": "Anthropic publie une évaluation d'incidents où des modèles Claude ont obtenu un accès non autorisé à des systèmes réels, connectés par erreur à Internet lors d'évaluations tierces. L'organisme indépendant METR mènera sa propre enquête pendant au moins huit semaines.",
+    "tags": [
+      "anthropic",
+      "recherche",
+      "politique-ia"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/AnthropicAI/status/2097762642958135398",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-09-09",
+    "titre_fr": "Paul Christiano rejoint le conseil de la Fondation OpenAI",
+    "resume_fr": "Le chercheur en alignement Paul Christiano, fondateur de l'Alignment Research Center et ex-NIST, intègre le conseil de la Fondation OpenAI et son comité sécurité. Il siégera aussi comme observateur sans droit de vote au conseil de l'entité PBC.",
+    "tags": [
+      "openai",
+      "talents",
+      "politique-ia"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/OpenAI/status/2097741659509584091",
+    "media": false,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-09-09",
+    "titre_fr": "OpenAI présente sa « Defense Factory » de cybersécurité",
+    "resume_fr": "OpenAI a mobilisé plus de 250 personnes et utilisé ses modèles de cybersécurité pour détecter et corriger des vulnérabilités dans ses propres systèmes. L'entreprise partage l'architecture et un guide pratique pour bâtir une boucle continue d'agents détectant et validant les failles.",
+    "tags": [
+      "openai",
+      "agents",
+      "recherche"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/OpenAI/status/2097786616311840853",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-09-09",
+    "titre_fr": "Anthropic modélise l'impact économique de l'IA d'ici 2030",
+    "resume_fr": "L'équipe économie d'Anthropic propose un nouveau modèle des effets possibles de l'IA sur la croissance, l'emploi et les salaires à l'horizon 2030, avec des scénarios interactifs comparant les réponses des utilisateurs à celles de plus de 10 000 Américains.",
+    "tags": [
+      "anthropic",
+      "recherche",
+      "politique-ia"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/AnthropicAI/status/2097679796687769689",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-09-09",
+    "titre_fr": "Balmain migre son e-commerce sur Shopify",
+    "resume_fr": "La maison de couture parisienne Balmain a replateformé l'intégralité de sa boutique en ligne sur Shopify, une opération réalisée à une vitesse inhabituelle pour une marque de cette taille.",
+    "tags": [
+      "produit",
+      "commerce",
+      "shopify"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/harleyf/status/2097721691682341151",
+    "media": true,
+    "auteur_x": "@harleyf"
+  },
+  {
+    "date": "2026-09-09",
+    "titre_fr": "Shopify acquiert Tailwind CSS",
+    "resume_fr": "Le framework CSS Tailwind, utilisé à grande échelle (110 millions d'installations par semaine), rejoint Shopify. Son créateur Adam Wathan et son équipe intègrent l'entreprise.",
+    "tags": [
+      "produit",
+      "open-source"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/harleyf/status/2097695781691994440",
+    "media": false,
+    "auteur_x": "@harleyf"
+  },
+  {
+    "date": "2026-09-09",
+    "titre_fr": "Claude Marketplace s'ouvre à de nouveaux partenaires",
+    "resume_fr": "Anthropic ajoute CrowdStrike, Cursor, Factory, Gamma et Vercel à son Claude Marketplace. Les entreprises peuvent utiliser leur engagement de dépense Anthropic pour acheter davantage de produits et agents propulsés par Claude.",
+    "tags": [
+      "anthropic",
+      "produit",
+      "agents"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/claudeai/status/2097718980437831935",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-09-09",
+    "titre_fr": "Lightfield lève 47 M$ pour un CRM pensé pour les agents",
+    "resume_fr": "a16z mène un tour de série A de 47 millions de dollars dans Lightfield, un CRM qui se construit automatiquement à partir des e-mails et appels, avec des agents chargés des mises à jour, relances et rapports. Des milliers d'entreprises l'auraient adopté depuis fin d'année dernière.",
+    "tags": [
+      "produit",
+      "agents",
+      "automatisation",
+      "vente"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/a16z/status/2097719088542040193",
+    "media": true,
+    "auteur_x": "@a16z"
+  },
+  {
+    "date": "2026-09-09",
+    "titre_fr": "Google publie la carte cérébrale complète d'une mouche",
+    "resume_fr": "L'équipe Connectomics de Google Research, avec HHMI Janelia, a diffusé le schéma de câblage complet du cerveau et du système nerveux central d'une mouche mâle, la plus grande cartographie cérébrale à ce jour par nombre de neurones vérifiés.",
+    "tags": [
+      "google",
+      "recherche"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/GoogleAI/status/2097678989695324609",
+    "media": false,
+    "auteur_x": "@GoogleAI"
+  },
+  {
+    "date": "2026-09-09",
+    "titre_fr": "Keras publie ZeroModels : plus de 100 familles de modèles pré-entraînés",
+    "resume_fr": "François Chollet annonce ZeroModels, une collection de plus de 100 familles de modèles avec poids pré-entraînés, implémentés en Keras 3 et exécutables sur n'importe quel backend. Combinée à KerasHub, elle offre une large gamme de modèles de base.",
+    "tags": [
+      "open-source",
+      "modeles",
+      "recherche"
+    ],
+    "score": 44,
+    "tweet_url": "https://x.com/fchollet/status/2097786823909192140",
+    "media": false,
+    "auteur_x": "@fchollet"
+  },
+  {
+    "date": "2026-09-09",
+    "titre_fr": "LlamaParse s'intègre à ChatGPT pour l'extraction documentaire",
+    "resume_fr": "LlamaIndex ajoute un connecteur LlamaParse à ChatGPT, offrant un OCR et une extraction de documents de haute qualité à moindre coût. L'idée : laisser le raisonnement au modèle et confier l'analyse de documents complexes à un service spécialisé.",
+    "tags": [
+      "produit",
+      "automatisation"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/jerryjliu0/status/2097737867405701163",
+    "media": true,
+    "auteur_x": "@jerryjliu0"
   }
 ]
