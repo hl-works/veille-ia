@@ -12,3 +12,7 @@ venv/
 # Sorties locales / debug
 *.log
 digest_*.html
+
+# Daily audio travels through expiring Actions artifacts, never through Git.
+audio-input/
+audio-output/

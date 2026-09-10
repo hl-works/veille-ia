@@ -200,3 +200,29 @@ def _send_chunk(
 def _retry_delay(attempt: int) -> int:
     """Backoff simple : 2s, 4s, 8s…"""
     return 2 ** attempt
+
+
+def send_audio(path, *, day: str, duration: int, bot_token: str, chat_id: str) -> None:
+    """Native Telegram music player. Never retry an ambiguous upload timeout."""
+    from pathlib import Path
+    from datetime import date
+
+    path = Path(path)
+    if path.suffix.lower() != '.mp3' or not 0 < path.stat().st_size < 49_000_000:
+        raise ValueError('MP3 absent, vide ou trop volumineux')
+    months = ('janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet',
+              'août', 'septembre', 'octobre', 'novembre', 'décembre')
+    date_value = date.fromisoformat(day)
+    title = f'Brief IA — {date_value.day} {months[date_value.month - 1]}'
+    caption = f'🎧 {title} · {duration // 60} min {duration % 60:02d}'
+    with path.open('rb') as audio:
+        try:
+            response = requests.post(
+                f'https://api.telegram.org/bot{bot_token}/sendAudio',
+                data={'chat_id': chat_id, 'caption': caption, 'title': title,
+                      'performer': 'Veille IA', 'duration': duration},
+                files={'audio': (path.name, audio, 'audio/mpeg')}, timeout=(10, 120))
+            if not response.ok or response.json().get('ok') is not True:
+                raise RuntimeError('Envoi audio Telegram refusé')
+        except (requests.RequestException, ValueError):
+            raise RuntimeError('Envoi audio Telegram non confirmé ; pas de réessai automatique') from None
