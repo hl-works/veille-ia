@@ -10936,5 +10936,99 @@
     "tweet_url": "https://x.com/jerryjliu0/status/2097737867405701163",
     "media": true,
     "auteur_x": "@jerryjliu0"
+  },
+  {
+    "date": "2026-09-10",
+    "titre_fr": "Anthropic publie un rapport détaillé sur les tentatives de détournement de Claude",
+    "resume_fr": "Anthropic dévoile son rapport de renseignement sur les menaces le plus complet à ce jour, détaillant comment des acteurs ont tenté d'utiliser Claude pour des cyberattaques, de la surveillance ou des opérations d'influence. L'entreprise affirme avoir déjoué ces opérations et partagé ses conclusions avec les autorités.",
+    "tags": [
+      "anthropic",
+      "politique-ia",
+      "recherche"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/AnthropicAI/status/2098097512544444447",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-09-10",
+    "titre_fr": "OpenAI lance ChatGPT pour les services financiers",
+    "resume_fr": "OpenAI propose une version de ChatGPT dédiée à la finance, combinant données financières intégrées et raisonnement de son modèle. Les équipes peuvent produire des analyses, construire des modèles financiers et générer des documents clients personnalisés.",
+    "tags": [
+      "openai",
+      "produit"
+    ],
+    "score": 66,
+    "tweet_url": "https://x.com/OpenAI/status/2098118191029624911",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-09-10",
+    "titre_fr": "Cursor introduit « Projects » pour le travail agentique persistant",
+    "resume_fr": "L'éditeur de code Cursor lance Projects : plutôt qu'un chat par tâche, on travaille avec un agent coordinateur dans un fil unique et persistant qui gère le travail via des sous-agents et s'améliore dans le temps.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/cursor_ai/status/2098162488013455784",
+    "media": true,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-09-10",
+    "titre_fr": "Google lance Pics, un outil d'édition et génération d'images",
+    "resume_fr": "Google déploie Pics, basé sur Nano Banana, pour générer et retoucher des images avec précision : isolement d'objets, modification de texte dans l'image, collaboration et variantes. Disponible pour les abonnés Google AI Pro/Ultra et intégré à Docs et Slides.",
+    "tags": [
+      "google",
+      "produit",
+      "marketing"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/GoogleAI/status/2098072879480947085",
+    "media": true,
+    "auteur_x": "@GoogleAI"
+  },
+  {
+    "date": "2026-09-10",
+    "titre_fr": "a16z investit 30 M$ dans Highstock, marketplace d'invendus",
+    "resume_fr": "Highstock lève 30 M$ en série A menée par a16z. Sa marketplace B2B pilotée par l'IA connecte les marques ayant des stocks excédentaires à des acheteurs en gros, en gérant appariement, logistique, conformité et paiements. Plus d'un milliard de dollars d'inventaire y est listé.",
+    "tags": [
+      "produit",
+      "commerce",
+      "vente"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/a16z/status/2098071018233528353",
+    "media": true,
+    "auteur_x": "@a16z"
+  },
+  {
+    "date": "2026-09-10",
+    "titre_fr": "ElevenLabs présente un nouveau modèle de doublage multilingue",
+    "resume_fr": "ElevenLabs annonce un modèle capable de traduire des contenus d'une langue à l'autre en préservant la voix, l'émotion et l'intonation d'origine, pour dépasser les doublages de mauvaise qualité.",
+    "tags": [
+      "produit",
+      "modeles"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/a16z/status/2098060473711386769",
+    "media": true,
+    "auteur_x": "@a16z"
+  },
+  {
+    "date": "2026-09-10",
+    "titre_fr": "OpenAI ouvre GPT-Live dans son API",
+    "resume_fr": "OpenAI rend disponible GPT-Live via son API, permettant aux développeurs de créer de nouveaux types d'applications interactives.",
+    "tags": [
+      "openai",
+      "produit"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/gdb/status/2098157918906384676",
+    "media": false,
+    "auteur_x": "@gdb"
   }
 ]
