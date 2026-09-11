@@ -15,3 +15,40 @@ jobs:
           python-version: '3.12'
       - run: pip install -r requirements.txt
       - run: python -m unittest discover -s tests -v
+
+  # Essai ponctuel sur la PR : aucun secret, aucune collecte et aucun envoi.
+  audio-smoke:
+    if: github.head_ref == 'feat/daily-audio-brief'
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Installer le moteur vocal isolé
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg sox
+          pip install -r requirements-audio.txt
+      - name: Générer un échantillon français sans publication
+        env:
+          QWEN_DEVICE: cpu
+          QWEN_MODEL: Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice
+          QWEN_SPEAKER: Ryan
+        run: |
+          mkdir -p audio-output
+          printf '%s\n' "Bonjour. Voici un essai du brief intelligence artificielle. Ce test vérifie la clarté de la voix, le rythme, les noms de produits et les chiffres. OpenAI, Anthropic, Qwen trois, Shopify et GitHub Actions. Une progression de vingt-cinq pour cent, un modèle de zéro virgule six milliard de paramètres, et une conclusion courte. À demain pour la prochaine veille." > audio-output/transcript.txt
+          python -m veille.qwen_tts --script audio-output/transcript.txt --output audio-output/brief.mp3
+          ffprobe -v error -show_entries format=duration -of default=nw=1:nk=1 audio-output/brief.mp3
+      - name: Conserver l'échantillon 14 jours
+        if: ${{ always() }}
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: brief-audio-smoke-${{ github.run_id }}
+          path: audio-output/
+          retention-days: 14
+          if-no-files-found: warn
