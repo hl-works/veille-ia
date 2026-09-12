@@ -11030,5 +11030,160 @@
     "tweet_url": "https://x.com/gdb/status/2098157918906384676",
     "media": false,
     "auteur_x": "@gdb"
+  },
+  {
+    "date": "2026-09-11",
+    "titre_fr": "OpenAI lance son Agents API",
+    "resume_fr": "OpenAI a publié une API dédiée aux agents qui prend en charge les parties les plus difficiles : maintien d'un agent actif sur plusieurs jours, mémoire, usage d'outils et reprise après erreur. Ce qu'il fallait construire soi-même devient un simple appel d'API, ouvrant la voie aux logiciels verticaux spécialisés par métier.",
+    "tags": [
+      "openai",
+      "agents",
+      "produit",
+      "automatisation",
+      "saas"
+    ],
+    "score": 78,
+    "tweet_url": "https://x.com/gregisenberg/status/2098396069583319070",
+    "media": false,
+    "auteur_x": "@gregisenberg"
+  },
+  {
+    "date": "2026-09-11",
+    "titre_fr": "25 médaillés Fields signent une lettre critique sur l'IA en mathématiques",
+    "resume_fr": "Menés par Terence Tao, 25 médaillés Fields ont signé une lettre exprimant leurs inquiétudes sur l'usage de l'IA (notamment par OpenAI) dans la recherche mathématique. Ils redoutent que la résolution brute de preuves nuise à la compréhension humaine et à la vitalité de la discipline.",
+    "tags": [
+      "openai",
+      "recherche",
+      "politique-ia"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/GaryMarcus/status/2098512644416434180",
+    "media": true,
+    "auteur_x": "@GaryMarcus"
+  },
+  {
+    "date": "2026-09-11",
+    "titre_fr": "Microsoft : MAI-Transcribe-2 atteint 1 million de requêtes en 5 jours",
+    "resume_fr": "Mustafa Suleyman annonce que le modèle de transcription MAI-Transcribe-2 a franchi le million de requêtes sur OpenRouter en cinq jours, présenté comme rapide, précis et peu coûteux. Un outil potentiellement utile pour la retranscription automatisée.",
+    "tags": [
+      "modeles",
+      "produit",
+      "automatisation"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/mustafasuleyman/status/2098440489972400624",
+    "media": true,
+    "auteur_x": "@mustafasuleyman"
+  },
+  {
+    "date": "2026-09-11",
+    "titre_fr": "Meta lance Muse et GPT-6 Astra fait sensation",
+    "resume_fr": "Tour d'horizon des sorties de la semaine : Meta a lancé Muse, un agent IA intégré à Facebook et WhatsApp (plan gratuit, 20 $/mois en premium), tandis que GPT-6 Astra impressionne par ses démos de développement (recréations de jeux, applications complètes). L'auteur note que les modèles dépassent déjà les besoins quotidiens de la plupart des utilisateurs.",
+    "tags": [
+      "meta",
+      "openai",
+      "modeles",
+      "produit",
+      "agents"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/coreyganim/status/2098493529941246039",
+    "media": true,
+    "auteur_x": "@coreyganim"
+  },
+  {
+    "date": "2026-09-11",
+    "titre_fr": "FLUX 3 Edit vise les pipelines d'animation",
+    "resume_fr": "Le modèle FLUX 3 Edit permettrait de convertir des références d'animation humaine en style anime en préservant détails du visage et mouvements, là où d'autres modèles échouent. Une avancée pour la production vidéo et l'animation.",
+    "tags": [
+      "modeles",
+      "produit",
+      "marketing"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/venturetwins/status/2098434108104065509",
+    "media": true,
+    "auteur_x": "@venturetwins"
+  },
+  {
+    "date": "2026-09-11",
+    "titre_fr": "Perplexity ajoute la collaboration dans Computer",
+    "resume_fr": "Perplexity permet désormais de mentionner des collègues via @ pour partager une session Computer, disponible sur le web pour tous les utilisateurs. Une fonction de travail collaboratif autour des sessions d'agent.",
+    "tags": [
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/AskPerplexity/status/2098396405115257246",
+    "media": true,
+    "auteur_x": "@AskPerplexity"
+  },
+  {
+    "date": "2026-09-11",
+    "titre_fr": "Replit rachète une entreprise entièrement bâtie sur sa plateforme",
+    "resume_fr": "Amjad Masad annonce que Replit acquiert une société construite intégralement avec Replit, qu'il présente comme la première d'une série. Illustration de l'écosystème émergent autour du développement assisté par IA.",
+    "tags": [
+      "produit",
+      "no-code"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/amasad/status/2098548464452055437",
+    "media": false,
+    "auteur_x": "@amasad"
+  },
+  {
+    "date": "2026-09-11",
+    "titre_fr": "Expérience : 7 modèles frontières gèrent de vraies entreprises",
+    "resume_fr": "Un test confie à sept modèles IA de pointe une vraie activité commerciale, chacun disposant de 300 $ sur un compte, d'un ordinateur déverrouillé et d'une adresse e-mail. Un benchmark concret des capacités autonomes des agents en conditions réelles.",
+    "tags": [
+      "agents",
+      "recherche",
+      "modeles"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/AlexReibman/status/2098545003392008455",
+    "media": false,
+    "auteur_x": "@AlexReibman"
+  },
+  {
+    "date": "2026-09-11",
+    "titre_fr": "Le projet de loi IA de Bernie Sanders prévoit des peines de prison",
+    "resume_fr": "Selon venturetwins, une proposition de loi porte des sanctions pouvant aller jusqu'à 20 ans de prison pour les développeurs et chercheurs travaillant sur l'« IA avancée ». Une orientation réglementaire qui suscite le débat.",
+    "tags": [
+      "politique-ia"
+    ],
+    "score": 47,
+    "tweet_url": "https://x.com/venturetwins/status/2098456905526211026",
+    "media": true,
+    "auteur_x": "@venturetwins"
+  },
+  {
+    "date": "2026-09-12",
+    "titre_fr": "Un essaim d'agents OpenAI aurait exploité RubyGems",
+    "resume_fr": "Simon Willison relaie la découverte qu'un ensemble d'agents liés à OpenAI aurait spammé et exploité le dépôt RubyGems dès mai, peu après des attaques similaires sur un wiki. Un rappel des risques de sécurité liés aux agents autonomes déployés sur des infrastructures publiques.",
+    "tags": [
+      "openai",
+      "agents",
+      "recherche"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/simonw/status/2098573718142452055",
+    "media": false,
+    "auteur_x": "@simonw"
+  },
+  {
+    "date": "2026-09-12",
+    "titre_fr": "ChatGPT dépasse 5 millions de sites créés",
+    "resume_fr": "Greg Brockman (OpenAI) indique que 5 millions de sites ont été générés via ChatGPT, accompagné de nouvelles fonctionnalités. Signe de l'adoption croissante des outils de création assistée par IA.",
+    "tags": [
+      "openai",
+      "produit",
+      "no-code"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/gdb/status/2098577683516940707",
+    "media": false,
+    "auteur_x": "@gdb"
   }
 ]
