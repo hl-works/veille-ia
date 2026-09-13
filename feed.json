@@ -11185,5 +11185,72 @@
     "tweet_url": "https://x.com/gdb/status/2098577683516940707",
     "media": false,
     "auteur_x": "@gdb"
+  },
+  {
+    "date": "2026-09-12",
+    "titre_fr": "Dario Amodei (Anthropic) appelle à ralentir la course à l'IA",
+    "resume_fr": "Le PDG d'Anthropic a publié un essai plaidant pour un ralentissement volontaire du développement des modèles de pointe, avec un plan en trois étapes. Anthropic s'engage unilatéralement à donner à des évaluateurs tiers un accès permanent de type employé à ses systèmes pour vérifier ses mesures de sécurité.",
+    "tags": [
+      "anthropic",
+      "politique-ia",
+      "modeles"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/DarioAmodei/status/2098773920774074715",
+    "media": false,
+    "auteur_x": "@DarioAmodei"
+  },
+  {
+    "date": "2026-09-12",
+    "titre_fr": "OpenAI dit vouloir aussi des évaluateurs indépendants",
+    "resume_fr": "Sam Altman se dit d'accord avec la proposition de Dario Amodei de ralentir la frontière technologique et annonce qu'OpenAI adoptera aussi des évaluateurs indépendants avec un accès élargi à ses systèmes, avec plus de détails à venir.",
+    "tags": [
+      "openai",
+      "politique-ia"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/sama/status/2098811563415150910",
+    "media": false,
+    "auteur_x": "@sama"
+  },
+  {
+    "date": "2026-09-12",
+    "titre_fr": "Google DeepMind soutient l'idée d'un organe de standards pour l'IA",
+    "resume_fr": "Demis Hassabis approuve la direction de l'essai de Dario Amodei et rappelle la proposition de Google DeepMind pour un organisme de normalisation à l'échelle du secteur concernant les modèles de pointe.",
+    "tags": [
+      "google",
+      "politique-ia"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/demishassabis/status/2098909516582490602",
+    "media": false,
+    "auteur_x": "@demishassabis"
+  },
+  {
+    "date": "2026-09-12",
+    "titre_fr": "ARC 4 attendu au premier trimestre, puis ARC 5",
+    "resume_fr": "François Chollet annonce que le benchmark ARC 4, axé sur l'invention ouverte, sera publié au premier trimestre de l'an prochain, avec ARC 5 en préparation. L'objectif est de mesurer les capacités d'invention plutôt que la simple performance.",
+    "tags": [
+      "recherche",
+      "modeles"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/fchollet/status/2098902564955930953",
+    "media": false,
+    "auteur_x": "@fchollet"
+  },
+  {
+    "date": "2026-09-12",
+    "titre_fr": "Des labos évoquent un début d'auto-amélioration des IA",
+    "resume_fr": "Ethan Mollick relève que des déclarations récentes d'Anthropic et OpenAI suggèrent qu'une forme d'auto-amélioration récursive des modèles aurait été amorcée, même si cela reste à un stade précoce.",
+    "tags": [
+      "recherche",
+      "openai",
+      "anthropic"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/emollick/status/2098812026944454715",
+    "media": true,
+    "auteur_x": "@emollick"
   }
 ]
