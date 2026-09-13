@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import argparse
 import logging
+import os
 import sys
 from datetime import datetime, timezone
 
@@ -74,7 +75,8 @@ def run(config_path: str, *, dry_run: bool) -> int:
         logging.info("Digest enrichi de %d élément(s) hors X (Hacker News / RSS).", len(extra))
 
     # ── Sortie a) digest Telegram (optionnel) ─────────────────────────────
-    if not settings.telegram_ready:
+    audio_preview = dry_run and os.environ.get("AUDIO_PREVIEW", "").lower() == "true"
+    if not settings.telegram_ready and not audio_preview:
         logging.info("Telegram non configuré → publication Telegram sautée "
                      "(le feed.json pour le site est quand même produit).")
         return 0
@@ -96,6 +98,12 @@ def run(config_path: str, *, dry_run: bool) -> int:
     message = f"<b>🤖 Veille IA — {today}</b>\n\n{digest}"
 
     if dry_run:
+        if os.environ.get("AUDIO_PREVIEW", "").lower() == "true":
+            try:
+                from .audio import save_snapshot
+                save_snapshot(message, today, "audio-input/brief.json")
+            except Exception as exc:
+                logging.warning("Export aperçu audio indisponible (%s).", type(exc).__name__)
         print("\n" + "=" * 70)
         print("DRY-RUN — digest qui SERAIT publié sur Telegram :\n")
         print(message)
@@ -112,6 +120,14 @@ def run(config_path: str, *, dry_run: bool) -> int:
             chat_id=settings.telegram_chat_id,
         )
         logging.info("Veille publiée sur Telegram. ✅")
+        # Only hand off the exact, successfully delivered editorial selection.
+        # No model call or TTS runs in the written-brief process.
+        if os.environ.get("DAILY_AUDIO_BRIEF", "").lower() == "true":
+            try:
+                from .audio import save_snapshot
+                save_snapshot(message, today, "audio-input/brief.json")
+            except Exception as exc:
+                logging.warning("Export audio indisponible (%s).", type(exc).__name__)
     except Exception as exc:  # noqa: BLE001
         logging.warning(
             "Publication Telegram échouée (%s) — sans impact sur le feed du site. "
