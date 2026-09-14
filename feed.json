@@ -11252,5 +11252,46 @@
     "tweet_url": "https://x.com/emollick/status/2098812026944454715",
     "media": true,
     "auteur_x": "@emollick"
+  },
+  {
+    "date": "2026-09-13",
+    "titre_fr": "Les « agent harnesses » présentés comme la nouvelle génération d'outils IA",
+    "resume_fr": "Greg Isenberg décrit les « harnesses » d'agents : des systèmes qui font tourner un modèle en boucle, lui donnent accès à des outils, gèrent sa mémoire et encadrent ses actions. L'idée est de vendre le travail accompli plutôt que le logiciel, et de facturer à la tâche pour des métiers spécifiques.",
+    "tags": [
+      "agents",
+      "automatisation",
+      "saas"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/gregisenberg/status/2099202686377742576",
+    "media": true,
+    "auteur_x": "@gregisenberg"
+  },
+  {
+    "date": "2026-09-13",
+    "titre_fr": "François Chollet met en garde contre la concentration du pouvoir dans l'IA",
+    "resume_fr": "Le chercheur estime que le seul moyen d'éviter une concentration extrême du pouvoir liée à l'IA de pointe est de garantir plusieurs fournisseurs indépendants de modèles, dont des options en open source.",
+    "tags": [
+      "recherche",
+      "open-source",
+      "politique-ia"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/fchollet/status/2099230720753598471",
+    "media": false,
+    "auteur_x": "@fchollet"
+  },
+  {
+    "date": "2026-09-14",
+    "titre_fr": "OpenAI plaide pour un cadre fédéral et un rythme maîtrisé sur l'IA de pointe",
+    "resume_fr": "Sam Altman appelle à des règles communes de sécurité pour les laboratoires d'IA de frontière, avec des audits indépendants et des « safety cases » évalués avant les grands entraînements. Il défend un développement plus lent que possible, sans pour autant s'arrêter, et une coordination internationale.",
+    "tags": [
+      "openai",
+      "politique-ia"
+    ],
+    "score": 63,
+    "tweet_url": "https://x.com/sama/status/2099348812305473766",
+    "media": false,
+    "auteur_x": "@sama"
   }
 ]
