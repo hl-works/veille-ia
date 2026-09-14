@@ -31,9 +31,14 @@ jobs:
           python - <<'PY'
           import inspect
           import anthropic
+          import httpcore2
+          import httpx2
 
-          major = int(anthropic.__version__.split(".", 1)[0])
-          assert major == 0, f"unexpected Anthropic major: {anthropic.__version__}"
+          def version_tuple(value):
+              return tuple(int(part) for part in value.split(".")[:3])
+
+          assert version_tuple(httpx2.__version__) >= (2, 12, 0)
+          assert version_tuple(httpcore2.__version__) >= (2, 12, 0)
           client = anthropic.Anthropic(api_key="ci-placeholder")
           parameters = inspect.signature(client.messages.create).parameters
           required = {"thinking", "output_config"}
