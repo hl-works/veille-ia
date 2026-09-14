@@ -1,4 +1,4 @@
-anthropic>=0.45
+anthropic>=1.5.0,<2
 httpx2>=2.12.0,<3
 httpcore2>=2.12.0,<3
 requests>=2.34.2,<3
