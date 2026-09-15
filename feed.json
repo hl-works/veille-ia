@@ -11293,5 +11293,99 @@
     "tweet_url": "https://x.com/sama/status/2099348812305473766",
     "media": false,
     "auteur_x": "@sama"
+  },
+  {
+    "date": "2026-09-14",
+    "titre_fr": "Perplexity et NVIDIA lancent l'IA locale sur PC Windows RTX",
+    "resume_fr": "Perplexity annonce, en partenariat avec NVIDIA, la possibilité de faire tourner son harness, ses agents et des modèles directement en local sur les PC Windows équipés de GPU RTX. L'objectif : traiter fichiers et apps connectées sans envoyer les tâches vers le cloud, tout en gardant l'option des modèles cloud si besoin.",
+    "tags": [
+      "produit",
+      "hardware",
+      "xai"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/perplexity_ai/status/2099514386193027201",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-09-14",
+    "titre_fr": "Google DeepMind présente WeatherNext 3 pour l'énergie renouvelable",
+    "resume_fr": "Google DeepMind dévoile WeatherNext 3, un modèle de prévision météo destiné aux opérateurs de réseau et aux producteurs d'énergie solaire et éolienne. Il fournit des prévisions de vitesse du vent à hauteur des turbines et de rayonnement solaire pour mieux planifier la production.",
+    "tags": [
+      "google",
+      "modeles",
+      "recherche"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2099575049929802053",
+    "media": true,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-09-14",
+    "titre_fr": "OpenAI parle d'« ère AGI » autour de GPT-6 Astra",
+    "resume_fr": "Dans un long entretien chez a16z, Greg Brockman (OpenAI) affirme que l'entreprise entre dans une « ère AGI » avec GPT-6 Astra, capable selon lui d'opérer de façon cohérente 24 h et d'accomplir des tâches variées via l'usage d'ordinateur. Il insiste sur la sécurité, l'alignement et évoque des chiffres à prendre avec recul (10 000 agents sur Navier-Stokes, exploits de sécurité).",
+    "tags": [
+      "openai",
+      "modeles",
+      "agents"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/a16z/status/2099506569238990908",
+    "media": true,
+    "auteur_x": "@a16z"
+  },
+  {
+    "date": "2026-09-14",
+    "titre_fr": "Anthropic déploie les « Mods » pour Claude",
+    "resume_fr": "Anthropic commence à déployer Claude Mods, permettant à la communauté de créer des extensions personnalisées ; un utilisateur a déjà bâti un Tetris fonctionnant dans Claude. Détails techniques et démos sont partagés dans le suivi communautaire.",
+    "tags": [
+      "anthropic",
+      "produit"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/bcherny/status/2099551291601248485",
+    "media": true,
+    "auteur_x": "@bcherny"
+  },
+  {
+    "date": "2026-09-14",
+    "titre_fr": "Google Labs teste Dreambeans, une IA personnelle qui relie vos apps",
+    "resume_fr": "Google Labs présente Dreambeans, une expérience opt-in qui agrège des données de Gmail, Agenda, Search, Gemini et Google Photos pour générer des « histoires » personnalisées et des suggestions (idées cadeaux, films). Google met en avant des filtres de confidentialité et un contrôle utilisateur.",
+    "tags": [
+      "google",
+      "produit"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/GoogleAI/status/2099489445846126676",
+    "media": true,
+    "auteur_x": "@GoogleAI"
+  },
+  {
+    "date": "2026-09-14",
+    "titre_fr": "Vercel recrute Steren, créateur de Google Cloud Run",
+    "resume_fr": "Vercel annonce l'arrivée de Steren, à l'origine de Google Cloud Run, pour diriger sa gamme de produits de compute Fluid (Functions, Containers, Sandbox, Builds). L'entreprise vise de nouvelles primitives de calcul pensées pour les agents.",
+    "tags": [
+      "talents",
+      "produit"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/rauchg/status/2099514906366328902",
+    "media": false,
+    "auteur_x": "@rauchg"
+  },
+  {
+    "date": "2026-09-15",
+    "titre_fr": "Gary Marcus plaide pour une pause sur les agents IA autonomes",
+    "resume_fr": "Gary Marcus précise sa position : il ne demande pas de geler toute l'IA, mais de suspendre le déploiement massif d'un type précis d'outil, les agents généralistes ayant accès à Internet, qu'il juge peu fiables et potentiellement nuisibles.",
+    "tags": [
+      "politique-ia",
+      "agents"
+    ],
+    "score": 40,
+    "tweet_url": "https://x.com/GaryMarcus/status/2099667346453663783",
+    "media": false,
+    "auteur_x": "@GaryMarcus"
   }
 ]
