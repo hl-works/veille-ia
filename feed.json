@@ -11387,5 +11387,129 @@
     "tweet_url": "https://x.com/GaryMarcus/status/2099667346453663783",
     "media": false,
     "auteur_x": "@GaryMarcus"
+  },
+  {
+    "date": "2026-09-15",
+    "titre_fr": "Google lance Gemini 3.8 Live, ses modèles audio temps réel",
+    "resume_fr": "Google DeepMind présente Gemini 3.8 Live et sa variante Extended Thinking, des modèles conversationnels audio capables de parler, réfléchir et exécuter des tâches en arrière-plan. Ils gèrent 97 langues, les interruptions en pleine phrase, le contexte visuel et les appels d'outils asynchrones.",
+    "tags": [
+      "google",
+      "modeles",
+      "produit",
+      "service-client",
+      "automatisation"
+    ],
+    "score": 82,
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2099907440422830269",
+    "media": true,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-09-15",
+    "titre_fr": "Salesforce arrive dans Claude en bêta",
+    "resume_fr": "Anthropic intègre Salesforce à Claude : comptes, opportunités et pipeline commercial deviennent accessibles directement dans la conversation, avec 37 compétences de vente prédéfinies pour préparer un appel, analyser une affaire ou créer un tableau de bord.",
+    "tags": [
+      "anthropic",
+      "produit",
+      "agents",
+      "vente"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/claudeai/status/2099876514330206578",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-09-15",
+    "titre_fr": "Perplexity Computer préinstallé sur les stations HP ZBook",
+    "resume_fr": "Perplexity annonce que son agent Computer sera préinstallé sur le HP ZBook Ultra G3a. L'outil exécute des tâches multi-étapes depuis une interface simple, connecté à des centaines d'outils dont Autodesk.",
+    "tags": [
+      "produit",
+      "agents",
+      "hardware"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/perplexity_ai/status/2099876468872638717",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-09-15",
+    "titre_fr": "ChatGPT peut agir sur les données d'entreprise et créer des tableaux de bord",
+    "resume_fr": "OpenAI présente une fonction permettant à ChatGPT d'opérer sur les données de l'entreprise et d'y effectuer des actions, en se connectant à des outils existants comme PowerBI, Tableau, Oracle BI ou AWS Redshift, notamment pour construire des tableaux de bord.",
+    "tags": [
+      "openai",
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 66,
+    "tweet_url": "https://x.com/gdb/status/2099919674544898298",
+    "media": false,
+    "auteur_x": "@gdb"
+  },
+  {
+    "date": "2026-09-15",
+    "titre_fr": "Perplexity construit sa base de données avec des agents IA",
+    "resume_fr": "Perplexity détaille CobbleDB, sa base clé-valeur servant le contenu web de son moteur de recherche. L'infrastructure a été bâtie en deux mois par deux ingénieurs épaulés par des centaines d'agents IA, avec des économies annoncées pouvant atteindre 100 millions de dollars par an.",
+    "tags": [
+      "agents",
+      "recherche",
+      "produit"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/perplexity_ai/status/2099955628194316346",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-09-15",
+    "titre_fr": "Microsoft AI publie un code de conduite pour une IA « humaniste »",
+    "resume_fr": "Mustafa Suleyman développe le raisonnement derrière le Humanist AI Code of Conduct mis en consultation, un cadre visant à guider le développement d'une IA centrée sur l'humain.",
+    "tags": [
+      "politique-ia"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/mustafasuleyman/status/2099872302653644962",
+    "media": false,
+    "auteur_x": "@mustafasuleyman"
+  },
+  {
+    "date": "2026-09-15",
+    "titre_fr": "Periodic Labs présente des résultats sur l'IA pour la science expérimentale",
+    "resume_fr": "Periodic Labs, salué par Jeff Dean et d'autres, intègre des données expérimentales réelles à grande échelle dans son pipeline d'entraînement, illustrant une nouvelle catégorie de laboratoire mêlant IA et science physique.",
+    "tags": [
+      "recherche"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/JeffDean/status/2099998119392161960",
+    "media": false,
+    "auteur_x": "@JeffDean"
+  },
+  {
+    "date": "2026-09-16",
+    "titre_fr": "Mistral s'associe à Mozilla pour une navigation IA respectueuse de la vie privée",
+    "resume_fr": "Mistral annonce un partenariat avec Mozilla afin d'apporter davantage de confidentialité, de contrôle et de choix aux internautes utilisant l'IA pour naviguer. L'objectif est de proposer une alternative axée sur la vie privée.",
+    "tags": [
+      "mistral",
+      "produit"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/MistralAI/status/2100153489787633694",
+    "media": true,
+    "auteur_x": "@MistralAI"
+  },
+  {
+    "date": "2026-09-16",
+    "titre_fr": "Étude Google sur l'usage de l'IA dans la recherche scientifique",
+    "resume_fr": "Une étude de Google mesure l'impact de l'IA sur le travail scientifique : environ 7 heures gagnées par semaine, mais aussi un glissement vers plus de vérification et, potentiellement, vers des sujets de recherche plus prudents.",
+    "tags": [
+      "google",
+      "recherche"
+    ],
+    "score": 47,
+    "tweet_url": "https://x.com/emollick/status/2100102316447670677",
+    "media": true,
+    "auteur_x": "@emollick"
   }
 ]
