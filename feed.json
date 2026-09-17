@@ -11511,5 +11511,65 @@
     "tweet_url": "https://x.com/emollick/status/2100102316447670677",
     "media": true,
     "auteur_x": "@emollick"
+  },
+  {
+    "date": "2026-09-16",
+    "titre_fr": "ChatGPT Ads pour Shopify : OpenAI ouvre la publicité aux marchands",
+    "resume_fr": "OpenAI lance la publicité de produits dans ChatGPT avec Shopify comme premier partenaire commerce. Les produits des marchands, déjà présents via le catalogue Shopify, peuvent être promus par des campagnes que le marchand paramètre lui-même, avec un suivi depuis l'admin Shopify. Installation gratuite.",
+    "tags": [
+      "openai",
+      "produit",
+      "pub",
+      "commerce",
+      "shopify",
+      "marketing"
+    ],
+    "score": 88,
+    "tweet_url": "https://x.com/harleyf/status/2100300851705450965",
+    "media": false,
+    "auteur_x": "@harleyf"
+  },
+  {
+    "date": "2026-09-16",
+    "titre_fr": "Anthropic fusionne Claude Cowork et le chat en un seul Claude",
+    "resume_fr": "Anthropic réunit son assistant conversationnel et Cowork en une seule expérience : Claude peut mener une tâche à terme même après fermeture de l'ordinateur et demande des précisions si besoin. S'y ajoutent la création de documents, présentations (exportables en PowerPoint/PDF) et designs directement dans la conversation. Déploiement progressif pour les abonnés Pro et Max.",
+    "tags": [
+      "anthropic",
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 78,
+    "tweet_url": "https://x.com/claudeai/status/2100258490740539730",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-09-16",
+    "titre_fr": "OpenAI publie un cadre de suivi des comportements déviants de ses modèles",
+    "resume_fr": "OpenAI présente une méthode pour tracer, enquêter et divulguer publiquement les cas de désalignement de ses modèles, avec des critères et délais de communication, y compris pour des cas encore non expliqués. Six rapports observés lors d'entraînements et d'évaluations des six derniers mois accompagnent cette annonce.",
+    "tags": [
+      "openai",
+      "recherche",
+      "politique-ia"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/OpenAI/status/2100344867507327087",
+    "media": false,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-09-16",
+    "titre_fr": "DeepMind lance un institut de recherche sur l'impact de l'AGI",
+    "resume_fr": "Demis Hassabis et Shane Legg annoncent le DeepMind Institute, destiné à élargir la recherche interdisciplinaire sur les conséquences de l'IA avancée pour l'économie, la science et la société.",
+    "tags": [
+      "google",
+      "recherche",
+      "politique-ia"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/demishassabis/status/2100230524383981702",
+    "media": false,
+    "auteur_x": "@demishassabis"
   }
 ]
