@@ -11571,5 +11571,129 @@
     "tweet_url": "https://x.com/demishassabis/status/2100230524383981702",
     "media": false,
     "auteur_x": "@demishassabis"
+  },
+  {
+    "date": "2026-09-17",
+    "titre_fr": "Anthropic lance Claude Projects avec orchestration d'agents",
+    "resume_fr": "Claude introduit « Projects », une nouvelle expérience où un agent principal gère la mémoire d'un projet et lance des sous-agents en parallèle pour accomplir des tâches, même après la fermeture de l'ordinateur. En bêta pour certains utilisateurs Pro et Max, avec un déploiement plus large à venir.",
+    "tags": [
+      "anthropic",
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 72,
+    "tweet_url": "https://x.com/claudeai/status/2100632677904744716",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-09-17",
+    "titre_fr": "OpenAI présente Astra for Law",
+    "resume_fr": "OpenAI lance Astra for Law, une offre dédiée aux cabinets d'avocats et aux éditeurs de logiciels juridiques, propulsée par GPT-6 Astra. Elle intègre des outils, réglages et contextes spécifiques ainsi que des dizaines de plugins pour le travail juridique, avec la confidentialité des données comme fonctionnalité centrale.",
+    "tags": [
+      "openai",
+      "produit",
+      "modeles"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/OpenAI/status/2100679992720142459",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-09-17",
+    "titre_fr": "Anthropic ouvre un programme dédié aux sciences du vivant",
+    "resume_fr": "Anthropic lance en bêta son Life Sciences Verification Program, qui permet aux professionnels de la biologie d'utiliser ses modèles, dont pour la première fois Mythos, avec un jeu de garde-fous conçus pour couvrir un large éventail de travaux biologiques tout en limitant les risques de mésusage.",
+    "tags": [
+      "anthropic",
+      "recherche",
+      "modeles"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/AnthropicAI/status/2100646837799834096",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-09-17",
+    "titre_fr": "fal accélère un modèle vidéo open source 35 fois",
+    "resume_fr": "fal a reconstruit H3, modèle vidéo open source de MiniMax, en réduisant les étapes de génération et en optimisant le code GPU pour le rendre jusqu'à 35 fois plus rapide sans perte de qualité. La vidéo se génère désormais plus vite qu'un tournage, et Hollywood est devenu le segment client à la plus forte croissance de fal.",
+    "tags": [
+      "produit",
+      "modeles",
+      "open-source"
+    ],
+    "score": 57,
+    "tweet_url": "https://x.com/a16z/status/2100655721905803571",
+    "media": true,
+    "auteur_x": "@a16z"
+  },
+  {
+    "date": "2026-09-17",
+    "titre_fr": "Claude optimise des modèles open source de biologie",
+    "resume_fr": "Anthropic explique avoir accéléré de 4x en moyenne l'inférence de plus de 30 modèles open source utilisés en biologie (structure moléculaire, conception de molécules, effets de mutations), notamment en écrivant du code GPU sur mesure. Tout le code d'optimisation est publié en open source.",
+    "tags": [
+      "anthropic",
+      "recherche",
+      "open-source"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/AnthropicAI/status/2100701581109072332",
+    "media": true,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-09-17",
+    "titre_fr": "Anthropic publie des mesures de suivi du développement de l'IA",
+    "resume_fr": "Anthropic propose trois indicateurs pour suivre les progrès de l'IA : la part de la R&D en IA réalisée par l'IA, le niveau de supervision des agents et la répartition de la puissance de calcul. L'entreprise partage un instantané interne et invite les autres laboratoires à publier des mesures vérifiables.",
+    "tags": [
+      "anthropic",
+      "politique-ia",
+      "recherche"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/AnthropicAI/status/2100684274114699295",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-09-17",
+    "titre_fr": "Google DeepMind : AlphaGenome Atlas utilisé pour les variants génétiques",
+    "resume_fr": "Des chercheurs du Broad Institute, de l'Université d'Exeter et d'autres institutions utilisent AlphaGenome Atlas de Google DeepMind pour mieux identifier les variants d'ADN potentiellement pathogènes et interpréter leur rôle.",
+    "tags": [
+      "google",
+      "recherche"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2100586760036143330",
+    "media": true,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-09-17",
+    "titre_fr": "Perplexity ajoute des contrôles d'effort à Computer",
+    "resume_fr": "Perplexity déploie des « effort presets » dans le sélecteur de modèle de Computer, qui combinent le modèle orchestrateur et la profondeur de raisonnement pour ajuster la puissance et le coût selon la tâche. Disponible sur le web, mobile et desktop à suivre.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/perplexity_ai/status/2100617849677176992",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-09-18",
+    "titre_fr": "Mistral dément une intrusion dans ses systèmes",
+    "resume_fr": "Mistral indique avoir eu connaissance d'une allégation d'accès non autorisé à ses systèmes. Après enquête, l'entreprise affirme n'avoir trouvé aucune preuve étayant cette affirmation et confirme que ses systèmes n'ont pas été compromis.",
+    "tags": [
+      "mistral",
+      "politique-ia"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/MistralAI/status/2100824200126529725",
+    "media": false,
+    "auteur_x": "@MistralAI"
   }
 ]
