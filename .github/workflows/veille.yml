@@ -37,6 +37,11 @@ on:
         type: boolean
         default: false
 
+      audio_preview:
+        description: "Générer un MP3 de test du vrai brief, SANS publication Telegram ni écriture des données"
+        type: boolean
+        default: false
+
 # Évite deux exécutions simultanées (et met les tentatives en file,
 # donc chacune voit bien l'état laissé par la précédente).
 concurrency:
@@ -56,6 +61,8 @@ env:
 jobs:
   veille:
     runs-on: ubuntu-latest
+    outputs:
+      audio_artifact: ${{ steps.audio_input.outputs.artifact-id }}
     steps:
       - name: Récupérer le code
         uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
@@ -121,7 +128,9 @@ jobs:
           fi
           python -m veille.main "${args[@]}"
         env:
-          DRY_RUN: ${{ inputs.dry_run }}
+          DRY_RUN: ${{ inputs.dry_run || inputs.audio_preview }}
+          DAILY_AUDIO_BRIEF: ${{ vars.DAILY_AUDIO_BRIEF }}
+          AUDIO_PREVIEW: ${{ inputs.audio_preview }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           TWITTERAPI_IO_KEY: ${{ secrets.TWITTERAPI_IO_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
@@ -129,11 +138,22 @@ jobs:
           # ce nom. (Telegram est optionnel : absent → publication sautée.)
           TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
 
+      - name: Transmettre le brief final au job audio
+        id: audio_input
+        if: ${{ (vars.DAILY_AUDIO_BRIEF == 'true' || inputs.audio_preview) && hashFiles('audio-input/brief.json') != '' }}
+        continue-on-error: true
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: audio-input
+          path: audio-input/brief.json
+          retention-days: 14
+          overwrite: true
+
       # Persiste feed.json (cumulatif), seen.json (mémoire dédup) et
       # l'état du jour dans CE repo. Sauté en dry-run (rien n'a été écrit,
       # et on ne veut pas marquer la journée comme faite).
       - name: Sauvegarder feed.json / seen.json / état du jour
-        if: ${{ steps.gate.outputs.run == 'true' && !inputs.dry_run }}
+        if: ${{ steps.gate.outputs.run == 'true' && !inputs.dry_run && !inputs.audio_preview }}
         env:
           TODAY: ${{ steps.gate.outputs.today }}
         run: |
@@ -155,7 +175,7 @@ jobs:
       # Le garde-fou « token absent → on saute » est dans le script (le
       # contexte `secrets` n'est PAS autorisé dans un `if:` GitHub Actions).
       - name: Publier feed.json vers knowledge-hub
-        if: ${{ steps.gate.outputs.run == 'true' && !inputs.dry_run }}
+        if: ${{ steps.gate.outputs.run == 'true' && !inputs.dry_run && !inputs.audio_preview }}
         env:
           KH_REPO_TOKEN: ${{ secrets.KH_REPO_TOKEN }}
           KH_REPO: hl-works/knowledge-hub
@@ -208,3 +228,49 @@ jobs:
           done
           echo "Échec du push vers knowledge-hub après 3 tentatives." >&2
           exit 1
+
+  audio:
+    needs: veille
+    # Independent from subsequent feed/bridge failures. Never delay the written send.
+    if: ${{ always() && !cancelled() && needs.veille.outputs.audio_artifact != '' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    continue-on-error: true
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: "3.12"
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          name: audio-input
+          path: audio-input
+      - name: Installer le moteur vocal isolé (CPU, sans serveur)
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg sox
+          pip install -r requirements-audio.txt
+      - name: Générer le MP3 et éventuellement publier
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+          SEND_AUDIO: ${{ vars.DAILY_AUDIO_BRIEF == 'true' && !inputs.audio_preview && !inputs.dry_run && github.run_attempt == 1 }}
+          QWEN_DEVICE: cpu
+          QWEN_MODEL: ${{ vars.QWEN_MODEL || 'Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice' }}
+          QWEN_SPEAKER: ${{ vars.QWEN_SPEAKER || 'Ryan' }}
+        run: |
+          args=()
+          if [[ "$SEND_AUDIO" == "true" ]]; then args+=(--send); fi
+          python -m veille.audio "${args[@]}"
+      - name: Conserver l'aperçu et le diagnostic éditorial 14 jours
+        if: ${{ always() }}
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: brief-audio
+          path: audio-output/
+          retention-days: 14
+          overwrite: true
+          if-no-files-found: ignore

@@ -1,0 +1,4 @@
+# Optional isolated audio job only. The existing written job does not install these.
+-r requirements.txt
+qwen-tts==0.1.1
+soundfile>=0.13,<0.14

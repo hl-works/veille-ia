@@ -246,3 +246,12 @@ veille-ia/
   quelques centimes).
 - **API Claude** : un digest quotidien représente une poignée de centimes.
 - **GitHub Actions** : gratuit dans la limite généreuse des dépôts publics.
+
+## Brief audio quotidien (optionnel, désactivé par défaut)
+
+Le brief final peut alimenter une adaptation orale puis Qwen3-TTS et un MP3
+écoutable directement dans Telegram. Le job écrit reste indépendant du TTS.
+Avant activation, utiliser l'entrée manuelle `audio_preview` du workflow Veille IA
+pour écouter un vrai essai sans rien publier. Voir [l'audit, les limites et la
+procédure d'activation](docs/audio-brief.md). Variable : `DAILY_AUDIO_BRIEF=true`
+uniquement après validation du test et du budget de calcul.
