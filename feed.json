@@ -11695,5 +11695,159 @@
     "tweet_url": "https://x.com/MistralAI/status/2100824200126529725",
     "media": false,
     "auteur_x": "@MistralAI"
+  },
+  {
+    "date": "2026-09-18",
+    "titre_fr": "Jev : un modèle low-cost de classification lancé sur Vercel AI Gateway",
+    "resume_fr": "Jev est un nouveau modèle conçu non pas pour rédiger mais pour trier et classer massivement (emails, tickets, candidatures, leads) à très bas coût — cité à environ 18 cents pour 1 700 emails. Il est disponible via la Vercel AI Gateway et suscite un fort engouement chez les développeurs pour automatiser des files d'attente répétitives.",
+    "tags": [
+      "modeles",
+      "produit",
+      "automatisation",
+      "service-client",
+      "vente"
+    ],
+    "score": 72,
+    "tweet_url": "https://x.com/gregisenberg/status/2101018750916948237",
+    "media": true,
+    "auteur_x": "@gregisenberg"
+  },
+  {
+    "date": "2026-09-18",
+    "titre_fr": "Anthropic s'associe à Accenture pour l'évaluation « indépendante » des modèles",
+    "resume_fr": "Anthropic annonce un partenariat avec Accenture pour évaluer ses modèles de pointe, chacun prévoyant d'investir au moins 1 milliard de dollars sur cinq ans. L'annonce est critiquée (notamment par Gary Marcus) car Anthropic choisit lui-même un partenaire avec qui il a déjà des liens commerciaux, ce qui interroge sur la réelle indépendance.",
+    "tags": [
+      "anthropic",
+      "politique-ia",
+      "recherche"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/AnthropicAI/status/2101039819870937247",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-09-18",
+    "titre_fr": "Google : Gemini 3.8 Live et plusieurs nouveaux produits",
+    "resume_fr": "Google fait le point sur ses sorties de la semaine : Gemini 3.8 Live et 3.8 Live Extended Thinking (dialogue audio en temps réel), l'outil de génération d'images Google Pics en disponibilité générale, un agent partagé pour les tâches familiales, et la plateforme génomique AlphaGenome Atlas.",
+    "tags": [
+      "google",
+      "modeles",
+      "produit"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/GoogleAI/status/2101008284010602924",
+    "media": false,
+    "auteur_x": "@GoogleAI"
+  },
+  {
+    "date": "2026-09-18",
+    "titre_fr": "Meta mise sur les « connecteurs » pour agentifier ses applications grand public",
+    "resume_fr": "Selon Mark Zuckerberg, l'app Muse de Meta s'appuiera sur des connecteurs permettant à des agents de se brancher directement sur les services d'entreprises. L'analyse y voit un tournant : les entreprises devront optimiser leurs API pour être choisies par des agents, à la manière des débuts de l'App Store.",
+    "tags": [
+      "meta",
+      "agents",
+      "produit",
+      "automatisation"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/gregisenberg/status/2101097826730017111",
+    "media": false,
+    "auteur_x": "@gregisenberg"
+  },
+  {
+    "date": "2026-09-18",
+    "titre_fr": "ChatGPT étend ses connecteurs de contexte",
+    "resume_fr": "Greg Brockman met en avant une nouvelle fonctionnalité de ChatGPT permettant de relier plus facilement l'ensemble de son contexte (données et sources) à l'assistant, présentée comme discrète mais très pratique à l'usage.",
+    "tags": [
+      "openai",
+      "produit"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/gdb/status/2101036303597044101",
+    "media": false,
+    "auteur_x": "@gdb"
+  },
+  {
+    "date": "2026-09-18",
+    "titre_fr": "Claude Code prend en charge le standard AGENTS.md",
+    "resume_fr": "À partir de la version 2.1.277, Claude Code cherche et utilise un fichier AGENTS.md quand aucun CLAUDE.md n'est présent dans un dossier, un pas vers l'unification des fichiers de configuration d'agents entre outils.",
+    "tags": [
+      "anthropic",
+      "agents",
+      "open-source"
+    ],
+    "score": 40,
+    "tweet_url": "https://x.com/trq212/status/2101009392611278961",
+    "media": false,
+    "auteur_x": "@trq212"
+  },
+  {
+    "date": "2026-09-18",
+    "titre_fr": "Kastle déploie des « employés IA » pour les banques",
+    "resume_fr": "La startup Kastle (issue de YC) automatise des opérations bancaires comme la gestion de crédits hypothécaires et de prêts à la consommation. Elle travaille avec 10 des 25 principaux servicers hypothécaires, a traité plus de 2 milliards de dollars de transactions et a levé 24 M$ en série A.",
+    "tags": [
+      "agents",
+      "automatisation"
+    ],
+    "score": 44,
+    "tweet_url": "https://x.com/ycombinator/status/2100955807328489628",
+    "media": true,
+    "auteur_x": "@ycombinator"
+  },
+  {
+    "date": "2026-09-18",
+    "titre_fr": "Shopify : un distributeur automatique personnalisé selon l'historique d'achat",
+    "resume_fr": "Pour les 30 ans de Pokémon, un distributeur automatique connecté à Shop reconnaît le client à la connexion et débloque des packs selon son historique d'achats. Une illustration concrète de fidélisation client via les données Shopify.",
+    "tags": [
+      "shopify",
+      "commerce",
+      "marketing",
+      "vente"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/harleyf/status/2100953145966985718",
+    "media": true,
+    "auteur_x": "@harleyf"
+  },
+  {
+    "date": "2026-09-18",
+    "titre_fr": "Reports d'introduction en Bourse chez Anthropic et OpenAI",
+    "resume_fr": "Selon Gary Marcus, l'IPO d'Anthropic serait repoussée à novembre (possiblement un deuxième report) et celle d'OpenAI décalée à 2027, signe des difficultés à présenter des comptes attractifs dans le contexte actuel.",
+    "tags": [
+      "anthropic",
+      "openai",
+      "politique-ia"
+    ],
+    "score": 40,
+    "tweet_url": "https://x.com/GaryMarcus/status/2101063328697311313",
+    "media": false,
+    "auteur_x": "@GaryMarcus"
+  },
+  {
+    "date": "2026-09-19",
+    "titre_fr": "Les modèles open weight dominent le volume de tokens sur Vercel",
+    "resume_fr": "Sur la Vercel AI Gateway, les modèles ouverts ont représenté 78,4 % du volume de tokens sur une journée record. Moonshot AI, DeepSeek et Z.ai figurent parmi les plus gros postes de dépense, leur total combiné dépassant celui d'OpenAI (le partage des revenus restant différent).",
+    "tags": [
+      "open-source",
+      "modeles"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/rauchg/status/2101186741042663579",
+    "media": true,
+    "auteur_x": "@rauchg"
+  },
+  {
+    "date": "2026-09-19",
+    "titre_fr": "Perplexity permet de connecter des apps depuis le composeur de Computer",
+    "resume_fr": "Perplexity déploie pour tous les utilisateurs web la possibilité de connecter des applications directement depuis la page d'accueil de son produit Computer, facilitant l'intégration de sources et d'outils.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/AskPerplexity/status/2101147964307849718",
+    "media": true,
+    "auteur_x": "@AskPerplexity"
   }
 ]
