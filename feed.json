@@ -11849,5 +11849,46 @@
     "tweet_url": "https://x.com/AskPerplexity/status/2101147964307849718",
     "media": true,
     "auteur_x": "@AskPerplexity"
+  },
+  {
+    "date": "2026-09-19",
+    "titre_fr": "Jev, un nouveau modèle IA rapide et bon marché, fait parler de lui",
+    "resume_fr": "Plusieurs praticiens testent « Jev », un modèle décrit comme ultra-rapide et très peu coûteux, orienté vers la classification et la prise de décision. Dans un test comparatif, il s'est montré légèrement plus précis que GPT-5.6 tout en étant présenté comme 53× moins cher et 25× plus rapide.",
+    "tags": [
+      "modeles",
+      "agents",
+      "automatisation"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/venturetwins/status/2101393861667115437",
+    "media": true,
+    "auteur_x": "@venturetwins"
+  },
+  {
+    "date": "2026-09-19",
+    "titre_fr": "ParseBench : plus de 100 modèles comparés sur l'analyse de documents",
+    "resume_fr": "Un banc d'essai public évalue plus de 100 modèles et outils (VLM de pointe, modèles ouverts, OCR, parseurs open source) sur leur capacité à extraire et structurer le contenu de documents. Utile pour choisir une brique d'automatisation documentaire.",
+    "tags": [
+      "recherche",
+      "open-source",
+      "automatisation"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/jerryjliu0/status/2101385597495755018",
+    "media": true,
+    "auteur_x": "@jerryjliu0"
+  },
+  {
+    "date": "2026-09-19",
+    "titre_fr": "Fable : générer des jeux jouables à partir d'une simple consigne",
+    "resume_fr": "Ethan Mollick montre un outil, Fable, capable de créer un petit jeu graphique jouable à partir d'une consigne en langage naturel, sans autres instructions. Les résultats sont jugés surprenants et engageants, quoique inégaux, illustrant les progrès de la création interactive assistée par IA.",
+    "tags": [
+      "produit",
+      "modeles"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/emollick/status/2101426783430074758",
+    "media": false,
+    "auteur_x": "@emollick"
   }
 ]
