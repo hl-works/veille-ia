@@ -11890,5 +11890,46 @@
     "tweet_url": "https://x.com/emollick/status/2101426783430074758",
     "media": false,
     "auteur_x": "@emollick"
+  },
+  {
+    "date": "2026-09-20",
+    "titre_fr": "DocJev : bibliothèque open-source de classification et découpage de documents",
+    "resume_fr": "LlamaIndex présente DocJev, une bibliothèque open-source qui classe des documents et détecte les frontières entre sous-documents à partir de règles en langage naturel. Elle serait environ 6 fois plus rapide que le modèle de référence cité, avec le choix de plusieurs moteurs d'OCR.",
+    "tags": [
+      "open-source",
+      "produit",
+      "automatisation"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/jerryjliu0/status/2101738281046294552",
+    "media": true,
+    "auteur_x": "@jerryjliu0"
+  },
+  {
+    "date": "2026-09-20",
+    "titre_fr": "Les labos chinois s'appuieraient sur Huawei pour l'inférence",
+    "resume_fr": "Selon Nathan Lambert, les principaux laboratoires d'IA chinois commenceraient à utiliser beaucoup de matériel Huawei pour l'inférence et du Nvidia pour l'entraînement, une tendance qui pourrait accélérer leur industrie domestique à mesure que le post-entraînement et les essaims d'agents se généralisent.",
+    "tags": [
+      "hardware",
+      "politique-ia"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/natolambert/status/2101656018195296326",
+    "media": false,
+    "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-09-21",
+    "titre_fr": "Nathan Lambert présente au Congrès américain l'état des modèles ouverts",
+    "resume_fr": "Le chercheur Nathan Lambert a été sollicité par des équipes du Congrès pour exposer ses analyses sur la performance, l'adoption et la compétitivité des modèles ouverts, notamment face à la Chine, données et prévisions à l'appui.",
+    "tags": [
+      "open-source",
+      "politique-ia",
+      "modeles"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/natolambert/status/2102006127877660735",
+    "media": true,
+    "auteur_x": "@natolambert"
   }
 ]
