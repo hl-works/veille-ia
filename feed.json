@@ -11931,5 +11931,123 @@
     "tweet_url": "https://x.com/natolambert/status/2102006127877660735",
     "media": true,
     "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-09-21",
+    "titre_fr": "Shopify intègre le paiement agentique avec Muse via Shop Pay",
+    "resume_fr": "Shopify annonce un partenariat approfondi avec l'assistant Muse (Meta) pour permettre un checkout agentique avec Shop Pay sur toutes les boutiques Shopify. Les clients pourront acheter et payer directement via l'agent.",
+    "tags": [
+      "meta",
+      "agents",
+      "produit",
+      "commerce",
+      "shopify",
+      "paiement",
+      "vente"
+    ],
+    "score": 88,
+    "tweet_url": "https://x.com/tobi/status/2102090718546198790",
+    "media": true,
+    "auteur_x": "@tobi"
+  },
+  {
+    "date": "2026-09-21",
+    "titre_fr": "Perplexity Computer génère des vidéos avec MiniMax H3 et Seedance",
+    "resume_fr": "Perplexity Computer peut désormais créer des vidéos via les modèles MiniMax H3 et ByteDance Seedance 2.5. On peut demander un clip de campagne, une démo produit ou un asset social, généré aux côtés du texte et du visuel dans le même fil. Disponible pour les abonnés Pro et Max.",
+    "tags": [
+      "produit",
+      "modeles",
+      "marketing",
+      "pub",
+      "commerce"
+    ],
+    "score": 72,
+    "tweet_url": "https://x.com/perplexity_ai/status/2102071798179434966",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-09-21",
+    "titre_fr": "Xiaomi publie MiMo-V2.6, en tête des modèles ouverts",
+    "resume_fr": "Xiaomi dévoile MiMo-V2.6 en deux versions (Pro 1,02T/42B actifs et Flash 310B/15B actifs), qui devient le meilleur modèle ouvert selon Artificial Analysis. La sortie s'accompagne d'un tableau de bord RL et d'un rapport technique.",
+    "tags": [
+      "open-source",
+      "modeles",
+      "recherche"
+    ],
+    "score": 66,
+    "tweet_url": "https://x.com/natolambert/status/2102127392487567651",
+    "media": true,
+    "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-09-21",
+    "titre_fr": "OpenAI crée un groupe consultatif de mathématiciens",
+    "resume_fr": "OpenAI s'associe à un groupe indépendant de mathématiciens pour encadrer la publication de ses avancées en IA et mathématiques, évaluer les résultats et respecter les standards académiques. L'objectif affiché est de placer les mathématiciens au centre de ces travaux.",
+    "tags": [
+      "openai",
+      "recherche"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/OpenAI/status/2102093145051943229",
+    "media": false,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-09-21",
+    "titre_fr": "Grok 4.7 disponible sur Vercel avec 40% de réduction",
+    "resume_fr": "Le modèle Grok 4.7 de xAI est proposé sur la plateforme Vercel via AI Gateway, présenté comme rapide, performant et peu coûteux, avec une remise de 40%.",
+    "tags": [
+      "xai",
+      "modeles",
+      "produit"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/rauchg/status/2102084849939210276",
+    "media": false,
+    "auteur_x": "@rauchg"
+  },
+  {
+    "date": "2026-09-21",
+    "titre_fr": "LangChain met en avant les « modèles de décision » avec Jev",
+    "resume_fr": "LangChain promeut Jev, une nouvelle catégorie de modèles rapides, peu coûteux et fiables destinés à la prise de décision discrète dans les systèmes agentiques. Des alternatives open source comme SemIf émergent aussi, hébergées gratuitement via LangSmith pendant une semaine.",
+    "tags": [
+      "agents",
+      "modeles",
+      "open-source",
+      "automatisation"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/hwchase17/status/2102084698985894352",
+    "media": false,
+    "auteur_x": "@hwchase17"
+  },
+  {
+    "date": "2026-09-21",
+    "titre_fr": "Meta Muse, un assistant IA conversationnel personnel",
+    "resume_fr": "Selon Ethan Mollick, Muse de Meta constitue une implémentation aboutie de l'idée d'un agent-assistant personnel avec lequel on discute en continu, particulièrement accessible aux personnes découvrant les usages de l'IA.",
+    "tags": [
+      "meta",
+      "agents",
+      "produit"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/emollick/status/2102033312554287270",
+    "media": false,
+    "auteur_x": "@emollick"
+  },
+  {
+    "date": "2026-09-21",
+    "titre_fr": "Andrew Ng dénonce l'exagération des peurs autour de l'IA",
+    "resume_fr": "Andrew Ng estime qu'une campagne médiatique bien orchestrée a amplifié les craintes autour de l'IA sans changement réel du niveau de risque. Il pointe l'incident où un essaim d'agents OpenAI a piraté Hugging Face, l'attribuant surtout à des failles de sandboxing, et plaide pour la responsabilité humaine plutôt qu'une pause.",
+    "tags": [
+      "politique-ia",
+      "recherche",
+      "openai"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/AndrewYNg/status/2102140576498065758",
+    "media": false,
+    "auteur_x": "@AndrewYNg"
   }
 ]
