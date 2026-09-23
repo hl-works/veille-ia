@@ -12049,5 +12049,128 @@
     "tweet_url": "https://x.com/AndrewYNg/status/2102140576498065758",
     "media": false,
     "auteur_x": "@AndrewYNg"
+  },
+  {
+    "date": "2026-09-22",
+    "titre_fr": "Anthropic lance Claude Opus 5.5",
+    "resume_fr": "Anthropic présente Claude Opus 5.5, premier modèle de sa nouvelle famille 5.5. Il atteindrait le niveau de performance de Claude Fable 5.1 sur la plupart des tâches tout en coûtant environ 40% de moins à faire tourner qu'Opus 5.",
+    "tags": [
+      "anthropic",
+      "modeles",
+      "produit"
+    ],
+    "score": 85,
+    "tweet_url": "https://x.com/claudeai/status/2102435511222890900",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-09-22",
+    "titre_fr": "OpenAI dévoile GPT-6 Sol et GPT-6 Luna",
+    "resume_fr": "OpenAI ajoute deux modèles plus rapides et plus abordables à sa famille GPT-6, reprenant une partie des capacités de GPT-6 Astra. Les prix d'API sont réduits de 50% par rapport à la génération 5.6, avec Luna à 0,10$/0,50$ par million de tokens.",
+    "tags": [
+      "openai",
+      "modeles",
+      "produit"
+    ],
+    "score": 85,
+    "tweet_url": "https://x.com/OpenAI/status/2102460975790137662",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-09-22",
+    "titre_fr": "Firecrawl lève 75 M$ et lance Alexandria",
+    "resume_fr": "Firecrawl, qui transforme le web en données structurées pour les agents IA, annonce une série B de 75 M$. La société lance aussi Alexandria, une bibliothèque de connaissances où les agents peuvent chercher sur le web et des sources dédiées, avec rémunération des fournisseurs de données.",
+    "tags": [
+      "agents",
+      "produit",
+      "automatisation"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/ycombinator/status/2102455385391305069",
+    "media": true,
+    "auteur_x": "@ycombinator"
+  },
+  {
+    "date": "2026-09-22",
+    "titre_fr": "a16z incube une école, la Horowitz Andreessen Academy",
+    "resume_fr": "a16z annonce la Horowitz Andreessen Academy, une école privée en présentiel à San Francisco pour jeunes sortant du lycée, centrée sur les projets et l'usage de l'IA. Parmi les partenaires fondateurs figurent Anthropic, Google, Meta, NVIDIA, OpenAI, Stripe et d'autres. Ouverture prévue à l'automne 2027.",
+    "tags": [
+      "politique-ia",
+      "talents"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/a16z/status/2102416524787278255",
+    "media": false,
+    "auteur_x": "@a16z"
+  },
+  {
+    "date": "2026-09-22",
+    "titre_fr": "Perplexity améliore son agent Computer par auto-apprentissage",
+    "resume_fr": "Perplexity publie des travaux sur le post-entraînement de son modèle Computer, qui apprend de ses propres erreurs via une auto-distillation guidée par indices. Un test A/B réel montre une baisse de 21% des échecs d'appels d'outils.",
+    "tags": [
+      "recherche",
+      "agents"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/perplexity_ai/status/2102493613192298913",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-09-22",
+    "titre_fr": "OpenAI propose des standards de sécurité IA",
+    "resume_fr": "Sam Altman présente une proposition de standards pour l'IA, plaidant pour un vrai rôle des acteurs extérieurs aux laboratoires, la prévention de la concentration du pouvoir et une concurrence préservée pour les nouveaux venus et les modèles ouverts. OpenAI souhaite que les États-Unis pilotent cet effort.",
+    "tags": [
+      "openai",
+      "politique-ia"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/sama/status/2102414347364335917",
+    "media": false,
+    "auteur_x": "@sama"
+  },
+  {
+    "date": "2026-09-22",
+    "titre_fr": "Jev, un modèle de décision pour réduire les coûts des agents",
+    "resume_fr": "Le concept de Jev est présenté comme un modèle qui ne génère pas de texte mais choisit parmi des options prédéfinies, bien plus vite et moins cher qu'un LLM. Utilisé comme couche d'exécution derrière un modèle frontière, il pourrait fortement réduire les coûts de tâches répétitives comme la surveillance de prix ou le traitement de documents.",
+    "tags": [
+      "agents",
+      "automatisation",
+      "modeles"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/coreyganim/status/2102446829530968078",
+    "media": true,
+    "auteur_x": "@coreyganim"
+  },
+  {
+    "date": "2026-09-22",
+    "titre_fr": "Opus 5.5 en tête pour l'extraction de tableaux PDF",
+    "resume_fr": "Selon LlamaIndex, Opus 5.5 est le meilleur modèle frontière pour l'analyse de tableaux dans les PDF, avec 93,9% sur ParseBench, devant Fable, Gemini et Astra. Il reste toutefois jugé trop coûteux (5,8 cents/page) pour un usage OCR en production.",
+    "tags": [
+      "anthropic",
+      "recherche",
+      "automatisation"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/jerryjliu0/status/2102529024841154977",
+    "media": true,
+    "auteur_x": "@jerryjliu0"
+  },
+  {
+    "date": "2026-09-22",
+    "titre_fr": "Confido lève 55 M$ pour automatiser les marques de grande consommation",
+    "resume_fr": "Confido, qui construit une « main-d'œuvre IA » pour les marques de grande consommation (comptabilité, ventes, planification de la demande), lève 55 M$ en série B menée par Insight. La société travaille avec Olipop, Dude Wipes et des divisions de Mars et Unilever.",
+    "tags": [
+      "agents",
+      "automatisation",
+      "vente"
+    ],
+    "score": 44,
+    "tweet_url": "https://x.com/ycombinator/status/2102412614877814948",
+    "media": true,
+    "auteur_x": "@ycombinator"
   }
 ]
