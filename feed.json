@@ -12172,5 +12172,172 @@
     "tweet_url": "https://x.com/ycombinator/status/2102412614877814948",
     "media": true,
     "auteur_x": "@ycombinator"
+  },
+  {
+    "date": "2026-09-23",
+    "titre_fr": "Anthropic : Claude découvre un nouveau système enzymatique proche de CRISPR",
+    "resume_fr": "Anthropic annonce que Claude a identifié, dans l'ADN de bactériophages, un système enzymatique inconnu qui pourrait constituer un nouveau mécanisme d'édition génétique. L'équipe de sciences du vivant a ensuite validé la découverte par des expériences ; la fonction précise et l'utilité restent à confirmer.",
+    "tags": [
+      "anthropic",
+      "recherche",
+      "modeles"
+    ],
+    "score": 72,
+    "tweet_url": "https://x.com/DarioAmodei/status/2102831170299834652",
+    "media": false,
+    "auteur_x": "@DarioAmodei"
+  },
+  {
+    "date": "2026-09-23",
+    "titre_fr": "ChatGPT Voice sait désormais utiliser des outils",
+    "resume_fr": "OpenAI déploie mondialement une mise à jour de ChatGPT Voice : la voix peut maintenant se connecter à l'e-mail, l'agenda et Slack, s'appuyer sur les nouveaux modèles GPT-6 et fonctionner dans ChatGPT Work pour créer documents, présentations, sites et tableurs à la voix.",
+    "tags": [
+      "openai",
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 74,
+    "tweet_url": "https://x.com/OpenAI/status/2102808325742322002",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-09-23",
+    "titre_fr": "Anthropic lance le Claude Marketplace",
+    "resume_fr": "Anthropic ouvre une place de marché permettant de découvrir des outils, agents et partenaires : ajout de connecteurs comme Slack et Notion, achat d'agents et de produits de sociétés tierces, et accès à des partenaires de services comme Accenture ou Deloitte.",
+    "tags": [
+      "anthropic",
+      "produit",
+      "agents",
+      "saas"
+    ],
+    "score": 66,
+    "tweet_url": "https://x.com/claudeai/status/2102840851538080172",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-09-23",
+    "titre_fr": "Google publie Gemini 3.8 Flash et Flash-Lite TTS",
+    "resume_fr": "Google dévoile deux nouveaux modèles de synthèse vocale : Flash pour la création de voix sur mesure avec contrôle ligne par ligne (jeux, livres audio, podcasts), et Flash-Lite optimisé pour les agents vocaux temps réel et le doublage à grande échelle. Plus de 2 000 voix prêtes à l'emploi et 100+ langues.",
+    "tags": [
+      "google",
+      "produit",
+      "modeles"
+    ],
+    "score": 63,
+    "tweet_url": "https://x.com/GoogleAI/status/2102781694730285427",
+    "media": true,
+    "auteur_x": "@GoogleAI"
+  },
+  {
+    "date": "2026-09-23",
+    "titre_fr": "OpenAI publie MentalHealthBench, un benchmark santé mentale",
+    "resume_fr": "OpenAI met à disposition un nouveau benchmark ouvert, construit avec plus de 80 cliniciens, pour mesurer la qualité des modèles dans des conversations réalistes liées à la santé mentale. Les méthodes sont publiées pour que d'autres chercheurs puissent évaluer et améliorer le travail.",
+    "tags": [
+      "openai",
+      "recherche"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/OpenAI/status/2102837574092161102",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-09-23",
+    "titre_fr": "Cursor introduit Rollouts pour surveiller les déploiements",
+    "resume_fr": "Cursor lance Rollouts : la fonction établit un plan de surveillance puis observe les changements au fil de leur mise en production, afin de vérifier les déploiements et détecter les régressions avant que les utilisateurs ne les rencontrent.",
+    "tags": [
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/cursor_ai/status/2102861817160904808",
+    "media": true,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-09-23",
+    "titre_fr": "Numeral lève 100 M$ pour automatiser la conformité fiscale",
+    "resume_fr": "La startup Numeral (YC W23) annonce une série C de 100 M$. Sa plateforme automatise de bout en bout la conformité à la TVA et aux taxes sur les ventes dans plus de 90 pays : plus de 3 500 entreprises l'utilisent, avec un volume de transactions en hausse de 327 % sur un an.",
+    "tags": [
+      "automatisation",
+      "saas",
+      "paiement",
+      "vente"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/ycombinator/status/2102796382616846652",
+    "media": true,
+    "auteur_x": "@ycombinator"
+  },
+  {
+    "date": "2026-09-23",
+    "titre_fr": "Vercel lance Drives, un stockage attachable pour agents IA",
+    "resume_fr": "Vercel présente Drives, un disque externe que l'on attache à la demande aux agents IA, en complément de Sandbox. L'idée est de découpler le stockage du calcul pour réduire les coûts et améliorer la sécurité et l'auditabilité des agents en cloud.",
+    "tags": [
+      "produit",
+      "agents",
+      "hardware"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/rauchg/status/2102820148629614685",
+    "media": false,
+    "auteur_x": "@rauchg"
+  },
+  {
+    "date": "2026-09-23",
+    "titre_fr": "Claude utilisé pour accélérer la réponse à une épidémie d'Ebola en RDC",
+    "resume_fr": "Anthropic indique que des organisations de santé mondiale (CEPI, OMS Afrique, INRB Kinshasa) s'appuient sur Claude pour accélérer leur réponse à une variante inhabituelle du virus Ebola en République démocratique du Congo.",
+    "tags": [
+      "anthropic",
+      "recherche"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/AnthropicAI/status/2102897863097545197",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-09-23",
+    "titre_fr": "Hubble Network lève 200 M$ pour connecter les objets Bluetooth par satellite",
+    "resume_fr": "Hubble Network (YC W22) annonce une série C de 200 M$ à une valorisation de 1,6 Md$. Son réseau satellite permet à un objet Bluetooth de se connecter à l'orbite par simple mise à jour logicielle, abaissant le coût de connexion sous 50 centimes par appareil.",
+    "tags": [
+      "hardware",
+      "automatisation"
+    ],
+    "score": 47,
+    "tweet_url": "https://x.com/ycombinator/status/2102825313181040704",
+    "media": true,
+    "auteur_x": "@ycombinator"
+  },
+  {
+    "date": "2026-09-23",
+    "titre_fr": "Anthropic sort Claude Opus 5.5",
+    "resume_fr": "Anthropic a publié Claude Opus 5.5, nouvelle version de son modèle haut de gamme. Les premiers retours d'utilisateurs mettent en avant des gains marqués en génération de code et en résolution de tâches complexes.",
+    "tags": [
+      "anthropic",
+      "modeles"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/coreyganim/status/2102793624601932114",
+    "media": false,
+    "auteur_x": "@coreyganim"
+  },
+  {
+    "date": "2026-09-24",
+    "titre_fr": "LlamaIndex présente LlamaExtract Agentic Plus",
+    "resume_fr": "LlamaIndex met en avant un moteur d'extraction pour documents complexes : gestion de longues tables et grands formulaires, scores de confiance calibrés et extraction sourcée. Ciblé pour les cas où les solutions existantes atteignent leurs limites.",
+    "tags": [
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/jerryjliu0/status/2102919773659218061",
+    "media": true,
+    "auteur_x": "@jerryjliu0"
   }
 ]
