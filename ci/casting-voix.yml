@@ -12,7 +12,8 @@ name: Casting voix
 on:
   push:
     branches: [main]
-    paths: [".state/casting"]
+    # Le fichier du workflow lui-même : sa mise en place lance un 1er casting.
+    paths: [".state/casting", ".github/workflows/casting-voix.yml"]
   workflow_dispatch:
 
 concurrency:
