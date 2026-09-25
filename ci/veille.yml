@@ -273,7 +273,10 @@ jobs:
           # Destination « prive » : le podcast part en message privé à Hugo
           # (même ID que celui qui autorise les commandes /maj).
           TELEGRAM_AUTHORIZED_USER_ID: ${{ secrets.TELEGRAM_AUTHORIZED_USER_ID }}
-          SEND_AUDIO: ${{ (vars.DAILY_AUDIO_BRIEF || 'true') == 'true' && !inputs.audio_preview && !inputs.dry_run && github.run_attempt == 1 }}
+          # Envoi Telegram BLOQUÉ tant que Hugo n'a pas validé le podcast :
+          # il faut poser la variable de dépôt AUDIO_SEND=true (décision humaine).
+          # D'ici là, le MP3 + la transcription restent dans l'artefact « brief-audio ».
+          SEND_AUDIO: ${{ vars.AUDIO_SEND == 'true' && (vars.DAILY_AUDIO_BRIEF || 'true') == 'true' && !inputs.audio_preview && !inputs.dry_run && github.run_attempt == 1 }}
           # Surcharges optionnelles (variables de dépôt) ; sinon config.yaml → audio.
           AUDIO_TTS_PROVIDER: ${{ vars.AUDIO_TTS_PROVIDER }}
           AUDIO_FORMAT: ${{ vars.AUDIO_FORMAT }}

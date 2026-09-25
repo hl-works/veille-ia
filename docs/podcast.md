@@ -1,6 +1,9 @@
 # Podcast IA quotidien — état au 25/09/2026
 
-**Actif par défaut** dès que `.github/workflows/veille.yml` est remplacé par
+**Généré chaque matin, jamais publié sans validation.** Aucun envoi Telegram
+tant que la variable de dépôt `AUDIO_SEND` n'est pas à `true` (décision d'Hugo,
+après écoute). Le MP3 et la transcription restent dans l'artefact `brief-audio`.
+Pipeline actif dès que `.github/workflows/veille.yml` est remplacé par
 `ci/veille.yml` (voir plus bas). Après le digest écrit, le job `audio` adapte le
 digest publié (et rien d'autre) en script oral, le fait lire, et envoie le MP3
 dans Telegram. Un échec audio n'affecte jamais l'écrit.
