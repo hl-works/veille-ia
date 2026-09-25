@@ -1,28 +1,27 @@
 name: Veille IA
 
 # ─────────────────────────────────────────────────────────────
-#  Objectif : le digest Telegram tombe vers 8h00-8h30 heure de Paris.
+#  Objectif : le digest Telegram tombe vers 8h15, le podcast vers 8h20-8h30.
 #
-#  Pourquoi une FENÊTRE de tentatives et non un seul cron ?
-#  Les workflows `schedule` de GitHub partent d'une file d'attente
-#  « best effort » : un cron à 05:00 UTC a démarré entre 08:44 et
-#  11:26 UTC fin août / début septembre 2026 (digest reçu vers midi,
-#  à heure fluctuante). On tente donc toutes les 20 minutes sur une
-#  fenêtre : la PREMIÈRE tentative qui démarre réellement après
-#  PARIS_EARLIEST publie, les suivantes voient l'état du jour
-#  (.state/last_run.txt) et s'arrêtent immédiatement.
+#  DÉCLENCHEUR PRINCIPAL : un push sur `.state/tick`.
+#  Les crons `schedule` de GitHub sont « best effort » et, sur ce dépôt,
+#  partent avec 3 à 5 h de retard (digest reçu entre 13h et 14h40 Paris
+#  tout septembre 2026, malgré la fenêtre de tentatives). Un événement
+#  `push`, lui, démarre en quelques secondes. Une tâche planifiée Claude
+#  (« Veille IA — top départ 8h10 ») réécrit `.state/tick` chaque matin à
+#  08:10 Europe/Paris → le workflow part immédiatement.
 #
-#  Les crons sont en UTC (GitHub ignore l'heure d'été). La fenêtre
-#  06:03 → 09:43 UTC couvre 08:03 → 11:43 à Paris en été et
-#  07:03 → 10:43 en hiver ; c'est le garde-fou ci-dessous qui
-#  raisonne en Europe/Paris, donc l'heure de publication NE BOUGE PAS
-#  au changement d'heure.
+#  FILET DE SÉCURITÉ : les crons ci-dessous restent actifs. Si le top départ
+#  ne vient pas, le premier cron qui démarre publie (en retard, mais publie).
+#  Anti-doublon : `.state/last_run.txt` — un seul digest par jour.
 #
-#  Réglage : PARIS_EARLIEST (plus bas) = heure de Paris à partir de
-#  laquelle la publication est autorisée. C'est le seul curseur à
-#  toucher pour avancer/reculer le digest.
+#  Réglage : PARIS_EARLIEST = heure de Paris à partir de laquelle la
+#  publication est autorisée (garde-fou contre un tick trop tôt).
 # ─────────────────────────────────────────────────────────────
 on:
+  push:
+    branches: [main]
+    paths: [".state/tick"]
   schedule:
     # Minutes volontairement décalées (03/23/43) : les marques :00 et
     # :30 sont les plus encombrées côté GitHub.
@@ -30,6 +29,8 @@ on:
     - cron: "3,23,43 7 * * *"
     - cron: "3,23,43 8 * * *"
     - cron: "3,23,43 9 * * *"
+    - cron: "3,23,43 10 * * *"
+    - cron: "3,23,43 11 * * *"
   workflow_dispatch:
     inputs:
       dry_run:
@@ -38,7 +39,7 @@ on:
         default: false
 
       audio_preview:
-        description: "Générer un MP3 de test du vrai brief, SANS publication Telegram ni écriture des données"
+        description: "Podcast de test : génère le MP3 du vrai brief SANS rien publier (MP3 dans les artefacts du run)"
         type: boolean
         default: false
 
@@ -69,7 +70,8 @@ jobs:
 
       # ── Garde-fou horaire + anti-doublon ──────────────────────
       #  Un déclenchement manuel passe toujours (c'est le but d'un
-      #  « Run workflow »).
+      #  « Run workflow »). Un push sur .state/tick suit la même règle
+      #  qu'un cron (heure mini + anti-doublon).
       - name: Faut-il publier maintenant ?
         id: gate
         env:
@@ -129,7 +131,7 @@ jobs:
           python -m veille.main "${args[@]}"
         env:
           DRY_RUN: ${{ inputs.dry_run || inputs.audio_preview }}
-          DAILY_AUDIO_BRIEF: ${{ vars.DAILY_AUDIO_BRIEF }}
+          DAILY_AUDIO_BRIEF: ${{ vars.DAILY_AUDIO_BRIEF || 'true' }}
           AUDIO_PREVIEW: ${{ inputs.audio_preview }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           TWITTERAPI_IO_KEY: ${{ secrets.TWITTERAPI_IO_KEY }}
@@ -140,7 +142,7 @@ jobs:
 
       - name: Transmettre le brief final au job audio
         id: audio_input
-        if: ${{ (vars.DAILY_AUDIO_BRIEF == 'true' || inputs.audio_preview) && hashFiles('audio-input/brief.json') != '' }}
+        if: ${{ ((vars.DAILY_AUDIO_BRIEF || 'true') == 'true' || inputs.audio_preview) && hashFiles('audio-input/brief.json') != '' }}
         continue-on-error: true
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
@@ -234,7 +236,7 @@ jobs:
     # Independent from subsequent feed/bridge failures. Never delay the written send.
     if: ${{ always() && !cancelled() && needs.veille.outputs.audio_artifact != '' }}
     runs-on: ubuntu-latest
-    timeout-minutes: 35
+    timeout-minutes: 25
     continue-on-error: true
     permissions:
       contents: read
@@ -247,17 +249,35 @@ jobs:
         with:
           name: audio-input
           path: audio-input
-      - name: Installer le moteur vocal isolé (CPU, sans serveur)
+      - name: Installer le moteur vocal
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y ffmpeg sox
-          pip install -r requirements-audio.txt
-      - name: Générer le MP3 et éventuellement publier
+          sudo apt-get install -y -qq ffmpeg
+          pip install -q pyyaml
+          provider=$(python3 -c "import yaml;print(((yaml.safe_load(open('config.yaml')) or {}).get('audio') or {}).get('provider','edge'))" 2>/dev/null || echo edge)
+          provider=${AUDIO_TTS_PROVIDER:-$provider}
+          echo "Moteur vocal : $provider"
+          if [[ "$provider" == "qwen" ]]; then
+            sudo apt-get install -y -qq sox
+            pip install -r requirements-qwen.txt
+          else
+            pip install -r requirements-audio.txt
+          fi
+        env:
+          AUDIO_TTS_PROVIDER: ${{ vars.AUDIO_TTS_PROVIDER }}
+      - name: Générer le podcast et le publier
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
-          SEND_AUDIO: ${{ vars.DAILY_AUDIO_BRIEF == 'true' && !inputs.audio_preview && !inputs.dry_run && github.run_attempt == 1 }}
+          # Destination « prive » : le podcast part en message privé à Hugo
+          # (même ID que celui qui autorise les commandes /maj).
+          TELEGRAM_AUTHORIZED_USER_ID: ${{ secrets.TELEGRAM_AUTHORIZED_USER_ID }}
+          SEND_AUDIO: ${{ (vars.DAILY_AUDIO_BRIEF || 'true') == 'true' && !inputs.audio_preview && !inputs.dry_run && github.run_attempt == 1 }}
+          # Surcharges optionnelles (variables de dépôt) ; sinon config.yaml → audio.
+          AUDIO_TTS_PROVIDER: ${{ vars.AUDIO_TTS_PROVIDER }}
+          AUDIO_FORMAT: ${{ vars.AUDIO_FORMAT }}
+          AUDIO_DESTINATION: ${{ vars.AUDIO_DESTINATION }}
           QWEN_DEVICE: cpu
           QWEN_MODEL: ${{ vars.QWEN_MODEL || 'Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice' }}
           QWEN_SPEAKER: ${{ vars.QWEN_SPEAKER || 'Ryan' }}

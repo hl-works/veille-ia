@@ -1,0 +1,3 @@
+# Job audio uniquement (le job écrit n'installe pas ceci).
+-r requirements.txt
+edge-tts>=7.0,<8
