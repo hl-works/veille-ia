@@ -239,7 +239,8 @@ jobs:
     timeout-minutes: 25
     continue-on-error: true
     permissions:
-      contents: read
+      # write : uniquement pour pousser le MP3 du jour sur la branche `ecoute`.
+      contents: write
     steps:
       - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
       - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
@@ -273,6 +274,7 @@ jobs:
           # Destination « prive » : le podcast part en message privé à Hugo
           # (même ID que celui qui autorise les commandes /maj).
           TELEGRAM_AUTHORIZED_USER_ID: ${{ secrets.TELEGRAM_AUTHORIZED_USER_ID }}
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
           # Envoi Telegram BLOQUÉ tant que Hugo n'a pas validé le podcast :
           # il faut poser la variable de dépôt AUDIO_SEND=true (décision humaine).
           # D'ici là, le MP3 + la transcription restent dans l'artefact « brief-audio ».
@@ -288,6 +290,14 @@ jobs:
           args=()
           if [[ "$SEND_AUDIO" == "true" ]]; then args+=(--send); fi
           python -m veille.audio "${args[@]}"
+      # Le MP3 + la transcription du jour vont sur la branche `ecoute` pour
+      # qu'Hugo (et Claude) puissent l'écouter et le valider. Rien n'est publié.
+      - name: Publier l'écoute du jour (branche ecoute)
+        if: ${{ always() }}
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: bash scripts/push-ecoute.sh "podcast/$(TZ=Europe/Paris date +%Y-%m-%d)"
       - name: Conserver l'aperçu et le diagnostic éditorial 14 jours
         if: ${{ always() }}
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
