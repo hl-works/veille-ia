@@ -90,6 +90,18 @@ class PodcastTests(unittest.TestCase):
             self.assertEqual(calls, [cfg['voix_femme'], cfg['voix_homme'], cfg['voix_femme']])
             self.assertIn('concat', run.call_args.args[0])
 
+    def test_lexicon_whole_words_longest_first(self):
+        lex = {'GPT': 'Djé Pé Té', 'ChatGPT': 'Tchatte Djé Pé Té', 'Sam Altman': 'Sam Altmane',
+               'IA': 'I.A.'}
+        text = "ChatGPT et GPT-6, dit Sam Altman. L'IA, pas IAvec."
+        self.assertEqual(audio.apply_lexicon(text, lex),
+                         "Tchatte Djé Pé Té et Djé Pé Té-6, dit Sam Altmane. L'I.A., pas IAvec.")
+        self.assertEqual(audio.apply_lexicon('rien', {}), 'rien')
+
+    def test_repo_lexicon_loads(self):
+        lex = audio.load_lexicon('lexique.yaml')
+        self.assertIn('Anthropic', lex)
+
 
 if __name__ == '__main__':
     unittest.main()

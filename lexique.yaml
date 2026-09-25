@@ -1,0 +1,90 @@
+# ═══════════════════════════════════════════════════════════════
+#  Lexique de prononciation du podcast Veille IA
+#  Gauche = comment le mot s'écrit dans le script.
+#  Droite = comment la voix doit le lire (orthographe « à la française »).
+#  Appliqué juste avant la synthèse vocale ; la transcription garde
+#  l'orthographe normale. Statut : PROPOSITIONS de Claude, à valider par Hugo.
+#  (Avec ElevenLabs v3, ce même fichier devient un dictionnaire de prononciation.)
+# ═══════════════════════════════════════════════════════════════
+
+# — Labs & produits —
+ChatGPT: Tchatte Djé Pé Té
+GPT: Djé Pé Té
+OpenAI: Aupène A.I.
+Anthropic: Anne-tro-pique
+Claude: Claude
+Opus: Opusse
+Sonnet: Sonnette
+Cowork: Co-oueurk
+Gemini: Djé-mini
+Gemma: Djemma
+DeepMind: Dipe-maïnde
+Perplexity: Perr-plexi-ti
+Grok: Grok
+xAI: X A.I.
+Mistral: Mistral
+Cursor: Keurseur
+Codex: Codex
+Copilot: Copaïlote
+Hugging Face: Heuguine Féce
+Qwen: Tchouenne
+Kimi: Kimi
+DeepSeek: Dipe-sik
+MiniMax: Mini-max
+Llama: Lama
+LlamaIndex: Lama-index
+Meta: Méta
+Microsoft: Maïcro-soft
+NVIDIA: Ène-vidia
+Nvidia: Ène-vidia
+Vercel: Veur-sel
+Replit: Rè-plit
+Shopify: Cho-pi-faï
+Snowflake: Sno-fléïk
+Stripe: Straïpe
+Supabase: Soupa-béïze
+Figma: Figma
+Slack: Slak
+Notion: Nochonne
+Ollama: Olama
+OpenRouter: Aupène-routeur
+OpenClaw: Aupène-clô
+Seedance: Si-dance
+ElevenLabs: Ilèvène labs
+GitHub: Guite-heub
+Cloudflare: Claoude-flère
+Higgsfield: Higgs-filde
+Midjourney: Mid-djeurné
+
+# — Personnes —
+Sam Altman: Sam Altmane
+Dario Amodei: Dario Amodéï
+Greg Brockman: Greg Brokmane
+Andrej Karpathy: Andreï Karpathy
+Demis Hassabis: Démis Hassabisse
+Mustafa Suleyman: Moustafa Souléïmane
+Yann LeCun: Yann Le Cun
+François Chollet: François Chollet
+Ethan Mollick: Ithane Molik
+Simon Willison: Simone Ouilisonne
+Nathan Lambert: Néthane Lambeurt
+Logan Kilpatrick: Logane Kilpatrik
+Tobi Lütke: Tobi Lutké
+Fidji Simo: Fidji Simo
+
+# — Sigles —
+IA: I.A.
+API: A.P.I.
+GPU: G.P.U.
+LLM: L.L.M.
+MCP: M.C.P.
+SDK: S.D.K.
+CLI: C.L.I.
+AGI: A.G.I.
+AWS: A.W.S.
+CRM: C.R.M.
+OCR: O.C.R.
+PDF: P.D.F.
+SEO: S.E.O.
+GEO: G.E.O.
+YC: Y Combinator
