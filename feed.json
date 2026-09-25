@@ -12339,5 +12339,149 @@
     "tweet_url": "https://x.com/jerryjliu0/status/2102919773659218061",
     "media": true,
     "auteur_x": "@jerryjliu0"
+  },
+  {
+    "date": "2026-09-24",
+    "titre_fr": "Muse : les agents personnels peuvent acheter et payer via Shop Pay",
+    "resume_fr": "L'app Muse permet désormais à un agent personnel de trouver un produit, de l'ajouter au panier et de finaliser l'achat via Shop Pay, en réutilisant les informations déjà enregistrées par l'utilisateur. Une étape concrète vers le commerce piloté par agents.",
+    "tags": [
+      "produit",
+      "agents",
+      "commerce",
+      "paiement",
+      "vente"
+    ],
+    "score": 82,
+    "tweet_url": "https://x.com/harleyf/status/2103129189729894861",
+    "media": false,
+    "auteur_x": "@harleyf"
+  },
+  {
+    "date": "2026-09-24",
+    "titre_fr": "Anthropic lance Opus 5.5",
+    "resume_fr": "Anthropic déploie Opus 5.5, présenté comme performant en dialogue, génération de code et création multimédia. Selon des données d'usage tierces, le modèle représentait déjà jusqu'à 10 % des dépenses sur une passerelle IA deux jours après sa sortie.",
+    "tags": [
+      "anthropic",
+      "modeles"
+    ],
+    "score": 74,
+    "tweet_url": "https://x.com/TheZvi/status/2103151954641744304",
+    "media": false,
+    "auteur_x": "@TheZvi"
+  },
+  {
+    "date": "2026-09-24",
+    "titre_fr": "Données d'usage : OpenAI grignote la part d'Anthropic",
+    "resume_fr": "D'après les chiffres de la passerelle IA de Vercel sur deux mois, la part de dépenses d'Anthropic passe de 69 % à 40 % tandis qu'OpenAI monte de 10 % à 24 %, porté par ses nouveaux modèles. Des acteurs comme Kimi K3 et DeepSeek captent une partie des pertes d'Anthropic.",
+    "tags": [
+      "openai",
+      "anthropic",
+      "modeles",
+      "recherche"
+    ],
+    "score": 66,
+    "tweet_url": "https://x.com/rauchg/status/2103216656747262419",
+    "media": true,
+    "auteur_x": "@rauchg"
+  },
+  {
+    "date": "2026-09-24",
+    "titre_fr": "Perplexity lance Fast Search dans son API, sur le moteur Photon",
+    "resume_fr": "Perplexity ouvre Fast Search dans son API de recherche, propulsé par Photon, son moteur de récupération et de classement en Rust. La société annonce 95 % des résultats renvoyés en 230 ms ou moins.",
+    "tags": [
+      "produit",
+      "recherche",
+      "saas"
+    ],
+    "score": 64,
+    "tweet_url": "https://x.com/perplexity_ai/status/2103184653373014509",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-09-24",
+    "titre_fr": "Stitch de Google exploite Gemini 3.8 Flash pour les visuels de marque",
+    "resume_fr": "Stitch by Google permet d'importer une charte graphique et des visuels produits pour générer automatiquement des mises en page cohérentes de pages marketing et produit. L'outil extrait le système de design et intègre les images fournies.",
+    "tags": [
+      "google",
+      "produit",
+      "marketing",
+      "commerce"
+    ],
+    "score": 63,
+    "tweet_url": "https://x.com/stitchbygoogle/status/2103151307486027850",
+    "media": true,
+    "auteur_x": "@stitchbygoogle"
+  },
+  {
+    "date": "2026-09-24",
+    "titre_fr": "Muse peut créer des applications via Replit",
+    "resume_fr": "L'app Muse intègre désormais la création d'applications directement sur Replit, élargissant son écosystème de connecteurs vers des usages no-code.",
+    "tags": [
+      "meta",
+      "produit",
+      "no-code",
+      "automatisation"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/amasad/status/2103129037011120525",
+    "media": true,
+    "auteur_x": "@amasad"
+  },
+  {
+    "date": "2026-09-24",
+    "titre_fr": "Perplexity ouvre son Computer local aux puces AMD Ryzen AI Max",
+    "resume_fr": "Le Portable Computer de Perplexity est désormais disponible sous Windows sur les processeurs AMD Ryzen AI Max, permettant d'exécuter des agents IA localement avec accès aux fichiers et applications, y compris des tâches planifiées.",
+    "tags": [
+      "produit",
+      "hardware",
+      "agents"
+    ],
+    "score": 57,
+    "tweet_url": "https://x.com/perplexity_ai/status/2103161414919872628",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-09-24",
+    "titre_fr": "Cosmic Robotics automatise l'installation de panneaux solaires",
+    "resume_fr": "La startup Cosmic Robotics développe des robots de chantier pour automatiser des tâches encore manuelles. Ses machines ont déjà posé 11 000 panneaux solaires et l'entreprise signe un contrat avec le plus grand groupe de construction du pays.",
+    "tags": [
+      "hardware",
+      "produit"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/ycombinator/status/2103214791817085124",
+    "media": true,
+    "auteur_x": "@ycombinator"
+  },
+  {
+    "date": "2026-09-25",
+    "titre_fr": "Shopify repense son admin pour l'ère des agents",
+    "resume_fr": "Shopify présente une refonte de son back-office marchand pensée pour l'usage quotidien de millions de commerçants et l'intégration d'agents IA. L'objectif affiché est de rendre l'administration plus moderne et automatisée.",
+    "tags": [
+      "produit",
+      "agents",
+      "shopify",
+      "commerce",
+      "automatisation"
+    ],
+    "score": 72,
+    "tweet_url": "https://x.com/harleyf/status/2103393987637780845",
+    "media": false,
+    "auteur_x": "@harleyf"
+  },
+  {
+    "date": "2026-09-25",
+    "titre_fr": "GPT-6 Astra termine NetHack, un jeu réputé quasi impossible",
+    "resume_fr": "Selon Ethan Mollick, le modèle GPT-6 Astra d'OpenAI a réussi à finir NetHack, l'un des roguelikes les plus difficiles, dès sa troisième tentative. Une démonstration des capacités de raisonnement de long terme du modèle.",
+    "tags": [
+      "openai",
+      "modeles"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/emollick/status/2103308028552343946",
+    "media": true,
+    "auteur_x": "@emollick"
   }
 ]
