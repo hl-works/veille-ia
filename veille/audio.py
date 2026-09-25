@@ -105,6 +105,12 @@ DEFAULT_AUDIO = {
     'destination': 'prive',
     'voix_femme': 'fr-FR-VivienneMultilingualNeural',
     'voix_homme': 'fr-FR-RemyMultilingualNeural',
+    # ElevenLabs (provider « elevenlabs ») : voice_id choisis après casting.
+    'modele_elevenlabs': 'eleven_v3',
+    'voix_femme_elevenlabs': '',
+    'voix_homme_elevenlabs': '',
+    # Lexique de prononciation (lexique.yaml) appliqué avant la voix.
+    'lexique_actif': 'true',
 }
 
 
@@ -254,6 +260,9 @@ def get_provider(cfg: dict | None = None) -> TTSProvider:
     provider = cfg['provider'].strip().lower()
     if provider == 'edge':
         return EdgeTTS(cfg)
+    if provider == 'elevenlabs':
+        from .elevenlabs_tts import ElevenLabsTTS
+        return ElevenLabsTTS(cfg)
     if provider == 'qwen':
         return QwenTTS()
     raise ValueError('Fournisseur TTS non implémenté')
@@ -298,8 +307,9 @@ def run(snapshot_path: Path, output: Path, settings, *, send: bool = False,
     (output / 'transcript.txt').write_text(script, encoding='utf-8')
     # Version lue par la voix : lexique de prononciation appliqué.
     script_path = output / 'spoken.txt'
-    script_path.write_text(apply_lexicon(script, load_lexicon(cfg.get('lexique', 'lexique.yaml'))),
-                           encoding='utf-8')
+    lexicon = (load_lexicon(cfg.get('lexique', 'lexique.yaml'))
+               if str(cfg.get('lexique_actif', 'true')).lower() != 'false' else {})
+    script_path.write_text(apply_lexicon(script, lexicon), encoding='utf-8')
     audio = output / 'brief.mp3'
     get_provider(cfg).synthesize(script_path, audio)
     seconds = duration_seconds(audio)
