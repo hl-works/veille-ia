@@ -1,0 +1,39 @@
+[
+  {
+    "voice_id": "EXAVITQu4vr4xnSDxMaL",
+    "name": "Sarah - Mature, Reassuring, Confident",
+    "source": "mes voix",
+    "public_owner_id": "",
+    "accent": "use_case:entertainment_tv accent:american gender:female age:young descriptive:professional language:en en/american/en-US",
+    "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/EXAVITQu4vr4xnSDxMaL/01a3e33c-6e99-4ee7-8543-ff2216a32186.mp3",
+    "fichier": "01-sarah-mature-reassuring-confident.mp3",
+    "fichier_sans_lexique": "01-sarah-mature-reassuring-confident-sans-lexique.mp3"
+  },
+  {
+    "voice_id": "FGY2WhTYpPnrIDTdsKH5",
+    "name": "Laura - Enthusiast, Quirky Attitude",
+    "source": "mes voix",
+    "public_owner_id": "",
+    "accent": "use_case:social_media accent:american gender:female age:young descriptive:sassy language:en en/american/en-US en/america",
+    "preview_url": "https://api.us.elevenlabs.io/v1/voices/FGY2WhTYpPnrIDTdsKH5/previews/audio?payload=eyJ2b2ljZV9zb3VyY2UiOiJwcmVtYWRlIiwiZmlsZW5hbWUiOiI2NzM0MTc1OS1hZDA4LTQxYTUtYmU2ZS1kZTEyZmU0NDg2MTgubXAzIiwidGltZXN0YW1wIjoxNzkwMzIzMjAwMDAwMDAwfQ%3D%3D",
+    "fichier": "02-laura-enthusiast-quirky-attitude.mp3"
+  },
+  {
+    "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
+    "name": "Alice - Clear, Engaging Educator",
+    "source": "mes voix",
+    "public_owner_id": "",
+    "accent": "use_case:informative_educational accent:british gender:female age:middle_aged descriptive:professional language:en en/br",
+    "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/Xb7hH8MSUJpSbSDYk0k2/d10f7534-11f6-41fe-a012-2de1e482d336.mp3",
+    "fichier": "03-alice-clear-engaging-educator.mp3"
+  },
+  {
+    "voice_id": "XrExE9yKIg1WjnnlVkGX",
+    "name": "Matilda - Knowledgable, Professional",
+    "source": "mes voix",
+    "public_owner_id": "",
+    "accent": "use_case:informative_educational accent:american gender:female age:middle_aged descriptive:upbeat language:en en/america",
+    "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/XrExE9yKIg1WjnnlVkGX/b930e18d-6b4d-466e-bab2-0ae97c6d8535.mp3",
+    "fichier": "04-matilda-knowledgable-professional.mp3"
+  }
+]
