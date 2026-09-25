@@ -1,0 +1,39 @@
+[
+  {
+    "voice_id": "uOw88F5bjqRiVuZLhXEA",
+    "name": "Victoria",
+    "source": "bibliothèque",
+    "public_owner_id": "8035d5597b0121ba0935b629557553443e12a0cb661afca705cfaba1d3c1fcf5",
+    "accent": "standard fr-FR fr fr/standard/fr-FR fr/standard/fr-FR fr/standard/fr-FR fr/standard/fr-FR uk/uk-standard/None uk/uk-stan",
+    "preview_url": "https://storage.googleapis.com/eleven-public-prod/database/workspace/18b8771d279e4e979b042a209618a697/voices/uOw88F5bjqRiVuZLhXEA/l2Jl5QB3CZJLkwhOBPr1.mp3",
+    "fichier": "01-victoria.mp3",
+    "fichier_sans_lexique": "01-victoria-sans-lexique.mp3"
+  },
+  {
+    "voice_id": "LFtQZWdaqmvamcTNGpwl",
+    "name": "Lucie - Narration",
+    "source": "bibliothèque",
+    "public_owner_id": "42042f6d699b288655ebd13d348b34e3041637893262b2a9abef2f27279d3b28",
+    "accent": "standard fr-FR fr fr/standard/fr-FR fr/standard/fr-FR fr/standard/fr-FR fr/standard/fr-FR es/es-mexican/es-ES es/es-mexi",
+    "preview_url": "https://api.us.elevenlabs.io/v1/voices/LFtQZWdaqmvamcTNGpwl/previews/audio?payload=eyJ2b2ljZV9zb3VyY2UiOiJjdXN0b20iLCJ3b3Jrc3BhY2VfaWQiOiI1MGQ5OTFmOTFjOTE0MGVlOGY4N2MxZWIxZGU3MDUwYSIsImZpbGVuYW1lIjoiYmI1NWJmMzAtMzI1Yy00OTFlLTk3ZWQtOGI3YzA4ZDJjMDQ1Lm1wMyIsInRpbWVzdGFtcCI6MTc5MDMyMzIwMDAwMDAwMH0%3D",
+    "fichier": "02-lucie-narration.mp3"
+  },
+  {
+    "voice_id": "DmA5Za3LKQf1NQcbHfdZ",
+    "name": "Emilie - Calm & Friendly",
+    "source": "bibliothèque",
+    "public_owner_id": "ef05059d1cb94491a8aed54b18ca9c3093a85eff09f8dd12f33dac474a636de8",
+    "accent": "standard fr-FR fr fr/standard/fr-FR fr/standard/fr-FR fr/standard/fr-FR fr/standard/fr-FR",
+    "preview_url": "https://api.us.elevenlabs.io/v1/voices/DmA5Za3LKQf1NQcbHfdZ/previews/audio?payload=eyJ2b2ljZV9zb3VyY2UiOiJjdXN0b20iLCJ3b3Jrc3BhY2VfaWQiOiI4YmYzNTAyNDZkYTI0ZDMyODQxYzdkZDU0MzRkYmU0MCIsImZpbGVuYW1lIjoiOTk2YmEwNmQtMjgwNy00ZmQ4LTgxNjUtNThiZTlmOWYyMDYwLm1wMyIsInRpbWVzdGFtcCI6MTc5MDMyMzIwMDAwMDAwMH0%3D",
+    "fichier": "03-emilie-calm-friendly.mp3"
+  },
+  {
+    "voice_id": "j3PYHC4NBf5MAIuCgGYU",
+    "name": "Corinne",
+    "source": "bibliothèque",
+    "public_owner_id": "010717ff507973747e0b77ce32d767b2ad2e067285be4fd463a56d8ef908e1b1",
+    "accent": "standard fr-FR fr fr/standard/fr-FR fr/standard/fr-FR fr/standard/fr-FR fr/standard/fr-FR",
+    "preview_url": "https://api.us.elevenlabs.io/v1/voices/j3PYHC4NBf5MAIuCgGYU/previews/audio?payload=eyJ2b2ljZV9zb3VyY2UiOiJjdXN0b20iLCJ3b3Jrc3BhY2VfaWQiOiI0NjJlYzVmZTg4NDA0ZWE3YTcxNzk3MjFhNDBmNjE2YyIsImZpbGVuYW1lIjoiNTRiMGE4OTEtNTNlNi00NzE3LTk0MGMtNDM1Yjg2Yzg4YmI0Lm1wMyIsInRpbWVzdGFtcCI6MTc5MDMyMzIwMDAwMDAwMH0%3D",
+    "fichier": "04-corinne.mp3"
+  }
+]
