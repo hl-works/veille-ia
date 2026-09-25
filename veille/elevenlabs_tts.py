@@ -17,6 +17,8 @@ import requests
 API = 'https://api.elevenlabs.io'
 DEFAULT_MODEL = 'eleven_v3'
 CHUNK_LIMIT = 2500  # marge sous la limite par requête du modèle
+# Voix validée par Hugo le 25/09/2026 (casting) : Victoria, français de France.
+DEFAULT_VOICE_FEMME = 'uOw88F5bjqRiVuZLhXEA'
 
 ACCENTS_EXCLUS = re.compile(
     r'canad|qu[eé]b|belg|swiss|suisse|afric|cameroun|s[eé]n[eé]gal|ivoir|congo|'
@@ -86,12 +88,16 @@ def chunks(text: str, limit: int = CHUNK_LIMIT) -> list[str]:
     return [c for c in out if c.strip()]
 
 
-def concat_mp3(files: list[Path], output: Path) -> None:
+def concat_mp3(files: list[Path], output: Path, tempo: float = 1.0) -> None:
+    """Assemble les morceaux en un MP3. `tempo` > 1 accélère le débit sans
+    changer la hauteur de la voix (filtre atempo, 0.5 à 2.0)."""
     listing = output.parent / f'.{output.stem}-list.txt'
     listing.write_text(''.join(f"file '{f.resolve()}'\n" for f in files), encoding='utf-8')
+    tempo = min(2.0, max(0.5, float(tempo or 1.0)))
+    filters = ['-filter:a', f'atempo={tempo:g}'] if abs(tempo - 1.0) > 1e-3 else []
     try:
         subprocess.run(['ffmpeg', '-nostdin', '-y', '-v', 'error', '-f', 'concat', '-safe', '0',
-                        '-i', str(listing), '-ac', '1', '-ar', '44100', '-codec:a', 'libmp3lame',
+                        '-i', str(listing), *filters, '-ac', '1', '-ar', '44100', '-codec:a', 'libmp3lame',
                         '-b:a', '96k', str(output)], check=True, timeout=300,
                        stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     finally:
@@ -107,7 +113,7 @@ class ElevenLabsTTS:
 
     def _voice(self, who: str) -> str:
         key = 'voix_homme_elevenlabs' if who == 'homme' else 'voix_femme_elevenlabs'
-        voice = self.cfg.get(key, '')
+        voice = self.cfg.get(key, '') or (DEFAULT_VOICE_FEMME if who != 'homme' else '')
         if not voice:
             raise RuntimeError(f'Aucune voix ElevenLabs choisie ({key} vide) — lancer le casting')
         return voice
@@ -125,7 +131,7 @@ class ElevenLabsTTS:
                     dest = Path(directory) / f'{len(files):04d}.mp3'
                     tts(piece, self._voice(who), dest, model=self.model)
                     files.append(dest)
-            concat_mp3(files, output)
+            concat_mp3(files, output, float(self.cfg.get('vitesse', 1.0) or 1.0))
 
 
 # ── Découverte des voix françaises (pour le casting) ────────────────────────

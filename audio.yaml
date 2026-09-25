@@ -1,0 +1,14 @@
+# ═══════════════════════════════════════════════════════════════
+#  Réglages du podcast audio (version écoutable du digest)
+#  Validé par Hugo le 25/09/2026 après casting : ElevenLabs v3, voix Victoria
+#  (français de France), SANS lexique (ElevenLabs prononce mieux les marques
+#  tout seul), débit légèrement accéléré.
+#  Envoi Telegram bloqué tant que la variable de dépôt AUDIO_SEND ≠ true.
+# ═══════════════════════════════════════════════════════════════
+provider: elevenlabs
+modele_elevenlabs: eleven_v3
+voix_femme_elevenlabs: uOw88F5bjqRiVuZLhXEA   # Victoria
+lexique_actif: false
+vitesse: 1.1          # 1.0 = débit d'origine ; 1.1 à 1.2 = plus rapide
+format: solo          # solo | duo (duo : ajouter voix_homme_elevenlabs)
+destination: prive    # prive (MP à Hugo) | canal

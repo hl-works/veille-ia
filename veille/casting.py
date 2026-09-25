@@ -27,13 +27,13 @@ def slug(name: str) -> str:
     return re.sub(r'[^a-z0-9]+', '-', ascii_name.lower()).strip('-')[:40] or 'voix'
 
 
-def render(text: str, voice_id: str, dest: Path, model: str) -> None:
+def render(text: str, voice_id: str, dest: Path, model: str, tempo: float = 1.0) -> None:
     parts: list[Path] = []
     for i, piece in enumerate(chunks(text)):
         part = dest.with_name(f'.{dest.stem}-{i:02d}.mp3')
         tts(piece, voice_id, part, model=model)
         parts.append(part)
-    concat_mp3(parts, dest)
+    concat_mp3(parts, dest, tempo)
     for part in parts:
         part.unlink(missing_ok=True)
 
@@ -45,21 +45,27 @@ def run(params: dict, text: str, out: Path, lexicon: dict[str, str]) -> list[dic
     voices = ([{'voice_id': v, 'name': v, 'source': 'choisie', 'accent': '', 'preview_url': ''}
                for v in ids] if ids else french_voices(genre, int(params.get('nombre', 4))))
     out.mkdir(parents=True, exist_ok=True)
-    spoken = apply_lexicon(text, lexicon)
+    with_lexicon = params.get('lexique', True) is not False
+    spoken = apply_lexicon(text, lexicon) if with_lexicon else text
+    speeds = [float(x) for x in (params.get('vitesses') or [1.0])]
     results: list[dict] = []
     for n, v in enumerate(voices, 1):
         row = dict(v)
         name = f"{n:02d}-{slug(v['name'])}"
+        files: list[str] = []
         try:
-            render(spoken, v['voice_id'], out / f'{name}.mp3', model)
-            row['fichier'] = f'{name}.mp3'
-            if n == 1:
-                render(text, v['voice_id'], out / f'{name}-sans-lexique.mp3', model)
+            for speed in speeds:
+                suffix = '' if len(speeds) == 1 else f"-vitesse-{speed:g}".replace('.', '_')
+                render(spoken, v['voice_id'], out / f'{name}{suffix}.mp3', model, speed)
+                files.append(f'{name}{suffix}.mp3')
+            row['fichier'] = ' · '.join(files)
+            if n == 1 and with_lexicon:
+                render(text, v['voice_id'], out / f'{name}-sans-lexique.mp3', model, speeds[0])
                 row['fichier_sans_lexique'] = f'{name}-sans-lexique.mp3'
         except ElevenLabsError as exc:
             row['erreur'] = str(exc)
         results.append(row)
-    lines = [f'# Casting voix {genre} — modèle {model}', '',
+    lines = [f'# Casting voix {genre} — modèle {model} — lexique {"oui" if with_lexicon else "non"} — vitesses {speeds}', '',
              '| # | Voix | Source | Accent / langue | Fichier | voice_id |', '|---|---|---|---|---|---|']
     for n, r in enumerate(results, 1):
         f = r.get('fichier') or f"❌ {r.get('erreur', '')[:120]}"
