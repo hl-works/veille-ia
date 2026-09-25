@@ -3,7 +3,9 @@
 #  Gauche = comment le mot s'écrit dans le script.
 #  Droite = comment la voix doit le lire (orthographe « à la française »).
 #  Appliqué juste avant la synthèse vocale ; la transcription garde
-#  l'orthographe normale. Statut : PROPOSITIONS de Claude, à valider par Hugo.
+#  l'orthographe normale. Statut : VALIDÉ par Hugo le 25/09/2026.
+#  Règle : prononciation française, avec juste une pointe d'anglais sur les
+#  noms anglais (ex. « Aupène É-aïe ») — jamais un anglais appuyé.
 #  (Avec ElevenLabs v3, ce même fichier devient un dictionnaire de prononciation.)
 # ═══════════════════════════════════════════════════════════════
 

@@ -19,6 +19,12 @@ par un bloc `audio:` dans `config.yaml` ou les variables de dépôt `AUDIO_*` :
 | `voix_femme` | `fr-FR-VivienneMultilingualNeural` | alternative : `fr-FR-DeniseNeural` |
 | `voix_homme` | `fr-FR-RemyMultilingualNeural` | alternative : `fr-FR-HenriNeural` |
 
+**Règles de voix (Hugo, 25/09) :** accent de France uniquement — jamais de voix
+canadienne (ni belge/suisse) : seules les voix `fr-FR-*` sont admises. La voix
+libre Kokoro `ff_siwis` testée le 25/09 est écartée (perçue comme canadienne).
+Prononciation : français avec une légère touche d'anglais sur les marques
+anglaises, pas plus — voir `lexique.yaml` (validé).
+
 Couper : variable de dépôt `DAILY_AUDIO_BRIEF=false`. Tester sans publier :
 Actions → Veille IA → Run workflow → `audio_preview` → artefact `brief-audio`.
 
