@@ -1,0 +1,13 @@
+Salut, c'est la veille IA du vingt-quatre septembre. On a une grosse journée chez Anthropic, alors on commence par là.
+
+Claude a fait une découverte en biologie. En fouillant l'ADN de virus qui attaquent les bactéries, il a repéré un système d'enzymes que personne ne connaissait. Et ça pourrait devenir un nouvel outil pour modifier les gènes, un peu comme CRISPR. Le plus intéressant ? L'équipe l'a vérifié en labo. Ce n'est pas juste une hypothèse.
+
+Toujours chez Anthropic, on a aussi le Claude Marketplace. En gros, c'est une vitrine où on trouve des outils, des agents et des partenaires, avec des connecteurs comme Slack ou Notion.
+
+Côté OpenAI, maintenant. La voix de ChatGPT sait enfin utiliser des outils. Concrètement, tu lui parles, et elle va lire tes mails, regarder ton agenda ou fouiller Slack.
+
+Chez Google, deux nouvelles voix de synthèse avec Gemini. La première est pensée pour les livres audio et les podcasts. La seconde, plus légère, pour les assistants vocaux en temps réel.
+
+Et on termine avec l'argent. La start-up Numeral lève cent millions de dollars. Son métier ? Automatiser la TVA et les taxes dans plus de quatre-vingt-dix pays.
+
+Voilà pour aujourd'hui. Bonne journée, et à demain.

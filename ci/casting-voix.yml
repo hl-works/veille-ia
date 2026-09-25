@@ -1,0 +1,48 @@
+name: Casting voix
+
+# ─────────────────────────────────────────────────────────────
+#  Fait lire le même texte (audio/texte-casting.txt) par plusieurs voix
+#  ElevenLabs de France, et pousse les MP3 sur la branche `ecoute`.
+#  RIEN n'est publié (ni Telegram, ni site).
+#
+#  Déclenchement : un push sur `.state/casting` (JSON de paramètres, écrit
+#  par Claude) ou « Run workflow » à la main.
+#    {"genre": "femme", "nombre": 4, "voix_ids": [], "modele": "eleven_v3"}
+# ─────────────────────────────────────────────────────────────
+on:
+  push:
+    branches: [main]
+    paths: [".state/casting"]
+  workflow_dispatch:
+
+concurrency:
+  group: casting-voix
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  casting:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: "3.12"
+      - name: Installer
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          pip install -r requirements.txt
+      - name: Générer les voix
+        continue-on-error: true
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+        run: python -m veille.casting --out audio-output
+      - name: Publier sur la branche ecoute
+        if: ${{ always() }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: bash scripts/push-ecoute.sh "casting/$(TZ=Europe/Paris date +%Y-%m-%d-%H%M)"
