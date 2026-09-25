@@ -123,6 +123,13 @@ def audio_config(config_path: str = 'config.yaml') -> dict:
         cfg.update({k: str(v) for k, v in (raw.get('audio') or {}).items() if v is not None})
     except (OSError, ImportError, ValueError, AttributeError):
         pass
+    # audio.yaml (à côté de config.yaml) : réglages validés du podcast, prioritaires.
+    try:
+        import yaml
+        extra = yaml.safe_load((Path(config_path).parent / 'audio.yaml').read_text(encoding='utf-8')) or {}
+        cfg.update({k: str(v) for k, v in extra.items() if v is not None})
+    except (OSError, ImportError, ValueError, AttributeError):
+        pass
     for key, env in (('provider', 'AUDIO_TTS_PROVIDER'), ('format', 'AUDIO_FORMAT'),
                      ('destination', 'AUDIO_DESTINATION')):
         if os.environ.get(env):

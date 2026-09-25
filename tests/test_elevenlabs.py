@@ -67,7 +67,7 @@ class ElevenLabsTests(unittest.TestCase):
 
     def test_casting_first_voice_also_without_lexicon(self):
         calls = []
-        def fake_render(text, voice_id, dest, model):
+        def fake_render(text, voice_id, dest, model, tempo=1.0):
             calls.append((voice_id, dest.name, text))
             dest.write_bytes(b'mp3')
         voices = [{'voice_id': 'v1', 'name': 'Léa', 'source': 'bibliothèque', 'accent': 'fr', 'preview_url': ''},
@@ -92,6 +92,26 @@ class ElevenLabsTests(unittest.TestCase):
             res = casting.run({'voix_ids': ['zz']}, 'Bonjour.', Path(d), {})
             self.assertIn('404', res[0]['erreur'])
             self.assertIn('❌', (Path(d) / 'README.md').read_text())
+
+    def test_casting_speeds_without_lexicon(self):
+        calls = []
+        def fake_render(text, voice_id, dest, model, tempo=1.0):
+            calls.append((dest.name, text, tempo))
+            dest.write_bytes(b'mp3')
+        with tempfile.TemporaryDirectory() as d, \
+             patch.object(casting, 'render', side_effect=fake_render):
+            casting.run({'voix_ids': ['v1'], 'lexique': False, 'vitesses': [1.1, 1.2]},
+                        'Chez OpenAI.', Path(d), {'OpenAI': 'X'})
+        self.assertEqual(calls, [('01-v1-vitesse-1_1.mp3', 'Chez OpenAI.', 1.1),
+                                 ('01-v1-vitesse-1_2.mp3', 'Chez OpenAI.', 1.2)])
+
+    def test_concat_tempo_filter_and_default_voice(self):
+        with tempfile.TemporaryDirectory() as d, patch.object(el.subprocess, 'run') as run:
+            el.concat_mp3([Path(d) / 'a.mp3'], Path(d) / 'o.mp3', 1.15)
+            self.assertIn('atempo=1.15', run.call_args.args[0])
+            el.concat_mp3([Path(d) / 'a.mp3'], Path(d) / 'o.mp3', 1.0)
+            self.assertNotIn('-filter:a', run.call_args.args[0])
+        self.assertEqual(el.ElevenLabsTTS({})._voice('femme'), el.DEFAULT_VOICE_FEMME)
 
 
 if __name__ == '__main__':
