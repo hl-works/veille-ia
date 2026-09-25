@@ -139,11 +139,24 @@ def _desc(v: dict) -> str:
     return ' '.join(b for b in bits if b)
 
 
+ACCENTS_ANGLO = re.compile(r'americ|british|english|austral|irish|scott|us\b|uk\b|en-US|en-GB', re.I)
+
+
 def is_france_french(v: dict) -> bool:
-    d = _desc(v)
-    if ACCENTS_EXCLUS.search(d):
+    """Voix dont la langue PRINCIPALE est le français de France. Les voix
+    anglophones « multilingues » (qui parlent aussi français, avec accent)
+    sont exclues, tout comme les accents canadien, belge, suisse, africain."""
+    labels = v.get('labels') or {}
+    language = str(labels.get('language') or v.get('language') or '').lower()
+    accent = str(labels.get('accent') or v.get('accent') or '')
+    locale = str(v.get('locale') or '')
+    if not (language.startswith('fr') or 'french' in language or 'fran' in language):
         return False
-    return bool(re.search(r'\bfr\b|fr-FR|french|fran[cç]ais|parisian|parisien|france', d, re.I))
+    if ACCENTS_EXCLUS.search(f'{accent} {locale}') or ACCENTS_ANGLO.search(accent):
+        return False
+    if locale and not locale.lower().startswith('fr-fr') and locale.lower() != 'fr':
+        return False
+    return True
 
 
 def french_voices(gender: str, limit: int) -> list[dict]:

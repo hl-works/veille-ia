@@ -22,8 +22,11 @@ class ElevenLabsTests(unittest.TestCase):
         qc = {'voice_id': 'c', 'verified_languages': [{'language': 'fr', 'accent': 'québécois', 'locale': 'fr-CA'}]}
         be = {'voice_id': 'd', 'accent': 'belgian', 'language': 'fr'}
         en = {'voice_id': 'e', 'labels': {'accent': 'american', 'language': 'en'}}
+        multi = {'voice_id': 'f', 'labels': {'accent': 'american', 'language': 'en'},
+                 'verified_languages': [{'language': 'fr', 'accent': 'standard', 'locale': 'fr-FR'}]}
+        fr_ca = {'voice_id': 'g', 'language': 'fr', 'accent': 'standard', 'locale': 'fr-CA'}
         self.assertTrue(el.is_france_french(ok))
-        for v in (ca, qc, be, en):
+        for v in (ca, qc, be, en, multi, fr_ca):
             self.assertFalse(el.is_france_french(v), v)
 
     def test_french_voices_filters_gender_and_accent(self):
