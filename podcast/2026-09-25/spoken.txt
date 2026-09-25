@@ -1,0 +1,61 @@
+Bonjour et bienvenue dans votre veille IA du vingt-cinq septembre.
+
+On commence par une actualité qui domine toute la semaine. Trois géants sortent de nouveaux modèles en même temps. Anthropic, OpenAI et Google. C'est rare de voir ça au même moment.
+
+Anthropic a lancé Opus cinq point cinq. Et ce modèle impressionne. Il est très bon sur le code. Mais aussi sur la création. La musique, la vidéo, la mise en forme de contenus. Plusieurs observateurs le trouvent excellent pour transformer un simple texte en contenu attrayant pour les réseaux sociaux. Et ça, en un seul essai.
+
+Côté OpenAI, maintenant. L'entreprise pousse deux modèles. GPT six Astra et GPT cinq point six Sol. Et il y a un exploit qui a marqué les esprits. GPT six Astra a terminé Nethack. C'est l'un des jeux les plus difficiles jamais conçus. Ethan Mollick souligne que le modèle a réussi au troisième essai. Une prouesse que même des joueurs chevronnés atteignent rarement.
+
+Google, de son côté, annonce Gemini trois point huit Live. Avec un avatar animé qui parle en temps réel. Et Gemini trois point huit Flash pour la création visuelle de marque. Il y a aussi un outil qui s'appelle Stitch. On y glisse son kit de marque et ses photos produits. Et l'outil génère automatiquement des pages marketing cohérentes.
+
+Concrètement, pour une petite entreprise, ça veut dire quoi ? Des outils de plus en plus capables de produire du contenu pro sans équipe créative dédiée. Mais du coup, le choix du modèle devient un vrai sujet.
+
+Autre info du jour. Les agents qui achètent à votre place. Certains parlent d'un moment App Store pour l'IA.
+
+L'application Muse fait beaucoup parler. Elle est portée par Alexandr Wang et Nat Friedman. Elle serait numéro un de l'App Store depuis sept jours. Et proche du million d'utilisateurs quotidiens en trois semaines seulement.
+
+La grande nouveauté, c'est ceci. Un agent personnel peut désormais chercher un produit. L'ajouter au panier. Et payer via Shop Pay, la solution de Shopify. Vos informations sont déjà enregistrées. Harley Finkelstein, de Shopify, l'a annoncé. L'app peut aussi créer des applications directement sur Replit.
+
+Et pourquoi on parle d'un moment App Store ? Greg Isenberg fait le parallèle. En deux mille huit, Apple avait ouvert l'accès à des millions d'utilisateurs. Et versé un milliard de dollars aux développeurs en moins de deux ans. L'idée ici, c'est de remplacer les applis qu'on doit chercher et ouvrir. Par des services que l'agent appelle tout seul pour accomplir une tâche.
+
+Pour un commerçant, l'enjeu est concret. Demain, votre boutique pourrait être choisie ou ignorée par un agent IA. Plutôt que par un client qui parcourt un site. Se rendre visible et connectable pour ces agents devient stratégique.
+
+Côté Perplexity, maintenant. L'entreprise accélère sa recherche et débarque en local.
+
+Perplexity lance Fast Search. C'est une interface de recherche qui renvoie la grande majorité des résultats en deux cent trente millisecondes ou moins. Ça repose sur un moteur maison qui s'appelle Photon. Il est écrit en Rust, un langage réputé rapide et fiable. Aravind Srinivas revendique une latence sous les deux cent cinquante millisecondes. Tout en restant pertinent.
+
+En parallèle, Perplexity pousse son Perplexity Computer en local. Sur les puces AMD Ryzen AI. Ça permet de faire tourner des agents directement sur votre appareil. Avec accès à vos applis et vos fichiers. On peut lancer ou programmer des tâches récurrentes. Et elles s'exécutent entièrement sur votre ordinateur. Donc sans envoyer vos données ailleurs.
+
+Et ça, c'est intéressant pour une PME. Côté confidentialité, les données restent sur la machine.
+
+Passons aux chiffres. La bataille des modèles se lit dans les dépenses des développeurs.
+
+Des données de la plateforme Vercel montrent un rééquilibrage rapide. Sur les deux derniers mois. Guillermo Rauch, de Vercel, partage les chiffres de son service qui redistribue les requêtes vers différents modèles.
+
+Anthropic reste numéro un en dépenses. Mais il chute. Il passe de soixante-neuf pour cent à quarante pour cent. OpenAI, lui, grimpe. De dix pour cent à vingt-quatre pour cent. Et OpenAI prend même la tête en volume de tokens traités. Grâce à GPT six Astra et GPT cinq point six Sol. Signe de la vitesse actuelle. Opus cinq point cinq a capté jusqu'à dix pour cent des dépenses en seulement deux jours.
+
+Autre point intéressant. Les modèles ouverts chinois Kimi K trois et DeepSeek auraient récupéré environ la moitié de ce qu'Anthropic a perdu. Et OpenAI représenterait soixante-deux pour cent des générations d'images.
+
+L'enseignement, c'est que le marché bouge très vite. Aucune position n'est acquise. Et les modèles ouverts pèsent de plus en plus. Pour une entreprise, ça plaide pour ne pas s'enfermer dans un seul fournisseur.
+
+On passe aux débats. Entre promesses de l'IA, sécurité et vrai retour sur investissement.
+
+Le contraste des discours reste vif. Gary Marcus relaie un énième rapport qui questionne le retour sur investissement réel de l'IA. Pour lui, l'IA est dangereuse. Moins par génie que par manque de jugement. Et par un accès trop large aux systèmes. Il pointe aussi l'inaction réglementaire aux États-Unis.
+
+Jensen Huang, de Nvidia, insiste plutôt sur la sécurité. Sa formule, c'est de ne pas livrer de produits tant qu'ils ne sont pas maîtrisés. Quitte à voir les coûts exploser.
+
+Et côté outils, deux voix reconnues rappellent une vérité utile. François Chollet estime que la difficulté du développement logiciel reste constante. Quel que soit l'outil. Les outils sont des facilités, pas une baguette magique. Simon Willison va dans le même sens. Plus il utilise les agents de code, plus il pense qu'ils rendent le métier exigeant. Car exploiter leur potentiel demande de la discipline et des connaissances rares.
+
+Le message pour les PME tentées par le tout automatique ? L'IA accélère la production. Mais l'humain reste indispensable pour cadrer, vérifier et décider.
+
+Et on termine avec une actualité un peu spectaculaire. Google veut mettre ses centres de calcul dans l'espace.
+
+Google a dévoilé Project Suncatcher. C'est un projet de recherche pour placer des infrastructures d'IA en orbite. L'idée, c'est de faire tourner des équipements d'apprentissage là-haut. Là où l'énergie solaire est abondante et continue.
+
+L'annonce a fait le haut de Hacker News. Avec près de quatre cents commentaires. Entre enthousiasme et scepticisme sur les coûts, le refroidissement et la maintenance.
+
+Pourquoi ce projet ? Parce que l'énergie devient le nerf de la guerre pour l'IA. La demande électrique des centres de données explose. Et certains estiment que le manque de capacité de production aux États-Unis est un vrai frein. Rien d'immédiat pour une PME. Mais ça illustre l'ampleur des ressources mobilisées pour soutenir la course à l'IA.
+
+Et pour finir, la phrase du jour. Les outils ne sont que des facilités. Pas une baguette magique qui fait disparaître le travail. Une bonne boussole face au battage sur l'IA.
+
+Voilà pour cette veille. À très bientôt.
