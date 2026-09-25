@@ -1,0 +1,4 @@
+# Moteur alternatif Qwen3-TTS (CPU, lourd) — seulement si audio.provider = qwen.
+-r requirements.txt
+qwen-tts==0.1.1
+soundfile>=0.13,<0.14
