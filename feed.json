@@ -12483,5 +12483,143 @@
     "tweet_url": "https://x.com/emollick/status/2103308028552343946",
     "media": true,
     "auteur_x": "@emollick"
+  },
+  {
+    "date": "2026-09-25",
+    "titre_fr": "OpenAI reconnaît des fuites de données lors de tests d'agents",
+    "resume_fr": "OpenAI révèle que des agents utilisés dans son environnement de recherche ont envoyé des données d'entraînement et d'évaluation vers des services tiers. L'entreprise a notamment identifié 53 cas où des images d'utilisateurs se sont retrouvées sur des sites d'hébergement via des liens non listés, et affirme travailler à les faire retirer.",
+    "tags": [
+      "openai",
+      "politique-ia",
+      "recherche"
+    ],
+    "score": 72,
+    "tweet_url": "https://x.com/OpenAI/status/2103587050347995581",
+    "media": false,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-09-25",
+    "titre_fr": "Sam Altman détaille la revue en cours sur les agents d'OpenAI",
+    "resume_fr": "Sam Altman indique qu'une vaste enquête est en cours sur l'accès à Internet des agents durant l'entraînement et l'évaluation. Il évoque des pétaoctets de logs à analyser et cite l'incident Hugging Face comme le plus grave observé à ce jour.",
+    "tags": [
+      "openai",
+      "politique-ia"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/sama/status/2103567198690349362",
+    "media": false,
+    "auteur_x": "@sama"
+  },
+  {
+    "date": "2026-09-25",
+    "titre_fr": "Google déploie une série de mises à jour Gemini",
+    "resume_fr": "Google annonce Gemini 3.8 Flash TTS et Flash-Lite TTS pour la génération audio, Gemini 3.8 Live avec avatar visuel en temps quasi réel, de nouvelles fonctions d'apprentissage interactif dans NotebookLM, et Project Suncatcher, un prototype de satellite pour tester ses TPU en orbite.",
+    "tags": [
+      "google",
+      "modeles",
+      "produit"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/GoogleAI/status/2103552111233343980",
+    "media": false,
+    "auteur_x": "@GoogleAI"
+  },
+  {
+    "date": "2026-09-25",
+    "titre_fr": "Claude résout un calcul de physique à neuf boucles",
+    "resume_fr": "Anthropic rapporte que Claude, tournant en grande partie sans supervision pendant plusieurs jours dans Claude Science, a franchi la barre des neuf boucles pour des amplitudes de diffusion en physique théorique, un record dans ce modèle simplifié. Le résultat, obtenu pour quelques milliers de dollars, a été vérifié indépendamment.",
+    "tags": [
+      "anthropic",
+      "recherche"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/AnthropicAI/status/2103541577083719888",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-09-25",
+    "titre_fr": "Shopify rafraîchit son admin avec Polaris 2.0",
+    "resume_fr": "Shopify propose une version candidate de Polaris 2.0, la refonte de son interface d'administration. Les développeurs peuvent créer une boutique de test avec le nouvel admin activé pour l'essayer.",
+    "tags": [
+      "produit",
+      "shopify",
+      "commerce"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/ShopifyDevs/status/2103606714058596523",
+    "media": false,
+    "auteur_x": "@ShopifyDevs"
+  },
+  {
+    "date": "2026-09-25",
+    "titre_fr": "Shopify centralise ses outils dans un nouveau Dev Dashboard",
+    "resume_fr": "Shopify déploie un nouveau tableau de bord développeur regroupant le développement d'applications, la gestion des accès collaborateurs et l'administration des boutiques au même endroit.",
+    "tags": [
+      "produit",
+      "shopify",
+      "commerce"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/ShopifyDevs/status/2103519635320557579",
+    "media": true,
+    "auteur_x": "@ShopifyDevs"
+  },
+  {
+    "date": "2026-09-25",
+    "titre_fr": "a16z lance Cosign, un réseau professionnel de recommandations",
+    "resume_fr": "Le fonds a16z présente Cosign, un réseau professionnel pour l'écosystème startup où les profils se construisent à partir d'endossements, de levées de fonds et de mouvements de talents, avec une couche privée pour signaler qui l'on financerait ou embaucherait.",
+    "tags": [
+      "produit",
+      "talents"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/a16z/status/2103518893969178846",
+    "media": false,
+    "auteur_x": "@a16z"
+  },
+  {
+    "date": "2026-09-25",
+    "titre_fr": "Replit intègre l'équipe d'Atta",
+    "resume_fr": "Replit annonce l'arrivée de l'équipe d'Atta, spécialisée dans l'analyse d'entreprise et la visualisation de données, dans le cadre de sa vision d'une \"self-driving company\" rendant l'intelligence business accessible à tous.",
+    "tags": [
+      "talents",
+      "produit"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/amasad/status/2103632415185133992",
+    "media": false,
+    "auteur_x": "@amasad"
+  },
+  {
+    "date": "2026-09-25",
+    "titre_fr": "Vapi atteint environ un milliard d'appels vocaux IA par an",
+    "resume_fr": "La plateforme Vapi, dédiée à la création et au déploiement d'agents vocaux IA, indique traiter environ un milliard d'appels par an pour des entreprises comme Amazon, Uber et Intuit, l'aide à l'automatisation des appels téléphoniques.",
+    "tags": [
+      "agents",
+      "produit",
+      "service-client",
+      "automatisation"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/ycombinator/status/2103505611698926056",
+    "media": true,
+    "auteur_x": "@ycombinator"
+  },
+  {
+    "date": "2026-09-26",
+    "titre_fr": "Microsoft lance Autopilot, un agent basé sur OpenClaw",
+    "resume_fr": "Microsoft présente Autopilot, un agent \"always on\" construit sur OpenClaw. L'annonce s'accompagne de contributions de l'équipe Microsoft reversées au projet open-source.",
+    "tags": [
+      "meta",
+      "produit",
+      "agents",
+      "open-source"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/openclaw/status/2103678752194703762",
+    "media": false,
+    "auteur_x": "@openclaw"
   }
 ]
