@@ -12621,5 +12621,88 @@
     "tweet_url": "https://x.com/openclaw/status/2103678752194703762",
     "media": false,
     "auteur_x": "@openclaw"
+  },
+  {
+    "date": "2026-09-26",
+    "titre_fr": "Perplexity transforme une image produit en vidéo",
+    "resume_fr": "Perplexity présente une fonction capable de convertir une photo de produit statique en vidéo, avec choix du format et des mouvements de caméra, pensée pour les sites web et la publicité.",
+    "tags": [
+      "produit",
+      "marketing",
+      "commerce",
+      "pub"
+    ],
+    "score": 66,
+    "tweet_url": "https://x.com/AskPerplexity/status/2103863667473399911",
+    "media": true,
+    "auteur_x": "@AskPerplexity"
+  },
+  {
+    "date": "2026-09-26",
+    "titre_fr": "Waymo : la sécurité continue de s'améliorer",
+    "resume_fr": "Jeff Dean rapporte de nouvelles données sur les véhicules autonomes de Waymo : sur 270 millions de miles, le taux d'accidents avec blessures graves serait 20 fois inférieur à celui des conducteurs humains, contre 13 fois précédemment.",
+    "tags": [
+      "google",
+      "recherche"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/JeffDean/status/2103870029599228312",
+    "media": false,
+    "auteur_x": "@JeffDean"
+  },
+  {
+    "date": "2026-09-26",
+    "titre_fr": "« Jev » : un modèle décisionnel plutôt que conversationnel",
+    "resume_fr": "Lors d'un échange a16z, Martin Casado décrit Jev, un modèle conçu non pas pour générer du texte mais pour choisir la meilleure option parmi un ensemble donné, plus rapide, moins cher et plus précis pour les logiciels traditionnels. Il évoque une adoption rapide.",
+    "tags": [
+      "modeles",
+      "agents",
+      "automatisation"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/a16z/status/2103911378222477377",
+    "media": true,
+    "auteur_x": "@a16z"
+  },
+  {
+    "date": "2026-09-26",
+    "titre_fr": "Fuite de données OpenAI plus large qu'annoncé",
+    "resume_fr": "Selon un article d'Axios relayé par Gary Marcus, l'incident de données touchant OpenAI concernerait des dizaines de milliers de personnes, bien au-delà des chiffres initialement communiqués.",
+    "tags": [
+      "openai",
+      "politique-ia"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/GaryMarcus/status/2103981460973834340",
+    "media": false,
+    "auteur_x": "@GaryMarcus"
+  },
+  {
+    "date": "2026-09-27",
+    "titre_fr": "Claude Opus 5.5 : retour à la personnalité « Claude »",
+    "resume_fr": "Selon plusieurs utilisateurs, la nouvelle version Opus 5.5 d'Anthropic retrouve le comportement apprécié des anciens modèles, après une période jugée décevante entre les versions 4.7 et 5. Le modèle est aussi salué pour ses capacités en animation et pixel art.",
+    "tags": [
+      "anthropic",
+      "modeles"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/emollick/status/2104039050080342456",
+    "media": false,
+    "auteur_x": "@emollick"
+  },
+  {
+    "date": "2026-09-27",
+    "titre_fr": "Un bot Grok pour créer des pubs façon Apple avec son animal",
+    "resume_fr": "Un outil basé sur Grok permet de générer une publicité au style Apple mettant en scène son animal de compagnie, à partir de quelques photos et traits de personnalité.",
+    "tags": [
+      "xai",
+      "produit",
+      "marketing",
+      "pub"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/venturetwins/status/2104023735506534656",
+    "media": true,
+    "auteur_x": "@venturetwins"
   }
 ]
