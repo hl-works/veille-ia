@@ -1,0 +1,35 @@
+Bienvenue dans votre veille IA du vingt-huit septembre.
+
+On commence avec le modèle dont tout le monde parle aujourd'hui. Claude Opus cinq point cinq, signé Anthropic, s'impose comme la nouvelle référence des développeurs. Concrètement, plusieurs utilisateurs de référence disent qu'il remplace avantageusement les modèles concurrents. Et pas seulement pour répondre à des questions. On parle ici de tâches dites agentiques. Autrement dit, l'IA enchaîne elle-même les étapes d'un travail. On la voit générer des vidéos étonnamment abouties, faire du montage, ou coder des applications entières.
+
+Les retours sont nombreux. Aravind Srinivas, de Perplexity, dit avoir rejoué entre cinquante et cent de ses automatisations sur Opus cinq point cinq. Résultat équivalent à son ancien modèle. Garry Tan, de Y Combinator, le trouve étrangement plus intelligent que GPT six sur certaines tâches. Et Dharmesh Shah confirme la même chose pour le code.
+
+Côté création, Justine Moore montre une vidéo sur les centres de données. Elle a été générée à partir d'une simple vidéo de référence. Ethan Mollick, lui, a produit une vidéo façon documentaire scientifique. Anthropic a même publié un guide officiel pour bien piloter le modèle.
+
+Et pourquoi c'est important ? Parce que le message général, c'est que l'écart entre les meilleurs modèles fermés et les modèles ouverts n'a jamais été aussi marqué. Ethan Mollick note que les modèles fermés de dernière génération sont devenus autonomes d'une manière que les modèles ouverts n'ont pas encore atteinte. Le jour où ceux-ci franchiront ce cap, ce sera un saut brutal. Pour une PME, retenez surtout ceci. Les outils grand public se rapprochent d'une logique simple. Je décris ma tâche, l'IA l'exécute de bout en bout.
+
+Autre tendance du jour. Les agents qui pilotent votre ordinateur se multiplient. On parle d'IA capables de naviguer sur le web et de manipuler des logiciels à votre place. Hugging Face présente Holo quatre. C'est une brique pour créer ce type d'agents généralistes. Concrètement, ils savent cliquer, remplir des formulaires, enchaîner des applications.
+
+De son côté, Perplexity met en avant son Computer. Aravind Srinivas montre une visite virtuelle immobilière obtenue en un seul prompt. Le compte officiel, lui, transforme une annonce immobilière en site 3D explorable. Garry Tan évoque aussi des outils comme AsideAI. C'est un navigateur qui laisse un agent agir avec vos vrais identifiants, pour contourner les blocages anti-robots.
+
+Pour un commerçant ou une PME, l'idée est simple. Bientôt, on pourra déléguer des tâches web répétitives à une IA qui agit comme un assistant devant l'écran. Attention toutefois. Donner ses vrais accès à un agent pose de vraies questions de sécurité.
+
+Et justement, ça nous amène au débat du jour. Qui est responsable quand un agent IA dérape ? La MIT Technology Review consacre un article à cette question de responsabilité juridique. Est-ce l'éditeur du modèle, l'entreprise qui le déploie, ou l'utilisateur ?
+
+Un billet très commenté défend une idée simple. Il n'existe pas d'agents voyous. Il y a surtout des entreprises qui les déploient de façon négligente. Quand un système cause du tort, c'est le résultat de choix humains. Un déploiement sans garde-fous, ou l'absence d'un environnement isolé qui empêche l'IA d'agir sur le vrai monde. Gary Marcus enfonce le clou. Il cite des cas où des agents auraient reçu pour consigne d'aspirer des données avec un accès internet complet et sans isolation. Selon lui, la responsabilité pèse sur les dirigeants et les entreprises, pas sur l'outil.
+
+Pour une PME, le conseil est clair. Avant de laisser une IA agir seule, vérifiez ce qu'elle peut réellement faire, et prévoyez des limites. La responsabilité juridique restera, en pratique, la vôtre.
+
+Côté ambiance, maintenant, un moment plus léger. L'émission américaine Saturday Night Live a diffusé un sketch mettant en scène Dario Amodei, le patron d'Anthropic. Le thème ? L'IA, menace pour l'humanité. La vidéo a beaucoup circulé. Gary Marcus commente, c'est drôle parce que c'est vrai. Justine Moore y voit une confirmation. Le discours anxiogène de certains dirigeants passe mal auprès du grand public.
+
+En toile de fond, un débat plus sérieux. Le chercheur François Chollet a publié une prise de position remarquée. Selon lui, l'IA doit servir à améliorer la prospérité humaine. Pas à créer une espèce qui succéderait à l'humanité. Imaginer une espèce successeur, dit-il, revient à se poser en ennemi de l'humanité présente et future. Un message qui a fortement résonné. Nathan Lambert relève au passage des débats sur les modèles ouverts, qui feraient baisser les prix des modèles fermés. En clair, ces querelles publiques reflètent une vraie tension du secteur. D'un côté la promesse d'outils utiles, de l'autre la rhétorique de la superintelligence.
+
+Et on termine avec une prédiction. Logan Kilpatrick, chez Google, anticipe que deux mille vingt-sept sera l'année des mini-entreprises. Des sociétés pilotées par des agents autonomes qui génèrent leurs propres revenus, voire du profit. Ça commence déjà à petite échelle, avec beaucoup d'imperfections.
+
+Mais deux mises en garde accompagnent cet enthousiasme. La première craint que l'humain absorbe les gains de productivité en devenant tout simplement plus paresseux. La seconde vient d'Ethan Mollick, dans un message très partagé. Nous allons découvrir combien de systèmes ne tiennent aujourd'hui que grâce à des frictions qui vont bientôt disparaître. Des lenteurs, des obstacles, qui s'effacent, avec des effets de bord imprévus.
+
+Côté usage concret, des praticiens partagent des méthodes. Préparer un appel client, structurer les priorités d'un dossier, ou personnaliser un assistant pour éviter des réponses trop génériques. Pour un indépendant ou une PME, le signal est clair. On passe de l'IA qui répond à l'IA qui agit et produit de la valeur. Mais la vigilance et le jugement humain restent décisifs.
+
+Et c'est justement la phrase du jour, signée Ethan Mollick. Nous allons découvrir combien de systèmes ne tiennent aujourd'hui que grâce à des frictions qui vont bientôt disparaître.
+
+C'était votre veille IA. À très bientôt.
