@@ -12704,5 +12704,62 @@
     "tweet_url": "https://x.com/venturetwins/status/2104023735506534656",
     "media": true,
     "auteur_x": "@venturetwins"
+  },
+  {
+    "date": "2026-09-27",
+    "titre_fr": "Perplexity Computer transforme une annonce immobilière en site 3D interactif",
+    "resume_fr": "Perplexity présente une fonction de son agent « Computer » capable de convertir une annonce immobilière en site web 3D explorable par les visiteurs, à partir d'un simple prompt. Une piste concrète pour l'immobilier et les vitrines produits en ligne.",
+    "tags": [
+      "produit",
+      "agents",
+      "commerce",
+      "marketing"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/AskPerplexity/status/2104286492646584365",
+    "media": true,
+    "auteur_x": "@AskPerplexity"
+  },
+  {
+    "date": "2026-09-27",
+    "titre_fr": "L'écart se creuse entre modèles ouverts et fermés",
+    "resume_fr": "Selon Ethan Mollick, les modèles fermés récents (classe Fable/Astra) affichent désormais des capacités agentiques qu'aucun modèle open source n'a encore atteintes, élargissant l'écart avec l'open source. Le jour où un modèle ouvert franchira ce cap marquera un vrai saut.",
+    "tags": [
+      "modeles",
+      "open-source",
+      "recherche"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/emollick/status/2104326478766952624",
+    "media": false,
+    "auteur_x": "@emollick"
+  },
+  {
+    "date": "2026-09-27",
+    "titre_fr": "Débat sur la responsabilité d'OpenAI et de ses dirigeants",
+    "resume_fr": "Gary Marcus relaie l'idée qu'un incident lié à OpenAI ne relèverait pas d'un dérapage autonome de l'IA mais d'un usage irresponsable, engageant selon lui la responsabilité de l'entreprise et de sa direction. Un signal de plus sur les questions de gouvernance et de liability autour des agents.",
+    "tags": [
+      "openai",
+      "politique-ia"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/GaryMarcus/status/2104205869357601159",
+    "media": true,
+    "auteur_x": "@GaryMarcus"
+  },
+  {
+    "date": "2026-09-28",
+    "titre_fr": "Anthropic Opus 5.5 : capacités agentiques et génération vidéo mises en avant",
+    "resume_fr": "Le modèle Opus 5.5 d'Anthropic suscite beaucoup de retours : plusieurs utilisateurs le décrivent comme très performant pour le codage agentique et capable de produire des vidéos élaborées à partir d'une référence, en générant ou en assemblant lui-même des séquences. Certains le jugent au niveau des modèles concurrents pour leurs flux de travail.",
+    "tags": [
+      "anthropic",
+      "modeles",
+      "agents",
+      "automatisation"
+    ],
+    "score": 72,
+    "tweet_url": "https://x.com/venturetwins/status/2104426244414800159",
+    "media": true,
+    "auteur_x": "@venturetwins"
   }
 ]
