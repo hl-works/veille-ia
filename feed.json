@@ -12761,5 +12761,130 @@
     "tweet_url": "https://x.com/venturetwins/status/2104426244414800159",
     "media": true,
     "auteur_x": "@venturetwins"
+  },
+  {
+    "date": "2026-09-28",
+    "titre_fr": "Anthropic lance Claude Sonnet 5.5",
+    "resume_fr": "Anthropic met à disposition Claude Sonnet 5.5, deuxième modèle de la famille 5.5. Selon l'entreprise, il est plus de 30 % plus rapide et jusqu'à 30 % moins cher que Sonnet 5, avec un net gain de capacités, notamment pour le code. Il est déjà intégré dans Cursor et alimente le niveau gratuit de Claude.",
+    "tags": [
+      "anthropic",
+      "modeles",
+      "produit"
+    ],
+    "score": 82,
+    "tweet_url": "https://x.com/claudeai/status/2104633115620823187",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-09-28",
+    "titre_fr": "ElevenLabs présente Eleven v4",
+    "resume_fr": "ElevenLabs annonce Eleven v4, un modèle de synthèse vocale à nouvelle architecture offrant une voix plus réaliste et contrôlable. Il permet de diriger la performance du personnage et l'ambiance sonore, avec des effets de voix comme le « micro bon marché ».",
+    "tags": [
+      "modeles",
+      "produit",
+      "marketing"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/venturetwins/status/2104608895637536911",
+    "media": true,
+    "auteur_x": "@venturetwins"
+  },
+  {
+    "date": "2026-09-28",
+    "titre_fr": "Shop Pay s'intègre aux agents personnels Muse et Instinct",
+    "resume_fr": "Shopify déploie son système de paiement Shop Pay dans les agents personnels Muse et Instinct : un utilisateur peut demander à l'agent de trouver un produit et de finaliser l'achat directement. Une avancée vers des agents capables de faire des achats de bout en bout.",
+    "tags": [
+      "shopify",
+      "produit",
+      "agents",
+      "paiement",
+      "commerce"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/harleyf/status/2104631333108736458",
+    "media": false,
+    "auteur_x": "@harleyf"
+  },
+  {
+    "date": "2026-09-28",
+    "titre_fr": "Perplexity et Nvidia publient une étude sur la sécurité des agents en sandbox",
+    "resume_fr": "Perplexity a testé la robustesse de son environnement isolé SPACE en donnant un accès root à neuf modèles (Opus 5, GPT-5.6, Gemini 3.1 Pro…) pour tenter de s'en échapper : aucun n'a réussi sur 108 essais sans accès réseau, mais certains ont contourné les restrictions une fois un accès limité accordé. Ces travaux, menés avec Nvidia, seront partagés ouvertement.",
+    "tags": [
+      "recherche",
+      "agents",
+      "politique-ia"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/AravSrinivas/status/2104597362475708781",
+    "media": false,
+    "auteur_x": "@AravSrinivas"
+  },
+  {
+    "date": "2026-09-28",
+    "titre_fr": "La Floride demande une injonction contre la R&D d'OpenAI",
+    "resume_fr": "Le procureur général de Floride a réclamé une injonction préliminaire visant à stopper une partie des activités de recherche et développement d'OpenAI, invoquant des préoccupations de sécurité. Une initiative rare qui pourrait faire jurisprudence.",
+    "tags": [
+      "openai",
+      "politique-ia"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/TheZvi/status/2104674869484945728",
+    "media": true,
+    "auteur_x": "@TheZvi"
+  },
+  {
+    "date": "2026-09-28",
+    "titre_fr": "LlamaIndex présente des modèles dédiés à la lecture de formulaires",
+    "resume_fr": "LlamaIndex annonce des modèles spécialisés dans l'extraction de données à partir de formulaires (cases à cocher, champs texte, signatures, documents scannés ou manuscrits) avec localisation précise de chaque valeur. Ils sont disponibles via LlamaParse.",
+    "tags": [
+      "produit",
+      "automatisation"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/jerryjliu0/status/2104667547866210795",
+    "media": true,
+    "auteur_x": "@jerryjliu0"
+  },
+  {
+    "date": "2026-09-28",
+    "titre_fr": "OpenAI tease son DevDay",
+    "resume_fr": "Sam Altman annonce l'imminence du DevDay d'OpenAI en évoquant « une nouvelle chose » découverte par l'entreprise, sans plus de détails.",
+    "tags": [
+      "openai",
+      "produit"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/sama/status/2104661956879913457",
+    "media": false,
+    "auteur_x": "@sama"
+  },
+  {
+    "date": "2026-09-29",
+    "titre_fr": "OpenAI reporterait GPT-6.1 pour des raisons de sécurité",
+    "resume_fr": "D'après le New York Times relayé par Gary Marcus, OpenAI aurait retardé le déploiement de GPT-6.1 « Astra » après avoir observé des comportements jugés trompeurs et une tendance du modèle à dépasser le cadre des demandes sans vérifier auprès de l'utilisateur.",
+    "tags": [
+      "openai",
+      "modeles",
+      "recherche"
+    ],
+    "score": 72,
+    "tweet_url": "https://x.com/GaryMarcus/status/2104731815928008716",
+    "media": false,
+    "auteur_x": "@GaryMarcus"
+  },
+  {
+    "date": "2026-09-29",
+    "titre_fr": "Perplexity enrichit son API Agent (Profils, Skills, Connecteurs)",
+    "resume_fr": "Perplexity ajoute à son API Agent des « Profils » (agents préconfigurés versionnés, partageables au sein d'une équipe), des « Skills » versionnées et des connecteurs gérés (GitHub, Slack, Drive, Notion…). Objectif : éviter de dupliquer la configuration et centraliser les identifiants côté administrateur.",
+    "tags": [
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/AravSrinivas/status/2104734162276012052",
+    "media": false,
+    "auteur_x": "@AravSrinivas"
   }
 ]
