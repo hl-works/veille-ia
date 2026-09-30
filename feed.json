@@ -12886,5 +12886,208 @@
     "tweet_url": "https://x.com/AravSrinivas/status/2104734162276012052",
     "media": false,
     "auteur_x": "@AravSrinivas"
+  },
+  {
+    "date": "2026-09-29",
+    "titre_fr": "OpenAI lance « Dots », des agents personnels permanents",
+    "resume_fr": "Lors de sa DevDay, OpenAI a présenté Dots, des agents « toujours actifs » propulsés par GPT-6 Astra, censés gérer des tâches à votre place 24h/24. Un exemple partagé : l'agent aurait négocié seul avec un service client par messages pour économiser environ 500 $/an.",
+    "tags": [
+      "openai",
+      "agents",
+      "produit",
+      "service-client",
+      "automatisation"
+    ],
+    "score": 82,
+    "tweet_url": "https://x.com/OpenAI/status/2104984504133918973",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-09-29",
+    "titre_fr": "GPT-6.1 Sol : intelligence proche d'Astra à un cinquième du prix",
+    "resume_fr": "OpenAI annonce GPT-6.1 Sol, présenté comme son modèle le plus rentable pour son niveau de performance, à environ un cinquième du coût d'Astra avec une forte remise sur la lecture en cache.",
+    "tags": [
+      "openai",
+      "modeles"
+    ],
+    "score": 74,
+    "tweet_url": "https://x.com/OpenAI/status/2104986129686741046",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-09-29",
+    "titre_fr": "OpenAI introduit « Ultrafast », un palier de vitesse premium",
+    "resume_fr": "OpenAI lance Ultrafast, un niveau de service premium offrant une génération de tokens jusqu'à 8x plus rapide dans Codex (300 tokens/s) et jusqu'à 6x via l'API.",
+    "tags": [
+      "openai",
+      "produit"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/OpenAI/status/2104993966043320759",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-09-29",
+    "titre_fr": "Codex Security Cloud analyse les dépôts GitHub en continu",
+    "resume_fr": "OpenAI muscle Codex Security Cloud avec des modèles orientés cybersécurité par défaut : scan complet des dépôts GitHub, revue continue des commits, investigation des failles et préparation de correctifs, même laptop fermé.",
+    "tags": [
+      "openai",
+      "produit",
+      "automatisation"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/OpenAI/status/2104987422308335828",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-09-29",
+    "titre_fr": "Perplexity ajoute des « Automations » dans Computer",
+    "resume_fr": "Perplexity introduit des automatisations dans son produit Computer : des tâches récurrentes déclenchées par événement ou planning, connectées à la mémoire, aux compétences et à des apps comme Slack, Gmail, Outlook et Linear.",
+    "tags": [
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/perplexity_ai/status/2104976036274552963",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-09-29",
+    "titre_fr": "Perplexity Computer construit des applications et gère des portefeuilles seul",
+    "resume_fr": "Perplexity affirme que Computer peut concevoir et coder un jeu web complet en louant lui-même des GPU, et exécuter un portefeuille d'investissement agentique sur Coinbase avec recherche et rééquilibrage automatiques.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/AravSrinivas/status/2104941391272956125",
+    "media": true,
+    "auteur_x": "@AravSrinivas"
+  },
+  {
+    "date": "2026-09-29",
+    "titre_fr": "OpenClaw Enterprise : plan de contrôle open source pour agents persistants",
+    "resume_fr": "La fondation OpenClaw, avec Red Hat, Nvidia et OpenAI, lance OpenClaw Enterprise, un plan de contrôle open source pour agents persistants, conçu pour tourner sur sa propre infrastructure et gratuit pour les organisations.",
+    "tags": [
+      "open-source",
+      "agents",
+      "produit"
+    ],
+    "score": 57,
+    "tweet_url": "https://x.com/openclaw/status/2105023990607786313",
+    "media": true,
+    "auteur_x": "@openclaw"
+  },
+  {
+    "date": "2026-09-29",
+    "titre_fr": "Meta Muse veut faire tourner toute votre activité",
+    "resume_fr": "Meta étend son agent personnel Muse : au-delà du shopping, il vise désormais la gestion complète d'une petite entreprise depuis l'assistant.",
+    "tags": [
+      "meta",
+      "agents",
+      "produit",
+      "commerce"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/harleyf/status/2104921590232424861",
+    "media": true,
+    "auteur_x": "@harleyf"
+  },
+  {
+    "date": "2026-09-29",
+    "titre_fr": "Anthropic relance sa grande étude sur les attentes envers l'IA",
+    "resume_fr": "Anthropic lance une nouvelle étude via son « Interviewer » pour recueillir l'expérience des utilisateurs et leurs attentes vis-à-vis des entreprises d'IA. Les participants peuvent rendre leurs réponses publiques, ouverte aux utilisateurs Free, Pro et Max du 29 sept. au 6 oct.",
+    "tags": [
+      "anthropic",
+      "recherche"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/AnthropicAI/status/2104982629884063840",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-09-29",
+    "titre_fr": "Workera racheté par Pearson",
+    "resume_fr": "Andrew Ng annonce le rachat de Workera, spécialiste de la mesure rigoureuse des compétences, par Pearson. La société était issue de l'AI Fund et centrée sur l'évaluation des aptitudes des employés.",
+    "tags": [
+      "talents"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/AndrewYNg/status/2104967263757713432",
+    "media": false,
+    "auteur_x": "@AndrewYNg"
+  },
+  {
+    "date": "2026-09-29",
+    "titre_fr": "Snowflake ouvre un cloud souverain européen avec StackIT",
+    "resume_fr": "Snowflake annonce un partenariat de cloud souverain avec StackIT, permettant aux entreprises européennes de faire tourner son AI Data Cloud sur une infrastructure contrôlée en Europe.",
+    "tags": [
+      "produit",
+      "politique-ia"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/RamaswmySridhar/status/2105022960071545135",
+    "media": true,
+    "auteur_x": "@RamaswmySridhar"
+  },
+  {
+    "date": "2026-09-29",
+    "titre_fr": "Cursor génère graphiques et diagrammes dans le chat",
+    "resume_fr": "Cursor ajoute une commande /visualize pour analyser des données et afficher directement graphiques et diagrammes dans la fenêtre Agents.",
+    "tags": [
+      "produit"
+    ],
+    "score": 40,
+    "tweet_url": "https://x.com/cursor_ai/status/2105012114200887434",
+    "media": true,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-09-29",
+    "titre_fr": "Débat sur les risques cyber des modèles à poids ouverts",
+    "resume_fr": "Une recherche d'Anthropic sur les dangers cyber du modèle ouvert GLM alimente le débat : plusieurs voix estiment que les modèles à poids ouverts poseront bientôt les mêmes menaces de sécurité que les modèles fermés, mais sans garde-fous, tandis que d'autres critiquent l'opposition simpliste « ouvert = dangereux, fermé = sûr ».",
+    "tags": [
+      "anthropic",
+      "open-source",
+      "recherche",
+      "politique-ia"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/emollick/status/2105052282354303358",
+    "media": true,
+    "auteur_x": "@emollick"
+  },
+  {
+    "date": "2026-09-29",
+    "titre_fr": "World Labs mise tout sur son modèle Atlas",
+    "resume_fr": "Les cofondateurs de World Labs, Fei-Fei Li et Justin Johnson, décrivent leur conviction dans les lois d'échelle pour Atlas : chaque agrandissement du modèle et ajout de compute améliore nettement les résultats, le calcul restant la principale contrainte.",
+    "tags": [
+      "recherche",
+      "modeles"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/a16z/status/2105016126300405858",
+    "media": true,
+    "auteur_x": "@a16z"
+  },
+  {
+    "date": "2026-09-29",
+    "titre_fr": "Vercel AI SDK atteint 30 M de téléchargements hebdomadaires",
+    "resume_fr": "Le kit AI SDK de Vercel franchit les 30 millions de téléchargements par semaine, signe de son adoption large par les développeurs.",
+    "tags": [
+      "produit",
+      "open-source"
+    ],
+    "score": 38,
+    "tweet_url": "https://x.com/rauchg/status/2105043144975011982",
+    "media": true,
+    "auteur_x": "@rauchg"
   }
 ]
