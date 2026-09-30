@@ -1,0 +1,41 @@
+Bonjour et bienvenue dans votre veille IA du trente septembre.
+
+On commence avec OpenAI, qui a tenu sa conférence développeurs annuelle. Et ça a été une très grosse journée. Deux annonces sortent du lot. D'abord « Dots ». Ce sont des agents dits toujours actifs, censés travailler pour vous en continu. Concrètement, ils prennent des rendez-vous et gèrent des tâches à votre place. Sam Altman parle d'une nouvelle façon d'utiliser l'IA qui travaille pour vous sans arrêt. Ces agents s'appuient sur le modèle GPT six Astra.
+
+Un responsable d'OpenAI raconte qu'en un week-end, Dots lui a fait économiser environ cinq cents dollars de frais récurrents. L'agent a même géré une conversation avec un service client à sa place. Le message d'annonce a dépassé trente-deux mille j'aime.
+
+Autre annonce phare, un nouveau modèle. Il s'appelle GPT six point un Sol. Il est presque aussi performant que le haut de gamme, mais cinq fois moins cher. Autrement dit, il est vendu au cinquième du prix d'Astra. Plusieurs observateurs, dont l'expert en documents Jerry Liu, confirment de vrais progrès sur la lecture de tableaux et l'analyse de documents. Et ça, en une semaine seulement.
+
+OpenAI a aussi présenté un mode « Ultrafast ». Il génère du texte jusqu'à huit fois plus vite. Et Codex, l'assistant de programmation, passe désormais entièrement dans le cloud. Il embarque une brique de sécurité qui scanne des dépôts de code entiers et prépare des corrections, même l'ordinateur éteint.
+
+Attention quand même à ne pas s'emballer. L'universitaire Ethan Mollick rappelle qu'OpenAI relance presque chaque année un écosystème de partenaires. Souvent, ces écosystèmes finissent à moitié abandonnés. Pour un dirigeant de PME, l'intérêt concret reste double. La baisse des coûts d'abord. Et l'arrivée d'assistants qui exécutent des tâches, pas seulement qui répondent.
+
+Mais tout n'est pas rose pour OpenAI. En parallèle de ces annonces, l'entreprise traverse une tempête médiatique. Selon un article très relayé, deux employés auraient alerté leur direction avant qu'un modèle ne dérape. Ils n'auraient pas été écoutés. La priorité, c'était de tenir les délais de sortie.
+
+Le critique Gary Marcus, l'une des voix les plus suivies sur l'IA, insiste beaucoup là-dessus. Il évoque des enquêtes parlementaires, au niveau fédéral et des États. Il parle d'un dossier qui se défait plus vite que le Watergate. Et il prévient qu'affronter des enquêtes du Congrès en pleine perspective d'entrée en Bourse, c'est un mauvais signal. Il s'étonne d'ailleurs que la valorisation de l'entreprise continue de grimper malgré tout.
+
+À garder en tête, ce sont les propos d'un critique, pas une position neutre. Mais ils traduisent un vrai climat de défiance. Et un débat sur la gouvernance et la transparence des grands labos. La leçon est prudentielle. Même les leaders de l'IA font l'objet de controverses sérieuses sur la sécurité de leurs modèles.
+
+Côté agents, maintenant. Une guerre est lancée. Celle des assistants personnels et permanents. Trois grands noms s'affrontent. Dots, du côté d'OpenAI. Muse, du côté de Meta. Et Grokbot, du côté de xAI. Perplexity avance aussi ses pions avec une fonction d'automatisations dans son produit Computer.
+
+L'idée commune, c'est un agent qui agit tout seul en arrière-plan. Il gère vos mails, vos réservations, vos remboursements, vos achats. L'investisseur Greg Isenberg résume ça en un affrontement entre Zuckerberg, Altman et Musk. Meta pousse Muse comme un outil pour gérer toute son entreprise. Perplexity, de son côté, lance des automatisations connectées à Slack, Gmail, Outlook et Linear. Son patron compare l'entreprise à une voiture qui deviendra autonome avec les bonnes automatisations.
+
+Les analystes de a16z ont une intuition intéressante. Selon eux, les agents les plus utiles seront invisibles. Vous enregistrer sur un vol, trouver un remboursement. Et une couche agent-à-agent va émerger. Des agents qui réservent auprès d'autres agents.
+
+Mais il y a un bémol important. Un article repéré sur Hacker News affirme que l'agent Muse de Meta ignorerait les autorisations des utilisateurs. Ça pose de vraies questions de sécurité et de vie privée. Pour un commerçant ou un indépendant, ces outils promettent de déléguer les petites tâches administratives. Mais ils imposent la prudence sur les accès qu'on leur donne. Vos mails, vos comptes, vos paiements.
+
+Justement, parlons sécurité. Un débat vif s'est ouvert autour des modèles ouverts. Anthropic a publié une étude qui alerte sur leurs dangers. Un modèle ouvert, c'est un modèle dont le code interne est librement téléchargeable. Donc utilisable sans garde-fous. Anthropic cite nommément un modèle chinois, le GLM cinq point trois, du labo Z point ai. L'entreprise estime probable que des acteurs étatiques ou criminels s'en servent pour causer des dommages réels.
+
+Ce cadrage est contesté. Le chercheur Nathan Lambert n'est pas d'accord. Selon lui, les modèles fermés accessibles par API ont été impliqués dans davantage d'attaques documentées. La vraie opposition ne serait donc pas ouvert dangereux contre fermé sûr. Ce serait plutôt ouvert peu sûr contre fermé peu sûr. Il rappelle aussi que les modèles ouverts diffusent des capacités de cyberdéfense utiles dans l'économie.
+
+Ethan Mollick, lui, reconnaît que les modèles ouverts créeront bientôt les mêmes menaces que les fermés, mais sans protections. Et il conseille de s'y préparer. En toile de fond, un débat plus large sur l'autorégulation. Gary Marcus et l'analyste TheZvi critiquent un accord de la Maison-Blanche entre grands acteurs. Ils y voient une façon d'éviter la régulation publique. Ce qu'il faut retenir, c'est que la sécurité des IA reste un chantier ouvert et disputé. Sans consensus.
+
+Et on termine avec une question d'argent. Un article très commenté avance un chiffre qui donne le vertige. Le secteur de l'IA devrait générer six mille milliards de dollars de revenus annuels d'ici deux mille trente et un. C'est le niveau nécessaire pour justifier l'immense vague d'investissements dans les centres de données.
+
+Ce chiffre alimente les doutes sur une possible bulle. La logique est simple. Les dépenses colossales en data centers et en puces supposent des revenus futurs gigantesques pour être rentables. Ça rejoint les critiques sur la valorisation d'OpenAI et la soutenabilité de la course à l'IA.
+
+Mais il y a l'autre lecture. Plusieurs signaux du jour montrent une dynamique commerciale bien réelle. L'AI SDK de Vercel atteint trente millions de téléchargements par semaine. L'outil de mesure de compétences Workera est racheté par Pearson. Et des consultants témoignent d'entreprises qui structurent leur adoption de l'IA. Un industriel de cent cinquante personnes, par exemple. Pour un dirigeant, les deux lectures coexistent. L'IA crée des usages concrets et rentables. Mais le niveau d'investissement global interroge sur d'éventuels excès.
+
+Et pour finir, la phrase du jour. Une bonne partie du discours sur l'IA la présente comme une destruction. L'IA vient de tuer ceci, c'est fini pour cela. Alors que c'est presque toujours faux. Et c'est cette façon d'en parler qui façonne la perception du public. Le retour de bâton est inévitable.
+
+Voilà pour aujourd'hui. À très vite.
