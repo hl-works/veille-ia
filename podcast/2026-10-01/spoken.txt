@@ -1,0 +1,49 @@
+Bonjour et bienvenue dans votre veille IA du premier octobre.
+
+On commence avec Google, qui lance Gemini 4 Argon. C'est son nouveau modèle de pointe, présenté comme un modèle frontière. Il est taillé pour les tâches longues et complexes. On parle de programmation, de travail spécialisé dans le droit ou la finance, et aussi de cybersécurité.
+
+Pour l'instant, il est déployé auprès d'organismes publics et d'experts en cyberdéfense. C'est le programme baptisé Fairwind. Une ouverture plus large viendra ensuite.
+
+Deux chiffres marquants. Le modèle peut traiter jusqu'à un million de tokens, autrement dit des unités de texte. En gros, l'équivalent d'un dossier entier. Côté tarif, on est à deux dollars en entrée et dix dollars en sortie par million de tokens. Attention, c'est un prix de lancement. Selon Logan Kilpatrick de Google, il devrait ensuite doubler.
+
+Et pourquoi c'est intéressant ? Parce que plusieurs observateurs saluent le retour d'une vraie course à trois. Google, OpenAI et Anthropic. Et ça, c'est bénéfique pour les utilisateurs.
+
+Les démonstrations avancées sont impressionnantes. Des agents Argon auraient réécrit du vieux code vers un langage plus sûr. Ils auraient libéré plus de trois cents téraoctets de mémoire inutilisée dans les serveurs de Google. Ils auraient rendu un décodeur vidéo près de trois fois plus rapide. Et ils auraient trouvé une faille de sécurité sérieuse dans un logiciel hospitalier, passée inaperçue des modèles précédents.
+
+Autre point notable. Il existe une version bridée pour le grand public, et une version sans certaines limites réservée aux équipes de sécurité agréées. Ça soulève un débat sur l'accès inégal aux meilleurs outils de défense. Concrètement, pour vous, c'est encore une phase restreinte. Mais la baisse des prix et l'allongement des réponses rendent ces assistants de plus en plus capables.
+
+Côté OpenAI maintenant. L'entreprise veut outiller les petites structures. Elle publie un rapport sur l'usage des agents IA par les petites entreprises. Ces agents exécutent des tâches de bout en bout. Trouver des clients, concevoir des produits, gérer les finances.
+
+OpenAI lance aussi un partenariat avec l'ASBDC, un réseau américain d'accompagnement des petites entreprises. L'idée, c'est d'offrir des formations pratiques au plus près des dirigeants. Le signal est clair. Les commerçants et les PME sont désormais une cible prioritaire.
+
+Un conseil pragmatique revenait aussi chez les praticiens cette semaine. N'automatisez jamais un processus dès le premier jour. D'abord, faites-le vous-même à la main plusieurs fois. Ensuite, confiez-le à un collaborateur qui soumet son résultat à validation. Et seulement après, à un agent qui dépose son travail dans une file à approuver. L'erreur classique, c'est de sauter directement à l'automatisation d'un processus jamais vraiment rodé. Autrement dit, la méthode prime sur l'outil.
+
+Autre info du jour, toujours chez OpenAI. L'entreprise dit avoir stoppé une campagne de copie de son modèle. On parle d'une opération de distillation. En gros, des acteurs auraient manipulé les interactions avec le modèle pour en extraire le raisonnement protégé et le reproduire à grande échelle. C'est une violation des conditions d'usage.
+
+Qu'est-ce que la distillation ? C'est utiliser les réponses d'un modèle existant pour en entraîner un autre, plus petit, à moindre coût. OpenAI explique avoir repéré et coupé les interactions détournées.
+
+Mais le sujet divise. Le chercheur Nathan Lambert estime que si un modèle peut être manipulé ainsi, la responsabilité incombe en partie au fournisseur. Il plaide pour une vérification d'identité des clients renforcée sur les accès techniques, un peu comme en banque. Au quotidien, ça ne change rien de direct. Mais ça illustre la tension croissante autour de la protection de la matière grise des grands modèles.
+
+Côté Perplexity, maintenant. L'entreprise rend publics ses nouveaux modèles de recherche contextuelle. Ils aident un logiciel à retrouver la bonne information dans un gros document, en gardant tout le contexte en tête. C'est utile pour une base de connaissances d'entreprise.
+
+Perplexity ouvre aussi l'accès à son agent Computer à tout le monde, sans compte. Il suffit de transférer une tâche ou de mettre en copie l'adresse de l'agent, et il l'exécute en arrière-plan. C'est gratuit pour une durée limitée. L'entreprise a aussi montré que son agent peut générer des schémas en trois dimensions, par exemple pour visualiser le montage d'un meuble. Concrètement, c'est un moyen très simple de tester un assistant IA sur une vraie tâche, sans engagement.
+
+Autre annonce de Google, dans un domaine plus inattendu. L'entreprise ouvre SynthID Bio pour filigraner les protéines générées par IA. En clair, elle étend sa technologie de marquage invisible à la biologie. L'idée, c'est de signer les protéines conçues par IA pour pouvoir les identifier ensuite. Les outils sont publiés en open source, et les travaux paraissent dans la revue Nature.
+
+Demis Hassabis qualifie la biosécurité d'un des défis les plus urgents de l'ère de l'IA. Le filigrane consiste à insérer une signature difficile à détecter, mais vérifiable. Ça permet de tracer l'origine d'un contenu. C'est un garde-fou mis en place en amont, alors que l'IA touche désormais la conception du vivant.
+
+Parlons marché, maintenant. Le débat sur une possible bulle s'intensifie. Le fonds a16z a publié une grande analyse. Son argument, c'est que la hausse actuelle repose sur des bénéfices réels, et non sur des valorisations gonflées comme en l'an deux mille. Le fonds note que six sociétés privées, dont Anthropic, OpenAI et Stripe, pèsent ensemble environ deux mille quatre cents milliards de dollars.
+
+Quelques constats frappants de ce rapport. Les agents IA consomment désormais près de cinq fois plus de tokens que les humains. L'adoption en entreprise est large, mais superficielle. Près de soixante-dix pour cent des grandes entreprises ont un déploiement actif. Mais seulement deux pour cent ont une IA qui ferait un vrai manque si on l'arrêtait.
+
+En face, le critique Gary Marcus appelle à la prudence. Il affirme que le chiffre d'affaires récurrent d'Anthropic plafonne, à l'approche de son entrée en Bourse. Il juge risquée une valorisation de deux mille milliards pour une société dont la croissance ralentirait. Le message utile pour vous ? L'usage qui compte vraiment reste encore minoritaire. Il y a donc de la marge pour en tirer un avantage concret.
+
+Et on termine avec ChatGPT, qui se transforme en plateforme. Plusieurs signaux le montrent. Il recommanderait désormais des plugins, des extensions, en plein milieu des conversations. Et on peut épingler sa boutique Shopify dans la barre latérale pour la garder sous la main.
+
+Certains y voient une rare fenêtre de distribution gratuite, comparable aux débuts des applis Facebook ou iPhone. L'entrepreneur Greg Isenberg soutient qu'il n'y a pas aujourd'hui de meilleur pari que de construire un plugin ChatGPT, tant que ces créneaux restent peu occupés. Sa méthode ? Identifier une tâche que les gens font déjà à la main chaque semaine. Convertir un PDF en Excel, générer une facture, produire un rapport client. Puis la transformer en plugin, et rédiger sa description avec les mots exacts que les gens tapent.
+
+Côté commerce, Harley Finkelstein de Shopify confirme qu'une boutique peut tourner dans ChatGPT, et désormais y être épinglée. À nuancer, quand même. Ces affirmations émanent de promoteurs de l'écosystème, et la fenêtre se refermera à mesure que la concurrence afflue. Mais si votre activité repose sur une tâche répétitive bien identifiée, c'est peut-être le moment d'expérimenter.
+
+Et pour finir, la phrase du jour. Coder sans IA, c'est comme cuisiner sans sel. Une image partagée par shl. Elle résume une évidence nouvelle. L'IA devient un ingrédient de base, pas un supplément.
+
+C'était votre veille IA. À très vite.
