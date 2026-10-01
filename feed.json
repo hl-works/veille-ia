@@ -13089,5 +13089,106 @@
     "tweet_url": "https://x.com/rauchg/status/2105043144975011982",
     "media": true,
     "auteur_x": "@rauchg"
+  },
+  {
+    "date": "2026-09-30",
+    "titre_fr": "Google lance Gemini 4 Argon, son nouveau modèle de pointe",
+    "resume_fr": "Google DeepMind présente Gemini 4 Argon, un modèle frontière conçu pour le raisonnement long et les tâches complexes (ingénierie logicielle, travail juridique et financier, cyberdéfense). Il porte la limite de sortie à 1 million de tokens et débute en accès restreint via le programme Fairwind, à un tarif d'introduction de 2$/10$ par million de tokens.",
+    "tags": [
+      "google",
+      "modeles",
+      "recherche"
+    ],
+    "score": 88,
+    "tweet_url": "https://x.com/GoogleAI/status/2105388478683119904",
+    "media": true,
+    "auteur_x": "@GoogleAI"
+  },
+  {
+    "date": "2026-09-30",
+    "titre_fr": "OpenAI publie un rapport sur les agents IA dans les petites entreprises",
+    "resume_fr": "OpenAI détaille comment de petites équipes utilisent des agents IA pour trouver des clients, bâtir des produits et gérer leurs finances. L'entreprise lance aussi un partenariat avec l'ASBDC pour offrir des formations pratiques aux dirigeants de PME.",
+    "tags": [
+      "openai",
+      "agents",
+      "automatisation",
+      "saas"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/OpenAI/status/2105373267171438779",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-09-30",
+    "titre_fr": "La boutique Shopify épinglable dans la barre latérale de ChatGPT",
+    "resume_fr": "Il était déjà possible de faire tourner une boutique Shopify dans ChatGPT ; on peut désormais l'épingler dans la barre latérale pour un accès permanent, améliorant l'expérience des marchands qui y travaillent.",
+    "tags": [
+      "openai",
+      "produit",
+      "commerce",
+      "shopify"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/harleyf/status/2105370258475536752",
+    "media": false,
+    "auteur_x": "@harleyf"
+  },
+  {
+    "date": "2026-09-30",
+    "titre_fr": "Perplexity publie en open source ses modèles d'embeddings contextuels",
+    "resume_fr": "Perplexity ouvre ses modèles d'embeddings contextuels (pplx-embed-v2-context-9b-preview), qui encodent chaque passage d'un document en tenant compte de l'ensemble du texte. Ils établissent un nouvel état de l'art sur les benchmarks ConTEB et context-bench.",
+    "tags": [
+      "produit",
+      "open-source",
+      "recherche"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/perplexity_ai/status/2105373989262827915",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-09-30",
+    "titre_fr": "Perplexity ouvre son agent e-mail à tous, gratuitement pour un temps",
+    "resume_fr": "Perplexity rend son agent accessible sans compte : il suffit de transférer ou mettre en copie computer@perplexity.com pour qu'il exécute une tâche en arrière-plan en conservant le contexte du mail. Les tâches déléguées par e-mail sont gratuites pour une durée limitée.",
+    "tags": [
+      "agents",
+      "produit",
+      "automatisation"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/AravSrinivas/status/2105369479190601754",
+    "media": false,
+    "auteur_x": "@AravSrinivas"
+  },
+  {
+    "date": "2026-09-30",
+    "titre_fr": "Ideogram présente un nouveau modèle d'édition d'images",
+    "resume_fr": "Le nouveau modèle d'édition d'Ideogram permet des retouches précises et multi-étapes (variations créatives, localisation de visuels publicitaires) sans déformation ni artefacts, selon des tests sur des publicités existantes.",
+    "tags": [
+      "produit",
+      "modeles",
+      "marketing",
+      "pub"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/venturetwins/status/2105329105373900933",
+    "media": true,
+    "auteur_x": "@venturetwins"
+  },
+  {
+    "date": "2026-09-30",
+    "titre_fr": "Google ouvre SynthID Bio pour le filigranage des protéines générées par IA",
+    "resume_fr": "Google DeepMind étend son système de filigrane SynthID à la biologie afin de marquer les protéines conçues par IA, une mesure de biosécurité. Les outils SynthID Bio sont publiés en open source et présentés dans Nature.",
+    "tags": [
+      "google",
+      "recherche",
+      "open-source"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/demishassabis/status/2105348732464070823",
+    "media": false,
+    "auteur_x": "@demishassabis"
   }
 ]
