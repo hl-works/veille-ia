@@ -13190,5 +13190,185 @@
     "tweet_url": "https://x.com/demishassabis/status/2105348732464070823",
     "media": false,
     "auteur_x": "@demishassabis"
+  },
+  {
+    "date": "2026-10-01",
+    "titre_fr": "Perplexity ouvre son modèle de décision pplx-decider-27b",
+    "resume_fr": "Perplexity met en open source un modèle multimodal spécialisé dans la prise de décision et le propose via une nouvelle API « Decisions » à très bas coût (4 cents par million de tokens en entrée, sortie gratuite). Ce type de modèle sert à gérer les petites décisions internes d'un système d'agents (routage, validation, arbitrage).",
+    "tags": [
+      "openai",
+      "modeles",
+      "open-source",
+      "agents"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/AravSrinivas/status/2105774153903268288",
+    "media": false,
+    "auteur_x": "@AravSrinivas"
+  },
+  {
+    "date": "2026-10-01",
+    "titre_fr": "GLM 5.3 disponible dans Cursor",
+    "resume_fr": "L'éditeur de code Cursor intègre les modèles GLM 5.3 et GLM 5.3 Flash. Selon Cursor, la version Max est le meilleur modèle à poids ouverts sur son benchmark interne de programmation.",
+    "tags": [
+      "modeles",
+      "open-source",
+      "produit"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/cursor_ai/status/2105787358557999585",
+    "media": true,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-10-01",
+    "titre_fr": "Microsoft AI lance un modèle de transcription temps réel",
+    "resume_fr": "Mustafa Suleyman annonce un modèle de transcription en temps réel que Microsoft présente comme le plus précis au monde, et affirme qu'il est 55% plus rapide et 60% moins cher qu'ElevenLabs. Il est destiné à construire des agents vocaux.",
+    "tags": [
+      "modeles",
+      "produit",
+      "service-client"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/mustafasuleyman/status/2105699115602677984",
+    "media": false,
+    "auteur_x": "@mustafasuleyman"
+  },
+  {
+    "date": "2026-10-01",
+    "titre_fr": "LlamaIndex dévoile Extract v2.5 pour l'extraction de documents",
+    "resume_fr": "LlamaIndex présente une série d'agents d'extraction de données documentaires, qui dépasseraient Opus 5.5 et GPT-6 sur son benchmark tout en étant 30% à 4x moins chers. Fortes progressions sur les longues listes, les enregistrements multi-pages et les formulaires scannés, avec citations et localisation des valeurs.",
+    "tags": [
+      "agents",
+      "produit",
+      "automatisation"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/jerryjliu0/status/2105692426577056106",
+    "media": true,
+    "auteur_x": "@jerryjliu0"
+  },
+  {
+    "date": "2026-10-01",
+    "titre_fr": "Perplexity et Amex proposent des workflows prêts à l'emploi aux PME",
+    "resume_fr": "Perplexity lance dans son outil Computer une bibliothèque de « skills » curés par American Express pour les détenteurs de cartes Amex Business aux États-Unis. Ces workflows préconçus automatisent des tâches courantes (prévision de trésorerie, génération de campagnes marketing) sans avoir à tout configurer soi-même.",
+    "tags": [
+      "produit",
+      "automatisation",
+      "marketing",
+      "saas"
+    ],
+    "score": 64,
+    "tweet_url": "https://x.com/AravSrinivas/status/2105660740799717599",
+    "media": true,
+    "auteur_x": "@AravSrinivas"
+  },
+  {
+    "date": "2026-10-01",
+    "titre_fr": "Seedance 2.5 génère des vidéos de marque dans Perplexity",
+    "resume_fr": "Perplexity intègre le modèle vidéo Seedance 2.5 dans son outil Computer pour créer des publicités et vidéos de marque. L'exemple montré (identité visuelle, maquettes produit, montage) a été entièrement produit dans l'outil, visant les équipes marketing et les petites entreprises.",
+    "tags": [
+      "produit",
+      "marketing",
+      "pub",
+      "commerce"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/AskPerplexity/status/2105679321784516654",
+    "media": true,
+    "auteur_x": "@AskPerplexity"
+  },
+  {
+    "date": "2026-10-01",
+    "titre_fr": "Perplexity Computer ajoute graphiques et visualisations interactifs",
+    "resume_fr": "L'outil Computer de Perplexity peut désormais créer des graphiques et visualisations interactifs directement dans la conversation, avec des graphiques financiers (chandeliers, volumes, moyennes mobiles) via les Lightweight Charts de TradingView.",
+    "tags": [
+      "produit"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/perplexity_ai/status/2105692220280226296",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-10-01",
+    "titre_fr": "Claude réduit la consommation pour le design et les présentations",
+    "resume_fr": "Anthropic lance une offre de deux semaines : démarrer un design, un deck ou un document dans l'app Claude fait consommer 50% de limite en moins pour la suite de la conversation. L'entreprise met en avant Claude Sonnet 5.5 pour la création de slides avec peu de retouches.",
+    "tags": [
+      "anthropic",
+      "produit"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/claudeai/status/2105721630051692804",
+    "media": false,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-10-01",
+    "titre_fr": "Claude Code introduit les « Mods » personnalisables",
+    "resume_fr": "Anthropic permet de personnaliser l'apparence et le fonctionnement de Claude simplement en lui donnant des instructions. Ces « mods » peuvent être partagés sous forme de plugins pour que d'autres les réutilisent.",
+    "tags": [
+      "anthropic",
+      "produit",
+      "no-code"
+    ],
+    "score": 46,
+    "tweet_url": "https://x.com/bcherny/status/2105756563302723721",
+    "media": false,
+    "auteur_x": "@bcherny"
+  },
+  {
+    "date": "2026-10-01",
+    "titre_fr": "Google DeepMind étend le watermarking à la biologie avec SynthID Bio",
+    "resume_fr": "DeepMind présente SynthID Bio, une famille de méthodes de marquage invisible pour les séquences biologiques générées par IA. L'approche permet d'intégrer une signature imperceptible dans des séquences protéiques sans altérer leur fonction biologique.",
+    "tags": [
+      "google",
+      "recherche"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2105624656170643854",
+    "media": true,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-10-01",
+    "titre_fr": "Shopify lance Canvas pour le design de boutiques en ligne",
+    "resume_fr": "Shopify dévoile Canvas, un outil visant à rendre la conception de vitrines en ligne plus simple et plus accessible. Il reste propulsé par Liquid, le langage de template de Shopify.",
+    "tags": [
+      "produit",
+      "commerce",
+      "shopify",
+      "no-code"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/tobi/status/2105773022498222228",
+    "media": false,
+    "auteur_x": "@tobi"
+  },
+  {
+    "date": "2026-10-01",
+    "titre_fr": "Vercel intègre les modèles de Microsoft AI dès leur sortie",
+    "resume_fr": "Guillermo Rauch annonce que Vercel proposera les modèles entraînés par l'équipe Microsoft AI dès leur lancement (« day zero »).",
+    "tags": [
+      "produit",
+      "modeles"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/rauchg/status/2105702513345511514",
+    "media": false,
+    "auteur_x": "@rauchg"
+  },
+  {
+    "date": "2026-10-02",
+    "titre_fr": "Les modèles d'IA dépassent les comptables juniors sur certaines tâches",
+    "resume_fr": "Une étude indique que, sur des tâches comptables bien définies et de longueur moyenne, les modèles de pointe sont désormais plus rapides et plus précis que des comptables juniors, y compris le meilleur de l'échantillon. Il y a dix-huit mois, ils étaient nettement en dessous des humains.",
+    "tags": [
+      "recherche",
+      "automatisation"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/emollick/status/2105842740533596201",
+    "media": true,
+    "auteur_x": "@emollick"
   }
 ]
