@@ -1,0 +1,39 @@
+Bonjour et bienvenue dans votre veille IA du trois octobre.
+
+On commence avec OpenAI et sa gamme GPT six. L'entreprise vient de publier un guide pour aider à choisir le bon modèle. Chaque version a ses points forts. Certaines misent sur la rapidité, d'autres sur le raisonnement, d'autres sur le coût. Et une nouvelle version vient d'arriver. Elle s'appelle Sol, c'est le GPT six point un. Elle est déjà prise en charge par des outils tiers, comme OpenClaw.
+
+Autre chose du côté d'OpenAI. Sam Altman met en avant son assistant personnel maison, baptisé Dot. Il dit que c'est son produit préféré. Concrètement, cet assistant apprend ses habitudes et s'améliore de jour en jour. Il prend en charge les corvées administratives. Et ça, c'est la grande tendance du moment. On parle d'assistants agentiques. Autrement dit, des IA qui agissent pour vous. Elles réservent, elles rappellent, elles gèrent des tâches. Certains utilisateurs décrivent déjà des duos. Un assistant perso d'un côté, un assistant pro de l'autre.
+
+Mais attention, tout le monde n'est pas convaincu. Le critique Gary Marcus tacle le modèle GPT six surnommé Astra. Il le juge risqué. Son message, c'est qu'il ne faut pas accorder une confiance excessive à ces modèles. Pour une PME, l'idée reste la même. Ces assistants peuvent automatiser les tâches répétitives, mais il faut les surveiller.
+
+Côté Google, maintenant. Et là, on quitte carrément la Terre. Google a lancé un satellite prototype en orbite basse. C'est la première étape d'un projet baptisé Suncatcher. L'idée, c'est d'héberger des infrastructures d'IA dans l'espace. Et pourquoi faire ça ? Pour l'énergie. En orbite, l'ensoleillement est quasi permanent. Google pense pouvoir générer jusqu'à huit fois plus d'énergie solaire que sur Terre.
+
+Cette première mission sert surtout à collecter des données. On veut voir comment les puces maison de Google, les TPU, résistent aux conditions extrêmes de l'espace. Le satellite a été construit avec la société Planet. Il a décollé sur une mission de covoiturage spatial de SpaceX. À terme, l'ambition serait de relier plusieurs constellations de satellites pour faire tourner de l'IA à grande échelle. Pourquoi ça compte ? Parce que la demande énergétique des centres de données explose. Et les géants cherchent des solutions radicales. Rien de concret à court terme pour une entreprise, mais ça montre l'ampleur des moyens déployés.
+
+Autre info du jour. Une grosse levée de fonds pour Supabase. C'est un service qui sert de coulisses techniques aux applications. L'entreprise a levé cent cinquante millions de dollars. Sa valorisation atteint désormais plus de dix milliards de dollars.
+
+Mais le chiffre le plus parlant est ailleurs. Soixante-dix pour cent des nouvelles bases de données créées sur Supabase le sont par des agents ou des outils d'IA. Pas par des humains. Autrement dit, les IA ne se contentent plus d'assister les développeurs. Elles construisent directement. Supabase compte plus de treize millions de développeurs. Et chaque mois, ça grandit. On parle de plus d'un million d'utilisateurs supplémentaires.
+
+Tout ça confirme une tendance de fond. On l'appelle le vibe coding. En gros, on décrit en langage naturel ce qu'on veut, et l'IA écrit le code. Pour un indépendant ou une PME, ça change la donne. Il devient plus accessible de créer une petite application sur mesure sans équipe technique lourde.
+
+Et justement, restons sur les agents. Parce que les agents IA clé en main se multiplient pour les entreprises. L'idée, c'est de vendre un agent comme un service complet. Des praticiens décrivent des modèles à cinq mille dollars par mois. Pour ce prix, vous avez un agent dédié à une tâche précise. Par exemple la relance de factures, ou la préparation de devis. Il est hébergé et maintenu par un prestataire. Le client ne touche jamais à la technique.
+
+Ce modèle est présenté comme environ la moitié du coût d'un bon salarié. Sans congés, sans absences. Le prestataire héberge, répare avant même que le client s'en aperçoive, et ajoute des fonctions à la demande. Un exemple frappant est cité. Une personne a exporté ses six cent soixante-dix contacts. Elle a enregistré une courte vidéo qui proposait un appel gratuit de quinze minutes. Puis un agent a envoyé les six cent soixante-dix messages. Résultat, deux missions payées et un pipeline de plus de cinquante mille dollars.
+
+Côté plateformes, il y a aussi Gumloop. C'est utilisé par Shopify, Gusto ou encore Instacart. Ça permet aux salariés de créer leurs propres agents, tout en laissant l'informatique garder le contrôle des données. Le fonds a16z, lui, défend une idée. Les jeunes pousses nées avec l'IA peuvent battre les logiciels établis. Comment ? En prenant en charge le travail de bout en bout. Par exemple tout le traitement d'une réclamation client. Pour une PME, le message est concret. On peut déléguer une tâche chronophage bien définie.
+
+Passons maintenant aux débats de fond. Ils s'intensifient. Sur l'emploi, d'abord. Une analyse estime que l'IA pèse peut-être déjà sur l'embauche des jeunes cols blancs les plus exposés. Mais la formule reste prudente. Cette affirmation est contestée. Et pour l'instant, aucune perturbation globale n'apparaît dans les statistiques du marché du travail.
+
+Sur la régulation, ensuite. À New York, une proposition de loi a été introduite. Elle obligerait une validation indépendante des modèles d'IA, par un tiers. Gary Marcus y voit un pas important. Pour lui, l'État fédéral agit peu, et l'autorégulation des entreprises ne suffit pas.
+
+Et puis il y a cette grande question. Les IA raisonnent-elles vraiment ? Une tribune de MIT Technology Review dit que non. Les grands modèles de langage ne raisonnent pas au sens humain, même s'ils en donnent l'illusion. Des voix réclament d'ailleurs des systèmes dont les conclusions reposent sur un processus vérifiable. Pour vous, la leçon est simple. Il faut garder un œil critique et une supervision humaine sur les résultats d'une IA.
+
+Et on termine avec une nouvelle tendance. Après le vibe coding, voici le vibe manufacturing. En gros, c'est utiliser l'IA pour concevoir et faire fabriquer des objets physiques, sans être ingénieur. Un guide détaillé explique le parcours complet. Ça commence par mesurer précisément, avec un pied à coulisse ou un scan 3D au téléphone. Ensuite, un modèle avancé écrit la conception sous forme de code. Puis il génère de vrais fichiers de fabrication.
+
+On vérifie la faisabilité industrielle. On prototype en plastique pour quelques centaines de dollars. On fait relire les fichiers par un ingénieur, une heure suffit. Et enfin on commande auprès d'ateliers en ligne. Découpe métal, usinage, circuits imprimés. L'intérêt, c'est de vendre le design et de fabriquer à la commande. Sans stock, sans entrepôt.
+
+En toile de fond, le fonds a16z plaide pour investir dans les petits ateliers de fabrication américains. Le pays en compte près de dix-sept mille. Et la grande majorité emploie moins de vingt personnes. Le fonds y voit une classe d'actifs sous-valorisée, et un enjeu de sécurité nationale, notamment pour la défense. Pour un artisan ou un petit fabricant, le message est clair. L'IA abaisse la barrière pour créer des objets sur mesure.
+
+Et pour finir, la phrase du jour. On nous rappelle qu'on vit dans une bulle sur les réseaux. On imagine que le monde entier connaît ces outils d'IA. Mais si vous approchez mille personnes dans la rue, à peine cinq en auront entendu parler. Autrement dit, l'adoption par le grand public n'en est qu'à ses tout débuts.
+
+Voilà pour aujourd'hui. À très bientôt pour une nouvelle veille.
