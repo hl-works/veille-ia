@@ -13370,5 +13370,152 @@
     "tweet_url": "https://x.com/emollick/status/2105842740533596201",
     "media": true,
     "auteur_x": "@emollick"
+  },
+  {
+    "date": "2026-10-02",
+    "titre_fr": "Google lance un prototype de datacenter IA dans l'espace",
+    "resume_fr": "Google a mis en orbite un satellite prototype équipé de ses puces TPU dans le cadre du projet Suncatcher, afin de tester la résistance du matériel à l'espace. L'objectif à long terme est d'exploiter l'énergie solaire quasi constante en orbite pour l'entraînement de modèles.",
+    "tags": [
+      "google",
+      "hardware",
+      "recherche"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/GoogleAI/status/2106049984164463069",
+    "media": true,
+    "auteur_x": "@GoogleAI"
+  },
+  {
+    "date": "2026-10-02",
+    "titre_fr": "Perplexity publie plusieurs modèles et outils en open source",
+    "resume_fr": "Perplexity annonce une série de contributions open source, dont un modèle de décision multimodal, des embeddings contextuels, un moteur d'inférence local pour puces Apple et un classifieur de données personnelles embarqué. L'entreprise dit en préparer d'autres.",
+    "tags": [
+      "modeles",
+      "open-source"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/AravSrinivas/status/2106119404433908149",
+    "media": false,
+    "auteur_x": "@AravSrinivas"
+  },
+  {
+    "date": "2026-10-02",
+    "titre_fr": "Trillium Labs, nouvelle structure à but non lucratif pour l'IA ouverte",
+    "resume_fr": "Nathan Lambert co-fonde Trillium Labs, un organisme à but non lucratif dédié à la science ouverte de l'IA de pointe. L'initiative vise à publier des recettes de post-entraînement et des infrastructures ouvertes, et recrute et lève des fonds.",
+    "tags": [
+      "open-source",
+      "recherche",
+      "talents"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/natolambert/status/2106060179985019085",
+    "media": true,
+    "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-10-02",
+    "titre_fr": "Hugging Face publie un guide pratique sur le RL multi-harnais",
+    "resume_fr": "L'équipe Hugging Face détaille comment entraîner des modèles ouverts à travers plusieurs harnais d'agents (Claude Code, Codex, OpenCode) via un proxy qui capture les tokens, sans modifier les outils. Tout est publié en open source, avec des gains de performance mesurés.",
+    "tags": [
+      "open-source",
+      "recherche",
+      "agents"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/huggingface/status/2106034221005312448",
+    "media": true,
+    "auteur_x": "@huggingface"
+  },
+  {
+    "date": "2026-10-02",
+    "titre_fr": "Supabase lève 150 M$ à une valorisation de 10,65 milliards",
+    "resume_fr": "Supabase, utilisé par plus de 13 millions de développeurs comme backend, boucle un tour de 150 M$. L'entreprise indique que 70 % des nouvelles bases de données sont désormais créées par des agents ou des outils pilotés par IA.",
+    "tags": [
+      "produit",
+      "talents"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/ycombinator/status/2106106946503971236",
+    "media": true,
+    "auteur_x": "@ycombinator"
+  },
+  {
+    "date": "2026-10-02",
+    "titre_fr": "Microsoft propose ses modèles voix et transcription sur Vercel",
+    "resume_fr": "Mustafa Suleyman annonce la disponibilité sur Vercel de modèles de synthèse vocale et de transcription en streaming, présentés comme plus rapides et moins chers que les concurrents, dont ElevenLabs.",
+    "tags": [
+      "produit",
+      "modeles"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/mustafasuleyman/status/2106038354399920506",
+    "media": false,
+    "auteur_x": "@mustafasuleyman"
+  },
+  {
+    "date": "2026-10-02",
+    "titre_fr": "New York propose une loi imposant une validation externe des modèles d'IA",
+    "resume_fr": "Une proposition de loi déposée à New York obligerait une validation indépendante des modèles d'IA par des tiers, plutôt que de s'en remettre à l'autorégulation des entreprises.",
+    "tags": [
+      "politique-ia"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/GaryMarcus/status/2106021408518353226",
+    "media": false,
+    "auteur_x": "@GaryMarcus"
+  },
+  {
+    "date": "2026-10-02",
+    "titre_fr": "LlamaIndex améliore l'extraction de tableaux denses dans les documents",
+    "resume_fr": "LlamaIndex présente ses agents Extract v2.5, qui atteignent 93–96 % de précision sur l'extraction de longues listes de valeurs dans des documents denses, y compris les cellules à cheval entre deux pages, avec traçabilité vers la source.",
+    "tags": [
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/jerryjliu0/status/2106043812611239980",
+    "media": true,
+    "auteur_x": "@jerryjliu0"
+  },
+  {
+    "date": "2026-10-02",
+    "titre_fr": "FLUX 3 revendique l'édition d'images multi-tours sans dégradation",
+    "resume_fr": "Une démonstration montre FLUX 3 capable de modifier successivement de nombreux éléments d'une même image publicitaire (vêtements, décor, logo) sur neuf tours, en préservant la structure et sans artefacts visibles.",
+    "tags": [
+      "modeles",
+      "marketing",
+      "pub"
+    ],
+    "score": 46,
+    "tweet_url": "https://x.com/venturetwins/status/2106071514416382053",
+    "media": true,
+    "auteur_x": "@venturetwins"
+  },
+  {
+    "date": "2026-10-02",
+    "titre_fr": "Cursor Rollouts détecte les régressions et lance un agent correctif",
+    "resume_fr": "Cursor ajoute une fonction Rollouts qui, lorsqu'elle repère une régression, identifie la pull request fautive et ouvre un ticket. Un clic lance alors un agent cloud pour corriger le problème.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/cursor_ai/status/2106066782155157603",
+    "media": false,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-10-02",
+    "titre_fr": "OpenAI confirme un partenariat rapproché avec Cerebras",
+    "resume_fr": "Sam Altman confirme que Cerebras est un partenaire proche d'OpenAI, avec une collaboration axée sur la vitesse d'inférence, alors que des spéculations circulaient sur cette relation.",
+    "tags": [
+      "openai",
+      "hardware"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/sama/status/2106147184693620924",
+    "media": false,
+    "auteur_x": "@sama"
   }
 ]
