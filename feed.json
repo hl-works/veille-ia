@@ -13517,5 +13517,59 @@
     "tweet_url": "https://x.com/sama/status/2106147184693620924",
     "media": false,
     "auteur_x": "@sama"
+  },
+  {
+    "date": "2026-10-03",
+    "titre_fr": "OpenRouter racheté par Stripe : interview des fondateurs",
+    "resume_fr": "Alex Atallah (OpenRouter) détaille, dans son premier podcast depuis le rachat par Stripe, les raisons de l'opération et sa vision où paiement et inférence vont fusionner. Il défend aussi la diversification des modèles pour éviter la dépendance à un seul fournisseur et réduire les coûts d'IA.",
+    "tags": [
+      "produit",
+      "agents",
+      "paiement"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/a16z/status/2106408584460509308",
+    "media": true,
+    "auteur_x": "@a16z"
+  },
+  {
+    "date": "2026-10-03",
+    "titre_fr": "Perplexity ajoute des visualisations interactives dans Computer",
+    "resume_fr": "Perplexity introduit la commande « Visualize… » dans son outil Computer, qui génère des visualisations, animations et widgets interactifs directement dans le fil pour apprendre un sujet de façon visuelle.",
+    "tags": [
+      "produit",
+      "modeles"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/AravSrinivas/status/2106463779131167189",
+    "media": false,
+    "auteur_x": "@AravSrinivas"
+  },
+  {
+    "date": "2026-10-03",
+    "titre_fr": "Perplexity intègre ses sandboxes sur silicium Vera",
+    "resume_fr": "Perplexity annonce vouloir intégrer verticalement son infrastructure agentique en déployant son outil Computer sur la puce Vera de Nvidia, jugée plus performante que l'architecture x86.",
+    "tags": [
+      "hardware",
+      "produit",
+      "agents"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/AravSrinivas/status/2106313275797352674",
+    "media": false,
+    "auteur_x": "@AravSrinivas"
+  },
+  {
+    "date": "2026-10-03",
+    "titre_fr": "Vercel confirme une faille 0-day dans KVM",
+    "resume_fr": "Via son programme de bug bounty, Vercel indique avoir confirmé une vulnérabilité 0-day dans KVM, solution de référence pour la virtualisation Linux utilisée notamment pour isoler les agents IA. Un rapport détaillé est annoncé.",
+    "tags": [
+      "produit",
+      "recherche"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/rauchg/status/2106402024804020657",
+    "media": false,
+    "auteur_x": "@rauchg"
   }
 ]
