@@ -13571,5 +13571,60 @@
     "tweet_url": "https://x.com/rauchg/status/2106402024804020657",
     "media": false,
     "auteur_x": "@rauchg"
+  },
+  {
+    "date": "2026-10-04",
+    "titre_fr": "LlamaIndex lance Extract v2.5 pour l'extraction de documents",
+    "resume_fr": "LlamaIndex annonce des agents d'extraction v2.5 capables de lire des formulaires scannés complexes (champs imprimés, texte superposé, écriture manuscrite, annotations). L'éditeur revendique un taux d'erreur divisé par deux et un coût bien inférieur à un modèle de pointe, disponible via LlamaParse.",
+    "tags": [
+      "produit",
+      "agents",
+      "automatisation",
+      "saas"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/jerryjliu0/status/2106835158867534282",
+    "media": true,
+    "auteur_x": "@jerryjliu0"
+  },
+  {
+    "date": "2026-10-04",
+    "titre_fr": "Perplexity : créer des applis IA verticales avec « Computer »",
+    "resume_fr": "Perplexity met en avant son environnement « Computer » permettant de construire des applications IA personnalisées, avec un exemple capable de localiser une image via recherche web, vue satellite et globe 3D. Les étapes de raisonnement sont visibles.",
+    "tags": [
+      "produit",
+      "agents",
+      "no-code"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/AskPerplexity/status/2106825513327374847",
+    "media": true,
+    "auteur_x": "@AskPerplexity"
+  },
+  {
+    "date": "2026-10-04",
+    "titre_fr": "emollick génère un jeu complet en un seul prompt",
+    "resume_fr": "Ethan Mollick montre « Fable 5.1 » générant un city-builder jouable à partir d'un unique prompt, illustrant les progrès de la génération de code en un an. Démonstration de la rapidité croissante du prototypage assisté par IA.",
+    "tags": [
+      "modeles",
+      "produit"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/emollick/status/2106768373736493399",
+    "media": true,
+    "auteur_x": "@emollick"
+  },
+  {
+    "date": "2026-10-05",
+    "titre_fr": "OpenAI retire les GPTs personnalisés en décembre",
+    "resume_fr": "Les GPTs créés sur ChatGPT vont disparaître en décembre, avec une migration possible vers des « plugins » privés. Problème : ces GPTs avaient souvent été conçus pour être partagés publiquement, notamment par des entreprises et des enseignants, qui perdent donc ce cas d'usage.",
+    "tags": [
+      "openai",
+      "produit"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/emollick/status/2106958444196413670",
+    "media": true,
+    "auteur_x": "@emollick"
   }
 ]
