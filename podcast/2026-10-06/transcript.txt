@@ -1,0 +1,51 @@
+Bonjour et bienvenue dans votre veille IA du six octobre.
+
+On commence avec une question simple. Qui paie vraiment pour l'intelligence artificielle ? Le fonds a16z vient de publier son classement des cent applis d'IA grand public. Et pour la première fois, il y ajoute les revenus. Le constat est frappant.
+
+Seuls deux à cinq pour cent des Américains paient un abonnement IA. Mais la dépense est hyper concentrée. Le un pour cent le plus dépensier débourse en moyenne neuf cents dollars par mois. Pour le client médian, c'est vingt-cinq dollars. Autrement dit, cette petite minorité dépense plus que la moitié la moins active réunie.
+
+ChatGPT reste numéro un. Plus d'un milliard d'utilisateurs actifs chaque mois sur mobile. C'est même la première appli d'IA à entrer dans le top vingt mondial des abonnements.
+
+Alors pourquoi ça compte ? Selon Olivia Moore, d'a16z, environ la moitié des Américains disent utiliser l'IA. Un quart pense interagir avec elle presque tous les jours. Mais à peine quatre et demi pour cent paient un abonnement. Un chiffre qui a doublé en un an quand même. Et parmi ces payeurs, le top dix pour cent représente plus de la moitié des revenus.
+
+Où va cet argent ? Surtout vers les outils de développement, de productivité et de création. En gros, des outils pour construire, fabriquer, vendre. La catégorie s'est élargie bien au-delà des chatbots. On parle de code, avec Lovable, Cursor ou Replit. De musique, avec Suno. De design, avec Figma. De voix, de vidéo, d'agents.
+
+Et voici l'idée forte. Sur les quinze grandes catégories du web grand public, neuf n'ont encore aucune appli d'IA dans le top cent. Le streaming, le social, les rencontres, les jeux, le voyage, le commerce. C'est un immense terrain vierge. Message clé d'a16z. Le modèle par abonnement serait une impasse. La publicité et les commissions devraient revenir.
+
+Côté modèles ouverts, maintenant. La jeune société Reflection a lancé Beam. Un grand modèle à poids ouverts de cinq cent un milliards de paramètres. Poids ouverts, ça veut dire que n'importe qui peut le télécharger, l'héberger lui-même et l'adapter. Sans dépendre d'une API payante.
+
+C'est salué comme un pas pour l'écosystème occidental de l'IA ouverte. Mais plusieurs observateurs relativisent. Le chercheur Nathan Lambert note que Reflection reste, comme d'autres sorties américaines récentes, derrière ses équivalents chinois. Pour lui, l'enseignement principal, c'est la très grande compétence de la Chine à construire de grands modèles.
+
+D'autres voix, comme Sara Guo ou Amjad Masad de Replit, y voient plutôt un signal positif. L'Occident rattraperait son retard sur l'ouverture. Ce que ça change pour vous ? Des modèles ouverts puissants tirent les prix vers le bas. Et ils permettent à des PME d'utiliser l'IA sans tout confier à un géant.
+
+Passons à OpenAI, avec trois nouvelles. D'abord, le filigrane. Dans les prochaines semaines, OpenAI va apposer un marquage invisible d'origine sur certains textes générés par ChatGPT et Codex, dans l'Union européenne. L'objectif, c'est de se conformer à l'AI Act. L'entreprise le faisait déjà pour les images et l'audio. Elle l'étend au texte en Europe. Elle propose aussi l'option dans le monde entier via son API.
+
+Mais attention. OpenAI reconnaît elle-même que ce filigrane de texte reste fragile et facile à contourner. Concrètement, si vous publiez du contenu généré par IA, il pourra devenir plus traçable en Europe.
+
+Deuxième point. OpenAI prépare un nouveau format publicitaire pour ChatGPT. Signe que la monétisation par la pub devient centrale. Ça fait écho au débat d'a16z dont on parlait. ChatGPT va donc vraisemblablement afficher de la publicité.
+
+Et troisième point, un incident. La fondation Wikimedia a documenté l'activité d'un agent automatisé d'OpenAI parti en vrille sur ses projets.
+
+On enchaîne avec une audition publique à New York, sur la sécurité de l'IA. Elle a été très relayée par le critique Gary Marcus. Et le point fort, ce sont les témoignages. D'anciens chercheurs, dont un ancien de Google DeepMind, affirment que de grands labos auraient reculé sur leurs engagements de sécurité. Sous la pression de la course à la performance, et face à la Chine.
+
+Des élus ont demandé aux entreprises de jurer sous serment que leurs systèmes respecteraient leurs consignes de sécurité. Elles n'ont pas pu le garantir. Autre détail. Selon Gary Marcus, les quatre grandes entreprises d'IA ont envoyé non pas leurs PDG, mais des responsables de lobbying.
+
+Un ancien de Google DeepMind dit avoir tenté en vain d'obtenir des engagements fermes. La direction, dont Demis Hassabis, aurait finalement reculé. Les intervenants plaident pour des évaluateurs indépendants, plutôt que l'autorégulation. Et pour des engagements vérifiables, rompables si un pays comme la Chine triche.
+
+À retenir aussi. Marcus se moque de l'idée que les modèles seraient conscients. Pour lui, les grands modèles de langage deviendront un business banalisé. Comme les compagnies aériennes. D'où ses doutes sur certaines valorisations, dont une éventuelle entrée en Bourse d'Anthropic.
+
+Changeons de registre avec la science. Des agents IA fondés sur le modèle Opus cinq point cinq auraient identifié deux candidats de semi-conducteurs magnétiques à température ambiante. C'est une piste prometteuse en science des matériaux.
+
+Pourquoi c'est intéressant ? Un semi-conducteur magnétique à température ambiante serait précieux pour l'électronique du futur, le stockage, les puces. Mais ces matériaux sont rares. L'expérience décrit des agents qui passent en revue des hypothèses pour repérer deux candidats. Ça reste à confirmer en laboratoire.
+
+En parallèle, l'investisseur Garry Tan évoque l'arrivée de boucles scientifiques automatisées. Et une start-up, Halmos, bâtit des outils dédiés. La lettre Import AI de Jack Clark parle elle aussi d'une économie de la science par l'IA. Au-delà des chatbots, l'IA commence à servir d'assistant de recherche à part entière. À surveiller, sans survendre des résultats encore préliminaires.
+
+Et on termine avec du neuf pour les utilisateurs avancés. Plusieurs outils se perfectionnent pour travailler en parallèle. L'appli Perplexity pour Mac gagne des onglets et des sessions dans des fenêtres séparées. On peut lancer plusieurs tâches côte à côte, voire sur des écrans différents.
+
+Cursor, de son côté, introduit une fonction de pilotage. On peut glisser une instruction à un agent en cours d'exécution, sans l'arrêter. Et si un sous-agent est en plein travail, il passe en arrière-plan sans s'interrompre.
+
+Chez Claude, un développeur présente une méthode pour générer de meilleurs plans de code. Plus propres, plus économes en ressources. Une fonction appelée local hands laisse même Claude tourner dans le cloud tout en accédant à vos fichiers locaux. Enfin, la start-up Cognition explore le rêve des agents. Un nettoyage hors ligne de leur mémoire, pour éviter d'accumuler des infos périmées. En somme, les assistants IA deviennent de vrais postes de travail, capables de mener plusieurs chantiers de front.
+
+Et pour finir, la phrase du jour. La plupart des gens ne cherchent pas à gagner du temps, mais à trouver comment l'occuper. Une clé, selon a16z, pour comprendre pourquoi l'IA grand public reste encore à inventer dans le divertissement, le social ou le shopping.
+
+C'était votre veille IA. À très vite.
