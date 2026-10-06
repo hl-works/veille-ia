@@ -13626,5 +13626,91 @@
     "tweet_url": "https://x.com/emollick/status/2106958444196413670",
     "media": true,
     "auteur_x": "@emollick"
+  },
+  {
+    "date": "2026-10-05",
+    "titre_fr": "a16z publie son classement des 100 meilleures apps IA grand public",
+    "resume_fr": "La 7e édition du rapport d'a16z montre que ChatGPT reste n°1 avec plus d'un milliard d'actifs mobiles, Claude grimpe à la 3e place web, et la catégorie s'est élargie au vibe coding, à la musique, à la vidéo et aux agents. Le rapport révèle aussi une forte concentration des dépenses : les 1% d'utilisateurs les plus actifs paient en moyenne 903$/mois.",
+    "tags": [
+      "produit",
+      "recherche",
+      "marketing",
+      "vente"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/a16z/status/2107109225814233391",
+    "media": true,
+    "auteur_x": "@a16z"
+  },
+  {
+    "date": "2026-10-05",
+    "titre_fr": "OpenAI va filigraner le texte généré dans l'UE",
+    "resume_fr": "Pour se conformer à l'AI Act européen, OpenAI commencera dans les prochaines semaines à apposer un filigrane sur le texte produit par ChatGPT et Codex pour les utilisateurs de l'UE. L'entreprise reconnaît toutefois les limites actuelles des techniques de filigrane de texte. L'option est déjà activable via l'API dans le monde entier.",
+    "tags": [
+      "openai",
+      "politique-ia",
+      "produit"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/OpenAI/status/2107164650249101695",
+    "media": false,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-10-05",
+    "titre_fr": "Reflection AI publie son modèle, en retrait des concurrents chinois",
+    "resume_fr": "La startup Reflection AI a sorti son meilleur modèle, qui se classe derrière ses équivalents chinois, rejoignant Nvidia et Thinking Machines dans ce cas. Pour certains observateurs, cela confirme surtout l'avance des laboratoires chinois dans la construction de LLM.",
+    "tags": [
+      "modeles",
+      "open-source",
+      "recherche"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/natolambert/status/2107214330529980676",
+    "media": false,
+    "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-10-05",
+    "titre_fr": "L'app Perplexity pour Mac ajoute onglets et sessions parallèles",
+    "resume_fr": "La nouvelle version de l'application Perplexity sur Mac introduit des onglets et la possibilité d'ouvrir des sessions dans des fenêtres séparées, pour lancer plusieurs tâches en parallèle. Disponible dès maintenant pour les utilisateurs de Computer.",
+    "tags": [
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/AskPerplexity/status/2107249485181264003",
+    "media": true,
+    "auteur_x": "@AskPerplexity"
+  },
+  {
+    "date": "2026-10-05",
+    "titre_fr": "Cursor permet de piloter ses agents en cours d'exécution",
+    "resume_fr": "Le SDK de Cursor offre désormais une fonction run.steer() qui permet d'ajouter un message au prochain tour d'un agent pendant qu'il travaille. Si un sous-agent est en pleine tâche, il passe en arrière-plan et poursuit son travail.",
+    "tags": [
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/cursor_ai/status/2107141004482793827",
+    "media": true,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-10-06",
+    "titre_fr": "Démo : génération d'une vidéo UGC à partir d'une annonce Airbnb",
+    "resume_fr": "Un utilisateur a demandé à Opus 5.5 de créer une vidéo promotionnelle type contenu utilisateur depuis une annonce Airbnb : le modèle a récupéré les photos et assemblé une vidéo via Seedance 2.5, une voix ElevenLabs et des images d'archives améliorées. Une illustration concrète de l'assemblage d'outils IA pour le marketing.",
+    "tags": [
+      "anthropic",
+      "produit",
+      "marketing",
+      "pub"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/venturetwins/status/2107311661430493193",
+    "media": true,
+    "auteur_x": "@venturetwins"
   }
 ]
