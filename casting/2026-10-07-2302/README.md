@@ -1,0 +1,8 @@
+# Univers sonores — extraits
+
+| # | Univers | Fichier | Erreur |
+|---|---|---|---|
+| 1 | city-pop-classique — 80s Japanese city pop instrumental, funky slap bass, Rhodes and bright brass hits, clean chorus guitar, glossy and sunny |  | ElevenLabs HTTP 429 : {"detail":{"type":"rate_limit_error","code":"system_busy","message":"The system is experiencing heavy traffic. Please try again.","status":"system_busy","request_id":"e990063978d09be947c545520b72e8f1","docs_url":"https://elevenlabs.io/docs/eleven-api/resources/errors#rate-limit |
+| 2 | city-pop-nuit — late-night Japanese city pop, smooth fretless-style round bass, lush synth pads, soft saxophone lead, Tokyo night drive |  | ElevenLabs HTTP 429 : {"detail":{"type":"rate_limit_error","code":"system_busy","message":"The system is experiencing heavy traffic. Please try again.","status":"system_busy","request_id":"58aa6fc2f074dc4cdee20ac34a69f0f0","docs_url":"https://elevenlabs.io/docs/eleven-api/resources/errors#rate-limit |
+| 3 | city-pop-moderne — modern city pop revival, punchy tight drums, groovy round bass line, sparkling electric piano, contemporary hi-fi production | 03-city-pop-moderne.mp3 |  |
+| 4 | city-pop-funk — upbeat Japanese city pop funk, syncopated slap bass, cutting guitar, horn section stabs, energetic and catchy |  | ElevenLabs HTTP 429 : {"detail":{"type":"rate_limit_error","code":"system_busy","message":"The system is experiencing heavy traffic. Please try again.","status":"system_busy","request_id":"1408aac48da265f6147bf8746ac72d8f","docs_url":"https://elevenlabs.io/docs/eleven-api/resources/errors#rate-limit |
