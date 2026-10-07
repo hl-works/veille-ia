@@ -1,0 +1,46 @@
+[
+  {
+    "variante": "A v3 corrige",
+    "format": "solo",
+    "voix_femme_elevenlabs": "uOw88F5bjqRiVuZLhXEA",
+    "modele_elevenlabs": "eleven_v3",
+    "vitesse": 1.17,
+    "seed": "42",
+    "fichier": "01-a-v3-corrige.mp3"
+  },
+  {
+    "variante": "B v3 stable",
+    "format": "solo",
+    "voix_femme_elevenlabs": "uOw88F5bjqRiVuZLhXEA",
+    "modele_elevenlabs": "eleven_v3",
+    "vitesse": 1.17,
+    "stabilite": "1.0",
+    "seed": "42",
+    "fichier": "02-b-v3-stable.mp3"
+  },
+  {
+    "variante": "C multilingual v2",
+    "format": "solo",
+    "voix_femme_elevenlabs": "uOw88F5bjqRiVuZLhXEA",
+    "modele_elevenlabs": "eleven_multilingual_v2",
+    "vitesse": 1.0,
+    "stabilite": "0.5",
+    "similarite": "0.8",
+    "vitesse_native": "1.17",
+    "seed": "42",
+    "fichier": "03-c-multilingual-v2.mp3"
+  },
+  {
+    "variante": "D multilingual v2 vivant",
+    "format": "solo",
+    "voix_femme_elevenlabs": "uOw88F5bjqRiVuZLhXEA",
+    "modele_elevenlabs": "eleven_multilingual_v2",
+    "vitesse": 1.0,
+    "stabilite": "0.4",
+    "similarite": "0.8",
+    "style": "0.25",
+    "vitesse_native": "1.2",
+    "seed": "42",
+    "fichier": "04-d-multilingual-v2-vivant.mp3"
+  }
+]
