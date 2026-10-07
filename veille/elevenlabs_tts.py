@@ -74,7 +74,11 @@ def tts(text: str, voice_id: str, dest: Path, *, model: str = DEFAULT_MODEL,
             return
         if r.status_code in (400, 422):
             low = r.text.lower()
-            culprit = next((k for k in optional if k in body and k.split('_')[0] in low), None)
+            hints = {'language_code': ('language',), 'previous_text': ('previous',),
+                     'next_text': ('next',), 'seed': ('seed',),
+                     'voice_settings': ('voice_settings', 'setting', 'speed', 'stability',
+                                        'similarity', 'style')}
+            culprit = next((k for k in optional if k in body and any(h in low for h in hints[k])), None)
             if culprit:
                 body.pop(culprit, None)
                 continue
@@ -122,6 +126,15 @@ def concat_mp3(files: list[Path], output: Path, tempo: float = 1.0) -> None:
         listing.unlink(missing_ok=True)
 
 
+def silence(dest: Path, seconds: float) -> Path:
+    """Petit blanc (MP3 mono 44,1 kHz) inséré entre l'intro et la suite."""
+    subprocess.run(['ffmpeg', '-nostdin', '-y', '-v', 'error', '-f', 'lavfi', '-i',
+                    'anullsrc=r=44100:cl=mono', '-t', f'{seconds:g}', '-codec:a', 'libmp3lame',
+                    '-b:a', '128k', str(dest)], check=True, timeout=60,
+                   stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    return dest
+
+
 def voice_settings_from(cfg: dict) -> dict:
     """Réglages de voix lus dans audio.yaml (clés stabilite, similarite, style,
     vitesse_native). Vide = réglages par défaut de la voix."""
@@ -162,16 +175,28 @@ class ElevenLabsTTS:
                 merged[-1][1] += '\n\n' + text
             else:
                 merged.append([who, text])
-        pieces = [(who, piece) for who, text in merged for piece in chunks(text)]
         settings = voice_settings_from(self.cfg)
+        # Intro (1er paragraphe) lue plus posément : le « Bonjour » était trop rapide.
+        intro_speed = str(self.cfg.get('vitesse_intro', '')).strip()
+        intro_text = ''
+        if intro_speed and merged and '\n\n' in merged[0][1].strip():
+            intro_text, rest = merged[0][1].strip().split('\n\n', 1)
+            merged[0][1] = rest
+        pieces = [(who, piece) for who, text in merged for piece in chunks(text)]
         seed = int(self.cfg['seed']) if str(self.cfg.get('seed', '')).strip() else None
         output.parent.mkdir(parents=True, exist_ok=True)
         with tempfile.TemporaryDirectory() as directory:
             files: list[Path] = []
+            if intro_text:
+                intro = Path(directory) / 'intro.mp3'
+                tts(intro_text, self._voice(merged[0][0]), intro, model=self.model,
+                    next_text=pieces[0][1] if pieces else '',
+                    voice_settings={**settings, 'speed': float(intro_speed)}, seed=seed)
+                files += [intro, silence(Path(directory) / 'pause.mp3', 0.35)]
             for i, (who, piece) in enumerate(pieces):
                 dest = Path(directory) / f'{i:04d}.mp3'
                 tts(piece, self._voice(who), dest, model=self.model,
-                    previous_text=pieces[i - 1][1] if i else '',
+                    previous_text=pieces[i - 1][1] if i else intro_text,
                     next_text=pieces[i + 1][1] if i + 1 < len(pieces) else '',
                     voice_settings=settings, seed=seed)
                 files.append(dest)
