@@ -200,6 +200,39 @@ class ElevenLabsTests(unittest.TestCase):
             el.tts('B', 'v', Path(d) / 'o.mp3', voice_settings={'speed': 0.9})
             self.assertNotIn('voice_settings', post.call_args.kwargs['json'])
 
+    def test_dialogue_groups_respect_limit_and_order(self):
+        lines = [('F', 'a' * 50), ('H', 'b' * 60), ('F', 'c' * 30)]
+        groups = el.dialogue_groups(lines, 100)
+        self.assertEqual(groups, [[('F', 'a' * 50)], [('H', 'b' * 60), ('F', 'c' * 30)]])
+        self.assertEqual([t for g in groups for _, t in g], ['a' * 50, 'b' * 60, 'c' * 30])
+
+    def test_duo_dialogue_engine_maps_voices(self):
+        calls = []
+        def fake_dialogue(group, dest, **kw):
+            calls.append((group, kw))
+            dest.write_bytes(b'x')
+        cfg = {'format': 'duo', 'moteur': 'dialogue', 'modele_elevenlabs': 'eleven_v4',
+               'voix_femme_elevenlabs': 'F', 'voix_homme_elevenlabs': 'H', 'seed': '3'}
+        with tempfile.TemporaryDirectory() as d, \
+             patch.object(el, 'dialogue', side_effect=fake_dialogue), patch.object(el, 'concat_mp3'):
+            script = Path(d) / 's.txt'
+            script.write_text('ELLE: Bonjour.\nLUI: Salut.\nELLE: On commence.')
+            el.ElevenLabsTTS(cfg).synthesize(script, Path(d) / 'o.mp3')
+        self.assertEqual(calls[0][0], [('F', 'Bonjour.'), ('H', 'Salut.'), ('F', 'On commence.')])
+        self.assertEqual(calls[0][1]['model'], 'eleven_v4')
+        self.assertEqual(calls[0][1]['seed'], 3)
+
+    def test_dialogue_request_body(self):
+        good = Mock(ok=True, status_code=200, content=b'mp3')
+        with tempfile.TemporaryDirectory() as d, patch.dict('os.environ', {'ELEVENLABS_API_KEY': 'k'}), \
+             patch.object(el.requests, 'post', return_value=good) as post:
+            el.dialogue([('F', 'Bonjour.'), ('H', 'Salut.')], Path(d) / 'o.mp3', previous_text='x' * 300)
+            self.assertTrue(post.call_args.args[0].endswith('/v1/text-to-dialogue'))
+            body = post.call_args.kwargs['json']
+            self.assertEqual(body['inputs'][1], {'text': 'Salut.', 'voice_id': 'H'})
+            self.assertEqual(len(body['previous_text']), 100)
+            self.assertEqual(body['model_id'], 'eleven_v4')
+
 
 ORIG_CHUNKS = el.chunks
 

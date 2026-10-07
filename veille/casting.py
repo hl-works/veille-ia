@@ -91,7 +91,12 @@ def run_variants(params: dict, text: str, out: Path) -> list[dict]:
     voice = (params.get('voix_ids') or [DEFAULT_VOICE_FEMME])[0]
     results: list[dict] = []
     for n, v in enumerate(params['variantes'], 1):
-        cfg = {'format': 'solo', 'voix_femme_elevenlabs': voice,
+        homme = params.get('voix_homme', '')
+        if homme == 'auto':
+            found = french_voices('homme', 1)
+            homme = found[0]['voice_id'] if found else ''
+            params['voix_homme'] = homme
+        cfg = {'format': v.get('format', 'solo'), 'voix_femme_elevenlabs': voice, 'voix_homme_elevenlabs': homme,
                'modele_elevenlabs': v.get('modele') or DEFAULT_MODEL,
                'vitesse': v.get('vitesse', 1.0), **{k: str(x) for k, x in (v.get('reglages') or {}).items()}}
         name = f"{n:02d}-{slug(v.get('nom') or cfg['modele_elevenlabs'])}.mp3"
@@ -105,11 +110,18 @@ def run_variants(params: dict, text: str, out: Path) -> list[dict]:
     script.unlink(missing_ok=True)
     lines = ['# Casting réglages — voix ' + voice, '', '| # | Variante | Modèle | Réglages | Fichier |', '|---|---|---|---|---|']
     for n, r in enumerate(results, 1):
-        reg = ', '.join(f'{k}={r[k]}' for k in ('vitesse', 'stabilite', 'similarite', 'style', 'vitesse_native', 'seed') if k in r)
+        reg = ', '.join(f'{k}={r[k]}' for k in ('moteur', 'format', 'vitesse', 'stabilite', 'similarite', 'style',
+                                                 'vitesse_native', 'vitesse_intro', 'seed', 'voix_homme_elevenlabs') if r.get(k))
         lines.append(f"| {n} | {r['variante']} | {r['modele_elevenlabs']} | {reg} | {r.get('fichier') or '❌ ' + r.get('erreur', '')[:150]} |")
     (out / 'README.md').write_text('\n'.join(lines) + '\n', encoding='utf-8')
     (out / 'casting.json').write_text(json.dumps(results, ensure_ascii=False, indent=2), encoding='utf-8')
     return results
+
+
+def _lot_file(lot: dict, i: int) -> Path:
+    f = Path(f'.casting-lot-{i}.json')
+    f.write_text(json.dumps(lot, ensure_ascii=False), encoding='utf-8')
+    return f
 
 
 def main() -> int:
@@ -122,6 +134,14 @@ def main() -> int:
         params = json.loads(args.params.read_text(encoding='utf-8')) if args.params.exists() else {}
     except ValueError:
         params = {}
+    if params.get('lots'):  # plusieurs essais dans le même lancement, un sous-dossier chacun
+        code = 0
+        for i, lot in enumerate(params['lots'], 1):
+            sub = [sys.executable, '-m', 'veille.casting', '--params', str(_lot_file(lot, i)),
+                   '--texte', str(args.texte), '--out', str(args.out / f"{i}-{slug(lot.get('nom', 'lot'))}")]
+            import subprocess
+            code |= subprocess.run(sub).returncode
+        return code
     texte = Path(params['texte']) if params.get('texte') else args.texte
     if params.get('texte_ecoute'):  # un vrai transcript du podcast, lu sur la branche ecoute
         import subprocess
