@@ -19,7 +19,8 @@ import unicodedata
 from pathlib import Path
 
 from .audio import apply_lexicon, load_lexicon
-from .elevenlabs_tts import DEFAULT_MODEL, ElevenLabsError, chunks, concat_mp3, french_voices, tts
+from .elevenlabs_tts import (DEFAULT_MODEL, DEFAULT_VOICE_FEMME, ElevenLabsError, ElevenLabsTTS,
+                             chunks, concat_mp3, french_voices, tts)
 
 
 def slug(name: str) -> str:
@@ -79,6 +80,38 @@ def run(params: dict, text: str, out: Path, lexicon: dict[str, str]) -> list[dic
     return results
 
 
+def run_variants(params: dict, text: str, out: Path) -> list[dict]:
+    """Même texte, même voix, plusieurs réglages : passe par le vrai moteur du
+    podcast (ElevenLabsTTS), pour juger exactement ce qui sera diffusé.
+    params['variantes'] = [{"nom": "...", "modele": "...", "vitesse": 1.15,
+                            "reglages": {"stabilite": 1.0, "vitesse_native": 1.1}}]"""
+    out.mkdir(parents=True, exist_ok=True)
+    script = out / '.texte.txt'
+    script.write_text(text, encoding='utf-8')
+    voice = (params.get('voix_ids') or [DEFAULT_VOICE_FEMME])[0]
+    results: list[dict] = []
+    for n, v in enumerate(params['variantes'], 1):
+        cfg = {'format': 'solo', 'voix_femme_elevenlabs': voice,
+               'modele_elevenlabs': v.get('modele') or DEFAULT_MODEL,
+               'vitesse': v.get('vitesse', 1.0), **{k: str(x) for k, x in (v.get('reglages') or {}).items()}}
+        name = f"{n:02d}-{slug(v.get('nom') or cfg['modele_elevenlabs'])}.mp3"
+        row = {'variante': v.get('nom', ''), **cfg}
+        try:
+            ElevenLabsTTS(cfg).synthesize(script, out / name)
+            row['fichier'] = name
+        except (ElevenLabsError, RuntimeError) as exc:
+            row['erreur'] = str(exc)
+        results.append(row)
+    script.unlink(missing_ok=True)
+    lines = ['# Casting réglages — voix ' + voice, '', '| # | Variante | Modèle | Réglages | Fichier |', '|---|---|---|---|---|']
+    for n, r in enumerate(results, 1):
+        reg = ', '.join(f'{k}={r[k]}' for k in ('vitesse', 'stabilite', 'similarite', 'style', 'vitesse_native', 'seed') if k in r)
+        lines.append(f"| {n} | {r['variante']} | {r['modele_elevenlabs']} | {reg} | {r.get('fichier') or '❌ ' + r.get('erreur', '')[:150]} |")
+    (out / 'README.md').write_text('\n'.join(lines) + '\n', encoding='utf-8')
+    (out / 'casting.json').write_text(json.dumps(results, ensure_ascii=False, indent=2), encoding='utf-8')
+    return results
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description='Casting de voix ElevenLabs (rien n’est publié)')
     ap.add_argument('--params', type=Path, default=Path('.state/casting'))
@@ -89,8 +122,12 @@ def main() -> int:
         params = json.loads(args.params.read_text(encoding='utf-8')) if args.params.exists() else {}
     except ValueError:
         params = {}
+    texte = Path(params['texte']) if params.get('texte') else args.texte
     try:
-        results = run(params, args.texte.read_text(encoding='utf-8'), args.out, load_lexicon())
+        if params.get('variantes'):
+            results = run_variants(params, texte.read_text(encoding='utf-8'), args.out)
+        else:
+            results = run(params, texte.read_text(encoding='utf-8'), args.out, load_lexicon())
     except Exception as exc:  # noqa: BLE001 — on veut un README même en cas d'échec global
         args.out.mkdir(parents=True, exist_ok=True)
         (args.out / 'README.md').write_text(f'# Casting en échec\n\n{type(exc).__name__}: {exc}\n',

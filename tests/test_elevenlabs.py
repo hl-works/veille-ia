@@ -108,10 +108,73 @@ class ElevenLabsTests(unittest.TestCase):
     def test_concat_tempo_filter_and_default_voice(self):
         with tempfile.TemporaryDirectory() as d, patch.object(el.subprocess, 'run') as run:
             el.concat_mp3([Path(d) / 'a.mp3'], Path(d) / 'o.mp3', 1.15)
-            self.assertIn('atempo=1.15', run.call_args.args[0])
+            chain = run.call_args.args[0][run.call_args.args[0].index('-filter:a') + 1]
+            self.assertIn('atempo=1.15', chain)
+            self.assertIn('loudnorm', chain)
             el.concat_mp3([Path(d) / 'a.mp3'], Path(d) / 'o.mp3', 1.0)
-            self.assertNotIn('-filter:a', run.call_args.args[0])
+            chain = run.call_args.args[0][run.call_args.args[0].index('-filter:a') + 1]
+            self.assertNotIn('atempo', chain)
         self.assertEqual(el.ElevenLabsTTS({})._voice('femme'), el.DEFAULT_VOICE_FEMME)
+
+    def test_synthesize_merges_paragraphs_and_passes_context(self):
+        calls = []
+        def fake_tts(text, voice, dest, **kw):
+            calls.append((text, kw))
+            dest.write_bytes(b'x')
+        cfg = {'format': 'solo', 'stabilite': '1.0', 'vitesse_native': '1.1', 'seed': '7'}
+        with tempfile.TemporaryDirectory() as d, \
+             patch.object(el, 'tts', side_effect=fake_tts), patch.object(el, 'concat_mp3'), \
+             patch.object(el, 'chunks', side_effect=lambda t: ORIG_CHUNKS(t, 40)):
+            script = Path(d) / 's.txt'
+            script.write_text('Premier paragraphe court.\n\nDeuxième paragraphe court.\n\nTroisième paragraphe un peu plus long ici.')
+            el.ElevenLabsTTS(cfg).synthesize(script, Path(d) / 'o.mp3')
+        self.assertEqual(len(calls), 3)
+        self.assertEqual(calls[0][1]['previous_text'], '')
+        self.assertEqual(calls[1][1]['previous_text'], calls[0][0])
+        self.assertEqual(calls[1][1]['next_text'], calls[2][0])
+        self.assertEqual(calls[0][1]['voice_settings'], {'stability': 1.0, 'speed': 1.1})
+        self.assertEqual(calls[0][1]['seed'], 7)
+
+    def test_single_request_when_text_fits(self):
+        calls = []
+        def fake_tts(text, voice, dest, **kw):
+            calls.append(text)
+            dest.write_bytes(b'x')
+        with tempfile.TemporaryDirectory() as d, \
+             patch.object(el, 'tts', side_effect=fake_tts), patch.object(el, 'concat_mp3'):
+            script = Path(d) / 's.txt'
+            script.write_text('Un.\n\nDeux.\n\nTrois.')
+            el.ElevenLabsTTS({'format': 'solo'}).synthesize(script, Path(d) / 'o.mp3')
+        self.assertEqual(calls, ['Un.\n\nDeux.\n\nTrois.'])
+
+    def test_tts_drops_refused_context_param(self):
+        bad = Mock(ok=False, status_code=400, text='previous_text is not supported for this model', content=b'')
+        good = Mock(ok=True, status_code=200, content=b'mp3')
+        with tempfile.TemporaryDirectory() as d, patch.dict('os.environ', {'ELEVENLABS_API_KEY': 'k'}), \
+             patch.object(el.requests, 'post', side_effect=[bad, good]) as post:
+            el.tts('B', 'v', Path(d) / 'o.mp3', previous_text='A', next_text='C')
+            body = post.call_args.kwargs['json']
+            self.assertNotIn('previous_text', body)
+            self.assertIn('language_code', body)
+
+    def test_casting_variants_use_production_engine(self):
+        seen = []
+        def fake_synth(self, script, output):
+            seen.append(dict(self.cfg))
+            output.write_bytes(b'mp3')
+        variants = [{'nom': 'v3 robuste', 'modele': 'eleven_v3', 'vitesse': 1.15, 'reglages': {'stabilite': 1.0}},
+                    {'nom': 'multilingual v2', 'modele': 'eleven_multilingual_v2', 'vitesse': 1.0,
+                     'reglages': {'vitesse_native': 1.15}}]
+        with tempfile.TemporaryDirectory() as d, \
+             patch.object(el.ElevenLabsTTS, 'synthesize', fake_synth):
+            res = casting.run_variants({'variantes': variants}, 'Bonjour.', Path(d))
+            self.assertIn('v3-robuste', (Path(d) / 'README.md').read_text() + res[0]['fichier'])
+        self.assertEqual(seen[0]['stabilite'], '1.0')
+        self.assertEqual(seen[1]['modele_elevenlabs'], 'eleven_multilingual_v2')
+        self.assertEqual(seen[0]['voix_femme_elevenlabs'], el.DEFAULT_VOICE_FEMME)
+
+
+ORIG_CHUNKS = el.chunks
 
 
 if __name__ == '__main__':
