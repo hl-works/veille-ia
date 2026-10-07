@@ -123,8 +123,19 @@ def main() -> int:
     except ValueError:
         params = {}
     texte = Path(params['texte']) if params.get('texte') else args.texte
+    if params.get('texte_ecoute'):  # un vrai transcript du podcast, lu sur la branche ecoute
+        import subprocess
+        subprocess.run(['git', 'fetch', '-q', '--depth', '1', 'origin', 'ecoute'], check=True, timeout=120)
+        texte = Path('.texte-ecoute.txt')
+        texte.write_text(subprocess.run(['git', 'show', f"FETCH_HEAD:{params['texte_ecoute']}"],
+                                        check=True, capture_output=True, text=True).stdout, encoding='utf-8')
     try:
-        if params.get('variantes'):
+        if params.get('habillage'):
+            from .audio import audio_config
+            from .habillage import run as run_habillage
+            results = run_habillage(params, args.out, audio_config())
+            results = [{**r, 'fichier': r.get('demo')} for r in results]
+        elif params.get('variantes'):
             results = run_variants(params, texte.read_text(encoding='utf-8'), args.out)
         else:
             results = run(params, texte.read_text(encoding='utf-8'), args.out, load_lexicon())

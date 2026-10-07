@@ -173,6 +173,33 @@ class ElevenLabsTests(unittest.TestCase):
         self.assertEqual(seen[1]['modele_elevenlabs'], 'eleven_multilingual_v2')
         self.assertEqual(seen[0]['voix_femme_elevenlabs'], el.DEFAULT_VOICE_FEMME)
 
+    def test_intro_read_slower_then_rest_with_context(self):
+        calls = []
+        def fake_tts(text, voice, dest, **kw):
+            calls.append((text, kw))
+            dest.write_bytes(b'x')
+        cfg = {'format': 'solo', 'vitesse_native': '1.17', 'vitesse_intro': '1.0'}
+        with tempfile.TemporaryDirectory() as d, \
+             patch.object(el, 'tts', side_effect=fake_tts), patch.object(el, 'concat_mp3') as cat, \
+             patch.object(el, 'silence', side_effect=lambda p, s: p):
+            script = Path(d) / 's.txt'
+            script.write_text('Bonjour et bienvenue.\n\nPremier sujet.\n\nDeuxième sujet.')
+            el.ElevenLabsTTS(cfg).synthesize(script, Path(d) / 'o.mp3')
+            names = [f.name for f in cat.call_args.args[0]]
+        self.assertEqual([c[0] for c in calls], ['Bonjour et bienvenue.', 'Premier sujet.\n\nDeuxième sujet.'])
+        self.assertEqual(calls[0][1]['voice_settings']['speed'], 1.0)
+        self.assertEqual(calls[1][1]['voice_settings']['speed'], 1.17)
+        self.assertEqual(calls[1][1]['previous_text'], 'Bonjour et bienvenue.')
+        self.assertEqual(names, ['intro.mp3', 'pause.mp3', '0000.mp3'])
+
+    def test_tts_drops_voice_settings_when_speed_refused(self):
+        bad = Mock(ok=False, status_code=422, text='speed is not supported by eleven_v3', content=b'')
+        good = Mock(ok=True, status_code=200, content=b'mp3')
+        with tempfile.TemporaryDirectory() as d, patch.dict('os.environ', {'ELEVENLABS_API_KEY': 'k'}), \
+             patch.object(el.requests, 'post', side_effect=[bad, good]) as post:
+            el.tts('B', 'v', Path(d) / 'o.mp3', voice_settings={'speed': 0.9})
+            self.assertNotIn('voice_settings', post.call_args.kwargs['json'])
+
 
 ORIG_CHUNKS = el.chunks
 
