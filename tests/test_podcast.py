@@ -102,6 +102,21 @@ class PodcastTests(unittest.TestCase):
         lex = audio.load_lexicon('lexique.yaml')
         self.assertIn('Anthropic', lex)
 
+    def test_auto_send_only_for_morning_run(self):
+        cfg = dict(audio.DEFAULT_AUDIO, envoi_telegram='true')
+        for env, expected in [({'GITHUB_EVENT_NAME': 'push', 'GITHUB_RUN_ATTEMPT': '1'}, True),
+                              ({'GITHUB_EVENT_NAME': 'schedule', 'GITHUB_RUN_ATTEMPT': '1'}, True),
+                              ({'GITHUB_EVENT_NAME': 'workflow_dispatch', 'GITHUB_RUN_ATTEMPT': '1'}, False),
+                              ({'GITHUB_EVENT_NAME': 'push', 'GITHUB_RUN_ATTEMPT': '2'}, False),
+                              ({}, False)]:
+            with self.subTest(env=env), patch.dict('os.environ', env, clear=False):
+                if not env:
+                    import os
+                    os.environ.pop('GITHUB_EVENT_NAME', None)
+                self.assertEqual(audio.auto_send(cfg), expected)
+        with patch.dict('os.environ', {'GITHUB_EVENT_NAME': 'push', 'GITHUB_RUN_ATTEMPT': '1'}):
+            self.assertFalse(audio.auto_send(dict(audio.DEFAULT_AUDIO)))
+
 
 if __name__ == '__main__':
     unittest.main()

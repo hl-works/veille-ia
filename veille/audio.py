@@ -339,6 +339,16 @@ def run(snapshot_path: Path, output: Path, settings, *, send: bool = False,
         metadata_path.write_text(json.dumps(metadata, ensure_ascii=False, indent=2), encoding='utf-8')
 
 
+def auto_send(cfg: dict) -> bool:
+    """Envoi Telegram décidé dans audio.yaml (`envoi_telegram: true`, validé par
+    Hugo), en plus de la variable de dépôt AUDIO_SEND. Seulement pour le run
+    automatique du matin (push du top départ ou cron), jamais pour un lancement
+    manuel (aperçu/test) ni pour une relance d'un run déjà passé."""
+    return (str(cfg.get('envoi_telegram', 'false')).lower() == 'true'
+            and os.environ.get('GITHUB_EVENT_NAME') in ('push', 'schedule')
+            and os.environ.get('GITHUB_RUN_ATTEMPT', '1') == '1')
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description='Audio du brief final, sans nouvelle collecte')
     parser.add_argument('--snapshot', type=Path, default=Path('audio-input/brief.json'))
@@ -349,8 +359,9 @@ def main() -> int:
     logging.basicConfig(level=logging.INFO)
     try:
         from .config import load_settings
-        run(args.snapshot, args.output, load_settings(args.config), send=args.send,
-            cfg=audio_config(args.config))
+        cfg = audio_config(args.config)
+        run(args.snapshot, args.output, load_settings(args.config),
+            send=args.send or auto_send(cfg), cfg=cfg)
         return 0
     except Exception as exc:
         # Exceptions from HTTP clients may contain credential-bearing URLs.
