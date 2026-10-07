@@ -16,9 +16,8 @@ import subprocess
 import tempfile
 from pathlib import Path
 
-import requests
-
 from .elevenlabs_tts import API, ElevenLabsError, ElevenLabsTTS, _key
+from .http_retry import post
 
 # Brief sonore d'Hugo (07/10/2026) : moderne, basse ronde et pleine, rendu hi-fi
 # propre, pas de musique d'ascenseur.
@@ -34,10 +33,10 @@ PIECES = [  # (rôle, durée en secondes, consigne)
 
 
 def compose(prompt: str, seconds: float, dest: Path) -> None:
-    r = requests.post(f'{API}/v1/music', params={'output_format': 'mp3_44100_128'},
-                      headers={'xi-api-key': _key(), 'accept': 'audio/mpeg'},
-                      json={'prompt': prompt, 'music_length_ms': int(max(3, seconds) * 1000),
-                            'force_instrumental': True}, timeout=(10, 300))
+    r = post(f'{API}/v1/music', params={'output_format': 'mp3_44100_128'},
+             headers={'xi-api-key': _key(), 'accept': 'audio/mpeg'},
+             json={'prompt': prompt, 'music_length_ms': int(max(3, seconds) * 1000),
+                   'force_instrumental': True}, timeout=(10, 300))
     if not (r.ok and r.content):
         raise ElevenLabsError(r.status_code, r.text)
     dest.write_bytes(r.content)
