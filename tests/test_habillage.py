@@ -39,6 +39,21 @@ class HabillageTests(unittest.TestCase):
             self.assertIn('401', (Path(d) / 'README.md').read_text())
         self.assertIn('missing_permissions', res[0]['erreur'])
 
+    def test_univers_board_music_only(self):
+        seen = []
+        def fake_compose(prompt, secs, dest):
+            seen.append((prompt, secs))
+            dest.write_bytes(b'mp3')
+        with tempfile.TemporaryDirectory() as d, \
+             patch.object(h, 'compose', side_effect=fake_compose), \
+             patch.object(el.ElevenLabsTTS, 'synthesize', side_effect=AssertionError('pas de voix')):
+            res = h.run({'habillage': {'univers': [{'nom': 'french-touch', 'ambiance': 'filtered disco house'}],
+                                       'duree_s': 15}}, Path(d), {})
+            self.assertTrue((Path(d) / '01-french-touch.mp3').exists())
+        self.assertEqual(seen[0][1], 15.0)
+        self.assertIn('filtered disco house', seen[0][0])
+        self.assertEqual(res[0]['demo'], '01-french-touch.mp3')
+
 
 if __name__ == '__main__':
     unittest.main()

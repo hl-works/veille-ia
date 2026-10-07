@@ -69,8 +69,38 @@ def demo(intro: Path, transition: Path, outro: Path, voix: list[Path], dest: Pat
             '-codec:a', 'libmp3lame', '-b:a', '128k', str(dest))
 
 
+UNIVERS_BRIEF = ('instrumental only, no vocals, round full warm bass, crisp high-fidelity mix, '
+                 'wide stereo, real dynamics, polished modern production')
+
+
+def run_univers(spec: dict, out: Path) -> list[dict]:
+    """Planche d'univers : un extrait musical seul par style (pas de voix), pour
+    qu'Hugo choisisse une direction avant de composer les jingles."""
+    secs = float(spec.get('duree_s', 15))
+    results: list[dict] = []
+    for n, u in enumerate(spec['univers'], 1):
+        nom = u.get('nom') or f'univers-{n}'
+        row = {'style': nom, 'ambiance': u.get('ambiance', '')}
+        f = out / f'{n:02d}-{nom}.mp3'
+        try:
+            compose(f"{u.get('ambiance', '')}. {UNIVERS_BRIEF}.", secs, f)
+            row['demo'] = f.name
+        except (ElevenLabsError, RuntimeError) as exc:
+            row['erreur'] = str(exc)[:300]
+        results.append(row)
+    return results
+
+
 def run(params: dict, out: Path, voice_cfg: dict) -> list[dict]:
     spec = params.get('habillage') or {}
+    if spec.get('univers'):
+        out.mkdir(parents=True, exist_ok=True)
+        results = run_univers(spec, out)
+        lines = ['# Univers sonores — extraits', '', '| # | Univers | Fichier | Erreur |', '|---|---|---|---|']
+        for n, r in enumerate(results, 1):
+            lines.append(f"| {n} | {r['style']} — {r['ambiance']} | {r.get('demo', '')} | {r.get('erreur', '')} |")
+        (out / 'README.md').write_text('\n'.join(lines) + '\n', encoding='utf-8')
+        return results
     styles = spec.get('styles') or []
     phrases = spec.get('voix_texte') or [
         "Bonjour et bienvenue dans votre veille IA du jour.",

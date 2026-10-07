@@ -6,14 +6,11 @@
 #  Envoi Telegram : activé par Hugo le 07/10/2026 (envoi_telegram: true).
 # ═══════════════════════════════════════════════════════════════
 provider: elevenlabs
-modele_elevenlabs: eleven_multilingual_v2   # réglage « C » choisi par Hugo le 07/10
+modele_elevenlabs: eleven_v4   # « v4 03 » choisi par Hugo le 07/10 (moteur Text to Dialogue, solo)
+moteur: dialogue
 voix_femme_elevenlabs: uOw88F5bjqRiVuZLhXEA   # Victoria
 lexique_actif: false
-vitesse: 1.0          # accélération après coup (atempo) : inutile avec la vitesse native
-vitesse_native: 1.17  # débit de la voix (0.7 à 1.2), +6 % demandé par Hugo le 07/10
-vitesse_intro: 1.0    # le « Bonjour » d'ouverture, lu plus posément
-stabilite: 0.5
-similarite: 0.8
+vitesse: 1.0          # v4 n'a pas de réglage de vitesse ; >1.0 = accélération après coup
 seed: 42
 format: solo          # solo | duo (duo : ajouter voix_homme_elevenlabs)
 destination: prive    # prive (MP à Hugo) | canal
