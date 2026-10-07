@@ -1,0 +1,32 @@
+[
+  {
+    "style": "electro-funk",
+    "ambiance": "modern electro-funk / nu-disco groove, slap-style round bass line, bright synth stabs, tight drums",
+    "fichiers": [
+      "01-electro-funk-intro.mp3",
+      "01-electro-funk-transition.mp3",
+      "01-electro-funk-outro.mp3"
+    ],
+    "demo": "01-electro-funk-DEMO.mp3"
+  },
+  {
+    "style": "deep-house",
+    "ambiance": "warm deep house, deep round sub bass, soft chords, smooth hi-hats, classy and minimal",
+    "fichiers": [
+      "02-deep-house-intro.mp3",
+      "02-deep-house-transition.mp3",
+      "02-deep-house-outro.mp3"
+    ],
+    "demo": "02-deep-house-DEMO.mp3"
+  },
+  {
+    "style": "hiphop-jazz",
+    "ambiance": "modern jazzy hip-hop beat, Rhodes keys, round upright-style bass, crisp boom-bap drums, audiophile warmth",
+    "fichiers": [
+      "03-hiphop-jazz-intro.mp3",
+      "03-hiphop-jazz-transition.mp3",
+      "03-hiphop-jazz-outro.mp3"
+    ],
+    "demo": "03-hiphop-jazz-DEMO.mp3"
+  }
+]

@@ -1,0 +1,13 @@
+[
+  {
+    "variante": "duo v4",
+    "format": "duo",
+    "voix_femme_elevenlabs": "uOw88F5bjqRiVuZLhXEA",
+    "voix_homme_elevenlabs": "KWoCipSBiryxnDm4a5gB",
+    "modele_elevenlabs": "eleven_v4",
+    "vitesse": 1.0,
+    "moteur": "dialogue",
+    "seed": "42",
+    "fichier": "01-duo-v4.mp3"
+  }
+]

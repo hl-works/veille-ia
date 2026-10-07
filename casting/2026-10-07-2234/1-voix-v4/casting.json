@@ -1,0 +1,38 @@
+[
+  {
+    "variante": "C actuel",
+    "format": "solo",
+    "voix_femme_elevenlabs": "uOw88F5bjqRiVuZLhXEA",
+    "voix_homme_elevenlabs": "",
+    "modele_elevenlabs": "eleven_multilingual_v2",
+    "vitesse": 1.0,
+    "stabilite": "0.5",
+    "similarite": "0.8",
+    "vitesse_native": "1.17",
+    "vitesse_intro": "1.0",
+    "seed": "42",
+    "fichier": "01-c-actuel.mp3"
+  },
+  {
+    "variante": "v4 solo",
+    "format": "solo",
+    "voix_femme_elevenlabs": "uOw88F5bjqRiVuZLhXEA",
+    "voix_homme_elevenlabs": "",
+    "modele_elevenlabs": "eleven_v4",
+    "vitesse": 1.0,
+    "stabilite": "0.5",
+    "seed": "42",
+    "fichier": "02-v4-solo.mp3"
+  },
+  {
+    "variante": "v4 solo dialogue",
+    "format": "solo",
+    "voix_femme_elevenlabs": "uOw88F5bjqRiVuZLhXEA",
+    "voix_homme_elevenlabs": "",
+    "modele_elevenlabs": "eleven_v4",
+    "vitesse": 1.0,
+    "moteur": "dialogue",
+    "seed": "42",
+    "fichier": "03-v4-solo-dialogue.mp3"
+  }
+]
