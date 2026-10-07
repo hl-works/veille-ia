@@ -1,0 +1,25 @@
+[
+  {
+    "variante": "A v3 long",
+    "format": "solo",
+    "voix_femme_elevenlabs": "uOw88F5bjqRiVuZLhXEA",
+    "modele_elevenlabs": "eleven_v3",
+    "vitesse": 1.17,
+    "seed": "42",
+    "vitesse_intro": "0.9",
+    "fichier": "01-a-v3-long.mp3"
+  },
+  {
+    "variante": "C multilingual v2 long",
+    "format": "solo",
+    "voix_femme_elevenlabs": "uOw88F5bjqRiVuZLhXEA",
+    "modele_elevenlabs": "eleven_multilingual_v2",
+    "vitesse": 1.0,
+    "stabilite": "0.5",
+    "similarite": "0.8",
+    "vitesse_native": "1.17",
+    "vitesse_intro": "1.0",
+    "seed": "42",
+    "fichier": "02-c-multilingual-v2-long.mp3"
+  }
+]
