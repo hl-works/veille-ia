@@ -86,6 +86,58 @@ def tts(text: str, voice_id: str, dest: Path, *, model: str = DEFAULT_MODEL,
     raise ElevenLabsError(400, 'paramètres refusés')
 
 
+DIALOGUE_LIMIT = 1900  # l'API Text to Dialogue recommande ≤ 2000 caractères par requête
+
+
+def dialogue(lines: list[tuple[str, str]], dest: Path, *, model: str = 'eleven_v4',
+             previous_text: str = '', seed: int | None = None, settings: dict | None = None) -> None:
+    """Text to Dialogue (Eleven v4) : plusieurs voix dans UNE génération, avec des
+    enchaînements naturels. lines = [(voice_id, texte), ...]."""
+    body: dict = {'inputs': [{'text': t, 'voice_id': v} for v, t in lines], 'model_id': model,
+                  'language_code': 'fr'}
+    if previous_text:
+        body['previous_text'] = previous_text[-100:]
+    if seed is not None:
+        body['seed'] = int(seed)
+    if settings:
+        body['settings'] = settings
+    for _ in range(5):
+        r = requests.post(f'{API}/v1/text-to-dialogue', params={'output_format': 'mp3_44100_128'},
+                          headers={'xi-api-key': _key(), 'accept': 'audio/mpeg'}, json=body,
+                          timeout=(10, 600))
+        if r.ok and r.content:
+            dest.write_bytes(r.content)
+            return
+        low = r.text.lower()
+        if r.status_code in (400, 422):
+            culprit = next((k for k, h in (('language_code', 'language'), ('previous_text', 'previous'),
+                                            ('seed', 'seed'), ('settings', 'setting'))
+                            if k in body and h in low), None)
+            if culprit:
+                body.pop(culprit)
+                continue
+        raise ElevenLabsError(r.status_code, r.text)
+    raise ElevenLabsError(400, 'paramètres refusés (text-to-dialogue)')
+
+
+def dialogue_groups(lines: list[tuple[str, str]], limit: int = DIALOGUE_LIMIT) -> list[list[tuple[str, str]]]:
+    """Regroupe les répliques en requêtes ≤ limit caractères, sans couper une réplique
+    (une réplique trop longue est découpée par phrases)."""
+    flat: list[tuple[str, str]] = []
+    for v, t in lines:
+        flat += [(v, piece) for piece in (chunks(t, limit) if len(t) > limit else [t])]
+    groups: list[list[tuple[str, str]]] = []
+    size = 0
+    for v, t in flat:
+        if groups and size + len(t) <= limit:
+            groups[-1].append((v, t))
+            size += len(t)
+        else:
+            groups.append([(v, t)])
+            size = len(t)
+    return groups
+
+
 def chunks(text: str, limit: int = CHUNK_LIMIT) -> list[str]:
     """Découpe par paragraphes puis par phrases, sans perdre un mot."""
     out: list[str] = []
@@ -167,6 +219,8 @@ class ElevenLabsTTS:
         parts = segments(script_path.read_text(encoding='utf-8'), self.cfg.get('format', 'solo'))
         if not parts:
             raise RuntimeError('Script sans contenu parlé')
+        if str(self.cfg.get('moteur', '')).lower() == 'dialogue':
+            return self._synthesize_dialogue(parts, output)
         # Un même locuteur = un seul flux de texte (les paragraphes ne sont plus
         # envoyés un par un : c'était la cause des sauts de voix et de débit).
         merged: list[list[str]] = []
@@ -199,6 +253,23 @@ class ElevenLabsTTS:
                     previous_text=pieces[i - 1][1] if i else intro_text,
                     next_text=pieces[i + 1][1] if i + 1 < len(pieces) else '',
                     voice_settings=settings, seed=seed)
+                files.append(dest)
+            concat_mp3(files, output, float(self.cfg.get('vitesse', 1.0) or 1.0))
+
+    def _synthesize_dialogue(self, parts: list[tuple[str, str]], output: Path) -> None:
+        """Moteur Text to Dialogue (Eleven v4) : solo ou duo, par blocs ≤ 1900 car."""
+        lines = [(self._voice(who), text) for who, text in parts]
+        seed = int(self.cfg['seed']) if str(self.cfg.get('seed', '')).strip() else None
+        settings = {k: v for k, v in voice_settings_from(self.cfg).items() if k == 'stability'}
+        output.parent.mkdir(parents=True, exist_ok=True)
+        with tempfile.TemporaryDirectory() as directory:
+            files: list[Path] = []
+            previous = ''
+            for i, group in enumerate(dialogue_groups(lines)):
+                dest = Path(directory) / f'{i:04d}.mp3'
+                dialogue(group, dest, model=self.model, previous_text=previous, seed=seed,
+                         settings=settings or None)
+                previous = group[-1][1]
                 files.append(dest)
             concat_mp3(files, output, float(self.cfg.get('vitesse', 1.0) or 1.0))
 

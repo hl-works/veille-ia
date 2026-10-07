@@ -1,0 +1,16 @@
+ELLE: Bonjour et bienvenue dans votre veille IA du mercredi sept octobre.
+LUI: Et on commence avec une annonce française qui a dominé la tech du jour.
+ELLE: Mistral a dévoilé Mistral Large quatre, surnommé « Le Chonk ». Mille milliards de paramètres, et nativement multimodal.
+LUI: Autrement dit, il comprend le texte et les images. Et Mistral le présente comme le meilleur modèle en poids ouverts d'Amérique ou d'Europe sur les tests agrégés.
+ELLE: Et pourquoi c'est important ?
+LUI: Parce que c'est une option européenne crédible face à OpenAI, Google ou Anthropic. Le modèle est forgé en Europe de bout en bout, et déployable depuis l'Europe via le cloud maison de Mistral.
+ELLE: Pour une entreprise qui veut garder ses données sur le continent, c'est un vrai atout de souveraineté.
+LUI: Concrètement, mille milliards de paramètres au total, mais seulement quarante-neuf milliards actifs à la fois. En gros, le modèle n'active qu'une partie de lui-même pour économiser des ressources.
+ELLE: Il est disponible dès aujourd'hui via API, et l'ouverture complète des poids est prévue pour fin octobre.
+LUI: Et petite anecdote : Simon Willison note avec humour que le modèle sait enfin dessiner son fameux pélican à vélo.
+ELLE: Côté OpenAI, maintenant. L'entreprise a publié une série de nouveaux résultats en mathématiques, produits par un modèle interne de pointe.
+LUI: Selon certains commentateurs, le système aurait aidé à faire progresser plusieurs dizaines de problèmes ouverts réputés difficiles. Sam Altman et Greg Brockman saluent une nouvelle ère de la découverte.
+ELLE: Mais le débat est vif. Gary Marcus se sent conforté : pour lui, ces avancées reposent sur une combinaison d'IA et d'outils de vérification, comme l'assistant de preuve Lean. Ce n'est donc pas une intelligence artificielle générale.
+LUI: Et François Chollet pose la vraie question. Et si les progrès spectaculaires se concentraient surtout en maths et en code, là où l'on peut vérifier automatiquement les réponses ?
+ELLE: Pour une entreprise, le message réaliste, c'est que l'IA devient redoutable là où une réponse est vérifiable. Moins ailleurs.
+LUI: C'était votre veille IA. À demain !
