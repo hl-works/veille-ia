@@ -1,0 +1,37 @@
+Bonjour et bienvenue dans votre veille IA du mercredi sept octobre.
+
+On commence avec une annonce française qui a dominé la tech du jour. Mistral a dévoilé Mistral Large quatre, surnommé « Le Chonk ». C'est un modèle de mille milliards de paramètres, nativement multimodal. Autrement dit, il comprend le texte et les images. Mistral le présente comme le meilleur modèle en poids ouverts d'Amérique ou d'Europe sur les tests agrégés.
+
+Et pourquoi c'est important ? Parce que c'est une option européenne crédible face à OpenAI, Google ou Anthropic. Le modèle est forgé en Europe de bout en bout. Il est déployable depuis l'Europe via le cloud maison de Mistral. Pour une entreprise qui veut héberger ses données sur le continent, c'est un vrai atout de souveraineté.
+
+Concrètement, Mistral revendique mille milliards de paramètres au total, mais seulement quarante-neuf milliards actifs à la fois. En gros, c'est une architecture qui n'active qu'une partie du modèle pour économiser des ressources. L'entreprise met en avant des performances de pointe en cybersécurité, en industrie et en finance. Le modèle est disponible dès aujourd'hui via API. L'ouverture complète des poids est prévue pour fin octobre. Ça permettra aux entreprises de l'installer sur leurs propres serveurs. Et petite anecdote, le développeur Simon Willison note avec humour que le modèle sait enfin dessiner son fameux pélican à vélo.
+
+Côté OpenAI, maintenant. L'entreprise a publié une série de nouveaux résultats en mathématiques, produits par un modèle interne de pointe. Selon certains commentateurs, le système aurait aidé à faire progresser plusieurs dizaines de problèmes ouverts réputés difficiles. Sam Altman et Greg Brockman saluent une nouvelle ère de la découverte.
+
+Mais le débat est vif. OpenAI s'est appuyé sur les recommandations d'un groupe consultatif indépendant pour décider comment publier ces résultats. Ethan Mollick prédit deux révolutions. Toute la littérature scientifique sera relue par l'IA, et les découvertes nouvelles vont s'accélérer. De son côté, le critique Gary Marcus se sent conforté. Pour lui, ces avancées reposent sur une combinaison d'IA et d'outils de vérification symbolique, comme l'assistant de preuve Lean. Ce n'est donc pas une intelligence artificielle générale.
+
+Et François Chollet pose la vraie question. Et si les progrès spectaculaires se concentraient surtout en maths et en code ? Ce sont des domaines où l'on peut vérifier automatiquement les réponses. Pendant ce temps, le reste plafonnerait faute de données humaines. Pour une entreprise, le message réaliste, c'est que l'IA devient redoutable là où une réponse est vérifiable. Moins ailleurs.
+
+Autre info du jour, du côté d'Anthropic. Son assistant Claude fonctionne désormais à l'intérieur de Google Docs, Sheets et Slides. Concrètement, Claude s'installe dans une barre latérale à côté du fichier ouvert. Il lit le contenu et le modifie directement. Et surtout, il vous laisse approuver chaque changement avant qu'il ne s'applique.
+
+Cette approbation manuelle, c'est un garde-fou appréciable pour des usages professionnels sensibles. L'intégration va dans les deux sens. Claude édite vos documents Google, et ces fichiers peuvent aussi s'ouvrir dans Claude. Anthropic élargit par ailleurs son programme pour startups. Au menu, un an de Claude Team, des crédits API et des sessions avec l'équipe. Un ingénieur d'Anthropic rappelle qu'il n'y a pas de secret pour bien dialoguer avec Claude. Il faut lui parler comme à un collègue, en précisant l'objectif et comment vérifier le résultat. Pour une PME, l'intérêt, c'est de rédiger et corriger des documents sans copier-coller.
+
+Côté Google, maintenant. Deux nouveautés. D'abord, Nano Banana deux point un, une mise à jour de son générateur et éditeur d'images. Meilleure qualité, corrections de bugs, et un prix revu à la baisse. C'est disponible dans l'API, AI Studio et l'application Gemini.
+
+Google a aussi présenté EmbeddingGemma deux. C'est son premier modèle ouvert et léger, pensé pour fonctionner directement sur l'appareil. Alors c'est un peu technique. En gros, les embeddings transforment des contenus en coordonnées numériques, pour pouvoir les comparer et les retrouver par le sens. C'est la brique de base des moteurs de recherche internes. L'intérêt ici, c'est qu'il tourne localement, sur un téléphone ou un ordinateur, sans envoyer les données vers le cloud. Un plus pour la confidentialité et le coût. Pour une PME, ça ouvre la voie à des recherches intelligentes dans ses propres fichiers.
+
+Parlons cybersécurité, c'est le grand thème du jour. Plusieurs acteurs convergent autour de la sécurité dopée à l'IA. Anthropic élargit son programme pour les professionnels de la sécurité, avec désormais des tests d'intrusion autorisés. Mistral met en avant son Large quatre en cyberdéfense. Et chez OpenAI, Greg Brockman raconte avoir mis un quart de ses ingénieurs sur la défense.
+
+Le fond commun, c'est que l'IA accélère autant l'attaque que la défense. Et les chiffres font réfléchir. Selon des données partagées par a16z, sur vingt-et-un grands éditeurs, le nombre de vulnérabilités critiques rapportées est passé de moins de cent par mois à plus de six cents depuis le printemps. Autre chiffre marquant. Près de quatre-vingt-sept pour cent des failles exploitées le sont désormais le jour même de leur divulgation. Contre vingt-trois pour cent en deux mille vingt. La fenêtre pour corriger se referme.
+
+La start-up Armadin, fondée par un ancien de Mandiant, lance des essaims d'agents qui cartographient un réseau de l'extérieur. Elle revendique plus de quatre-vingt-dix failles zero-day trouvées chez des grandes entreprises depuis janvier. Brockman, lui, parle d'une usine à défense automatisée. Pour une PME, la sécurité devient un sujet permanent et automatisable. Mais la menace va plus vite. Mettre à jour ses logiciels sans tarder n'a jamais été aussi crucial.
+
+Et on termine avec les agents IA qui sortent de l'écran. Ces IA qui exécutent des tâches de façon autonome gagnent en mobilité. Cursor permet désormais de piloter depuis son iPhone les agents qui travaillent sur son ordinateur. On peut vérifier l'avancement, répondre ou lancer de nouvelles tâches à distance.
+
+Côté Perplexity, l'agent « Computer » enchaîne les démonstrations. Création de fichiers de conception 3D éditables, graphiques financiers interactifs, et même des parties de StarCraft jouées en temps réel entre deux agents. L'idée, c'est un cerveau IA dans le cloud, doté de mains locales qui agissent sur votre machine. Perplexity annonce aussi avoir divisé par deux le prix de son API de modèles de décision.
+
+Garry Tan, de Y Combinator, résume la tendance. On peut déjà confier à des agents presque tout type de travail intellectuel utile, via de simples instructions en texte. Mais Ethan Mollick apporte une nuance. Malgré un milliard d'utilisateurs, les incidents graves liés à l'IA restent étonnamment rares. Pour l'instant. Pour une PME, ces assistants demandent encore supervision et vérification.
+
+Et ça tombe bien, c'est la phrase du jour. Travailler à un niveau d'abstraction élevé a toujours exigé de comprendre les niveaux inférieurs. Les agents de code n'y changent rien. Autrement dit, déléguer à l'IA ne dispense pas de comprendre ce qu'elle fait.
+
+C'était votre veille IA. À très bientôt.
