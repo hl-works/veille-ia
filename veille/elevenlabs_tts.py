@@ -47,11 +47,24 @@ def _get(path: str, params: dict | None = None) -> dict:
     return r.json()
 
 
-def tts(text: str, voice_id: str, dest: Path, *, model: str = DEFAULT_MODEL) -> None:
-    """Une requête de synthèse → un MP3. Réessaie sans language_code si le
-    modèle le refuse."""
-    body = {'text': text, 'model_id': model, 'language_code': 'fr'}
-    for attempt in range(2):
+def tts(text: str, voice_id: str, dest: Path, *, model: str = DEFAULT_MODEL,
+        previous_text: str = '', next_text: str = '', voice_settings: dict | None = None,
+        seed: int | None = None) -> None:
+    """Une requête de synthèse → un MP3.
+    previous_text / next_text : le texte voisin, pour que l'intonation reste
+    continue d'un morceau à l'autre (sinon : sauts de voix ou de débit).
+    Un paramètre refusé par le modèle (400/422) est retiré et la requête rejouée."""
+    body: dict = {'text': text, 'model_id': model, 'language_code': 'fr'}
+    if previous_text:
+        body['previous_text'] = previous_text[-1000:]
+    if next_text:
+        body['next_text'] = next_text[:1000]
+    if voice_settings:
+        body['voice_settings'] = voice_settings
+    if seed is not None:
+        body['seed'] = int(seed)
+    optional = ['language_code', 'previous_text', 'next_text', 'seed', 'voice_settings']
+    for _ in range(len(optional) + 1):
         r = requests.post(f'{API}/v1/text-to-speech/{voice_id}',
                           params={'output_format': 'mp3_44100_128'},
                           headers={'xi-api-key': _key(), 'accept': 'audio/mpeg'},
@@ -59,10 +72,14 @@ def tts(text: str, voice_id: str, dest: Path, *, model: str = DEFAULT_MODEL) -> 
         if r.ok and r.content:
             dest.write_bytes(r.content)
             return
-        if attempt == 0 and r.status_code in (400, 422) and 'language' in r.text.lower():
-            body.pop('language_code', None)
-            continue
+        if r.status_code in (400, 422):
+            low = r.text.lower()
+            culprit = next((k for k in optional if k in body and k.split('_')[0] in low), None)
+            if culprit:
+                body.pop(culprit, None)
+                continue
         raise ElevenLabsError(r.status_code, r.text)
+    raise ElevenLabsError(400, 'paramètres refusés')
 
 
 def chunks(text: str, limit: int = CHUNK_LIMIT) -> list[str]:
@@ -90,18 +107,32 @@ def chunks(text: str, limit: int = CHUNK_LIMIT) -> list[str]:
 
 def concat_mp3(files: list[Path], output: Path, tempo: float = 1.0) -> None:
     """Assemble les morceaux en un MP3. `tempo` > 1 accélère le débit sans
-    changer la hauteur de la voix (filtre atempo, 0.5 à 2.0)."""
+    changer la hauteur de la voix (filtre atempo, 0.5 à 2.0). Le volume est
+    normalisé (loudnorm, -16 LUFS) pour éviter les écarts de niveau."""
     listing = output.parent / f'.{output.stem}-list.txt'
     listing.write_text(''.join(f"file '{f.resolve()}'\n" for f in files), encoding='utf-8')
     tempo = min(2.0, max(0.5, float(tempo or 1.0)))
-    filters = ['-filter:a', f'atempo={tempo:g}'] if abs(tempo - 1.0) > 1e-3 else []
+    chain = ([f'atempo={tempo:g}'] if abs(tempo - 1.0) > 1e-3 else []) + ['loudnorm=I=-16:TP=-1.5:LRA=11']
     try:
         subprocess.run(['ffmpeg', '-nostdin', '-y', '-v', 'error', '-f', 'concat', '-safe', '0',
-                        '-i', str(listing), *filters, '-ac', '1', '-ar', '44100', '-codec:a', 'libmp3lame',
-                        '-b:a', '96k', str(output)], check=True, timeout=300,
+                        '-i', str(listing), '-filter:a', ','.join(chain), '-ac', '1', '-ar', '44100',
+                        '-codec:a', 'libmp3lame', '-b:a', '128k', str(output)], check=True, timeout=300,
                        stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     finally:
         listing.unlink(missing_ok=True)
+
+
+def voice_settings_from(cfg: dict) -> dict:
+    """Réglages de voix lus dans audio.yaml (clés stabilite, similarite, style,
+    vitesse_native). Vide = réglages par défaut de la voix."""
+    mapping = {'stabilite': 'stability', 'similarite': 'similarity_boost',
+               'style': 'style', 'vitesse_native': 'speed'}
+    out = {}
+    for fr, en in mapping.items():
+        v = cfg.get(fr)
+        if v not in (None, ''):
+            out[en] = float(v)
+    return out
 
 
 class ElevenLabsTTS:
@@ -123,14 +154,27 @@ class ElevenLabsTTS:
         parts = segments(script_path.read_text(encoding='utf-8'), self.cfg.get('format', 'solo'))
         if not parts:
             raise RuntimeError('Script sans contenu parlé')
+        # Un même locuteur = un seul flux de texte (les paragraphes ne sont plus
+        # envoyés un par un : c'était la cause des sauts de voix et de débit).
+        merged: list[list[str]] = []
+        for who, text in parts:
+            if merged and merged[-1][0] == who:
+                merged[-1][1] += '\n\n' + text
+            else:
+                merged.append([who, text])
+        pieces = [(who, piece) for who, text in merged for piece in chunks(text)]
+        settings = voice_settings_from(self.cfg)
+        seed = int(self.cfg['seed']) if str(self.cfg.get('seed', '')).strip() else None
         output.parent.mkdir(parents=True, exist_ok=True)
         with tempfile.TemporaryDirectory() as directory:
             files: list[Path] = []
-            for who, text in parts:
-                for piece in chunks(text):
-                    dest = Path(directory) / f'{len(files):04d}.mp3'
-                    tts(piece, self._voice(who), dest, model=self.model)
-                    files.append(dest)
+            for i, (who, piece) in enumerate(pieces):
+                dest = Path(directory) / f'{i:04d}.mp3'
+                tts(piece, self._voice(who), dest, model=self.model,
+                    previous_text=pieces[i - 1][1] if i else '',
+                    next_text=pieces[i + 1][1] if i + 1 < len(pieces) else '',
+                    voice_settings=settings, seed=seed)
+                files.append(dest)
             concat_mp3(files, output, float(self.cfg.get('vitesse', 1.0) or 1.0))
 
 

@@ -9,7 +9,7 @@ provider: elevenlabs
 modele_elevenlabs: eleven_v3
 voix_femme_elevenlabs: uOw88F5bjqRiVuZLhXEA   # Victoria
 lexique_actif: false
-vitesse: 1.1          # 1.0 = débit d'origine ; 1.1 à 1.2 = plus rapide
+vitesse: 1.17         # +6 % vs 1.1 (demande Hugo 07/10) ; 1.0 = débit d'origine
 format: solo          # solo | duo (duo : ajouter voix_homme_elevenlabs)
 destination: prive    # prive (MP à Hugo) | canal
 envoi_telegram: true  # false = MP3 seulement sur la branche ecoute

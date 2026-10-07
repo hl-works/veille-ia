@@ -1,0 +1,11 @@
+Bonjour et bienvenue dans votre veille IA du mercredi sept octobre.
+
+On commence avec une annonce française qui a dominé la tech du jour. Mistral a dévoilé Mistral Large quatre, surnommé « Le Chonk ». C'est un modèle de mille milliards de paramètres, nativement multimodal. Autrement dit, il comprend le texte et les images. Mistral le présente comme le meilleur modèle en poids ouverts d'Amérique ou d'Europe sur les tests agrégés.
+
+Et pourquoi c'est important ? Parce que c'est une option européenne crédible face à OpenAI, Google ou Anthropic. Le modèle est forgé en Europe de bout en bout. Il est déployable depuis l'Europe via le cloud maison de Mistral. Pour une entreprise qui veut héberger ses données sur le continent, c'est un vrai atout de souveraineté.
+
+Concrètement, Mistral revendique mille milliards de paramètres au total, mais seulement quarante-neuf milliards actifs à la fois. En gros, c'est une architecture qui n'active qu'une partie du modèle pour économiser des ressources. L'entreprise met en avant des performances de pointe en cybersécurité, en industrie et en finance. Le modèle est disponible dès aujourd'hui via API. L'ouverture complète des poids est prévue pour fin octobre. Ça permettra aux entreprises de l'installer sur leurs propres serveurs. Et petite anecdote, le développeur Simon Willison note avec humour que le modèle sait enfin dessiner son fameux pélican à vélo.
+
+Côté OpenAI, maintenant. L'entreprise a publié une série de nouveaux résultats en mathématiques, produits par un modèle interne de pointe. Selon certains commentateurs, le système aurait aidé à faire progresser plusieurs dizaines de problèmes ouverts réputés difficiles. Sam Altman et Greg Brockman saluent une nouvelle ère de la découverte.
+
+Mais le débat est vif. OpenAI s'est appuyé sur les recommandations d'un groupe consultatif indépendant pour décider comment publier ces résultats. Ethan Mollick prédit deux révolutions. Toute la littérature scientifique sera relue par l'IA, et les découvertes nouvelles vont s'accélérer. De son côté, le critique Gary Marcus se sent conforté. Pour lui, ces avancées reposent sur une combinaison d'IA et d'outils de vérification symbolique, comme l'assistant de preuve Lean. Ce n'est donc pas une intelligence artificielle générale.
