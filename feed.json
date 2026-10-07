@@ -13712,5 +13712,144 @@
     "tweet_url": "https://x.com/venturetwins/status/2107311661430493193",
     "media": true,
     "auteur_x": "@venturetwins"
+  },
+  {
+    "date": "2026-10-06",
+    "titre_fr": "OpenAI dévoile des résultats mathématiques inédits produits par un modèle interne",
+    "resume_fr": "OpenAI publie une série de nouveaux résultats en mathématiques générés par un modèle de pointe interne, en s'appuyant sur les conseils d'un groupe consultatif de l'Institute for Advanced Study. Le système combine LLM et vérification symbolique (type Lean), ce qui alimente le débat sur la portée réelle de ces avancées.",
+    "tags": [
+      "openai",
+      "modeles",
+      "recherche"
+    ],
+    "score": 72,
+    "tweet_url": "https://x.com/OpenAI/status/2107596713791767021",
+    "media": false,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-10-06",
+    "titre_fr": "Mistral lance Large 4, un modèle d'1 000 milliards de paramètres",
+    "resume_fr": "Mistral présente Large 4 (« Le Chonk »), un modèle multimodal de 1 000 milliards de paramètres (49 Md actifs), présenté comme le meilleur modèle open weights occidental sur benchmarks agrégés. Il vise des usages critiques comme la cyberdéfense, l'industrie et la finance. Disponible via API, avec publication des poids prévue fin octobre.",
+    "tags": [
+      "mistral",
+      "modeles",
+      "open-source"
+    ],
+    "score": 78,
+    "tweet_url": "https://x.com/MistralAI/status/2107457414387622310",
+    "media": true,
+    "auteur_x": "@MistralAI"
+  },
+  {
+    "date": "2026-10-06",
+    "titre_fr": "Google met à jour Nano Banana 2.1 pour la génération d'images",
+    "resume_fr": "Google déploie Nano Banana 2.1, une mise à jour de son modèle de génération et d'édition d'images, avec une meilleure qualité et un prix plus bas. Disponible dans l'API, AI Studio et l'app Gemini.",
+    "tags": [
+      "google",
+      "produit",
+      "modeles",
+      "marketing"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/OfficialLoganK/status/2107533224453058731",
+    "media": true,
+    "auteur_x": "@OfficialLoganK"
+  },
+  {
+    "date": "2026-10-06",
+    "titre_fr": "Claude s'intègre à Google Docs, Sheets et Slides",
+    "resume_fr": "Anthropic intègre Claude directement dans Google Workspace : l'assistant s'affiche dans une barre latérale, lit le fichier ouvert et le modifie sur place, avec validation de chaque changement avant application.",
+    "tags": [
+      "anthropic",
+      "produit",
+      "automatisation"
+    ],
+    "score": 70,
+    "tweet_url": "https://x.com/claudeai/status/2107522596845822135",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-10-06",
+    "titre_fr": "Google DeepMind sort EmbeddingGemma 2, modèle d'embeddings multimodal sur appareil",
+    "resume_fr": "Google DeepMind présente EmbeddingGemma 2, son premier modèle ouvert d'embeddings nativement multimodal pour l'exécution locale. Il unifie texte, code, images, audio et vidéo dans un espace commun.",
+    "tags": [
+      "google",
+      "open-source",
+      "modeles"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2107502286758895878",
+    "media": true,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-10-06",
+    "titre_fr": "Cursor permet de piloter ses agents depuis le téléphone",
+    "resume_fr": "Cursor ajoute à son app iOS la possibilité de contrôler les agents tournant sur l'ordinateur : suivre leur avancée, répondre ou lancer de nouvelles tâches à distance.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/cursor_ai/status/2107618653701296162",
+    "media": true,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-10-06",
+    "titre_fr": "Anthropic élargit son programme de vérification cyber pour Claude",
+    "resume_fr": "Anthropic ouvre un accès plus large à ses modèles les plus capables (Claude Mythos 5.1, Opus 5.5, Sonnet 5.5) pour les professionnels de la sécurité vérifiés, avec de nouveaux paliers autorisant le travail offensif comme les tests d'intrusion et le red-teaming.",
+    "tags": [
+      "anthropic",
+      "produit"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/AnthropicAI/status/2107546569654636883",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-10-06",
+    "titre_fr": "Perplexity revendique le meilleur modèle de décision, en open weights",
+    "resume_fr": "Perplexity affirme se placer en tête du Hugging Face Decision Index avec son modèle de décision, qu'elle présente comme ouvert et accessible à tous. Son API de décision voit aussi son prix divisé par deux.",
+    "tags": [
+      "produit",
+      "modeles",
+      "open-source"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/AravSrinivas/status/2107522748167954442",
+    "media": false,
+    "auteur_x": "@AravSrinivas"
+  },
+  {
+    "date": "2026-10-06",
+    "titre_fr": "Anthropic étend son programme Claude Startups",
+    "resume_fr": "Anthropic élargit à davantage de fondateurs son programme pour startups : un an de Claude Team, crédits API, offres sur des outils et sessions avec son équipe Applied AI.",
+    "tags": [
+      "anthropic",
+      "produit",
+      "saas"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/claudeai/status/2107513494493179954",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-10-06",
+    "titre_fr": "Sierra présente un protocole pour agents personnels",
+    "resume_fr": "Sierra dévoile le Personal Agent Protocol, destiné à définir comment les entreprises communiqueront avec les agents personnels de leurs clients.",
+    "tags": [
+      "agents",
+      "produit",
+      "service-client"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/saranormous/status/2107541614570967477",
+    "media": false,
+    "auteur_x": "@saranormous"
   }
 ]
