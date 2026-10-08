@@ -13851,5 +13851,156 @@
     "tweet_url": "https://x.com/saranormous/status/2107541614570967477",
     "media": false,
     "auteur_x": "@saranormous"
+  },
+  {
+    "date": "2026-10-07",
+    "titre_fr": "OpenAI lance GPT-6 et l'« Intelligent UI » dans ChatGPT",
+    "resume_fr": "OpenAI déploie GPT-6 ainsi qu'une nouvelle capacité baptisée Intelligent UI : au lieu de longs blocs de texte, ChatGPT peut générer à la volée des interfaces interactives et visuelles adaptées à la question posée. La fonctionnalité est en cours de déploiement pour tous les utilisateurs.",
+    "tags": [
+      "openai",
+      "modeles",
+      "produit"
+    ],
+    "score": 92,
+    "tweet_url": "https://x.com/OpenAI/status/2107894997538525580",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-10-07",
+    "titre_fr": "Anthropic sort Claude Haiku 5.5, son petit modèle le plus rapide et économique",
+    "resume_fr": "Anthropic lance Claude Haiku 5.5, présenté comme son modèle compact le plus performant à ce jour. Il coûterait environ 75 % de moins que Haiku 4.5 (jusqu'à 10x moins cher sous 100k tokens) et est déjà disponible dans Cursor, l'API et d'autres outils.",
+    "tags": [
+      "anthropic",
+      "modeles",
+      "produit"
+    ],
+    "score": 85,
+    "tweet_url": "https://x.com/claudeai/status/2107894039626277339",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-10-07",
+    "titre_fr": "Mistral présente Mistral Large 4",
+    "resume_fr": "Mistral annonce Mistral Large 4, un modèle destiné à faire tourner des agents polyvalents capables de collecter des informations et de produire des livrables finis sur des workflows complexes.",
+    "tags": [
+      "mistral",
+      "modeles",
+      "agents"
+    ],
+    "score": 80,
+    "tweet_url": "https://x.com/MistralAI/status/2107834891844899292",
+    "media": true,
+    "auteur_x": "@MistralAI"
+  },
+  {
+    "date": "2026-10-07",
+    "titre_fr": "Google ouvre SynthID Detector à tout le monde",
+    "resume_fr": "Google DeepMind rend son outil SynthID Detector accessible à tous : il permet de vérifier si une image, une vidéo ou un fichier audio porte un filigrane SynthID, y compris pour des contenus générés par des partenaires comme OpenAI, Nvidia, Kakao et bientôt Apple.",
+    "tags": [
+      "google",
+      "produit",
+      "recherche"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2107834249680499136",
+    "media": true,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-10-07",
+    "titre_fr": "OpenAI dévoile ChatGPT pour les ados",
+    "resume_fr": "OpenAI présente une expérience ChatGPT dédiée aux moins de 18 ans, activée automatiquement avec des protections par défaut, accompagnée d'un aperçu d'un « College Planner » pour organiser les démarches d'admission à l'université aux États-Unis.",
+    "tags": [
+      "openai",
+      "produit",
+      "politique-ia"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/OpenAI/status/2107909792945832070",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-10-07",
+    "titre_fr": "Perplexity publie en open-source ses modèles d'embeddings multimodaux",
+    "resume_fr": "Perplexity met à disposition sur Hugging Face pplx-embed-v2-late, deux modèles d'embeddings (9B et 0,6B) qui indexent texte, images et pages dans un espace partagé. Ils permettent notamment la recherche sur des pages PDF sans OCR et peuvent tourner sur appareil.",
+    "tags": [
+      "produit",
+      "open-source",
+      "recherche"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/perplexity_ai/status/2107866029745746177",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-10-07",
+    "titre_fr": "LlamaIndex lance OpenDocRouter pour le parsing de documents",
+    "resume_fr": "OpenDocRouter propose une API unifiée pour transcrire des documents en markdown via de nombreux modèles frontière et open-weight, facturés « à prix coûtant ». L'outil gère les limites de débit, le benchmarking des modèles et offre des options comme les bounding boxes.",
+    "tags": [
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/jerryjliu0/status/2107864677611139096",
+    "media": true,
+    "auteur_x": "@jerryjliu0"
+  },
+  {
+    "date": "2026-10-07",
+    "titre_fr": "OpenAI publie une vague de preuves mathématiques générées par IA",
+    "resume_fr": "OpenAI a diffusé des centaines de preuves mathématiques résolues par un modèle, certaines via des approches jugées « inhumaines » par les mathématiciens. L'événement suscite débat : Terence Tao et Gary Marcus pointent le manque de détails méthodologiques et d'informations sur le taux d'échec.",
+    "tags": [
+      "openai",
+      "recherche"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/emollick/status/2107964764316209326",
+    "media": true,
+    "auteur_x": "@emollick"
+  },
+  {
+    "date": "2026-10-07",
+    "titre_fr": "Google DeepMind s'associe à la CZI pour la biologie",
+    "resume_fr": "Demis Hassabis annonce un partenariat avec la Chan Zuckerberg Initiative et la Virtual Biology Initiative pour appliquer l'IA à la médecine et à la santé humaine.",
+    "tags": [
+      "google",
+      "recherche"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/demishassabis/status/2107861788301607261",
+    "media": false,
+    "auteur_x": "@demishassabis"
+  },
+  {
+    "date": "2026-10-07",
+    "titre_fr": "Replit prépare une application desktop sécurisée avec Microsoft et Nvidia",
+    "resume_fr": "Replit annonce travailler sur une expérience desktop axée sur la sécurité et la fiabilité des agents IA, en partenariat avec Microsoft et en tant qu'early adopter de l'OpenShell de Nvidia.",
+    "tags": [
+      "produit",
+      "agents",
+      "hardware"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/amasad/status/2107926712277438503",
+    "media": false,
+    "auteur_x": "@amasad"
+  },
+  {
+    "date": "2026-10-08",
+    "titre_fr": "Grok ajoute une recherche d'images et de mèmes sur X",
+    "resume_fr": "La nouvelle fonction « X scan » de Grok permet de retrouver l'origine d'un mème, les tweets les plus viraux ou des catégories de posts à partir d'une image ou d'une capture de vidéo.",
+    "tags": [
+      "xai",
+      "produit"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/venturetwins/status/2108041438831530477",
+    "media": true,
+    "auteur_x": "@venturetwins"
   }
 ]
