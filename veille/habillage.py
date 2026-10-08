@@ -175,9 +175,23 @@ def _trimmed(src: Path, out: Path, *, keep: float, fade: float = 0.0, volume: fl
 
 
 def assemble(voices: list[Path], pieces: dict[str, Path], dest: Path, *, xfade: float = 0.25) -> None:
-    """intro → voix → transition → voix … → outro, sans blanc (fondu croisé court)."""
+    """intro → voix → transition → voix … → outro, sans blanc (fondu croisé court).
+    Si le mixage échoue, les voix sont simplement enchaînées (podcast sans musique)."""
     if not voices:
         raise ValueError('Aucune voix à habiller')
+    try:
+        _assemble(voices, pieces, dest, xfade)
+    except (subprocess.SubprocessError, OSError, KeyError):
+        args: list[str] = []
+        for f in voices:
+            args += ['-i', str(f)]
+        graph = ''.join(f'[{i}:a]' for i in range(len(voices))) + \
+            f'concat=n={len(voices)}:v=0:a=1,loudnorm=I=-16:TP=-1.5:LRA=11[out]'
+        _ffmpeg(*args, '-filter_complex', graph, '-map', '[out]', '-ar', '44100', '-ac', '2',
+                '-codec:a', 'libmp3lame', '-b:a', '160k', str(dest))
+
+
+def _assemble(voices: list[Path], pieces: dict[str, Path], dest: Path, xfade: float) -> None:
     with tempfile.TemporaryDirectory() as tmp:
         t = Path(tmp)
         intro = _trimmed(pieces['intro'], t / 'intro.wav', keep=0.02, fade=0.15, volume=0.6)

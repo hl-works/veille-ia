@@ -101,6 +101,20 @@ class HabillageTests(unittest.TestCase):
                                              '-of', 'csv=p=0', str(out)], capture_output=True, text=True).stdout)
             self.assertLess(duration, 9.5)  # 2+2+1+2+2 = 9 s de son, blancs de 7 s supprimés
 
+    def test_assemble_falls_back_to_voices_only(self):
+        import shutil, subprocess
+        if not shutil.which('ffmpeg'):
+            self.skipTest('ffmpeg absent')
+        from veille import habillage
+        with tempfile.TemporaryDirectory() as directory:
+            d = Path(directory)
+            voice = d / 'v.mp3'
+            subprocess.run(['ffmpeg', '-nostdin', '-y', '-v', 'error', '-f', 'lavfi', '-i',
+                            'sine=frequency=440:duration=1', str(voice)], check=True)
+            out = d / 'out.mp3'
+            habillage.assemble([voice, voice], {'intro': d / 'absent.mp3'}, out)
+            self.assertGreater(out.stat().st_size, 1000)
+
 
 if __name__ == '__main__':
     unittest.main()
