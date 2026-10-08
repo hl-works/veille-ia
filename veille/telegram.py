@@ -202,7 +202,8 @@ def _retry_delay(attempt: int) -> int:
     return 2 ** attempt
 
 
-def send_audio(path, *, day: str, duration: int, bot_token: str, chat_id: str) -> None:
+def send_audio(path, *, day: str, duration: int, bot_token: str, chat_id: str,
+               title_prefix: str = 'Brief IA', caption_suffix: str = '') -> None:
     """Native Telegram music player. Never retry an ambiguous upload timeout."""
     from pathlib import Path
     from datetime import date
@@ -213,8 +214,10 @@ def send_audio(path, *, day: str, duration: int, bot_token: str, chat_id: str) -
     months = ('janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet',
               'août', 'septembre', 'octobre', 'novembre', 'décembre')
     date_value = date.fromisoformat(day)
-    title = f'Brief IA — {date_value.day} {months[date_value.month - 1]}'
+    title = f'{title_prefix} — {date_value.day} {months[date_value.month - 1]}'
     caption = f'🎧 {title} · {duration // 60} min {duration % 60:02d}'
+    if caption_suffix:
+        caption += f' — {caption_suffix}'
     with path.open('rb') as audio:
         try:
             response = requests.post(

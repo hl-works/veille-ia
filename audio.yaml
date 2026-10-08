@@ -15,3 +15,5 @@ seed: 42
 format: solo          # solo | duo (duo : ajouter voix_homme_elevenlabs)
 destination: prive    # prive (MP à Hugo) | canal
 envoi_telegram: true  # false = MP3 seulement sur la branche ecoute
+version_courte: true  # « l'essentiel » 1–2 min, envoyé avant la version complète (08/10)
+habillage: ecoute:casting/2026-10-08-0911/02-city-pop-A2  # jingles city pop A2 choisis par Hugo le 08/10
