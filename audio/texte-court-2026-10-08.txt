@@ -1,0 +1,15 @@
+Bonjour et bienvenue dans l'essentiel de votre veille IA du huit octobre.
+
+On commence avec Anthropic, qui lance Claude Haiku cinq point cinq, son petit modèle le moins cher à ce jour. Environ soixante-quinze pour cent moins cher que la version précédente. Pour une PME, ça rend abordable l'automatisation de tâches de masse : classer des factures, extraire des données.
+
+Côté OpenAI, GPT six arrive pour tous dans ChatGPT, avec Intelligent UI. Au lieu d'un mur de texte, l'assistant fabrique à la volée un petit outil visuel adapté à votre question. Un comparateur, un planning, un devis.
+
+OpenAI publie aussi des centaines de preuves mathématiques résolues par une IA. Une avancée réelle, mais Gary Marcus et Terence Tao appellent à plus de transparence.
+
+En bref, Mistral présente Mistral Large quatre, Perplexity ouvre des modèles d'embeddings multimodaux, et Google ouvre SynthID Detector à tous, pour repérer les contenus générés par IA.
+
+Côté rivalité, Meta et Microsoft réduiraient l'usage de Claude par leurs employés. La leçon pour une PME : ne pas dépendre d'un seul fournisseur.
+
+Et enfin, OpenAI détaille ChatGPT for Teens, avec des protections activées par défaut pour les moins de dix-huit ans.
+
+C'était l'essentiel de votre veille IA. La version complète vous attend juste à côté. À très bientôt.
