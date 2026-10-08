@@ -1,0 +1,22 @@
+[
+  {
+    "style": "city-pop-A1",
+    "ambiance": "80s Japanese city pop instrumental, funky slap bass, Rhodes and bright brass hits, clean chorus guitar, glossy and sunny",
+    "fichiers": [
+      "01-city-pop-A1-intro.mp3",
+      "01-city-pop-A1-transition.mp3",
+      "01-city-pop-A1-outro.mp3"
+    ],
+    "demo": "01-city-pop-A1-DEMO.mp3"
+  },
+  {
+    "style": "city-pop-A2",
+    "ambiance": "80s Japanese city pop instrumental, funky slap bass, Rhodes and bright brass hits, clean chorus guitar, glossy and sunny, tight and elegant",
+    "fichiers": [
+      "02-city-pop-A2-intro.mp3",
+      "02-city-pop-A2-transition.mp3",
+      "02-city-pop-A2-outro.mp3"
+    ],
+    "demo": "02-city-pop-A2-DEMO.mp3"
+  }
+]
