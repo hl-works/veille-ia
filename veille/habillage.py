@@ -136,3 +136,65 @@ def run(params: dict, out: Path, voice_cfg: dict) -> list[dict]:
     (out / 'README.md').write_text('\n'.join(lines) + '\n', encoding='utf-8')
     (out / 'habillage.json').write_text(json.dumps(results, ensure_ascii=False, indent=2), encoding='utf-8')
     return results
+
+
+# ── Habillage du podcast quotidien ──────────────────────────────────────────
+# Jingles choisis par Hugo (08/10/2026 : city pop A2), stockés sur la branche
+# `ecoute`. Réglage audio.yaml : `habillage: ecoute:<chemin>/<préfixe>` où
+# <préfixe>-intro.mp3, -transition.mp3 et -outro.mp3 existent.
+ROLES = ('intro', 'transition', 'outro')
+_TRIM = 'silenceremove=start_periods=1:start_threshold=-45dB:start_silence={keep}'
+
+
+def fetch_pieces(ref: str, dest: Path) -> dict[str, Path]:
+    branch, _, prefix = ref.partition(':')
+    if not (branch and prefix) or '..' in prefix:
+        raise ValueError('Référence d’habillage invalide')
+    subprocess.run(['git', 'fetch', '-q', '--depth', '1', 'origin', branch], check=True,
+                   timeout=180, capture_output=True)
+    dest.mkdir(parents=True, exist_ok=True)
+    pieces: dict[str, Path] = {}
+    for role in ROLES:
+        data = subprocess.run(['git', 'show', f'FETCH_HEAD:{prefix}-{role}.mp3'], check=True,
+                              timeout=60, capture_output=True).stdout
+        if len(data) < 1000:
+            raise RuntimeError(f'Jingle {role} vide')
+        pieces[role] = dest / f'{role}.mp3'
+        pieces[role].write_bytes(data)
+    return pieces
+
+
+def _trimmed(src: Path, out: Path, *, keep: float, fade: float = 0.0, volume: float = 1.0) -> Path:
+    """Coupe les blancs de début et de fin (la musique s'arrête → la voix démarre)."""
+    trim = _TRIM.format(keep=keep)
+    chain = f'aformat=sample_rates=44100:channel_layouts=stereo,{trim},areverse,{trim}'
+    chain += f',afade=t=in:d={fade}' if fade else ''
+    chain += f',areverse,volume={volume}'
+    _ffmpeg('-i', str(src), '-af', chain, str(out))
+    return out
+
+
+def assemble(voices: list[Path], pieces: dict[str, Path], dest: Path, *, xfade: float = 0.25) -> None:
+    """intro → voix → transition → voix … → outro, sans blanc (fondu croisé court)."""
+    if not voices:
+        raise ValueError('Aucune voix à habiller')
+    with tempfile.TemporaryDirectory() as tmp:
+        t = Path(tmp)
+        intro = _trimmed(pieces['intro'], t / 'intro.wav', keep=0.02, fade=0.15, volume=0.6)
+        trans = _trimmed(pieces['transition'], t / 'trans.wav', keep=0.02, fade=0.15, volume=0.6)
+        outro = _trimmed(pieces['outro'], t / 'outro.wav', keep=0.02, fade=1.0, volume=0.6)
+        seq = [intro]
+        for i, voice in enumerate(voices):
+            seq.append(_trimmed(voice, t / f'v{i:02d}.wav', keep=0.08))
+            seq.append(trans if i + 1 < len(voices) else outro)
+        args: list[str] = []
+        for f in seq:
+            args += ['-i', str(f)]
+        chain, last = [], '[0:a]'
+        for i in range(1, len(seq)):
+            chain.append(f'{last}[{i}:a]acrossfade=d={xfade}:c1=tri:c2=tri[x{i}]')
+            last = f'[x{i}]'
+        chain.append(f'{last}loudnorm=I=-16:TP=-1.5:LRA=11[out]')
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        _ffmpeg(*args, '-filter_complex', ';'.join(chain), '-map', '[out]', '-ar', '44100',
+                '-ac', '2', '-codec:a', 'libmp3lame', '-b:a', '160k', str(dest))

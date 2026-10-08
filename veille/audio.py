@@ -77,6 +77,11 @@ Couvre les sujets retenus, du plus important au moins important, sans répéter.
 - Annonce ce qui compte avant le détail : d'abord le fait, puis pourquoi ça compte.
 - Rythme rapide : pas de remplissage, pas de récapitulatif final des sujets.
 
+HABILLAGE : entre deux grands sujets (changement d'acteur ou de thème majeur),
+insère une ligne contenant uniquement « --- » (un jingle y sera joué). Jamais
+avant le premier sujet ni après le dernier ; six au maximum. Le « Bonjour… »
+d'ouverture est un paragraphe à part.
+
 PRONONCIATION : écris les noms de marques normalement (un lexique les convertit),
 mais les nombres et versions en toutes lettres (« GPT cinq point six »).
 Ne lis pas les URL, emojis ou balises. Texte brut uniquement.
@@ -90,12 +95,22 @@ FORMAT SOLO : une seule voix, féminine, neutre et posée. Pas de prénom, pas d
 « je suis votre présentatrice ». Paragraphes séparés par une ligne vide.
 """
 
+COURT_PROMPT = _SCRIPT_RULES + """
+VERSION COURTE « L'ESSENTIEL » : une seule voix, féminine, 180 à 260 mots au total
+(une à deux minutes). Ouvre par « Bonjour et bienvenue dans l'essentiel de votre
+veille IA du » suivi de la date en toutes lettres. Une à trois phrases par sujet,
+les plus importants d'abord ; les sujets secondaires peuvent être regroupés en une
+phrase « En bref… ». Trois lignes « --- » au maximum. Conclus exactement par
+« C'était l'essentiel de votre veille IA. La version complète vous attend juste en
+dessous. À très bientôt. » Paragraphes séparés par une ligne vide.
+"""
+
 DUO_PROMPT = _SCRIPT_RULES + """
 FORMAT DUO : deux animateurs, une femme et un homme, sans prénoms. Dialogue
 naturel mais informatif : chacun apporte de l'information, pas de « oui tout à
 fait » ni de relances creuses. Répliques de une à quatre phrases.
 Chaque réplique sur sa propre ligne, préfixée EXACTEMENT par « ELLE: » ou
-« LUI: ». Aucune autre ligne. C'est ELLE qui ouvre et qui conclut.
+« LUI: ». Aucune autre ligne, sauf les lignes « --- ». C'est ELLE qui ouvre et qui conclut.
 """
 
 # Voix par défaut (moteur « edge », voix neuronales Microsoft, gratuites).
@@ -139,12 +154,13 @@ def audio_config(config_path: str = 'config.yaml') -> dict:
     return cfg
 
 
-def build_script(snapshot: dict, settings, fmt: str = 'solo') -> str:
+def build_script(snapshot: dict, settings, fmt: str = 'solo', version: str = 'longue') -> str:
+    system = COURT_PROMPT if version == 'courte' else DUO_PROMPT if fmt == 'duo' else SCRIPT_PROMPT
     with anthropic.Anthropic(api_key=settings.anthropic_api_key,
                              timeout=120, max_retries=0) as client:
         response = client.messages.create(
             model=settings.model, max_tokens=10000,
-            system=DUO_PROMPT if fmt == 'duo' else SCRIPT_PROMPT,
+            system=system,
             messages=[{'role': 'user', 'content': json.dumps(
                 {'date': snapshot['date'], 'brief': snapshot['text']}, ensure_ascii=False)}])
     if response.stop_reason != 'end_turn':
@@ -153,6 +169,42 @@ def build_script(snapshot: dict, settings, fmt: str = 'solo') -> str:
     if not script:
         raise RuntimeError('Script vide')
     return script
+
+
+_MARK = re.compile(r'^[ \t]*-{3,}[ \t]*$', re.M)
+
+
+def split_sections(script: str) -> list[str]:
+    """Sections séparées par les lignes « --- » (emplacements des jingles)."""
+    return [part.strip() for part in _MARK.split(script) if part.strip()]
+
+
+def clean_script(script: str) -> str:
+    """Script sans les marqueurs d'habillage (transcription lisible)."""
+    return '\n\n'.join(split_sections(script))
+
+
+def render(script: str, provider, output: Path, pieces: dict | None) -> None:
+    """Voix (+ habillage si `pieces`) : une synthèse par section, jingle entre deux."""
+    import tempfile
+    sections = split_sections(script)
+    if not sections:
+        raise RuntimeError('Script sans contenu parlé')
+    if not pieces:
+        with tempfile.TemporaryDirectory() as directory:
+            plain = Path(directory) / 'script.txt'
+            plain.write_text('\n\n'.join(sections), encoding='utf-8')
+            provider.synthesize(plain, output)
+        return
+    from .habillage import assemble
+    with tempfile.TemporaryDirectory() as directory:
+        voices = []
+        for i, text in enumerate(sections):
+            src, dest = Path(directory) / f's{i:02d}.txt', Path(directory) / f's{i:02d}.mp3'
+            src.write_text(text, encoding='utf-8')
+            provider.synthesize(src, dest)
+            voices.append(dest)
+        assemble(voices, pieces, output)
 
 
 def segments(script: str, fmt: str) -> list[tuple[str, str]]:
@@ -285,16 +337,20 @@ def duration_seconds(path: Path) -> int:
     return max(1, round(duration))
 
 
-def write_archive(snapshot: dict, script: str, output: Path, seconds: int) -> None:
+def write_archive(snapshot: dict, script: str, output: Path, seconds: int,
+                  court_seconds: int = 0) -> None:
     # Escape ALL editorial content; never render model-produced HTML as trusted markup.
     links = ''.join(f'<li><a href="{html.escape(u, quote=True)}">{html.escape(u)}</a></li>'
                     for u in snapshot['sources'] if u.startswith(('https://', 'http://')))
+    court = (f'<h2>L\'essentiel</h2><p>{court_seconds // 60} min {court_seconds % 60:02d}</p>'
+             '<audio controls src="court.mp3"></audio>' if court_seconds else '')
     page = f'''<!doctype html><html lang="fr"><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Brief IA — {html.escape(snapshot['date'])}</title>
 <style>body{{max-width:760px;margin:40px auto;padding:0 20px;font:18px/1.6 system-ui}}
 pre{{white-space:pre-wrap;font:inherit}}audio{{width:100%}}</style>
 <h1>Brief IA — {html.escape(snapshot['date'])}</h1>
+{court}<h2>Version complète</h2>
 <p>{seconds // 60} min {seconds % 60:02d}</p><audio controls src="brief.mp3"></audio>
 <h2>Brief écrit</h2><pre>{html.escape(snapshot['text'])}</pre>
 <h2>Sources</h2><ul>{links}</ul>
@@ -302,39 +358,88 @@ pre{{white-space:pre-wrap;font:inherit}}audio{{width:100%}}</style>
     (output / 'index.html').write_text(page, encoding='utf-8')
 
 
+def _chat_id(settings, cfg: dict) -> str:
+    chat_id = (settings.telegram_chat_id if cfg['destination'] == 'canal'
+               else os.environ.get('TELEGRAM_AUTHORIZED_USER_ID', ''))
+    if not (settings.telegram_bot_token and chat_id):
+        raise RuntimeError('Telegram non configuré pour la destination '
+                           f"« {cfg['destination']} »")
+    return chat_id
+
+
+def _minutes(seconds: int) -> str:
+    return f'{seconds // 60} min {seconds % 60:02d}'
+
+
+def _pieces(cfg: dict, directory: Path) -> dict | None:
+    """Jingles (intro, transition, outro) de l'habillage choisi, ou None."""
+    ref = str(cfg.get('habillage', '')).strip()
+    if not ref or ref.lower() in ('false', 'non', 'aucun'):
+        return None
+    try:
+        from .habillage import fetch_pieces
+        return fetch_pieces(ref, directory)
+    except Exception as exc:  # noqa: BLE001 — sans musique plutôt que sans podcast
+        log.warning('Habillage indisponible (%s) ; podcast sans musique.', type(exc).__name__)
+        return None
+
+
 def run(snapshot_path: Path, output: Path, settings, *, send: bool = False,
         cfg: dict | None = None) -> None:
+    import tempfile
     cfg = cfg or dict(DEFAULT_AUDIO)
     snapshot = json.loads(snapshot_path.read_text(encoding='utf-8'))
     datetime.strptime(snapshot['date'], '%Y-%m-%d')
     if not snapshot['sources']:
         return
     output.mkdir(parents=True, exist_ok=True)
-    script = build_script(snapshot, settings, cfg['format'])
-    (output / 'transcript.txt').write_text(script, encoding='utf-8')
-    # Version lue par la voix : lexique de prononciation appliqué.
-    script_path = output / 'spoken.txt'
     lexicon = (load_lexicon(cfg.get('lexique', 'lexique.yaml'))
                if str(cfg.get('lexique_actif', 'true')).lower() != 'false' else {})
-    script_path.write_text(apply_lexicon(script, lexicon), encoding='utf-8')
-    audio = output / 'brief.mp3'
-    get_provider(cfg).synthesize(script_path, audio)
-    seconds = duration_seconds(audio)
-    write_archive(snapshot, script, output, seconds)
+    provider = get_provider(cfg)
+    with tempfile.TemporaryDirectory() as music_dir:
+        pieces = _pieces(cfg, Path(music_dir))
+        script = build_script(snapshot, settings, cfg['format'])
+        (output / 'transcript.txt').write_text(clean_script(script), encoding='utf-8')
+        # Version lue par la voix : lexique de prononciation appliqué.
+        script_path = output / 'spoken.txt'
+        script_path.write_text(apply_lexicon(script, lexicon), encoding='utf-8')
+        audio = output / 'brief.mp3'
+        render(script_path.read_text(encoding='utf-8'), provider, audio, pieces)
+        seconds = duration_seconds(audio)
+        # Version courte « l'essentiel » : un échec ne bloque jamais la version longue.
+        court, court_seconds = output / 'court.mp3', 0
+        if str(cfg.get('version_courte', 'false')).lower() == 'true':
+            try:
+                short = build_script(snapshot, settings, 'solo', 'courte')
+                (output / 'transcript-court.txt').write_text(clean_script(short), encoding='utf-8')
+                render(apply_lexicon(short, lexicon), provider, court, pieces)
+                court_seconds = duration_seconds(court)
+            except Exception as exc:  # noqa: BLE001
+                log.warning('Version courte indisponible (%s).', type(exc).__name__)
+                court.unlink(missing_ok=True)
+                court_seconds = 0
+    write_archive(snapshot, clean_script(script), output, seconds, court_seconds)
     metadata = {**snapshot, 'duration_seconds': seconds, 'provider': cfg['provider'],
                 'format': cfg['format'], 'destination': cfg['destination'],
+                'habillage': bool(pieces), 'court_duration_seconds': court_seconds,
                 'telegram_sent': False}
     metadata_path = output / 'brief.json'
     metadata_path.write_text(json.dumps(metadata, ensure_ascii=False, indent=2), encoding='utf-8')
     if send:
         from .telegram import send_audio
-        chat_id = (settings.telegram_chat_id if cfg['destination'] == 'canal'
-                   else os.environ.get('TELEGRAM_AUTHORIZED_USER_ID', ''))
-        if not (settings.telegram_bot_token and chat_id):
-            raise RuntimeError('Telegram non configuré pour la destination '
-                               f"« {cfg['destination']} »")
+        chat_id = _chat_id(settings, cfg)
+        if court_seconds:
+            try:
+                send_audio(court, day=snapshot['date'], duration=court_seconds,
+                           bot_token=settings.telegram_bot_token, chat_id=chat_id,
+                           title_prefix="L'essentiel IA",
+                           caption_suffix=f'version complète juste en dessous ({_minutes(seconds)})')
+                metadata['court_telegram_sent'] = True
+            except Exception as exc:  # noqa: BLE001
+                log.warning('Envoi de la version courte non confirmé (%s).', type(exc).__name__)
         send_audio(audio, day=snapshot['date'], duration=seconds,
-                   bot_token=settings.telegram_bot_token, chat_id=chat_id)
+                   bot_token=settings.telegram_bot_token, chat_id=chat_id,
+                   title_prefix='Brief IA' if not court_seconds else 'Brief IA complet')
         metadata['telegram_sent'] = True
         metadata_path.write_text(json.dumps(metadata, ensure_ascii=False, indent=2), encoding='utf-8')
 
