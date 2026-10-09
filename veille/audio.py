@@ -427,8 +427,16 @@ def run(snapshot_path: Path, output: Path, settings, *, send: bool = False,
     metadata_path = output / 'brief.json'
     metadata_path.write_text(json.dumps(metadata, ensure_ascii=False, indent=2), encoding='utf-8')
     if send:
-        from .telegram import send_audio
+        from .telegram import send_audio, send_message
         chat_id = _chat_id(settings, cfg)
+        # Message d'annonce ponctuel (validé par Hugo), envoyé une seule fois avant les audios.
+        annonce = str(cfg.get('annonce', '')).strip()
+        if annonce and str(cfg.get('annonce_date', '')).strip() == snapshot['date']:
+            try:
+                send_message(annonce, bot_token=settings.telegram_bot_token, chat_id=chat_id)
+                metadata['annonce_sent'] = True
+            except Exception as exc:  # noqa: BLE001 — l'annonce ne bloque jamais les audios
+                log.warning("Annonce non envoyée (%s).", type(exc).__name__)
         if court_seconds:
             try:
                 send_audio(court, day=snapshot['date'], duration=court_seconds,
