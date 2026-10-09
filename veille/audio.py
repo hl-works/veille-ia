@@ -85,6 +85,7 @@ d'ouverture est un paragraphe à part.
 PRONONCIATION : écris les noms de marques normalement (un lexique les convertit),
 mais les nombres et versions en toutes lettres (« GPT cinq point six »).
 Ne lis pas les URL, emojis ou balises. Texte brut uniquement.
+La date se dit sans l'année (« du neuf octobre »).
 Le lecteur s'intéresse à l'IA, aux agents, OpenAI, Anthropic, modèles ouverts,
 commerce, Shopify, automatisation, développement, sécurité, SEO/GEO et outils ;
 cela ne justifie aucune information supplémentaire.
@@ -98,7 +99,7 @@ FORMAT SOLO : une seule voix, féminine, neutre et posée. Pas de prénom, pas d
 COURT_PROMPT = _SCRIPT_RULES + """
 VERSION COURTE « L'ESSENTIEL » : une seule voix, féminine, 180 à 260 mots au total
 (une à deux minutes). Ouvre par « Bonjour et bienvenue dans l'essentiel de votre
-veille IA du » suivi de la date en toutes lettres. Une à trois phrases par sujet,
+veille IA du » suivi de la date en toutes lettres, sans l'année. Une à trois phrases par sujet,
 les plus importants d'abord ; les sujets secondaires peuvent être regroupés en une
 phrase « En bref… ». Trois lignes « --- » au maximum. Conclus exactement par
 « C'était l'essentiel de votre veille IA. La version complète vous attend juste en
@@ -439,7 +440,8 @@ def run(snapshot_path: Path, output: Path, settings, *, send: bool = False,
                 log.warning('Envoi de la version courte non confirmé (%s).', type(exc).__name__)
         send_audio(audio, day=snapshot['date'], duration=seconds,
                    bot_token=settings.telegram_bot_token, chat_id=chat_id,
-                   title_prefix='Brief IA' if not court_seconds else 'Brief IA complet')
+                   title_prefix='Brief IA' if not court_seconds else 'Brief IA complet',
+                   caption_suffix='version audio de la veille de ce matin')
         metadata['telegram_sent'] = True
         metadata_path.write_text(json.dumps(metadata, ensure_ascii=False, indent=2), encoding='utf-8')
 
