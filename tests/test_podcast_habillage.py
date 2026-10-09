@@ -115,6 +115,28 @@ class HabillageTests(unittest.TestCase):
             habillage.assemble([voice, voice], {'intro': d / 'absent.mp3'}, out)
             self.assertGreater(out.stat().st_size, 1000)
 
+    def test_announcement_sent_once_before_audios_on_its_day_only(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            source = root / 'input.json'
+            audio.save_snapshot(MESSAGE, '10/10/2026', str(source))
+            provider = Mock()
+            provider.synthesize.side_effect = lambda script, out: out.write_bytes(b'mp3')
+            settings = Settings(telegram_bot_token='t', telegram_chat_id='@canal')
+            calls = []
+            for day, expected in (('2026-10-10', True), ('2026-10-11', False)):
+                cfg = {**audio.DEFAULT_AUDIO, 'destination': 'canal', 'annonce': '🎧 Nouveau', 'annonce_date': day}
+                with patch.object(audio, 'build_script', return_value='Long.'), \
+                     patch.object(audio, 'get_provider', return_value=provider), \
+                     patch.object(audio, 'duration_seconds', return_value=300), \
+                     patch.object(telegram, 'send_message', side_effect=lambda *a, **k: calls.append('msg')) as msg, \
+                     patch.object(telegram, 'send_audio', side_effect=lambda *a, **k: calls.append('audio')):
+                    calls.clear()
+                    audio.run(source, root / day, settings, send=True, cfg=cfg)
+                self.assertEqual(calls, ['msg', 'audio'] if expected else ['audio'])
+                if expected:
+                    self.assertEqual(msg.call_args.kwargs['chat_id'], '@canal')
+
 
 if __name__ == '__main__':
     unittest.main()

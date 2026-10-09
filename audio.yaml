@@ -17,3 +17,11 @@ destination: canal    # canal (sous le post texte, choix Hugo 09/10) | prive (MP
 envoi_telegram: true  # false = MP3 seulement sur la branche ecoute
 version_courte: true  # « l'essentiel » 1–2 min, envoyé avant la version complète (08/10)
 habillage: ecoute:casting/2026-10-08-0911/02-city-pop-A2  # jingles city pop A2 choisis par Hugo le 08/10
+# Annonce ponctuelle dans le canal, avant les audios du jour indiqué (validée par Hugo le 09/10).
+annonce_date: "2026-10-10"
+annonce: |-
+  🎧 <b>Nouveau : la veille IA s'écoute aussi !</b>
+  Chaque matin, juste sous le résumé écrit, retrouvez-le en mini podcast audio :
+  • <b>L'essentiel</b> en 1 à 2 minutes
+  • <b>La version complète</b> en 5 à 7 minutes
+  Bonne écoute 👇
