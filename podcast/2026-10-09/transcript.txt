@@ -1,0 +1,47 @@
+Bonjour et bienvenue dans votre point sur l'actualité de l'intelligence artificielle, ce neuf octobre.
+
+On commence avec Anthropic, qui a enchaîné les annonces. L'entreprise lance en version bêta deux nouveaux outils. Le premier s'appelle Claude Dashboards. En gros, on demande à Claude de transformer ses données en tableaux de bord vivants. Ces tableaux se mettent à jour en continu. Le deuxième s'appelle Claude Motion. Là, on part d'un simple texte et Claude génère une vidéo explicative animée. Deux outils pensés pour les équipes qui ne sont pas techniques.
+
+Et pourquoi c'est intéressant ? Parce que ça dessine une bureautique nouvelle. Une bureautique où l'on décrit ce qu'on veut, plutôt que de le fabriquer à la main.
+
+Anthropic va plus loin. Un plan baptisé MAX donne désormais chaque mois des crédits d'API, pour que chacun bricole ses propres outils personnels. Un développeur montre par exemple une page d'accueil de navigateur qui se régénère chaque jour, selon les sites qu'il lit.
+
+L'entreprise a aussi présenté une mission cybersécurité. L'objectif, c'est de protéger les infrastructures critiques et les logiciels libres. Et elle s'engage à hauteur de cent cinquante millions de dollars dans un grand programme scientifique américain, la Genesis Mission. Google DeepMind s'y associe au même montant. Claude sera mis à disposition de plus de quinze agences fédérales.
+
+Côté science, un exemple concret. L'astrophysicien Brice Ménard raconte avoir dressé avec Claude la première carte ultraviolette complète du ciel. Et ça, en quelques jours, au lieu de plusieurs semaines. Concrètement, Claude l'a aidé à retrouver des jeux de données existants, à les combiner, et à compléter les zones jamais observées. Exactement le genre de travail utile, mais que les chercheurs n'ont jamais le temps de faire.
+
+On passe à OpenAI et aux mathématiques. Et là, c'est l'histoire d'un enthousiasme, puis d'une correction. OpenAI a publié une très grande série de résultats mathématiques. Plus de sept cents manuscrits. Ça a enflammé le milieu.
+
+Certains y voient une avancée majeure. D'autres rappellent que les mathématiciens n'avaient pas demandé ce travail. Et puis coup de théâtre, l'entreprise a retiré trois de ces résultats de son dépôt. Ce qui a nourri les critiques sur la fiabilité réelle de ces productions.
+
+Mais il y a l'autre côté de l'histoire. Ethan Mollick souligne qu'une partie de ces preuves a servi de point de départ. Elle a déclenché une vague rapide de travaux et d'améliorations, venus d'une large communauté de chercheurs. Autrement dit, l'IA peut jouer un rôle d'amorce, même imparfaite.
+
+La leçon est double. L'IA accélère la production intellectuelle. Mais la vérification humaine reste indispensable. Un résultat généré n'est pas un résultat validé.
+
+Côté OpenAI toujours, une autre info financière. Selon la presse économique, le chiffre d'affaires annualisé de l'entreprise serait inférieur aux attentes. L'écart tournerait autour de vingt milliards de dollars, par rapport à ce qui avait été laissé entendre.
+
+Et pourquoi ça compte ? Parce que ça relance le débat sur une éventuelle bulle de l'IA. L'écart entre les investissements colossaux du secteur et les revenus réellement encaissés interroge.
+
+Mais tout le monde n'est pas inquiet. Le patron d'AWS, Matt Garman, se dit serein. Selon lui, aucun client ne domine à lui seul la capacité. Les entreprises constatent déjà un retour sur investissement. Et il compare le secteur au capital-risque. En gros, on parie sur dix, un seul réussit, et il paie pour les autres.
+
+À l'inverse, le chercheur François Chollet appelle à la prudence. Il rappelle que les investissements croissent plus vite que les progrès. Un rythme qui n'est pas tenable sans profits à la hauteur.
+
+Autre info du jour, du côté du commerce. Shopify se connecte à Grok, l'IA de xAI. Concrètement, les commerçants peuvent piloter certaines tâches de leur boutique depuis un outil qu'ils utilisent déjà. L'idée, c'est de rapprocher l'IA de l'endroit où les marchands travaillent, plutôt que de les forcer à jongler entre les outils.
+
+L'argument mis en avant est joliment tourné. Être fondateur solo ne veut plus dire être opérateur solo.
+
+Dans le même esprit, un fil très partagé détaille des routines d'agents. Elles servent à surveiller les mentions de sa marque, à repérer des prospects qui cherchent activement un produit, ou à relancer de nouveaux contacts. Chaque routine est bornée par des règles strictes. Par exemple, ne jamais répondre automatiquement, ou signaler si une source est indisponible.
+
+Pour vous, commerçant ou indépendant, ces briques annoncent une gestion plus automatisée. Un petit effectif peut couvrir des tâches qui demandaient avant une équipe. À tester prudemment, en gardant la main sur les validations.
+
+Et on termine avec le cloud, qui se réorganise pour les agents. Petit rappel, un agent, c'est un programme d'IA qui exécute des tâches en autonomie. Et ces agents deviennent des utilisateurs à part entière.
+
+Le patron d'AWS explique reconstruire son cloud pour eux. Désormais, on peut créer un compte en trente secondes, sans carte bancaire. Les bases de données démarrent en trois secondes, puis disparaissent. Et il y a des permissions dédiées aux agents.
+
+Les chiffres donnent le vertige. AWS prévoit deux cent vingt milliards de dollars d'investissement l'an prochain. Et deux millions de processeurs graphiques Nvidia commandés. L'entreprise choisit aussi de ne pas vendre tous ses processeurs aux grands laboratoires, pour garder de la capacité aux startups.
+
+Côté entreprises, le cabinet a16z décrit une fonction finance reconstruite. L'IA récupère et réconcilie les données. Les clôtures mensuelles deviennent quasi quotidiennes. Et les équipes rétrécissent. Enfin, une analyse signale que les agents consomment environ cinq fois plus de ressources qu'un humain. Un chiffre multiplié par quatorze en six mois.
+
+Pour finir, la phrase du jour vient d'Ethan Mollick. Les organisations sont déjà une forme de super-intelligence restreinte. Selon lui, une université ou un grand distributeur accomplissent déjà des choses hors de portée d'un humain seul. Et notre échec à faire travailler l'IA avec ces organisations existantes explique en partie pourquoi son impact économique tarde encore à se voir.
+
+C'était votre point sur l'actualité de l'intelligence artificielle. À très bientôt.

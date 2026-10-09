@@ -1,0 +1,9 @@
+Bonjour et bienvenue dans l'essentiel de votre veille IA du neuf octobre deux mille vingt-six.
+
+On commence avec Anthropic, qui enchaîne les annonces. L'entreprise lance en bêta deux outils. Claude Dashboards transforme vos données en tableaux de bord vivants. Claude Motion transforme vos idées en vidéos animées. Anthropic présente aussi une mission cybersécurité pour protéger les infrastructures critiques et les logiciels libres. Et elle s'engage à hauteur de cent cinquante millions de dollars dans la Genesis Mission scientifique américaine.
+
+Côté OpenAI, maintenant. L'entreprise a publié une grande série de résultats mathématiques, plus de sept cents manuscrits. Coup de théâtre, elle en a ensuite retiré trois, ce qui a nourri les critiques. La leçon est claire. L'IA accélère la production intellectuelle, mais la vérification humaine reste indispensable. Autre info sur OpenAI. Son chiffre d'affaires annualisé serait environ vingt milliards de dollars en dessous des attentes. De quoi relancer le débat sur une éventuelle bulle de l'IA.
+
+En bref. Shopify se connecte à Grok, l'IA de xAI, pour piloter certaines tâches de boutique depuis un outil déjà utilisé. Et le cloud se réorganise pour les agents. Le patron d'AWS reconstruit son infrastructure pour eux, avec des comptes créés en trente secondes. Un cabinet note que ces agents consomment près de cinq fois plus de ressources qu'un humain.
+
+C'était l'essentiel de votre veille IA. La version complète vous attend juste en dessous. À très bientôt.
