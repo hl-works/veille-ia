@@ -14002,5 +14002,101 @@
     "tweet_url": "https://x.com/venturetwins/status/2108041438831530477",
     "media": true,
     "auteur_x": "@venturetwins"
+  },
+  {
+    "date": "2026-10-08",
+    "titre_fr": "Claude lance Dashboards et Motion en bêta",
+    "resume_fr": "Anthropic ouvre en bêta deux nouvelles fonctions pour Claude : Dashboards, qui transforme des données en tableaux de bord dynamiques, et Motion, qui génère des explications animées à partir d'idées.",
+    "tags": [
+      "anthropic",
+      "produit"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/claudeai/status/2108271552991252810",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-10-08",
+    "titre_fr": "Anthropic investit 150 M$ dans la Genesis Mission américaine",
+    "resume_fr": "Anthropic engage 150 millions de dollars dans la Genesis Mission, un programme fédéral de recherche scientifique, et rend Claude ainsi que son support technique disponibles pour plus de 15 agences fédérales. Google DeepMind annonce un engagement similaire de 150 M$.",
+    "tags": [
+      "anthropic",
+      "google",
+      "politique-ia",
+      "recherche"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/AnthropicAI/status/2108226292235809081",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-10-08",
+    "titre_fr": "Anthropic lance la Cyber Mission pour la cybersécurité",
+    "resume_fr": "Anthropic lance un programme dédié à la sécurisation des infrastructures critiques et des logiciels open-source, dans un contexte de préoccupations croissantes sur l'usage offensif de l'IA.",
+    "tags": [
+      "anthropic",
+      "politique-ia"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/AnthropicAI/status/2108302539498414208",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-10-08",
+    "titre_fr": "Shopify s'intègre à Grok et à l'agent de X",
+    "resume_fr": "Shopify se connecte désormais à Grok et à l'agent conversationnel de X, permettant aux marchands de gérer leur boutique directement depuis ces outils. Une intégration qui ajoute un canal supplémentaire là où les commerçants travaillent déjà.",
+    "tags": [
+      "xai",
+      "produit",
+      "commerce",
+      "shopify"
+    ],
+    "score": 64,
+    "tweet_url": "https://x.com/harleyf/status/2108243500089405641",
+    "media": false,
+    "auteur_x": "@harleyf"
+  },
+  {
+    "date": "2026-10-08",
+    "titre_fr": "Des crédits API Claude inclus dans les abonnements MAX",
+    "resume_fr": "Anthropic ajoute des crédits API Claude mensuels aux forfaits MAX (100 $, ou 200 $ selon le plan), pour encourager les utilisateurs à développer leurs propres outils personnels basés sur l'IA.",
+    "tags": [
+      "anthropic",
+      "produit"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/trq212/status/2108301668828004396",
+    "media": true,
+    "auteur_x": "@trq212"
+  },
+  {
+    "date": "2026-10-08",
+    "titre_fr": "Claude Science aide à cartographier le ciel en ultraviolet",
+    "resume_fr": "Un astrophysicien a utilisé Claude pour produire la première carte complète du ciel en ultraviolet, en combinant des jeux de données existants et en comblant les trous par inférence statistique. Un travail qui aurait pris des semaines, réalisé en quelques jours.",
+    "tags": [
+      "anthropic",
+      "recherche"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/AnthropicAI/status/2108290395599667700",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-10-08",
+    "titre_fr": "Perplexity Decider en tête du classement DecisionBench",
+    "resume_fr": "Perplexity annonce que son modèle de décision à poids ouverts se classe premier sur DecisionBench, avec également le coût le plus faible, notamment pour les décisions cliniques.",
+    "tags": [
+      "produit",
+      "modeles",
+      "open-source"
+    ],
+    "score": 46,
+    "tweet_url": "https://x.com/AravSrinivas/status/2108236575859753460",
+    "media": false,
+    "auteur_x": "@AravSrinivas"
   }
 ]
