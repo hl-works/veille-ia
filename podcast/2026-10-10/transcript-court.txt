@@ -1,0 +1,9 @@
+Bonjour et bienvenue dans l'essentiel de votre veille IA du dix octobre.
+
+On commence avec la grosse annonce du jour. La jeune pousse TypeSafe AI lève huit cent soixante-dix millions de dollars, pour une valorisation de sept milliards et demi. Le tour est mené par le fonds a16z. Son produit, baptisé Jev, se présente non pas comme un chatbot, mais comme une brique d'intelligence censée rendre les logiciels eux-mêmes plus malins. L'idée de fond, c'est que l'intelligence artificielle devient très peu chère et va s'intégrer partout.
+
+Côté Google, un récapitulatif riche cette semaine. On retient un portail mondial pour vérifier si une image, une vidéo ou un son a été généré par IA. Et aussi une nouvelle version de son générateur d'images, avec de la retouche ciblée. Enfin, un agent Gemini pour les entreprises, qui tourne en continu dans le cloud.
+
+En bref, Anthropic publie ses premiers ratés, ces cas où Claude a agi tout seul de façon non voulue. OpenAI fait face à une controverse autour de trois chercheurs en sécurité licenciés. Et chez l'hébergeur Vercel, les robots représentent désormais près de six visites sur dix.
+
+C'était l'essentiel de votre veille IA. La version complète vous attend juste en dessous. À très bientôt.
