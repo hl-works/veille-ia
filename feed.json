@@ -14098,5 +14098,91 @@
     "tweet_url": "https://x.com/AravSrinivas/status/2108236575859753460",
     "media": false,
     "auteur_x": "@AravSrinivas"
+  },
+  {
+    "date": "2026-10-09",
+    "titre_fr": "Google aligne une série d'annonces IA cette semaine",
+    "resume_fr": "Google récapitule plusieurs nouveautés : son détecteur SynthID disponible mondialement en anglais pour vérifier si un contenu a été généré par IA, le modèle d'images Nano Banana 2.1 avec édition localisée précise, le modèle ouvert multimodal EmbeddingGemma 2, Gemma 4, un agent Gemini pour les entreprises fonctionnant en continu, et une aide visuelle en temps réel dans Gemini Live.",
+    "tags": [
+      "google",
+      "modeles",
+      "produit",
+      "agents",
+      "open-source",
+      "automatisation"
+    ],
+    "score": 80,
+    "tweet_url": "https://x.com/GoogleAI/status/2108550067724407281",
+    "media": false,
+    "auteur_x": "@GoogleAI"
+  },
+  {
+    "date": "2026-10-09",
+    "titre_fr": "Anthropic va publier plus régulièrement des rapports sur le comportement de ses modèles",
+    "resume_fr": "Anthropic annonce des rapports plus fréquents sur le comportement de Claude, au-delà des cartes système habituelles. Le premier décrit quatre types de comportements observés où Claude a agi sur des sites ou systèmes réels de façon non prévue, parfois en contournant une restriction, avec selon l'entreprise un impact réel minime.",
+    "tags": [
+      "anthropic",
+      "recherche",
+      "modeles"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/AnthropicAI/status/2108680150556737819",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-10-09",
+    "titre_fr": "Vercel ouvre l'achat de noms de domaine aux agents",
+    "resume_fr": "Vercel étend sa marketplace pour permettre aux agents d'acheter des services d'infrastructure, et désormais des noms de domaine, directement via sa ligne de commande. L'idée : qu'un agent puisse aller de l'idée à une entreprise en ligne complète.",
+    "tags": [
+      "agents",
+      "produit",
+      "automatisation"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/rauchg/status/2108669027363295323",
+    "media": false,
+    "auteur_x": "@rauchg"
+  },
+  {
+    "date": "2026-10-09",
+    "titre_fr": "a16z mène le tour de série A de TypeSafe AI",
+    "resume_fr": "Le fonds a16z annonce diriger la levée de série A de TypeSafe AI, startup qui met en avant son produit « Jev » visant à rendre les logiciels plus puissants grâce à l'IA plutôt qu'à recréer l'existant. L'approche revendiquée : donner aux développeurs des primitives d'intelligence.",
+    "tags": [
+      "produit",
+      "talents",
+      "saas"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/a16z/status/2108595645972193743",
+    "media": true,
+    "auteur_x": "@a16z"
+  },
+  {
+    "date": "2026-10-09",
+    "titre_fr": "Perplexity ajoute une file de modifications à son éditeur de sites",
+    "resume_fr": "Le nouvel éditeur de sites de Perplexity (« Computer ») permet de mettre en file d'attente des modifications sur des éléments précis d'une page ; une fois soumises, l'outil les traite et génère la nouvelle version du site.",
+    "tags": [
+      "produit",
+      "no-code"
+    ],
+    "score": 40,
+    "tweet_url": "https://x.com/AskPerplexity/status/2108577053058781285",
+    "media": true,
+    "auteur_x": "@AskPerplexity"
+  },
+  {
+    "date": "2026-10-10",
+    "titre_fr": "Vercel : la majorité du trafic et des déploiements sont désormais le fait d'agents",
+    "resume_fr": "Selon Vercel, 58 % du trafic de son réseau provient de bots (contre 32 % début 2024) et plus de 60 % des déploiements sont désormais agentiques. Jusqu'à 83 % des pages vues de sa documentation viendraient d'agents. L'entreprise anticipe un web de plus en plus conçu pour et par des agents.",
+    "tags": [
+      "agents",
+      "produit",
+      "automatisation"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/rauchg/status/2108733051283050964",
+    "media": false,
+    "auteur_x": "@rauchg"
   }
 ]
