@@ -14184,5 +14184,33 @@
     "tweet_url": "https://x.com/rauchg/status/2108733051283050964",
     "media": false,
     "auteur_x": "@rauchg"
+  },
+  {
+    "date": "2026-10-10",
+    "titre_fr": "Mistral OCR disponible sur OpenDocRouter",
+    "resume_fr": "Le modèle OCR de Mistral est désormais accessible via OpenDocRouter. Il offre de bonnes performances sur les tableaux et l'ordre de lecture, avec une vitesse élevée (environ 1,8 s par page), pour un coût compétitif.",
+    "tags": [
+      "mistral",
+      "produit",
+      "automatisation"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/jerryjliu0/status/2108996530204205463",
+    "media": true,
+    "auteur_x": "@jerryjliu0"
+  },
+  {
+    "date": "2026-10-10",
+    "titre_fr": "Les emplois de centres d'appels reculent presque partout depuis ChatGPT",
+    "resume_fr": "Selon des données partagées par a16z, les postes en centres d'appels ont ralenti ou diminué dans presque tous les pays depuis l'arrivée de ChatGPT, sauf en Chine, alors que d'autres emplois de bureau continuaient de croître. Le phénomène, d'abord observé dans les pays riches, s'étend désormais aux pays à revenu intermédiaire.",
+    "tags": [
+      "service-client",
+      "automatisation",
+      "politique-ia"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/a16z/status/2108965850544005533",
+    "media": true,
+    "auteur_x": "@a16z"
   }
 ]
