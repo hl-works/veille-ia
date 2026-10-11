@@ -1,0 +1,9 @@
+Bonjour et bienvenue dans l'essentiel de votre veille IA du onze octobre.
+
+On commence avec Nvidia. Selon le Financial Times, le fabricant de puces serait en négociations pour racheter Reflection AI. C'est une jeune pousse américaine spécialisée dans les modèles ouverts. Ce mouvement illustre une concentration croissante. Les outils d'IA puissants restent contrôlés par une poignée d'acteurs.
+
+Autre info du jour, l'IA commence à peser sur l'emploi. Le fonds a16z montre que les postes de centres d'appels reculent depuis l'arrivée de ChatGPT, partout sauf en Chine. Les autres métiers de bureau, eux, continuent de croître. Pour une PME, mieux vaut anticiper et réaffecter les équipes vers des tâches à plus forte valeur. Toujours chez a16z, un graphique rappelle qu'il n'existe pas de pays riche à faible consommation électrique. Un enjeu central quand l'IA réclame énormément d'énergie.
+
+En bref, Mustafa Suleyman estime qu'il faut encadrer la superintelligence, comme on l'a fait pour l'aviation ou le nucléaire. Patrick Collison et Tobi Lütke avancent que les agents personnels récompenseront mieux la vraie qualité des produits. Et Dylan Field, chez Figma, explique que l'IA abaisse surtout le plancher de la création, pas le plafond.
+
+C'était l'essentiel de votre veille IA. La version complète vous attend juste en dessous. À très bientôt.
