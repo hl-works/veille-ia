@@ -1,0 +1,9 @@
+Bonjour et bienvenue dans l'essentiel de votre veille IA du douze octobre.
+
+On commence avec un texte signé Andrej Karpathy, ancien d'OpenAI et de Tesla, qui fait beaucoup parler. Son constat : le monde se divise face à l'IA. Environ soixante-quinze pour cent de l'humanité n'a quasiment jamais touché un modèle de langage. Vingt pour cent s'en servent comme d'un Google amélioré. Et seule une petite minorité, surtout en code et en maths, voit des semaines de travail abattues en une requête. Autrement dit, si l'IA vous paraît encore gadget, c'est logique. L'écart d'expérience est réel, et il s'élargit vite.
+
+Côté recherche, maintenant. Ethan Mollick observe que les mathématiciens qui travaillent main dans la main avec l'IA commencent à dominer leur domaine. Il note aussi que les modèles détectent régulièrement des erreurs dans les articles scientifiques. En parallèle, un débat monte. Faut-il accepter une super-intelligence qu'on ne comprend pas ? Pour plusieurs chercheurs, non. Un vrai signe d'intelligence, c'est de savoir se faire comprendre des humains.
+
+En bref, une étude de l'Université de Berkeley suggère qu'utiliser l'IA dix minutes suffirait à réduire notre persévérance face aux tâches difficiles. Chez Stripe, John Collison estime qu'on est entrés dans la singularité, et observe un record de créations d'entreprises. Et l'acteur Nicolas Cage a annoncé qu'il ne retravaillerait plus avec Amazon, à cause d'un différend lié à l'IA.
+
+C'était l'essentiel de votre veille IA. La version complète vous attend juste en dessous. À très bientôt.

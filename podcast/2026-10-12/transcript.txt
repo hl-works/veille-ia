@@ -1,0 +1,33 @@
+Bonjour et bienvenue dans votre veille IA du douze octobre.
+
+Commençons par un constat qui fait beaucoup parler. Andrej Karpathy, un ancien d'OpenAI et de Tesla, a publié un texte très partagé. Près de vingt-neuf mille personnes l'ont aimé. Son idée est simple. Face à l'IA, le monde se divise en couches très inégales. Et ces couches ne vivent pas du tout la même chose.
+
+Alors concrètement, de quoi parle-t-il ? Il décrit une sorte d'entonnoir, pas deux camps. Tout en haut, environ six milliards de personnes n'ont presque jamais touché un modèle de langage. Ça représente les trois quarts de l'humanité. Ensuite, un à deux milliards de gens s'en servent comme d'un Google amélioré. Pour eux, c'est un chatbot un peu limité.
+
+Puis on descend. Environ vingt millions de personnes l'utilisent à haut niveau, surtout en maths et en code. Et là, le choc est réel. Des projets qui prenaient des semaines se font en une seule requête. Enfin, tout au fond, à peine cinq mille initiés accèdent aux systèmes les plus avancés. Karpathy les décrit comme des nuées de milliers d'agents qui collaborent pendant des semaines sur de gros projets.
+
+Et pourquoi un tel fossé ? Karpathy avance trois raisons. D'abord, l'impact grandit avec l'ambition du problème qu'on pose. Ensuite, les modèles excellent dans le vérifiable, comme les maths et le code, et sont plus faibles ailleurs. Enfin, l'accès change tout. Gratuit, payant ou interne, ce n'est pas la même expérience. Ethan Mollick, professeur à Wharton, ajoute que même les cinq mille privilégiés n'exploitent ces outils que pour la cybersécurité, les maths et la recherche en IA. Garry Tan, de Y Combinator, parle lui de la plus grande source d'avantage de l'histoire. Autrement dit, si l'IA vous paraît encore gadget, c'est logique. L'écart d'expérience est réel. Et il s'élargit vite.
+
+Côté recherche, maintenant. Ethan Mollick observe un phénomène frappant. Les mathématiciens qui travaillent main dans la main avec l'IA commencent soudainement à dominer la recherche en maths. Il les appelle des cyborgs. Il note aussi que les modèles de pointe détectent régulièrement des erreurs dans des articles universitaires.
+
+Et ça pose un vrai problème. Ces modèles repèrent des erreurs tout le temps, au fil d'autres tâches. Mais confirmer chaque erreur et en mesurer l'importance reste long. Or aucun mécanisme n'existe pour gérer une vague massive de corrections. Un afflux pourrait donc submerger un système académique mal préparé.
+
+En parallèle, un débat de fond monte. Faut-il accepter une super-intelligence opaque ? Plusieurs chercheurs disent non. Le mathématicien Terence Tao est cité. Selon lui, on ne devrait pas se contenter d'une super-intelligence incompréhensible. Un ingénieur abonde. La communication est un marqueur clé de l'intelligence. Il faut concevoir des produits qui construisent de la compréhension avec les humains, plutôt que de les mettre hors circuit. Et pour vous, l'enjeu est une question de confiance. Une IA qui explique ses raisonnements sera plus utile et plus fiable pour une PME qu'une boîte noire performante mais muette.
+
+Autre info du jour, et c'est le revers de la médaille. Une étude de l'Université de Berkeley affirme qu'utiliser l'IA affaiblirait notre persévérance. Dix minutes suffiraient. Dix minutes, pour réduire notre capacité à tenir face aux tâches difficiles.
+
+L'idée, c'est une forme de dépendance précoce à la facilité. Si l'outil fait le travail pénible à notre place, le muscle de l'effort pourrait s'atrophier. Le sujet a suscité un vrai débat, avec près d'une centaine de commentaires. Certains y voient une alerte sérieuse sur l'apprentissage. D'autres relativisent. Ils rappellent que chaque nouvel outil a provoqué des craintes semblables, comme la calculatrice ou le correcteur orthographique. Pour un dirigeant ou un indépendant, l'enjeu est donc un équilibre. Déléguer les tâches répétitives à l'IA, tout en continuant d'exercer son jugement et de résoudre seul les problèmes complexes.
+
+On passe à Stripe, l'entreprise de paiements en ligne. Son cofondateur John Collison a une formule forte. Interrogé par le fonds a16z, il affirme que Stripe considère le premier janvier deux mille vingt-six comme le jour un de la singularité. C'est-à-dire le moment où l'IA s'améliore elle-même de façon accélérée.
+
+Le déclic, pour lui, est survenu fin deux mille vingt-cinq. Les modèles de génération de code sont devenus remarquablement bons. Il décrit alors une boucle d'auto-amélioration, où l'IA sert à améliorer l'IA. Et il relie ça à un chiffre concret. Il dit voir sur Stripe les taux de création de nouvelles entreprises les plus élevés de mémoire récente. Son message est optimiste. Avec ces outils, il est plus facile de démarrer une société et de la faire réussir.
+
+Mais dans la même série d'entretiens, un autre son de cloche. Drew Baglino, ancien de Tesla, alerte sur un effet secondaire. Pendant quarante ans, la consommation électrique américaine est restée stable grâce aux gains d'efficacité. Et là, la demande repart fortement à la hausse. Elle est tirée par le calcul informatique, donc l'IA, mais aussi les transports et l'industrie. Logan Kilpatrick, de Google, résume l'époque d'un trait. L'âge d'or des startups et des développeurs. Pour vous, le message est double. Créer une petite structure n'a sans doute jamais été aussi accessible côté outils. Mais l'explosion des besoins en énergie est un sujet de fond à surveiller.
+
+Et on termine avec Hollywood. L'acteur Nicolas Cage a déclaré qu'il ne retravaillerait plus avec Amazon. La raison ? Un différend lié à l'intelligence artificielle.
+
+Selon le Los Angeles Times, il a publiquement rompu avec la plateforme. Le détail précis du conflit n'est pas développé. Mais l'affaire s'inscrit dans une série de frictions à Hollywood. En jeu, l'utilisation de l'IA pour recréer, modifier ou exploiter l'image et la performance des acteurs sans accord clair. Et ça dépasse le cinéma. La question du consentement et des droits sur les contenus générés ou retouchés par IA devient centrale. Pour toute activité qui crée ou diffuse des images, c'est un rappel. Il faut encadrer ces usages par contrat.
+
+Et je vous laisse avec la phrase du jour, reformulée d'après Andrej Karpathy. Une petite frange de professionnels vit le vertige de la courbe qui devient verticale, pendant que la grande majorité ne voit encore qu'un chatbot un peu simplet. Et tout cela se produit en même temps.
+
+À très bientôt pour une prochaine veille.
