@@ -14212,5 +14212,60 @@
     "tweet_url": "https://x.com/a16z/status/2108965850544005533",
     "media": true,
     "auteur_x": "@a16z"
+  },
+  {
+    "date": "2026-10-11",
+    "titre_fr": "Unlimited OCR, un modèle léger de reconnaissance de documents",
+    "resume_fr": "Un nouveau modèle OCR à faible nombre de paramètres traite les documents très rapidement, avec de bons résultats sur l'ordre de lecture et une gestion correcte des tableaux. Il reste perfectible (ignore les éléments visuels et tableaux complexes) mais marque une étape intéressante pour l'extraction de données documentaires.",
+    "tags": [
+      "modeles",
+      "open-source",
+      "automatisation"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/jerryjliu0/status/2109391596743716963",
+    "media": true,
+    "auteur_x": "@jerryjliu0"
+  },
+  {
+    "date": "2026-10-11",
+    "titre_fr": "OpenClaw publie sa version d'octobre 2026",
+    "resume_fr": "L'outil open source OpenClaw sort une mise à jour avec découverte des compétences installées, applications MCP intégrées au chat, sauvegardes complètes vers stockage externe ou Cloudflare R2 et installation simplifiée sur Mac. La release regroupe plus de 2400 contributions.",
+    "tags": [
+      "open-source",
+      "produit",
+      "agents"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/openclaw/status/2109347136328417718",
+    "media": false,
+    "auteur_x": "@openclaw"
+  },
+  {
+    "date": "2026-10-11",
+    "titre_fr": "LangChain détaille sa vision des agents d'entreprise",
+    "resume_fr": "LangChain présente une architecture type pour les futurs agents : workflows durables, usage d'un ordinateur, mémoire et compétences, déclencheurs programmés, connecteurs, canaux texte et voix, évaluations et observabilité. Le paiement et l'identité restent les derniers éléments manquants.",
+    "tags": [
+      "agents",
+      "produit",
+      "automatisation"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/hwchase17/status/2109307704346853833",
+    "media": true,
+    "auteur_x": "@hwchase17"
+  },
+  {
+    "date": "2026-10-12",
+    "titre_fr": "OpenAI retire les GPTs personnalisés",
+    "resume_fr": "OpenAI a mis fin à ses GPTs personnalisés, ce qui perturbe les grandes entreprises qui s'appuyaient encore dessus. Le constat plus large : les laboratoires changent souvent leurs produits sans prévenir, compliquant la planification des organisations.",
+    "tags": [
+      "openai",
+      "produit"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/emollick/status/2109472254417318335",
+    "media": false,
+    "auteur_x": "@emollick"
   }
 ]
