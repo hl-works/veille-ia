@@ -290,6 +290,13 @@ jobs:
           args=()
           if [[ "$SEND_AUDIO" == "true" ]]; then args+=(--send); fi
           python -m veille.audio "${args[@]}"
+      - name: Publier les deux podcasts publics sur la home
+        if: ${{ success() && !inputs.audio_preview && !inputs.dry_run && github.run_attempt == 1 }}
+        continue-on-error: true
+        env:
+          KH_REPO_TOKEN: ${{ secrets.KH_REPO_TOKEN }}
+          KH_REPO: hl-works/knowledge-hub
+        run: bash scripts/push-podcast-site.sh
       # Le MP3 + la transcription du jour vont sur la branche `ecoute` pour
       # qu'Hugo (et Claude) puissent l'écouter et le valider. Rien n'est publié.
       - name: Publier l'écoute du jour (branche ecoute)
