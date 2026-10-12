@@ -48,3 +48,18 @@ L'intégration GitHub de Claude n'a pas le droit d'écrire dans
 cp ci/veille.yml .github/workflows/veille.yml && git rm -q ci/veille.yml
 git commit -am "ci: départ 8h10 via .state/tick + podcast" && git push
 ```
+
+## Accueil HL Consulting (octobre 2026)
+
+Après un envoi public réussi des deux formats sur Telegram, le job audio copie
+`court.mp3` et `brief.mp3` vers `knowledge-hub/assets/podcast/`, avec un manifeste
+`latest.json` limité à la date, aux durées et aux chemins publics. Le secret
+`KH_REPO_TOKEN`, déjà utilisé par le brief écrit, permet ce bridge.
+
+La home lit ce manifeste à chaque visite. Les MP3 ne chargent qu'au lancement
+volontaire de la lecture. Seule la dernière paire est présente dans l'arbre du
+site ; la branche interne `ecoute` conserve les archives. Un aperçu privé, un
+épisode incomplet ou un ancien run ne remplace jamais la paire courante. Si le
+bridge échoue, le dernier épisode reste écoutable avec sa date d'origine.
+
+Vérification ciblée : `python -m unittest discover -s tests -p test_podcast_site.py`.
