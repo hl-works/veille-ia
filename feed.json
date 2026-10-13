@@ -14267,5 +14267,112 @@
     "tweet_url": "https://x.com/emollick/status/2109472254417318335",
     "media": false,
     "auteur_x": "@emollick"
+  },
+  {
+    "date": "2026-10-12",
+    "titre_fr": "Meta revient au premier plan avec un nouveau modèle de pointe",
+    "resume_fr": "Plusieurs figures du secteur (Tobi Lütke, Nathan Lambert, Guillaume Rauch) saluent un nouveau modèle de Meta jugé très performant, capable de rivaliser avec les meilleurs modèles actuels. Après une période creuse, Meta semble de retour à la frontière technologique.",
+    "tags": [
+      "meta",
+      "modeles"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/tobi/status/2109693718978842715",
+    "media": false,
+    "auteur_x": "@tobi"
+  },
+  {
+    "date": "2026-10-12",
+    "titre_fr": "Cursor intégré à l'abonnement X de xAI",
+    "resume_fr": "L'éditeur de code assisté par IA Cursor rejoint l'abonnement X. Les abonnés partagent désormais un pool d'usage commun entre Cursor, Grok Build et les autres produits Grok, avec un usage de code doublé sur les modèles Grok. Les modèles tiers passent à une tarification à l'API.",
+    "tags": [
+      "xai",
+      "produit",
+      "agents"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/cursor_ai/status/2109783879490191502",
+    "media": false,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-10-12",
+    "titre_fr": "Microsoft annonce une nouvelle puce IA plus efficace",
+    "resume_fr": "Mustafa Suleyman met en avant une nouvelle puce maison de Microsoft offrant 40% de tokens générés en plus par watt, un gain d'efficacité énergétique notable pour l'inférence IA.",
+    "tags": [
+      "hardware",
+      "produit"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/mustafasuleyman/status/2109655335250366752",
+    "media": false,
+    "auteur_x": "@mustafasuleyman"
+  },
+  {
+    "date": "2026-10-12",
+    "titre_fr": "Mistral met en avant les capacités visuelles de son modèle",
+    "resume_fr": "Mistral annonce de solides performances en localisation visuelle (visual grounding) : son modèle identifie précisément la position d'objets dans une image, atteignant 42% sur le benchmark Dense 200, devant certains modèles fermés de pointe.",
+    "tags": [
+      "mistral",
+      "modeles",
+      "recherche"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/MistralAI/status/2109687906751086628",
+    "media": true,
+    "auteur_x": "@MistralAI"
+  },
+  {
+    "date": "2026-10-12",
+    "titre_fr": "Anthropic réduit l'efficacité des attaques par distillation sur Claude",
+    "resume_fr": "Anthropic affirme avoir fait des progrès significatifs ces derniers mois pour limiter les attaques par distillation visant à copier Claude, et détaille sa méthode dans un billet technique.",
+    "tags": [
+      "anthropic",
+      "recherche"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/AnthropicAI/status/2109795898909950247",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-10-12",
+    "titre_fr": "Perplexity construit un système de dépôts Git pour agents IA",
+    "resume_fr": "Perplexity explique que chaque Projet est un dépôt Git conçu pour les agents : chaque agent travaille dans son propre bac à sable éphémère et valide ses changements dans un dépôt partagé. L'entreprise affirme que la recherche par simples commandes ls/grep surpasse la recherche sémantique sur l'analyse de documents financiers.",
+    "tags": [
+      "produit",
+      "agents",
+      "recherche"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/AravSrinivas/status/2109738344011972893",
+    "media": false,
+    "auteur_x": "@AravSrinivas"
+  },
+  {
+    "date": "2026-10-12",
+    "titre_fr": "Les modèles « suffisamment bons » gagnent du terrain face aux modèles premium",
+    "resume_fr": "Selon des données relayées par Gary Marcus, les dix modèles les plus performants ne représentent plus que 14% des tokens consommés par les développeurs, contre 55% l'an dernier. Les modèles moins chers et « assez bons » l'emportent sur le volume.",
+    "tags": [
+      "modeles",
+      "recherche"
+    ],
+    "score": 56,
+    "tweet_url": "https://x.com/GaryMarcus/status/2109775449429877229",
+    "media": true,
+    "auteur_x": "@GaryMarcus"
+  },
+  {
+    "date": "2026-10-13",
+    "titre_fr": "Dix-neuf modèles mobiles dépassent désormais GPT-4",
+    "resume_fr": "Ethan Mollick souligne que 19 modèles capables de tourner sur un smartphone moderne surpassent désormais GPT-4, qui fut pourtant le meilleur modèle au monde pendant un an. Illustration de la rapidité de la banalisation des capacités IA.",
+    "tags": [
+      "modeles",
+      "open-source"
+    ],
+    "score": 54,
+    "tweet_url": "https://x.com/emollick/status/2109851162518425779",
+    "media": true,
+    "auteur_x": "@emollick"
   }
 ]
