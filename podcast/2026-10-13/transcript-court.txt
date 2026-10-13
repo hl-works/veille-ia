@@ -1,0 +1,9 @@
+Bonjour et bienvenue dans l'essentiel de votre veille IA du treize octobre.
+
+Grosse nouvelle du jour, Meta revient dans la course. Son nouveau modèle, surnommé Muse Wonder, est qualifié de niveau frontière, c'est-à-dire le tout meilleur niveau actuel. Le patron de Shopify dit avoir eu du mal à le prendre en défaut. Le ton dominant, c'est clair, Meta is back.
+
+Autre tendance forte, les petits modèles grignotent le marché. Ethan Mollick note que dix-neuf modèles capables de tourner sur un smartphone dépassent désormais GPT quatre. Et les dix meilleurs modèles ne pèsent plus que quatorze pour cent des usages des développeurs. Autrement dit, l'IA de qualité se banalise et devient bon marché.
+
+En bref. La bataille des puces s'intensifie, avec une nouvelle puce Microsoft plus économe en énergie et un accélérateur Intel pour les centres de données. Le français Mistral progresse sur l'analyse d'images avec son modèle Le Chonk. Anthropic dit mieux protéger Claude contre la copie de son savoir-faire. Et l'outil Cursor rejoint l'abonnement de l'écosystème Grok. Côté débats, le soupçon de bulle reste vif, et un rappel de prudence s'impose face aux arnaques par fausses voix.
+
+C'était l'essentiel de votre veille IA. La version complète vous attend juste en dessous. À très bientôt.

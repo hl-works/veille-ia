@@ -1,0 +1,57 @@
+Bonjour et bienvenue dans votre veille IA du treize octobre.
+
+On commence avec Meta, qui revient dans la course. L'entreprise vient de dévoiler un nouveau modèle, surnommé Muse Wonder. On l'évoque aussi sous le nom de code Watermelon. Et beaucoup de spécialistes le classent au niveau frontière, c'est-à-dire le tout meilleur niveau actuel. Après des mois de doute sur Meta, le ton du jour est clair. On entend un peu partout « Meta is back ».
+
+Plusieurs voix respectées saluent ce retour. Tobi Lütke, le patron de Shopify, affirme avoir eu du mal à le prendre en défaut. Même sur des tâches où d'autres grands modèles échouaient. Il parle d'un modèle très très bon. Guillaume Rauch, de Vercel, évoque des progrès incroyablement rapides. Et le chercheur Nathan Lambert lance « Meta is back at the frontier ». Ethan Mollick, qui y a eu un accès anticipé, note une progression spectaculaire depuis avril sur ses tests visuels. Le modèle est déjà accessible via la passerelle d'IA de Vercel.
+
+Côté stratégie, l'investisseur Gavin Baker résume la situation comme une partie d'échecs à très gros enjeux. Il pose la question. Qui aurait imaginé il y a un an, quand Gemini dominait, que Gemini ne serait même plus dans la conversation, et que Meta serait nettement en avance ? Ce que ça change pour vous, c'est simple. La concurrence entre géants s'intensifie. Ça tire les capacités vers le haut et ça fait baisser les prix pour les utilisateurs.
+
+---
+
+Autre tendance du jour. Les petits modèles grignotent le marché. Ethan Mollick partage un fait marquant. Dix-neuf modèles d'IA capables de tourner sur un smartphone moderne sont désormais meilleurs que GPT quatre. Et GPT quatre fut pourtant le meilleur du monde pendant un an.
+
+En parallèle, Gary Marcus relaie un chiffre fort. Les dix meilleurs modèles ne représentent plus que quatorze pour cent des usages des développeurs. L'an dernier, c'était cinquante-cinq pour cent. Autrement dit, les modèles moins chers et assez bons l'emportent sur le volume.
+
+Ces deux signaux pointent la même chose. L'intelligence artificielle de qualité se banalise et devient bon marché. Il y a deux ans, on se demandait si quelqu'un rattraperait OpenAI. Aujourd'hui, une puissance équivalente à GPT quatre tient dans un téléphone. Gary Marcus y voit même un risque pour les valorisations boursières du secteur. Les clients migrent massivement vers les modèles suffisants et moins coûteux.
+
+À noter quand même la prudence d'Ethan Mollick sur les classements. Il rappelle que les indices de performance sont pris beaucoup trop au sérieux. Et qu'ils ne disent pas tout. Ce que ça change pour vous ? Pour une PME ou un commerçant, nul besoin du modèle le plus cher. Des solutions économiques, voire embarquées sur un appareil, suffisent souvent largement.
+
+---
+
+Passons au matériel, avec la bataille des puces. Car la guerre de l'IA se joue aussi sur le silicium. Mustafa Suleyman, chez Microsoft IA, annonce une nouvelle puce maison. Elle affiche quarante pour cent de jetons par watt en plus. Concrètement, plus d'efficacité énergétique. De son côté, Intel présente son accélérateur D deux cent soixante-dix, doté de jusqu'à quatre cent quatre-vingts gigaoctets de mémoire, pour les centres de données.
+
+Concevoir ses propres puces permet aux géants de réduire leur dépendance aux fournisseurs. Et de maîtriser leurs coûts de calcul, qui explosent avec la demande. Le gain d'efficacité énergétique compte beaucoup. Car l'électricité est l'un des postes de dépense majeurs des centres de données. L'investisseuse Sarah Guo salue cette diversification. Pour elle, un écosystème riche d'innovation sur le silicium est essentiel.
+
+Intel, longtemps en retrait sur l'IA, tente avec son D deux cent soixante-dix de revenir dans une course dominée par Nvidia. Ce que ça change pour vous ? Plus de concurrence sur le matériel, ça signifie à terme des services d'IA moins chers et moins énergivores.
+
+---
+
+Côté France, maintenant. Mistral muscle la vision de son modèle. Le français annonce des progrès sur l'ancrage visuel, avec son modèle Le Chonk. L'ancrage visuel, c'est la capacité à localiser précisément un objet dans une image. Mistral revendique un score de quarante-deux pour cent sur un test de référence, devant même certains grands modèles fermés concurrents.
+
+Et pourquoi c'est utile ? Parce que ça sert à désigner exactement où se trouve un élément dans une photo. On pense à l'inspection industrielle, au contrôle qualité, à l'accessibilité ou à la robotique. Mistral affirme dépasser sur ce point des modèles propriétaires de premier plan. C'est notable pour un acteur européen face aux géants américains. L'annonce reste technique et devra être confirmée par des usages concrets. Mais elle montre que Mistral continue de défendre sa place. Ce que ça change pour vous ? Un fournisseur européen crédible sur l'analyse d'images, c'est un atout pour les entreprises soucieuses de souveraineté des données.
+
+---
+
+On enchaîne avec Anthropic, qui se défend contre le vol de ses modèles. L'entreprise publie une note. Elle explique avoir nettement réduit l'efficacité des attaques par distillation contre Claude. La distillation, c'est une technique par laquelle un concurrent interroge massivement un modèle pour en copier le savoir-faire à moindre coût.
+
+Autrement dit, ça revient à faire parler un modèle très performant pour entraîner, à bas prix, un modèle rival qui l'imite. Anthropic dit avoir progressé ces derniers mois pour rendre ces attaques moins efficaces. Et détaille sa méthode dans un billet. Cette question de la protection du savoir-faire est devenue centrale. C'est l'un des rares fossés que les laboratoires peuvent défendre. Dans un marché où, comme le dit un observateur, il n'y a pas de barrière durable.
+
+Le sujet suscite aussi des critiques. Gary Marcus reste sévère sur l'alignement, c'est-à-dire la maîtrise du comportement des IA. Il y voit un revers pour les efforts de sécurité de l'entreprise. Ce que ça change pour vous ? Rien de direct au quotidien. Mais ces batailles déterminent quels acteurs resteront durablement en course.
+
+---
+
+Côté outils, Cursor rejoint l'abonnement X. L'outil de programmation assistée par IA annonce son intégration à The X Subscription, l'abonnement de l'écosystème d'Elon Musk. Les plans payants partageront un même quota d'usage entre Cursor, Grok Build et d'autres produits Grok. Avec deux fois plus d'usage sur les modèles Grok.
+
+Les abonnés actuels de Cursor peuvent conserver leur offre ou basculer vers l'abonnement X. Mais attention à un point. Pour laisser plus de place aux modèles Grok, les modèles tiers dans Cursor passent à une tarification à l'usage sur les nouveaux plans. Ça peut renchérir l'addition pour qui tient à utiliser d'autres IA. Cette manœuvre illustre la stratégie de xAI pour pousser Grok auprès des développeurs.
+
+Ailleurs, Perplexity publie les coulisses techniques de Perplexity Projects. C'est conçu comme un dépôt de code partagé, où des agents IA travaillent chacun dans leur bac à sable. Ce que ça change pour vous ? Si vous utilisez ces outils, vérifiez bien les conditions tarifaires avant de changer d'offre.
+
+---
+
+Et on termine avec les débats du jour. Le soupçon de bulle autour de l'IA reste vif. Gary Marcus multiplie les alertes sur d'éventuels excès de valorisation et des promesses douteuses aux investisseurs. Côté développement, une étude relayée sur Hacker News résume un paradoxe. Les agents de codage produisent plus de code, mais pas forcément plus de logiciels utiles.
+
+Plusieurs discussions agitent la communauté. Le projet cartographique QGIS a décrété un moratoire sur les contributions générées par IA. Un article demande pourquoi les entreprises d'IA ne sont pas poursuivies pour le moissonnage massif de données. Et Ethan Mollick lance un rappel de bon sens sur la sécurité. Activez la double authentification. Et convenez d'un mot de passe familial. Car l'IA fait chuter le coût des arnaques ciblées, comme les fausses voix au téléphone qui réclament de l'argent.
+
+Enfin, un débat de fond oppose optimistes et sceptiques. Pour certains investisseurs, l'optimisme gagne. Gary Marcus insiste au contraire. Une IA générative ne peut pas être tenue pour fiable, même sur des instructions simples. Ce que ça change pour vous ? L'IA est un outil puissant mais faillible. À utiliser avec méthode. Et avec prudence sur les arnaques.
+
+Et pour finir, la phrase du jour, signée Greg Isenberg. Pendant quarante ans, les ordinateurs étaient comme des voitures qu'il fallait conduire soi-même. Ils deviennent des chauffeurs à qui l'on dit simplement où aller. Une belle image pour résumer le basculement vers les agents autonomes. À très vite.
