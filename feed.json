@@ -14374,5 +14374,158 @@
     "tweet_url": "https://x.com/emollick/status/2109851162518425779",
     "media": true,
     "auteur_x": "@emollick"
+  },
+  {
+    "date": "2026-10-13",
+    "titre_fr": "Google lance Gemini 4 Argon",
+    "resume_fr": "Google déploie mondialement Gemini 4 Argon, son nouveau modèle de pointe pensé pour les tâches complexes en programmation, finance, droit, cybersécurité et science. Il arrive dans l'app Gemini, la recherche, l'API et Antigravity pour les abonnés Pro et Ultra. Plusieurs observateurs le jugent comme le premier modèle non-OpenAI/Anthropic à atteindre le haut du panier.",
+    "tags": [
+      "google",
+      "modeles",
+      "produit"
+    ],
+    "score": 88,
+    "tweet_url": "https://x.com/OfficialLoganK/status/2110038940841545827",
+    "media": false,
+    "auteur_x": "@OfficialLoganK"
+  },
+  {
+    "date": "2026-10-13",
+    "titre_fr": "Gemini 4 Argon disponible dans Cursor",
+    "resume_fr": "L'éditeur de code Cursor intègre Gemini 4 Argon, qui se classe au niveau d'Opus 5.5 sur son benchmark interne. Tarif : 2 $/M de tokens en entrée et 10 $/M en sortie.",
+    "tags": [
+      "google",
+      "produit",
+      "modeles"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/cursor_ai/status/2110087611763368271",
+    "media": true,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-10-13",
+    "titre_fr": "Gemini 4 apprend à un robot à jouer en regardant une vidéo",
+    "resume_fr": "Google DeepMind montre Gemini 4 Argon analysant une vidéo pour en déduire la physique, coder sa propre simulation et entraîner le robot humanoïde Apollo d'Apptronik à réussir une tâche d'adresse. Une illustration des capacités de raisonnement physique et de génération de simulations.",
+    "tags": [
+      "google",
+      "recherche",
+      "hardware"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2110078384617464201",
+    "media": true,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-10-13",
+    "titre_fr": "Shopify ouvre son catalogue aux agents IA",
+    "resume_fr": "Shopify propose une API unique donnant aux développeurs d'agents et d'apps l'accès au catalogue, à la recherche, au paiement et au suivi de commande des marchands. Objectif : permettre de construire des expériences d'achat pour les clients via des agents.",
+    "tags": [
+      "shopify",
+      "agents",
+      "produit",
+      "commerce",
+      "paiement"
+    ],
+    "score": 72,
+    "tweet_url": "https://x.com/ShopifyDevs/status/2110092667447382049",
+    "media": false,
+    "auteur_x": "@ShopifyDevs"
+  },
+  {
+    "date": "2026-10-13",
+    "titre_fr": "Shopify lance une compétence \"personal shopper\" pour agents",
+    "resume_fr": "Shopify propose une nouvelle \"skill\" qui transforme n'importe quel agent en assistant d'achat personnel : on connecte son compte Shop et l'agent aide à trouver et acheter des produits.",
+    "tags": [
+      "shopify",
+      "agents",
+      "commerce",
+      "vente"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/tobi/status/2110091896156803526",
+    "media": true,
+    "auteur_x": "@tobi"
+  },
+  {
+    "date": "2026-10-13",
+    "titre_fr": "GPT-5.6 Sol découvre une faille critique dans Chrome",
+    "resume_fr": "OpenAI rapporte que son modèle GPT-5.6 Sol a trouvé, en 6 jours et 40 000 $ de calcul, une vulnérabilité critique et exploitable de bout en bout dans Chrome, affectant potentiellement un milliard d'utilisateurs. Un exemple des usages défensifs de l'IA en cybersécurité.",
+    "tags": [
+      "openai",
+      "recherche"
+    ],
+    "score": 65,
+    "tweet_url": "https://x.com/gdb/status/2110063893016096831",
+    "media": false,
+    "auteur_x": "@gdb"
+  },
+  {
+    "date": "2026-10-13",
+    "titre_fr": "Mistral met ses modèles en orbite",
+    "resume_fr": "Mistral annonce la présence de ses modèles à bord d'une constellation de satellites \"IA\" développée avec Orbit Works, Loft Orbital et Nvidia, une première du genre pour l'inférence spatiale.",
+    "tags": [
+      "mistral",
+      "hardware"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/MistralAI/status/2109998925037859091",
+    "media": false,
+    "auteur_x": "@MistralAI"
+  },
+  {
+    "date": "2026-10-13",
+    "titre_fr": "Anthropic alerte sur un seuil de capacité IA inquiétant",
+    "resume_fr": "Anthropic met en garde contre l'importance de surveiller les seuils de capacité des modèles plutôt que les progrès graduels. Le cas évoqué : la capacité suffisante pour créer un ver informatique auto-répliquant visant des objets connectés comme des téléviseurs bas de gamme.",
+    "tags": [
+      "anthropic",
+      "recherche",
+      "politique-ia"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/emollick/status/2110008451866710221",
+    "media": true,
+    "auteur_x": "@emollick"
+  },
+  {
+    "date": "2026-10-13",
+    "titre_fr": "Anthropic remplace Git par son propre système de versioning",
+    "resume_fr": "Débordée par le volume de code généré par ses agents (de 2 500 à plus de 30 000 modifications fusionnées par jour), Anthropic explique avoir conçu en cinq mois un nouveau système de contrôle de version et migré son monorepo hors de Git, l'infrastructure classique n'étant plus adaptée à l'échelle des agents.",
+    "tags": [
+      "anthropic",
+      "agents",
+      "recherche"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/AnthropicAI/status/2110047081414987957",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-10-14",
+    "titre_fr": "Une étude Wharton peine à mesurer l'impact financier de l'IA",
+    "resume_fr": "Selon une nouvelle étude de Wharton relayée par The Information, il reste très difficile de démontrer des impacts financiers concrets et mesurables des dépenses en IA. Un signal de prudence pour les dirigeants face aux promesses de retour sur investissement.",
+    "tags": [
+      "politique-ia"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/GaryMarcus/status/2110174564189937772",
+    "media": true,
+    "auteur_x": "@GaryMarcus"
+  },
+  {
+    "date": "2026-10-14",
+    "titre_fr": "Gemma au service de la détection de fraude à Singapour",
+    "resume_fr": "Google DeepMind et GovTech Singapour utilisent le modèle ouvert Gemma, affiné sur les tactiques d'arnaque locales, pour détecter en temps réel les fraudes par ingénierie sociale directement sur l'appareil, sans compromettre la vie privée.",
+    "tags": [
+      "google",
+      "open-source",
+      "produit"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2110190101707858039",
+    "media": true,
+    "auteur_x": "@GoogleDeepMind"
   }
 ]
