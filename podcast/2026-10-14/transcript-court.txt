@@ -1,0 +1,11 @@
+Bonjour et bienvenue dans l'essentiel de votre veille IA du quatorze octobre.
+
+Google lance Gemini quatre Argon, son nouveau modèle phare. On le présente comme le plus avancé pour les tâches complexes, du code au droit. Il arrive dans l'application Gemini et dans la recherche. Plusieurs testeurs saluent un vrai bond en avant, avec une personnalité bien à lui.
+
+Côté sécurité, maintenant. OpenAI annonce que son modèle GPT cinq point six Sol a trouvé une faille critique dans le navigateur Chrome. Une vulnérabilité qui aurait pu toucher environ un milliard d'utilisateurs. Le message, c'est que les défenseurs peuvent désormais mieux protéger leurs logiciels. Mais Anthropic alerte sur le revers de la médaille. Les attaquants disposent des mêmes armes.
+
+Autre info du jour. Shopify transforme n'importe quel assistant IA en acheteur personnel. On connecte son compte, et l'agent trouve les produits recherchés. Pour les commerçants, ça change la façon dont les clients trouvent vos produits.
+
+En bref, Anthropic a dû abandonner Git pour construire son propre outil, car ses agents produisent trop de code. Le débat sur la rentabilité de l'IA continue, et Character point ai s'est placé en faillite. Enfin, Google et Singapour lancent un détecteur d'arnaques qui fonctionne directement sur votre téléphone.
+
+C'était l'essentiel de votre veille IA. La version complète vous attend juste en dessous. À très bientôt.

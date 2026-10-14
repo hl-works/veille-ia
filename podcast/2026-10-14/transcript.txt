@@ -1,0 +1,81 @@
+Bonjour et bienvenue dans votre veille IA du quatorze octobre.
+
+On commence avec le lancement du jour. Google déploie dans le monde entier Gemini quatre Argon. C'est son modèle le plus avancé pour les tâches complexes. On parle de code, de finance, de droit, de cybersécurité et de science.
+
+Et pourquoi c'est important ? Parce que plusieurs testeurs saluent un vrai bond en avant. Le modèle aurait même une personnalité différente de celle de ChatGPT ou de Claude.
+
+Concrètement, il arrive dans l'application Gemini, dans la recherche Google et chez des partenaires comme Cursor. Il est disponible depuis le treize octobre pour les abonnés Pro et Ultra, et aussi via l'API pour les développeurs.
+
+Quelques chiffres pour situer. Le modèle a été testé en interne par plus de cent mille personnes pendant un mois. Il peut produire jusqu'à un million de mots en une seule réponse quand la tâche l'exige.
+
+L'expert Ethan Mollick y a eu accès avant la sortie. Il le juge très différent des autres. C'est le premier modèle hors OpenAI et Anthropic à passer certains de ses tests exigeants. Il le trouve bon rédacteur et créatif. Mais parfois trop sûr de lui, et un peu paresseux sur les tâches multi-agents complexes.
+
+Côté démonstrations, c'est spectaculaire. Le modèle a recréé un niveau dans un jeu Super Nintendo vieux de trente-six ans, en modifiant le code. Il a aussi bâti un musée interactif en trois dimensions des ordinateurs Apple, en allant chercher lui-même les images et les données. Et il a appris à un robot humanoïde à jouer à un jeu de lancer de sacs, rien qu'en regardant une vidéo.
+
+Le conseil de Google ? Rester agnostique. Autrement dit, ne pas dépendre d'un seul fournisseur.
+
+Autre grand sujet du jour. L'IA devient une arme de cybersécurité.
+
+Greg Brockman, d'OpenAI, annonce que leur modèle GPT cinq point six Sol a trouvé une faille critique dans le navigateur Chrome. Il lui a fallu six jours et quarante mille dollars de calcul. C'est une vulnérabilité qui aurait pu toucher environ un milliard d'utilisateurs.
+
+Le message, c'est que les défenseurs peuvent désormais sécuriser leurs logiciels à un niveau inédit. Cette découverte a d'ailleurs valu à OpenAI la première récompense complète de Google en deux mille vingt-six pour ce type de faille.
+
+Le fonds a16z pousse une thèse optimiste. Le coût pour trouver des bugs s'effondre. Certains estiment la capacité intellectuelle par dollar quatre-vingt-dix-neuf pour cent moins chère qu'il y a un an. Et comme le nombre de bugs dans un logiciel est fini, on pourrait tendre vers zéro faille.
+
+Les cryptographes de Stanford ajoutent une idée. On pourra tester une protection en lançant un modèle pendant un mois pour tenter de la casser. Au lieu d'attendre dix ans.
+
+Mais il y a un revers. Anthropic alerte sur le risque qu'une IA franchisse un seuil dangereux. Celui qui permettrait de créer un ver auto-réplicant visant des objets connectés, comme des télés bon marché.
+
+Ethan Mollick relaie cet avertissement. Il faut surveiller les seuils de capacité. C'est le moment où une IA devient soudain capable de quelque chose de dangereux. Pas seulement la progression régulière.
+
+Pour une PME, retenez ceci. La sécurité de vos outils va s'améliorer. Mais les attaquants disposent des mêmes armes.
+
+Côté commerce, maintenant. Shopify transforme les assistants IA en acheteurs personnels.
+
+L'entreprise lance une compétence shopping. En gros, on connecte son compte, et l'agent trouve les produits recherchés. Une nouvelle API donne aussi aux développeurs un accès unique au catalogue, à la recherche, au paiement et au suivi de commande.
+
+Le but ? Permettre aux IA d'acheter pour les consommateurs, directement chez les marchands.
+
+Le patron de Shopify, Tobi Lütke, invite à tester tout ça. L'entreprise rappelle le poids de son écosystème. Ses partenaires ont généré près de quatre milliards de dollars l'an dernier. Et la plateforme représenterait près de dix millions d'emplois dans le monde.
+
+Ethan Mollick anticipe toutefois un effet secondaire. Quand des millions de consommateurs sauront que leur assistant peut réclamer sans limite d'anciens remboursements ou négocier des offres, les services clients risquent d'être submergés. Comme une attaque par saturation, mais parfaitement légale.
+
+Pour un commerçant, le message est clair. Ces agents acheteurs vont changer la façon dont vos clients trouvent et commandent vos produits. Mieux vaut s'y préparer, côté catalogue et côté service après-vente.
+
+Autre info du jour, chez Anthropic. Le créateur de Claude a dû réinventer ses outils pour suivre ses propres IA.
+
+L'entreprise raconte avoir abandonné Git. C'est l'outil standard pour gérer le code informatique. Elle a construit le sien en interne.
+
+Et pourquoi ? Parce que ses outils, conçus pour des humains, ne suivaient plus le rythme de ses agents IA. Un chiffre illustre tout. Anthropic est passée d'environ deux mille cinq cents modifications de code par jour en mai à plus de trente mille en septembre.
+
+Le goulot d'étranglement n'était plus la capacité humaine. C'était l'infrastructure, saturée par le volume produit par les agents. En cinq mois, l'entreprise a bâti un tout nouveau système de gestion de versions, et migré l'intégralité de son code.
+
+Le fondateur de Vercel, Guillermo Rauch, résume l'ambiance. Les agents de code seraient l'application reine de l'IA. Un âge d'or pour les développeurs.
+
+Pour une PME, ça montre une chose. Les IA ne font pas qu'aider ponctuellement. Elles changent l'échelle et l'organisation du travail technique.
+
+Changement de ton, maintenant. On parle rentabilité, et des nuages dans le ciel de l'IA.
+
+Une nouvelle étude de Wharton, relayée par Gary Marcus, souligne qu'il reste très difficile de mesurer des gains financiers concrets issus des dépenses en IA.
+
+Dans le même temps, Character point ai se place en faillite. C'est l'une des applications de chatbots les plus connues. Et un ingénieur d'OpenAI aurait été arrêté pour avoir placé un micro dans une salle de réunion de dirigeants.
+
+Gary Marcus, voix critique du secteur, décrit une industrie pas encore rentable. Elle est confrontée à une guerre des prix, à une concurrence accrue, à des questions de responsabilité et de sécurité, et à une confiance client en baisse.
+
+À l'inverse, Patrick Collison, de Stripe, et Amjad Masad, de Replit, proposent une analogie plus nuancée. L'IA sera comme l'alimentation. Indispensable à toute l'économie, mais sans que les producteurs captent l'essentiel de la valeur. Il reste donc tout à fait pertinent de créer une entreprise.
+
+Pour vous, au-delà du battage, la vraie question reste la même. Quelle valeur mesurable l'IA apporte concrètement à votre activité ?
+
+Et on termine avec la protection sur votre téléphone. Google DeepMind et le gouvernement de Singapour ont développé un détecteur d'arnaques.
+
+Il fonctionne directement sur l'appareil, à partir du modèle ouvert Gemma. Et c'est utile, car plus de la moitié des crimes signalés à Singapour reposent sur de la manipulation.
+
+Comment ça marche ? Le modèle a été affiné sur les techniques d'arnaque locales. Il repère les tentatives de fraude au moment où elles surviennent.
+
+L'atout clé, c'est que tout se passe sur le téléphone. Les conversations ne partent pas sur des serveurs externes. Ça préserve la vie privée. C'est un bel exemple d'IA ouverte au service d'une mission publique.
+
+Pour un commerçant ou une PME, souvent cibles de fraudes par message ou par e-mail, ce type d'outil embarqué pourrait, à terme, réduire les risques au quotidien.
+
+Terminons avec la phrase du jour, signée Alexandr Wang, relayée par Y Combinator. À l'ère de l'intelligence abondante, la ressource rare ne sera plus l'intelligence, mais la vision et l'ambition.
+
+Autrement dit, quand l'IA rend tout plus facile, c'est votre capacité à savoir où vous voulez aller qui fera la différence. À très bientôt.
