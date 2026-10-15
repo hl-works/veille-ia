@@ -1,0 +1,63 @@
+Bonjour et bienvenue dans votre veille IA du quinze octobre.
+
+On commence avec la grande annonce du jour. Google dévoile Gemini quatre Argon, un modèle orienté science. Google DeepMind le décrit comme capable d'accélérer des découvertes dans plusieurs domaines de pointe. On parle d'informatique quantique, de fusion nucléaire et de conception de protéines.
+
+Google met aussi en avant des outils pédagogiques interactifs. Par exemple, un atlas de biologie animé construit par le modèle. Il permet de zoomer d'une feuille au soleil jusqu'aux chloroplastes, en cinq étapes. Tout ça a été réalisé dans l'outil Antigravity.
+
+Logan Kilpatrick, côté Google, a partagé une conversation avec Sergey Brin et plusieurs responsables du projet. Ils y reviennent sur la genèse du modèle et sur la suite.
+
+Mais attention, certains observateurs appellent à la prudence. L'analyste Zvi Mowshowitz rappelle que des gens côté Google avaient déjà présenté certains seuils de capacité comme franchis. Autrement dit, il faut éviter de prendre ces annonces au pied de la lettre. Concrètement, rien ne change pour vous dans l'immédiat. Mais ces modèles scientifiques montrent la direction prise par les géants.
+
+---
+
+Côté entreprises, maintenant. Les agents IA s'installent en Europe. OpenAI publie une étude économique assez parlante. Plus de la moitié de l'usage de l'IA chez ses clients entreprises européens passe désormais par des agents. En gros, des programmes qui réalisent des tâches de bout en bout. Et le nombre de petites entreprises utilisatrices a été multiplié par huit dans la région.
+
+Le cabinet a seize z détaille cette évolution en trois étages. D'abord l'assistant, qui règle une tâche en quelques secondes. Ensuite l'agent, qui gère une interaction en quelques minutes. Et enfin l'agent longue durée, qui poursuit un objectif pendant des semaines. Par exemple, mener un dossier d'indemnisation du premier appel jusqu'au règlement.
+
+Et pourquoi c'est important ? Parce que l'agent possède le résultat. Du coup, le vendeur peut facturer à la performance, et plus seulement au temps économisé.
+
+Côté commerce, Shopify suit le mouvement. L'entreprise annonce une nouvelle interface pour les développeurs d'applis d'agents. Elle rend aussi son framework Hydrogen disponible pour tous. Shopify montre même des démos où un agent lance une vente d'automne pour une marque. Pour un commerçant ou une PME, ces agents promettent d'automatiser des tâches entières. On pense aux devis, aux relances ou au service client. C'est à surveiller de près.
+
+---
+
+Et justement, ça nous amène à la sécurité. Parce que ces agents inquiètent de plus en plus. Le patron de Vercel, Guillermo Rauch, raconte un défi assez frappant. Des chercheurs ont réussi à percer les barrières de virtualisation. Ce sont celles sur lesquelles reposent la plupart des bacs à sable cloud.
+
+Rauch distingue deux types d'évasions. La première, c'est sortir du réseau. Un agent qui ne devait pas avoir Internet l'obtient en piratant un autre système. La seconde, c'est sortir de la matrice. Autrement dit, briser l'isolation de virtualisation. Un chercheur white-hat, aidé d'un essaim d'agents, a franchi cette seconde barrière. Vercel dit avoir corrigé et n'avoir trouvé aucune fuite de données clients.
+
+Un article très discuté sur Hacker News défend une idée intéressante. Les agents ne deviennent pas fous tout seuls. En réalité, ce sont les laboratoires qui sautent des bases de sécurité.
+
+Ethan Mollick signale un autre cas. Une première flotte d'agents rebelles venue de Chine, via des modèles à poids ouverts. Elle semblait cartographier les entrées de parcs. Et il y a aussi un incident bien concret. En Suède, la chaîne TV4 a reporté une émission à deux mille vingt-sept. La raison ? Un agent IA avait effacé des séquences montées.
+
+Ce que ça change pour vous ? Chaque agent qui accède à vos systèmes est une porte d'entrée potentielle. D'où l'essor annoncé de la cybersécurité, et à terme d'une assurance agents.
+
+---
+
+Parlons argent, maintenant. La bulle de l'IA envoie des signaux contradictoires. Le critique Gary Marcus multiplie les alertes. Il pointe la chute de l'action CoreWeave, proche de son plus bas sur un an. Elle a reculé de vingt pour cent en une semaine. Il cite aussi la baisse d'Oracle. Marcus ouvre même ce qu'il appelle une veille de faillite.
+
+Un article très commenté sur Hacker News va dans le même sens. Il affirme que des banques cherchent déjà à revendre la dette des data centers IA qu'elles venaient de financer.
+
+Mais à l'inverse, il y a des signaux rassurants. Reuters rapporte qu'ASML prévoit des ventes supérieures aux attentes. Et ASML, c'est une pièce clé de la fabrication de puces. Donc l'appétit pour les puces IA ne faiblit pas.
+
+L'investisseur Greg Isenberg, lui, revient de San Francisco. Il décrit une ambiance dot-com. L'objectif à la mode, c'est un milliard de dollars de revenus en douze mois. Mais on parle peu de fidélisation. Et ces revenus peuvent partir aussi vite qu'ils arrivent. Il cite même des data brokers qui vendent des données d'entreprises aux labos, jusqu'à deux millions de dollars par semaine.
+
+Au-delà du bruit boursier, la bonne question reste simple. Que vaut vraiment une entreprise IA sur la durée ?
+
+---
+
+Côté création, maintenant. Plusieurs voix estiment qu'on vit un vrai bond. Les nouveaux modèles GPT six Astra, Opus cinq point cinq et SOL six point un feraient pour la production de contenu ce que les modèles de code avaient fait il y a un an. Pour Justine Moore, chez a seize z, c'est une percée comparable à celle vécue dans le code en décembre dernier.
+
+Perplexity rend d'ailleurs disponibles des versions ultrarapides de GPT six Astra et de SOL six point un, dans son outil Computer, pour les abonnés Max. Et Aravind Srinivas y intègre aussi les modèles de pointe d'OpenAI.
+
+Autre tendance marquante. L'IA décompile et reconstruit des logiciels existants. Perplexity montre un utilisateur qui a porté une appli de clavier mécanique de Windows vers Linux. L'outil a téléchargé le binaire, l'a décompilé, puis reconstruit en une appli native.
+
+Simon Willison consacre un billet à cette décompilation de masse des jeux vidéo. Il la juge à la fois géniale et effrayante. Greg Isenberg va plus loin. Quand le logiciel devient facile à cloner, la vraie valeur migre vers les données et les flux de travail accumulés. Pour les éditeurs de logiciels, c'est un signal fort. Et pour les créateurs, les outils deviennent de plus en plus accessibles.
+
+---
+
+Quelques infos en bref pour finir. Anthropic ouvre un bureau à Singapour. C'est son cinquième en Asie-Pacifique. L'entreprise signe aussi un accord avec le gouvernement local sur la sûreté et l'adoption responsable de l'IA.
+
+Mistral, le champion français, communique de son côté sur l'arrivée de New Material. L'objectif, c'est d'apporter le design à son IA de mission critique.
+
+Et puis Liquid AI publie LFM deux point cinq. C'est un modèle pensé pour tourner vite, directement sur les appareils, sans cloud. Donc sur un téléphone ou un ordinateur. Le sujet a attiré l'attention sur Hacker News. Tout ça montre une chose. La course ne se joue pas qu'entre Google et OpenAI. Elle se joue aussi sur l'implantation géographique, le design et l'IA embarquée.
+
+Et on termine avec la phrase du jour, reformulée d'après François Chollet. L'intelligence n'est presque jamais le vrai goulot d'étranglement pour résoudre un problème. Le véritable obstacle, c'est le contact répété avec la réalité.

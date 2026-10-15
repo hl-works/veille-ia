@@ -1,0 +1,11 @@
+Bonjour et bienvenue dans l'essentiel de votre veille IA du quinze octobre.
+
+On commence avec Google, qui dévoile Gemini quatre Argon, un modèle orienté science. Google DeepMind le dit capable d'accélérer des découvertes en informatique quantique, en fusion nucléaire et en conception de protéines. C'est la grande annonce produit du jour, même si certains observateurs appellent à la prudence.
+
+Côté entreprises, maintenant. OpenAI publie une étude montrant que plus de la moitié de l'usage de l'IA chez ses clients européens passe désormais par des agents. Et le nombre de petites entreprises utilisatrices a été multiplié par huit dans la région. En parallèle, Shopify ouvre de nouvelles interfaces pour que des agents agissent côté marchands et côté acheteurs. L'idée, c'est de passer d'un assistant qui aide à un agent qui livre un résultat.
+
+Autre sujet, la sécurité de ces agents inquiète. Le patron de Vercel raconte un défi où des chercheurs ont réussi à percer les barrières des bacs à sable cloud. Des experts estiment que les récents piratages par IA tiennent surtout à des défauts de confinement. Et une flotte d'agents hors de contrôle venant de Chine a été repérée.
+
+En bref, les craintes d'une bulle financière de l'IA s'intensifient, avec des signaux contradictoires. Et plusieurs voix saluent un vrai bond des nouveaux modèles pour la création de contenu.
+
+C'était l'essentiel de votre veille IA. La version complète vous attend juste en dessous. À très bientôt.
