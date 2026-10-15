@@ -6,6 +6,8 @@ permet un « menu Telegram » pour lancer la mise à jour sans passer par GitHub
 
 Commandes (en DM au bot) :
     /maj [N]     → republie les N derniers jours (défaut 1) sur le canal
+    /apercu      → génère le digest des dernières 24 h avec les réglages actuels
+                   et l'envoie EN PRIVÉ (rien n'est publié sur le canal)
     /aide        → rappelle les commandes disponibles
 
 Sécurité / robustesse :
@@ -39,10 +41,13 @@ log = logging.getLogger(__name__)
 
 API = "https://api.telegram.org"
 STALE_SECONDS = 15 * 60   # on ignore une commande reçue il y a plus de 15 min
+# /apercu ne publie rien (envoi privé) : on tolère le retard des crons GitHub.
+STALE_SECONDS_APERCU = 8 * 3600
 MAX_DAYS = 14             # garde-fou : jamais plus de 14 jours d'un coup
 
 BOT_COMMANDS = [
     {"command": "maj", "description": "Republier les N derniers jours (ex. /maj 7)"},
+    {"command": "apercu", "description": "Aperçu privé du digest (rien n'est publié)"},
     {"command": "aide", "description": "Afficher l'aide"},
 ]
 
@@ -51,6 +56,8 @@ HELP_TEXT = (
     "• <code>/maj</code> — republie <b>hier</b> (jour complet) au nouveau format\n"
     "• <code>/maj N</code> — republie les N derniers jours complets (ex. "
     f"<code>/maj 7</code> = la semaine, max {MAX_DAYS})\n"
+    "• <code>/apercu</code> — aperçu PRIVÉ du digest des dernières 24 h avec les "
+    "réglages actuels (rien n'est publié sur le canal)\n"
     "• <code>/aide</code> — affiche ce message\n\n"
     "La journée en cours n'est pas rejouée (recherche historique peu fiable sur "
     "les dernières heures) — mais elle est déjà couverte par le digest de 7h."
@@ -94,6 +101,8 @@ def _parse_command(text: str) -> tuple[str, int] | None:
             except ValueError:
                 days = 1
         return ("maj", max(1, min(MAX_DAYS, days)))
+    if verb in {"apercu", "aperçu", "preview"}:
+        return ("apercu", 0)
     if verb in {"aide", "help", "start"}:
         return ("aide", 0)
     return None
@@ -151,10 +160,11 @@ def run_listener(config_path: str) -> int:
         if str(frm.get("id")) != authorized:
             ignored_unauth += 1
             continue
-        if now - float(msg.get("date", 0)) > STALE_SECONDS:
+        parsed = _parse_command(msg.get("text", ""))
+        max_age = STALE_SECONDS_APERCU if parsed and parsed[0] == "apercu" else STALE_SECONDS
+        if now - float(msg.get("date", 0)) > max_age:
             log.info("Commande ignorée (trop ancienne) : %r", msg.get("text"))
             continue
-        parsed = _parse_command(msg.get("text", ""))
         if parsed:
             chosen = parsed
             chosen_chat = msg["chat"]["id"]
@@ -170,6 +180,17 @@ def run_listener(config_path: str) -> int:
     if kind == "aide":
         _send(token, chosen_chat, HELP_TEXT)
         return 0
+
+    if kind == "apercu":
+        _send(token, chosen_chat, "⏳ Aperçu en préparation (2-3 min)… rien ne sera publié sur le canal.")
+        log.info("Commande /apercu de l'utilisateur autorisé → aperçu privé.")
+        try:
+            run_preview(settings, chat_id=chosen_chat)
+            return 0
+        except Exception as exc:  # noqa: BLE001
+            log.error("Aperçu échoué : %s", exc)
+            _send(token, chosen_chat, "⚠️ L'aperçu a rencontré un souci — regarde les logs GitHub Actions.")
+            return 1
 
     # kind == "maj"
     _send(token, chosen_chat,
@@ -188,6 +209,49 @@ def run_listener(config_path: str) -> int:
           "✅ Rejeu terminé." if rc == 0
           else "⚠️ Le rejeu a rencontré un souci — regarde les logs GitHub Actions.")
     return rc
+
+
+def source_counts(items) -> dict[str, int]:
+    """Nombre d'éléments par famille de source (pour vérifier Reddit & co)."""
+    counts: dict[str, int] = {}
+    for it in items:
+        src = getattr(it, "source", "x")
+        if src == "rss" and "reddit.com/r/" in (getattr(it, "url", "") or ""):
+            src = "reddit"
+        counts[src] = counts.get(src, 0) + 1
+    return counts
+
+
+_SOURCE_LABELS = {"x": "X", "hn": "Hacker News", "rss": "blogs/médias", "reddit": "Reddit", "youtube": "YouTube"}
+
+
+def run_preview(settings, *, chat_id) -> None:
+    """Digest des dernières 24 h (mêmes sources et règles que le run du matin),
+    envoyé en privé à l'utilisateur autorisé. N'écrit ni feed.json ni l'état."""
+    from .digest import build_digest
+    from .sources import collect_extra_sources
+    from .telegram import send_message
+    from .twitter import collect_recent_tweets
+
+    tweets = collect_recent_tweets(
+        settings.accounts,
+        settings.twitterapi_io_key,
+        lookback_hours=settings.lookback_hours,
+        max_per_account=settings.max_tweets_per_account,
+        include_retweets=settings.include_retweets,
+        include_replies=settings.include_replies,
+    )
+    items = tweets + collect_extra_sources(settings, lookback_hours=settings.lookback_hours)
+    items.sort(key=lambda t: t.created_at or datetime.min.replace(tzinfo=timezone.utc), reverse=True)
+    counts = source_counts(items)
+    stats = " · ".join(f"{_SOURCE_LABELS.get(k, k)} {v}" for k, v in sorted(counts.items()))
+    digest = build_digest(items, settings) if items else "Aucun élément sur la fenêtre."
+    today = datetime.now(timezone.utc).strftime("%d/%m/%Y")
+    message = (
+        f"<b>👀 APERÇU — non publié</b>\n<i>Sources : {stats or 'aucune'}</i>\n\n"
+        f"<b>🤖 Veille IA — {today}</b>\n\n{digest}"
+    )
+    send_message(message, bot_token=settings.telegram_bot_token, chat_id=str(chat_id))
 
 
 def main() -> int:
