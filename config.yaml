@@ -10,6 +10,17 @@
 #  passe « stars & montantes » (agents IA · IA générale · vue commerce).
 #  Retire ceux qui ne t'intéressent pas : chaque compte est facturé à chaque run.
 accounts:
+  # — Grands patrons de l'IA & de la tech (priorité, choix Hugo 15/10) —
+  - elonmusk           # [nouveau] Elon Musk — xAI / Grok, Tesla
+  - alexandr_wang      # [nouveau] Alexandr Wang — Meta Superintelligence Labs
+  - finkd              # [nouveau] Mark Zuckerberg — Meta (peu actif sur X)
+  - satyanadella       # [nouveau] Satya Nadella — CEO Microsoft
+  - sundarpichai       # [nouveau] Sundar Pichai — CEO Google
+  - arthurmensch       # [nouveau] Arthur Mensch — CEO Mistral AI
+  - AIatMeta           # [nouveau] Meta AI (Llama, annonces du labo)
+  - deepseek_ai        # [nouveau] DeepSeek (labo chinois)
+  - Alibaba_Qwen       # [nouveau] Qwen (Alibaba, modèles ouverts chinois)
+
   # — Labs & produits IA —
   - perplexity_ai      # Perplexity
   - AskPerplexity      # Perplexity (compte produit)
@@ -85,6 +96,19 @@ accounts:
   - rileybrown_ai      # [nouveau] Riley Brown — IA pour non-tech, « vibe coding » d'apps
   - shl                # [nouveau] Sahil Lavingia — Gumroad, IA pour créateurs/indés
 
+# ── Hiérarchie des voix (choix Hugo 15/10/2026) ───────────────
+#  Les grosses annonces et les grands noms passent en premier ; les
+#  commentateurs ne servent qu'à éclairer un sujet (1 citation max par digest).
+voix_majeures:
+  [sama, gdb, DarioAmodei, elonmusk, alexandr_wang, finkd, satyanadella, sundarpichai,
+   demishassabis, mustafasuleyman, miramurati, arthurmensch, AravSrinivas, tobi,
+   karpathy, ylecun, JeffDean, AndrewYNg, OpenAI, AnthropicAI, claudeai, GoogleDeepMind,
+   GoogleAI, MistralAI, xai, AIatMeta, deepseek_ai, Alibaba_Qwen, thinkymachines]
+voix_secondaires: [GaryMarcus, emollick, a16z, TheZvi]
+#  Posts X retenus au maximum par compte et par jour (les plus repris d'abord) ;
+#  2 au maximum pour les voix secondaires.
+max_items_par_compte: 4
+
 # ── Fenêtre de récupération ───────────────────────────────────
 #  On ne garde que les tweets publiés dans les N dernières heures.
 #  24 = la dernière journée (parfait pour un digest quotidien).
@@ -132,6 +156,8 @@ rss_feeds:
   - https://blog.google/technology/ai/rss/                              # Google AI
   - https://jack-clark.net/feed/                                        # Import AI (Jack Clark)
   - https://www.technologyreview.com/topic/artificial-intelligence/feed/ # MIT Tech Review — IA
+  - https://techcrunch.com/category/artificial-intelligence/feed/       # [nouveau] TechCrunch IA (interviews et annonces des patrons)
+  - https://www.theverge.com/rss/ai-artificial-intelligence/index.xml   # [nouveau] The Verge IA
 
 #  Chaînes YouTube suivies. Mets l'ID de chaîne (UC…) OU un handle/URL
 #  (ex. « @MaChaine » ou « https://youtube.com/@MaChaine ») — je résous l'ID
