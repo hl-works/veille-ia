@@ -46,6 +46,18 @@ nom) n'est pas dans les tweets, ne l'écris pas. Tu peux rappeler un contexte \
 largement connu pour éclairer, mais sans affirmer de fait nouveau absent des tweets.
 - Couvre tous les acteurs de la même façon (OpenAI, Google, Mistral, Meta, xAI, \
 Anthropic…), y compris quand l'info n'est pas flatteuse pour l'un d'eux.
+
+HIÉRARCHIE DES VOIX (TRÈS IMPORTANT) :
+- Priorité absolue aux GROSSES ANNONCES et aux GRANDS NOMS : labos et grands \
+patrons de l'IA et de la tech (éléments marqués [VOIX MAJEURE]). Une prise de \
+parole d'un de ces dirigeants sur la stratégie, un produit, l'argent ou la \
+régulation passe AVANT tout commentaire.
+- Les éléments marqués [COMMENTATEUR] (analystes, chercheurs-commentateurs, \
+fonds) ne servent qu'à éclairer un sujet déjà retenu. Ne construis JAMAIS un \
+sujet autour d'un commentateur, et cite chaque commentateur AU PLUS UNE FOIS \
+dans tout le digest (zéro si ce n'est pas indispensable).
+- Varie les voix : une même personne n'est citée qu'une fois par digest. \
+Préfère une voix qu'on n'entend pas souvent à un énième avis des habitués.
 - Explique simplement. Si un terme technique est indispensable, glisse une \
 courte définition entre parenthèses.
 
@@ -139,7 +151,34 @@ def _system_prompt(depth: str) -> str:
     return _COMMON_RULES + "\n" + body
 
 
-def _source_header(tw: Tweet, index: int, date: str) -> str:
+def _rank_tag(author: str, settings) -> str:
+    handle = (author or "").lstrip("@").lower()
+    if settings is not None and handle in getattr(settings, "voix_majeures", []):
+        return " [VOIX MAJEURE]"
+    if settings is not None and handle in getattr(settings, "voix_secondaires", []):
+        return " [COMMENTATEUR]"
+    return ""
+
+
+def rebalance(tweets: list[Tweet], settings) -> list[Tweet]:
+    """Plafonne le nombre de posts X par compte (les plus repris d'abord) pour
+    qu'un gros posteur n'écrase pas la sélection ; les commentateurs sont
+    limités à 2. Les autres sources (HN, RSS, YouTube) ne sont pas touchées."""
+    cap = max(1, int(getattr(settings, "max_items_par_compte", 4) or 4))
+    secondaires = set(getattr(settings, "voix_secondaires", []) or [])
+    by_author: dict[str, list[Tweet]] = {}
+    for tw in tweets:
+        if getattr(tw, "source", "x") == "x":
+            by_author.setdefault((tw.author or "").lower(), []).append(tw)
+    keep: set[int] = set()
+    for author, items in by_author.items():
+        limit = min(cap, 2) if author in secondaires else cap
+        best = sorted(items, key=lambda t: (t.like_count or 0) + 2 * (t.retweet_count or 0), reverse=True)
+        keep.update(id(t) for t in best[:limit])
+    return [tw for tw in tweets if getattr(tw, "source", "x") != "x" or id(tw) in keep]
+
+
+def _source_header(tw: Tweet, index: int, date: str, settings=None) -> str:
     """Ligne d'en-tête d'un item, adaptée à sa source (X, Hacker News, RSS)."""
     source = getattr(tw, "source", "x")
     if source == "hn":
@@ -158,17 +197,17 @@ def _source_header(tw: Tweet, index: int, date: str) -> str:
         if getattr(tw, "is_thread", False) else ""
     )
     return (
-        f"[{index}] @{tw.author} ({date}) — {tw.like_count} likes, "
-        f"{tw.retweet_count} RT{media}{thread}"
+        f"[{index}] @{tw.author}{_rank_tag(tw.author, settings)} ({date}) — "
+        f"{tw.like_count} likes, {tw.retweet_count} RT{media}{thread}"
     )
 
 
-def _tweets_to_text(tweets: list[Tweet]) -> str:
+def _tweets_to_text(tweets: list[Tweet], settings=None) -> str:
     """Met les items (tweets + Hacker News + RSS) en forme texte pour Claude."""
     lines: list[str] = []
     for i, tw in enumerate(tweets, 1):
         date = tw.created_at.strftime("%Y-%m-%d %H:%M") if tw.created_at else "date inconnue"
-        lines.append(f"{_source_header(tw, i, date)}\n{tw.text}\nURL : {tw.url}")
+        lines.append(f"{_source_header(tw, i, date, settings)}\n{tw.text}\nURL : {tw.url}")
     return "\n\n".join(lines)
 
 
@@ -180,11 +219,12 @@ def build_digest(tweets: list[Tweet], settings, *, for_date: datetime | None = N
     depth = getattr(settings, "digest_depth", "detaille")
     system_prompt = _system_prompt(depth)
 
+    tweets = rebalance(tweets, settings)
     day = (for_date or datetime.now(timezone.utc)).strftime("%d/%m/%Y")
     user_content = (
         f"Voici les tweets (langue du digest : {settings.language}). "
         f"Rédige le digest du {day}.\n\n"
-        f"{_tweets_to_text(tweets)}"
+        f"{_tweets_to_text(tweets, settings)}"
     )
 
     # Le mode détaillé produit un texte plus long → on desserre le plafond de sortie.

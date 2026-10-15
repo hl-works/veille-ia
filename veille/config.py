@@ -37,6 +37,11 @@ class Settings:
     youtube_ai_filter: bool = False
     feed_path: str = "feed.json"
     seen_path: str = "seen.json"
+    # Hiérarchie des voix (choix Hugo 15/10/2026) : grands patrons et labos d'abord,
+    # commentateurs plafonnés pour éviter que les mêmes noms reviennent chaque jour.
+    voix_majeures: list[str] = field(default_factory=list)
+    voix_secondaires: list[str] = field(default_factory=list)
+    max_items_par_compte: int = 4
 
     # Secrets (depuis l'environnement / GitHub Secrets)
     anthropic_api_key: str = ""
@@ -68,6 +73,11 @@ class Settings:
                 "puis `export $(grep -v '^#' .env | xargs)`.\n"
                 "Sur GitHub : ajoute-les dans Settings → Secrets and variables → Actions."
             )
+
+
+def _handles(values) -> list[str]:
+    """Comptes X normalisés (sans @, en minuscules) pour les comparaisons."""
+    return [str(v).strip().lstrip("@").lower() for v in (values or []) if str(v).strip()]
 
 
 def load_settings(config_path: str | Path = "config.yaml") -> Settings:
@@ -113,6 +123,9 @@ def load_settings(config_path: str | Path = "config.yaml") -> Settings:
         include_youtube=bool(src.get("youtube", False)),
         youtube_channels=youtube_channels,
         youtube_ai_filter=bool(src.get("youtube_ai_filter", False)),
+        voix_majeures=_handles(raw.get("voix_majeures")),
+        voix_secondaires=_handles(raw.get("voix_secondaires")),
+        max_items_par_compte=int(raw.get("max_items_par_compte", 4)),
         feed_path=str(raw.get("feed_path", "feed.json")),
         seen_path=str(raw.get("seen_path", "seen.json")),
         anthropic_api_key=os.environ.get("ANTHROPIC_API_KEY", ""),
