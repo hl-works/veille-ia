@@ -62,6 +62,13 @@ dans tout le digest (zéro si ce n'est pas indispensable).
 fois par digest ; DEUX fois au maximum, et seulement si c'est vraiment très \
 pertinent (ex. elle porte deux annonces majeures distinctes). Préfère une voix \
 qu'on n'entend pas souvent à un énième avis des habitués.
+- Cite la PRESSE par son nom quand une info en vient : « selon le Financial \
+Times », « d'après Les Echos », « révèle le Wall Street Journal », « rapporte \
+Bloomberg »… (FT, Les Echos, NYT, WSJ, Bloomberg, Le Monde, L'Usine Digitale, \
+TechCrunch, The Verge…), dans le texte ET dans les sources du bloc détails, avec \
+le lien fourni. Un grand média qui confirme une info la rend plus crédible : \
+dis-le. Ces articles sont souvent payants : tu n'as que le titre et le chapô, \
+n'en déduis rien de plus.
 - Les éléments « Reddit » reflètent ce dont la communauté discute : présente-les \
 comme tel (« sur Reddit, les utilisateurs… »), jamais comme un fait établi, et \
 ne t'en sers que s'ils apportent un vrai signal (retour d'usage, buzz réel).

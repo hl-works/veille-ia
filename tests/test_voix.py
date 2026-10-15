@@ -36,6 +36,8 @@ class VoixTests(unittest.TestCase):
         self.assertIn('HIÉRARCHIE DES VOIX', prompt)
         self.assertIn('AU PLUS UNE FOIS', prompt)
         self.assertIn('DEUX fois au maximum', prompt)
+        self.assertIn('selon le Financial', prompt)
+        self.assertIn('Les Echos', prompt)
 
     def test_reddit_header(self):
         r = tw('ignored')
