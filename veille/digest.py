@@ -12,6 +12,7 @@ Deux profondeurs possibles (réglage `digest_depth` dans config.yaml) :
 from __future__ import annotations
 
 import logging
+import re
 from datetime import datetime, timezone
 
 import anthropic
@@ -27,8 +28,9 @@ publiée sur un canal Telegram destiné à un public curieux mais non technique 
 (commerçants, dirigeants de PME, indépendants).
 
 À partir d'une liste d'éléments récents issus de PLUSIEURS sources — X/Twitter \
-(comptes de référence), Hacker News (actus tech les mieux notées) et blogs \
-officiels (via RSS) — rédige un digest clair et fiable.
+(comptes de référence), Hacker News (actus tech les mieux notées), blogs \
+officiels et médias spécialisés (via RSS) et Reddit (discussions de la \
+communauté) — rédige un digest clair et fiable.
 
 RÈGLES DE FOND :
 - Croise les sources : un même événement rapporté par plusieurs sources (ex. un \
@@ -56,8 +58,13 @@ régulation passe AVANT tout commentaire.
 fonds) ne servent qu'à éclairer un sujet déjà retenu. Ne construis JAMAIS un \
 sujet autour d'un commentateur, et cite chaque commentateur AU PLUS UNE FOIS \
 dans tout le digest (zéro si ce n'est pas indispensable).
-- Varie les voix : une même personne n'est citée qu'une fois par digest. \
-Préfère une voix qu'on n'entend pas souvent à un énième avis des habitués.
+- Varie les voix : en règle générale, une même personne n'est citée qu'une \
+fois par digest ; DEUX fois au maximum, et seulement si c'est vraiment très \
+pertinent (ex. elle porte deux annonces majeures distinctes). Préfère une voix \
+qu'on n'entend pas souvent à un énième avis des habitués.
+- Les éléments « Reddit » reflètent ce dont la communauté discute : présente-les \
+comme tel (« sur Reddit, les utilisateurs… »), jamais comme un fait établi, et \
+ne t'en sers que s'ils apportent un vrai signal (retour d'usage, buzz réel).
 - Explique simplement. Si un terme technique est indispensable, glisse une \
 courte définition entre parenthèses.
 
@@ -178,6 +185,12 @@ def rebalance(tweets: list[Tweet], settings) -> list[Tweet]:
     return [tw for tw in tweets if getattr(tw, "source", "x") != "x" or id(tw) in keep]
 
 
+def _subreddit(url: str) -> str:
+    """Nom du subreddit si l'URL pointe vers Reddit, sinon chaîne vide."""
+    m = re.search(r"reddit\.com/r/([A-Za-z0-9_]+)", url or "")
+    return m.group(1) if m else ""
+
+
 def _source_header(tw: Tweet, index: int, date: str, settings=None) -> str:
     """Ligne d'en-tête d'un item, adaptée à sa source (X, Hacker News, RSS)."""
     source = getattr(tw, "source", "x")
@@ -187,7 +200,10 @@ def _source_header(tw: Tweet, index: int, date: str, settings=None) -> str:
             f"{tw.retweet_count} commentaires"
         )
     if source == "rss":
-        return f"[{index}] {tw.author} — blog officiel ({date})"
+        sub = _subreddit(tw.url)
+        if sub:
+            return f"[{index}] Reddit r/{sub} — discussion communautaire ({date})"
+        return f"[{index}] {tw.author} — blog / média ({date})"
     if source == "youtube":
         return f"[{index}] {tw.author} — vidéo YouTube ({date})"
     # X / Twitter (défaut)

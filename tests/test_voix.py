@@ -35,6 +35,14 @@ class VoixTests(unittest.TestCase):
         prompt = digest._system_prompt('detaille')
         self.assertIn('HIÉRARCHIE DES VOIX', prompt)
         self.assertIn('AU PLUS UNE FOIS', prompt)
+        self.assertIn('DEUX fois au maximum', prompt)
+
+    def test_reddit_header(self):
+        r = tw('ignored')
+        r.source = 'rss'
+        r.author = 'top scoring links : LocalLLaMA'
+        r.url = 'https://www.reddit.com/r/LocalLLaMA/comments/abc/titre/'
+        self.assertIn('Reddit r/LocalLLaMA', digest._tweets_to_text([r], self.s))
 
 
 if __name__ == '__main__':

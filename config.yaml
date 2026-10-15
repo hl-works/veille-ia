@@ -158,6 +158,13 @@ rss_feeds:
   - https://www.technologyreview.com/topic/artificial-intelligence/feed/ # MIT Tech Review — IA
   - https://techcrunch.com/category/artificial-intelligence/feed/       # [nouveau] TechCrunch IA (interviews et annonces des patrons)
   - https://www.theverge.com/rss/ai-artificial-intelligence/index.xml   # [nouveau] The Verge IA
+  - https://www.latent.space/feed                                       # [nouveau] Latent Space (swyx — ingénierie IA, interviews de fondateurs)
+  - https://www.interconnects.ai/feed                                   # [nouveau] Interconnects (Nathan Lambert — modèles ouverts, labos)
+  - https://the-decoder.com/feed/                                       # [nouveau] The Decoder (actu IA quotidienne, très factuelle)
+  #  Reddit — top du jour (4 posts max par subreddit). Signal « ce dont la communauté parle ».
+  - https://www.reddit.com/r/LocalLLaMA/top/.rss?t=day                  # [nouveau] modèles ouverts / en local
+  - https://www.reddit.com/r/OpenAI/top/.rss?t=day                      # [nouveau] retours d'usage ChatGPT / OpenAI
+  - https://www.reddit.com/r/ClaudeAI/top/.rss?t=day                    # [nouveau] retours d'usage Claude
 
 #  Chaînes YouTube suivies. Mets l'ID de chaîne (UC…) OU un handle/URL
 #  (ex. « @MaChaine » ou « https://youtube.com/@MaChaine ») — je résous l'ID
