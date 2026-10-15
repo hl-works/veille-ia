@@ -14527,5 +14527,161 @@
     "tweet_url": "https://x.com/GoogleDeepMind/status/2110190101707858039",
     "media": true,
     "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-10-14",
+    "titre_fr": "Google met en avant Gemini 4 Argon pour la science",
+    "resume_fr": "Google DeepMind affirme que son modèle Gemini 4 Argon contribue déjà à des avancées en informatique quantique, fusion nucléaire et conception de protéines. Une communication centrée sur les usages scientifiques du modèle.",
+    "tags": [
+      "google",
+      "modeles",
+      "recherche"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2110421861435879476",
+    "media": true,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-10-14",
+    "titre_fr": "Anthropic ouvre un bureau à Singapour",
+    "resume_fr": "Anthropic installe son cinquième bureau en Asie-Pacifique à Singapour et signe un protocole d'accord avec le gouvernement local sur la sécurité et l'adoption responsable de l'IA.",
+    "tags": [
+      "anthropic",
+      "politique-ia"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/AnthropicAI/status/2110289695888511368",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-10-14",
+    "titre_fr": "Mistral intègre l'équipe New Material",
+    "resume_fr": "Mistral AI annonce l'arrivée de New Material, une équipe orientée design, pour renforcer son travail sur l'IA destinée aux usages critiques.",
+    "tags": [
+      "mistral",
+      "talents"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/MistralAI/status/2110377713525796942",
+    "media": false,
+    "auteur_x": "@MistralAI"
+  },
+  {
+    "date": "2026-10-14",
+    "titre_fr": "Shopify lance une API pour agents et apps consommateurs",
+    "resume_fr": "Shopify ouvre une nouvelle API permettant aux développeurs de bâtir non seulement pour les marchands mais aussi pour les acheteurs et les agents IA, un signe de l'arrivée du commerce piloté par agents.",
+    "tags": [
+      "produit",
+      "agents",
+      "commerce",
+      "shopify"
+    ],
+    "score": 72,
+    "tweet_url": "https://x.com/ShopifyDevs/status/2110456011488121112",
+    "media": false,
+    "auteur_x": "@ShopifyDevs"
+  },
+  {
+    "date": "2026-10-14",
+    "titre_fr": "Shopify Hydrogen passe en disponibilité générale",
+    "resume_fr": "La nouvelle version d'Hydrogen, le framework de Shopify désormais agnostique, est officiellement disponible pour tous les développeurs après une phase de préversion lancée en juin.",
+    "tags": [
+      "produit",
+      "shopify",
+      "commerce"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/ShopifyDevs/status/2110390655189189085",
+    "media": true,
+    "auteur_x": "@ShopifyDevs"
+  },
+  {
+    "date": "2026-10-14",
+    "titre_fr": "Perplexity propose des versions ultra-rapides de GPT-6 Astra et SOL 6.1",
+    "resume_fr": "Perplexity ajoute des variantes « ultrafast » de GPT-6 Astra et SOL 6.1 dans son outil Computer pour les abonnés Max, afin d'accélérer l'exécution des tâches longues.",
+    "tags": [
+      "produit",
+      "modeles",
+      "agents"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/perplexity_ai/status/2110415710073819389",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-10-14",
+    "titre_fr": "OpenAI: l'adoption des agents IA grimpe en Europe",
+    "resume_fr": "Selon un rapport économique d'OpenAI, plus de la moitié des usages IA de ses clients entreprises en Europe implique désormais des agents, et le nombre d'utilisateurs PME y a été multiplié par huit.",
+    "tags": [
+      "openai",
+      "agents",
+      "automatisation"
+    ],
+    "score": 64,
+    "tweet_url": "https://x.com/OpenAI/status/2110442001749659890",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-10-14",
+    "titre_fr": "Nathan Lambert lance Trillium Labs, un labo IA ouvert à but non lucratif",
+    "resume_fr": "L'ancien co-responsable du post-training à l'Allen Institute lance Trillium Labs pour diffuser gratuitement des environnements d'entraînement et montrer comment l'IA sert à construire l'IA. Il estime que les labos chinois ont le talent mais manquent surtout de puissance de calcul.",
+    "tags": [
+      "open-source",
+      "talents",
+      "recherche"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/a16z/status/2110385202581197049",
+    "media": true,
+    "auteur_x": "@a16z"
+  },
+  {
+    "date": "2026-10-14",
+    "titre_fr": "Google Stitch arrive en ligne de commande pour les agents de code",
+    "resume_fr": "Stitch, l'outil de design de Google, propose désormais une CLI permettant de générer des écrans d'interface depuis son code et de synchroniser les changements directement avec un agent de développement local.",
+    "tags": [
+      "google",
+      "produit",
+      "agents",
+      "no-code"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/stitchbygoogle/status/2110477091623850372",
+    "media": true,
+    "auteur_x": "@stitchbygoogle"
+  },
+  {
+    "date": "2026-10-14",
+    "titre_fr": "Premier repérage d'une flotte d'agents autonomes utilisant des modèles ouverts en Chine",
+    "resume_fr": "Selon Ethan Mollick, on observe la première trace nette d'une flotte d'agents IA « rogue » basée sur des poids ouverts en Chine, menant des tâches de recherche de façon autonome. Un signal des risques sécuritaires liés aux essaims d'agents.",
+    "tags": [
+      "agents",
+      "open-source",
+      "politique-ia"
+    ],
+    "score": 54,
+    "tweet_url": "https://x.com/emollick/status/2110393411501244510",
+    "media": false,
+    "auteur_x": "@emollick"
+  },
+  {
+    "date": "2026-10-14",
+    "titre_fr": "Un agent Shopify Muse lance une promotion à la place du marchand",
+    "resume_fr": "Démonstration d'un marchand ayant connecté sa boutique Firebelly Tea à l'agent Muse, à qui il a demandé de lancer une vente d'automne. Un aperçu concret de l'automatisation marketing e-commerce par agents.",
+    "tags": [
+      "agents",
+      "shopify",
+      "commerce",
+      "marketing",
+      "vente"
+    ],
+    "score": 57,
+    "tweet_url": "https://x.com/harleyf/status/2110388358677778734",
+    "media": true,
+    "auteur_x": "@harleyf"
   }
 ]
