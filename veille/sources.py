@@ -46,6 +46,9 @@ _AI_KEYWORDS = (
     "hugging face", "huggingface", "prompt", "prompts", "copilot", "cursor",
     "perplexity", "midjourney", "embedding", "embeddings", "multimodal",
     "reasoning", "robotics", "agi",
+    # Français (presse FR filtrée : Les Echos, Usine Digitale, Le Monde…)
+    "ia", "intelligence artificielle", "apprentissage automatique", "chatbot",
+    "chatbots", "agent ia", "agents ia", "modèle d'ia", "modèles d'ia", "ia générative",
 )
 
 _AI_PATTERN = re.compile(
@@ -155,6 +158,19 @@ def _feed_title(parsed, url: str) -> str:
     return host or "RSS"
 
 
+_TAG_RE = re.compile(r"<[^>]+>")
+
+
+def _entry_summary(entry, limit: int = 400) -> str:
+    """Chapô du billet, sans HTML, tronqué (contexte pour Claude ; jamais recopié)."""
+    raw = str(getattr(entry, "summary", "") or "")
+    text = re.sub(r"\s+", " ", _TAG_RE.sub(" ", raw)).strip()
+    text = text.replace("&nbsp;", " ").replace("&#32;", " ")
+    if len(text) > limit:
+        text = text[:limit].rsplit(" ", 1)[0] + "…"
+    return text
+
+
 def _entry_datetime(entry) -> datetime | None:
     import time as _time
 
@@ -174,9 +190,12 @@ def fetch_rss(
     lookback_hours: int,
     max_per_feed: int = 4,
     timeout: int = 15,
+    ai_filter: bool = False,
 ) -> list[Tweet]:
     """Récupère les billets récents d'une liste de flux RSS/Atom. Défensif :
-    un flux mort ou mal formé est ignoré (log), les autres continuent."""
+    un flux mort ou mal formé est ignoré (log), les autres continuent.
+    `ai_filter` : pour les flux GÉNÉRALISTES (presse éco/tech), ne garde que
+    les billets dont le titre ou le chapô parle d'IA."""
     if not feeds:
         return []
     try:
@@ -209,11 +228,14 @@ def fetch_rss(
             created_at = _entry_datetime(entry)
             if created_at is not None and created_at < cutoff:
                 continue
+            summary = _entry_summary(entry)
+            if ai_filter and not _looks_ai_related(f"{title} {summary}"):
+                continue
             collected.append(
                 Tweet(
                     id=f"rss:{link}",
                     author=name,
-                    text=title,
+                    text=f"{title}\n{summary}" if summary else title,
                     url=link,
                     created_at=created_at,
                     source="rss",
@@ -329,6 +351,11 @@ def collect_extra_sources(settings, *, lookback_hours: int) -> list[Tweet]:
         items += fetch_rss(
             getattr(settings, "rss_feeds", []),
             lookback_hours=lookback_hours,
+        )
+        items += fetch_rss(
+            getattr(settings, "rss_feeds_filtres", []),
+            lookback_hours=lookback_hours,
+            ai_filter=True,
         )
     if getattr(settings, "include_youtube", False):
         items += fetch_youtube(

@@ -165,6 +165,29 @@ rss_feeds:
   - https://www.reddit.com/r/LocalLLaMA/top/.rss?t=day                  # [nouveau] modèles ouverts / en local
   - https://www.reddit.com/r/OpenAI/top/.rss?t=day                      # [nouveau] retours d'usage ChatGPT / OpenAI
   - https://www.reddit.com/r/ClaudeAI/top/.rss?t=day                    # [nouveau] retours d'usage Claude
+  #  Presse — rubriques 100 % IA (pas de filtre nécessaire)
+  - https://www.ft.com/artificial-intelligence?format=rss                # [nouveau] Financial Times — IA (titre + chapô, article payant)
+  - https://www.nytimes.com/svc/collections/v1/publish/https://www.nytimes.com/spotlight/artificial-intelligence/rss.xml  # [nouveau] New York Times — IA
+  - https://siecledigital.fr/intelligence-artificielle/feed/            # [nouveau] Siècle Digital — IA (FR)
+  - https://tldr.tech/api/rss/ai                                        # [nouveau] TLDR AI (newsletter quotidienne)
+  #  Labos & géants tech — blogs officiels
+  - https://blogs.nvidia.com/blog/tag/artificial-intelligence/feed/     # [nouveau] NVIDIA — IA
+  - https://blogs.microsoft.com/ai/feed/                                # [nouveau] Microsoft — IA
+  #  Podcasts (titre + résumé d'épisode : interviews de patrons)
+  - https://feeds.simplecast.com/6HKOhNgS                               # [nouveau] Hard Fork (New York Times)
+
+#  Flux GÉNÉRALISTES (presse éco / tech) : seuls les articles qui parlent d'IA
+#  (titre ou chapô) sont gardés. Articles souvent payants : on n'a que le titre
+#  et le chapô, ce qui suffit comme signal et pour croiser avec X.
+rss_feeds_filtres:
+  - https://services.lesechos.fr/rss/les-echos-tech-medias.xml          # Les Echos — Tech & Médias
+  - https://services.lesechos.fr/rss/les-echos-start-up.xml             # Les Echos — Start-up
+  - http://www.usine-digitale.fr/rss                                    # L'Usine Digitale
+  - https://www.lemonde.fr/pixels/rss_full.xml                          # Le Monde — Pixels
+  - https://www.ft.com/technology?format=rss                            # Financial Times — Tech
+  - https://feeds.content.dowjones.io/public/rss/RSSWSJD                # Wall Street Journal — Tech
+  - https://feeds.bloomberg.com/technology/news.rss                     # Bloomberg — Tech
+  - https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml         # New York Times — Tech
 
 #  Chaînes YouTube suivies. Mets l'ID de chaîne (UC…) OU un handle/URL
 #  (ex. « @MaChaine » ou « https://youtube.com/@MaChaine ») — je résous l'ID

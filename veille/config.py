@@ -32,6 +32,8 @@ class Settings:
     hackernews_min_score: int = 60
     include_rss: bool = False
     rss_feeds: list[str] = field(default_factory=list)
+    # Flux généralistes (presse éco/tech) : seuls les billets IA sont gardés.
+    rss_feeds_filtres: list[str] = field(default_factory=list)
     include_youtube: bool = False
     youtube_channels: list[str] = field(default_factory=list)
     youtube_ai_filter: bool = False
@@ -104,6 +106,7 @@ def load_settings(config_path: str | Path = "config.yaml") -> Settings:
     # Sources complémentaires (bloc `sources:` optionnel + listes dédiées).
     src = raw.get("sources") or {}
     rss_feeds = [str(u).strip() for u in (raw.get("rss_feeds") or []) if str(u).strip()]
+    rss_feeds_filtres = [str(u).strip() for u in (raw.get("rss_feeds_filtres") or []) if str(u).strip()]
     youtube_channels = [str(c).strip() for c in (raw.get("youtube_channels") or []) if str(c).strip()]
 
     return Settings(
@@ -120,6 +123,7 @@ def load_settings(config_path: str | Path = "config.yaml") -> Settings:
         hackernews_min_score=int(src.get("hacker_news_min_score", 60)),
         include_rss=bool(src.get("rss", False)),
         rss_feeds=rss_feeds,
+        rss_feeds_filtres=rss_feeds_filtres,
         include_youtube=bool(src.get("youtube", False)),
         youtube_channels=youtube_channels,
         youtube_ai_filter=bool(src.get("youtube_ai_filter", False)),
