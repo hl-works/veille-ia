@@ -14683,5 +14683,238 @@
     "tweet_url": "https://x.com/harleyf/status/2110388358677778734",
     "media": true,
     "auteur_x": "@harleyf"
+  },
+  {
+    "date": "2026-10-15",
+    "titre_fr": "Meta lance Muse Spark Open, son modèle open-weight le plus capable",
+    "resume_fr": "Meta Superintelligence Labs publie Muse Spark Open, présenté comme le modèle américain à poids ouverts le plus performant à ce jour. Il compte 816 milliards de paramètres (42 Md actifs), une fenêtre de contexte d'un million de tokens, est multimodal et taillé pour le code et les tâches d'agents de longue durée. Les poids sont disponibles et il tourne sur les nouveaux Mac Studio.",
+    "tags": [
+      "meta",
+      "modeles",
+      "open-source",
+      "agents"
+    ],
+    "score": 82,
+    "tweet_url": "https://x.com/AIatMeta/status/2110779754274292212",
+    "media": true,
+    "auteur_x": "@AIatMeta"
+  },
+  {
+    "date": "2026-10-15",
+    "titre_fr": "Muse Wonder de Meta disponible dans Cursor",
+    "resume_fr": "Le modèle Muse Wonder de Meta est désormais accessible dans l'éditeur Cursor, avec un score de 46,1 % sur CursorBench, le meilleur de la gamme Muse. Tarif : 4 $/M de tokens en entrée et 20 $/M en sortie.",
+    "tags": [
+      "meta",
+      "modeles",
+      "produit"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/cursor_ai/status/2110867556693430293",
+    "media": true,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-10-15",
+    "titre_fr": "Google ouvre l'accès anticipé à Gemini 4 Argon",
+    "resume_fr": "Google a donné un accès anticipé à Gemini 4 Argon, son nouveau modèle de pointe. Les premiers retours soulignent de solides capacités de rédaction, de génération de code et de création 3D/CAO (jusqu'à l'export de fichiers imprimables), avec des idées concrètes pour le marketing et des produits personnalisables sur e-commerce.",
+    "tags": [
+      "google",
+      "modeles",
+      "marketing",
+      "commerce"
+    ],
+    "score": 70,
+    "tweet_url": "https://x.com/gregisenberg/status/2110870855378952314",
+    "media": true,
+    "auteur_x": "@gregisenberg"
+  },
+  {
+    "date": "2026-10-15",
+    "titre_fr": "OpenAI met à jour la voix de ChatGPT avec GPT-Live-1.1",
+    "resume_fr": "OpenAI déploie GPT-Live-1.1, qui améliore le mode vocal de ChatGPT, Codex et dots : nouvelles voix, meilleurs accents et moins de temps d'attente. Ajout de voix en français, allemand, hindi, espagnol mexicain, coréen et japonais, avec une arrivée prochaine dans l'API.",
+    "tags": [
+      "openai",
+      "produit",
+      "service-client"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/OpenAI/status/2110797830361436604",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-10-15",
+    "titre_fr": "Microsoft AI dévoile des modèles de base internes de 3 000 milliards de paramètres",
+    "resume_fr": "Mustafa Suleyman annonce que Microsoft AI dispose désormais de modèles de base pré-entraînés de pointe dans la catégorie des 3 000 milliards de paramètres, entièrement développés en interne. Les résultats du post-entraînement seront publiés prochainement.",
+    "tags": [
+      "modeles",
+      "recherche"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/mustafasuleyman/status/2110766651344146564",
+    "media": false,
+    "auteur_x": "@mustafasuleyman"
+  },
+  {
+    "date": "2026-10-15",
+    "titre_fr": "Mistral et le CERN s'associent pour un grand modèle de physique",
+    "resume_fr": "Mistral et le CERN annoncent un partenariat pour explorer l'usage de l'IA à grande échelle en physique des particules. L'objectif : un Large Physics Model unique entraîné sur des milliards de collisions simulées.",
+    "tags": [
+      "mistral",
+      "recherche"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/MistralAI/status/2110684732103041474",
+    "media": true,
+    "auteur_x": "@MistralAI"
+  },
+  {
+    "date": "2026-10-15",
+    "titre_fr": "Google démontre la « culture d'états magiques » en informatique quantique",
+    "resume_fr": "L'équipe Google Quantum AI a réalisé pour la première fois une « magic state cultivation » sur matériel physique, avec une réduction d'erreur de 40x sur le processeur Willow et une fidélité logique de 99,99 %. Résultat publié dans Science, une étape vers des ordinateurs quantiques corrigés d'erreurs.",
+    "tags": [
+      "google",
+      "recherche",
+      "hardware"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/sundarpichai/status/2110804295352488143",
+    "media": true,
+    "auteur_x": "@sundarpichai"
+  },
+  {
+    "date": "2026-10-15",
+    "titre_fr": "Perplexity publie en open source sa plateforme de sandbox SPACE",
+    "resume_fr": "Perplexity open-source SPACE, la plateforme de bacs à sable qui exécute chaque tâche de Perplexity Computer. Chaque tâche d'agent reçoit sa propre micro-VM Firecracker, avec gestion des identifiants et du trafic sortant depuis l'extérieur de la VM. Disponible sous licence Apache 2.0.",
+    "tags": [
+      "produit",
+      "open-source",
+      "agents"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/perplexity_ai/status/2110778478312481167",
+    "media": false,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-10-15",
+    "titre_fr": "OpenAI élargit l'accès à GPT-Rosalind pour la recherche en biologie",
+    "resume_fr": "OpenAI lance un plan académique pour GPT-Rosalind afin d'aider les laboratoires scientifiques à intégrer l'IA dans la recherche en biologie, avec un accès sponsorisé pour les laboratoires éligibles d'universités américaines.",
+    "tags": [
+      "openai",
+      "recherche"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/OpenAI/status/2110841898076418336",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-10-15",
+    "titre_fr": "Anthropic consacre 5 M$ à la communauté des mathématiques",
+    "resume_fr": "Anthropic engage 5 millions de dollars en financement, calcul et accès à Claude pour aider les mathématiciens à composer avec l'arrivée de l'IA. Le programme sera géré par la Simons Foundation via ateliers, conférences et cours.",
+    "tags": [
+      "anthropic",
+      "recherche"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/AnthropicAI/status/2110846112152105136",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-10-15",
+    "titre_fr": "OpenAI contribue 5 M$ à une initiative mathématique de la Simons Foundation",
+    "resume_fr": "OpenAI verse 5 millions de dollars à une nouvelle initiative de la Simons Foundation pour aider les mathématiciens à examiner et prolonger les résultats produits par l'IA. Le fonds financera ateliers et programmes, avec un accès aux modèles et aux ressources de calcul.",
+    "tags": [
+      "openai",
+      "recherche"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/OpenAI/status/2110741355739963884",
+    "media": false,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-10-15",
+    "titre_fr": "Krea 3 : édition d'images rapide et précise",
+    "resume_fr": "Krea 3 est présenté en accès anticipé comme un outil rapide et précis pour éditer des images tout en préservant l'intégrité d'un produit ou d'une structure, avec un contrôle par cadres de délimitation. Démonstration : concevoir une maison à partir d'un croquis.",
+    "tags": [
+      "produit",
+      "marketing",
+      "commerce"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/venturetwins/status/2110764542921982207",
+    "media": true,
+    "auteur_x": "@venturetwins"
+  },
+  {
+    "date": "2026-10-15",
+    "titre_fr": "Anthropic ouvre un accès de type employé à l'évaluateur METR",
+    "resume_fr": "Anthropic détaille sa collaboration avec des évaluateurs tiers de sécurité et indique avoir accordé un accès « de type employé » à une équipe de METR pour auditer ses pratiques. Des discussions sont en cours avec plusieurs organisations.",
+    "tags": [
+      "anthropic",
+      "politique-ia",
+      "recherche"
+    ],
+    "score": 44,
+    "tweet_url": "https://x.com/AnthropicAI/status/2110784662071398807",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-10-15",
+    "titre_fr": "La distillation représenterait 5 à 7 % des revenus d'Anthropic",
+    "resume_fr": "Selon des propos rapportés aux investisseurs, la distillation représenterait 5 à 7 % des revenus d'Anthropic. Rapporté au chiffre d'affaires du trimestre, cela signifierait que d'autres labos dépensent plus d'un demi-milliard de dollars pour distiller les modèles d'Anthropic.",
+    "tags": [
+      "anthropic",
+      "modeles"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/simonw/status/2110721515130089787",
+    "media": true,
+    "auteur_x": "@simonw"
+  },
+  {
+    "date": "2026-10-15",
+    "titre_fr": "Nano Banana 2.1 arrive dans Perplexity Computer",
+    "resume_fr": "Le modèle de génération d'images Nano Banana 2.1 est désormais disponible dans Perplexity Computer pour tous les utilisateurs.",
+    "tags": [
+      "produit",
+      "google"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/AskPerplexity/status/2110858858147324404",
+    "media": true,
+    "auteur_x": "@AskPerplexity"
+  },
+  {
+    "date": "2026-10-15",
+    "titre_fr": "Shopify lance « app security check » pour sécuriser les apps marchandes",
+    "resume_fr": "Shopify introduit un outil, app security check, qui détecte les schémas de vulnérabilités courants dans les applications Shopify. Il s'exécute via l'AI Toolkit, dans une logique de renforcement de la confiance marchande.",
+    "tags": [
+      "shopify",
+      "produit",
+      "commerce"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/ShopifyDevs/status/2110738092105814391",
+    "media": true,
+    "auteur_x": "@ShopifyDevs"
+  },
+  {
+    "date": "2026-10-15",
+    "titre_fr": "Snowflake : la réplication Postgres passe en disponibilité générale",
+    "resume_fr": "Snowflake annonce la disponibilité générale du mirroring de données Postgres, permettant de faire circuler en continu les données transactionnelles fraîches vers Snowflake pour les connecter aux agents et aux applications sans outils de transfert séparés.",
+    "tags": [
+      "produit",
+      "saas",
+      "automatisation"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/RamaswmySridhar/status/2110793154538717591",
+    "media": false,
+    "auteur_x": "@RamaswmySridhar"
   }
 ]
