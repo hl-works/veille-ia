@@ -1,0 +1,45 @@
+Bonjour et bienvenue dans votre veille IA du seize octobre.
+
+On commence avec Meta, qui frappe fort aujourd'hui. L'entreprise vient de publier Muse Spark Open. C'est présenté comme le modèle en poids ouverts le plus puissant jamais sorti aux États-Unis. Autrement dit, ses paramètres peuvent être téléchargés et réutilisés librement. Il compte huit cent seize milliards de paramètres. Sa fenêtre de contexte atteint un million de mots. Et il gère le texte, l'image, la vidéo et l'audio.
+
+Mais le fait le plus marquant, c'est ailleurs. Ce modèle tourne en local sur les nouveaux Mac Studio. Concrètement, pas besoin de louer de la puissance dans le cloud. C'est le fruit d'un partenariat inédit entre Meta et Apple, deux rivaux de longue date. L'annonce a été portée par Mark Zuckerberg et Alexandr Wang.
+
+Et pourquoi c'est important ? Sur les huit cent seize milliards de paramètres, seulement quarante-deux milliards sont actifs à chaque requête. C'est la part réellement mobilisée. Ça le rend donc plus léger à faire tourner. Le modèle est optimisé pour les Mac Studio équipés de la puce M cinq Ultra. Le chercheur Nathan Lambert estime que ce modèle réduit de moitié le retard des modèles ouverts américains sur les chinois. Il prédit une adoption massive. Mais il juge la licence d'utilisation mauvaise.
+
+La même journée a vu une avalanche d'autres sorties en poids ouverts. Il y a NVIDIA Nemotron trois point cinq Super VL, déjà disponible sur Perplexity. Il y a aussi le modèle d'images FLUX trois Klein de Black Forest Labs, qui tourne sur une carte grand public de huit gigas. Et puis IBM Granite et le modèle vocal Fish Drama trois. Pour une PME, l'intérêt est concret. Faire tourner une IA avancée sur sa propre machine évite les abonnements cloud. Et ça garde les données en interne.
+
+---
+
+Côté finances, maintenant. Les marchés s'inquiètent de la dette de l'IA. Les craintes autour de l'endettement massif du secteur agitent la Bourse. Selon Le Monde, CoreWeave, un constructeur de data centers, a vu sa valeur fondre de vingt pour cent en moins de deux jours. Le Financial Times décrit des investisseurs qui se délestent des obligations liées aux centres de données.
+
+En contrepoint, le président de la Réserve fédérale américaine, Kevin Warsh, se dit optimiste. Il qualifie l'IA de choc d'offre positif. Et il y voit peut-être le changement le plus important de sa vie pour l'économie.
+
+Le Financial Times pointe deux groupes australiens, Firmus et AirTrunk. Leurs décisions ont nourri l'inquiétude autour de la frénésie d'emprunts du secteur. Et des introductions en Bourse abandonnées s'accumulent. Le débat de fond est simple. Les sommes colossales empruntées pour financer data centers et puces seront-elles remboursables ?
+
+Dans ce climat, Anthropic a indiqué à ses investisseurs un chiffre d'affaires trimestriel en hausse de près de cinquante pour cent. Il atteint seize virgule huit milliards de dollars. L'entreprise vise une entrée en Bourse. L'agence Kroll lui a par ailleurs accordé la meilleure note de la catégorie spéculative. C'est une étape vers le statut d'investissement sûr. Ce que ça change pour vous ? C'est un rappel que l'économie de l'IA repose sur des paris financiers encore fragiles. À surveiller avant tout engagement lourd.
+
+---
+
+Restons avec Anthropic, qui ouvre ses portes aux contrôleurs. Le laboratoire donne à l'organisme indépendant METR un accès de niveau employé. Objectif, évaluer ses pratiques de sécurité. Et surtout, Anthropic renonce au droit de bloquer leurs publications. C'est un geste de transparence rare dans le secteur. METR pourra donc publier ses propres jugements sur les incidents et les risques sans possibilité de censure.
+
+L'entreprise finance aussi les mathématiciens. Elle engage cinq millions de dollars pour aider la communauté mathématique à s'approprier l'IA. Ça inclut du compute et un accès à Claude. Ça passe par la Fondation Simons. OpenAI contribue à la même initiative, pour cinq millions de dollars également. La Fondation financera ateliers, conférences et programmes. Au total, l'effort global est chiffré à quinze millions de dollars.
+
+Anthropic a aussi ouvert deux programmes de bourses, qui débutent en janvier deux mille vingt-sept. Ces annonces arrivent alors que la sécurité des IA devient un enjeu central. Y compris côté assurances. Le Wall Street Journal relève que les incidents de sûreté pourraient exposer les développeurs à des responsabilités de plusieurs milliards.
+
+---
+
+Côté Google, maintenant. L'entreprise avance sur plusieurs fronts. Sundar Pichai a annoncé une avancée qu'il qualifie de magique en informatique quantique. Il s'agit d'une réduction d'erreurs par quarante sur le processeur Willow. La technique s'appelle magic state cultivation. Elle atteint une fidélité logique de quatre-vingt-dix-neuf virgule quatre-vingt-dix-neuf pour cent. C'est un pas vers des ordinateurs quantiques réellement utiles.
+
+En parallèle, la nouvelle génération Gemini quatre, nom de code Argon, suscite beaucoup d'intérêt. Elle crée des mondes en trois dimensions explorables. Elle pilote des robots et génère des simulations. Le chercheur François Chollet estime que Google est de retour à la frontière. L'entrepreneur Greg Isenberg, qui a eu un accès anticipé, le juge excellent pour la rédaction et la création en trois dimensions. Mais il note que l'outil de développement associé a encore du retard.
+
+Une nuance d'expert, avec Ethan Mollick. Il observe que Google n'a pas accompagné Gemini quatre d'innovations produit marquantes au lancement. L'entreprise s'est contentée de suivre les tendances. Google a aussi étendu son système d'alertes sismiques Android. Il passe de quatre-vingt-dix-huit à près de deux cents pays. Et son outil de filigrane SynthID, qui marque les contenus générés par IA, a été distingué par le magazine Time.
+
+---
+
+Et on termine avec OpenAI et Mistral, qui ciblent la science. OpenAI lance le Rosalind Academic Plan. C'est un accès sponsorisé à son modèle GPT-Rosalind pour les laboratoires universitaires américains. Ils travaillent sur la biologie et les sciences du vivant. Le modèle doit aider les labos à comprendre la biologie, explorer des hypothèses et décider quoi tester ensuite.
+
+OpenAI a aussi mis à jour la voix de ChatGPT, baptisée GPT-Live un point un. Elle propose de nouvelles voix en français, allemand, hindi, espagnol mexicain, coréen et japonais. Et son extension Chrome peut désormais consulter vos onglets ouverts. À noter, un épisode moins flatteur. Le New York Times rapporte qu'un ingénieur d'OpenAI, aujourd'hui licencié et inculpé pour avoir dissimulé un dispositif, conseillait des agences gouvernementales saoudiennes.
+
+De son côté, Mistral s'associe au CERN. Les deux veulent explorer un Large Physics Model unique. Il serait entraîné sur des milliards de collisions de particules simulées. Mistral multiplie aussi les acquisitions pour maîtriser toute la chaîne de valeur de l'IA en entreprise. C'est ce que rapporte L'Usine Digitale. Pendant ce temps, Microsoft, via Mustafa Suleyman, affirme disposer désormais de modèles de base maison dans la classe des trois mille milliards de paramètres.
+
+Et pour finir, la phrase du jour. Le seul avantage qui reste, c'est la capacité à bouger plus vite que le rythme du changement. Une idée qui résume bien une journée où chaque acteur, grand ou petit, court pour ne pas se laisser distancer.

@@ -1,0 +1,9 @@
+Bonjour et bienvenue dans l'essentiel de votre veille IA du seize octobre.
+
+On commence avec Meta. Le groupe vient de publier Muse Spark Open. C'est présenté comme le modèle en poids ouverts le plus puissant jamais sorti aux États-Unis. Il compte huit cent seize milliards de paramètres. Et fait rare, grâce à un partenariat avec Apple, il tourne en local sur les nouveaux Mac Studio. Pour une PME, ça veut dire une IA avancée sans abonnement cloud, avec des données qui restent en interne.
+
+Côté finances, les marchés s'inquiètent de la dette de l'IA. CoreWeave a perdu un cinquième de sa valeur en moins de deux jours. Le président de la Réserve fédérale, lui, reste optimiste et parle d'un choc d'offre positif. Pendant ce temps, Anthropic annonce un chiffre d'affaires trimestriel en hausse de près de moitié.
+
+En bref. Anthropic ouvre ses portes aux contrôleurs indépendants et finance les mathématiciens aux côtés d'OpenAI. Google avance sur le quantique et dévoile Gemini quatre Argon, qui crée des mondes en trois dimensions. Et OpenAI comme Mistral se tournent vers la science, avec un plan pour les labos de biologie d'un côté, un partenariat avec le CERN de l'autre.
+
+C'était l'essentiel de votre veille IA. La version complète vous attend juste en dessous. À très bientôt.
