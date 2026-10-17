@@ -1,0 +1,59 @@
+name: Podcast pronunciation preview
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: podcast-pronunciation-preview
+  cancel-in-progress: false
+jobs:
+  preview:
+    if: github.ref == 'refs/heads/main' && github.run_attempt == 1
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.12'
+      - run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          pip install -r requirements.txt
+      - name: Short voice sample only (no Telegram or RSS publication)
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from veille.audio import audio_config, duration_seconds, get_provider, spoken_text
+          out = Path('pronunciation-preview')
+          out.mkdir()
+          cfg = audio_config()
+          if cfg['provider'] != 'elevenlabs' or cfg['format'] != 'solo':
+              raise SystemExit('Preview requires the current ElevenLabs solo configuration')
+          text = (
+              "Bonjour et bienvenue dans Le Podcast IA. Voici Le Débrief du dix-sept octobre. "
+              "On parle aujourd'hui de l'IA et des agents.\n\n"
+              "Bonjour et bienvenue dans Le Podcast IA. Voici Le Flash du dix-sept octobre. "
+              "C'était Le Flash du Podcast IA."
+          )
+          script = out / 'spoken.txt'
+          script.write_text(spoken_text(text, {}), encoding='utf-8')
+          (out / 'transcript.txt').write_text(text, encoding='utf-8')
+          try:
+              get_provider(cfg).synthesize(script, out / 'preview.mp3')
+              seconds = duration_seconds(out / 'preview.mp3')
+          except Exception as exc:
+              raise SystemExit(f'Voice preview failed ({type(exc).__name__})') from None
+          metadata = {k: cfg.get(k) for k in ('provider', 'modele_elevenlabs', 'moteur',
+                      'voix_femme_elevenlabs', 'vitesse', 'seed')}
+          metadata['duration_seconds'] = seconds
+          (out / 'metadata.json').write_text(json.dumps(metadata, indent=2) + '\n')
+          PY
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: podcast-pronunciation-preview
+          path: pronunciation-preview/
+          retention-days: 7

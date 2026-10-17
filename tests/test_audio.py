@@ -15,6 +15,41 @@ MESSAGE = '<b>Agents IA</b>\nUn outil facilite les tests.\n<a href="https://exam
 
 
 class AudioTests(unittest.TestCase):
+    def test_ia_spelling_is_targeted_and_idempotent(self):
+        text = "IA, l'IA et l’IA. anti-IA ; iAstro NVIDIA OpenAI VIA ia I.A. I. A."
+        expected = "I. A., l'I. A. et l’I. A. anti-I. A. ; iAstro NVIDIA OpenAI VIA ia I.A. I. A."
+        self.assertEqual(audio.spoken_text(text, {}), expected)
+        self.assertEqual(audio.spoken_text(expected, {}), expected)
+        self.assertEqual(audio.spoken_text('IA et OpenAI', {'IA': 'I.A.', 'OpenAI': 'Open A I'}),
+                         'I. A. et Open A I')
+
+    def test_both_formats_spell_ia_only_for_tts_with_lexicon_disabled(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            source = root / 'input.json'
+            audio.save_snapshot(MESSAGE, '17/10/2026', str(source))
+            scripts = ['Bonjour dans Le Podcast IA. Voici Le Débrief.',
+                       'Bonjour dans Le Podcast IA. Voici Le Flash.']
+            heard = []
+            def synthesize(script, out):
+                heard.append(script.read_text())
+                out.write_bytes(b'mp3')
+            provider = Mock()
+            provider.synthesize.side_effect = synthesize
+            cfg = {**audio.DEFAULT_AUDIO, 'lexique_actif': 'false', 'version_courte': 'true'}
+            with patch.object(audio, 'build_script', side_effect=scripts), \
+                 patch.object(audio, 'get_provider', return_value=provider), \
+                 patch.object(audio, '_pieces', return_value=None), \
+                 patch.object(audio, 'duration_seconds', return_value=20), \
+                 patch('veille.podcast_media.prepare_with_fallback'), \
+                 patch.object(telegram, 'send_audio') as send:
+                audio.run(source, root / 'out', Settings(), cfg=cfg)
+                send.assert_not_called()
+            self.assertEqual(heard, [s.replace('IA.', 'I. A.') for s in scripts])
+            for index, suffix in enumerate(['', '-court']):
+                self.assertEqual((root / f'out/transcript{suffix}.txt').read_text(), scripts[index])
+                self.assertEqual((root / f'out/spoken{suffix}.txt').read_text(), heard[index])
+
     def test_snapshot_exact_final_selection_and_calm_day(self):
         with tempfile.TemporaryDirectory() as directory:
             target = Path(directory) / 'brief.json'
