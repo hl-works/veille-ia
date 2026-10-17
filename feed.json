@@ -14916,5 +14916,208 @@
     "tweet_url": "https://x.com/RamaswmySridhar/status/2110793154538717591",
     "media": false,
     "auteur_x": "@RamaswmySridhar"
+  },
+  {
+    "date": "2026-10-16",
+    "titre_fr": "OpenAI améliore GPT-6 Astra Pro dans ChatGPT avec des agents en parallèle",
+    "resume_fr": "OpenAI annonce une mise à jour de GPT-6 Astra Pro dans ChatGPT : réponses plus rapides, meilleure utilisation des plugins et outils, et surtout la possibilité de lancer plusieurs agents en parallèle sur différentes parties d'une tâche, avec suivi de leur progression. Disponible pour les utilisateurs Pro.",
+    "tags": [
+      "openai",
+      "produit",
+      "agents"
+    ],
+    "score": 82,
+    "tweet_url": "https://x.com/OpenAI/status/2111192259073094035",
+    "media": false,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-10-16",
+    "titre_fr": "Vercel lance une boutique e-commerce prête pour les agents, avec Shopify en backend",
+    "resume_fr": "Vercel ouvre en disponibilité générale une solution de boutique en ligne basée sur Next.js et adossée à Shopify, présentée comme rapide et conçue pour être exploitable par des agents IA. Vercel a lancé sa propre boutique de merch pour démontrer l'outil.",
+    "tags": [
+      "produit",
+      "commerce",
+      "shopify",
+      "vente"
+    ],
+    "score": 74,
+    "tweet_url": "https://x.com/rauchg/status/2111174921678446595",
+    "media": true,
+    "auteur_x": "@rauchg"
+  },
+  {
+    "date": "2026-10-16",
+    "titre_fr": "Gemini 4 Argon, nouveau modèle de pointe, arrive dans Perplexity",
+    "resume_fr": "Google présente Gemini 4 Argon comme un modèle frontière établissant un nouveau record sur le benchmark de recherche approfondie WANDR. Il est désormais accessible aux abonnés Pro et Max de Perplexity, en modes recherche rapide et agent.",
+    "tags": [
+      "google",
+      "modeles",
+      "produit"
+    ],
+    "score": 70,
+    "tweet_url": "https://x.com/AravSrinivas/status/2111111329536987234",
+    "media": false,
+    "auteur_x": "@AravSrinivas"
+  },
+  {
+    "date": "2026-10-16",
+    "titre_fr": "Perplexity publie en open source ses Decision Models",
+    "resume_fr": "Perplexity met à disposition deux nouveaux modèles ouverts : pplx-decider-flash-v1.2 (4 milliards de paramètres) et pplx-decider-v1.2 (27 milliards), à très bas coût par million de tokens. Ils sont disponibles via l'API Perplexity et en poids ouverts sur Hugging Face.",
+    "tags": [
+      "open-source",
+      "modeles",
+      "produit"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/AravSrinivas/status/2111181956444827695",
+    "media": false,
+    "auteur_x": "@AravSrinivas"
+  },
+  {
+    "date": "2026-10-16",
+    "titre_fr": "Reflection publie Beam, un modèle open-weight disponible sur Vercel",
+    "resume_fr": "La startup Reflection lance Beam, un modèle à poids ouverts d'origine américaine, désormais accessible gratuitement sur l'AI Gateway de Vercel pour alimenter des agents ou du code. Hugging Face a diffusé une présentation en direct par l'équipe.",
+    "tags": [
+      "open-source",
+      "modeles"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/rauchg/status/2111178816731382110",
+    "media": false,
+    "auteur_x": "@rauchg"
+  },
+  {
+    "date": "2026-10-16",
+    "titre_fr": "Meta Superintelligence Labs revendique ses premiers modèles frontière",
+    "resume_fr": "Alexandr Wang célèbre un an de Meta Superintelligence Labs et la sortie de plusieurs modèles (Muse Wonder, Muse Spark), présentés comme la preuve que l'équipe a atteint son objectif d'un modèle frontière après les débuts décevants de Llama 4.",
+    "tags": [
+      "meta",
+      "modeles",
+      "talents"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/alexandr_wang/status/2111237499083252185",
+    "media": false,
+    "auteur_x": "@alexandr_wang"
+  },
+  {
+    "date": "2026-10-16",
+    "titre_fr": "Des agents Gemini 4 terminent Minecraft sans aide humaine",
+    "resume_fr": "Google DeepMind rapporte que quatre agents Gemini 4 Argon ont bouclé Minecraft depuis zéro en 27 heures, en écrivant près de 2 800 programmes, en se répartissant les tâches via chat et en déboguant collectivement, sans intervention humaine. Une démonstration de coordination multi-agents.",
+    "tags": [
+      "google",
+      "agents",
+      "recherche"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2111127991401247033",
+    "media": false,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-10-16",
+    "titre_fr": "Claude conçoit des circuits quantiques plus efficaces, selon Anthropic",
+    "resume_fr": "Via son programme STEM Fellows, Anthropic affirme que Claude Mythos 5 a conçu, à partir d'instructions en langage courant, des circuits quantiques surpassant les meilleures publications, parfois d'un ordre de grandeur. De quoi potentiellement rapprocher certaines applications du calcul quantique.",
+    "tags": [
+      "anthropic",
+      "recherche"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/AnthropicAI/status/2111152183240511640",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-10-16",
+    "titre_fr": "Arthur Mensch (Mistral) plaide pour une IA de pointe européenne",
+    "resume_fr": "Le PDG de Mistral s'oppose à l'idée, de plus en plus répandue en Europe, de laisser l'IA de pointe aux États-Unis et à la Chine. Il qualifie ce renoncement d'erreur fondamentale et défend la nécessité pour l'Europe de construire ses propres modèles.",
+    "tags": [
+      "mistral",
+      "politique-ia"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/arthurmensch/status/2110990492930314712",
+    "media": false,
+    "auteur_x": "@arthurmensch"
+  },
+  {
+    "date": "2026-10-16",
+    "titre_fr": "Microsoft met en avant son modèle de transcription MAI",
+    "resume_fr": "Mustafa Suleyman affirme que le modèle de transcription MAI de Microsoft est le plus précis et le plus utilisé sur OpenRouter, toutes langues et usages confondus, et le recommande pour les agents.",
+    "tags": [
+      "produit",
+      "modeles",
+      "automatisation"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/mustafasuleyman/status/2111116656215032068",
+    "media": true,
+    "auteur_x": "@mustafasuleyman"
+  },
+  {
+    "date": "2026-10-16",
+    "titre_fr": "Cursor : les agents cloud génèrent désormais des tableaux de bord interactifs",
+    "resume_fr": "Cursor permet à ses agents cloud de créer des canvas interactifs (tableaux de bord, rapports) pendant qu'ils travaillent, puis de partager le résultat fini sous forme de lien avec son équipe.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "score": 44,
+    "tweet_url": "https://x.com/cursor_ai/status/2111193957527146711",
+    "media": true,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-10-16",
+    "titre_fr": "Mistral Large 4 obtient de bons scores en ingénierie et astronomie",
+    "resume_fr": "Mistral met en avant les performances de Mistral Large 4 sur STEMBench, un benchmark privé axé sur les sciences, où le modèle se distingue notamment en ingénierie et en astronomie.",
+    "tags": [
+      "mistral",
+      "modeles"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/MistralAI/status/2111056939841163336",
+    "media": true,
+    "auteur_x": "@MistralAI"
+  },
+  {
+    "date": "2026-10-16",
+    "titre_fr": "Plus d'un Américain sur trois a acheté suite à une recommandation d'IA",
+    "resume_fr": "Selon des données d'a16z, plus d'un tiers des Américains ont acheté un produit sur recommandation d'une IA au cours de l'année écoulée, 44 % estiment que l'IA les aide à trouver un meilleur rapport qualité-prix, et 34 % paieraient plus cher si l'IA leur montrait le meilleur choix.",
+    "tags": [
+      "commerce",
+      "marketing",
+      "vente"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/a16z/status/2111196742872084902",
+    "media": true,
+    "auteur_x": "@a16z"
+  },
+  {
+    "date": "2026-10-16",
+    "titre_fr": "Microsoft améliore les prévisions météo à 2-6 semaines par machine learning",
+    "resume_fr": "Satya Nadella présente une recherche publiée dans Nature montrant que l'apprentissage automatique améliore les prévisions météo sur un horizon de deux à six semaines, historiquement difficile. Il y voit une illustration de l'intérêt des systèmes de vérification autour des modèles.",
+    "tags": [
+      "recherche"
+    ],
+    "score": 40,
+    "tweet_url": "https://x.com/satyanadella/status/2111204941801128366",
+    "media": false,
+    "auteur_x": "@satyanadella"
+  },
+  {
+    "date": "2026-10-17",
+    "titre_fr": "Un projet de loi IA attribué à Anthropic fuite et fait débat",
+    "resume_fr": "Un brouillon de texte législatif présenté comme émanant d'Anthropic a fuité, suscitant des critiques : transparence renforcée mais mécanismes d'application affaiblis et clauses de préemption jugées problématiques. Des observateurs reprochent à Anthropic de privilégier ses propres risques politiques et commerciaux au détriment des risques catastrophiques.",
+    "tags": [
+      "anthropic",
+      "politique-ia"
+    ],
+    "score": 57,
+    "tweet_url": "https://x.com/TheZvi/status/2111280886234886357",
+    "media": false,
+    "auteur_x": "@TheZvi"
   }
 ]
