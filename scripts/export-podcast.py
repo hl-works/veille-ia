@@ -5,6 +5,7 @@ from datetime import date
 import hashlib
 import json
 import math
+import logging
 from pathlib import Path
 import shutil
 import subprocess
@@ -25,7 +26,6 @@ def export(source: Path, destination: Path) -> bool:
     previous = destination / 'latest.json'
     if previous.exists() and json.loads(previous.read_text())['date'] > day:
         return False  # A retry of an old run must not replace a newer episode.
-    artwork = validate_prepared(source, data)
     manifest = {'date': day}
     digest = hashlib.sha256()
     files = [('short', 'court.mp3', 'court_duration_seconds'),
@@ -40,20 +40,33 @@ def export(source: Path, destination: Path) -> bool:
         seconds = data[key]
         if not math.isfinite(actual) or not isinstance(seconds, int) or not 0 < seconds < 1800 or abs(actual - seconds) > 2:
             raise ValueError('Invalid audio duration')
+        expected_hash = data.get('audio_sha256', {}).get(name) or data.get('artwork', {}).get(name, {}).get('audio_sha256')
+        if hashlib.sha256(path.read_bytes()).hexdigest() != expected_hash:
+            raise ValueError('Prepared audio changed')
         digest.update(path.read_bytes())
-        manifest[name] = {'src': f'/assets/podcast/{name}.mp3', 'seconds': seconds,
-                          'image': artwork[name]['image'],
-                          'image_sha256': artwork[name]['image_sha256']}
+        manifest[name] = {'src': f'/assets/podcast/{name}.mp3', 'seconds': seconds}
     manifest['version'] = digest.hexdigest()[:16]
-    # Never change an already published dated image, including concurrent retries.
+    artwork = None
+    if data.get('artwork'):
+        try:
+            artwork = validate_prepared(source, data)
+            for name, _, _ in files:
+                target = destination / 'archive' / day / f'{name}-cover-v2.jpg'
+                if target.exists() and hashlib.sha256(target.read_bytes()).hexdigest() != artwork[name]['image_sha256']:
+                    raise ValueError('Published artwork is immutable')
+        except Exception as exc:
+            logging.warning('Pochette indisponible à l’export (%s) : RSS sans image d’épisode.', type(exc).__name__)
+            artwork = None
     for name, _, _ in files:
-        target = destination / 'archive' / day / f'{name}-cover-v2.jpg'
-        if target.exists() and hashlib.sha256(target.read_bytes()).hexdigest() != artwork[name]['image_sha256']:
-            raise ValueError('Published artwork is immutable')
+        if artwork:
+            manifest[name].update(image=artwork[name]['image'], image_sha256=artwork[name]['image_sha256'])
+    manifest['artwork_status'] = 'ready' if artwork else 'unavailable'
     # Validate BOTH tracks before touching the current publication.
     destination.mkdir(parents=True, exist_ok=True)
     for name, filename, _ in files:
         shutil.copyfile(source / filename, destination / f'{name}.mp3')
+        if not artwork:
+            continue
         target = destination / 'archive' / day / f'{name}-cover-v2.jpg'
         target.parent.mkdir(parents=True, exist_ok=True)
         if not target.exists():

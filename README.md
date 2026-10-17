@@ -262,8 +262,9 @@ Le job audio charge le composant graphique du dépôt `hl-works/knowledge-hub`
 (portrait mensuel et mise en page) avant la génération. Après mesure de chaque
 MP3, `veille/podcast_media.py` prépare les images, intègre un JPEG 1080 en ID3
 sans réencoder le son et produit la miniature JPEG 320 (< 200 ko) de Telegram.
-Les empreintes du flux audio avant/après sont comparées. Toute erreur de
-pochette arrête l’envoi ; aucun repli silencieux vers un audio sans image.
+Les empreintes du flux audio avant/après sont comparées. Une erreur de pochette déclenche un repli explicite : restauration des MP3
+d’origine vérifiés, envoi sans miniature, publication RSS sans image d’épisode.
+Le motif est journalisé et `artwork_status=unavailable` est enregistré.
 
 `sendAudio` reçoit le MP3 illustré et sa miniature dans une seule requête.
 Le bridge publie ces MP3 et les mêmes pochettes JPEG 3000 dans le RSS ; il ne
@@ -286,6 +287,24 @@ Les relances du même run sont interdites ; après un résultat ambigu, contrôl
 Telegram avant de lancer un autre run. L’API peut accepter une miniature sans
 prouver son rendu sur tous les clients : faire constater le lecteur par Hugo.
 
-Retour arrière : désactiver les envois audio dans `audio.yaml` avant intervention
-si le rendu bloque ; conserver les épisodes, GUID et médias déjà distribués.
-Ne pas contourner le contrôle d’image pour publier un fichier incomplet.
+La pochette est facultative ; l’intégrité du MP3 reste obligatoire. Les étapes
+GitHub de téléchargement du modèle visuel et d’installation de Chromium sont
+également facultatives. Un échec de ces étapes n’empêche pas le TTS et l’envoi.
+Une miniature devenue indisponible avant la requête Telegram est omise ; aucun
+réessai réseau ambigu n’est ajouté. Un problème d’image à l’export est journalisé
+et n’empêche pas la publication des audios dont l’empreinte est vérifiée.
+Le RSS garde sa couverture générale, sans publier une fausse pochette datée.
+
+Validation du repli : vrai MP3, portrait mensuel manquant, remise en état après
+un échec de remux, upload Telegram simulé sans miniature, puis RSS temporaire.
+Aucun message de panne volontaire n’est envoyé aux abonnés pour ces tests.
+
+Le contenu utilise directement l’API Anthropic (`config.yaml`: modèle de texte),
+la voix utilise ElevenLabs (`audio.yaml`: fournisseur, voix et moteur). Il n’y a
+pas de routage OpenRouter. Les portraits iAstro approuvés résident dans le dépôt
+knowledge-hub ; Python/Chromium compose date et durée, puis FFmpeg gère les MP3.
+GitHub Actions orchestre ces étapes indépendamment d’une conversation de chat.
+
+Retour arrière : conserver les épisodes, GUID et médias déjà distribués.
+La restauration d’une version ne doit pas réintroduire le blocage audio sur une
+simple panne de pochette ; arrêter seulement les envois en cas de défaut audio.

@@ -21,37 +21,101 @@ class MediaGuards(unittest.TestCase):
                 media.prepare_media(Path(directory), {})
             post.assert_not_called()
 
-    def test_cover_failure_prevents_all_sends(self):
+    def test_cover_failure_restores_audio_and_pipeline_sends_without_image(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             source = root / 'input.json'
             source.write_text(json.dumps(dict(date='2026-10-17', sources=['https://example.org'], text='Test')))
             provider = Mock()
-            provider.synthesize.side_effect = lambda script, out: out.write_bytes(b'mp3')
+            provider.synthesize.side_effect = lambda script, out: out.write_bytes(b'original-audio')
+            def broken_prepare(output, metadata):
+                (output / 'brief.mp3').write_bytes(b'broken-remux')
+                metadata['artwork'] = {'partial': True}
+                raise ValueError('Missing cover')
             with patch.object(audio, 'build_script', return_value='Bonjour'), \
                  patch.object(audio, 'get_provider', return_value=provider), \
                  patch.object(audio, 'duration_seconds', return_value=60), \
-                 patch('veille.podcast_media.prepare_media', side_effect=ValueError('Missing cover')), \
-                 patch.object(telegram, 'send_audio') as send, patch.object(telegram, 'send_message') as message:
-                with self.assertRaisesRegex(ValueError, 'Missing cover'):
-                    audio.run(source, root / 'out', Settings(), send=True)
-                send.assert_not_called()
-                message.assert_not_called()
-                self.assertFalse(json.loads((root / 'out/brief.json').read_text())['telegram_sent'])
+                 patch.object(media, 'validate_audio', side_effect=lambda p, seconds: media.sha(p)), \
+                 patch.object(media, 'prepare_media', side_effect=broken_prepare), \
+                 patch.object(telegram, 'send_audio', return_value={}) as send:
+                settings = Settings(telegram_bot_token='test')
+                with patch.dict(os.environ, {'TELEGRAM_AUTHORIZED_USER_ID': 'test'}):
+                    audio.run(source, root / 'out', settings, send=True)
+                send.assert_called_once()
+                self.assertIsNone(send.call_args.kwargs['thumbnail'])
+                self.assertEqual((root / 'out/brief.mp3').read_bytes(), b'original-audio')
+                metadata = json.loads((root / 'out/brief.json').read_text())
+                self.assertTrue(metadata['telegram_sent'])
+                self.assertEqual(metadata['artwork_status'], 'unavailable')
+                self.assertNotIn('artwork', metadata)
 
-    def test_oversized_thumbnail_blocks_before_upload(self):
+    def test_invalid_audio_still_blocks(self):
+        with tempfile.TemporaryDirectory() as directory, patch.object(media, 'prepare_media') as render:
+            root = Path(directory)
+            (root / 'brief.mp3').write_bytes(b'invalid')
+            with self.assertRaises(ValueError):
+                media.prepare_with_fallback(root, {'duration_seconds': 60, 'court_duration_seconds': 0})
+            render.assert_not_called()
+
+    def test_oversized_thumbnail_sends_audio_without_thumbnail(self):
         with tempfile.TemporaryDirectory() as directory, patch.object(telegram.requests, 'post') as post:
             root = Path(directory)
             (root / 'a.mp3').write_bytes(b'audio')
             (root / 'thumb.jpg').write_bytes(b'x' * 200_000)
-            with self.assertRaises(ValueError):
-                telegram.send_audio(root / 'a.mp3', thumbnail=root / 'thumb.jpg', day='2026-10-17',
-                                    duration=60, bot_token='not-a-token', chat_id='test')
-            post.assert_not_called()
+            post.return_value = Mock(ok=True, json=lambda: {'ok': True})
+            telegram.send_audio(root / 'a.mp3', thumbnail=root / 'thumb.jpg', day='2026-10-17',
+                                duration=60, bot_token='not-a-token', chat_id='test')
+            post.assert_called_once()
+            self.assertNotIn('thumbnail', post.call_args.kwargs['files'])
 
 
 @unittest.skipUnless(os.environ.get('PODCAST_MEDIA_TEST') == '1', 'Real media integration runs in CI')
 class MediaIntegration(unittest.TestCase):
+    def test_missing_month_still_delivers_unchanged_audio_to_telegram_and_rss(self):
+        design = Path(os.environ['PODCAST_DESIGN_ROOT']).resolve()
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            output = root / 'audio'
+            output.mkdir()
+            metadata = dict(date='2027-01-01', destination='canal', telegram_sent=False, court_telegram_sent=False)
+            originals = {}
+            for kind, (filename, key) in media.TRACKS.items():
+                shutil.copyfile(design / f'assets/podcast/archive/2026-10-17/{kind}.mp3', output / filename)
+                metadata[key] = audio.duration_seconds(output / filename)
+                originals[kind] = (output / filename).read_bytes()
+            media.prepare_with_fallback(output, metadata)
+            self.assertEqual(metadata['artwork_status'], 'unavailable')
+            self.assertNotIn('artwork', metadata)
+            with patch.object(telegram.requests, 'post', return_value=Mock(ok=True, json=lambda: {'ok': True})) as post:
+                for kind, (filename, key) in media.TRACKS.items():
+                    self.assertEqual((output / filename).read_bytes(), originals[kind])
+                    telegram.send_audio(output / filename, day=metadata['date'], duration=metadata[key],
+                                        bot_token='test', chat_id='test')
+                self.assertEqual(post.call_count, 2)
+                self.assertTrue(all('thumbnail' not in c.kwargs['files'] for c in post.call_args_list))
+            metadata.update(telegram_sent=True, court_telegram_sent=True)
+            (output / 'brief.json').write_text(json.dumps(metadata))
+            spec = importlib.util.spec_from_file_location('fallback_export', Path(__file__).parents[1] / 'scripts/export-podcast.py')
+            exporter = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(exporter)
+            site = root / 'site'
+            dest = site / 'assets/podcast'
+            self.assertTrue(exporter.export(output, dest))
+            for name in ('show.json', 'show-cover-v1.jpg'):
+                shutil.copyfile(design / 'assets/podcast' / name, dest / name)
+            (dest / 'episodes.json').write_text(json.dumps({'episodes': []}))
+            subprocess.run([os.sys.executable, str(design / 'scripts/build_podcast_feed.py'),
+                            '--root', str(site), '--archive-latest'], check=True)
+            import xml.etree.ElementTree as ET
+            rss = ET.parse(dest / 'feed.xml')
+            self.assertIsNone(rss.find('./channel/item/{http://www.itunes.com/dtds/podcast-1.0.dtd}image'))
+            self.assertIsNotNone(rss.find('./channel/{http://www.itunes.com/dtds/podcast-1.0.dtd}image'))
+            for kind in media.TRACKS:
+                self.assertEqual((dest / f'archive/2027-01-01/{kind}.mp3').read_bytes(), originals[kind])
+            (output / 'brief.mp3').write_bytes(originals['full'] + b'changed')
+            with self.assertRaisesRegex(ValueError, 'audio changed'):
+                exporter.export(output, dest)
+
     def test_same_artwork_in_mp3_telegram_and_rss(self):
         design = Path(os.environ['PODCAST_DESIGN_ROOT']).resolve()
         day = '2026-10-17'
