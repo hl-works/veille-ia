@@ -1,0 +1,29 @@
+LE PODCAST iA — FLASH DU 17 OCTOBRE 2026
+Version à deux voix — texte de montage
+
+[iAstro]
+Salut, c’est iAstro ! Bienvenue dans le Flash du Podcast I A du dix-sept octobre. Les infos qui comptent, en deux minutes. C’est parti !
+
+[Victoria]
+La grande tendance du jour, c'est une vague de modèles ouverts. Nvidia, Meta et Apple ont tous dévoilé de nouveaux modèles dont les poids sont téléchargeables librement. S'y ajoutent Beam de Reflection, Mistral Large quatre, de nouveaux modèles chez Perplexity, et aussi Xiaomi et Tencent côté chinois. Concrètement, ça tire les prix vers le bas et rend l'IA de pointe plus accessible, parfois même installable chez soi.
+
+[iAstro]
+Place à Google et à ses agents.
+
+[Victoria]
+Le retour est marqué avec Gemini quatre Argon. Pour le montrer, quatre agents ont terminé Minecraft à partir de zéro en vingt-sept heures, sans aucune aide humaine. Le modèle est déjà intégré chez Perplexity. Mais attention, les scores varient énormément selon la méthode de mesure.
+
+[iAstro]
+Et du côté de ChatGPT, qu’est-ce qui bouge ?
+
+[Victoria]
+ChatGPT évolue aussi. On peut désormais lancer plusieurs agents en parallèle sur une même tâche. Et l'extension Chrome devient un vrai assistant qui lit vos onglets, résume et remplit des formulaires.
+
+[iAstro]
+Et maintenant, les autres infos à retenir.
+
+[Victoria]
+Le débat sur une possible bulle de l'IA s'intensifie dans la presse économique. Anthropic a présenté aux parlementaires américains son propre projet de loi sur la sécurité, une démarche qui fait débat. Et côté souveraineté, Arthur Mensch défend une Europe de l'IA pendant que la Chine prépare un durcissement de ses contrôles à l'export.
+
+[iAstro]
+C’était le Flash ! Pour prendre le temps de comprendre, retrouve le Débrief du Podcast I A. À très vite !
