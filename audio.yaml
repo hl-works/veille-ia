@@ -12,7 +12,10 @@ voix_femme_elevenlabs: uOw88F5bjqRiVuZLhXEA   # Victoria
 lexique_actif: false
 vitesse: 1.0          # v4 n'a pas de réglage de vitesse ; >1.0 = accélération après coup
 seed: 42
-format: solo          # solo | duo (duo : ajouter voix_homme_elevenlabs)
+# Répartition et vitesse validées par Hugo le 17/10/2026.
+format: iastro        # iAstro : ouverture/transitions/fermeture ; Victoria : narration
+voix_iastro_elevenlabs: Yx2a8qp2EqI9c5i8MzBo  # Philippine - Animation Creator
+vitesse_iastro: 1.15  # atempo : hauteur préservée ; de-esser léger uniquement sur iAstro
 destination: canal    # canal (sous le post texte, choix Hugo 09/10) | prive (MP à Hugo)
 envoi_telegram: true  # false = MP3 seulement sur la branche ecoute
 version_courte: true  # « l'essentiel » 1–2 min, envoyé avant la version complète (08/10)

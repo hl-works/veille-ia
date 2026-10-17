@@ -161,7 +161,7 @@ def chunks(text: str, limit: int = CHUNK_LIMIT) -> list[str]:
     return [c for c in out if c.strip()]
 
 
-def concat_mp3(files: list[Path], output: Path, tempo: float = 1.0) -> None:
+def concat_mp3(files: list[Path], output: Path, tempo: float = 1.0, *, deess: bool = False) -> None:
     """Assemble les morceaux en un MP3. `tempo` > 1 accélère le débit sans
     changer la hauteur de la voix (filtre atempo, 0.5 à 2.0). Le volume est
     normalisé (loudnorm, -16 LUFS) pour éviter les écarts de niveau."""
@@ -169,6 +169,8 @@ def concat_mp3(files: list[Path], output: Path, tempo: float = 1.0) -> None:
     listing.write_text(''.join(f"file '{f.resolve()}'\n" for f in files), encoding='utf-8')
     tempo = min(2.0, max(0.5, float(tempo or 1.0)))
     chain = ([f'atempo={tempo:g}'] if abs(tempo - 1.0) > 1e-3 else []) + ['loudnorm=I=-16:TP=-1.5:LRA=11']
+    if deess:
+        chain.insert(-1, 'deesser=i=0.35:m=0.35:f=0.5')
     try:
         subprocess.run(['ffmpeg', '-nostdin', '-y', '-v', 'error', '-f', 'concat', '-safe', '0',
                         '-i', str(listing), '-filter:a', ','.join(chain), '-ac', '1', '-ar', '44100',
@@ -219,6 +221,8 @@ class ElevenLabsTTS:
         parts = segments(script_path.read_text(encoding='utf-8'), self.cfg.get('format', 'solo'))
         if not parts:
             raise RuntimeError('Script sans contenu parlé')
+        if self.cfg.get('format') == 'iastro':
+            return self._synthesize_iastro(parts, output)
         if str(self.cfg.get('moteur', '')).lower() == 'dialogue':
             return self._synthesize_dialogue(parts, output)
         # Un même locuteur = un seul flux de texte (les paragraphes ne sont plus
@@ -255,6 +259,40 @@ class ElevenLabsTTS:
                     voice_settings=settings, seed=seed)
                 files.append(dest)
             concat_mp3(files, output, float(self.cfg.get('vitesse', 1.0) or 1.0))
+
+    def _synthesize_iastro(self, parts: list[tuple[str, str]], output: Path) -> None:
+        """Separate voice runs so only iAstro is accelerated and de-essed."""
+        voice = self.cfg.get('voix_iastro_elevenlabs')
+        if not voice:
+            raise ValueError('Voix iAstro manquante')
+        runs: list[list[str]] = []
+        for who, text in parts:
+            if runs and runs[-1][0] == who:
+                runs[-1][1] += '\n\n' + text
+            else:
+                runs.append([who, text])
+        output.parent.mkdir(parents=True, exist_ok=True)
+        with tempfile.TemporaryDirectory() as directory:
+            files = []
+            for index, (who, text) in enumerate(runs):
+                source = Path(directory) / f'{index}.txt'
+                source.write_text(text, encoding='utf-8')
+                dest = Path(directory) / f'{index}.mp3'
+                cfg = dict(self.cfg, format='solo')
+                if who == 'iastro':
+                    # TTS matches the approved Philippine audition; Victoria
+                    # keeps her existing Text to Dialogue model and settings.
+                    cfg.update(voix_femme_elevenlabs=voice, moteur='tts', vitesse='1.0',
+                               stabilite='0.5', similarite='0.75')
+                    for key in ('vitesse_intro', 'vitesse_native', 'style'):
+                        cfg.pop(key, None)
+                    raw = Path(directory) / f'{index}-raw.mp3'
+                    ElevenLabsTTS(cfg).synthesize(source, raw)
+                    concat_mp3([raw], dest, float(self.cfg.get('vitesse_iastro', 1.15)), deess=True)
+                else:
+                    ElevenLabsTTS(cfg).synthesize(source, dest)
+                files.append(dest)
+            concat_mp3(files, output)
 
     def _synthesize_dialogue(self, parts: list[tuple[str, str]], output: Path) -> None:
         """Moteur Text to Dialogue (Eleven v4) : solo ou duo, par blocs ≤ 1900 car."""

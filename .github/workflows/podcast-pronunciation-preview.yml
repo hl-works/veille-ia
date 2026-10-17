@@ -8,7 +8,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   preview:
-    if: github.ref == 'refs/heads/main' && github.run_attempt == 1
+    if: github.run_attempt == 1
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -31,14 +31,22 @@ jobs:
           out = Path('pronunciation-preview')
           out.mkdir()
           cfg = audio_config()
-          if cfg['provider'] != 'elevenlabs' or cfg['format'] != 'solo':
-              raise SystemExit('Preview requires the current ElevenLabs solo configuration')
+          if cfg['provider'] != 'elevenlabs' or cfg['format'] not in ('solo', 'iastro'):
+              raise SystemExit('Preview requires the approved ElevenLabs configuration')
           text = (
               "Bonjour et bienvenue dans Le Podcast IA. Voici Le Débrief du dix-sept octobre. "
               "On parle aujourd'hui de l'IA et des agents.\n\n"
               "Bonjour et bienvenue dans Le Podcast IA. Voici Le Flash du dix-sept octobre. "
               "C'était Le Flash du Podcast IA."
           )
+          if cfg['format'] == 'iastro':
+              text = (
+                  "IASTRO: Salut, c'est iAstro ! Bienvenue dans le Flash du Podcast IA.\n"
+                  "VICTORIA: L'intelligence artificielle nous aide à comprendre ce qui change.\n"
+                  "IASTRO: Et maintenant, la suite !\n"
+                  "VICTORIA: Une machine peut faire beaucoup de choses.\n"
+                  "IASTRO: À très vite !"
+              )
           script = out / 'spoken.txt'
           script.write_text(spoken_text(text, {}), encoding='utf-8')
           (out / 'transcript.txt').write_text(text, encoding='utf-8')
@@ -48,7 +56,7 @@ jobs:
           except Exception as exc:
               raise SystemExit(f'Voice preview failed ({type(exc).__name__})') from None
           metadata = {k: cfg.get(k) for k in ('provider', 'modele_elevenlabs', 'moteur',
-                      'voix_femme_elevenlabs', 'vitesse', 'seed')}
+                      'voix_femme_elevenlabs', 'voix_iastro_elevenlabs', 'vitesse', 'vitesse_iastro', 'seed')}
           metadata['duration_seconds'] = seconds
           (out / 'metadata.json').write_text(json.dumps(metadata, indent=2) + '\n')
           PY

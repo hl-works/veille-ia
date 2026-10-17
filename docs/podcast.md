@@ -63,3 +63,24 @@ site ; la branche interne `ecoute` conserve les archives. Un aperçu privé, un
 bridge échoue, le dernier épisode reste écoutable avec sa date d'origine.
 
 Vérification ciblée : `python -m unittest discover -s tests -p test_podcast_site.py`.
+
+## Répartition validée le 17 octobre 2026
+
+Le Flash et le Débrief utilisent `format: iastro`. iAstro ouvre, introduit
+chaque sujet et conclut ; Victoria conserve toutes les informations et les
+explications. Les deux voix s'enchaînent directement, sans annoncer Victoria.
+Chaque réplique porte un rôle `IASTRO:` ou `VICTORIA:` non prononcé. Les rôles
+et la structure sont vérifiés avant la synthèse ; les jingles restent entre
+les grands sujets.
+
+iAstro utilise Philippine - Animation Creator (`Yx2a8qp2EqI9c5i8MzBo`),
+Eleven v4, français, stabilité 0,5 et similarité 0,75. Son débit est accéléré
+de 15 % avec `atempo`, sans transposition, et ses sifflantes sont atténuées
+(`deesser=i=0.35:m=0.35:f=0.5`). Victoria conserve son moteur Text to Dialogue,
+sa voix et son débit. Le nom reste écrit `iAstro` dans une phrase complète.
+Interprétation garçon, vive et malicieuse, jamais bébé. Les légères inflexions
+canadiennes résiduelles ont été entendues et acceptées par Hugo.
+
+Les épisodes du 17 octobre ont aussi été remontés avec les prises approuvées,
+en conservant l'enregistrement Victoria. Leur correction sur le site et le
+RSS n'appelle aucun nouvel envoi Telegram.
