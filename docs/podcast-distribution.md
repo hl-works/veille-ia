@@ -53,3 +53,21 @@ ton attention ? On regarde ça ensemble. »
 Après choix : conserver le voice_id, les réglages, le fournisseur et les
 conditions d'utilisation applicables dans la configuration prévue, puis
 tester un aperçu privé. Ne pas annoncer iAstro dans l'audio avant cette étape.
+
+## Visuels automatiques par épisode
+
+Le bridge installe le moteur de rendu défini dans le site, puis appelle
+`build_podcast_feed.py --archive-latest --render-covers`. Chaque épisode reçoit
+une pochette JPEG 3000 px avec date, durée réelle et portrait du mois de l’édition.
+Les images sont publiées avec le RSS dans le même commit ; les anciennes sont
+conservées. Le RSS utilise la pochette du Débrief et garde la couverture générale
+pour l’émission. Aucun changement d’identité ni de fichier audio distribué.
+
+Les portraits d’octobre à décembre 2026 sont disponibles dans le site. Janvier
+à septembre restent à préparer : un mois manquant provoque une erreur du bridge
+avant publication, en préservant le flux antérieur. Les miniatures des messages
+Telegram ne sont pas modifiées par ce raccordement RSS.
+
+Le test du 17 octobre a confirmé la production publique du matin et le
+raccordement existant. La propagation du prochain épisode dans Apple/Spotify
+reste à observer ; leur indexation n’est pas instantanée.
