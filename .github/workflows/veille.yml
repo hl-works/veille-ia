@@ -268,6 +268,7 @@ jobs:
           AUDIO_TTS_PROVIDER: ${{ vars.AUDIO_TTS_PROVIDER }}
       - name: Charger le modèle unique des pochettes
         continue-on-error: true
+        timeout-minutes: 2
         uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
         with:
           repository: hl-works/knowledge-hub
@@ -279,6 +280,7 @@ jobs:
             assets/podcast/art
       - name: Installer le rendu des pochettes
         continue-on-error: true
+        timeout-minutes: 3
         run: |
           pip install -r .podcast-design/scripts/requirements-podcast-covers.txt
           python -m playwright install --with-deps chromium
