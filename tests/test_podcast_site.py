@@ -49,6 +49,15 @@ class ExportTest(unittest.TestCase):
         self.assertEqual(set(p.name for p in self.dest.iterdir()), {'latest.json', 'short.mp3', 'full.mp3', 'archive', 'covers'})
         self.assertNotIn('telegram_sent', manifest)
 
+    @patch.object(module.subprocess, 'check_output', return_value='60')
+    def test_cover_lost_after_send_does_not_block_rss_export(self, _):
+        (self.source / 'full-cover.jpg').unlink()
+        self.assertTrue(module.export(self.source, self.dest))
+        latest = json.loads((self.dest / 'latest.json').read_text())
+        self.assertEqual(latest['artwork_status'], 'unavailable')
+        self.assertNotIn('image', latest['full'])
+        self.assertTrue((self.dest / 'full.mp3').is_file())
+
     def test_private_preview_and_unsent_pair_skipped(self):
         for key, value in [('destination', 'prive'), ('telegram_sent', False), ('court_telegram_sent', False)]:
             original = self.data[key]

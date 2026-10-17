@@ -221,7 +221,13 @@ def send_audio(path, *, day: str, duration: int, bot_token: str, chat_id: str,
     from contextlib import ExitStack
     from .podcast_media import validate_thumbnail
     if thumbnail is not None:
-        validate_thumbnail(thumbnail)
+        try:
+            validate_thumbnail(thumbnail)
+        except Exception as exc:
+            import logging
+            logging.getLogger(__name__).warning(
+                'Miniature indisponible (%s) : envoi audio sans miniature.', type(exc).__name__)
+            thumbnail = None
     with ExitStack() as stack:
         audio = stack.enter_context(path.open('rb'))
         files = {'audio': (path.name, audio, 'audio/mpeg')}

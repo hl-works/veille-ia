@@ -2,6 +2,9 @@
 from datetime import date
 import hashlib
 import json
+import logging
+import math
+import shutil
 import os
 from pathlib import Path
 import subprocess
@@ -68,7 +71,7 @@ def prepare_media(output, metadata):
     """Render once, attach artwork without re-encoding, then seal the association."""
     design = os.environ.get('PODCAST_DESIGN_ROOT')
     if not design:
-        raise RuntimeError('PODCAST_DESIGN_ROOT is required: no unillustrated audio will be sent')
+        raise RuntimeError('PODCAST_DESIGN_ROOT is required for artwork rendering')
     renderer = Path(design).resolve() / 'scripts/render_podcast_covers.py'
     output = Path(output).resolve()
     # Missing/invalid short or full duration fails before any Telegram request.
@@ -115,3 +118,52 @@ def prepare_media(output, metadata):
     metadata['artwork'] = artwork
     validate_prepared(output, metadata)
     return artwork
+
+
+def validate_audio(path, seconds):
+    """Audio integrity remains mandatory even when artwork is unavailable."""
+    path = Path(path)
+    if not path.is_file() or not 1024 < path.stat().st_size < 25_000_000:
+        raise ValueError('Missing or invalid MP3')
+    probe = json.loads(command('ffprobe', '-v', 'error', '-show_entries',
+                              'format=duration:stream=codec_name,codec_type', '-of', 'json', str(path)))
+    actual = float(probe['format']['duration'])
+    streams = [s for s in probe['streams'] if s.get('codec_type') == 'audio']
+    if (len(streams) != 1 or streams[0]['codec_name'] != 'mp3' or not math.isfinite(actual)
+            or type(seconds) is not int or not 0 < seconds < 1800 or abs(actual - seconds) > 2):
+        raise ValueError('Invalid MP3 codec or duration')
+    return sha(path)
+
+
+def prepare_with_fallback(output, metadata):
+    """Artwork is best effort. Restore the verified originals on ANY cover failure."""
+    output = Path(output)
+    tracks = {kind: values for kind, values in TRACKS.items()
+              if kind == 'full' or metadata['court_duration_seconds'] > 0}
+    originals = {kind: validate_audio(output / filename, metadata[key])
+                 for kind, (filename, key) in tracks.items()}
+    with tempfile.TemporaryDirectory(dir=output) as directory:
+        backup = Path(directory)
+        for filename, _ in tracks.values():
+            shutil.copyfile(output / filename, backup / filename)
+        try:
+            prepare_media(output, metadata)
+            metadata['audio_sha256'] = {kind: validate_audio(output / filename, metadata[key])
+                                        for kind, (filename, key) in tracks.items()}
+            metadata['artwork_status'] = 'ready'
+        except Exception as exc:
+            # Rendering/remuxing may have replaced one file before failing.
+            # Restore BOTH originals; never send a partially tagged/corrupt pair.
+            for filename, _ in tracks.values():
+                shutil.copyfile(backup / filename, output / filename)
+            metadata.pop('artwork', None)
+            metadata['artwork_status'] = 'unavailable'
+            metadata['audio_sha256'] = originals
+            metadata['artwork_error'] = type(exc).__name__
+            logging.getLogger(__name__).warning(
+                'Pochette indisponible (%s) : publication des audios vérifiés sans image.',
+                type(exc).__name__)
+        for kind, (filename, key) in tracks.items():
+            if validate_audio(output / filename, metadata[key]) != metadata['audio_sha256'][kind]:
+                raise ValueError('Audio changed during preparation')
+    return metadata.get('artwork')
