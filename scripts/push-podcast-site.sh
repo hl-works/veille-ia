@@ -23,8 +23,15 @@ for attempt in 1 2 3; do
     echo 'Pas encore de duo public à exporter.'
     exit 0
   }
+  # Enabled only once the site feed/contact have been validated and published.
+  # Build in this throwaway checkout before committing: an invalid archive or
+  # RSS stops publication; the previous public site remains untouched.
+  if [ -f assets/podcast/feed.xml ] && [ -f scripts/build_podcast_feed.py ]; then
+    python3 scripts/build_podcast_feed.py --archive-latest
+    git add assets/podcast/episodes.json assets/podcast/feed.xml assets/podcast/archive/
+  fi
   git diff --cached --quiet && exit 0
-  git commit --quiet -m 'data: derniers podcasts IA pour la home'
+  git commit --quiet -m 'data: podcasts IA, archives permanentes et flux'
   if git push --quiet origin HEAD:main; then exit 0; fi
   echo "Push concurrent, nouvel essai ($attempt/3)."
 done
