@@ -305,6 +305,15 @@ pas de routage OpenRouter. Les portraits iAstro approuvés résident dans le dé
 knowledge-hub ; Python/Chromium compose date et durée, puis FFmpeg gère les MP3.
 GitHub Actions orchestre ces étapes indépendamment d’une conversation de chat.
 
+Prononciation : le sigle autonome `IA` devient `I. A.` uniquement dans le texte
+envoyé à la voix, dans Le Flash comme dans Le Débrief. Cette règle reste active
+quand le lexique des marques est désactivé ; les transcriptions éditoriales ne
+changent pas. Les entrées TTS sont conservées dans `spoken.txt` et
+`spoken-court.txt`. Le workflow manuel `Podcast pronunciation preview` produit
+un court essai avec la voix et le moteur configurés, sans publication Telegram
+ni RSS. L’écoute humaine reste nécessaire pour valider le rendu de la voix.
+Les anciens épisodes ne sont pas régénérés.
+
 Retour arrière : conserver les épisodes, GUID et médias déjà distribués.
 La restauration d’une version ne doit pas réintroduire le blocage audio sur une
 simple panne de pochette ; arrêter seulement les envois en cas de défaut audio.

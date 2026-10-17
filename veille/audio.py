@@ -256,6 +256,16 @@ def apply_lexicon(text: str, lexicon: dict[str, str]) -> str:
     return pattern.sub(lambda m: lexicon[m.group(1)], text)
 
 
+def spoken_text(text: str, lexicon: dict[str, str]) -> str:
+    """Épelle IA pour la voix, même lorsque le lexique des marques est désactivé.
+
+    Les transcriptions conservent le texte éditorial. La règle ne touche ni
+    iAstro, ni NVIDIA, ni OpenAI ; elle s'applique aussi à « anti-IA ».
+    """
+    text = apply_lexicon(text, {k: v for k, v in lexicon.items() if k != 'IA'})
+    return re.sub(r'\bIA\b\.?', 'I. A.', text)
+
+
 class TTSProvider(Protocol):
     def synthesize(self, script_path: Path, output: Path) -> None: ...
 
@@ -408,9 +418,9 @@ def run(snapshot_path: Path, output: Path, settings, *, send: bool = False,
         pieces = _pieces(cfg, Path(music_dir))
         script = build_script(snapshot, settings, cfg['format'])
         (output / 'transcript.txt').write_text(clean_script(script), encoding='utf-8')
-        # Version lue par la voix : lexique de prononciation appliqué.
+        # Version lue par la voix : épellation IA + lexique facultatif.
         script_path = output / 'spoken.txt'
-        script_path.write_text(apply_lexicon(script, lexicon), encoding='utf-8')
+        script_path.write_text(spoken_text(script, lexicon), encoding='utf-8')
         audio = output / 'brief.mp3'
         render(script_path.read_text(encoding='utf-8'), provider, audio, pieces)
         seconds = duration_seconds(audio)
@@ -420,7 +430,9 @@ def run(snapshot_path: Path, output: Path, settings, *, send: bool = False,
             try:
                 short = build_script(snapshot, settings, 'solo', 'courte')
                 (output / 'transcript-court.txt').write_text(clean_script(short), encoding='utf-8')
-                render(apply_lexicon(short, lexicon), provider, court, pieces)
+                short_spoken = spoken_text(short, lexicon)
+                (output / 'spoken-court.txt').write_text(short_spoken, encoding='utf-8')
+                render(short_spoken, provider, court, pieces)
                 court_seconds = duration_seconds(court)
             except Exception as exc:  # noqa: BLE001
                 log.warning('Version courte indisponible (%s).', type(exc).__name__)
