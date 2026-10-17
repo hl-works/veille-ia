@@ -18,7 +18,7 @@ class HabillageTests(unittest.TestCase):
         self.assertNotIn('---', audio.clean_script(script))
         self.assertIn('FORMAT SOLO', audio.SCRIPT_PROMPT)
         self.assertIn('---', audio.SCRIPT_PROMPT)
-        self.assertIn("L'ESSENTIEL", audio.COURT_PROMPT)
+        self.assertIn('LE FLASH', audio.COURT_PROMPT)
         self.assertIn("N'ajoute aucun sujet", audio.COURT_PROMPT)
 
     def test_render_with_jingles_synthesizes_each_section(self):
