@@ -94,16 +94,23 @@ cela ne justifie aucune information supplémentaire.
 SCRIPT_PROMPT = _SCRIPT_RULES + """
 FORMAT SOLO : une seule voix, féminine, neutre et posée. Pas de prénom, pas de
 « je suis votre présentatrice ». Paragraphes séparés par une ligne vide.
+Ouvre par « Bonjour et bienvenue dans Le Podcast IA. Voici Le Débrief du »
+suivi de la date en toutes lettres, sans l'année. Le Podcast IA est le nom de
+l'émission ; Le Débrief est le format complet. Ne te présente pas comme iAstro :
+sa voix n'est pas encore intégrée. Termine par « C'était Le Débrief du Podcast IA.
+Retrouvez les sources et Le Flash sur le site de HL Consulting. À très bientôt. »
 """
 
 COURT_PROMPT = _SCRIPT_RULES + """
-VERSION COURTE « L'ESSENTIEL » : une seule voix, féminine, 180 à 260 mots au total
-(une à deux minutes). Ouvre par « Bonjour et bienvenue dans l'essentiel de votre
-veille IA du » suivi de la date en toutes lettres, sans l'année. Une à trois phrases par sujet,
+VERSION COURTE « LE FLASH » : une seule voix, féminine, 180 à 260 mots au total
+(une à deux minutes). Ouvre par « Bonjour, voici Le Flash du Podcast IA du »
+suivi de la date en toutes lettres, sans l'année. Une à trois phrases par sujet,
 les plus importants d'abord ; les sujets secondaires peuvent être regroupés en une
 phrase « En bref… ». Trois lignes « --- » au maximum. Conclus exactement par
-« C'était l'essentiel de votre veille IA. La version complète vous attend juste en
-dessous. À très bientôt. » Paragraphes séparés par une ligne vide.
+« C'était Le Flash. Retrouvez Le Débrief complet sur le site de HL Consulting
+et sur notre chaîne Telegram. À très bientôt. »
+Ne te présente pas comme iAstro : sa voix n'est pas encore intégrée.
+Paragraphes séparés par une ligne vide.
 """
 
 DUO_PROMPT = _SCRIPT_RULES + """
@@ -441,14 +448,14 @@ def run(snapshot_path: Path, output: Path, settings, *, send: bool = False,
             try:
                 send_audio(court, day=snapshot['date'], duration=court_seconds,
                            bot_token=settings.telegram_bot_token, chat_id=chat_id,
-                           title_prefix="L'essentiel IA",
-                           caption_suffix=f'version complète juste en dessous ({_minutes(seconds)})')
+                           title_prefix='Le Flash · Le Podcast IA',
+                           caption_suffix=f'Le Débrief complet juste en dessous ({_minutes(seconds)})')
                 metadata['court_telegram_sent'] = True
             except Exception as exc:  # noqa: BLE001
                 log.warning('Envoi de la version courte non confirmé (%s).', type(exc).__name__)
         send_audio(audio, day=snapshot['date'], duration=seconds,
                    bot_token=settings.telegram_bot_token, chat_id=chat_id,
-                   title_prefix='Brief IA' if not court_seconds else 'Brief IA complet',
+                   title_prefix='Le Débrief · Le Podcast IA',
                    caption_suffix='version audio de la veille de ce matin')
         metadata['telegram_sent'] = True
         metadata_path.write_text(json.dumps(metadata, ensure_ascii=False, indent=2), encoding='utf-8')
