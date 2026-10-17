@@ -27,7 +27,18 @@ for attempt in 1 2 3; do
   # Build in this throwaway checkout before committing: an invalid archive or
   # RSS stops publication; the previous public site remains untouched.
   if [ -f assets/podcast/feed.xml ] && [ -f scripts/build_podcast_feed.py ]; then
-    python3 scripts/build_podcast_feed.py --archive-latest
+    if [ -f scripts/requirements-podcast-covers.txt ]; then
+      # The renderer belongs to the site, beside the monthly artwork/layout.
+      # Install once per job, not on each concurrent-push retry.
+      if [ "${PODCAST_RENDERER_READY:-false}" != true ]; then
+        python3 -m pip install -q -r scripts/requirements-podcast-covers.txt
+        python3 -m playwright install --with-deps chromium
+        PODCAST_RENDERER_READY=true
+      fi
+      python3 scripts/build_podcast_feed.py --archive-latest --render-covers
+    else
+      python3 scripts/build_podcast_feed.py --archive-latest
+    fi
     git add assets/podcast/episodes.json assets/podcast/feed.xml assets/podcast/archive/
   fi
   git diff --cached --quiet && exit 0
