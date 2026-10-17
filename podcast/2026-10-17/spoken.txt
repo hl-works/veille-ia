@@ -1,0 +1,73 @@
+Bonjour et bienvenue dans votre veille IA du dix-sept octobre.
+
+On commence avec ce qui a dominé la journée. Une vraie déferlante de modèles ouverts. Ce sont des modèles dont les poids, autrement dit les paramètres internes, sont téléchargeables librement. Le Wall Street Journal résume bien la situation. Nvidia, Meta et Apple ont tous dévoilé de nouveaux modèles ouverts le même jour.
+
+Et ce n'est pas tout. Reflection a lancé Beam, un modèle américain désormais gratuit sur Vercel. Mistral a présenté Mistral Large quatre. Perplexity a sorti de nouveaux modèles de décision. Et côté chinois, Xiaomi et Tencent s'y mettent aussi.
+
+Pourquoi ça compte ? Concrètement, ce foisonnement tire les prix vers le bas. L'IA de pointe devient de plus en plus accessible. On peut même faire tourner certains de ces modèles chez soi, sur son propre matériel.
+
+Entrons dans le détail. Chez Meta, Alexandr Wang, qui dirige les Superintelligence Labs, a fêté un an de travail. Il sort la famille Muse, avec Wonder et Spark. Il affirme avoir bâti une machine qui fabrique des modèles. Apple, de son côté, a publié Muse Spark Open, utilisable sur Mac Studio. Mistral met en avant son modèle, bien classé en ingénierie et en astronomie sur un banc d'essai privé. Perplexity a ouvert deux modèles de décision, de quatre et vingt-sept milliards de paramètres, à un ou deux centimes le million de tokens.
+
+Et l'intérêt pour vous ? Des outils de plus en plus puissants et bon marché. Certains s'installent localement. Autrement dit, vos données ne quittent pas votre machine.
+
+---
+
+Côté Google, maintenant. Google DeepMind revient dans la course avec Gemini quatre Argon. C'est son modèle le plus proche du très haut niveau depuis des mois.
+
+La démonstration a marqué les esprits. Quatre agents Argon ont terminé le jeu Minecraft en partant de zéro. Ça leur a pris vingt-sept heures. Ils ont écrit près de deux mille huit cents programmes. Et ils se sont réparti les tâches entre eux, par chat, sans aucune aide humaine.
+
+Le modèle est déjà intégré chez Perplexity, qui revendique un nouveau record sur un banc d'essai de recherche approfondie.
+
+Mais attention aux chiffres. Selon The Decoder, Argon atteint quatre-vingt-dix-sept pour cent sur le test ARC-AGI trois. Google devient le deuxième labo après OpenAI à dépasser les quatre-vingt-quinze pour cent. Sauf que le score chute à cinquante pour cent dans une autre configuration. Et le modèle reste en retrait en maths et en développement.
+
+Ce qu'il faut retenir sur la démonstration Minecraft, c'est cette coordination spontanée. Les agents divisent le travail, partagent des notes et se corrigent mutuellement. Le chercheur Ethan Mollick souligne un détail amusant. L'article scientifique lui-même a été en partie rédigé par l'IA.
+
+Alors, pour vous ? Les agents, ces IA capables d'enchaîner des actions seules, progressent vite sur des tâches longues et complexes. Mais les scores varient énormément selon la méthode de mesure. Donc prudence face aux annonces spectaculaires.
+
+---
+
+Chez OpenAI, maintenant. ChatGPT se muscle. OpenAI a mis à jour son modèle GPT six Astra Pro. Réponses plus rapides, meilleure utilisation des outils. Et surtout, une nouveauté intéressante.
+
+On peut désormais lancer plusieurs agents en parallèle sur différentes parties d'une même tâche. Avec un suivi de chaque avancée. Pour l'instant, c'est réservé aux abonnés Pro.
+
+En parallèle, l'extension Chrome de ChatGPT devient un vrai assistant de navigation. Elle peut lire vos onglets ouverts, résumer leur contenu, remplir des formulaires ou comparer des produits. The Decoder précise que cette fonction laisse ChatGPT agir directement dans le navigateur. Et elle est ouverte à toutes les formules d'abonnement.
+
+À quoi ça sert concrètement ? À automatiser de la veille, comparer des devis, ou faire des saisies répétitives. Mais un rappel important. Laisser une IA agir dans votre navigateur sur des sites connectés comporte des risques de sécurité.
+
+---
+
+Autre grand sujet du jour. Le débat sur la bulle IA s'intensifie. La question d'une bulle financière autour de l'IA domine la presse économique.
+
+Le Financial Times parle d'une répétition générale avant un éventuel éclatement. Le New York Times donne la parole à un investisseur convaincu que le marché va finir par exploser. Et le Wall Street Journal rapporte les conseils de Michael Dell pour survivre à un éventuel effondrement.
+
+Des signaux concrets apparaissent. Le New York Times s'interroge sur les valorisations annoncées pour les futures entrées en Bourse d'OpenAI et d'Anthropic. On parle de milliers de milliards. C'est jugé inhabituel.
+
+Côté financement, un exemple parlant. Selon le FT, Anthropic a dû offrir à Blackstone un rendement à deux chiffres pour financer ses puces. L'entreprise a aussi reçu en juin la pire note de crédit spéculative. Et le commentateur Gary Marcus pointe une chute hebdomadaire de vingt et un pour cent de CoreWeave.
+
+À relativiser, tout de même. Ce sont des avis et des mouvements de marché. Pas une prédiction certaine.
+
+---
+
+On enchaîne avec Anthropic. L'entreprise rédige sa propre loi sur la sécurité de l'IA. Selon Bloomberg, Anthropic a présenté aux parlementaires américains son propre projet de loi pour encadrer la sécurité. C'est une démarche inhabituelle, qui fait débat.
+
+Le commentateur The Zvi est critique. Il estime que le texte renforce la transparence, mais affaiblit l'application des règles. Il soupçonne Anthropic de chercher surtout à protéger ses modèles d'un abus de pouvoir de la Maison-Blanche, plutôt que de prévenir les risques catastrophiques.
+
+Dans le même temps, un ingénieur d'OpenAI a été arrêté. Il aurait utilisé un dispositif d'enregistrement caché dans les locaux de l'entreprise. Il demande sa remise en liberté. Ça illustre les tensions croissantes du secteur.
+
+Côté recherche, à noter. Anthropic a montré que Claude pouvait concevoir des circuits quantiques plus efficaces que les meilleurs publiés. Et une analyse très commentée où Claude a aidé à retrouver l'origine d'une courbe cryptographique. Enfin, le New York Times rapporte que Meta a retiré vingt-cinq millions de dollars de son budget destiné à soutenir des élus favorables à l'industrie de l'IA.
+
+---
+
+Et on termine avec la souveraineté. Arthur Mensch, le patron de Mistral, publie une tribune. Il s'oppose à l'idée de laisser l'IA de pointe aux Américains et aux Chinois. Sa formule est claire. Construire ou abdiquer. Pour l'instant, le choix nous appartient encore.
+
+Il juge que le renoncement européen à l'IA de frontière serait une erreur fondamentale. Et il appelle à bâtir une industrie souveraine.
+
+En parallèle, du côté chinois. Pékin prépare un durcissement de ses contrôles à l'export sur vingt-trois technologies clés de l'IA. Ça inclut les poids de modèles et les méthodes d'entraînement. Mais les technologies déjà open source resteraient exemptées.
+
+The Decoder précise que les restrictions viseraient les systèmes les plus massifs. Une procédure accélérée continuerait d'autoriser les publications open source dès leur enregistrement.
+
+Le chercheur Nathan Lambert invite à la prudence. Beaucoup commentent un document chinois qu'ils n'ont lu qu'en traduction partielle. Et tout dépendra de la mise en œuvre réelle de cette approbation quasi automatique. Conséquence possible selon The Decoder. Cela pourrait pousser les entreprises occidentales à privilégier les modèles ouverts américains.
+
+Pourquoi ça vous concerne ? Parce que ces enjeux géopolitiques déterminent quels outils IA seront disponibles, et à quelles conditions, dans les mois à venir.
+
+Et pour finir, la phrase du jour, signée Demis Hassabis, de Google DeepMind. La vie est courte. Autant mettre son énergie dans quelque chose qui fera vraiment une différence. Une invitation à viser les problèmes profonds, plutôt que les gains faciles.

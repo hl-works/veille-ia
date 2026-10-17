@@ -1,0 +1,11 @@
+Bonjour et bienvenue dans l'essentiel de votre veille IA du dix-sept octobre.
+
+La grande tendance du jour, c'est une vague de modèles ouverts. Nvidia, Meta et Apple ont tous dévoilé de nouveaux modèles dont les poids sont téléchargeables librement. S'y ajoutent Beam de Reflection, Mistral Large quatre, de nouveaux modèles chez Perplexity, et aussi Xiaomi et Tencent côté chinois. Concrètement, ça tire les prix vers le bas et rend l'IA de pointe plus accessible, parfois même installable chez soi.
+
+Côté Google, le retour est marqué avec Gemini quatre Argon. Pour le montrer, quatre agents ont terminé Minecraft à partir de zéro en vingt-sept heures, sans aucune aide humaine. Le modèle est déjà intégré chez Perplexity. Mais attention, les scores varient énormément selon la méthode de mesure.
+
+Chez OpenAI, ChatGPT évolue aussi. On peut désormais lancer plusieurs agents en parallèle sur une même tâche. Et l'extension Chrome devient un vrai assistant qui lit vos onglets, résume et remplit des formulaires.
+
+En bref. Le débat sur une possible bulle de l'IA s'intensifie dans la presse économique. Anthropic a présenté aux parlementaires américains son propre projet de loi sur la sécurité, une démarche qui fait débat. Et côté souveraineté, Arthur Mensch défend une Europe de l'IA pendant que la Chine prépare un durcissement de ses contrôles à l'export.
+
+C'était l'essentiel de votre veille IA. La version complète vous attend juste en dessous. À très bientôt.
