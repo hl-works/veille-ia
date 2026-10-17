@@ -40,6 +40,7 @@ for attempt in 1 2 3; do
       python3 scripts/build_podcast_feed.py --archive-latest
     fi
     git add assets/podcast/episodes.json assets/podcast/feed.xml assets/podcast/archive/
+    if [ -d assets/podcast/covers ]; then git add assets/podcast/covers/; fi
   fi
   git diff --cached --quiet && exit 0
   git commit --quiet -m 'data: podcasts IA, archives permanentes et flux'
