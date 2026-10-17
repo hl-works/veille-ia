@@ -129,7 +129,8 @@ class MediaIntegration(unittest.TestCase):
                 shutil.copyfile(design / f'assets/podcast/archive/{day}/{kind}.mp3', output / filename)
                 metadata[duration_key] = audio.duration_seconds(output / filename)
                 original[kind] = media.audio_hash(output / filename)
-            media.prepare_media(output, metadata)
+            media.prepare_with_fallback(output, metadata)
+            self.assertEqual(metadata['artwork_status'], 'ready')
             (output / 'brief.json').write_text(json.dumps(metadata))
             for kind, (filename, _) in media.TRACKS.items():
                 self.assertEqual(media.audio_hash(output / filename), original[kind])
