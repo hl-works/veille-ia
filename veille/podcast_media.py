@@ -98,6 +98,8 @@ def prepare_media(output, metadata):
                     '-metadata', f'title={title}', '-metadata', 'artist=Hugo LaHutte',
                     '-metadata', 'album=Le Podcast IA', '-metadata:s:v', 'title=Cover',
                     '-metadata:s:v', 'comment=Cover (front)', str(tagged))
+            if not 1024 < tagged.stat().st_size < 25_000_000:
+                raise ValueError('Illustrated MP3 exceeds the shared publication limits')
             if audio_hash(source) != audio_hash(tagged):
                 raise ValueError('Audio stream changed while attaching artwork')
             probe = json.loads(command('ffprobe', '-v', 'error', '-show_streams', '-of', 'json', str(tagged)))
