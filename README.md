@@ -311,8 +311,26 @@ quand le lexique des marques est désactivé ; les transcriptions éditoriales n
 changent pas. Les entrées TTS sont conservées dans `spoken.txt` et
 `spoken-court.txt`. Le workflow manuel `Podcast pronunciation preview` produit
 un court essai avec la voix et le moteur configurés, sans publication Telegram
-ni RSS. L’écoute humaine reste nécessaire pour valider le rendu de la voix.
+ni RSS. Hugo a validé l’essai sonore le 17 octobre 2026.
 Les anciens épisodes ne sont pas régénérés.
+
+### Suivre le podcast (17 octobre 2026)
+
+Les prochains Flash et Débrief Telegram proposent des boutons vers l’émission
+Spotify, Apple Podcasts et l’écoute sur le site. Les plateformes diffusent Le
+Débrief ; le Flash reste sur Telegram et le site. L’abonnement est confirmé par
+l’auditeur dans son application, jamais automatiquement par le bot.
+Les trois URLs publiques sont définies dans `veille/telegram.py` (`PODCAST_LINKS`).
+Le site propose les deux mêmes liens dans `scripts/build_immersion.py` du dépôt
+knowledge-hub. Aucun appel aux plateformes n’est requis pendant l’envoi audio.
+La recette privée existante inclut ces boutons ; `podcast_links_confirmed` dans
+le reçu indique si Telegram a renvoyé le clavier attendu. Aucun envoi supplémentaire
+au canal n’est nécessaire. Les tests couvrent la requête multipart et le repli sans image.
+
+À vérifier après la prochaine édition : génération, pochette, envoi Telegram,
+nouvel item RSS puis visibilité Spotify et Apple Podcasts. Restent à cadrer :
+titre définitif, voix originale d’iAstro, portraits de janvier à septembre,
+puis promotion LinkedIn et X. Aucune campagne sociale n’est activée par ce lot.
 
 Retour arrière : conserver les épisodes, GUID et médias déjà distribués.
 La restauration d’une version ne doit pas réintroduire le blocage audio sur une

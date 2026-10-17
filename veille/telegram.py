@@ -12,6 +12,7 @@ Telegram rejette l'envoi. Le découpage ci-dessous respecte ces blocs.
 from __future__ import annotations
 
 import logging
+import json
 import re
 import time
 
@@ -202,8 +203,16 @@ def _retry_delay(attempt: int) -> int:
     return 2 ** attempt
 
 
+PODCAST_LINKS = {'inline_keyboard': [
+    [{'text': 'Suivre sur Spotify', 'url': 'https://open.spotify.com/show/10f9eIN4y5iCxx0hc17FUK'},
+     {'text': 'Apple Podcasts', 'url': 'https://podcasts.apple.com/us/podcast/le-podcast-ia/id6823971009?l=fr'}],
+    [{'text': 'Écouter sur le site', 'url': 'https://hl-consulting.tech/knowledge-hub/immersion-ia/#podcasts'}],
+]}
+
+
 def send_audio(path, *, day: str, duration: int, bot_token: str, chat_id: str,
-               title_prefix: str = 'Brief IA', caption_suffix: str = '', thumbnail=None) -> dict:
+               title_prefix: str = 'Brief IA', caption_suffix: str = '', thumbnail=None,
+               podcast_links: bool = False) -> dict:
     """Native Telegram music player. Never retry an ambiguous upload timeout."""
     from pathlib import Path
     from datetime import date
@@ -218,6 +227,11 @@ def send_audio(path, *, day: str, duration: int, bot_token: str, chat_id: str,
     caption = f'🎧 {title} · {duration // 60} min {duration % 60:02d}'
     if caption_suffix:
         caption += f' — {caption_suffix}'
+    data = {'chat_id': chat_id, 'caption': caption, 'title': title,
+            'performer': 'Hugo LaHutte', 'duration': duration}
+    if podcast_links:
+        data['caption'] += '\n\nSuis Le Débrief sur Spotify ou Apple Podcasts ↓'
+        data['reply_markup'] = json.dumps(PODCAST_LINKS, ensure_ascii=False)
     from contextlib import ExitStack
     from .podcast_media import validate_thumbnail
     if thumbnail is not None:
@@ -237,8 +251,7 @@ def send_audio(path, *, day: str, duration: int, bot_token: str, chat_id: str,
         try:
             response = requests.post(
                 f'https://api.telegram.org/bot{bot_token}/sendAudio',
-                data={'chat_id': chat_id, 'caption': caption, 'title': title,
-                      'performer': 'Hugo LaHutte', 'duration': duration},
+                data=data,
                 files=files, timeout=(10, 120))
             payload = response.json()
             if not response.ok or payload.get('ok') is not True:
@@ -246,6 +259,7 @@ def send_audio(path, *, day: str, duration: int, bot_token: str, chat_id: str,
             message = payload.get('result', {})
             thumb = message.get('audio', {}).get('thumbnail', {})
             return {'message_id': message.get('message_id'),
-                    'thumbnail_width': thumb.get('width'), 'thumbnail_height': thumb.get('height')}
+                    'thumbnail_width': thumb.get('width'), 'thumbnail_height': thumb.get('height'),
+                    'podcast_links_confirmed': message.get('reply_markup') == PODCAST_LINKS}
         except (requests.RequestException, ValueError):
             raise RuntimeError('Envoi audio Telegram non confirmé ; pas de réessai automatique') from None
