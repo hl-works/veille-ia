@@ -121,6 +121,37 @@ Chaque réplique sur sa propre ligne, préfixée EXACTEMENT par « ELLE: » ou
 « LUI: ». Aucune autre ligne, sauf les lignes « --- ». C'est ELLE qui ouvre et qui conclut.
 """
 
+IASTRO_PROMPT = _SCRIPT_RULES + """
+FORMAT IASTRO : deux voix avec des rôles fixes, pas un dialogue.
+Chaque réplique commence EXACTEMENT par « IASTRO: » ou « VICTORIA: ».
+Aucune ligne sans préfixe, sauf les séparateurs « --- ».
+iAstro est un garçon vif, malicieux et curieux, jamais bébé. Il fait uniquement
+l'ouverture, une courte transition avant chaque nouveau sujet et la fermeture.
+Victoria raconte tous les faits et explications, d'une voix naturelle et posée.
+N'annonce jamais le prénom de Victoria et n'écris pas « je te passe la parole ».
+Enchaîne directement les deux voix ; aucune répétition du sujet par Victoria.
+Écris iAstro normalement, dans une phrase complète, sans découpage phonétique.
+Ouvre par « Salut, c'est iAstro ! Bienvenue dans le [format] du Podcast IA du »
+puis la date en toutes lettres, sans année, et une courte invitation à écouter.
+Chaque section commence par IASTRO puis VICTORIA. Les « --- » séparent seulement
+les grands sujets, jamais l'ouverture de son premier sujet ou la conclusion du
+dernier. La dernière réplique est IASTRO : une fermeture courte, sans récapitulatif,
+renvoyant vers les sources sur le site de HL Consulting et vers l'autre format.
+Pas de didascalies, de bruitages écrits ou de prénom lu comme une étiquette.
+"""
+
+
+def script_prompt(fmt: str, version: str) -> str:
+    if fmt == 'iastro':
+        return IASTRO_PROMPT + (
+            "\nFORMAT : Flash. 180 à 260 mots, habillage parlé compris. Une à trois "
+            "phrases de Victoria par sujet. Trois séparateurs maximum."
+            if version == 'courte' else
+            "\nFORMAT : Débrief. Explique les sujets du brief sans inventer de faits. "
+            "Six séparateurs maximum.")
+    return COURT_PROMPT if version == 'courte' else DUO_PROMPT if fmt == 'duo' else SCRIPT_PROMPT
+
+
 # Voix par défaut (moteur « edge », voix neuronales Microsoft, gratuites).
 DEFAULT_AUDIO = {
     'provider': 'edge',
@@ -157,13 +188,14 @@ def audio_config(config_path: str = 'config.yaml') -> dict:
                      ('destination', 'AUDIO_DESTINATION')):
         if os.environ.get(env):
             cfg[key] = os.environ[env]
-    cfg['format'] = 'duo' if cfg['format'].strip().lower() == 'duo' else 'solo'
+    fmt = cfg['format'].strip().lower()
+    cfg['format'] = fmt if fmt in ('solo', 'duo', 'iastro') else 'solo'
     cfg['destination'] = 'canal' if cfg['destination'].strip().lower() == 'canal' else 'prive'
     return cfg
 
 
 def build_script(snapshot: dict, settings, fmt: str = 'solo', version: str = 'longue') -> str:
-    system = COURT_PROMPT if version == 'courte' else DUO_PROMPT if fmt == 'duo' else SCRIPT_PROMPT
+    system = script_prompt(fmt, version)
     with anthropic.Anthropic(api_key=settings.anthropic_api_key,
                              timeout=120, max_retries=0) as client:
         response = client.messages.create(
@@ -176,6 +208,8 @@ def build_script(snapshot: dict, settings, fmt: str = 'solo', version: str = 'lo
     script = ''.join(b.text for b in response.content if b.type == 'text').strip()
     if not script:
         raise RuntimeError('Script vide')
+    if fmt == 'iastro':
+        validate_iastro_script(script)
     return script
 
 
@@ -220,6 +254,15 @@ def segments(script: str, fmt: str) -> list[tuple[str, str]]:
     Duo : chaque ligne ELLE:/LUI: ; une ligne sans préfixe reste à la voix
     précédente (aucun mot perdu)."""
     out: list[tuple[str, str]] = []
+    if fmt == 'iastro':
+        for line in script.splitlines():
+            if not line.strip() or _MARK.fullmatch(line):
+                continue
+            match = re.fullmatch(r'(IASTRO|VICTORIA):[ \t]*(\S.*)', line.strip())
+            if not match:
+                raise ValueError('Réplique iAstro sans rôle explicite ou vide')
+            out.append(('iastro' if match[1] == 'IASTRO' else 'femme', match[2]))
+        return out
     if fmt != 'duo':
         return [('femme', p.strip()) for p in re.split(r'\n\s*\n', script) if p.strip()]
     speaker = 'femme'
@@ -234,6 +277,22 @@ def segments(script: str, fmt: str) -> list[tuple[str, str]]:
         if line:
             out.append((speaker, line))
     return out
+
+
+def validate_iastro_script(script: str) -> None:
+    """Reject incomplete casting before spending voice credits or publishing."""
+    sections = split_sections(script)
+    for index, section in enumerate(sections):
+        roles = [who for who, _ in segments(section, 'iastro')]
+        expected = ['iastro', 'femme']
+        if index == len(sections) - 1:
+            expected.append('iastro')
+        # Victoria may have several explicitly labelled paragraphs.
+        runs = [role for i, role in enumerate(roles) if i == 0 or roles[i-1] != role]
+        if runs != expected:
+            raise ValueError('Répartition iAstro/Victoria incomplète')
+    if not sections:
+        raise ValueError('Script iAstro vide')
 
 
 def load_lexicon(path: str = 'lexique.yaml') -> dict[str, str]:
@@ -335,6 +394,8 @@ class QwenTTS:
 def get_provider(cfg: dict | None = None) -> TTSProvider:
     cfg = cfg or audio_config()
     provider = cfg['provider'].strip().lower()
+    if cfg.get('format') == 'iastro' and provider != 'elevenlabs':
+        raise ValueError('Le format iAstro nécessite les voix ElevenLabs validées')
     if provider == 'edge':
         return EdgeTTS(cfg)
     if provider == 'elevenlabs':
@@ -428,7 +489,7 @@ def run(snapshot_path: Path, output: Path, settings, *, send: bool = False,
         court, court_seconds = output / 'court.mp3', 0
         if str(cfg.get('version_courte', 'false')).lower() == 'true':
             try:
-                short = build_script(snapshot, settings, 'solo', 'courte')
+                short = build_script(snapshot, settings, cfg['format'], 'courte')
                 (output / 'transcript-court.txt').write_text(clean_script(short), encoding='utf-8')
                 short_spoken = spoken_text(short, lexicon)
                 (output / 'spoken-court.txt').write_text(short_spoken, encoding='utf-8')
