@@ -255,3 +255,37 @@ Avant activation, utiliser l'entrée manuelle `audio_preview` du workflow Veille
 pour écouter un vrai essai sans rien publier. Voir [l'audit, les limites et la
 procédure d'activation](docs/audio-brief.md). Variable : `DAILY_AUDIO_BRIEF=true`
 uniquement après validation du test et du budget de calcul.
+
+### Pochette audio commune (17 octobre 2026)
+
+Le job audio charge le composant graphique du dépôt `hl-works/knowledge-hub`
+(portrait mensuel et mise en page) avant la génération. Après mesure de chaque
+MP3, `veille/podcast_media.py` prépare les images, intègre un JPEG 1080 en ID3
+sans réencoder le son et produit la miniature JPEG 320 (< 200 ko) de Telegram.
+Les empreintes du flux audio avant/après sont comparées. Toute erreur de
+pochette arrête l’envoi ; aucun repli silencieux vers un audio sans image.
+
+`sendAudio` reçoit le MP3 illustré et sa miniature dans une seule requête.
+Le bridge publie ces MP3 et les mêmes pochettes JPEG 3000 dans le RSS ; il ne
+redessine plus les images. Date, durée et empreintes audio/image sont vérifiées
+avant l’export. Les deux envois publics doivent toujours être confirmés, les
+aperçus privés sont exclus, les anciens MP3 ne sont jamais remplacés. Un timeout
+Telegram ambigu n’est pas rejoué automatiquement. Le succès du Flash est écrit
+sur disque avant l’envoi du Débrief pour garder la trace d’un succès partiel.
+
+Tests : `python -m unittest discover -s tests -v`. Le job CI `media` utilise une
+édition publique existante, effectue le vrai rendu Chromium et le vrai remux
+FFmpeg, capture les pièces multipart Telegram sans réseau, puis construit un
+RSS temporaire et vérifie l’identité des fichiers. Aucun TTS ni publication.
+
+Recette privée : workflow manuel `podcast-media-preview.yml`, date d’une édition
+existante, `send_private=false` par défaut. Avec `true`, les deux audios illustrés
+sont envoyés une fois au seul `TELEGRAM_AUTHORIZED_USER_ID`, avec la mention
+« aperçu privé de la pochette intégrée ». Aucun envoi au canal, aucun push du RSS.
+Les relances du même run sont interdites ; après un résultat ambigu, contrôler
+Telegram avant de lancer un autre run. L’API peut accepter une miniature sans
+prouver son rendu sur tous les clients : faire constater le lecteur par Hugo.
+
+Retour arrière : désactiver les envois audio dans `audio.yaml` avant intervention
+si le rendu bloque ; conserver les épisodes, GUID et médias déjà distribués.
+Ne pas contourner le contrôle d’image pour publier un fichier incomplet.

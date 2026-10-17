@@ -15,3 +15,34 @@ jobs:
           python-version: '3.12'
       - run: pip install -r requirements.txt
       - run: python -m unittest discover -s tests -v
+  media:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.12'
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          repository: hl-works/knowledge-hub
+          ref: c5dba07cc7fbd1d0ba76f265f2f700498329d88c
+          path: .podcast-design
+          persist-credentials: false
+          sparse-checkout: |
+            scripts
+            assets/podcast
+      - run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          pip install -r requirements.txt -r .podcast-design/scripts/requirements-podcast-covers.txt
+          python -m playwright install --with-deps chromium
+      - run: python -m unittest discover -s tests -p 'test_podcast_media.py' -v
+        env:
+          PODCAST_MEDIA_TEST: '1'
+          PODCAST_DESIGN_ROOT: ${{ github.workspace }}/.podcast-design
+          PODCAST_MEDIA_PREVIEW_DIR: media-preview
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: podcast-media-preview
+          path: media-preview/
+          retention-days: 7

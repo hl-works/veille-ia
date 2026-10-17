@@ -8,6 +8,9 @@ import math
 from pathlib import Path
 import shutil
 import subprocess
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from veille.podcast_media import validate_prepared
 
 
 def export(source: Path, destination: Path) -> bool:
@@ -22,6 +25,7 @@ def export(source: Path, destination: Path) -> bool:
     previous = destination / 'latest.json'
     if previous.exists() and json.loads(previous.read_text())['date'] > day:
         return False  # A retry of an old run must not replace a newer episode.
+    artwork = validate_prepared(source, data)
     manifest = {'date': day}
     digest = hashlib.sha256()
     files = [('short', 'court.mp3', 'court_duration_seconds'),
@@ -37,12 +41,26 @@ def export(source: Path, destination: Path) -> bool:
         if not math.isfinite(actual) or not isinstance(seconds, int) or not 0 < seconds < 1800 or abs(actual - seconds) > 2:
             raise ValueError('Invalid audio duration')
         digest.update(path.read_bytes())
-        manifest[name] = {'src': f'/assets/podcast/{name}.mp3', 'seconds': seconds}
+        manifest[name] = {'src': f'/assets/podcast/{name}.mp3', 'seconds': seconds,
+                          'image': artwork[name]['image'],
+                          'image_sha256': artwork[name]['image_sha256']}
     manifest['version'] = digest.hexdigest()[:16]
+    # Never change an already published dated image, including concurrent retries.
+    for name, _, _ in files:
+        target = destination / 'archive' / day / f'{name}-cover-v2.jpg'
+        if target.exists() and hashlib.sha256(target.read_bytes()).hexdigest() != artwork[name]['image_sha256']:
+            raise ValueError('Published artwork is immutable')
     # Validate BOTH tracks before touching the current publication.
     destination.mkdir(parents=True, exist_ok=True)
     for name, filename, _ in files:
         shutil.copyfile(source / filename, destination / f'{name}.mp3')
+        target = destination / 'archive' / day / f'{name}-cover-v2.jpg'
+        target.parent.mkdir(parents=True, exist_ok=True)
+        if not target.exists():
+            shutil.copyfile(source / f'{name}-cover.jpg', target)
+        png = destination / 'covers' / f'{day}-{name}.png'
+        png.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(source / f'{name}-cover.png', png)
     previous.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n')
     return True
 

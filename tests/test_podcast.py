@@ -58,7 +58,8 @@ class PodcastTests(unittest.TestCase):
                      patch.object(audio, 'build_script', return_value='Bonjour.'), \
                      patch.object(audio, 'get_provider', return_value=provider), \
                      patch.object(audio, 'duration_seconds', return_value=60), \
-                     patch.object(telegram, 'send_audio') as send:
+                     patch('veille.podcast_media.prepare_media', return_value={}), \
+                 patch.object(telegram, 'send_audio', return_value={}) as send:
                     audio.run(source, root / dest, settings, send=True, cfg=cfg)
                     self.assertEqual(send.call_args.kwargs['chat_id'], expected)
             cfg['destination'] = 'prive'
@@ -66,7 +67,8 @@ class PodcastTests(unittest.TestCase):
                  patch.object(audio, 'build_script', return_value='Bonjour.'), \
                  patch.object(audio, 'get_provider', return_value=provider), \
                  patch.object(audio, 'duration_seconds', return_value=60), \
-                 patch.object(telegram, 'send_audio') as send:
+                 patch('veille.podcast_media.prepare_media', return_value={}), \
+                 patch.object(telegram, 'send_audio', return_value={}) as send:
                 with self.assertRaises(RuntimeError):
                     audio.run(source, root / 'none', settings, send=True, cfg=cfg)
                 send.assert_not_called()

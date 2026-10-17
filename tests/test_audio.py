@@ -90,7 +90,8 @@ class AudioTests(unittest.TestCase):
             with patch.object(audio, 'build_script', return_value='<script>alert(1)</script>'), \
                  patch.object(audio, 'get_provider', return_value=provider), \
                  patch.object(audio, 'duration_seconds', return_value=252), \
-                 patch.object(telegram, 'send_audio') as send:
+                 patch('veille.podcast_media.prepare_media', return_value={}), \
+                 patch.object(telegram, 'send_audio', return_value={}) as send:
                 audio.run(snapshot, root / 'out', Settings())
                 send.assert_not_called()
                 page = (root / 'out/index.html').read_text()
@@ -107,7 +108,8 @@ class AudioTests(unittest.TestCase):
             provider.synthesize.side_effect = RuntimeError('TTS down')
             with patch.object(audio, 'build_script', return_value='Bonjour.'), \
                  patch.object(audio, 'get_provider', return_value=provider), \
-                 patch.object(telegram, 'send_audio') as send:
+                 patch('veille.podcast_media.prepare_media', return_value={}), \
+                 patch.object(telegram, 'send_audio', return_value={}) as send:
                 with self.assertRaises(RuntimeError):
                     audio.run(source, root / 'out', Settings(), send=True)
                 send.assert_not_called()
