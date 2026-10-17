@@ -203,7 +203,7 @@ def _retry_delay(attempt: int) -> int:
 
 
 def send_audio(path, *, day: str, duration: int, bot_token: str, chat_id: str,
-               title_prefix: str = 'Brief IA', caption_suffix: str = '') -> None:
+               title_prefix: str = 'Brief IA', caption_suffix: str = '', thumbnail=None) -> dict:
     """Native Telegram music player. Never retry an ambiguous upload timeout."""
     from pathlib import Path
     from datetime import date
@@ -218,14 +218,28 @@ def send_audio(path, *, day: str, duration: int, bot_token: str, chat_id: str,
     caption = f'🎧 {title} · {duration // 60} min {duration % 60:02d}'
     if caption_suffix:
         caption += f' — {caption_suffix}'
-    with path.open('rb') as audio:
+    from contextlib import ExitStack
+    from .podcast_media import validate_thumbnail
+    if thumbnail is not None:
+        validate_thumbnail(thumbnail)
+    with ExitStack() as stack:
+        audio = stack.enter_context(path.open('rb'))
+        files = {'audio': (path.name, audio, 'audio/mpeg')}
+        if thumbnail is not None:
+            thumb = stack.enter_context(Path(thumbnail).open('rb'))
+            files['thumbnail'] = (Path(thumbnail).name, thumb, 'image/jpeg')
         try:
             response = requests.post(
                 f'https://api.telegram.org/bot{bot_token}/sendAudio',
                 data={'chat_id': chat_id, 'caption': caption, 'title': title,
-                      'performer': 'Veille IA', 'duration': duration},
-                files={'audio': (path.name, audio, 'audio/mpeg')}, timeout=(10, 120))
-            if not response.ok or response.json().get('ok') is not True:
+                      'performer': 'Hugo LaHutte', 'duration': duration},
+                files=files, timeout=(10, 120))
+            payload = response.json()
+            if not response.ok or payload.get('ok') is not True:
                 raise RuntimeError('Envoi audio Telegram refusé')
+            message = payload.get('result', {})
+            thumb = message.get('audio', {}).get('thumbnail', {})
+            return {'message_id': message.get('message_id'),
+                    'thumbnail_width': thumb.get('width'), 'thumbnail_height': thumb.get('height')}
         except (requests.RequestException, ValueError):
             raise RuntimeError('Envoi audio Telegram non confirmé ; pas de réessai automatique') from None

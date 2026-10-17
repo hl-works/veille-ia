@@ -266,8 +266,23 @@ jobs:
           fi
         env:
           AUDIO_TTS_PROVIDER: ${{ vars.AUDIO_TTS_PROVIDER }}
+      - name: Charger le modèle unique des pochettes
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          repository: hl-works/knowledge-hub
+          ref: main
+          path: .podcast-design
+          persist-credentials: false
+          sparse-checkout: |
+            scripts
+            assets/podcast/art
+      - name: Installer le rendu des pochettes
+        run: |
+          pip install -r .podcast-design/scripts/requirements-podcast-covers.txt
+          python -m playwright install --with-deps chromium
       - name: Générer le podcast et le publier
         env:
+          PODCAST_DESIGN_ROOT: ${{ github.workspace }}/.podcast-design
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}

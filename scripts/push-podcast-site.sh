@@ -27,18 +27,9 @@ for attempt in 1 2 3; do
   # Build in this throwaway checkout before committing: an invalid archive or
   # RSS stops publication; the previous public site remains untouched.
   if [ -f assets/podcast/feed.xml ] && [ -f scripts/build_podcast_feed.py ]; then
-    if [ -f scripts/requirements-podcast-covers.txt ]; then
-      # The renderer belongs to the site, beside the monthly artwork/layout.
-      # Install once per job, not on each concurrent-push retry.
-      if [ "${PODCAST_RENDERER_READY:-false}" != true ]; then
-        python3 -m pip install -q -r scripts/requirements-podcast-covers.txt
-        python3 -m playwright install --with-deps chromium
-        PODCAST_RENDERER_READY=true
-      fi
-      python3 scripts/build_podcast_feed.py --archive-latest --render-covers
-    else
-      python3 scripts/build_podcast_feed.py --archive-latest
-    fi
+    # Images were rendered, tagged and validated BEFORE Telegram. Publish those
+    # exact files; never re-render a second visual after sending the audio.
+    python3 scripts/build_podcast_feed.py --archive-latest
     git add assets/podcast/episodes.json assets/podcast/feed.xml assets/podcast/archive/
     if [ -d assets/podcast/covers ]; then git add assets/podcast/covers/; fi
   fi

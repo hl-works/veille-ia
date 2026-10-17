@@ -16,3 +16,6 @@ digest_*.html
 # Daily audio travels through expiring Actions artifacts, never through Git.
 audio-input/
 audio-output/
+
+# Read-only shared podcast artwork checkout.
+.podcast-design/

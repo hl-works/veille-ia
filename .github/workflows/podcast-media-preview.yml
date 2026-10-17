@@ -1,0 +1,59 @@
+name: Podcast artwork private preview
+on:
+  workflow_dispatch:
+    inputs:
+      day:
+        description: Existing public edition (YYYY-MM-DD)
+        required: true
+        type: string
+      send_private:
+        description: Send the two illustrated audios to Hugo privately (one attempt)
+        type: boolean
+        default: false
+permissions:
+  contents: read
+concurrency:
+  group: podcast-artwork-private-preview
+  cancel-in-progress: false
+jobs:
+  preview:
+    if: github.ref == 'refs/heads/main' && github.run_attempt == 1
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.12'
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          repository: hl-works/knowledge-hub
+          path: .podcast-design
+          ref: main
+          persist-credentials: false
+          sparse-checkout: |
+            scripts
+            assets/podcast
+      - run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          pip install -r requirements.txt -r .podcast-design/scripts/requirements-podcast-covers.txt
+          python -m playwright install --with-deps chromium
+      - name: Prepare the existing audio and its cover
+        env:
+          PREVIEW_DAY: ${{ inputs.day }}
+          PODCAST_DESIGN_ROOT: ${{ github.workspace }}/.podcast-design
+        run: python scripts/preview-podcast-media.py --day "$PREVIEW_DAY"
+      - name: Send once to Hugo privately
+        if: inputs.send_private
+        env:
+          PREVIEW_DAY: ${{ inputs.day }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_AUTHORIZED_USER_ID: ${{ secrets.TELEGRAM_AUTHORIZED_USER_ID }}
+        run: python scripts/preview-podcast-media.py --day "$PREVIEW_DAY" --send-private
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        if: always()
+        with:
+          name: private-podcast-artwork-preview
+          path: audio-output/
+          retention-days: 7

@@ -1,5 +1,6 @@
 import importlib.util
 import json
+import hashlib
 from pathlib import Path
 import tempfile
 import unittest
@@ -21,6 +22,20 @@ class ExportTest(unittest.TestCase):
                          court_telegram_sent=True, duration_seconds=60, court_duration_seconds=60)
         for file in ('brief.mp3', 'court.mp3'):
             (self.source / file).write_bytes(b'x' * 2048)
+        self.data['artwork'] = {'date': self.data['date']}
+        for kind, filename in [('short', 'court.mp3'), ('full', 'brief.mp3')]:
+            for suffix in ('cover.jpg', 'cover.png', 'thumbnail.jpg'):
+                (self.source / f'{kind}-{suffix}').write_bytes(b'picture')
+            digest = hashlib.sha256(b'picture').hexdigest()
+            self.data['artwork'][kind] = dict(seconds=60,
+                image=f'/assets/podcast/archive/{self.data["date"]}/{kind}-cover-v2.jpg',
+                image_sha256=digest, png_sha256=digest, thumbnail_sha256=digest,
+                audio_sha256=hashlib.sha256((self.source / filename).read_bytes()).hexdigest())
+        # Pixel/codec validation is exercised with real files in the media integration test.
+        for name in ('image_info', 'validate_thumbnail'):
+            mock = patch('veille.podcast_media.' + name)
+            mock.start()
+            self.addCleanup(mock.stop)
         self.save()
 
     def save(self):
@@ -31,7 +46,7 @@ class ExportTest(unittest.TestCase):
         self.assertTrue(module.export(self.source, self.dest))
         manifest = json.loads((self.dest / 'latest.json').read_text())
         self.assertEqual(manifest['short']['seconds'], 60)
-        self.assertEqual(set(p.name for p in self.dest.iterdir()), {'latest.json', 'short.mp3', 'full.mp3'})
+        self.assertEqual(set(p.name for p in self.dest.iterdir()), {'latest.json', 'short.mp3', 'full.mp3', 'archive', 'covers'})
         self.assertNotIn('telegram_sent', manifest)
 
     def test_private_preview_and_unsent_pair_skipped(self):

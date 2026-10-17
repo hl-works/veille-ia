@@ -433,6 +433,9 @@ def run(snapshot_path: Path, output: Path, settings, *, send: bool = False,
                 'telegram_sent': False}
     metadata_path = output / 'brief.json'
     metadata_path.write_text(json.dumps(metadata, ensure_ascii=False, indent=2), encoding='utf-8')
+    from .podcast_media import prepare_media
+    metadata['artwork'] = prepare_media(output, metadata)
+    metadata_path.write_text(json.dumps(metadata, ensure_ascii=False, indent=2), encoding='utf-8')
     if send:
         from .telegram import send_audio, send_message
         chat_id = _chat_id(settings, cfg)
@@ -446,14 +449,15 @@ def run(snapshot_path: Path, output: Path, settings, *, send: bool = False,
                 log.warning("Annonce non envoyée (%s).", type(exc).__name__)
         if court_seconds:
             try:
-                send_audio(court, day=snapshot['date'], duration=court_seconds,
+                metadata['court_telegram_receipt'] = send_audio(court, thumbnail=output / 'short-thumbnail.jpg', day=snapshot['date'], duration=court_seconds,
                            bot_token=settings.telegram_bot_token, chat_id=chat_id,
                            title_prefix='Le Flash · Le Podcast IA',
                            caption_suffix=f'Le Débrief complet juste en dessous ({_minutes(seconds)})')
                 metadata['court_telegram_sent'] = True
+                metadata_path.write_text(json.dumps(metadata, ensure_ascii=False, indent=2), encoding='utf-8')
             except Exception as exc:  # noqa: BLE001
                 log.warning('Envoi de la version courte non confirmé (%s).', type(exc).__name__)
-        send_audio(audio, day=snapshot['date'], duration=seconds,
+        metadata['telegram_receipt'] = send_audio(audio, thumbnail=output / 'full-thumbnail.jpg', day=snapshot['date'], duration=seconds,
                    bot_token=settings.telegram_bot_token, chat_id=chat_id,
                    title_prefix='Le Débrief · Le Podcast IA',
                    caption_suffix='version audio de la veille de ce matin')

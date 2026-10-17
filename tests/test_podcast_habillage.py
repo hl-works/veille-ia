@@ -55,7 +55,8 @@ class HabillageTests(unittest.TestCase):
                  patch.object(audio, 'build_script', side_effect=scripts), \
                  patch.object(audio, 'get_provider', return_value=provider), \
                  patch.object(audio, 'duration_seconds', side_effect=lambda p: 90 if p.name == 'court.mp3' else 390), \
-                 patch.object(telegram, 'send_audio') as send:
+                 patch('veille.podcast_media.prepare_media', return_value={}), \
+                 patch.object(telegram, 'send_audio', return_value={}) as send:
                 audio.run(source, root / 'out', settings, send=True, cfg=cfg)
             self.assertEqual([c.args[0].name for c in send.call_args_list], ['court.mp3', 'brief.mp3'])
             self.assertIn('6 min 30', send.call_args_list[0].kwargs['caption_suffix'])
@@ -68,7 +69,8 @@ class HabillageTests(unittest.TestCase):
                  patch.object(audio, 'build_script', side_effect=failing), \
                  patch.object(audio, 'get_provider', return_value=provider), \
                  patch.object(audio, 'duration_seconds', return_value=390), \
-                 patch.object(telegram, 'send_audio') as send:
+                 patch('veille.podcast_media.prepare_media', return_value={}), \
+                 patch.object(telegram, 'send_audio', return_value={}) as send:
                 audio.run(source, root / 'out2', settings, send=True, cfg=cfg)
             self.assertEqual([c.args[0].name for c in send.call_args_list], ['brief.mp3'])
 
@@ -130,6 +132,7 @@ class HabillageTests(unittest.TestCase):
                      patch.object(audio, 'get_provider', return_value=provider), \
                      patch.object(audio, 'duration_seconds', return_value=300), \
                      patch.object(telegram, 'send_message', side_effect=lambda *a, **k: calls.append('msg')) as msg, \
+                     patch('veille.podcast_media.prepare_media', return_value={}), \
                      patch.object(telegram, 'send_audio', side_effect=lambda *a, **k: calls.append('audio')):
                     calls.clear()
                     audio.run(source, root / day, settings, send=True, cfg=cfg)
