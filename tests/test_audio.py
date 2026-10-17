@@ -161,6 +161,21 @@ class AudioTests(unittest.TestCase):
                 self.assertTrue(post.call_args.args[0].endswith('/sendAudio'))
                 self.assertEqual(post.call_args.kwargs['data']['caption'], '🎧 Brief IA — 10 septembre · 4 min 12')
                 self.assertEqual(post.call_args.kwargs['files']['audio'][2], 'audio/mpeg')
+                self.assertNotIn('reply_markup', post.call_args.kwargs['data'])
+            response.json.return_value = {'ok': True, 'result': {
+                'message_id': 42, 'reply_markup': telegram.PODCAST_LINKS}}
+            with patch.object(telegram.requests, 'post', return_value=response) as post:
+                receipt = telegram.send_audio(path, day='2026-10-17', duration=252,
+                                              bot_token='SECRET', chat_id='chat', podcast_links=True)
+                self.assertTrue(receipt['podcast_links_confirmed'])
+                data = post.call_args.kwargs['data']
+                links = [b['url'] for row in json.loads(data['reply_markup'])['inline_keyboard'] for b in row]
+                self.assertEqual(len(links), 3)
+                self.assertTrue(all(url.startswith('https://') for url in links))
+                self.assertIn('#podcasts', links[-1])
+                self.assertIn('Suis Le Débrief', data['caption'])
+                self.assertLessEqual(len(data['caption']), 1024)
+                self.assertEqual(post.call_count, 1)
             with patch.object(telegram.requests, 'post', side_effect=requests.Timeout('URL SECRET')) as post:
                 with self.assertRaises(RuntimeError) as error:
                     telegram.send_audio(path, day='2026-09-10', duration=252, bot_token='SECRET', chat_id='chat')

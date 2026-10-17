@@ -64,9 +64,10 @@ class MediaGuards(unittest.TestCase):
             (root / 'thumb.jpg').write_bytes(b'x' * 200_000)
             post.return_value = Mock(ok=True, json=lambda: {'ok': True})
             telegram.send_audio(root / 'a.mp3', thumbnail=root / 'thumb.jpg', day='2026-10-17',
-                                duration=60, bot_token='not-a-token', chat_id='test')
+                                duration=60, bot_token='not-a-token', chat_id='test', podcast_links=True)
             post.assert_called_once()
             self.assertNotIn('thumbnail', post.call_args.kwargs['files'])
+            self.assertEqual(json.loads(post.call_args.kwargs['data']['reply_markup']), telegram.PODCAST_LINKS)
 
 
 @unittest.skipUnless(os.environ.get('PODCAST_MEDIA_TEST') == '1', 'Real media integration runs in CI')
@@ -138,12 +139,14 @@ class MediaIntegration(unittest.TestCase):
             uploads = []
             def capture(url, **kwargs):
                 self.assertTrue(url.endswith('/sendAudio'))
+                self.assertEqual(json.loads(kwargs['data']['reply_markup']), telegram.PODCAST_LINKS)
                 uploads.append({k: value[1].read() for k, value in kwargs['files'].items()})
                 return Mock(ok=True, json=lambda: {'ok': True})
             with patch.object(telegram.requests, 'post', side_effect=capture):
                 for kind, (filename, key) in media.TRACKS.items():
                     telegram.send_audio(output / filename, thumbnail=output / f'{kind}-thumbnail.jpg',
-                                        day=day, duration=metadata[key], bot_token='test', chat_id='test')
+                                        day=day, duration=metadata[key], bot_token='test', chat_id='test',
+                                        podcast_links=True)
             for i, (kind, (filename, _)) in enumerate(media.TRACKS.items()):
                 self.assertEqual(uploads[i]['audio'], (output / filename).read_bytes())
                 self.assertEqual(uploads[i]['thumbnail'], (output / f'{kind}-thumbnail.jpg').read_bytes())

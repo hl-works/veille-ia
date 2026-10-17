@@ -463,7 +463,7 @@ def run(snapshot_path: Path, output: Path, settings, *, send: bool = False,
             try:
                 metadata['court_telegram_receipt'] = send_audio(court, thumbnail=(output / 'short-thumbnail.jpg' if metadata.get('artwork') else None), day=snapshot['date'], duration=court_seconds,
                            bot_token=settings.telegram_bot_token, chat_id=chat_id,
-                           title_prefix='Le Flash · Le Podcast IA',
+                           title_prefix='Le Flash · Le Podcast IA', podcast_links=True,
                            caption_suffix=f'Le Débrief complet juste en dessous ({_minutes(seconds)})')
                 metadata['court_telegram_sent'] = True
                 metadata_path.write_text(json.dumps(metadata, ensure_ascii=False, indent=2), encoding='utf-8')
@@ -471,7 +471,7 @@ def run(snapshot_path: Path, output: Path, settings, *, send: bool = False,
                 log.warning('Envoi de la version courte non confirmé (%s).', type(exc).__name__)
         metadata['telegram_receipt'] = send_audio(audio, thumbnail=(output / 'full-thumbnail.jpg' if metadata.get('artwork') else None), day=snapshot['date'], duration=seconds,
                    bot_token=settings.telegram_bot_token, chat_id=chat_id,
-                   title_prefix='Le Débrief · Le Podcast IA',
+                   title_prefix='Le Débrief · Le Podcast IA', podcast_links=True,
                    caption_suffix='version audio de la veille de ce matin')
         metadata['telegram_sent'] = True
         metadata_path.write_text(json.dumps(metadata, ensure_ascii=False, indent=2), encoding='utf-8')

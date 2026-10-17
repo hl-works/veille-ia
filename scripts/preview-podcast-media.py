@@ -47,7 +47,7 @@ else:
         title = 'Le Flash' if kind == 'short' else 'Le Débrief'
         receipt = send_audio(output / filename, thumbnail=output / f'{kind}-thumbnail.jpg',
                    day=day, duration=metadata[key], bot_token=token, chat_id=chat,
-                   title_prefix=title + ' · Le Podcast IA',
-                   caption_suffix='aperçu privé de la pochette intégrée')
+                   title_prefix=title + ' · Le Podcast IA', podcast_links=True,
+                   caption_suffix='aperçu privé : pochette et liens d’abonnement')
         (output / f'{kind}-telegram-receipt.json').write_text(json.dumps(receipt) + '\n')
         print(kind + ': private Telegram upload confirmed; ' + json.dumps(receipt))
