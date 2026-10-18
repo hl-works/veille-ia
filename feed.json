@@ -15119,5 +15119,90 @@
     "tweet_url": "https://x.com/TheZvi/status/2111280886234886357",
     "media": false,
     "auteur_x": "@TheZvi"
+  },
+  {
+    "date": "2026-10-17",
+    "titre_fr": "DeepSeek lance V4.1-Flash",
+    "resume_fr": "DeepSeek met en ligne son modèle V4.1-Flash (version 1017), présenté comme une amélioration à la fois en performance et en coût : meilleurs scores, exécution plus rapide et réponses plus concises. Disponible sur le site, l'application et l'API.",
+    "tags": [
+      "modeles",
+      "deepseek",
+      "open-source"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/deepseek_ai/status/2111375640717033777",
+    "media": true,
+    "auteur_x": "@deepseek_ai"
+  },
+  {
+    "date": "2026-10-17",
+    "titre_fr": "Replit fait d'OpenAI son partenaire privilégié",
+    "resume_fr": "Replit indique que son agent de codage s'appuie désormais par défaut sur les modèles d'OpenAI, choisis pour leurs performances, leur coût et le partenariat. La plateforme reste toutefois ouverte à d'autres modèles, dont ceux d'Anthropic, au choix de l'utilisateur.",
+    "tags": [
+      "openai",
+      "agents",
+      "produit"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/amasad/status/2111494912562888939",
+    "media": false,
+    "auteur_x": "@amasad"
+  },
+  {
+    "date": "2026-10-17",
+    "titre_fr": "Les acheteurs restent méfiants envers l'IA",
+    "resume_fr": "Selon des données partagées par a16z, l'IA aide de plus en plus les Américains à faire leurs achats, mais 42 % ne lui font pas encore confiance pour finaliser un achat. Même dans les catégories populaires (vêtements, électronique, voyages), seul un quart environ laisserait l'IA choisir et acheter à leur place.",
+    "tags": [
+      "commerce",
+      "vente",
+      "marketing"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/a16z/status/2111517644868538389",
+    "media": true,
+    "auteur_x": "@a16z"
+  },
+  {
+    "date": "2026-10-17",
+    "titre_fr": "Meta progresse sur les modèles à poids ouverts",
+    "resume_fr": "Nathan Lambert dresse un état des lieux des modèles américains à poids ouverts après une semaine forte pour Meta, qui semble se rapprocher du niveau de Claude sans encore combler l'écart. La question d'une vraie concurrence face à OpenAI et Anthropic reste ouverte.",
+    "tags": [
+      "meta",
+      "open-source",
+      "modeles"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/natolambert/status/2111461099140772137",
+    "media": true,
+    "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-10-18",
+    "titre_fr": "Grok ajoute le paiement via son assistant",
+    "resume_fr": "xAI déploie une fonction permettant à son assistant Grok d'effectuer des paiements, l'utilisateur transmettant par exemple une photo de sa carte bancaire. Musk affirme que l'outil peut « se financer lui-même », tout en soulevant des questions de sécurité évidentes.",
+    "tags": [
+      "xai",
+      "agents",
+      "produit",
+      "paiement"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/elonmusk/status/2111612315204272233",
+    "media": false,
+    "auteur_x": "@elonmusk"
+  },
+  {
+    "date": "2026-10-18",
+    "titre_fr": "LlamaIndex publie ExtractBench Pro",
+    "resume_fr": "LlamaIndex présente ExtractBench Pro, un banc d'essai dédié à l'extraction d'informations dans les documents PDF les plus complexes, en cherchant le meilleur compromis précision/coût. Objectif affiché : accélérer le traitement documentaire des entreprises.",
+    "tags": [
+      "produit",
+      "automatisation",
+      "recherche"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/jerryjliu0/status/2111622533162336427",
+    "media": true,
+    "auteur_x": "@jerryjliu0"
   }
 ]
