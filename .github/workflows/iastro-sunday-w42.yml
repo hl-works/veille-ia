@@ -1,0 +1,44 @@
+name: Annonce iAstro Sunday W42
+on:
+  workflow_dispatch:
+    inputs:
+      send:
+        description: "Envoyer une seule annonce W42 après vérifications (autorisation Hugo 17 octobre)"
+        type: boolean
+        default: false
+permissions:
+  contents: write
+concurrency:
+  group: iastro-sunday-2026-W42
+  cancel-in-progress: false
+jobs:
+  announce:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
+        with:
+          python-version: "3.12"
+      - name: Vérifier et annoncer le numéro
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+          SEND: ${{ inputs.send }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          args=()
+          if [[ "$SEND" == "true" ]]; then args+=(--send); fi
+          python scripts/announce-iastro-w42.py "${args[@]}"
+      - name: Conserver le reçu même si l’écriture Git échoue
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: iastro-w42-telegram-receipt
+          path: data/comics-publications/2026-W42.json
+          if-no-files-found: ignore
+          retention-days: 30
+
