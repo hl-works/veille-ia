@@ -335,3 +335,19 @@ puis promotion LinkedIn et X. Aucune campagne sociale n’est activée par ce lo
 Retour arrière : conserver les épisodes, GUID et médias déjà distribués.
 La restauration d’une version ne doit pas réintroduire le blocage audio sur une
 simple panne de pochette ; arrêter seulement les envois en cas de défaut audio.
+
+
+### Annonce ponctuelle iAstro Sunday — 18 octobre 2026
+
+Hugo a autorisé la publication du numéro W42 et son annonce dans Le Radar iA.
+Le workflow manuel `iastro-sunday-w42.yml` vérifie la chaîne configurée,
+l’historique public, le numéro publié et toutes ses images. Par défaut il ne
+publie rien ; `send: true` envoie la couverture, le texte approuvé et le lien
+mobile avec les notifications activées. Il réutilise le bot et les secrets existants.
+Aucune nouvelle programmation n’est ajoutée au dépôt.
+
+Le reçu sous `data/comics-publications/2026-W42.json` est réservé et poussé
+avant l’appel Telegram, puis complété avec l’identifiant du message. Un reçu
+réservé ou un résultat ambigu bloque toute relance automatique : vérifier
+le canal avant de résoudre manuellement l’état. Les reçus sont aussi conservés
+en artifact Actions. Les tests n’envoient aucun message.
