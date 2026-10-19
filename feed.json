@@ -15204,5 +15204,45 @@
     "tweet_url": "https://x.com/jerryjliu0/status/2111622533162336427",
     "media": true,
     "auteur_x": "@jerryjliu0"
+  },
+  {
+    "date": "2026-10-18",
+    "titre_fr": "Anthropic place 20% de ses actions dans un fonds d'intérêt public",
+    "resume_fr": "Anthropic annonce la création d'un Public Benefit Fund, abondé au départ de 5% de ses actions et pouvant atteindre environ 20% au total. Les cofondateurs se sont par ailleurs engagés à donner 80% de leur participation. L'annonce intervient dans le contexte d'une possible entrée en Bourse.",
+    "tags": [
+      "anthropic",
+      "politique-ia"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/AnthropicAI/status/2111881963657412903",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-10-18",
+    "titre_fr": "Perplexity Computer ajoute l'upload de fichiers aux chats secondaires",
+    "resume_fr": "Perplexity permet désormais de joindre des fichiers dans les discussions annexes de son outil Computer, afin de poser une question de côté sans interrompre la tâche principale. Fonction accessible via la commande /ask pour tous les utilisateurs.",
+    "tags": [
+      "produit"
+    ],
+    "score": 40,
+    "tweet_url": "https://x.com/AskPerplexity/status/2111887593214472380",
+    "media": true,
+    "auteur_x": "@AskPerplexity"
+  },
+  {
+    "date": "2026-10-18",
+    "titre_fr": "Grandes entreprises bloquant les agents IA : analyse d'une guerre naissante",
+    "resume_fr": "Plusieurs grandes marques (Delta, Chase, Amazon) commencent à bloquer les agents IA, qui court-circuitent pubs et ventes additionnelles. L'analyse décrit une escalade probable vers des standards d'identité et de paiement pour agents, puis une concurrence pour les attirer. Enjeu concret pour le commerce en ligne.",
+    "tags": [
+      "agents",
+      "commerce",
+      "vente",
+      "paiement"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/gregisenberg/status/2111903028202852760",
+    "media": false,
+    "auteur_x": "@gregisenberg"
   }
 ]
