@@ -84,3 +84,21 @@ canadiennes résiduelles ont été entendues et acceptées par Hugo.
 Les épisodes du 17 octobre ont aussi été remontés avec les prises approuvées,
 en conservant l'enregistrement Victoria. Leur correction sur le site et le
 RSS n'appelle aucun nouvel envoi Telegram.
+
+## Incident du 18 octobre 2026
+
+Le brief écrit a été envoyé, puis la rédaction du script audio a reçu une
+réponse Anthropic HTTP 529 à 08:17 Paris. Aucun MP3 n'a été généré et aucun
+audio n'a été envoyé. Le job audio était marqué facultatif, d'où un statut
+global trompeur de réussite. Le RSS est resté au 17 octobre.
+
+La rédaction du script réessaie désormais uniquement les erreurs transitoires
+(réseau, 429, 5xx), jusqu'à quatre tentatives avec pauses de 5, 15 et 45 secondes.
+Les erreurs permanentes restent bloquantes. Le job audio et l'export du site
+ne masquent plus leurs échecs. La veille écrite reste indépendante et n'est
+pas rejouée. Aucun nouvel essai automatique d'envoi Telegram n'est ajouté.
+
+`Podcast recovery preview` récupère l'artefact `audio-input` d'une exécution,
+contrôle sa date et l'empreinte du brief, puis prépare les deux pistes sans
+identifiants Telegram ni droit d'écriture. Il ne publie ni sur le site ni
+sur le canal. Son artefact permet une écoute avant un éventuel rattrapage.
