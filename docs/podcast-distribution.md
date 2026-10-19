@@ -71,3 +71,16 @@ Telegram ne sont pas modifiées par ce raccordement RSS.
 Le test du 17 octobre a confirmé la production publique du matin et le
 raccordement existant. La propagation du prochain épisode dans Apple/Spotify
 reste à observer ; leur indexation n’est pas instantanée.
+
+## Incident du 19 octobre 2026
+
+Le Débrief du 19 a été produit et son envoi Telegram confirmé, mais le Flash
+s’est arrêté sur une erreur de structure iAstro/Victoria. Le bridge exigeant
+une paire complète, le site et le RSS sont restés au 17. Ne pas rejouer ce
+Débrief : conserver son MP3 et son reçu d’envoi pour le rattrapage ciblé.
+
+La génération corrige désormais une structure de rôles invalide au plus deux
+fois avant toute synthèse, avec le brief original et sans assouplir la validation.
+Si le Flash reste absent, le Débrief peut toujours être livré ; les fichiers et
+son reçu sont conservés, mais le job se termine en erreur explicite. Les envois
+Telegram ne sont jamais retentés automatiquement par cette correction.
