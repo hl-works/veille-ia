@@ -217,21 +217,38 @@ def _script_request(client, **kwargs):
 
 def build_script(snapshot: dict, settings, fmt: str = 'solo', version: str = 'longue') -> str:
     system = script_prompt(fmt, version)
+    messages = [{'role': 'user', 'content': json.dumps(
+        {'date': snapshot['date'], 'brief': snapshot['text']}, ensure_ascii=False)}]
     with anthropic.Anthropic(api_key=settings.anthropic_api_key,
                              timeout=120, max_retries=0) as client:
-        response = _script_request(client,
-            model=settings.model, max_tokens=10000,
-            system=system,
-            messages=[{'role': 'user', 'content': json.dumps(
-                {'date': snapshot['date'], 'brief': snapshot['text']}, ensure_ascii=False)}])
-    if response.stop_reason != 'end_turn':
-        raise RuntimeError('Script incomplet ou refusé')
-    script = ''.join(b.text for b in response.content if b.type == 'text').strip()
-    if not script:
-        raise RuntimeError('Script vide')
-    if fmt == 'iastro':
-        validate_iastro_script(script)
-    return script
+        for attempt in range(3):
+            response = _script_request(client,
+                model=settings.model, max_tokens=10000,
+                system=system, messages=messages)
+            if response.stop_reason != 'end_turn':
+                raise RuntimeError('Script incomplet ou refusé')
+            script = ''.join(b.text for b in response.content if b.type == 'text').strip()
+            if not script:
+                raise RuntimeError('Script vide')
+            if fmt == 'iastro':
+                try:
+                    validate_iastro_script(script)
+                except ValueError as exc:
+                    if attempt == 2:
+                        raise
+                    log.warning('Structure %s invalide (%s) ; correction %s/2 avant synthèse.',
+                                version, exc, attempt + 1)
+                    messages = messages + [
+                        {'role': 'assistant', 'content': script},
+                        {'role': 'user', 'content':
+                         'Corrige uniquement la structure des rôles de ce script, sans ajouter de faits. '
+                         'Chaque ligne parlée doit commencer par IASTRO: ou VICTORIA:. '
+                         'Chaque section séparée par --- commence par IASTRO puis VICTORIA. '
+                         'La dernière section se termine par IASTRO après VICTORIA. '
+                         'Pas de section de fermeture séparée contenant seulement IASTRO. '
+                         'Renvoie le script complet corrigé, sans commentaire.'}]
+                    continue
+            return script
 
 
 _MARK = re.compile(r'^[ \t]*-{3,}[ \t]*$', re.M)
@@ -520,11 +537,12 @@ def run(snapshot_path: Path, output: Path, settings, *, send: bool = False,
                 log.warning('Version courte indisponible (%s).', type(exc).__name__)
                 court.unlink(missing_ok=True)
                 court_seconds = 0
+    incomplete = str(cfg.get('version_courte', 'false')).lower() == 'true' and not court_seconds
     write_archive(snapshot, clean_script(script), output, seconds, court_seconds)
     metadata = {**snapshot, 'duration_seconds': seconds, 'provider': cfg['provider'],
                 'format': cfg['format'], 'destination': cfg['destination'],
                 'habillage': bool(pieces), 'court_duration_seconds': court_seconds,
-                'telegram_sent': False}
+                'telegram_sent': False, 'audio_complete': not incomplete}
     metadata_path = output / 'brief.json'
     metadata_path.write_text(json.dumps(metadata, ensure_ascii=False, indent=2), encoding='utf-8')
     from .podcast_media import prepare_with_fallback
@@ -557,6 +575,8 @@ def run(snapshot_path: Path, output: Path, settings, *, send: bool = False,
                    caption_suffix='version audio de la veille de ce matin')
         metadata['telegram_sent'] = True
         metadata_path.write_text(json.dumps(metadata, ensure_ascii=False, indent=2), encoding='utf-8')
+    if incomplete:
+        raise RuntimeError('Flash manquant : Débrief conservé, reprise ciblée nécessaire ; ne pas relancer les envois.')
 
 
 def auto_send(cfg: dict) -> bool:

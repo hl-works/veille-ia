@@ -71,7 +71,8 @@ class HabillageTests(unittest.TestCase):
                  patch.object(audio, 'duration_seconds', return_value=390), \
                  patch('veille.podcast_media.prepare_with_fallback', return_value=None), \
                  patch.object(telegram, 'send_audio', return_value={}) as send:
-                audio.run(source, root / 'out2', settings, send=True, cfg=cfg)
+                with self.assertRaisesRegex(RuntimeError, 'Flash manquant'):
+                    audio.run(source, root / 'out2', settings, send=True, cfg=cfg)
             self.assertEqual([c.args[0].name for c in send.call_args_list], ['brief.mp3'])
 
     def test_missing_jingles_fall_back_to_plain_podcast(self):
