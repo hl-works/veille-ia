@@ -237,7 +237,7 @@ jobs:
     if: ${{ always() && !cancelled() && needs.veille.outputs.audio_artifact != '' }}
     runs-on: ubuntu-latest
     timeout-minutes: 25
-    continue-on-error: true
+    # Audio failure must fail the run; the written digest has already been sent.
     permissions:
       # write : uniquement pour pousser le MP3 du jour sur la branche `ecoute`.
       contents: write
@@ -311,7 +311,6 @@ jobs:
           python -m veille.audio "${args[@]}"
       - name: Publier les deux podcasts publics sur la home
         if: ${{ success() && !inputs.audio_preview && !inputs.dry_run && github.run_attempt == 1 }}
-        continue-on-error: true
         env:
           KH_REPO_TOKEN: ${{ secrets.KH_REPO_TOKEN }}
           KH_REPO: hl-works/knowledge-hub

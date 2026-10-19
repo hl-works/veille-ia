@@ -1,0 +1,93 @@
+name: Podcast recovery preview
+on:
+  workflow_dispatch:
+    inputs:
+      source_run:
+        description: 'Run containing the original audio-input artifact'
+        type: string
+        required: true
+      episode_date:
+        description: 'Original episode date YYYY-MM-DD'
+        type: string
+        required: true
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: podcast-recovery-preview
+  cancel-in-progress: false
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.12'
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          name: audio-input
+          path: audio-input
+          run-id: ${{ inputs.source_run }}
+          github-token: ${{ github.token }}
+      - name: Check the original date and digest integrity
+        env:
+          EXPECTED_DATE: ${{ inputs.episode_date }}
+        run: |
+          python - <<'PY'
+          import hashlib, json, os
+          from datetime import date
+          from pathlib import Path
+          data = json.loads(Path('audio-input/brief.json').read_text())
+          assert data['date'] == date.fromisoformat(os.environ['EXPECTED_DATE']).isoformat()
+          assert data['sources']
+          assert hashlib.sha256(data['message'].encode()).hexdigest() == data['digest_sha256']
+          PY
+      - run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          pip install -r requirements.txt
+      - name: Load shared artwork renderer
+        continue-on-error: true
+        timeout-minutes: 2
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          repository: hl-works/knowledge-hub
+          ref: main
+          path: .podcast-design
+          persist-credentials: false
+          sparse-checkout: |
+            scripts
+            assets/podcast/art
+      - name: Install optional artwork dependencies
+        continue-on-error: true
+        timeout-minutes: 3
+        run: |
+          pip install -r .podcast-design/scripts/requirements-podcast-covers.txt
+          python -m playwright install --with-deps chromium
+      - name: Generate private recovery preview without delivery credentials
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          PODCAST_DESIGN_ROOT: ${{ github.workspace }}/.podcast-design
+        run: python -m veille.audio
+      - name: Verify both tracks and no delivery
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from veille.audio import duration_seconds
+          root = Path('audio-output')
+          data = json.loads((root / 'brief.json').read_text())
+          assert not data.get('telegram_sent') and not data.get('court_telegram_sent')
+          assert duration_seconds(root / 'brief.mp3') == data['duration_seconds']
+          assert duration_seconds(root / 'court.mp3') == data['court_duration_seconds']
+          PY
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        if: ${{ always() }}
+        with:
+          name: podcast-recovery-preview
+          path: audio-output/
+          retention-days: 14
+          if-no-files-found: ignore

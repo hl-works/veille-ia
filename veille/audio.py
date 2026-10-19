@@ -14,6 +14,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 import subprocess
 import sys
+import time
 from typing import Protocol
 
 import anthropic
@@ -194,11 +195,31 @@ def audio_config(config_path: str = 'config.yaml') -> dict:
     return cfg
 
 
+def _script_request(client, **kwargs):
+    """Retry transient script-service errors only, before any audio delivery.
+
+    Four attempts at most. Never retry the whole run: Telegram timeouts can
+    mean a successful delivery and must not cause duplicate messages.
+    """
+    delays = (5, 15, 45)
+    for attempt in range(len(delays) + 1):
+        try:
+            return client.messages.create(**kwargs)
+        except (anthropic.APIStatusError, anthropic.APIConnectionError) as exc:
+            status = getattr(exc, 'status_code', None)
+            transient = status is None or status == 429 or (status is not None and status >= 500)
+            if not transient or attempt == len(delays):
+                raise
+            log.warning('Rédaction audio indisponible (%s) ; nouvel essai %s/4 dans %ss.',
+                        status or type(exc).__name__, attempt + 2, delays[attempt])
+            time.sleep(delays[attempt])
+
+
 def build_script(snapshot: dict, settings, fmt: str = 'solo', version: str = 'longue') -> str:
     system = script_prompt(fmt, version)
     with anthropic.Anthropic(api_key=settings.anthropic_api_key,
                              timeout=120, max_retries=0) as client:
-        response = client.messages.create(
+        response = _script_request(client,
             model=settings.model, max_tokens=10000,
             system=system,
             messages=[{'role': 'user', 'content': json.dumps(
