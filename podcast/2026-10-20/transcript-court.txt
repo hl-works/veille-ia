@@ -1,0 +1,17 @@
+IASTRO: Salut, c'est iAstro ! Bienvenue dans le flash du Podcast IA du vingt octobre. Installez-vous, on fait le tour de l'actu en quelques minutes.
+
+VICTORIA: Anthropic serait en discussions pour acheter de la puissance de calcul au fournisseur Nscale, dans un accord estimé à environ quarante-cinq milliards de dollars. Mais les signaux d'inquiétude se multiplient. Microsoft vient de renoncer à un accord avec ce même Nscale, et l'action d'Elice a chuté d'un tiers dès son entrée en Bourse. Autrement dit, les milliards promis pour l'IA commencent à faire douter les marchés.
+
+IASTRO: Côté nouveaux modèles, maintenant.
+
+VICTORIA: La Chine tire les prix vers le bas, avec MiniMax et DeepSeek qui proposent de bons scores pour moins de trente centimes par tâche. Meta publie de son côté Muse Glimmer, un modèle ouvert de trente milliards de paramètres qui tourne sur un simple Mac. Et Mistral surprend avec Timestral et un partenariat de recherche avec le CERN.
+
+IASTRO: Et la sécurité, dans tout ça ?
+
+VICTORIA: Les agents IA deviennent une nouvelle porte d'entrée pour les pirates. Un attaquant a infiltré plus de cent sites via une armée d'agents quasi autonomes. Microsoft, par la voix de Satya Nadella, affirme qu'il faut traiter les modèles comme des menaces internes. Concrètement, si vous déployez des agents, limitez leurs accès et gardez un humain dans la boucle.
+
+IASTRO: On termine avec OpenAI.
+
+VICTORIA: Un ingénieur reste emprisonné aux États-Unis, accusé d'avoir caché un enregistreur dans une salle de réunion. Le juge a refusé de le libérer. Sur le fond, OpenAI annonce de meilleures capacités pour moderniser de vieux langages comme le COBOL, un vrai enjeu pour les banques et les administrations.
+
+IASTRO: Voilà pour ce flash ! Toutes les sources sont sur le site de HL Consulting. Et pour aller plus loin, retrouvez l'édition complète. À très vite !
