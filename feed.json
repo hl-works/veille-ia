@@ -15244,5 +15244,119 @@
     "tweet_url": "https://x.com/gregisenberg/status/2111903028202852760",
     "media": false,
     "auteur_x": "@gregisenberg"
+  },
+  {
+    "date": "2026-10-19",
+    "titre_fr": "OpenAI cible les vieux langages : COBOL, Fortran, Visual Basic",
+    "resume_fr": "OpenAI annonce des avancées pour aider à comprendre, maintenir et moderniser les logiciels écrits dans des langages anciens (COBOL, Fortran, VB) encore utilisés par les banques, administrations et entreprises. L'idée : préserver la logique métier accumulée tout en modernisant les systèmes.",
+    "tags": [
+      "openai",
+      "modeles",
+      "produit"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/OpenAI/status/2112310345863930168",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-10-19",
+    "titre_fr": "Meta publie Muse Glimmer, un modèle 30B open-weight pour machines grand public",
+    "resume_fr": "Meta dévoile un rapport technique sur Muse Glimmer, un modèle à poids ouverts de 30 milliards de paramètres pensé pour les tâches d'agents. Il tourne à vitesse utilisable sur un Mac ou PC avec un seul GPU grand public en précision 4-bit et se place en tête des modèles ouverts de taille comparable sur l'usage d'outils et la planification multi-étapes.",
+    "tags": [
+      "meta",
+      "modeles",
+      "open-source",
+      "agents"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/AIatMeta/status/2112265822274302066",
+    "media": true,
+    "auteur_x": "@AIatMeta"
+  },
+  {
+    "date": "2026-10-19",
+    "titre_fr": "Meta détaille Prometheus, son supercalculateur IA à l'échelle du gigawatt",
+    "resume_fr": "Meta a entraîné ses modèles Muse, dont Muse Wonder, sur Prometheus, un cluster de centaines de milliers de GPU installé dans l'Ohio. L'entreprise met en avant des indicateurs de fiabilité élevés (plus de 85 % de rendement utile en pré-entraînement) malgré l'échelle.",
+    "tags": [
+      "meta",
+      "hardware",
+      "recherche"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/AIatMeta/status/2112245968750145561",
+    "media": true,
+    "auteur_x": "@AIatMeta"
+  },
+  {
+    "date": "2026-10-19",
+    "titre_fr": "Un nouveau modèle vidéo signé fal et Black Forest Labs mise sur la vitesse",
+    "resume_fr": "Un nouveau modèle texte-vers-vidéo développé par fal et Black Forest Labs génère des clips en moins de 10 secondes, soit bien plus vite que les solutions concurrentes. La rapidité et le coût réduit rendent la génération vidéo plus accessible.",
+    "tags": [
+      "modeles",
+      "produit",
+      "marketing"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/venturetwins/status/2112260772906823958",
+    "media": true,
+    "auteur_x": "@venturetwins"
+  },
+  {
+    "date": "2026-10-19",
+    "titre_fr": "Microsoft étend Project Perception pour sécuriser les agents IA",
+    "resume_fr": "Satya Nadella présente une extension de Project Perception : traiter les modèles comme un risque interne et placer les contrôles de sécurité en dehors du modèle lui-même. Objectif : évaluer en continu le risque des agents, adapter les permissions et contenir les menaces.",
+    "tags": [
+      "produit",
+      "agents",
+      "politique-ia"
+    ],
+    "score": 54,
+    "tweet_url": "https://x.com/satyanadella/status/2112168320946634932",
+    "media": false,
+    "auteur_x": "@satyanadella"
+  },
+  {
+    "date": "2026-10-19",
+    "titre_fr": "Greptile lève 50 M$ en série B pour la revue de code par IA",
+    "resume_fr": "La startup Greptile (promotion YC W24) annonce une série B de 50 millions de dollars. Son outil analyse et teste plus de 1 % des pull requests ouvertes chaque jour sur GitHub et sert des milliers d'équipes, dont Nvidia et Coinbase, avec moins de 50 salariés.",
+    "tags": [
+      "agents",
+      "produit",
+      "talents"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/ycombinator/status/2112234482975846504",
+    "media": false,
+    "auteur_x": "@ycombinator"
+  },
+  {
+    "date": "2026-10-19",
+    "titre_fr": "Perplexity intègre sa plateforme open source SPACE à Crusoe",
+    "resume_fr": "La plateforme de sandbox open source de Perplexity, SPACE, rejoindra les produits Managed AI de Crusoe, qui se positionne comme un cloud intégré (énergie, calcul et services). Un rapprochement entre fournisseurs d'infrastructure IA.",
+    "tags": [
+      "produit",
+      "open-source",
+      "hardware"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/AravSrinivas/status/2112254336160108664",
+    "media": false,
+    "auteur_x": "@AravSrinivas"
+  },
+  {
+    "date": "2026-10-19",
+    "titre_fr": "Transformer des dépôts open source en services payants pour PME",
+    "resume_fr": "Un fil détaille huit projets open source (emails de relance, automatisation de réseaux sociaux, standard téléphonique IA, OCR de factures vers la comptabilité, etc.) pouvant être revendus comme services à des artisans et petites entreprises, avec exemples de tarification. Les clients ne s'intéressent pas à l'IA mais au résultat.",
+    "tags": [
+      "automatisation",
+      "open-source",
+      "vente",
+      "service-client"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/coreyganim/status/2112221620005699656",
+    "media": true,
+    "auteur_x": "@coreyganim"
   }
 ]
