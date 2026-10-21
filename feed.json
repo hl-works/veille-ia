@@ -15358,5 +15358,155 @@
     "tweet_url": "https://x.com/coreyganim/status/2112221620005699656",
     "media": true,
     "auteur_x": "@coreyganim"
+  },
+  {
+    "date": "2026-10-20",
+    "titre_fr": "Mistral présente Voxtral 3 et une API d'agents vocaux",
+    "resume_fr": "Mistral dévoile Voxtral 3, une suite de modèles de transcription et de synthèse vocale qui alimente une nouvelle API d'agents vocaux. Les modèles gèrent la diarisation et la détection de fin de tour, et peuvent tourner sur sa propre infrastructure ou celle du client.",
+    "tags": [
+      "mistral",
+      "produit",
+      "service-client",
+      "automatisation"
+    ],
+    "score": 66,
+    "tweet_url": "https://x.com/MistralAI/status/2112574615318876178",
+    "media": true,
+    "auteur_x": "@MistralAI"
+  },
+  {
+    "date": "2026-10-20",
+    "titre_fr": "OpenAI rachète Orchestra Bio pour accélérer la R&D pharmaceutique",
+    "resume_fr": "OpenAI acquiert Orchestra Bio, une plateforme qui coordonne le développement de médicaments, afin de la combiner à ses outils pour les sciences de la vie (Rosalind) et d'aider les nouveaux traitements à arriver plus vite.",
+    "tags": [
+      "openai",
+      "recherche"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/OpenAI/status/2112607347688583586",
+    "media": false,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-10-20",
+    "titre_fr": "OpenAI recrute pour diriger la sécurité face à la superintelligence",
+    "resume_fr": "Sam Altman annonce l'arrivée d'Aleksander pour piloter les défis de sûreté et de sécurité liés à la superintelligence, un signal sur les priorités de l'entreprise en matière de risques.",
+    "tags": [
+      "openai",
+      "talents",
+      "politique-ia"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/sama/status/2112652656602923366",
+    "media": false,
+    "auteur_x": "@sama"
+  },
+  {
+    "date": "2026-10-20",
+    "titre_fr": "DeepSeek ouvre son framework d'inférence DeepInfer",
+    "resume_fr": "DeepSeek publie en open source DeepInfer, son moteur d'inférence maison qui fait tourner DeepSeek-V4.1-Flash à grande échelle. L'objectif affiché est de réduire les coûts de calcul et la consommation d'énergie pour la communauté.",
+    "tags": [
+      "open-source",
+      "modeles"
+    ],
+    "score": 54,
+    "tweet_url": "https://x.com/deepseek_ai/status/2112476496283775135",
+    "media": false,
+    "auteur_x": "@deepseek_ai"
+  },
+  {
+    "date": "2026-10-20",
+    "titre_fr": "Perplexity Computer fonctionne entièrement en local sur Mac",
+    "resume_fr": "Perplexity permet désormais d'exécuter son agent Computer entièrement en local sur Mac : le modèle et l'agent tournent sur la machine, sans envoyer de données sensibles vers le cloud, et même sans connexion.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/perplexity_ai/status/2112571597798461920",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-10-20",
+    "titre_fr": "NVIDIA ouvre Flora, des modèles pour l'apprentissage robotique",
+    "resume_fr": "Jim Fan (NVIDIA) présente Flora, une suite de modèles ouverts pour transcrire le monde physique et transformer des vidéos brutes en données d'entraînement pour robots, à un coût annoncé 125x inférieur à l'existant.",
+    "tags": [
+      "open-source",
+      "recherche",
+      "hardware"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/DrJimFan/status/2112597587987689912",
+    "media": true,
+    "auteur_x": "@DrJimFan"
+  },
+  {
+    "date": "2026-10-20",
+    "titre_fr": "OpenAI met en avant l'effondrement du coût de l'intelligence",
+    "resume_fr": "Selon OpenAI, son modèle le moins cher (GPT-6 Luna) dépasse son meilleur modèle d'il y a un mois tout en étant 34x moins cher. Plusieurs paliers de performance sont devenus plus de 100x moins chers en un an.",
+    "tags": [
+      "openai",
+      "modeles"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/a16z/status/2112637131973878229",
+    "media": true,
+    "auteur_x": "@a16z"
+  },
+  {
+    "date": "2026-10-20",
+    "titre_fr": "Un indépendant détaille 10 cas d'usage d'agents Grok au quotidien",
+    "resume_fr": "Un utilisateur partage dix agents automatisés (planning hebdo, suivi de leads, relances commerciales, veille médias, ventes sur Marketplace) orchestrés par un « chief of staff » bot, avec validation humaine avant tout envoi.",
+    "tags": [
+      "xai",
+      "agents",
+      "automatisation",
+      "vente"
+    ],
+    "score": 46,
+    "tweet_url": "https://x.com/coreyganim/status/2112663410043470281",
+    "media": false,
+    "auteur_x": "@coreyganim"
+  },
+  {
+    "date": "2026-10-20",
+    "titre_fr": "a16z mène la série A d'Eka Robotics (manipulation dextre)",
+    "resume_fr": "a16z investit dans Eka Robotics, qui développe un modèle Vision-Force-Action combinant perception visuelle et retour de force pour la manipulation fine, un verrou clé de l'automatisation du travail manuel.",
+    "tags": [
+      "hardware",
+      "recherche"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/a16z/status/2112569769648087279",
+    "media": true,
+    "auteur_x": "@a16z"
+  },
+  {
+    "date": "2026-10-21",
+    "titre_fr": "Google lance Gemini 4 Argon et revendique une demande massive",
+    "resume_fr": "Google annonce que son nouveau modèle Gemini 4 Argon a traité environ 25 000 milliards de tokens dans ses 72 premières heures. Le lancement illustre un retour en force de Google sur le terrain des grands modèles.",
+    "tags": [
+      "google",
+      "modeles",
+      "produit"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/OfficialLoganK/status/2112767157746688480",
+    "media": false,
+    "auteur_x": "@OfficialLoganK"
+  },
+  {
+    "date": "2026-10-21",
+    "titre_fr": "Dario Amodei défend la stratégie de sécurité d'Anthropic",
+    "resume_fr": "Le PDG d'Anthropic répond en détail aux critiques sur ses choix de sécurité, en défendant sa stratégie de « course vers le haut » et en listant des décisions coûteuses commercialement (garde-fous bio, contrôles export, soutien à la régulation SB53).",
+    "tags": [
+      "anthropic",
+      "politique-ia"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/DarioAmodei/status/2112732230124818891",
+    "media": false,
+    "auteur_x": "@DarioAmodei"
   }
 ]
