@@ -15508,5 +15508,199 @@
     "tweet_url": "https://x.com/DarioAmodei/status/2112732230124818891",
     "media": false,
     "auteur_x": "@DarioAmodei"
+  },
+  {
+    "date": "2026-10-21",
+    "titre_fr": "OpenAI découvre une faille critique dans PHP (php2shell)",
+    "resume_fr": "Dans le cadre de son initiative Patch the Planet, OpenAI affirme que ses modèles ont aidé à détecter une vulnérabilité majeure dans PHP, langage qui fait tourner environ 70% des sites web. Une coalition de mainteneurs et d'éditeurs de sécurité a préparé correctifs et mitigations avant la divulgation publique.",
+    "tags": [
+      "openai",
+      "recherche",
+      "politique-ia"
+    ],
+    "score": 82,
+    "tweet_url": "https://x.com/OpenAI/status/2112907856018309586",
+    "media": false,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-10-21",
+    "titre_fr": "Shopify appelle à sécuriser les apps après la faille",
+    "resume_fr": "Face à la vague de vulnérabilités, Shopify a publié les étapes à suivre pour sécuriser les applications et préserver la confiance des marchands. Un rappel concret pour tout commerçant utilisant des apps tierces.",
+    "tags": [
+      "produit",
+      "commerce",
+      "shopify"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/ShopifyDevs/status/2112992743161237709",
+    "media": false,
+    "auteur_x": "@ShopifyDevs"
+  },
+  {
+    "date": "2026-10-21",
+    "titre_fr": "Anthropic lance Claude Duet en aperçu",
+    "resume_fr": "Anthropic ouvre une preview de Claude Duet, une appli où Claude agit comme agent proactif : il signale ce qui demande attention, exécute des tâches, continue à travailler en votre absence et vous consulte avant d'agir en votre nom.",
+    "tags": [
+      "anthropic",
+      "agents",
+      "produit"
+    ],
+    "score": 74,
+    "tweet_url": "https://x.com/claudeai/status/2112984664256241837",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-10-21",
+    "titre_fr": "Claude Duet permet de créer une boutique Shopify dans le chat",
+    "resume_fr": "Selon Harley Finkelstein, Claude Duet permet de passer d'une idée à une boutique Shopify directement dans la conversation, puis d'aider à la gérer. Un cas d'usage potentiellement intéressant pour les nouveaux entrepreneurs.",
+    "tags": [
+      "anthropic",
+      "agents",
+      "commerce",
+      "shopify"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/harleyf/status/2112991076520993155",
+    "media": false,
+    "auteur_x": "@harleyf"
+  },
+  {
+    "date": "2026-10-21",
+    "titre_fr": "Les modèles d'OpenAI arrivent sur Google Cloud",
+    "resume_fr": "OpenAI intègre ses modèles de pointe et ses workflows agentiques Codex au Model Garden de Google Cloud, pour que les entreprises puissent les utiliser dans leur environnement existant.",
+    "tags": [
+      "openai",
+      "google",
+      "produit"
+    ],
+    "score": 70,
+    "tweet_url": "https://x.com/OpenAI/status/2112988118471295323",
+    "media": false,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-10-21",
+    "titre_fr": "Mistral et NVIDIA s'associent pour l'IA industrielle",
+    "resume_fr": "Mistral annonce une collaboration avec NVIDIA pour l'ingénierie industrielle : simulation plus rapide, benchmarks et datasets ouverts pour l'IA physique, et évaluations d'IA agentique dans la conception assistée (CAE/EDA).",
+    "tags": [
+      "mistral",
+      "hardware",
+      "recherche"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/MistralAI/status/2112870261829603589",
+    "media": true,
+    "auteur_x": "@MistralAI"
+  },
+  {
+    "date": "2026-10-21",
+    "titre_fr": "NVIDIA Nemotron 3.5 Parse en tête sur l'analyse de documents",
+    "resume_fr": "Selon LlamaIndex, le modèle open-weight Nemotron 3.5 Parse de NVIDIA prend la première place du benchmark ParseBench pour la compréhension de documents, tout en restant sous le milliard de paramètres et donc très rapide.",
+    "tags": [
+      "hardware",
+      "modeles",
+      "open-source"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/jerryjliu0/status/2113008819328700439",
+    "media": true,
+    "auteur_x": "@jerryjliu0"
+  },
+  {
+    "date": "2026-10-21",
+    "titre_fr": "Gemini 4 Argon crée une visualisation 3D d'anatomie",
+    "resume_fr": "Google DeepMind montre Gemini 4 Argon générant une visualisation interactive 3D du corps humain à partir de trois datasets open source, avec couches animables et zoom jusqu'à un cœur battant.",
+    "tags": [
+      "google",
+      "modeles",
+      "produit"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2112974723659247896",
+    "media": true,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-10-21",
+    "titre_fr": "Claude Security scanne le code en continu",
+    "resume_fr": "Anthropic lance en bêta publique sur Claude Enterprise une fonction qui re-scanne automatiquement les dépôts à chaque changement, pour que les failles détectées restent alignées sur l'état actuel du code.",
+    "tags": [
+      "anthropic",
+      "produit"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/claudeai/status/2112962248218148878",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-10-21",
+    "titre_fr": "DeepSeek v4.1 Flash disponible sur Vercel Token Pass",
+    "resume_fr": "Vercel ajoute DeepSeek v4.1 Flash à son Token Pass : un modèle rapide, très bon marché et avec zéro rétention de données, présenté comme idéal pour faire tourner des sous-agents exécutant des plans conçus par des modèles plus coûteux.",
+    "tags": [
+      "modeles",
+      "produit"
+    ],
+    "score": 46,
+    "tweet_url": "https://x.com/rauchg/status/2113010010766913815",
+    "media": true,
+    "auteur_x": "@rauchg"
+  },
+  {
+    "date": "2026-10-21",
+    "titre_fr": "Legora lève 550M$ pour l'IA juridique",
+    "resume_fr": "La startup juridique Legora boucle une série E de 550M$ à une valorisation de 8,8 milliards. Elle revendique une croissance de 1M$ à 100M$ d'ARR en moins de 18 mois et plus de 140 000 professionnels du droit utilisateurs.",
+    "tags": [
+      "agents",
+      "talents"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/ycombinator/status/2112914136787308823",
+    "media": true,
+    "auteur_x": "@ycombinator"
+  },
+  {
+    "date": "2026-10-21",
+    "titre_fr": "OpenAI met GPT-Rosalind au service de la découverte de médicaments",
+    "resume_fr": "OpenAI présente GPT-Rosalind, des milliers d'agents travaillant en parallèle pour relier des données d'expression génétique à la littérature scientifique. Le système a proposé une piste sur la transport du cholestérol dans des maladies neurodégénératives, à tester en laboratoire.",
+    "tags": [
+      "openai",
+      "recherche",
+      "agents"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/OpenAI/status/2112899854569762936",
+    "media": false,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-10-21",
+    "titre_fr": "Les plugins ChatGPT ouverts à tous, une opportunité pour les PME",
+    "resume_fr": "ChatGPT, avec environ 900M d'utilisateurs hebdomadaires, permet désormais à chacun de publier un plugin combinant une compétence et un connecteur. Un créateur y voit des opportunités concrètes pour bookkeepers, agents immobiliers, coachs, artisans ou agences via un modèle freemium.",
+    "tags": [
+      "openai",
+      "produit",
+      "automatisation",
+      "saas"
+    ],
+    "score": 57,
+    "tweet_url": "https://x.com/coreyganim/status/2112880525555687563",
+    "media": false,
+    "auteur_x": "@coreyganim"
+  },
+  {
+    "date": "2026-10-21",
+    "titre_fr": "Microsoft déploie Copilot dans le NHS britannique",
+    "resume_fr": "Satya Nadella détaille comment le service ambulancier du Yorkshire utilise Copilot pour réduire les tâches administratives. Le NHS England prévoit d'étendre l'outil à jusqu'à 500 000 soignants et personnels de support.",
+    "tags": [
+      "produit",
+      "automatisation"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/satyanadella/status/2112858767478190421",
+    "media": true,
+    "auteur_x": "@satyanadella"
   }
 ]
