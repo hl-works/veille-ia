@@ -1,0 +1,21 @@
+IASTRO: Salut, c'est iAstro ! Bienvenue dans le flash du Podcast I. A. du vingt-deux octobre. Reste avec nous, ça bouge beaucoup aujourd'hui.
+
+IASTRO: On commence avec une alerte mondiale sur la sécurité.
+VICTORIA: Des modèles d'I. A. ont découvert l'une des failles les plus graves de mémoire récente dans PHP, le langage qui fait tourner environ soixante-dix pour cent des sites web. Des correctifs sont déployés en urgence, et Amazon prévient que la faille est déjà largement exploitée. Concrètement, si votre site tourne sous PHP, demandez à votre hébergeur de mettre à jour tout de suite et renouvelez vos mots de passe.
+
+---
+
+IASTRO: Côté Anthropic, maintenant.
+VICTORIA: La société lance Claude Duet, une appli où l'I. A. agit en agent proactif. Elle vient vers vous, exécute les tâches et demande validation avant d'agir. Elle vise les indépendants et les petites entreprises, face à Muse de Meta et Dots d'OpenAI.
+
+---
+
+IASTRO: Autre info du jour, chez Meta.
+VICTORIA: Le groupe publie un chiffre d'affaires record d'environ soixante-cinq milliards de dollars. Mais il va créer une nouvelle catégorie d'actions sans droit de vote pour financer ses énormes dépenses en I. A., sans que Mark Zuckerberg perde le contrôle.
+
+---
+
+IASTRO: Et on termine avec les modèles et les alliances.
+VICTORIA: Le français Mistral sort Mistral Large quatre et approfondit son partenariat avec NVIDIA pour l'ingénierie industrielle. De son côté, OpenAI amène ses modèles et son agent Codex sur Google Cloud. Fait notable, Google Cloud devient le seul grand fournisseur à proposer à la fois Gemini, Claude et les modèles d'OpenAI.
+
+IASTRO: C'est tout pour ce flash. Les sources sont sur le site de HL Consulting, et on se retrouve dans le format long. À bientôt !

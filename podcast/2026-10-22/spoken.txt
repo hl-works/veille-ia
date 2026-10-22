@@ -1,0 +1,71 @@
+IASTRO: Salut, c'est iAstro ! Bienvenue dans le débrief du Podcast I. A. du vingt-deux octobre. Installez-vous, on prend le temps de décortiquer l'actu du jour ensemble.
+
+IASTRO: Et on commence très fort, avec l'événement du jour. Une faille de sécurité énorme, trouvée grâce à l'I. A.
+
+VICTORIA: Des modèles d'I. A. ont découvert l'une des failles de sécurité les plus graves de mémoire récente. Et elle touche PHP. C'est le langage qui fait tourner environ soixante-dix pour cent des sites web du monde. Autant dire presque partout. La faille a été baptisée php2shell. Concrètement, elle permet une exécution de code à distance. Autrement dit, un attaquant peut prendre le contrôle d'un serveur.
+
+VICTORIA: Deux acteurs l'ont trouvée chacun de leur côté. D'abord OpenAI, avec son initiative Patch the Planet et son modèle GPT cinq point six Sol. Et aussi la société Wiz, qui a utilisé Gemini quatre Argon de Google. Des correctifs sont déployés en urgence sur toute la ligne PHP huit point x.
+
+VICTORIA: Et pourquoi c'est urgent ? Parce qu'Amazon prévient que ces failles sont déjà largement exploitées. Des exploits circulent, suite à une fuite dans le processus de divulgation. Tobias Lütke, le patron de Shopify, parle de la journée la plus folle en cybersécurité depuis longtemps.
+
+VICTORIA: Avant la révélation publique, OpenAI a coordonné une coalition pendant deux mois. Des mainteneurs, des chercheurs, des fournisseurs de sécurité. Le but, préparer les correctifs à l'avance. Car le patch nécessitait une modification profonde du moteur PHP. OpenAI parle d'une fenêtre du défenseur. En gros, l'I. A. trouve la faille avant les attaquants. Ça laisse le temps de se protéger. Mais attention, l'entreprise prévient que ces mêmes capacités servent aussi aux pirates.
+
+VICTORIA: Les hébergeurs ont réagi vite. Vercel, avec Guillermo Rauch, a déployé des protections avant même le patch officiel. Cloudflare et Shopify ont émis des consignes. Et un chiffre marquant pour mesurer l'accélération. Le nombre de failles signalées serait passé d'environ quatre mille à quinze mille par mois depuis avril.
+
+VICTORIA: Ce que ça change pour vous ? Si votre site tourne sous PHP, pensez à WordPress, aux boutiques, aux sites vitrine, demandez à votre hébergeur de mettre à jour immédiatement. Et par prudence, renouvelez vos clés d'accès et vos mots de passe.
+
+---
+
+IASTRO: Autre gros sujet maintenant. La bataille des agents personnels monte d'un cran.
+
+VICTORIA: Anthropic a dévoilé Claude Duet. C'est une application où son I. A. agit comme un agent proactif. Autrement dit, elle vient vers vous avec ce qui mérite votre attention. Elle exécute les tâches demandées. Elle continue de travailler quand vous vous absentez. Et elle vous demande validation avant d'agir.
+
+VICTORIA: C'est disponible en préversion de recherche. Sur iOS, Android et le web. Et ça vise explicitement les professionnels et les dirigeants de petites entreprises. La concurrence est directe. Face à Muse de Meta, qui revendique plus de dix millions d'utilisateurs, avec le shopping comme usage numéro un. Et face à Dots d'OpenAI.
+
+VICTORIA: Un agent, pour rappel, c'est une I. A. capable d'enchaîner des actions concrètes à votre place. Réserver, trier, acheter, gérer. Harley Finkelstein, le président de Shopify, donne un exemple parlant. Avec Duet, on pourrait passer d'une idée à une boutique Shopify, directement dans la conversation. Puis laisser l'agent aider à la gérer. Le sujet a beaucoup fait réagir, avec plus de trois cents points sur Hacker News.
+
+VICTORIA: Et le commerce s'ouvre aussi aux agents. Walmart va bientôt autoriser des agents I. A. à faire les achats sur son site. Avec approbation et plafonds de dépenses. C'est l'inverse d'Amazon, qui les bloque. Ce que ça change pour vous ? Ces outils visent justement les indépendants et les PME. La promesse, déléguer les tâches répétitives. À tester prudemment, car la plupart sont encore en version préliminaire.
+
+---
+
+IASTRO: Côté Meta, maintenant. Des résultats records, mais une manœuvre financière inattendue.
+
+VICTORIA: Meta a publié un chiffre d'affaires trimestriel record. Soixante-quatre milliards et demi de dollars. Et le groupe a relevé ses dépenses d'investissement. Mais la surprise est ailleurs. Meta va créer une nouvelle catégorie d'actions sans droit de vote. Elles seront échangeables dès deux mille vingt-sept.
+
+VICTORIA: Le but, financer ses énormes dépenses en I. A., d'éventuelles acquisitions et la rémunération des employés. Tout ça sans diluer le contrôle de Mark Zuckerberg. Il a d'ailleurs assuré aux investisseurs que son pari coûteux sur l'I. A. donne des résultats.
+
+VICTORIA: Mais la facture pèse lourd. Selon le New York Times, la trésorerie disponible de Meta est passée en négatif à cause de ces investissements. D'où cette créativité financière pour lever davantage d'argent. La nouvelle classe d'actions permet de vendre des titres et de payer des dépenses sans que le fondateur perde la main.
+
+VICTORIA: Il y a aussi un volet politique. Le New York Times relie cette réorganisation à un projet de taxe sur la fortune en Californie. Ce qui aurait poussé Zuckerberg à envisager de vendre sa maison de la Silicon Valley. La structure boursière l'aiderait à payer l'impôt si les électeurs approuvent la taxe. Pourquoi ça compte ? Meta illustre la tension du moment. Des revenus publicitaires solides, mais des dépenses d'infrastructure I. A. si massives qu'elles obligent les géants à inventer de nouveaux montages financiers.
+
+---
+
+IASTRO: Et maintenant, place aux nouveaux modèles et aux grandes alliances.
+
+VICTORIA: Journée chargée de ce côté-là. Le français Mistral a sorti Mistral Large quatre. En tête des discussions techniques sur Hacker News. Et l'entreprise approfondit son partenariat avec NVIDIA. Cette fois pour l'ingénierie industrielle. En gros, de la simulation plus rapide, des jeux de données et des évaluations pour l'I. A. appliquée à la fabrication.
+
+VICTORIA: Arthur Mensch, le patron de Mistral, voit grand. Pour lui, l'I. A. pour l'ingénierie industrielle fera entrer l'humanité dans sa prochaine ère technologique. C'est un axe clé de la recherche de l'entreprise, avec NVIDIA, pour les besoins du monde manufacturier.
+
+VICTORIA: Toujours autour de NVIDIA. Au salon GTC Berlin, l'entreprise a mis en avant sa poussée sur les modèles ouverts, adossés aux données métier. L'idée, rivaliser avec Anthropic et OpenAI. Son modèle Nemotron trois point cinq Parse prend d'ailleurs la première place du classement ParseBench pour la lecture de documents. Et c'est un petit modèle, avec moins d'un milliard de paramètres.
+
+VICTORIA: Côté OpenAI, une alliance stratégique. L'entreprise amène ses modèles de pointe et son agent de code, Codex, sur Google Cloud. Le fait notable, Google Cloud devient le seul grand fournisseur à proposer à la fois Gemini, Claude et les modèles d'OpenAI. Deux rivaux qui coopèrent, pour que les entreprises utilisent ces I. A. là où elles développent déjà. Enfin, en France, OpenAI a nommé Laureline Serieys à la tête de ses opérations pour la France et l'Europe du Sud.
+
+---
+
+IASTRO: Et on termine avec un débat qui enfle. La fameuse bulle I. A.
+
+VICTORIA: Les interrogations financières montent. La valeur boursière de SoftBank, un gros investisseur en I. A., pourrait être divisée par deux par rapport à son pic de juin. En cause, la crainte autour de la soutenabilité de ses paris. Bloomberg décrit aussi des valorisations de jeunes pousses qui s'envolent. Exemple frappant, une start-up de trois mois, sans site ni produit, valorisée en milliards.
+
+VICTORIA: Le débat oppose deux lectures. D'un côté, les inquiétudes. La hausse des coûts d'emprunt. Des montages de levées de fonds en plusieurs tranches, qui gonflent artificiellement les valorisations. Et des questions macroéconomiques. Le Financial Times s'interroge même sur l'effet de l'I. A. sur l'inflation. Et dans Le Monde, l'économiste Ian Goldin juge que l'I. A. pourrait freiner la croissance.
+
+VICTORIA: De l'autre côté, les optimistes. Blackstone juge ces craintes exagérées. Jas Khaira, de Blackstone, estime que la panique sur la dette liée aux infrastructures I. A. est excessive. Signe des temps, un projet de produits financiers voit le jour avec le CME. Il permettra de parier sur le prix du compute, autrement dit la puissance de calcul.
+
+VICTORIA: Il y a aussi la question de l'énergie et de l'environnement. The Verge rapporte que la ruée sur les centres de données pourrait faire reculer la qualité de l'air au Texas. Ce que ça change pour vous ? Rien d'urgent. Mais ces signaux rappellent que l'emballement actuel comporte une part de spéculation. Utile à garder en tête avant de miser gros sur un outil ou un acteur.
+
+---
+
+IASTRO: Et pour finir, la phrase du jour.
+
+VICTORIA: Demis Hassabis, cofondateur de Google DeepMind et prix Nobel, a de nouveau raccourci son horizon pour l'I. A. de niveau humain, l'AGI. Il l'attend désormais d'ici deux à trois ans. Contre trois à cinq ans plus tôt cette année. C'est un signal de plus que les patrons de laboratoires voient l'échéance se rapprocher. Mais c'est à prendre avec le recul que méritent ces prédictions.
+
+IASTRO: Et voilà, c'est tout pour ce débrief ! Toutes les sources sont à retrouver sur le site de HL Consulting. Et si vous voulez la version express, filez écouter notre autre format. À très vite !
