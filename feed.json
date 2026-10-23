@@ -15702,5 +15702,168 @@
     "tweet_url": "https://x.com/satyanadella/status/2112858767478190421",
     "media": true,
     "auteur_x": "@satyanadella"
+  },
+  {
+    "date": "2026-10-22",
+    "titre_fr": "Microsoft : son système de diagnostic médical MAI dépasse les médecins",
+    "resume_fr": "Microsoft annonce dans la revue Science que son système de diagnostic MAI est 1,7 fois plus précis que les médecins aux urgences, tout en réduisant le nombre d'examens et les coûts. Une avancée notable pour l'IA médicale.",
+    "tags": [
+      "recherche",
+      "produit"
+    ],
+    "score": 72,
+    "tweet_url": "https://x.com/mustafasuleyman/status/2113332931423039945",
+    "media": true,
+    "auteur_x": "@mustafasuleyman"
+  },
+  {
+    "date": "2026-10-22",
+    "titre_fr": "Les modèles Claude disponibles sur Google Cloud",
+    "resume_fr": "Anthropic rend ses modèles Claude généralement disponibles sur Google Cloud en version gérée, avec facturation et gestion des accès via l'infrastructure Google. Cela facilite l'adoption de Claude pour les entreprises déjà sur Google Cloud.",
+    "tags": [
+      "anthropic",
+      "google",
+      "produit"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/claudeai/status/2113380122468454765",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-10-22",
+    "titre_fr": "Claude passe en mode automatique par défaut",
+    "resume_fr": "À partir de la semaine prochaine, les sessions Claude (web, bureau, mobile) fonctionneront par défaut en mode auto pour les abonnés Pro, Max et Team : plutôt que de valider chaque étape, un contrôle automatisé bloque les actions risquées. Le mode manuel reste disponible.",
+    "tags": [
+      "anthropic",
+      "produit",
+      "agents"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/claudeai/status/2113360845409583307",
+    "media": false,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-10-22",
+    "titre_fr": "L'agent Claude Duet utilise Shop Pay",
+    "resume_fr": "Shopify confirme que l'agent Claude Duet peut désormais payer via Shop Pay, et ouvre cette capacité aux agents des développeurs. Un signal concret pour le commerce agentique où des IA réalisent des achats.",
+    "tags": [
+      "anthropic",
+      "shopify",
+      "commerce",
+      "agents"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/ShopifyDevs/status/2113277519080439992",
+    "media": false,
+    "auteur_x": "@ShopifyDevs"
+  },
+  {
+    "date": "2026-10-22",
+    "titre_fr": "Perplexity lance une API Batch pour son agent",
+    "resume_fr": "Perplexity ouvre une API Batch sur son Agent API, supportant jusqu'à 50 000 requêtes par fichier avec recherche web et récupération d'URL. Utile pour enrichir massivement des données, par exemple une liste de 50 000 entreprises traitée en une nuit.",
+    "tags": [
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/AravSrinivas/status/2113368776532271185",
+    "media": false,
+    "auteur_x": "@AravSrinivas"
+  },
+  {
+    "date": "2026-10-22",
+    "titre_fr": "OpenAI déploie ChatGPT Work chez Uber",
+    "resume_fr": "OpenAI annonce le déploiement de ChatGPT Work à l'ensemble des employés d'Uber, apportant des capacités agentiques à toute l'entreprise.",
+    "tags": [
+      "openai",
+      "produit",
+      "agents"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/gdb/status/2113325885491437764",
+    "media": false,
+    "auteur_x": "@gdb"
+  },
+  {
+    "date": "2026-10-22",
+    "titre_fr": "DeepSeek V4.1 Flash disponible dans OpenClaw",
+    "resume_fr": "Le modèle DeepSeek V4.1 Flash de DeepSeek est désormais accessible dans l'outil d'agents open source OpenClaw.",
+    "tags": [
+      "modeles",
+      "open-source",
+      "agents"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/openclaw/status/2113414141327380480",
+    "media": true,
+    "auteur_x": "@openclaw"
+  },
+  {
+    "date": "2026-10-22",
+    "titre_fr": "Anthropic utilise Claude pour la vérification formelle de logiciels",
+    "resume_fr": "L'équipe Frontier Red Team d'Anthropic décrit comment Claude a servi à prouver formellement des propriétés de sécurité dans plus de cent bibliothèques open source réelles en quelques semaines, une tâche jusqu'ici réservée à de petits codes ou à des experts.",
+    "tags": [
+      "anthropic",
+      "recherche"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/AnthropicAI/status/2113390212911083894",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-10-22",
+    "titre_fr": "OpenAI investit 1 milliard pour la cybersécurité des infrastructures critiques",
+    "resume_fr": "Greg Brockman explique qu'OpenAI a mobilisé 25 % de ses ingénieurs de production pour chercher et corriger des failles avec ses modèles, et engage 1 milliard de dollars pour aider les organisations critiques à se défendre face à des capacités cyber de plus en plus accessibles aux attaquants.",
+    "tags": [
+      "openai",
+      "politique-ia"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/a16z/status/2113404552439558377",
+    "media": true,
+    "auteur_x": "@a16z"
+  },
+  {
+    "date": "2026-10-22",
+    "titre_fr": "Des banques américaines ciblées par des agents IA",
+    "resume_fr": "Selon un article relayé par Gary Marcus, des agents IA causent des problèmes aux systèmes bancaires américains, poussant les établissements à restreindre en urgence les accès. L'IA évolue plus vite que la capacité de réaction des institutions financières.",
+    "tags": [
+      "politique-ia",
+      "agents"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/GaryMarcus/status/2113255141939818581",
+    "media": false,
+    "auteur_x": "@GaryMarcus"
+  },
+  {
+    "date": "2026-10-23",
+    "titre_fr": "Lancement de l'application Muse au Japon",
+    "resume_fr": "Alexandr Wang annonce le lancement de l'assistant Muse au Japon, désormais téléchargeable sur les boutiques d'applications. Le déploiement s'accompagne d'intégrations annoncées comme 1Password.",
+    "tags": [
+      "produit",
+      "meta"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/alexandr_wang/status/2113430642440736859",
+    "media": true,
+    "auteur_x": "@alexandr_wang"
+  },
+  {
+    "date": "2026-10-23",
+    "titre_fr": "Le modèle de décision de Perplexity tourne en local sur Mac",
+    "resume_fr": "Perplexity permet désormais d'exécuter son Decision Model entièrement en local sur Mac, sans que les données ne quittent la machine, grâce à des modèles compacts à poids ouverts.",
+    "tags": [
+      "produit",
+      "open-source"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/AravSrinivas/status/2113420151232352444",
+    "media": false,
+    "auteur_x": "@AravSrinivas"
   }
 ]
