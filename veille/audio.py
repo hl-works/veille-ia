@@ -132,12 +132,14 @@ Victoria raconte tous les faits et explications, d'une voix naturelle et posée.
 N'annonce jamais le prénom de Victoria et n'écris pas « je te passe la parole ».
 Enchaîne directement les deux voix ; aucune répétition du sujet par Victoria.
 Écris iAstro normalement, dans une phrase complète, sans découpage phonétique.
-Ouvre par « Salut, c'est iAstro ! Bienvenue dans le [format] du Podcast IA du »
+Ouvre EXACTEMENT par « Salut, c'est iAstro ! Bienvenue dans le [format] du Podcast IA du »
 puis la date en toutes lettres, sans année, et une courte invitation à écouter.
 Chaque section commence par IASTRO puis VICTORIA. Les « --- » séparent seulement
 les grands sujets, jamais l'ouverture de son premier sujet ou la conclusion du
 dernier. La dernière réplique est IASTRO : une fermeture courte, sans récapitulatif,
 renvoyant vers les sources sur le site de HL Consulting et vers l'autre format.
+Le nom iAstro est prononcé UNE SEULE FOIS : dans la première phrase exacte
+« Salut, c'est iAstro ! ». Ne le répète ni dans les transitions ni en conclusion.
 Pas de didascalies, de bruitages écrits ou de prénom lu comme une étiquette.
 """
 
@@ -241,7 +243,9 @@ def build_script(snapshot: dict, settings, fmt: str = 'solo', version: str = 'lo
                     messages = messages + [
                         {'role': 'assistant', 'content': script},
                         {'role': 'user', 'content':
-                         'Corrige uniquement la structure des rôles de ce script, sans ajouter de faits. '
+                         f'Corrige cette erreur dans le script, sans ajouter de faits : {exc}. '
+                         "Commence exactement par IASTRO: Salut, c'est iAstro ! puis la suite. "
+                         'Ne répète jamais le nom iAstro après cette première phrase. '
                          'Chaque ligne parlée doit commencer par IASTRO: ou VICTORIA:. '
                          'Chaque section séparée par --- commence par IASTRO puis VICTORIA. '
                          'La dernière section se termine par IASTRO après VICTORIA. '
@@ -317,9 +321,25 @@ def segments(script: str, fmt: str) -> list[tuple[str, str]]:
     return out
 
 
+IASTRO_NAME = re.compile(r'\bi[ \-]?astro\b', re.I)
+IASTRO_GREETING = re.compile(r"^Salut,\s+c['’]est\s+iAstro\s*!\s*", re.I)
+
+
+def split_iastro_greeting(text: str) -> str | None:
+    """The approved complete sentence is recorded, never a synthesized name fragment."""
+    match = IASTRO_GREETING.match(text)
+    return text[match.end():] if match else None
+
+
 def validate_iastro_script(script: str) -> None:
     """Reject incomplete casting before spending voice credits or publishing."""
     sections = split_sections(script)
+    parts = segments(script, 'iastro')
+    if not parts or split_iastro_greeting(parts[0][1]) is None:
+        raise ValueError('Salutation iAstro validée absente')
+    remaining = split_iastro_greeting(parts[0][1]) + '\n' + '\n'.join(t for _, t in parts[1:])
+    if IASTRO_NAME.search(remaining):
+        raise ValueError('Nom iAstro hors de la salutation enregistrée')
     for index, section in enumerate(sections):
         roles = [who for who, _ in segments(section, 'iastro')]
         expected = ['iastro', 'femme']

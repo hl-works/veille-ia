@@ -102,3 +102,19 @@ pas rejouée. Aucun nouvel essai automatique d'envoi Telegram n'est ajouté.
 contrôle sa date et l'empreinte du brief, puis prépare les deux pistes sans
 identifiants Telegram ni droit d'écriture. Il ne publie ni sur le site ni
 sur le canal. Son artefact permet une écoute avant un éventuel rattrapage.
+
+## Prononciation stable d'iAstro — 23 octobre 2026
+
+La synthèse du Débrief du 23 a prononcé le début du nom à l'anglaise malgré
+`language_code: fr`. Le nom ne doit plus dépendre d'une nouvelle interprétation
+à chaque épisode. L'ouverture utilise la phrase entière « Salut, c'est iAstro ! »
+extraite du montage du 17 approuvé par Hugo. Sa provenance, son intervalle et
+son empreinte sont dans `audio/iastro-salutation-fr-v1.json`.
+
+Le fichier est déjà accéléré de 15 % avec les sifflantes atténuées ; ces filtres
+ne lui sont pas appliqués une deuxième fois. La suite de l'introduction et les
+transitions continuent à être générées avec Philippine, la narration avec Victoria.
+Le nom est écrit iAstro dans les transcriptions et n'est prononcé qu'une fois,
+dans cette salutation fixe. Aucun fragment de nom n'est assemblé séparément.
+Une salutation différente ou un nom répété est corrigé avant la synthèse par
+la procédure existante de réparation du script ; la validation reste bloquante.
