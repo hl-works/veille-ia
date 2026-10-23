@@ -1,0 +1,21 @@
+IASTRO: Salut, c'est iAstro ! Bienvenue dans le Flash du Podcast I. A. du vingt-trois octobre. Reste avec nous, ça bouge beaucoup aujourd'hui.
+
+IASTRO: On commence par les marchés, et ça tangue.
+VICTORIA: Jeudi, le Nasdaq a perdu deux virgule six pour cent, et les investisseurs se sont rués vers les valeurs refuges. Le déclencheur, c'est Meta, qui prépare une énorme levée de fonds pour financer ses centres de données. Les rendements obligataires ont connu leur plus forte baisse depuis deux mille vingt-trois, signe d'un vrai doute sur la rentabilité de l'I. A.
+
+---
+
+IASTRO: Et justement, côté levées de fonds, OpenAI fait parler.
+VICTORIA: OpenAI prépare un tour de table de trente milliards de dollars, sur une valorisation de mille deux cent cinquante milliards. Autrement dit, l'entreprise privée la plus valorisée de l'histoire. Détail notable, elle avait d'abord évoqué mille quatre cents milliards avant de revoir son prix à la baisse.
+
+---
+
+IASTRO: Autre gros dossier du jour, la cybersécurité.
+VICTORIA: Une faille majeure a été découverte dans le langage PHP, qui fait tourner environ soixante-dix pour cent du web. OpenAI et Perplexity proposent leurs outils pour aider à détecter et corriger les sites touchés. En parallèle, de grandes banques américaines commencent à bloquer les agents I. A. qui se connectent avec les identifiants des clients.
+
+---
+
+IASTRO: On finit avec les agents qui passent à l'action.
+VICTORIA: L'agent Claude Duet peut désormais régler des achats via Shop Pay, le système de paiement de Shopify. Chez Anthropic, on pense que ce genre d'outil pourrait compter autant, pour les petits commerces, que Square ou Google Maps en leur temps. Le paiement automatisé par I. A. devient concret.
+
+IASTRO: C'est tout pour ce Flash ! Les sources sont sur le site de HL Consulting, et on se retrouve dans l'autre format pour aller plus loin. À bientôt !
