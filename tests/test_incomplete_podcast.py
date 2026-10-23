@@ -8,8 +8,8 @@ from unittest.mock import Mock, patch
 from veille import audio, telegram
 from veille.config import Settings
 
-VALID = 'IASTRO: Bonjour.\nVICTORIA: Les nouvelles.\nIASTRO: À demain.'
-INVALID = 'IASTRO: Bonjour.\nVICTORIA: Les nouvelles.\n---\nIASTRO: À demain.'
+VALID = 'IASTRO: Salut, c’est iAstro !\nVICTORIA: Les nouvelles.\nIASTRO: À demain.'
+INVALID = 'IASTRO: Salut, c’est iAstro !\nVICTORIA: Les nouvelles.\n---\nIASTRO: À demain.'
 
 def response(text):
     return SimpleNamespace(stop_reason='end_turn', content=[SimpleNamespace(type='text', text=text)])

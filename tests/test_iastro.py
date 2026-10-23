@@ -44,7 +44,7 @@ class IAstroTests(unittest.TestCase):
             dest.write_bytes(b'x')
         with tempfile.TemporaryDirectory() as d, patch.object(el, 'tts', side_effect=tts), \
                 patch.object(el, 'dialogue', side_effect=dialogue), patch.object(el, 'concat_mp3') as cat:
-            path = Path(d) / 'script.txt'; path.write_text(audio.clean_script(SCRIPT))
+            path = Path(d) / 'script.txt'; path.write_text(audio.clean_script(SCRIPT.replace("iAstro !", "iAstro ! Bienvenue dans le Débrief.")))
             el.ElevenLabsTTS(cfg).synthesize(path, Path(d) / 'out.mp3')
             deessed = [c for c in cat.call_args_list if c.kwargs.get('deess')]
             self.assertEqual(len(deessed), 3)
@@ -52,6 +52,9 @@ class IAstroTests(unittest.TestCase):
             for c in cat.call_args_list:
                 if not c.kwargs.get('deess'):
                     self.assertEqual(c.args[2] if len(c.args) > 2 else 1.0, 1.0)
+        self.assertEqual(calls[0][2], 'Bienvenue dans le Débrief.')
+        self.assertTrue(all('iAstro' not in c[2] for c in calls if c[0] == 'tts'))
+        self.assertEqual(cat.call_args.args[0][0], el.APPROVED_IASTRO_GREETING)
         self.assertEqual([c[0] for c in calls], ['tts', 'dialogue', 'tts', 'dialogue', 'tts'])
         for c in calls:
             if c[0] == 'tts':
@@ -61,6 +64,46 @@ class IAstroTests(unittest.TestCase):
                 self.assertTrue(all(voice == cfg['voix_femme_elevenlabs'] for voice, _ in c[1]))
                 self.assertEqual(c[2]['model'], 'eleven_v4')
         self.assertIn('Son contexte.', ' '.join(text for _, text in calls[3][1]))
+
+    def test_greeting_only_never_calls_voice_service(self):
+        cfg = audio.audio_config()
+        with tempfile.TemporaryDirectory() as d, patch.object(el, 'tts') as synth, \
+                patch.object(el, 'concat_mp3') as cat:
+            path = Path(d) / 'script.txt'
+            path.write_text("IASTRO: Salut, c’est iAstro !")
+            el.ElevenLabsTTS(cfg).synthesize(path, Path(d) / 'out.mp3')
+            synth.assert_not_called()
+            self.assertEqual(cat.call_args.args[0], [el.APPROVED_IASTRO_GREETING])
+            self.assertEqual(len(cat.call_args.args), 2)
+        for bad in (SCRIPT.replace('Salut,', 'Bonjour,'),
+                    SCRIPT.replace('À très vite !', "C'était iAstro !")):
+            with self.assertRaises(ValueError):
+                audio.validate_iastro_script(bad)
+        with self.assertRaises(ValueError):
+            el.approved_iastro_greeting('another-voice')
+        with patch.object(el, 'APPROVED_IASTRO_GREETING_SHA256', 'incorrect'):
+            with self.assertRaises(ValueError):
+                el.approved_iastro_greeting(cfg['voix_iastro_elevenlabs'])
+
+    @unittest.skipUnless(__import__('shutil').which('ffmpeg'), 'ffmpeg required')
+    def test_real_mix_accepts_recorded_greeting_and_synthesized_mp3(self):
+        import shutil, subprocess
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d); tone = root / 'tone.mp3'
+            subprocess.run(['ffmpeg', '-v', 'error', '-f', 'lavfi', '-i',
+                            'sine=frequency=440:sample_rate=44100', '-t', '1',
+                            '-ac', '1', '-c:a', 'libmp3lame', '-b:a', '128k', str(tone)], check=True)
+            def synth(text, voice, dest, **kw): shutil.copyfile(tone, dest)
+            def dialogue(lines, dest, **kw): shutil.copyfile(tone, dest)
+            script = root / 'script.txt'
+            script.write_text("IASTRO: Salut, c'est iAstro ! Bienvenue.\nVICTORIA: Bonjour.")
+            with patch.object(el, 'tts', side_effect=synth), patch.object(el, 'dialogue', side_effect=dialogue):
+                el.ElevenLabsTTS(audio.audio_config()).synthesize(script, root / 'mix.mp3')
+            duration = float(subprocess.check_output(['ffprobe', '-v', 'error', '-show_entries',
+                'format=duration', '-of', 'default=nw=1:nk=1', str(root / 'mix.mp3')]))
+            self.assertGreater(duration, 3.2)
+            self.assertLess(duration, 3.8)
+            subprocess.run(['ffmpeg', '-v', 'error', '-i', str(root / 'mix.mp3'), '-f', 'null', '-'], check=True)
 
     def test_pitch_preserving_deesser_filter(self):
         with tempfile.TemporaryDirectory() as d, patch.object(el.subprocess, 'run') as run:

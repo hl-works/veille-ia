@@ -7,6 +7,7 @@ belge, suisse ou africaine (filtre ACCENTS_EXCLUS).
 from __future__ import annotations
 
 import os
+import hashlib
 import re
 import subprocess
 import tempfile
@@ -202,6 +203,18 @@ def voice_settings_from(cfg: dict) -> dict:
     return out
 
 
+APPROVED_IASTRO_GREETING = Path(__file__).resolve().parents[1] / 'audio/iastro-salutation-fr-v1.mp3'
+APPROVED_IASTRO_GREETING_SHA256 = 'e4c4ce12a66e89d19211c70277eceb8c5971a42c5d238e734fa5088fe52f246c'
+
+
+def approved_iastro_greeting(voice: str) -> Path:
+    if voice != 'Yx2a8qp2EqI9c5i8MzBo':
+        raise ValueError('La salutation validée utilise la voix Philippine')
+    if hashlib.sha256(APPROVED_IASTRO_GREETING.read_bytes()).hexdigest() != APPROVED_IASTRO_GREETING_SHA256:
+        raise ValueError('Salutation iAstro modifiée ou corrompue')
+    return APPROVED_IASTRO_GREETING
+
+
 class ElevenLabsTTS:
     """Fournisseur TTS pour veille.audio (même interface que EdgeTTS)."""
 
@@ -274,7 +287,19 @@ class ElevenLabsTTS:
         output.parent.mkdir(parents=True, exist_ok=True)
         with tempfile.TemporaryDirectory() as directory:
             files = []
+            from .audio import split_iastro_greeting, IASTRO_NAME
             for index, (who, text) in enumerate(runs):
+                if who == 'iastro':
+                    remainder = split_iastro_greeting(text)
+                    if remainder is not None:
+                        # This audio already has the approved +15% tempo/de-esser.
+                        # Never apply them twice or regenerate its pronunciation.
+                        files.append(approved_iastro_greeting(voice))
+                        text = remainder
+                    if IASTRO_NAME.search(text):
+                        raise ValueError('Nom iAstro hors de la salutation enregistrée')
+                    if not text.strip():
+                        continue
                 source = Path(directory) / f'{index}.txt'
                 source.write_text(text, encoding='utf-8')
                 dest = Path(directory) / f'{index}.mp3'

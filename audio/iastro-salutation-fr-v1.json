@@ -1,0 +1,12 @@
+{
+  "phrase": "Salut, c'est iAstro !",
+  "voice": "Philippine - Animation Creator",
+  "voice_id": "Yx2a8qp2EqI9c5i8MzBo",
+  "source": "Montage Débrief du 17 octobre validé par Hugo",
+  "source_sha256": "d83929d293114d4684ffb6f62263de2dc506d9ca5613558c28765b5125329420",
+  "source_start_seconds": 4.55,
+  "source_end_seconds": 6.1,
+  "tempo_already_applied": 1.15,
+  "deesser_already_applied": true,
+  "sha256": "e4c4ce12a66e89d19211c70277eceb8c5971a42c5d238e734fa5088fe52f246c"
+}
