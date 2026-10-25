@@ -16023,5 +16023,109 @@
     "tweet_url": "https://x.com/trq212/status/2113844051938054167",
     "media": false,
     "auteur_x": "@trq212"
+  },
+  {
+    "date": "2026-10-24",
+    "titre_fr": "Explosion de la demande de tokens, les modèles open-weight en tête",
+    "resume_fr": "Selon a16z, le volume de tokens traités sur OpenRouter a été multiplié par ~27 depuis novembre dernier, passant d'environ 6 000 à 165 000 milliards par semaine. Les modèles à poids ouverts gèrent désormais près de 72 % de ce trafic, contre 28 % un an plus tôt.",
+    "tags": [
+      "open-source",
+      "modeles",
+      "recherche"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/a16z/status/2114122274467102926",
+    "media": true,
+    "auteur_x": "@a16z"
+  },
+  {
+    "date": "2026-10-24",
+    "titre_fr": "OCRia-1, nouveau modèle d'analyse de documents",
+    "resume_fr": "Un nouveau modèle, OCRia-1, est présenté comme l'un des meilleurs pour l'extraction et l'analyse de documents (OCR généraliste). Utile pour automatiser le traitement de factures, contrats et paperasse.",
+    "tags": [
+      "modeles",
+      "automatisation"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/jerryjliu0/status/2114006946999402933",
+    "media": true,
+    "auteur_x": "@jerryjliu0"
+  },
+  {
+    "date": "2026-10-24",
+    "titre_fr": "Kling 4 génère des vidéos immobilières cohérentes",
+    "resume_fr": "Le modèle vidéo Kling 4 permettrait de produire des vidéos (ici immobilières) en conservant la cohérence à partir d'images de référence, le tout en une seule génération à partir d'un script préparé à l'avance.",
+    "tags": [
+      "modeles",
+      "produit",
+      "marketing"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/venturetwins/status/2114094246550786520",
+    "media": true,
+    "auteur_x": "@venturetwins"
+  },
+  {
+    "date": "2026-10-24",
+    "titre_fr": "Perplexity ajoute la compétence open-source Impeccable à Computer",
+    "resume_fr": "Perplexity intègre dans son outil Computer une compétence open-source nommée Impeccable, qui audite et corrige une interface (mise en page, typographie, contraste, accessibilité) pour éviter un rendu « généré par IA ». Gratuite jusqu'au 31 octobre, dans la limite de 5 000 crédits par utilisateur.",
+    "tags": [
+      "produit",
+      "no-code"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/AravSrinivas/status/2114021917586014449",
+    "media": false,
+    "auteur_x": "@AravSrinivas"
+  },
+  {
+    "date": "2026-10-24",
+    "titre_fr": "LisanBench met l'accent sur la performance par dollar",
+    "resume_fr": "Un nouveau benchmark, LisanBench, classe les modèles selon leur rapport performance/coût plutôt que la pure performance. Des modèles comme Haiku, Luna et DeepSeek y sont en tête, alors qu'un modèle de pointe aurait coûté 437 $ rien que pour être testé.",
+    "tags": [
+      "modeles",
+      "recherche"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/RamaswmySridhar/status/2114044872835678278",
+    "media": false,
+    "auteur_x": "@RamaswmySridhar"
+  },
+  {
+    "date": "2026-10-24",
+    "titre_fr": "Le matériel électrique, goulot d'étranglement de l'essor de l'IA",
+    "resume_fr": "Selon a16z, la capacité de production américaine d'équipements électriques (transformateurs, appareillage de distribution) a reculé de 9 % depuis 2019, alors que leurs prix bondissent de 69 %. L'alimentation électrique devient un frein majeur à la construction de centres de données.",
+    "tags": [
+      "hardware",
+      "politique-ia"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/a16z/status/2114009072995537108",
+    "media": true,
+    "auteur_x": "@a16z"
+  },
+  {
+    "date": "2026-10-24",
+    "titre_fr": "Un économiste alerte sur l'absence de retombées financières de l'IA hors tech",
+    "resume_fr": "Gary Marcus relaie une note de Torsten Slok (Apollo) selon laquelle l'IA n'aurait pour l'instant produit aucun gain financier mesurable pour les entreprises américaines en dehors du secteur tech : chiffre d'affaires par salarié et marges stables pour le reste du S&P 500. Un point de vue critique à nuancer mais à noter.",
+    "tags": [
+      "politique-ia"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/GaryMarcus/status/2114041475604332851",
+    "media": false,
+    "auteur_x": "@GaryMarcus"
+  },
+  {
+    "date": "2026-10-24",
+    "titre_fr": "Accueil mitigé pour le modèle Kimi 3.1",
+    "resume_fr": "Le nouveau modèle Kimi 3.1 reçoit des réactions plutôt tièdes parmi les observateurs. Nathan Lambert note que l'utilisabilité réelle compte plus que quelques points de benchmark, et que cette version semble décevoir sur ce plan.",
+    "tags": [
+      "modeles"
+    ],
+    "score": 40,
+    "tweet_url": "https://x.com/natolambert/status/2113961148576063760",
+    "media": false,
+    "auteur_x": "@natolambert"
   }
 ]
