@@ -1,0 +1,21 @@
+IASTRO: Salut, c'est iAstro ! Bienvenue dans le flash du Podcast I. A. du vingt-cinq octobre. Restez avec nous, ça va vite.
+
+IASTRO: On commence avec l'open source qui monte.
+VICTORIA: Le laboratoire chinois Moonshot a sorti Kimi K trois point un Pro, un modèle à poids ouverts, librement téléchargeable. Ses performances se rapprochent fortement des meilleurs modèles fermés, avec une API deux à trois fois plus rapide. Fait notable, les données liées aux cyberattaques ont été retirées de la version publique, à cause des restrictions chinoises à l'export.
+
+---
+
+IASTRO: Mais au fait, l'I. A. rapporte-t-elle vraiment ?
+VICTORIA: Un rapport de la maison Apollo affirme que l'I. A. n'a apporté aucun gain financier aux entreprises américaines hors du secteur tech. Chiffre d'affaires par salarié stable, marges stables, pas de hausse de productivité. Et une enquête du New York Times montre un grand écart. Les dirigeants sont satisfaits, les salariés beaucoup plus sceptiques.
+
+---
+
+IASTRO: Côté voix, maintenant.
+VICTORIA: Block, la maison derrière Square et Cash App, a dévoilé Dessa, un modèle vocal entraîné uniquement sur de la parole humaine. Il capte en temps réel les émotions, le sarcasme et les pauses. Et il tourne localement sur un MacBook Pro M quatre Max, sans serveur distant. Il n'est pas encore accessible au public.
+
+---
+
+IASTRO: Et on termine avec deux affaires qui secouent OpenAI.
+VICTORIA: Le FBI explore une piste d'espionnage. Un ingénieur est accusé d'avoir placé un mouchard dans une salle de réunion sécurisée, selon le Wall Street Journal. En parallèle, trois chercheurs en sécurité licenciés affirment n'avoir jamais su par écrit ce qu'ils auraient divulgué. Ils y voient un lien avec leur engagement pour des I. A. plus transparentes.
+
+IASTRO: C'est tout pour ce flash. Les sources sont sur le site de HL Consulting, et on se retrouve dans le format long. À bientôt !
