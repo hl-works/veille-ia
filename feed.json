@@ -16127,5 +16127,78 @@
     "tweet_url": "https://x.com/natolambert/status/2113961148576063760",
     "media": false,
     "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-10-25",
+    "titre_fr": "OCRia-1 : un modèle SOTA pour l'extraction de documents",
+    "resume_fr": "LlamaIndex publie un rapport technique de 37 pages sur OCRia-1, son modèle de parsing de documents présenté comme état de l'art. Il revendique de meilleurs résultats que plusieurs modèles OCR open-weight majeurs et un décodage 2 à 4 fois plus rapide.",
+    "tags": [
+      "modeles",
+      "recherche",
+      "open-source",
+      "automatisation"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/jerryjliu0/status/2114404538652217370",
+    "media": true,
+    "auteur_x": "@jerryjliu0"
+  },
+  {
+    "date": "2026-10-25",
+    "titre_fr": "Interconnects : débat sur Kimi K3.1 et la sécurité des modèles ouverts",
+    "resume_fr": "Le podcast Interconnects revient sur une semaine agitée : la réception mitigée de Kimi K3.1 Pro malgré d'excellents benchmarks, les risques de cybersécurité liés aux modèles en poids ouverts, et la décision d'Anthropic de ne plus recruter de profils juniors.",
+    "tags": [
+      "modeles",
+      "open-source",
+      "politique-ia",
+      "anthropic"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/natolambert/status/2114337845548584983",
+    "media": true,
+    "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-10-25",
+    "titre_fr": "HeyGen HyperFrames : générer une vidéo MP4 à partir d'une description",
+    "resume_fr": "La compétence HyperFrames de HeyGen arrive sur la marketplace de Perplexity Computer : elle transforme la description d'une vidéo en fichier MP4 fini, chaque scène étant du HTML facile à modifier. Les tâches associées sont gratuites jusqu'au 31 octobre dans une certaine limite de crédits.",
+    "tags": [
+      "produit",
+      "marketing",
+      "automatisation"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/AskPerplexity/status/2114424293341942271",
+    "media": true,
+    "auteur_x": "@AskPerplexity"
+  },
+  {
+    "date": "2026-10-25",
+    "titre_fr": "Beeble SwitchX 2 : remplacement d'arrière-plan et relighting vidéo",
+    "resume_fr": "Un nouveau modèle, Beeble SwitchX 2, permet de remplacer l'arrière-plan et de réajuster l'éclairage d'une vidéo avec un rendu jugé très convaincant, y compris sur des scènes complexes à plusieurs personnages.",
+    "tags": [
+      "modeles",
+      "produit",
+      "marketing"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/venturetwins/status/2114436065885077561",
+    "media": true,
+    "auteur_x": "@venturetwins"
+  },
+  {
+    "date": "2026-10-25",
+    "titre_fr": "Claude Opus 5.5 pour générer des sites web distinctifs",
+    "resume_fr": "Ethan Mollick note une nette progression entre Opus 4.8 et Opus 5.5 : la génération d'un site statique au design distinctif, qui demandait auparavant beaucoup de retouches, est désormais largement réalisée par le modèle seul.",
+    "tags": [
+      "anthropic",
+      "modeles",
+      "produit",
+      "no-code"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/emollick/status/2114404221021778347",
+    "media": true,
+    "auteur_x": "@emollick"
   }
 ]
