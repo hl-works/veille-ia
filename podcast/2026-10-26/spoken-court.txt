@@ -1,0 +1,25 @@
+IASTRO: Salut, c'est iAstro ! Bienvenue dans le flash du Podcast I. A. du vingt-six octobre. Installez-vous, on fait le tour de l'actu en quelques minutes.
+
+IASTRO: On commence avec une inquiétude qui monte : la fameuse bulle de l'I. A.
+
+VICTORIA: Les doutes financiers se multiplient. Le New York Times compare carrément l'emballement actuel à la bulle immobilière de deux mille huit, et un économiste d'Apollo affirme que l'I. A. n'a apporté aucun gain financier à la plupart des entreprises hors secteur tech. Autre signe, OpenAI et Anthropic ont baissé le prix de leurs modèles jusqu'à quatre-vingts pour cent en quelques mois.
+
+---
+
+IASTRO: Autre sujet brûlant, l'I. A. qui s'améliore toute seule.
+
+VICTORIA: Le Monde consacre un article à cette auto-amélioration récursive, une I. A. capable d'automatiser la recherche qui la rend plus performante. Certains chercheurs y voient le risque d'une explosion des capacités. Jack Clark, cofondateur d'Anthropic, avance même une prédiction : ça pourrait arriver dès deux mille vingt-sept.
+
+---
+
+IASTRO: Et pendant ce temps, Elon Musk sort le carnet de chèques.
+
+VICTORIA: Musk affirme que SpaceX a bouclé un accord de dette de quarante milliards de dollars pour financer les puces nécessaires à ses ambitions en I. A. Bloomberg nuance quand même : des sources proches du dossier indiquent que les négociations sur les prix seraient encore en cours.
+
+---
+
+IASTRO: On termine avec les modèles ouverts, qui montent en puissance.
+
+VICTORIA: Le patron d'IBM estime désormais qu'ils sont bons et bon marché pour un usage interne en entreprise. Nvidia a de son côté publié en open source un outil qui annote une heure de vidéo de robot pour soixante-douze centimes, au lieu de quatre-vingt-huit dollars avec un modèle propriétaire. Pour une PME, c'est une alternative plus abordable et plus maîtrisable.
+
+IASTRO: Et voilà pour ce flash ! Toutes les sources sont sur le site de HL Consulting, et on se retrouve dans le format long pour creuser tout ça. À très vite !

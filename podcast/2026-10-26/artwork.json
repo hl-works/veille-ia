@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-26",
+  "full": {
+    "seconds": 359,
+    "image": "/assets/podcast/archive/2026-10-26/full-cover-v2.jpg",
+    "image_sha256": "785291b4da017b2236d677c816a54dbd2ce6c97c2f1d17c15213abfdfb6696fd"
+  },
+  "short": {
+    "seconds": 109,
+    "image": "/assets/podcast/archive/2026-10-26/short-cover-v2.jpg",
+    "image_sha256": "83fe789a57b7c4fc272dd6bdaa45080ae525c8535c2d066cd279185874d62d93"
+  }
+}
