@@ -16200,5 +16200,115 @@
     "tweet_url": "https://x.com/emollick/status/2114404221021778347",
     "media": true,
     "auteur_x": "@emollick"
+  },
+  {
+    "date": "2026-10-26",
+    "titre_fr": "OpenAI lance GPT-6.1 Terra, centré sur l'usage d'ordinateur",
+    "resume_fr": "OpenAI présente GPT-6.1 Terra, un modèle plus rapide et moins cher capable de comprendre un écran et d'agir dans les applications pour exécuter des tâches de bureau. L'entreprise met l'accent sur une utilisation autonome de l'ordinateur qui se rapproche du niveau humain en vitesse.",
+    "tags": [
+      "openai",
+      "modeles",
+      "agents",
+      "automatisation"
+    ],
+    "score": 85,
+    "tweet_url": "https://x.com/OpenAI/status/2114780711664398349",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-10-26",
+    "titre_fr": "Anthropic dépose son dossier d'introduction en Bourse (S-1)",
+    "resume_fr": "Anthropic a déposé un formulaire S-1 auprès de la SEC en vue d'une entrée en Bourse au Nasdaq sous le symbole « ANT ». Le document révèle des chiffres inédits (forte croissance du revenu, rétention élevée) mais soulève aussi des débats, notamment l'absence des données du 3e trimestre.",
+    "tags": [
+      "anthropic",
+      "politique-ia"
+    ],
+    "score": 80,
+    "tweet_url": "https://x.com/AnthropicAI/status/2114705042817110293",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-10-26",
+    "titre_fr": "OpenAI annonce trois découvertes scientifiques assistées par IA",
+    "resume_fr": "OpenAI revendique des avancées dans trois domaines : analyse harmonique en mathématiques, théorie de la complexité en informatique et théorie quantique des champs en physique. L'entreprise présente cela comme un signe que l'IA commence à aider la recherche fondamentale.",
+    "tags": [
+      "openai",
+      "recherche"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/gdb/status/2114837059462627533",
+    "media": false,
+    "auteur_x": "@gdb"
+  },
+  {
+    "date": "2026-10-26",
+    "titre_fr": "Cursor publie son Agent SDK",
+    "resume_fr": "Cursor met à disposition un SDK permettant de définir des agents sous forme de code, avec des prompts en Markdown et des outils en TypeScript. Il offre des évaluations intégrées et un déploiement sur infrastructure hébergée ou propre.",
+    "tags": [
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/cursor_ai/status/2114793714531102901",
+    "media": true,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-10-26",
+    "titre_fr": "DeepSeek V4.1 Flash disponible dans Cursor",
+    "resume_fr": "Le modèle DeepSeek V4.1 Flash arrive dans l'éditeur Cursor, avec un bon rapport coût/performance selon le benchmark interne CursorBench (de 0,60 à 0,98 $ par tâche).",
+    "tags": [
+      "modeles",
+      "produit"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/cursor_ai/status/2114839997568405608",
+    "media": true,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-10-26",
+    "titre_fr": "Anthropic élargit Claude pour les associations",
+    "resume_fr": "Anthropic indique que plus de 25 000 organisations à but non lucratif utilisent désormais Claude et déploie un plugin dédié, co-conçu avec une trentaine d'entre elles, pour la collecte de fonds, le marketing et le recrutement.",
+    "tags": [
+      "anthropic",
+      "produit",
+      "marketing"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/claudeai/status/2114780227465338985",
+    "media": false,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-10-26",
+    "titre_fr": "OCRia-1 : un modèle de lecture de tableaux PDF complexes",
+    "resume_fr": "Un nouveau modèle de parsing de documents, OCRia-1, affiche de bons scores pour extraire des tableaux denses et complexes (en-têtes imbriqués, cellules fusionnées) dans des PDF. Il est accessible via LlamaParse.",
+    "tags": [
+      "modeles",
+      "produit",
+      "automatisation"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/jerryjliu0/status/2114856267118494178",
+    "media": true,
+    "auteur_x": "@jerryjliu0"
+  },
+  {
+    "date": "2026-10-26",
+    "titre_fr": "Shopify avance sur la catégorisation automatique des produits",
+    "resume_fr": "Les équipes d'ingénierie de Shopify présentent des travaux visant à résoudre la catégorisation des produits, une étape jugée utile pour accélérer le commerce et faciliter la vie des marchands et des acheteurs.",
+    "tags": [
+      "produit",
+      "commerce",
+      "shopify"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/jessicarhertz/status/2114828143345480179",
+    "media": false,
+    "auteur_x": "@jessicarhertz"
   }
 ]
