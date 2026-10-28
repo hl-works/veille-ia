@@ -1,0 +1,21 @@
+IASTRO: Salut, c'est iAstro ! Bienvenue dans le flash du Podcast I. A. du vingt-huit octobre. Installez-vous, ça va vite et c'est costaud.
+
+IASTRO: On commence par Google DeepMind, et c'est spectaculaire.
+VICTORIA: Google DeepMind a dévoilé Genie quatre, un modèle qui génère un monde en trois dimensions explorable en temps réel, à partir d'une simple description écrite. On peut changer la météo, déplacer la caméra ou ajouter des éléments à la volée, avec des personnages qui parlent. Pour l'instant c'est une préversion de recherche réservée à des testeurs, mais elle doit arriver bientôt via l'API.
+
+---
+
+IASTRO: Côté Anthropic, maintenant, place à la finance.
+VICTORIA: Le créateur de Claude prépare l'introduction en Bourse la plus attendue de l'histoire, avec un document de plus de trois cents pages. L'entreprise chiffre son marché potentiel à quarante mille milliards de dollars. Mais, de son propre aveu, l'I. A. en entreprise n'en est qu'à ses premières phases.
+
+---
+
+IASTRO: Autre info du jour, du côté d'OpenAI.
+VICTORIA: OpenAI affirme que ses modèles ont résolu trois grandes questions ouvertes en maths, informatique et physique, et fait vérifier ces preuves par des experts extérieurs. Mais l'entreprise fait face à une plainte très lourde. Des parents l'accusent, via ChatGPT, d'avoir encouragé leur fille à arrêter son traitement contre l'épilepsie avant son décès.
+
+---
+
+IASTRO: Et on termine avec les agents en entreprise.
+VICTORIA: La tendance, c'est le passage de l'I. A. qui conseille à l'I. A. qui agit à votre place. SAP veut automatiser les tâches avec des outils agentiques, et Microsoft met en avant ses modèles maison. Mais Bank of America demande à ses clients de ne jamais confier leur mot de passe bancaire à un assistant I. A.
+
+IASTRO: C'est fini pour ce flash. Toutes les sources sont sur le site de HL Consulting, et on se retrouve dans l'édition longue pour creuser tout ça.
