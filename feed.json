@@ -16310,5 +16310,127 @@
     "tweet_url": "https://x.com/jessicarhertz/status/2114828143345480179",
     "media": false,
     "auteur_x": "@jessicarhertz"
+  },
+  {
+    "date": "2026-10-27",
+    "titre_fr": "Google DeepMind dévoile Genie 4, son modèle de monde interactif",
+    "resume_fr": "Google DeepMind présente Genie 4, un modèle capable de générer en temps réel des environnements interactifs photoréalistes, avec physique, audio natif et dialogues. Piloté par Gemini, il se déploie d'abord en aperçu de recherche pour testeurs, puis via l'API Gemini et aux abonnés AI Ultra.",
+    "tags": [
+      "google",
+      "modeles",
+      "recherche",
+      "produit"
+    ],
+    "score": 72,
+    "tweet_url": "https://x.com/sundarpichai/status/2115115252690145519",
+    "media": true,
+    "auteur_x": "@sundarpichai"
+  },
+  {
+    "date": "2026-10-27",
+    "titre_fr": "Anthropic dépose son S-1 en vue d'une introduction en bourse",
+    "resume_fr": "Anthropic a déposé un document S-1 de 318 pages, préalable à ce qui serait l'une des plus grandes introductions en bourse du secteur. Le dossier détaille les finances et la stratégie de l'entreprise derrière Claude.",
+    "tags": [
+      "anthropic",
+      "politique-ia"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/jerryjliu0/status/2115136859965956190",
+    "media": true,
+    "auteur_x": "@jerryjliu0"
+  },
+  {
+    "date": "2026-10-27",
+    "titre_fr": "Anthropic étend Claude aux administrations américaines avec 40% de remise",
+    "resume_fr": "Dans le cadre d'un accord OneGov élargi avec la GSA, Anthropic propose Claude aux gouvernements fédéral, étatiques, locaux et tribaux des États-Unis avec une réduction de 40%.",
+    "tags": [
+      "anthropic",
+      "politique-ia",
+      "produit"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/AnthropicAI/status/2115207004293853358",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-10-27",
+    "titre_fr": "Anthropic investit la découverte de médicaments",
+    "resume_fr": "Anthropic détaille des partenariats de recherche avec six organisations pharmaceutiques et a lancé ses propres efforts de découverte de médicaments, illustrant l'usage de Claude dans les différentes étapes du développement.",
+    "tags": [
+      "anthropic",
+      "recherche"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/AnthropicAI/status/2115178675050307942",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-10-27",
+    "titre_fr": "Microsoft : MAI-Image se hisse à la 2e place des modèles d'édition d'images",
+    "resume_fr": "Microsoft annonce que son modèle MAI-Image est désormais classé 2e mondial pour l'édition d'images, devant les solutions de Google, Meta, xAI et OpenAI. Il est accessible via MAI Playground.",
+    "tags": [
+      "modeles",
+      "produit",
+      "marketing"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/mustafasuleyman/status/2115099284224008200",
+    "media": false,
+    "auteur_x": "@mustafasuleyman"
+  },
+  {
+    "date": "2026-10-27",
+    "titre_fr": "Microsoft renforce son modèle de cybersécurité MAI Cyber",
+    "resume_fr": "Mustafa Suleyman indique que l'adoption du modèle MAI Cyber a doublé pour atteindre 50% des utilisateurs en 30 jours, avec une efficacité en tokens améliorée de 20% sans perte de qualité.",
+    "tags": [
+      "modeles",
+      "recherche"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/mustafasuleyman/status/2115129110930628859",
+    "media": true,
+    "auteur_x": "@mustafasuleyman"
+  },
+  {
+    "date": "2026-10-27",
+    "titre_fr": "Replit lance les Cloud Agents pour tout dépôt de code",
+    "resume_fr": "Replit introduit les Cloud Agents, qui permettent d'exécuter n'importe quel codebase et de générer des pull requests directement depuis la plateforme, au-delà des seuls projets natifs Replit.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/amasad/status/2115129060267262190",
+    "media": true,
+    "auteur_x": "@amasad"
+  },
+  {
+    "date": "2026-10-27",
+    "titre_fr": "Perplexity Computer crée un laboratoire de recherche autonome",
+    "resume_fr": "Perplexity met en avant Computer, capable de poursuivre son travail après la fin d'une tâche. En backtests historiques, il aurait développé 604 stratégies affichant au moins 60% de taux de réussite, avec vérification automatique de nouvelles données toutes les 30 minutes.",
+    "tags": [
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/AskPerplexity/status/2115103798901473684",
+    "media": true,
+    "auteur_x": "@AskPerplexity"
+  },
+  {
+    "date": "2026-10-27",
+    "titre_fr": "Vera Health lève 28,5 M$ pour un moteur de recherche médicale",
+    "resume_fr": "La startup Vera Health, issue de Y Combinator, lève une série A de 28,5 M$. Son moteur recherche et note la solidité des preuves médicales avant de répondre, et revendique plus de 800 000 cliniciens utilisateurs dans 190 pays.",
+    "tags": [
+      "produit",
+      "recherche"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/ycombinator/status/2115170881781817353",
+    "media": false,
+    "auteur_x": "@ycombinator"
   }
 ]
