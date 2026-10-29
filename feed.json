@@ -16432,5 +16432,212 @@
     "tweet_url": "https://x.com/ycombinator/status/2115170881781817353",
     "media": false,
     "auteur_x": "@ycombinator"
+  },
+  {
+    "date": "2026-10-28",
+    "titre_fr": "Google lance Gemini 4 Carbon, nouveau modèle frontière",
+    "resume_fr": "Google DeepMind présente Gemini 4 Carbon, seulement deux semaines après Argon. Il se classe n°1 sur l'index Artificial Analysis v5 et excelle en cybersécurité et tâches à long horizon. L'accès est d'abord réservé à des défenseurs cyber de confiance, avant une diffusion plus large.",
+    "tags": [
+      "google",
+      "modeles",
+      "recherche"
+    ],
+    "score": 82,
+    "tweet_url": "https://x.com/sundarpichai/status/2115489219804352921",
+    "media": true,
+    "auteur_x": "@sundarpichai"
+  },
+  {
+    "date": "2026-10-28",
+    "titre_fr": "Alphabet : chiffre d'affaires en forte croissance porté par l'IA",
+    "resume_fr": "Sundar Pichai annonce un rythme de revenus annualisé d'un demi-billion de dollars, avec Google Cloud en hausse de 103%. Les API des modèles maison traitent près de 32 milliards de tokens par minute, et les requêtes commerciales de recherche progressent.",
+    "tags": [
+      "google",
+      "politique-ia"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/sundarpichai/status/2115535455156642066",
+    "media": true,
+    "auteur_x": "@sundarpichai"
+  },
+  {
+    "date": "2026-10-28",
+    "titre_fr": "Microsoft redéfinit le développement logiciel avec GitHub Copilot",
+    "resume_fr": "Lors de GitHub Universe, Microsoft annonce plusieurs nouveautés agentiques : Copilot Fusion (40% plus rapide, jusqu'à 77% moins cher), un harnais Copilot unifié dans Foundry pour des agents longue durée, et Copilot Projects pour orchestrer plusieurs agents.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/satyanadella/status/2115490856685990244",
+    "media": true,
+    "auteur_x": "@satyanadella"
+  },
+  {
+    "date": "2026-10-28",
+    "titre_fr": "Shopify lance le checkout universel sur l'app Shop",
+    "resume_fr": "Shopify déploie un panier et un paiement unifiés entre marques dans l'application Shop. Côté marchands, rien ne change dans leur gestion : chaque vente et client reste le leur, mais ils apparaissent dans davantage de paniers.",
+    "tags": [
+      "shopify",
+      "commerce",
+      "paiement",
+      "vente"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/harleyf/status/2115525582658400627",
+    "media": true,
+    "auteur_x": "@harleyf"
+  },
+  {
+    "date": "2026-10-28",
+    "titre_fr": "Shopify étend le shopping agentique",
+    "resume_fr": "Shopify présente de nouvelles fonctions pour le commerce via agents IA : recherche de catalogue au-delà des boutiques Shopify, Shop Pay utilisable dans les agents, et une compétence transformant les agents en assistants d'achat personnalisés et personnalisables.",
+    "tags": [
+      "shopify",
+      "commerce",
+      "agents",
+      "vente"
+    ],
+    "score": 63,
+    "tweet_url": "https://x.com/ShopifyDevs/status/2115510867924279670",
+    "media": false,
+    "auteur_x": "@ShopifyDevs"
+  },
+  {
+    "date": "2026-10-28",
+    "titre_fr": "Shopify se connecte à tous les assistants IA",
+    "resume_fr": "Shopify annonce des connecteurs vers ChatGPT, Gemini, Claude, Copilot, Perplexity, Grok, Muse et d'autres, avec l'engagement d'ajouter chaque nouvel outil IA. Objectif : rendre les boutiques accessibles aux acheteurs via n'importe quel assistant.",
+    "tags": [
+      "shopify",
+      "commerce",
+      "produit"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/harleyf/status/2115501676874670268",
+    "media": true,
+    "auteur_x": "@harleyf"
+  },
+  {
+    "date": "2026-10-28",
+    "titre_fr": "Mistral ouvre sa Responses API pour les agents",
+    "resume_fr": "Mistral lance en préversion publique une Responses API dédiée à la création d'agents. Chaque réponse renvoie séparément l'answer, le raisonnement et les appels d'outils, ce qui simplifie la gestion des étapes. Elle fonctionne avec tous les modèles chat de Mistral, dont Large 4.",
+    "tags": [
+      "mistral",
+      "agents",
+      "produit"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/MistralAI/status/2115443720371814478",
+    "media": true,
+    "auteur_x": "@MistralAI"
+  },
+  {
+    "date": "2026-10-28",
+    "titre_fr": "Meta ouvre ses modèles Muse à la recherche universitaire",
+    "resume_fr": "Meta soutient cinq universités (Caltech, Ohio State, LSU, Indiana, UTHealth) en science et médecine en leur donnant accès à ses modèles Muse, à des modèles open-weight comme Muse Glimmer, ainsi qu'à ses modèles de vision (SAM, V-JEPA, DINO) et de traduction SeamlessM4T.",
+    "tags": [
+      "meta",
+      "recherche",
+      "modeles"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/AIatMeta/status/2115490919923548307",
+    "media": true,
+    "auteur_x": "@AIatMeta"
+  },
+  {
+    "date": "2026-10-28",
+    "titre_fr": "Perplexity déploie un nouveau mode vocal",
+    "resume_fr": "Perplexity ouvre à tous ses abonnés Pro et Max un nouveau mode vocal sur web et Mac, permettant de piloter plusieurs flux de travail en parallèle à la voix. Il s'appuie sur le modèle gpt-live-1 d'OpenAI.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/AravSrinivas/status/2115476775505658135",
+    "media": true,
+    "auteur_x": "@AravSrinivas"
+  },
+  {
+    "date": "2026-10-28",
+    "titre_fr": "Broccoli lève 52M$ pour ses agents vocaux de services à domicile",
+    "resume_fr": "La startup YC Broccoli, dont les agents IA répondent aux appels des plombiers, chauffagistes et électriciens 24h/24 et réservent directement les rendez-vous, annonce 52M$ en Series A et B. Plus de 1 500 entreprises l'utilisent, avec 2,5 millions de rendez-vous pris.",
+    "tags": [
+      "agents",
+      "service-client",
+      "automatisation"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/ycombinator/status/2115550323607740769",
+    "media": false,
+    "auteur_x": "@ycombinator"
+  },
+  {
+    "date": "2026-10-28",
+    "titre_fr": "L'Utah teste Claude Code dans ses agences publiques",
+    "resume_fr": "L'État de l'Utah a confié Claude Code à 34 développeurs de 10 agences. 80% avaient un environnement fonctionnel en 30 minutes et 71% déclarent avoir économisé plus de 20 heures sur un pilote de quatre semaines.",
+    "tags": [
+      "anthropic",
+      "agents"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/bcherny/status/2115491259381072269",
+    "media": false,
+    "auteur_x": "@bcherny"
+  },
+  {
+    "date": "2026-10-28",
+    "titre_fr": "Replit publie son architecture Agent Habitat pour l'entreprise",
+    "resume_fr": "Replit dévoile Agent Habitat, une architecture sécurisée visant à intégrer des agents IA en entreprise tout en contenant les dégâts en cas d'erreur. L'idée : offrir un cadre borné où les agents travaillent sans risque excessif.",
+    "tags": [
+      "agents",
+      "produit",
+      "automatisation"
+    ],
+    "score": 46,
+    "tweet_url": "https://x.com/amasad/status/2115485095251308740",
+    "media": false,
+    "auteur_x": "@amasad"
+  },
+  {
+    "date": "2026-10-28",
+    "titre_fr": "Particle veut optimiser les modèles open-weight à bas coût",
+    "resume_fr": "Une nouvelle société, Particle (par Suhail), se concentre sur l'optimisation des modèles à poids ouverts pour les rendre plus efficaces en tokens et moins coûteux à servir. Perplexity et Vercel annoncent des partenariats pour distribuer son inférence.",
+    "tags": [
+      "open-source",
+      "produit",
+      "hardware"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/AravSrinivas/status/2115510517871890511",
+    "media": false,
+    "auteur_x": "@AravSrinivas"
+  },
+  {
+    "date": "2026-10-28",
+    "titre_fr": "Anthropic enrichit Claude for Legal",
+    "resume_fr": "Anthropic ajoute à Claude for Legal une galerie d'artefacts prêts à l'emploi pour la revue de contrats, la veille réglementaire, la vérification de citations et plus. On part d'un exemple intégré, on y ajoute ses documents et connecteurs, puis on le partage.",
+    "tags": [
+      "anthropic",
+      "produit"
+    ],
+    "score": 44,
+    "tweet_url": "https://x.com/claudeai/status/2115467192276025500",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-10-28",
+    "titre_fr": "Claude Opus 5.5 progresse nettement en génération de jeux",
+    "resume_fr": "Selon Simon Willison, octobre marque un palier pour les agents de code : Claude Opus 5.5 est désormais capable de construire des jeux vidéo réellement amusants, illustrant les progrès rapides des modèles de codage.",
+    "tags": [
+      "anthropic",
+      "modeles",
+      "agents"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/simonw/status/2115444742595260551",
+    "media": false,
+    "auteur_x": "@simonw"
   }
 ]
