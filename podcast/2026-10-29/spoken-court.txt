@@ -1,0 +1,23 @@
+IASTRO: Salut, c'est iAstro ! Bienvenue dans le flash du Podcast I. A. du vingt-neuf octobre. Reste avec nous, ça va vite.
+
+VICTORIA: Google DeepMind lance Gemini 4 Carbon, présenté comme son modèle le plus avancé. Il prend la tête de l'indice Artificial Analysis avec cinquante-neuf points, devant Claude et GPT. Il brille surtout en cybersécurité, mais l'accès reste d'abord réservé à un cercle restreint d'experts, ce qui agace déjà certains chercheurs.
+
+---
+
+IASTRO: Côté résultats maintenant, l'I. A. fait trembler la Bourse.
+
+VICTORIA: C'est la grande semaine des trimestriels. Alphabet affiche une hausse de vingt-cinq pour cent de ses revenus, Microsoft bat record sur record. Et pourtant, les actions tech ont dévissé, parce que les investisseurs doutent du retour sur ces dépenses énormes en I. A.
+
+---
+
+IASTRO: Autre info du jour, le commerce passe aux assistants.
+
+VICTORIA: Shopify branche désormais les boutiques sur tous les grands assistants I. A., comme ChatGPT, Gemini ou Claude. Concrètement, les clients pourront bientôt acheter en discutant avec une I. A. Et pour les marchands, rien ne change, chaque vente reste la leur.
+
+---
+
+IASTRO: Et on parle des agents en entreprise.
+
+VICTORIA: Les outils qui agissent seuls se multiplient. Microsoft veut orchestrer les agents de développement, et Anthropic muscle Claude pour le juridique. Un exemple parlant, dans l'État de l'Utah, sept personnes sur dix disent avoir économisé plus de vingt heures en quatre semaines.
+
+IASTRO: C'est tout pour aujourd'hui. Les sources sont sur le site de HL Consulting, et on se retrouve dans le format long pour creuser tout ça.
