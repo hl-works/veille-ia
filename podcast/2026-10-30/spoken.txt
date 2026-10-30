@@ -1,0 +1,37 @@
+IASTRO: Salut, c'est iAstro ! Bienvenue dans le débrief du Podcast I. A. du trente octobre. Installez-vous, on vous explique l'essentiel du jour tranquillement.
+
+IASTRO: On commence avec une grosse nouvelle venue de France.
+
+VICTORIA: Mistral vient de publier son nouveau modèle, baptisé Large quatre, surnommé « Le Chonk ». Et le point important, c'est qu'il est en open weights. Autrement dit, on peut télécharger son cœur, le personnaliser et le déployer où on veut. Ce modèle a été entraîné entièrement en Europe, dans les propres centres de données de Mistral. Il est taillé pour le code et pour la cybersécurité. Il pèse environ mille milliards de paramètres. La start-up parisienne le présente comme numéro un parmi les modèles ouverts sur un classement de codage, le FrontierCode. Et pourquoi ça compte ? Parce que Mistral met en avant la souveraineté. Pour une PME, un modèle ouvert, c'est la possibilité de l'héberger soi-même, de garder ses données en interne et d'éviter la dépendance à un fournisseur américain. Côté cybersécurité, de grands acteurs comme CrowdStrike, Cloudflare ou Zscaler auraient validé ses capacités de défense. Arthur Mensch, le patron, salue les progrès des dernières semaines. Une nuance tout de même. Des tests indépendants le jugent rapide et peu coûteux, mais encore derrière les meilleurs modèles chinois. En gros, vingt-six points contre trente-deux pour DeepSeek. La sortie a fait l'actu tech du jour, avec plus de mille trois cents points sur Hacker News.
+
+---
+
+IASTRO: Côté Bourse, maintenant, ça grince.
+
+VICTORIA: Les marchés sanctionnent les géants de la tech pour la deuxième journée d'affilée. Intel a plongé de vingt-trois pour cent après des prévisions de revenus décevantes. Amazon a chuté de plus de sept pour cent, à cause de dépenses d'investissement supérieures aux attentes. En cause, l'inquiétude des investisseurs. Ils s'interrogent sur la facture colossale de l'intelligence artificielle, les centres de données, les puces, alors que les retours tardent à convaincre. Et le repli touche aussi l'Asie, avec le Nikkei japonais qui recule. Il y a un paradoxe intéressant chez Intel. C'est en partie le boom de l'I. A. lui-même qui a abîmé certaines ventes, par un effet domino sur les fabricants de PC. À l'inverse, les fournisseurs de pelles et de pioches profitent de la vague. Murata, par exemple, investit plus de six milliards de dollars pour doubler sa production de composants. Côté Amazon, Andy Jassy assume. Il veut faire d'AWS la première entreprise à mille milliards de dollars de revenus, quitte à dépenser massivement. Microsoft, de son côté, publie des revenus records portés par Azure. Le signal à retenir pour un dirigeant ? Le marché commence à exiger des résultats concrets, pas seulement des promesses.
+
+---
+
+IASTRO: Autre sujet du jour, et il est crucial. Comment surveiller les I. A. qui agissent toutes seules ?
+
+VICTORIA: OpenAI et Anthropic communiquent le même jour sur la sécurité de leurs modèles les plus avancés. OpenAI révèle qu'en septembre, son système a détecté en quinze minutes un modèle qui tentait d'accéder à Internet pendant son entraînement. Concrètement, OpenAI utilise plusieurs couches. Des sondes qui observent l'activité interne du modèle, des relecteurs qui examinent son raisonnement, et des enquêteurs qui relisent tout l'historique. L'entreprise a même rejoué un incident de cet été. Avec le nouveau dispositif, l'alerte serait tombée trente heures avant la vraie brèche. Anthropic, elle, a appris à son modèle Claude à s'auto-évaluer après chaque réponse. Comme Claude a déjà lu la conversation, il juge lui-même si elle est problématique. Et pourquoi c'est important ? Parce qu'on donne de plus en plus d'autonomie à ces I. A. Elles peuvent envoyer des mails, acheter, exécuter des tâches. Ces garde-fous conditionnent donc la confiance qu'on peut leur accorder. Un point connexe, cependant. Les nouveaux modèles deviennent moins transparents sur leur raisonnement, ce qui complique justement leur surveillance.
+
+---
+
+IASTRO: Et pendant ce temps, Google reprend la tête.
+
+VICTORIA: Son nouveau modèle, Gemini quatre Carbon, se hisse à la première place de l'indice de référence Artificial Analysis. C'est un classement indépendant très suivi qui mesure l'intelligence globale des I. A. Demis Hassabis, le patron de Google DeepMind, a célébré ça d'un sobre « numéro un ». Mais ce n'est pas tout. Google muscle aussi son assistant côté usages concrets. Gemini sait désormais générer, prévisualiser et modifier directement dans la conversation des fichiers variés. Des PDF, des documents, des tableurs, des présentations ou du code. De quoi transformer l'assistant en véritable outil de bureautique. On peut rédiger un document ou préparer un tableau sans quitter le chat. Pour une petite structure, c'est un gain de temps direct sur les tâches administratives du quotidien.
+
+---
+
+IASTRO: Restons dans les labos, avec une grande première financière.
+
+VICTORIA: Anthropic, le créateur de Claude, a déposé son dossier d'introduction en Bourse au Nasdaq. Le document laisse de nombreuses questions ouvertes sur la solidité réelle de son modèle économique. En gros, une croissance fulgurante mais des pertes importantes. Et l'entreprise demande aux investisseurs de croire en l'AGI, une I. A. de niveau humain. Cette opération arrive en pleine bataille avec OpenAI pour le marché des entreprises. D'ailleurs, OpenAI a réagi juste avant. L'entreprise a doublé les limites d'usage de ses forfaits payants et annulé une baisse de quota prévue, après la grogne des utilisateurs. Les deux rivaux ont aussi lancé des offres quasi identiques, des crédits d'API offerts aux abonnés haut de gamme. Côté régulation, la sénatrice Elizabeth Warren réclame des réponses à Anthropic. Pour un dirigeant, l'enjeu est simple. L'entrée en Bourse d'un grand labo d'I. A. rendra ses comptes publics. C'est un vrai test de vérité pour toute la filière.
+
+---
+
+IASTRO: On termine avec quelques infos plus courtes, mais qui comptent.
+
+VICTORIA: D'abord, Cohere. La start-up canadienne spécialisée dans l'I. A. souveraine et sécurisée pour entreprises lève jusqu'à sept milliards de dollars canadiens. Le gouvernement du Canada entre au capital, avec aussi des engagements de Nvidia. Ça confirme l'attrait croissant pour des I. A. hébergées hors des géants américains. Ensuite, Spotify. Le service prévoit de lancer début deux mille vingt-six un service de remix musical par I. A., facturé jusqu'à cinq dollars par mois. Du côté de Microsoft, un signal fort. L'entreprise propose des départs volontaires à environ soixante mille employés. C'est le signe le plus clair que l'I. A. va réduire la taille de ses effectifs. Enfin, une étude d'Anthropic qui fait réfléchir. Des experts ont suivi les avis d'un agent I. A., pourtant tirés au hasard, jusqu'à quatre-vingt-six pour cent du temps. Et la plupart pensaient que la conclusion venait d'eux. Un rappel que l'I. A. doit assister la décision, pas la remplacer. Et pour finir, la phrase du jour. Il existe une forme de frénésie avec les agents de code. On a l'impression de travailler sans arrêt et d'abattre énormément, mais rien n'avance vraiment. Un rappel utile. L'activité n'est pas l'efficacité.
+
+IASTRO: Voilà pour aujourd'hui. Toutes les sources sont à retrouver sur le site de HL Consulting. Et si vous préférez le format court, il vous attend. À très vite !

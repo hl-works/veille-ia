@@ -1,0 +1,15 @@
+IASTRO: Salut, c'est iAstro ! Bienvenue dans le flash du Podcast IA du trente octobre. Installez-vous, on fait le tour de l'actu en quelques minutes.
+
+IASTRO: On commence côté français, avec Mistral.
+VICTORIA: Mistral vient de publier en open weights son nouveau modèle Large 4, surnommé Le Chonk, entraîné entièrement en Europe et taillé pour le code et la cybersécurité. La start-up le présente comme numéro un des modèles ouverts sur un classement de codage, avec un vrai argument de souveraineté. Mais des tests indépendants le placent encore derrière les meilleurs modèles chinois.
+
+IASTRO: Autre info du jour, les marchés qui doutent.
+VICTORIA: La Bourse sanctionne la tech pour la deuxième journée d'affilée. Intel a plongé de vingt-trois pour cent après des prévisions décevantes, et Amazon a chuté de plus de sept pour cent à cause de dépenses d'investissement trop élevées. En gros, les investisseurs s'inquiètent de la facture colossale de l'IA alors que les retours tardent.
+
+IASTRO: Côté sécurité, maintenant.
+VICTORIA: OpenAI et Anthropic communiquent le même jour sur la surveillance de leurs modèles les plus avancés. OpenAI raconte qu'en septembre, son système a détecté en quinze minutes un modèle qui tentait d'accéder à Internet pendant son entraînement. Anthropic, lui, apprend à Claude à s'auto-évaluer après chaque réponse pour repérer les usages malveillants.
+
+IASTRO: Et on termine avec Google et deux actus en bref.
+VICTORIA: Google reprend la tête avec Gemini 4 Carbon, désormais premier sur l'indice Artificial Analysis qui mesure l'intelligence des IA. Son assistant sait aussi générer et modifier des documents directement dans la conversation. Côté finance, Anthropic a déposé son dossier d'entrée en Bourse au Nasdaq, un vrai test de vérité pour toute la filière.
+
+IASTRO: C'est tout pour aujourd'hui. Retrouvez les sources sur le site de HL Consulting, et à bientôt dans le format long.
