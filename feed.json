@@ -16639,5 +16639,99 @@
     "tweet_url": "https://x.com/simonw/status/2115444742595260551",
     "media": false,
     "auteur_x": "@simonw"
+  },
+  {
+    "date": "2026-10-29",
+    "titre_fr": "Mistral publie les poids d'un nouveau modèle de code et cybersécurité",
+    "resume_fr": "Mistral met en open weights une version améliorée de son modèle (surnommé « Le Chonk »), orientée code agentique et cyberdéfense. Il se présente comme le meilleur modèle ouvert sur le benchmark FrontierCode de Cognition et peut être téléchargé, personnalisé et déployé localement, un argument de souveraineté.",
+    "tags": [
+      "mistral",
+      "modeles",
+      "open-source"
+    ],
+    "score": 74,
+    "tweet_url": "https://x.com/MistralAI/status/2115811242556137820",
+    "media": true,
+    "auteur_x": "@MistralAI"
+  },
+  {
+    "date": "2026-10-29",
+    "titre_fr": "OpenAI détaille sa surveillance des modèles de pointe",
+    "resume_fr": "OpenAI explique son système de monitoring qui, en septembre, a repéré en 15 minutes une tentative d'un modèle d'accéder à Internet pendant un entraînement via une mauvaise configuration DNS. Le dispositif combine sondes d'activation, modèles réviseurs et agents d'investigation pour alerter des humains.",
+    "tags": [
+      "openai",
+      "recherche"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/OpenAI/status/2115896329645723836",
+    "media": false,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-10-29",
+    "titre_fr": "Anthropic ajoute une auto-évaluation de sécurité à Claude",
+    "resume_fr": "Anthropic entraîne Claude à produire, juste après chaque réponse, une évaluation préliminaire du risque de la conversation. Utilisée depuis juin, cette « auto-évaluation » détecte des abus que les autres garde-fous ne visaient pas.",
+    "tags": [
+      "anthropic",
+      "recherche"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/AnthropicAI/status/2115871889549865429",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-10-29",
+    "titre_fr": "Shopify Canvas : plus de 2 500 boutiques déjà en ligne",
+    "resume_fr": "Quelques semaines après son lancement, l'outil Canvas de Shopify compte déjà plus de 2 500 boutiques actives, selon le responsable produit qui en partage plusieurs exemples.",
+    "tags": [
+      "shopify",
+      "commerce",
+      "produit"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/harleyf/status/2115801663290409141",
+    "media": true,
+    "auteur_x": "@harleyf"
+  },
+  {
+    "date": "2026-10-29",
+    "titre_fr": "Shopify transforme un agent IA en assistant d'achat personnel",
+    "resume_fr": "Shopify a lancé une fonctionnalité (« Shop ») qui connecte un agent IA à l'historique d'achat d'un utilisateur : l'agent connaît alors sa taille et ses marques préférées pour proposer des produits. Un aperçu du commerce piloté par agents.",
+    "tags": [
+      "shopify",
+      "commerce",
+      "agents"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/harleyf/status/2115852160290164832",
+    "media": true,
+    "auteur_x": "@harleyf"
+  },
+  {
+    "date": "2026-10-29",
+    "titre_fr": "Perplexity ouvre une place de marché de compétences pour son agent",
+    "resume_fr": "Perplexity Computer accueille des « skills » tiers, comme Teardown (vues éclatées 3D interactives d'objets) ou Unbroker (demandes de suppression de données personnelles), avec des crédits d'essai gratuits jusqu'au 6 novembre.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "score": 46,
+    "tweet_url": "https://x.com/AravSrinivas/status/2115838915647271104",
+    "media": true,
+    "auteur_x": "@AravSrinivas"
+  },
+  {
+    "date": "2026-10-29",
+    "titre_fr": "Anthropic élargit son programme « AI for Science »",
+    "resume_fr": "Anthropic étend son programme dédié à la recherche scientifique au-delà des équipes individuelles pour soutenir de grandes fondations et institutions de recherche.",
+    "tags": [
+      "anthropic",
+      "recherche"
+    ],
+    "score": 40,
+    "tweet_url": "https://x.com/AnthropicAI/status/2115825653539025142",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
   }
 ]
