@@ -16733,5 +16733,168 @@
     "tweet_url": "https://x.com/AnthropicAI/status/2115825653539025142",
     "media": false,
     "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-10-30",
+    "titre_fr": "Anthropic renomme ses forfaits : Max devient Ultra",
+    "resume_fr": "Anthropic simplifie ses abonnements Claude : l'offre Max 5x devient « Max » (100 $/mois) et Max 20x devient « Ultra » (200 $/mois). La limite de 5 heures est supprimée pour les comptes Ultra vérifiés, les plafonds hebdomadaires restant inchangés.",
+    "tags": [
+      "anthropic",
+      "produit"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/claudeai/status/2116220869479428500",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-10-30",
+    "titre_fr": "Extension Claude Code piégée via la marketplace de Cursor",
+    "resume_fr": "Une version modifiée et malveillante de l'extension Claude Code, diffusée via la marketplace d'extensions de Cursor, a touché jusqu'à 5 000 utilisateurs en installant des portes dérobées. Cursor a retiré puis rétabli sa marketplace et recommande une mise à jour immédiate.",
+    "tags": [
+      "anthropic",
+      "produit",
+      "agents"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/cursor_ai/status/2116074289053175808",
+    "media": false,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-10-30",
+    "titre_fr": "Google fait tourner une TPU en orbite (Projet Suncatcher)",
+    "resume_fr": "Google annonce une étape symbolique pour son Projet Suncatcher : après le lancement d'un satellite prototype, il a envoyé une commande en orbite, démarré la puce TPU embarquée, exécuté un prompt et reçu une réponse — un haïku — sur Terre.",
+    "tags": [
+      "google",
+      "hardware",
+      "recherche"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/sundarpichai/status/2116214866444943853",
+    "media": true,
+    "auteur_x": "@sundarpichai"
+  },
+  {
+    "date": "2026-10-30",
+    "titre_fr": "Premiers retours sur Gemini 4 Carbon",
+    "resume_fr": "Perplexity partage des évaluations précoces de Gemini 4 Carbon de Google, décrit comme le meilleur modèle testé pour la recherche en long format et la qualité des réponses, avec un nouveau record sur le benchmark WANDR. Il arrivera prochainement pour les utilisateurs Perplexity Pro et Max.",
+    "tags": [
+      "google",
+      "modeles",
+      "recherche"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/AravSrinivas/status/2116263856628703247",
+    "media": true,
+    "auteur_x": "@AravSrinivas"
+  },
+  {
+    "date": "2026-10-30",
+    "titre_fr": "OpenAI lance Private Intelligence pour les entreprises",
+    "resume_fr": "OpenAI présente « Private Intelligence », une offre donnant aux entreprises des contrôles renforcés sur leurs données tout en utilisant ses modèles les plus avancés, pensée pour les travaux sensibles et développée avec de gros clients.",
+    "tags": [
+      "openai",
+      "produit"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/OpenAI/status/2116186509384815084",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-10-30",
+    "titre_fr": "Perplexity Computer prend le contrôle de Chrome",
+    "resume_fr": "Les applications Mac et Windows de Perplexity peuvent désormais piloter le navigateur Chrome de l'utilisateur via une nouvelle extension, en utilisant les sites où il est déjà connecté. Exemple cité : transformer les avis d'une entreprise en liste priorisée de corrections et de réponses.",
+    "tags": [
+      "produit",
+      "agents",
+      "service-client"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/AskPerplexity/status/2116183470439620676",
+    "media": true,
+    "auteur_x": "@AskPerplexity"
+  },
+  {
+    "date": "2026-10-30",
+    "titre_fr": "LlamaIndex lance « Extract Max Effort » pour l'extraction documentaire",
+    "resume_fr": "LlamaIndex présente un agent dédié à l'extraction de données sur des documents très complexes (dossiers d'assurance, plans de construction, etc.), revendiquant 61 % d'extraction parfaite sur ExtractBench Pro et un meilleur rapport prix/performance que des combinaisons concurrentes.",
+    "tags": [
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/jerryjliu0/status/2116288817938497574",
+    "media": true,
+    "auteur_x": "@jerryjliu0"
+  },
+  {
+    "date": "2026-10-30",
+    "titre_fr": "Shopify relie les reçus numériques à l'identité client",
+    "resume_fr": "Shopify permet désormais, quand un acheteur paie en magasin et choisit un reçu numérique, d'identifier le client et son achat au sein du réseau Shopify, afin de transformer des clients anonymes en clients fidèles.",
+    "tags": [
+      "shopify",
+      "commerce",
+      "vente"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/harleyf/status/2116236693929951241",
+    "media": true,
+    "auteur_x": "@harleyf"
+  },
+  {
+    "date": "2026-10-30",
+    "titre_fr": "Condé Nast ouvre des collections sur Shop de Shopify",
+    "resume_fr": "Les rédactions de GQ, Vogue, Allure et Architectural Digest créent des collections sur l'application Shop de Shopify, offrant aux marchands du réseau de nouvelles possibilités d'être découverts.",
+    "tags": [
+      "shopify",
+      "commerce",
+      "marketing"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/harleyf/status/2116201233749074098",
+    "media": true,
+    "auteur_x": "@harleyf"
+  },
+  {
+    "date": "2026-10-30",
+    "titre_fr": "Le « rack spread » : prix des GPU en hausse, prix des tokens en baisse",
+    "resume_fr": "Selon a16z, depuis mi-juillet le coût de location des GPU grimpe fortement (B300 +106 %, B200 +66 %) tandis que le prix moyen des tokens chute d'environ 58 %, illustrant un écart croissant entre matériel et services d'inférence.",
+    "tags": [
+      "hardware",
+      "recherche"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/a16z/status/2116267009134694545",
+    "media": true,
+    "auteur_x": "@a16z"
+  },
+  {
+    "date": "2026-10-31",
+    "titre_fr": "Replit lance une offre dédiée au secteur public",
+    "resume_fr": "Replit annonce « Replit for Government », déclinaison de sa plateforme de développement assistée par IA destinée aux administrations.",
+    "tags": [
+      "produit",
+      "no-code"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/amasad/status/2116341851825287476",
+    "media": true,
+    "auteur_x": "@amasad"
+  },
+  {
+    "date": "2026-10-31",
+    "titre_fr": "Anthropic automatise la recherche sur le désalignement subtil",
+    "resume_fr": "Anthropic a chargé des milliers d'agents Claude de contourner un système de surveillance des données d'entraînement. Les agents ont produit des données d'apparence anodine mais enseignant des comportements désalignés, exemples qui pourront servir à améliorer les futurs outils de détection.",
+    "tags": [
+      "anthropic",
+      "recherche"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/AnthropicAI/status/2116349211549843666",
+    "media": true,
+    "auteur_x": "@AnthropicAI"
   }
 ]
