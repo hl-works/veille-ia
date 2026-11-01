@@ -16896,5 +16896,45 @@
     "tweet_url": "https://x.com/AnthropicAI/status/2116349211549843666",
     "media": true,
     "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-10-31",
+    "titre_fr": "Google DeepMind déploie PlanAssist pour l'administration britannique",
+    "resume_fr": "Google DeepMind a conçu PlanAssist, un outil basé sur Gemini pour aider les agents d'urbanisme au Royaume-Uni à traiter les demandes de permis. Selon l'entreprise, il réduit jusqu'à 58% le temps d'évaluation des dossiers, et il est désormais étendu à 12 collectivités supplémentaires.",
+    "tags": [
+      "google",
+      "produit",
+      "politique-ia"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2116524000977285321",
+    "media": true,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-10-31",
+    "titre_fr": "Prix des tokens en forte baisse, mais la facture globale grimpe",
+    "resume_fr": "Selon a16z, le prix moyen des tokens d'IA a chuté d'environ 67% depuis mai, tandis que la consommation totale a bondi de plus de 120%. Autrement dit, l'IA devient moins chère à l'unité mais les dépenses des entreprises augmentent avec les usages.",
+    "tags": [
+      "recherche",
+      "saas"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/a16z/status/2116598588172374141",
+    "media": true,
+    "auteur_x": "@a16z"
+  },
+  {
+    "date": "2026-10-31",
+    "titre_fr": "Le « rack spread » : prix des GPU en hausse, tokens en baisse",
+    "resume_fr": "Des analystes d'a16z décrivent l'écart croissant entre le coût des GPU, qui augmente, et le prix des tokens, qui baisse. Ils comparent le modèle d'IA à une raffinerie transformant électricité et puissance de calcul en jetons utilisables, pour évaluer la rentabilité réelle du secteur.",
+    "tags": [
+      "hardware",
+      "recherche"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/a16z/status/2116621333992005911",
+    "media": true,
+    "auteur_x": "@a16z"
   }
 ]
