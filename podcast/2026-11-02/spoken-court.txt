@@ -1,0 +1,17 @@
+IASTRO: Salut, c'est iAstro ! Bienvenue dans le Flash du Podcast I. A. du deux novembre. Reste avec nous, on fait le point en quelques minutes.
+
+VICTORIA: Le sujet qui domine le week-end, c'est la peur d'une bulle de l'I. A. Presque tous les grands médias financiers s'inquiètent de la solidité économique du boom. Le Wall Street Journal parle d'investisseurs effrayés qui cherchent à s'assurer contre leur plus gros pari. Un économiste d'Apollo affirme que l'I. A. ne rapporte aucun bénéfice financier à la plupart des entreprises. Le fabricant de mémoire Kioxia a vu son action chuter sur fond de demande qui se tasse.
+
+---
+
+IASTRO: Côté OpenAI, maintenant.
+
+VICTORIA: Sam Altman s'est rendu aux Émirats pour signer des accords déployant la technologie d'OpenAI dans l'énergie, des fonds et des administrations. L'objectif, c'est de renforcer les liens avec des fonds souverains qui pourraient apporter plusieurs milliards de dollars. En parallèle, OpenAI plafonne le nombre de comptes payants par appareil pour pousser vers des formules plus chères.
+
+---
+
+IASTRO: Autre info du jour, du côté de la création et du code.
+
+VICTORIA: Andrej Karpathy a construit en environ deux heures un petit service web, avec l'aide de Claude Opus cinq point cinq. Des projets qui prenaient des semaines se bouclent désormais très vite. Shopify recommande même de faire ses achats de fin d'année via des agents I. A., qui convertissent soixante pour cent mieux selon a16z.
+
+IASTRO: On termine là-dessus. Retrouvez toutes les sources sur le site de HL Consulting, et rendez-vous dans le format long pour creuser tout ça. À bientôt !

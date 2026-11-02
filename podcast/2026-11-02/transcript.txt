@@ -1,0 +1,33 @@
+IASTRO: Salut, c'est iAstro ! Bienvenue dans le débrief du Podcast IA du deux novembre. Installe-toi, on fait le tour de l'actu du jour ensemble.
+
+IASTRO: On commence par le sujet qui agite les marchés tout le week-end : la peur d'une bulle IA.
+
+VICTORIA: C'est le thème dominant du moment. La quasi-totalité des grands médias financiers s'inquiètent en chœur de la solidité économique du boom de l'IA. Le Wall Street Journal parle d'investisseurs effrayés qui cherchent à s'assurer contre leur plus gros pari. Le Financial Times prévient que la folie IA ne survivra pas à des taux d'intérêt plus élevés. Et un économiste d'Apollo affirme que l'IA ne rapporte aucun bénéfice financier à la plupart des entreprises. Signe concret, l'action du fabricant de mémoire Kioxia a chuté sur fond de demande qui se tasse.
+
+VICTORIA: Il y a d'autres signaux de nervosité. Le Wall Street Journal pointe aussi les financements croisés entre acteurs de l'IA. En gros, une entreprise qui finance ses propres clients. Ça rappelle de mauvais souvenirs et ça pourrait amplifier la chute en cas de retournement. Le Financial Times estime même que le prix de l'argent est l'épingle qui dégonfle les bulles. Et puis il y a cette mise en garde d'Amjad Masad, de Replit. Les abonnements IA vendus à perte aujourd'hui finiront par être fortement augmentés. Autrement dit, méfiance avant de bâtir son activité sur un tarif trop beau pour durer. Pour un commerçant ou une PME, rien d'alarmant au quotidien. Mais prudence sur les engagements longs et les prix d'appel.
+
+IASTRO: Côté OpenAI, maintenant. L'entreprise avance ses pions aux Émirats.
+
+VICTORIA: Sam Altman s'est rendu aux Émirats arabes unis pour signer une série d'accords. Sa technologie va se déployer dans des entreprises énergétiques, des fonds d'investissement et des administrations locales. C'est Bloomberg qui le rapporte. L'objectif, c'est de renforcer les liens avec un pays dont les fonds souverains pourraient apporter plusieurs milliards de dollars de financement. Et pourquoi ça compte ? Parce qu'OpenAI cherche à lever des sommes colossales pour financer ses infrastructures de calcul.
+
+VICTORIA: En parallèle, l'entreprise resserre la vis côté grand public. D'après The Decoder, OpenAI plafonne désormais le nombre de comptes ChatGPT payants par appareil et par carte bancaire. Le but, c'est de pousser vers des formules plus chères ceux qui cumulaient des abonnements bon marché. Et selon TechCrunch, OpenAI envisagerait de rebaptiser ses centres de données en campus de calcul IA. Parce que les data centers sont très impopulaires auprès des riverains. Concrètement, les géants de l'IA cherchent à monétiser. Attendez-vous à une hausse progressive des tarifs et à une fin des offres très subventionnées.
+
+IASTRO: Et pendant ce temps, la course au calcul bat son plein.
+
+VICTORIA: La bataille des infrastructures fait rage entre géants. Elon Musk affirme que les autres projets de supercalcul n'arrivent pas à atteindre leurs objectifs. Et que SpaceX, lui, atteint déjà les siens. Il présente son entreprise comme en avance sur ses rivaux, sans donner de chiffres précis. De son côté, Sundar Pichai, le patron de Google, a salué de très bons benchmarks. Et surtout une ligne de coût remarquable pour un modèle nommé Carbon. Il ne détaille pas publiquement de quoi il s'agit exactement. Mais le message est clair. La compétition se joue autant sur le prix que sur la puissance brute. Et la bonne nouvelle derrière ce bras de fer ? À performance égale, le coût d'usage des IA continue de baisser.
+
+IASTRO: Autre sujet du jour, et pas des moindres : l'IA et la cybersécurité.
+
+VICTORIA: C'est une arme à double tranchant. D'un côté, l'IA détecte désormais des failles de sécurité à grande échelle. Et la Silicon Valley se démène pour les corriger avant les pirates, raconte le New York Times. De l'autre, la même technologie arme les attaquants. Bloomberg décrit comment les hackers nord-coréens dopent leurs vols de cryptomonnaies grâce à l'IA. Ce collectif est accusé du plus gros casse crypto de l'histoire, et il utilise l'IA pour renflouer les caisses du régime.
+
+VICTORIA: Il y a un chiffre qui donne à réfléchir. Sridhar Ramaswamy, de Snowflake, a mis en ligne une simulation sur cinq ans. Si le code produit augmente de soixante pour cent par an, alors que les failles ne baissent que de dix pour cent, le nombre de nouveaux bugs pourrait grimper de quarante-quatre pour cent par an. À moins que la détection ne progresse spectaculairement. Et le Financial Times publie une enquête sur les brèches de sécurité qui font douter de la maîtrise des labos. Ce que ça change pour vous ? Gardez vos logiciels à jour. Et méfiez-vous des tentatives de hameçonnage de plus en plus crédibles.
+
+IASTRO: Et on termine avec une bonne nouvelle : créer et coder devient accessible à tous.
+
+VICTORIA: La démonstration du week-end vient d'Andrej Karpathy, un ancien d'OpenAI et de Tesla. Il a construit en environ deux heures un petit service web. Avec l'aide de Claude Opus cinq point cinq. Ce service filtre vingt ans de commentaires de Hacker News pour recommander les meilleures vidéos. Il a tout piloté en dialoguant avec l'IA. Il n'a gardé que quelques gestes manuels. Créer une clé d'accès, louer un serveur, acheter un nom de domaine. L'IA a ensuite déployé et sécurisé l'ensemble. Sa conclusion, c'est que beaucoup de projets jadis longs peuvent maintenant se boucler en quelques essais.
+
+VICTORIA: Et il n'est pas seul à le dire. L'investisseur Greg Isenberg prédit que ce modèle marquera le moment où des millions de personnes se mettront à faire des vidéos sans équipe ni montage. Côté souveraineté, Guillermo Rauch, de Vercel, plaide pour posséder son intelligence. Il fait l'éloge des modèles ouverts qui tournent en local. Un thème très vivant chez les passionnés, qui publient des modèles compacts et spécialisés. Du côté du commerce, Tobi Lütke, de Shopify, recommande de faire ses achats de fin d'année via des agents IA. Et le fonds a16z note que les acheteurs amenés par une IA convertissent soixante pour cent mieux que les autres. Concrètement, créer un site, une vidéo ou un petit outil devient accessible sans équipe technique. Une vraie opportunité pour un indépendant ou une PME. À condition de rester vigilant sur la qualité.
+
+VICTORIA: Et pour finir, une jolie image signée Guillermo Rauch. Les rêves des alchimistes étaient donc réels. On a transformé du sable en superintelligence. Une belle formule pour résumer le pari du moment. Qu'il convient quand même de tempérer, au vu des doutes des marchés.
+
+IASTRO: Et voilà pour aujourd'hui. Toutes les sources sont sur le site de HL Consulting. Et pour aller plus loin, retrouve l'autre format du podcast. À très vite !
