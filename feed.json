@@ -16936,5 +16936,101 @@
     "tweet_url": "https://x.com/a16z/status/2116621333992005911",
     "media": true,
     "auteur_x": "@a16z"
+  },
+  {
+    "date": "2026-11-01",
+    "titre_fr": "LlamaParse lance Extract Max Effort pour l'extraction de documents",
+    "resume_fr": "LlamaIndex présente un système d'extraction documentaire qui raisonne en profondeur sur chaque détail visuel de centaines de pages. Il revendique une précision supérieure aux grands modèles agentiques tout en restant moins coûteux.",
+    "tags": [
+      "produit",
+      "automatisation"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/jerryjliu0/status/2116948445533725165",
+    "media": true,
+    "auteur_x": "@jerryjliu0"
+  },
+  {
+    "date": "2026-11-01",
+    "titre_fr": "Les acheteurs envoyés par l'IA convertissent nettement mieux",
+    "resume_fr": "Selon des données partagées par a16z, les visiteurs orientés vers un site par une IA convertissent 60 % de plus, génèrent 53 % de revenu par visite en plus et rebondissent 34 % moins que les autres visiteurs. Un signal pour les e-commerçants.",
+    "tags": [
+      "produit",
+      "commerce",
+      "vente"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/a16z/status/2116974326989857048",
+    "media": true,
+    "auteur_x": "@a16z"
+  },
+  {
+    "date": "2026-11-01",
+    "titre_fr": "Shopify pousse les achats via assistants IA pour les fêtes",
+    "resume_fr": "Tobi Lütke (Shopify) recommande de faire ses achats via des assistants conversationnels cette saison et invite les marchands à activer les « skills » adéquats pour que leur boutique soit accessible à ces agents.",
+    "tags": [
+      "produit",
+      "commerce",
+      "shopify",
+      "agents"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/tobi/status/2116918829536498161",
+    "media": false,
+    "auteur_x": "@tobi"
+  },
+  {
+    "date": "2026-11-01",
+    "titre_fr": "Karpathy bricole une alternative à YouTube avec Claude en quelques heures",
+    "resume_fr": "Andrej Karpathy raconte avoir filtré 43 millions de commentaires Hacker News avec Claude Opus 5.5 pour créer « HackerTube », un service de recommandation de vidéos, en environ deux heures. Il souligne que des projets autrefois longs se montent désormais très vite.",
+    "tags": [
+      "produit",
+      "agents",
+      "anthropic"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/karpathy/status/2116957135661945283",
+    "media": true,
+    "auteur_x": "@karpathy"
+  },
+  {
+    "date": "2026-11-01",
+    "titre_fr": "Perplexity « Computer » génère un globe interactif de l'histoire de la Terre",
+    "resume_fr": "L'outil Computer de Perplexity a construit un globe interactif couvrant 4,5 milliards d'années à partir de 14 jeux de données ouverts, avec son propre moteur animant le mouvement des plaques tectoniques. Démonstration des capacités de génération applicative de l'outil.",
+    "tags": [
+      "produit",
+      "recherche"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/AskPerplexity/status/2116968632890839141",
+    "media": true,
+    "auteur_x": "@AskPerplexity"
+  },
+  {
+    "date": "2026-11-02",
+    "titre_fr": "Particle-1 : un modèle compact et bon marché pour la recherche agentique",
+    "resume_fr": "Selon Garry Tan, le modèle Particle-1 atteint les performances de modèles bien plus gros pour la récupération d'informations en mode agent, à environ 1/23 du prix. Une piste intéressante pour réduire les coûts des agents.",
+    "tags": [
+      "modeles",
+      "agents"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/garrytan/status/2117137390016073977",
+    "media": true,
+    "auteur_x": "@garrytan"
+  },
+  {
+    "date": "2026-11-02",
+    "titre_fr": "Publicités musicales générées par IA en un clic",
+    "resume_fr": "Une démonstration montre la création automatisée de spots publicitaires chantés via l'outil ScaleBot, à partir d'un simple script. Illustration de la banalisation de la production publicitaire par IA.",
+    "tags": [
+      "produit",
+      "marketing",
+      "pub"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/mikefutia/status/2117066665233895495",
+    "media": true,
+    "auteur_x": "@mikefutia"
   }
 ]
