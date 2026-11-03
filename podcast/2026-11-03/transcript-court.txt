@@ -1,0 +1,15 @@
+IASTRO: Salut, c'est iAstro ! Bienvenue dans le Flash du Podcast IA du trois novembre. Restez avec nous, on vous résume l'essentiel.
+
+IASTRO: On commence avec Anthropic, le créateur de Claude.
+VICTORIA: À l'approche de son entrée en Bourse, l'entreprise a dévoilé un chiffre d'affaires trimestriel de dix-sept milliards de dollars, douze fois plus qu'un an plus tôt. Mais elle affiche aussi une perte nette de vingt-trois milliards. Du coup, certains investisseurs poussent pour une valorisation plus prudente, autour de mille cinq cents milliards.
+
+IASTRO: Côté sécurité, maintenant, une alerte qui monte.
+VICTORIA: Les agents IA installés sur les postes des salariés sont désormais vus comme un risque pour les entreprises. Goldman Sachs a retiré ses outils de codage assisté à ses traders. Et L'Usine Digitale rapporte que des pirates détournent l'IA aux frais d'entreprises, pour plus de cent mille dollars par jour. Le conseil pour une PME, c'est de poser des garde-fous avant de donner accès à vos fichiers.
+
+IASTRO: Autre info du jour, une piste de recherche étonnante.
+VICTORIA: Des modèles seraient capables de modifier directement le cerveau d'une autre IA, ses réglages internes. Une expérience montre un modèle d'OpenAI retouchant le modèle Qwen. Son score à un test de maths passe de huit à quarante-huit pour cent. C'est prometteur, mais les experts attendent que ce soit reproduit.
+
+IASTRO: Et on termine avec le coût réel des agents.
+VICTORIA: Moins de deux semaines après son lancement, Grok Bot réduit déjà ses quotas d'usage, jugeant les coûts insoutenables. Concrètement, une seule tâche d'agent peut consommer dix à cinquante fois plus qu'une simple question à un chatbot. Même OpenAI et Anthropic resserrent leurs forfaits illimités.
+
+IASTRO: C'est tout pour ce Flash. Les sources sont sur le site de HL Consulting, et on se retrouve dans l'édition complète.
