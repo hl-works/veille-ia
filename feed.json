@@ -17032,5 +17032,126 @@
     "tweet_url": "https://x.com/mikefutia/status/2117066665233895495",
     "media": true,
     "auteur_x": "@mikefutia"
+  },
+  {
+    "date": "2026-11-02",
+    "titre_fr": "Mistral dévoile Mistral Large 4",
+    "resume_fr": "Mistral présente son nouveau modèle Mistral Large 4, capable à partir d'une courte consigne d'écrire un solveur de chimie quantique, de valider ses résultats et de générer une visualisation 3D. L'annonce met en avant ses compétences en raisonnement scientifique et en code.",
+    "tags": [
+      "mistral",
+      "modeles"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/MistralAI/status/2117229259425038344",
+    "media": true,
+    "auteur_x": "@MistralAI"
+  },
+  {
+    "date": "2026-11-02",
+    "titre_fr": "Shopify relance ses outils WebMCP",
+    "resume_fr": "Shopify réintroduit ses outils WebMCP, un standard qui permet aux agents IA d'interagir directement avec les sites web et boutiques. De quoi faciliter l'automatisation des tâches e-commerce via des assistants IA.",
+    "tags": [
+      "produit",
+      "agents",
+      "commerce",
+      "shopify"
+    ],
+    "score": 64,
+    "tweet_url": "https://x.com/ShopifyDevs/status/2117273015738396830",
+    "media": true,
+    "auteur_x": "@ShopifyDevs"
+  },
+  {
+    "date": "2026-11-02",
+    "titre_fr": "OpenAI lance le benchmark LifeVal",
+    "resume_fr": "OpenAI présente LifeVal, un nouveau référentiel construit à partir des retours de milliers d'utilisateurs de ChatGPT sur les tâches du quotidien les plus utiles : trouver une garde d'enfant, accéder à des services publics ou gérer ses finances. L'entreprise l'utilise pour mesurer et améliorer ses modèles.",
+    "tags": [
+      "openai",
+      "recherche"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/OpenAI/status/2117307611338997846",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-11-02",
+    "titre_fr": "a16z mène un tour de série B pour Tutor Intelligence",
+    "resume_fr": "a16z investit dans Tutor Intelligence, qui déploie des robots polyvalents dans l'industrie et la logistique. Son modèle : facturer à l'heure sans coût initial, avec des téléopérateurs humains (« tutors ») qui entraînent les robots. Objectif : plus de 1 000 robots sous contrat d'ici fin 2027.",
+    "tags": [
+      "hardware",
+      "talents"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/a16z/status/2117287347826110628",
+    "media": true,
+    "auteur_x": "@a16z"
+  },
+  {
+    "date": "2026-11-02",
+    "titre_fr": "Microsoft publie un code de conduite pour l'IA",
+    "resume_fr": "Mustafa Suleyman présente le « Humanist AI Code of Conduct » de Microsoft, qui expose sa vision d'une IA alignée sur les intérêts humains. Il évoque les incidents cyber de l'été comme un avertissement et ouvre une consultation publique pour recueillir des retours.",
+    "tags": [
+      "meta",
+      "politique-ia"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/mustafasuleyman/status/2117288542879805748",
+    "media": false,
+    "auteur_x": "@mustafasuleyman"
+  },
+  {
+    "date": "2026-11-02",
+    "titre_fr": "Anthropic ouvre les candidatures à sa résidence",
+    "resume_fr": "Anthropic ouvre les inscriptions à son programme de résidence rémunéré, destiné aux universitaires, fondateurs techniques et ingénieurs seniors souhaitant travailler sur la sécurité de l'IA. Aucune expérience préalable en apprentissage automatique n'est requise, candidatures jusqu'au 22 novembre.",
+    "tags": [
+      "anthropic",
+      "talents"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/AnthropicAI/status/2117343929960112486",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-11-03",
+    "titre_fr": "Goldman Sachs restreindrait l'usage de Claude Code",
+    "resume_fr": "Selon Replit, les agents IA installés sur les postes des employés deviennent un risque de sécurité pour les entreprises et administrations. Goldman Sachs aurait déjà commencé à restreindre des outils comme Claude Code, une tendance qui se répandrait dans la finance.",
+    "tags": [
+      "anthropic",
+      "agents",
+      "politique-ia"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/amasad/status/2117504072416890937",
+    "media": false,
+    "auteur_x": "@amasad"
+  },
+  {
+    "date": "2026-11-03",
+    "titre_fr": "LlamaIndex se positionne sur l'OCR de documents",
+    "resume_fr": "LlamaIndex se présente désormais comme un laboratoire construisant modèles et agents pour le traitement documentaire. Il revendique des modèles OCR au meilleur rapport précision/coût, dont OCRia-1 (4B) et Extract v2.6, pour numériser et automatiser de gros volumes de documents.",
+    "tags": [
+      "produit",
+      "modeles",
+      "automatisation"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/jerryjliu0/status/2117417321308545290",
+    "media": true,
+    "auteur_x": "@jerryjliu0"
+  },
+  {
+    "date": "2026-11-03",
+    "titre_fr": "OpenAI renforce son bug bounty et ses tests de sécurité",
+    "resume_fr": "OpenAI organise un nouveau sprint de sécurité interne en partenariat avec Cathedral Systems pour tester ses défenses avec ses propres modèles. L'entreprise augmente aussi fortement ses primes, avec jusqu'à 172 000 dollars pour les failles critiques.",
+    "tags": [
+      "openai",
+      "politique-ia"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/OpenAI/status/2117444048227123277",
+    "media": false,
+    "auteur_x": "@OpenAI"
   }
 ]
