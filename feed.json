@@ -17153,5 +17153,123 @@
     "tweet_url": "https://x.com/OpenAI/status/2117444048227123277",
     "media": false,
     "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-11-03",
+    "titre_fr": "Mistral lance Mistral Large 4 en poids ouverts",
+    "resume_fr": "Mistral met à disposition Mistral Large 4, un modèle à 1,05 trillion de paramètres en poids ouverts avec une fenêtre de contexte d'un million de tokens, intégré à sa plateforme Open Math OS pour les équipes approuvées. L'accent est mis sur des modèles ouverts, inspectables et exécutables par la communauté.",
+    "tags": [
+      "mistral",
+      "modeles",
+      "open-source"
+    ],
+    "score": 72,
+    "tweet_url": "https://x.com/MistralAI/status/2117670644506861900",
+    "media": false,
+    "auteur_x": "@MistralAI"
+  },
+  {
+    "date": "2026-11-03",
+    "titre_fr": "OpenAI étend ChatGPT et Codex à l'ingénierie physique",
+    "resume_fr": "OpenAI détaille comment ChatGPT et Codex assistent les ingénieurs dans la conception mécanique, l'électronique et la simulation, y compris pour permettre à des amateurs de prototyper des dispositifs. L'entreprise teste ces usages avec des équipes hardware et des partenaires industriels.",
+    "tags": [
+      "openai",
+      "produit",
+      "hardware"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/OpenAI/status/2117692475775258785",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-11-03",
+    "titre_fr": "Anthropic publie FlashProve pour vérifier l'origine d'une réponse IA",
+    "resume_fr": "Anthropic présente FlashProve, une méthode cryptographique open source permettant de prouver qu'une réponse provient bien d'un modèle donné. Cela peut compliquer le détournement d'une conversation et aider les évaluateurs à vérifier qu'ils testent le même modèle que celui servi aux clients.",
+    "tags": [
+      "anthropic",
+      "recherche",
+      "open-source"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/AnthropicAI/status/2117710942826123294",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-11-03",
+    "titre_fr": "Perplexity Computer automatise la gestion d'une boutique e-commerce",
+    "resume_fr": "Perplexity met en avant Computer, son agent capable de piloter une activité e-commerce de bout en bout : lancement de publicités Meta, campagnes email via Klaviyo et gestion de boutiques Shopify. L'outil vise à boucler la chaîne entre analyse, marketing et ventes.",
+    "tags": [
+      "produit",
+      "agents",
+      "automatisation",
+      "commerce",
+      "shopify",
+      "marketing"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/perplexity_ai/status/2117659447518740960",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-11-03",
+    "titre_fr": "Perplexity ajoute les Agent Plugins à son agent Computer",
+    "resume_fr": "Perplexity introduit les Agent Plugins dans son agent Computer : des bundles regroupant connexions d'applications et compétences, pour travailler à un niveau d'abstraction au-dessus des connecteurs individuels. Il est possible d'importer ses propres plugins depuis GitHub ou un fichier .zip.",
+    "tags": [
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/AravSrinivas/status/2117725519982784940",
+    "media": false,
+    "auteur_x": "@AravSrinivas"
+  },
+  {
+    "date": "2026-11-03",
+    "titre_fr": "Shopify affiche un trimestre record porté par l'IA",
+    "resume_fr": "Shopify annonce 119 milliards de dollars de GMV au T3 (+29,5 %) et 3,7 milliards de revenus (+32 %), avec une marge de free cash flow de 22 %. L'entreprise décrit l'IA comme un vent porteur et positionne les agents IA comme la nouvelle porte d'entrée du commerce.",
+    "tags": [
+      "produit",
+      "agents",
+      "commerce",
+      "shopify",
+      "vente"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/harleyf/status/2117628680977391774",
+    "media": true,
+    "auteur_x": "@harleyf"
+  },
+  {
+    "date": "2026-11-03",
+    "titre_fr": "Vercel ouvre son agent de sécurité à tous les dépôts",
+    "resume_fr": "Vercel commercialise son agent interne de revue de sécurité, qui audite automatiquement chaque ligne de code. Le produit fonctionne même sur des projets non hébergés par Vercel et vise à combler le manque d'équipes de sécurité dans les petites structures.",
+    "tags": [
+      "produit",
+      "agents",
+      "automatisation",
+      "saas"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/rauchg/status/2117734833824948373",
+    "media": false,
+    "auteur_x": "@rauchg"
+  },
+  {
+    "date": "2026-11-03",
+    "titre_fr": "Claude connecte automatiquement les plugins d'entreprise",
+    "resume_fr": "Anthropic ajoute une connexion automatique des plugins d'entreprise dans Claude. Les administrateurs Team et Enterprise les configurent une fois, et les membres de l'équipe sont connectés dès leur première utilisation, sans authentification manuelle plugin par plugin.",
+    "tags": [
+      "anthropic",
+      "produit",
+      "agents"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/bcherny/status/2117693181651542387",
+    "media": false,
+    "auteur_x": "@bcherny"
   }
 ]
