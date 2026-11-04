@@ -1,0 +1,37 @@
+IASTRO: Salut, c'est iAstro ! Bienvenue dans le débrief du Podcast I. A. du quatre novembre. Installez-vous, on vous explique l'essentiel du jour tranquillement.
+
+IASTRO: On commence avec OpenAI, qui veut passer du texte au monde réel.
+
+VICTORIA: OpenAI affirme que son modèle interne, GPT six Astra, a conçu un appareil électronique de zéro. Et ça, en moins d'une semaine. On parle du boîtier, du circuit imprimé, et même du logiciel embarqué. Concrètement, l'entreprise explique comment ChatGPT et Codex accélèrent la conception assistée par ordinateur, le dessin des cartes électroniques et la simulation. Selon le média The Decoder, l'appareil était destiné à l'agent de codage Codex. Mais attention, plusieurs tours de correction ont été nécessaires avant la production. Le modèle ne tenait pas toujours compte des tolérances de fabrication. Greg Brockman, président d'OpenAI, parle d'un ChatGPT pour l'ingénierie physique, ouvert aux amateurs. Et pourquoi c'est important ? Parce que concevoir un petit objet ou un accessoire sur mesure pourrait devenir plus rapide et plus accessible. À nuancer quand même. Ce sont des démonstrations et des modèles internes. Pas encore des produits grand public.
+
+---
+
+IASTRO: Côté France, maintenant, avec Mistral qui renforce ses modèles ouverts.
+
+VICTORIA: Mistral a annoncé Mistral Large quatre. C'est un modèle en poids ouverts. Autrement dit, la communauté peut l'inspecter et l'exécuter librement. Il est disponible pour des équipes approuvées. Pour montrer ce qu'il sait faire, Mistral lui a fait créer une application en trois D. Elle suit en temps réel environ dix-neuf mille satellites et débris en orbite. Le modèle annonce plus de mille milliards de paramètres en poids ouverts. Et une fenêtre de contexte d'un million. En gros, c'est la quantité de texte qu'il peut traiter d'un coup. Cette application, baptisée Orbital Trace, aurait été construite, testée, optimisée et validée par le modèle lui-même. Ce que ça change pour vous ? Des modèles ouverts et puissants, ça veut dire plus de choix. Moins de dépendance à un seul fournisseur américain. Et des coûts potentiellement plus bas pour les entreprises.
+
+---
+
+IASTRO: Et maintenant, un sujet qui inquiète les financiers. La fameuse bulle I. A.
+
+VICTORIA: Les signaux d'alerte se multiplient sur le financement de l'I. A. Le Financial Times évoque les risques économiques de ce boom. Et un vent froid souffle sur le marché du crédit qui finance les centres de données. Sur Hacker News, un article très discuté avance un chiffre énorme. La dette cachée des géants tech liée à l'I. A. aurait bondi de quatre-vingt-dix pour cent en six mois. Soit plus de trois mille milliards de dollars. En parallèle, Canva a annoncé des coupes. Environ vingt-deux pour cent de ses effectifs sont touchés, l'I. A. forçant une remise à plat. Le Financial Times prévient aussi que plus la vague d'investissements dure, plus le choc risque d'être brutal à la fin. Et les investisseurs exigent désormais des rendements plus élevés. Certains constructeurs de centres de données se rabattent même sur de vieux moteurs d'avion pour produire de l'électricité. Faute d'accès au réseau. Ce que ça change pour vous ? Rien d'immédiat. Mais ça rappelle que les promesses de l'I. A. s'accompagnent de montants colossaux et de vraies fragilités.
+
+---
+
+IASTRO: Autre info du jour, avec le commerce qui se réinvente grâce aux agents.
+
+VICTORIA: Shopify a publié un très bon trimestre. Le volume de ventes atteint cent dix-neuf milliards de dollars. C'est une hausse de presque trente pour cent. Son patron, Harley Finkelstein, présente les agents I. A. comme la nouvelle porte d'entrée du commerce. C'est son treizième trimestre d'affilée au-dessus de vingt pour cent de croissance. De son côté, Perplexity pousse son outil Computer pour automatiser une boutique en ligne. Analyse de la concurrence, campagnes d'e-mails, publicités sur Meta et Instagram, et gestion des magasins Shopify. Le tout au même endroit. Aravind Srinivas, de Perplexity, dit voir de nombreux marchands automatiser leurs opérations. Audits, petites applications web, et pilotage des budgets publicitaires. Ce que ça change pour vous ? Pour un commerçant ou une petite entreprise, ces agents promettent de déléguer les tâches répétitives. Mais à tester prudemment sur des cas simples avant d'en dépendre.
+
+---
+
+IASTRO: Côté Google, maintenant, avec un choix qui fait débat dans les écoles.
+
+VICTORIA: Après une enquête du Wall Street Journal, Google a réagi. L'entreprise a d'abord désactivé par défaut son chatbot Gemini et la recherche pour les comptes scolaires d'enfants. Mais voilà le point sensible. Selon le New York Times, les écoles qui bloquent entièrement l'I. A. perdraient aussi l'accès au moteur de recherche Google pour leurs élèves. Et ça, ça place les établissements devant un choix inconfortable. Le sujet a beaucoup fait réagir. La discussion a dépassé six cents points sur Hacker News. Ce que ça change pour vous ? Ce débat illustre la difficulté à encadrer l'I. A. auprès des publics sensibles. Ici, les mineurs. Avec des tensions entre protection, pédagogie et intérêts commerciaux.
+
+---
+
+IASTRO: Et on termine côté sécurité, avec un double enjeu. Prouver l'identité des modèles, et parer les cyberattaques.
+
+VICTORIA: Anthropic a dévoilé un système appelé FlashProve. Il permet de vérifier qu'une réponse provient bien du modèle d'I. A. annoncé. C'est utile pour contrer les détournements de conversation. Ou pour s'assurer qu'un modèle testé est bien celui servi aux clients. Il s'appuie sur des techniques cryptographiques établies. Et le code est publié en libre accès. En toile de fond, le New York Times détaille le piratage de la plateforme crypto Binance. Un braquage de plus de six milliards de dollars a été déjoué. Avec de faux entretiens d'embauche et un outil I. A. interne détourné. Le Financial Times en fait un avertissement. Une cyberattaque I. A. visant une banque serait une question de quand, pas de si. Ce que ça change pour vous ? L'I. A. accélère aussi les cyberattaques. Un bon rappel pour activer l'authentification à plusieurs facteurs et rester prudent. Et pour finir, la phrase du jour. Elle est de Sam Altman, d'OpenAI. Les gens doivent toujours garder le contrôle de l'avenir. Selon lui, l'humanité ne doit jamais céder les commandes à une superintelligence. Quitte à limiter les progrès de l'I. A. Un écho à François Chollet, pour qui le seul futur qui vaille la peine est celui où l'I. A. reste un outil entre les mains des humains.
+
+IASTRO: Et voilà pour aujourd'hui. Toutes les sources sont sur le site de HL Consulting. Et si vous voulez aller plus loin, retrouvez aussi la version complète dans l'autre format. À très vite !

@@ -1,0 +1,25 @@
+IASTRO: Salut, c'est iAstro ! Bienvenue dans le Flash du Podcast I. A. du quatre novembre, installez-vous, on vous raconte l'essentiel en quelques minutes.
+
+IASTRO: On commence avec OpenAI, qui sort du texte pour s'attaquer au monde physique.
+
+VICTORIA: OpenAI affirme que son modèle interne a conçu de zéro un appareil électronique en moins d'une semaine, du boîtier jusqu'au logiciel embarqué. Greg Brockman parle d'un ChatGPT pour l'ingénierie physique, ouvert même aux amateurs. À nuancer tout de même, ce sont des démonstrations internes, pas encore des produits grand public.
+
+---
+
+IASTRO: Côté français maintenant, Mistral muscle ses modèles ouverts.
+
+VICTORIA: Mistral a annoncé Mistral Large quatre, un modèle en poids ouverts, librement inspectable par la communauté. Pour le démontrer, il a construit une application en trois D qui suit en temps réel près de dix-neuf mille satellites et débris en orbite. C'est un signal fort pour l'écosystème européen et pour réduire la dépendance à un seul fournisseur.
+
+---
+
+IASTRO: Parlons argent, parce que la bulle I. A. inquiète de plus en plus.
+
+VICTORIA: Le Financial Times évoque les risques économiques du boom de l'I. A. et un vent froid sur le crédit qui finance les centres de données. Un article repris de Nikkei affirme que la dette cachée des géants tech aurait bondi de quatre-vingt-dix pour cent en six mois. En parallèle, Canva a annoncé des coupes touchant environ vingt-deux pour cent de ses effectifs.
+
+---
+
+IASTRO: Et on termine côté commerce, où l'I. A. devient la nouvelle porte d'entrée des boutiques.
+
+VICTORIA: Shopify a publié un trimestre solide, et son patron présente les agents I. A. comme la nouvelle porte d'entrée du commerce. De son côté, Perplexity pousse un outil pour automatiser une boutique en ligne, des campagnes e-mail aux publicités. Pour une PME, c'est prometteur, mais à tester prudemment sur des cas simples.
+
+IASTRO: C'est fini pour ce Flash, retrouvez toutes les sources sur le site de HL Consulting, et à très vite dans le format long.
