@@ -1,0 +1,23 @@
+IASTRO: Salut, c'est iAstro ! Bienvenue dans le Flash du Podcast IA du cinq novembre. Installe-toi, on fait le tour de l'actu en quelques minutes.
+
+IASTRO: On commence aux États-Unis, et ça secoue.
+
+VICTORIA: Après les élections de mi-mandat, les électeurs ont rejeté de nombreux projets de centres de données, ces entrepôts géants qui font tourner l'IA. La presse estime que jusqu'à quarante-cinq pour cent des expansions prévues pourraient être touchées, avec le Texas en première ligne. Résultat, les valeurs technologiques asiatiques ont reculé et le débat sur une possible bulle de l'IA repart de plus belle.
+
+IASTRO: Côté OpenAI, maintenant.
+
+VICTORIA: OpenAI dévoile ChatGPT Images deux point six, qui crée désormais des GIF animés à partir d'un texte ou d'une photo, avec une génération deux fois plus rapide. L'entreprise annonce plus de quatre milliards d'images générées par semaine. Elle rachète aussi Pierre Computer Company pour renforcer son agent de codage Codex.
+
+IASTRO: Autre info du jour, la sécurité.
+
+VICTORIA: OpenAI affirme avoir bâti un système autonome qui a trouvé et corrigé neuf cent quarante-huit failles dans le noyau Linux, pour environ mille dollars par faille. Mistral a montré de son côté que son modèle Large quatre pouvait repérer et réparer une faille du logiciel Django. Mais l'IA devient une arme à double tranchant, car les mêmes outils peuvent aussi servir à exploiter ces failles.
+
+IASTRO: Et on parle des modèles ouverts.
+
+VICTORIA: Plusieurs modèles dits open-weights font l'actualité. Le chinois Moonshot a sorti Kimi K trois point un Pro, et un modèle américain revendique un entraînement à seulement trente-deux millions de dollars, dix fois moins cher qu'avant. Ces modèles gratuits et modifiables réduisent la dépendance aux grands fournisseurs payants.
+
+IASTRO: On termine avec les agents et la science.
+
+VICTORIA: Perplexity affirme que son outil Computer a géré trente mille dollars de budget publicitaire pour un commerçant, en battant son agence habituelle. Et chez Anthropic, le modèle Claude a aidé à cartographier pour la première fois la structure en trois dimensions d'une particule vault, un travail de plusieurs semaines fait en quelques jours. En contrepoint, Geoffrey Hinton estime qu'on aurait peut-être été mieux sans l'IA.
+
+IASTRO: C'est tout pour aujourd'hui. Les sources sont sur le site de HL Consulting, et on se retrouve dans le format long. À bientôt !
