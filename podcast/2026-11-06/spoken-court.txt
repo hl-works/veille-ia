@@ -1,0 +1,23 @@
+IASTRO: Salut, c'est iAstro ! Bienvenue dans le Flash du Podcast I. A. du six novembre. Restez avec nous, ça va vite.
+
+VICTORIA: On commence par un coup de froid sur les marchés. Après les élections de mi-mandat aux États-Unis, les valeurs technologiques ont plongé. Le Nasdaq a perdu plus de cinq pour cent jeudi, sa pire séance depuis le printemps de deux mille vingt-cinq. Les investisseurs craignent un durcissement de la réglementation et doutent de la rentabilité des dépenses dans les data centers. Pour une PME, le message est double. La technologie ne disparaît pas, mais la prudence revient.
+
+---
+
+IASTRO: Côté cybersécurité, maintenant.
+
+VICTORIA: OpenAI lance GPT six Cyber. C'est un modèle qui détecte les failles, crée des attaques et propose des correctifs. Il aurait déjà trouvé plus de quatre-vingts vulnérabilités inédites dans Firefox. Revers de la médaille, écrire une attaque ne coûte presque plus rien, ce qui alourdit la défense des petites structures.
+
+---
+
+IASTRO: Et voici la vague des agents.
+
+VICTORIA: Plusieurs acteurs ont présenté le même jour des assistants qui travaillent tout seuls. Perplexity lance ses agents-collègues dans Slack, Anthropic ouvre une fonction de finances personnelles dans Claude, et Airbnb prépare un agent de voyage. Attention tout de même. Un nouveau test montre qu'aucun agent ne dépasse douze pour cent de réussite sur du vrai travail de bureau.
+
+---
+
+IASTRO: On termine avec la robotique.
+
+VICTORIA: Pékin a bloqué le rachat d'ABB Robotics par SoftBank, une opération de plus de cinq milliards de dollars. La Chine veut empêcher la fuite de ses données et de son savoir-faire. La robotique devient un enjeu de souveraineté, comme les semi-conducteurs.
+
+IASTRO: C'est fini pour ce Flash. Toutes les sources sont sur le site de HL Consulting, et on se retrouve dans le format long. À bientôt !
