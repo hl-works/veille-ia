@@ -17271,5 +17271,169 @@
     "tweet_url": "https://x.com/bcherny/status/2117693181651542387",
     "media": false,
     "auteur_x": "@bcherny"
+  },
+  {
+    "date": "2026-11-05",
+    "titre_fr": "OpenAI lance GPT-6 Cyber, modèle dédié à la cybersécurité",
+    "resume_fr": "OpenAI présente GPT-6 Cyber, un modèle spécialisé dans la recherche en sécurité, déjà utilisé pour analyser le noyau Linux et par des équipes chez Mozilla, Palo Alto Networks et Cisco. Il est d'abord réservé à des clients sélectionnés via le programme Daybreak Red.",
+    "tags": [
+      "openai",
+      "modeles",
+      "recherche"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/OpenAI/status/2118390190246879554",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-11-05",
+    "titre_fr": "Perplexity lance Teammates, des agents de travail autonomes",
+    "resume_fr": "Perplexity introduit « Teammates », des agents personnels qui exécutent des tâches de façon proactive à partir d'objectifs de haut niveau plutôt que de prompts, et peuvent collaborer entre eux et via Slack. Disponible pour les abonnés Max sur le web.",
+    "tags": [
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 66,
+    "tweet_url": "https://x.com/perplexity_ai/status/2118389326459670825",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-11-05",
+    "titre_fr": "Google met à jour Gemini Omni 1.2 Flash pour la vidéo",
+    "resume_fr": "Google déploie Gemini Omni 1.2 Flash avec génération vidéo jusqu'à 15 secondes, meilleure cohérence des scènes, dialogues plus naturels et un prix réduit de 30 % (0,07 $/seconde en 720p). Disponible dans Flow, Google Vids, l'app Gemini et via l'API.",
+    "tags": [
+      "google",
+      "modeles",
+      "produit",
+      "marketing"
+    ],
+    "score": 63,
+    "tweet_url": "https://x.com/GoogleAI/status/2118389961426874879",
+    "media": true,
+    "auteur_x": "@GoogleAI"
+  },
+  {
+    "date": "2026-11-05",
+    "titre_fr": "Claude ajoute une fonction de finances personnelles",
+    "resume_fr": "Anthropic lance en bêta aux États-Unis « Personal Finance in Claude » : en connectant ses comptes, l'utilisateur peut interroger ses soldes et transactions en langage courant. L'accès est en lecture seule, sans possibilité de déplacer ou investir l'argent.",
+    "tags": [
+      "anthropic",
+      "produit"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/claudeai/status/2118403114890137895",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-11-05",
+    "titre_fr": "Mistral enrichit Studio avec des agents gérés",
+    "resume_fr": "Mistral annonce des agents et applications gérés dans Mistral Studio, avec de nouvelles capacités pour les workflows, connexions entreprise, observabilité et évaluations. L'offre met l'accent sur un déploiement flexible et le contrôle des données.",
+    "tags": [
+      "mistral",
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/MistralAI/status/2118370229466153299",
+    "media": true,
+    "auteur_x": "@MistralAI"
+  },
+  {
+    "date": "2026-11-05",
+    "titre_fr": "Thinking Machines dévoile Inkling 2 Small",
+    "resume_fr": "Thinking Machines lance Inkling 2 Small, un petit modèle qui obtient 31 à l'AA Intelligence Index, en net progrès sur son prédécesseur. Il est disponible pour le fine-tuning et l'inférence sur Tinker, avec une publication prochaine des poids.",
+    "tags": [
+      "modeles",
+      "open-source"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/thinkymachines/status/2118489527362912566",
+    "media": false,
+    "auteur_x": "@thinkymachines"
+  },
+  {
+    "date": "2026-11-05",
+    "titre_fr": "Cursor permet de déployer et partager des apps en ligne",
+    "resume_fr": "Cursor ajoute la possibilité de construire une application fonctionnelle, de configurer une base de données, d'effectuer des vérifications de sécurité et de la déployer via un simple lien partageable, directement depuis l'éditeur.",
+    "tags": [
+      "produit",
+      "no-code",
+      "automatisation"
+    ],
+    "score": 54,
+    "tweet_url": "https://x.com/cursor_ai/status/2118458629091426304",
+    "media": true,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-11-05",
+    "titre_fr": "Meta déploie les avatars temps réel dans l'app Muse",
+    "resume_fr": "Meta commence à déployer aux États-Unis « Muse Realtime Avatar », une technologie qui transforme la voix temps réel de Muse en avatars interactifs et expressifs, permettant des appels et chats vidéo avec l'agent personnel.",
+    "tags": [
+      "meta",
+      "produit"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/AIatMeta/status/2118412135340572850",
+    "media": true,
+    "auteur_x": "@AIatMeta"
+  },
+  {
+    "date": "2026-11-05",
+    "titre_fr": "OpenAI s'associe à JPMorganChase",
+    "resume_fr": "OpenAI annonce un partenariat stratégique avec JPMorganChase pour explorer l'usage de l'IA avancée dans l'entreprise, notamment pour aider les ingénieurs, les équipes de sécurité et renforcer la cybersécurité du système financier.",
+    "tags": [
+      "openai",
+      "politique-ia"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/gdb/status/2118410818933203038",
+    "media": false,
+    "auteur_x": "@gdb"
+  },
+  {
+    "date": "2026-11-05",
+    "titre_fr": "Delaware envisage des entreprises dirigées par des agents IA",
+    "resume_fr": "Une proposition du Delaware permettrait de créer des entités juridiques (« AIC ») dont les affaires quotidiennes seraient gérées par un agent IA plutôt qu'un humain, pouvant posséder des biens et contracter des obligations. Mustafa Suleyman appelle à la prudence.",
+    "tags": [
+      "politique-ia",
+      "agents"
+    ],
+    "score": 57,
+    "tweet_url": "https://x.com/mustafasuleyman/status/2118381163136123019",
+    "media": false,
+    "auteur_x": "@mustafasuleyman"
+  },
+  {
+    "date": "2026-11-05",
+    "titre_fr": "Nvidia présente VFlash pour l'IA physique",
+    "resume_fr": "Jim Fan (Nvidia) dévoile VFlash, un modèle de vision qui produit des sorties géométriques (boîtes englobantes, trajectoires robot) en parallèle plutôt que token par token, offrant un décodage d'actions jusqu'à 12x plus rapide et une meilleure précision. Papier et code ouverts.",
+    "tags": [
+      "recherche",
+      "open-source",
+      "hardware"
+    ],
+    "score": 47,
+    "tweet_url": "https://x.com/DrJimFan/status/2118380813498892301",
+    "media": true,
+    "auteur_x": "@DrJimFan"
+  },
+  {
+    "date": "2026-11-06",
+    "titre_fr": "La valorisation anticipée d'Anthropic reculerait fortement",
+    "resume_fr": "Selon Gary Marcus, la valorisation prospective d'Anthropic serait passée de 2 000 milliards à possiblement 1 000 milliards de dollars en quelques semaines, sur fond d'inquiétudes de marché autour du secteur IA.",
+    "tags": [
+      "anthropic",
+      "politique-ia"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/GaryMarcus/status/2118530396858053050",
+    "media": false,
+    "auteur_x": "@GaryMarcus"
   }
 ]
