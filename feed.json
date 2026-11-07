@@ -17435,5 +17435,101 @@
     "tweet_url": "https://x.com/GaryMarcus/status/2118530396858053050",
     "media": false,
     "auteur_x": "@GaryMarcus"
+  },
+  {
+    "date": "2026-11-06",
+    "titre_fr": "Meta déploie de nouveaux modèles Muse Wonder dans Muse et Meta AI",
+    "resume_fr": "Meta intègre des modèles spécialisés issus de Muse Wonder dans ses assistants Muse et Meta AI. Deux capacités sont mises en avant : « Active Memory » (mieux retenir les informations pertinentes dans le temps) et « Active Focus » (poursuivre un objectif malgré les obstacles), avec une réduction annoncée de 2,4x des oublis d'informations critiques.",
+    "tags": [
+      "meta",
+      "modeles",
+      "produit"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/alexandr_wang/status/2118776727912755478",
+    "media": true,
+    "auteur_x": "@alexandr_wang"
+  },
+  {
+    "date": "2026-11-06",
+    "titre_fr": "Mistral présente Voxtral 3 avec détection de fin de parole",
+    "resume_fr": "Mistral met en avant Voxtral 3, son modèle de transcription vocale, et sa fonction de détection de fin de tour de parole. L'objectif est d'aider les développeurs à créer des interfaces vocales plus réactives sans deviner quand l'utilisateur a fini de parler.",
+    "tags": [
+      "mistral",
+      "modeles",
+      "produit",
+      "service-client"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/MistralAI/status/2118744719870066936",
+    "media": true,
+    "auteur_x": "@MistralAI"
+  },
+  {
+    "date": "2026-11-06",
+    "titre_fr": "Anthropic détaille la mémoire et le « rêve » de Claude",
+    "resume_fr": "Dans un billet technique, Anthropic explique comment Claude utilise un mécanisme de « rêve » pour organiser ce qu'il a appris, corriger ses erreurs et retrouver plus facilement les informations utiles. L'idée est de permettre au modèle d'apprendre de l'expérience.",
+    "tags": [
+      "anthropic",
+      "recherche",
+      "modeles"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/AnthropicAI/status/2118814753154064501",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-11-06",
+    "titre_fr": "DeepMind : des agents IA repèrent des failles dans le RSA 1024 bits",
+    "resume_fr": "Google DeepMind publie des travaux montrant comment des agents IA, guidés par des humains, ont identifié deux faiblesses majeures dans d'anciens systèmes de chiffrement RSA à 1024 bits. Un signal sur l'usage de l'IA pour tester la sécurité cryptographique.",
+    "tags": [
+      "google",
+      "recherche"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2118755418675765656",
+    "media": false,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-11-06",
+    "titre_fr": "OpenAI lance BioBasicsBench pour évaluer les agents en biologie",
+    "resume_fr": "OpenAI, avec la biotech Ligo, présente BioBasicsBench, un référentiel de 100 tâches issues d'expériences réelles pour tester si les agents IA savent interpréter des données de laboratoire, repérer des erreurs et reconnaître quand les preuves sont insuffisantes.",
+    "tags": [
+      "openai",
+      "recherche",
+      "agents"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/OpenAI/status/2118782708767965238",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-11-06",
+    "titre_fr": "La valorisation perçue d'Anthropic chuterait de près de 50 % en un mois",
+    "resume_fr": "Selon Gary Marcus, la valorisation perçue d'Anthropic aurait baissé de près de moitié en un mois, dans un contexte de doutes sur la soutenabilité des valorisations du secteur IA. À prendre avec prudence car il s'agit d'un commentaire critique.",
+    "tags": [
+      "anthropic",
+      "politique-ia"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/GaryMarcus/status/2118815070805282966",
+    "media": false,
+    "auteur_x": "@GaryMarcus"
+  },
+  {
+    "date": "2026-11-06",
+    "titre_fr": "Les startups d'inférence IA sous pression",
+    "resume_fr": "Nathan Lambert estime que les jeunes entreprises spécialisées dans l'inférence sont dans une position difficile : elles doivent sécuriser leurs propres modèles, leur approvisionnement en calcul ou des solutions de post-entraînement face à une concurrence croissante.",
+    "tags": [
+      "politique-ia",
+      "hardware"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/natolambert/status/2118740587666960677",
+    "media": false,
+    "auteur_x": "@natolambert"
   }
 ]
