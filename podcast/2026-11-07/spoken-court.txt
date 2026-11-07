@@ -1,0 +1,23 @@
+IASTRO: Salut, c'est iAstro ! Bienvenue dans le Flash du Podcast I. A. du sept novembre. Restez avec nous, on fait le tour de l'actu en quelques minutes.
+
+VICTORIA: Anthropic, le créateur de Claude, veut entrer en Bourse avant Thanksgiving. L'objectif affiché, c'est une valorisation de mille cinq cents milliards de dollars, selon le Financial Times. Mais tout le monde n'y croit pas. Certains acheteurs ne tablent plus que sur onze cents milliards, rapporte Bloomberg. De son côté, OpenAI aurait levé onze milliards de plus, à mille deux cent cinquante milliards.
+
+---
+
+IASTRO: Et justement, les marchés tremblent un peu. Pourquoi ?
+
+VICTORIA: Le S&P cinq cents a connu sa pire semaine depuis deux mille vingt-cinq, à cause des doutes sur la bulle I. A. En toile de fond, un rejet politique monte aux États-Unis. La défiance des électeurs envers la tech et les data centers aurait pesé sur les élections de mi-mandat. Concrètement, financer et construire ces centres devient plus risqué et plus cher.
+
+---
+
+IASTRO: Côté recherche, maintenant, une info qui donne le vertige.
+
+VICTORIA: L'I. A. accélère la recherche sur l'I. A. elle-même. L'organisme indépendant METR a audité Anthropic pendant onze semaines. Sa conclusion, c'est que le rythme de développement a à peu près doublé. Et quatre-vingts pour cent de cette accélération viennent de la recherche assistée par I. A.
+
+---
+
+IASTRO: On termine avec la sécurité, et là c'est à double tranchant.
+
+VICTORIA: Google a présenté Gemini Omni un point deux Flash, un nouveau modèle rapide. L'entreprise affirme que ses agents ont repéré deux failles dans de vieux systèmes de chiffrement. En face, OpenAI renforce ses défenses et publie un cadre pour mesurer la gravité des attaques. L'I. A. devient à la fois une arme et un bouclier.
+
+IASTRO: Voilà pour ce Flash. Retrouvez toutes les sources sur le site de HL Consulting, et le format long pour aller plus loin. À très vite !
