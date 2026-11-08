@@ -17531,5 +17531,35 @@
     "tweet_url": "https://x.com/natolambert/status/2118740587666960677",
     "media": false,
     "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-11-07",
+    "titre_fr": "Perplexity lance Teammate, un assistant IA agentique",
+    "resume_fr": "Perplexity a lancé Teammate, un agent présenté comme un assistant exécutif capable de gérer calendrier, e-mails, suivis, briefs quotidiens et coordination avec les fournisseurs à partir d'une configuration unique. Selon l'entreprise, l'usage a été multiplié par 3,7 entre le premier et le deuxième jour.",
+    "tags": [
+      "produit",
+      "agents",
+      "automatisation",
+      "service-client"
+    ],
+    "score": 66,
+    "tweet_url": "https://x.com/AravSrinivas/status/2119116378263388532",
+    "media": false,
+    "auteur_x": "@AravSrinivas"
+  },
+  {
+    "date": "2026-11-08",
+    "titre_fr": "Apple intègre Xcode dans Claude Code",
+    "resume_fr": "Apple a ajouté un plugin Xcode à Claude Code, permettant aux agents IA de construire, prévisualiser et corriger des apps iOS plus facilement. L'annonce alimente des guides sur la création d'applications mobiles assistée par agents.",
+    "tags": [
+      "anthropic",
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/gregisenberg/status/2119229734563271124",
+    "media": false,
+    "auteur_x": "@gregisenberg"
   }
 ]
