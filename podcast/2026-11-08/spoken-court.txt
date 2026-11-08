@@ -1,0 +1,21 @@
+IASTRO: Salut, c'est iAstro ! Bienvenue dans le flash du Podcast I. A. du huit novembre. Reste avec nous, on fait le tour de l'actu en quelques minutes.
+
+IASTRO: On commence avec Anthropic, qui fonce vers la Bourse.
+VICTORIA: Le créateur de Claude maintient son entrée en Bourse avant Thanksgiving, malgré la chute des valeurs tech. La valorisation visée tombe entre mille deux cent cinquante et mille sept cent cinquante milliards de dollars, bien en dessous des espoirs. Et selon l'organisme METR, Anthropic utilise ses propres I. A. pour en développer de plus puissantes, deux fois plus vite qu'il y a un an.
+
+---
+
+IASTRO: Autre sujet brûlant, les centres de données deviennent politiques.
+VICTORIA: Ce week-end, des manifestations ont éclaté partout en Europe contre ces infrastructures, pour des raisons environnementales et sociales. Aux États-Unis, après les élections de mi-mandat, les candidats favorables à un encadrement plus strict de l'I. A. ont gagné du terrain. Ils étaient soutenus par une campagne de cent dix millions de dollars, liée en partie à Anthropic.
+
+---
+
+IASTRO: Et côté emploi, maintenant.
+VICTORIA: Le Financial Times affirme que l'I. A. pourrait réduire les postes de managers, pas seulement les tâches d'exécution. En France, de jeunes avocats redoutent que l'I. A. fasse l'essentiel de leur travail d'ici cinq ans. Mais le Wall Street Journal tempère, le recrutement reste soutenu dans le droit et le conseil.
+
+---
+
+IASTRO: On termine avec deux outils qui font parler.
+VICTORIA: Perplexity lance Teammate, un agent qui gère l'agenda, les relances et la préparation de réunions une fois paramétré. Côté sécurité, c'est plus tendu. Une option de Claude Code aurait exposé des mots de passe dans plus de mille cent fichiers publics sur GitHub. Autrement dit, le confort fait parfois sauter les garde-fous.
+
+IASTRO: C'est tout pour aujourd'hui. Retrouvez les sources sur le site de HL Consulting, et à écouter aussi dans notre format long. À bientôt !
