@@ -17561,5 +17561,46 @@
     "tweet_url": "https://x.com/gregisenberg/status/2119229734563271124",
     "media": false,
     "auteur_x": "@gregisenberg"
+  },
+  {
+    "date": "2026-11-08",
+    "titre_fr": "Cursor atteindrait 1 milliard de dollars de revenus annualisés",
+    "resume_fr": "Selon swyx, l'outil de codage assisté par IA Cursor aurait terminé 2025 avec environ 1 milliard de dollars de revenus annualisés, avec une forte croissance côté entreprises. Signe de la maturité commerciale des outils de développement dopés à l'IA.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/swyx/status/2119429305512165838",
+    "media": true,
+    "auteur_x": "@swyx"
+  },
+  {
+    "date": "2026-11-08",
+    "titre_fr": "DrJim Fan annonce une démonstration de robot autonome",
+    "resume_fr": "Jim Fan (NVIDIA) tease une démonstration de robot réel, en temps réel et autonome, filmée sans coupure. Détails attendus très prochainement.",
+    "tags": [
+      "hardware",
+      "recherche"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/DrJimFan/status/2119455465910542552",
+    "media": false,
+    "auteur_x": "@DrJimFan"
+  },
+  {
+    "date": "2026-11-09",
+    "titre_fr": "Mistral utilise Voxtral 3 pour la transcription en temps réel",
+    "resume_fr": "Mistral a déployé son modèle Voxtral 3 Transcribe pour transcrire en direct les conférences de l'AI Engineer Paris, en améliorant la précision grâce aux noms d'intervenants et au vocabulaire technique. La même technologie est proposée pour des événements et applications tiers.",
+    "tags": [
+      "mistral",
+      "produit",
+      "modeles",
+      "automatisation"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/MistralAI/status/2119651192737259701",
+    "media": true,
+    "auteur_x": "@MistralAI"
   }
 ]
