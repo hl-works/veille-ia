@@ -17602,5 +17602,113 @@
     "tweet_url": "https://x.com/MistralAI/status/2119651192737259701",
     "media": true,
     "auteur_x": "@MistralAI"
+  },
+  {
+    "date": "2026-11-09",
+    "titre_fr": "Anthropic lance Claude Fable 5.2 et Mythos 5.2",
+    "resume_fr": "Anthropic a dévoilé deux nouveaux modèles, Fable 5.2 et Mythos 5.2, présentés comme conçus pour les défis techniques ambitieux, avec des progrès en code, raisonnement et vision. Mythos 5.2 serait réservé aux organisations vérifiées. Les premiers testeurs rapportent une forte capacité à mener des travaux longs et autonomes.",
+    "tags": [
+      "anthropic",
+      "modeles",
+      "agents"
+    ],
+    "score": 82,
+    "tweet_url": "https://x.com/claudeai/status/2119867114450268322",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-11-09",
+    "titre_fr": "Meta présente Muse Ember, son plus petit modèle",
+    "resume_fr": "Meta (via Alexandr Wang) a lancé Muse Ember, son modèle le plus compact et économique, destiné aux tâches répétitives d'agents : appels d'outils, extraction, routage, sous-tâches de code et analyse de longs documents. Il offrirait une intelligence proche de Muse Spark 1.3 à un coût nettement inférieur, avec une fenêtre de contexte de 1M de tokens.",
+    "tags": [
+      "meta",
+      "modeles",
+      "agents",
+      "automatisation"
+    ],
+    "score": 76,
+    "tweet_url": "https://x.com/alexandr_wang/status/2119857909098283406",
+    "media": true,
+    "auteur_x": "@alexandr_wang"
+  },
+  {
+    "date": "2026-11-09",
+    "titre_fr": "OpenAI dévoile Control Room pour la sécurité de ses modèles",
+    "resume_fr": "OpenAI a présenté Control Room, un système central qui surveille toutes les charges de travail d'inférence de sa recherche et peut les arrêter en moins de 35 secondes en cas de souci de sécurité. L'outil s'intègre à ses systèmes de détection de désalignement.",
+    "tags": [
+      "openai",
+      "recherche",
+      "politique-ia"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/OpenAI/status/2119913172039868579",
+    "media": false,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-11-09",
+    "titre_fr": "Google déploie quatre systèmes TPU en un an",
+    "resume_fr": "Sundar Pichai met en avant le rythme de Google, qui a sorti quatre systèmes TPU distincts en une seule génération sur un an, grâce à la co-conception matériel-logiciel entre ses ingénieurs et DeepMind.",
+    "tags": [
+      "google",
+      "hardware"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/sundarpichai/status/2119857335871164769",
+    "media": false,
+    "auteur_x": "@sundarpichai"
+  },
+  {
+    "date": "2026-11-09",
+    "titre_fr": "Mistral teste Voxtral Transcribe 3 en transcription temps réel",
+    "resume_fr": "Mistral a utilisé son modèle Voxtral Transcribe 3 pour transcrire en direct toutes les conférences de l'AI Engineer Paris, en améliorant la précision via un biais contextuel (noms d'intervenants, termes techniques).",
+    "tags": [
+      "mistral",
+      "produit"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/MistralAI/status/2119822323838832777",
+    "media": true,
+    "auteur_x": "@MistralAI"
+  },
+  {
+    "date": "2026-11-09",
+    "titre_fr": "Thinking Machines ouvre Inkling 2 Small",
+    "resume_fr": "Thinking Machines rend disponible Inkling 2 Small sur OpenRouter et OpenCode (gratuit un temps limité). Le modèle est entraîné pour le code agentique et les tâches de connaissance.",
+    "tags": [
+      "modeles",
+      "agents"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/thinkymachines/status/2119896225315188993",
+    "media": false,
+    "auteur_x": "@thinkymachines"
+  },
+  {
+    "date": "2026-11-09",
+    "titre_fr": "Claude Fable 5.2 intégré à Cursor, Perplexity et autres outils",
+    "resume_fr": "Le nouveau modèle d'Anthropic arrive rapidement dans les outils tiers : Cursor (où il atteint 60% au CursorBench en effort maximal) ainsi que Perplexity, qui le propose dans Computer et Search pour ses abonnés.",
+    "tags": [
+      "anthropic",
+      "produit",
+      "agents"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/cursor_ai/status/2119880829212172509",
+    "media": true,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-11-10",
+    "titre_fr": "Nuance AI lance un avatar IA conversationnel en temps réel",
+    "resume_fr": "Nuance AI a présenté un avatar IA capable de parler en temps réel avec une latence, un langage corporel et une voix de plus en plus naturels, illustrant les progrès rapides du secteur des avatars synthétiques.",
+    "tags": [
+      "produit"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/venturetwins/status/2119955378209484817",
+    "media": true,
+    "auteur_x": "@venturetwins"
   }
 ]
