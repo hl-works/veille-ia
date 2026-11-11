@@ -17710,5 +17710,203 @@
     "tweet_url": "https://x.com/venturetwins/status/2119955378209484817",
     "media": true,
     "auteur_x": "@venturetwins"
+  },
+  {
+    "date": "2026-11-10",
+    "titre_fr": "Semaine chargée en IA : récap des annonces OpenAI, Anthropic, Meta, Google",
+    "resume_fr": "Tour d'horizon des annonces récentes : profils d'entreprises dans ChatGPT, suite bureautique de Claude, nouveaux modèles Fable 5.2 et Gemini 4 Carbon, puce TPU de Google, IPO d'Anthropic et engagements de Paris sur la sécurité de l'IA.",
+    "tags": [
+      "openai",
+      "anthropic",
+      "google",
+      "meta",
+      "modeles"
+    ],
+    "score": 70,
+    "tweet_url": "https://x.com/rowancheung/status/2120299193868615981",
+    "media": false,
+    "auteur_x": "@rowancheung"
+  },
+  {
+    "date": "2026-11-10",
+    "titre_fr": "OpenAI ouvre les profils d'entreprises dans ChatGPT",
+    "resume_fr": "OpenAI lance en bêta « Businesses in ChatGPT » : les entreprises peuvent revendiquer leur profil, gérer leurs informations et créer un agent pour répondre aux clients. Un équivalent possible du référencement, version chatbot.",
+    "tags": [
+      "openai",
+      "produit",
+      "agents",
+      "commerce",
+      "service-client",
+      "vente"
+    ],
+    "score": 85,
+    "tweet_url": "https://x.com/OpenAI/status/2120216592395174382",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-11-10",
+    "titre_fr": "Google publie Gemini 4 Carbon",
+    "resume_fr": "Google déploie Gemini 4 Carbon, son modèle le plus puissant pour les tâches complexes de longue durée : ingénierie logicielle, cybersécurité, travail de connaissance et science. Disponible via API et pour les abonnés Ultra.",
+    "tags": [
+      "google",
+      "modeles",
+      "agents"
+    ],
+    "score": 80,
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2120219371473617099",
+    "media": true,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-11-10",
+    "titre_fr": "Gemini 4 Carbon vérifie formellement le protocole Signal",
+    "resume_fr": "Google indique avoir utilisé Gemini 4 Carbon avec AlphaProof Code pour prouver mathématiquement le code du protocole Signal, générant plus de 6 millions de lignes de preuves Lean et réduisant des années de vérification à quelques semaines. Résultats open source.",
+    "tags": [
+      "google",
+      "recherche"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/sundarpichai/status/2120207062655549933",
+    "media": true,
+    "auteur_x": "@sundarpichai"
+  },
+  {
+    "date": "2026-11-10",
+    "titre_fr": "Anthropic lance le roadshow de son introduction en bourse",
+    "resume_fr": "Anthropic a ouvert la tournée des investisseurs pour son projet d'IPO, avec une possible cotation dans les prochains jours. L'entreprise aurait aussi franchi son propre seuil de sécurité sur les progrès pilotés par l'IA.",
+    "tags": [
+      "anthropic",
+      "politique-ia"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/AnthropicAI/status/2120117722230968385",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-11-10",
+    "titre_fr": "Claude étend sa suite bureautique",
+    "resume_fr": "Anthropic déploie Claude Whiteboards, Claude Sheets et Claude Data, s'ajoutant à Slides, Design et Docs. Claude se construit progressivement une suite bureautique complète.",
+    "tags": [
+      "anthropic",
+      "produit",
+      "automatisation"
+    ],
+    "score": 64,
+    "tweet_url": "https://x.com/claudeai/status/2120206365759094857",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-11-10",
+    "titre_fr": "Microsoft annonce MAI-Transcribe-2",
+    "resume_fr": "Mustafa Suleyman présente MAI-Transcribe-2, présenté comme le modèle de transcription le plus rapide et le moins cher, à 0,10 $ par heure d'audio, nettement plus rapide que les offres concurrentes.",
+    "tags": [
+      "modeles",
+      "produit"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/mustafasuleyman/status/2120200206272921716",
+    "media": false,
+    "auteur_x": "@mustafasuleyman"
+  },
+  {
+    "date": "2026-11-10",
+    "titre_fr": "Nvidia dévoile GR00T 2 pour la robotique",
+    "resume_fr": "Nvidia présente GR00T 2, un modèle open source pour la robotique fonctionnant entièrement sur le calcul embarqué du robot. Poids, cadre agentique, simulateur et 100 000 heures de données d'entraînement sont publiés.",
+    "tags": [
+      "hardware",
+      "open-source",
+      "recherche"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/DrJimFan/status/2120186651741655428",
+    "media": true,
+    "auteur_x": "@DrJimFan"
+  },
+  {
+    "date": "2026-11-10",
+    "titre_fr": "Google DeepMind présente Gemini Robotics 2.5",
+    "resume_fr": "Google DeepMind annonce Gemini Robotics 2.5, capable d'apprendre des centaines de tâches quotidiennes comme plier le linge, servir des pâtisseries ou trier des pièces automobiles à l'usine.",
+    "tags": [
+      "google",
+      "recherche"
+    ],
+    "score": 56,
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2120169787896525104",
+    "media": true,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-11-10",
+    "titre_fr": "Shopify intègre les profils marchands dans ChatGPT",
+    "resume_fr": "Les marchands Shopify apparaissent déjà dans ChatGPT et peuvent désormais valider leurs informations, suivre comment les acheteurs les trouvent et ajouter leur propre agent pour conseiller les clients. Configuration depuis l'admin, vérification automatique.",
+    "tags": [
+      "produit",
+      "agents",
+      "shopify",
+      "commerce",
+      "service-client"
+    ],
+    "score": 78,
+    "tweet_url": "https://x.com/harleyf/status/2120223791523713519",
+    "media": true,
+    "auteur_x": "@harleyf"
+  },
+  {
+    "date": "2026-11-10",
+    "titre_fr": "Cursor rend ses agents collaboratifs en équipe",
+    "resume_fr": "Cursor refond son espace Projects pour le multijoueur : chaque membre d'équipe et ses agents peuvent désormais travailler ensemble dans un même espace de travail unifié.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/cursor_ai/status/2120295553309565139",
+    "media": true,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-11-10",
+    "titre_fr": "Vercel : un agent de revue de sécurité repère et corrige des failles",
+    "resume_fr": "Moins d'une semaine après son lancement, Vercel Security Review aurait identifié près de 58 000 vulnérabilités, dont plus de 6 000 critiques, et en aurait déjà corrigé plus de 14 000 automatiquement.",
+    "tags": [
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/rauchg/status/2120188488628977819",
+    "media": false,
+    "auteur_x": "@rauchg"
+  },
+  {
+    "date": "2026-11-10",
+    "titre_fr": "Gemini 4 Carbon arrive dans Perplexity",
+    "resume_fr": "Perplexity déploie Gemini 4 Carbon pour ses abonnés Pro et Max, avec possibilité de créer des Teammates persistants. Perplexity le présente comme 2,5x moins cher que Fable 5.2 à capacités comparables sur les tâches de recherche agentique.",
+    "tags": [
+      "produit",
+      "modeles",
+      "agents"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/AravSrinivas/status/2120208455965569262",
+    "media": true,
+    "auteur_x": "@AravSrinivas"
+  },
+  {
+    "date": "2026-11-11",
+    "titre_fr": "Alibaba lance Qwen4 en préversion",
+    "resume_fr": "Alibaba annonce Qwen4, avec son modèle Qwen4-Max disponible en préversion via le Token Plan. L'accent est mis sur le codage, les capacités agentiques et le travail professionnel.",
+    "tags": [
+      "modeles",
+      "open-source",
+      "agents"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/Alibaba_Qwen/status/2120335993643684315",
+    "media": true,
+    "auteur_x": "@Alibaba_Qwen"
   }
 ]
