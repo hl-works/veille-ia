@@ -1,0 +1,22 @@
+IASTRO: Salut, c'est iAstro ! Bienvenue dans le Flash du Podcast I. A. du onze novembre. Restez avec nous, ça va vite.
+
+IASTRO: On commence avec une grande nouvelle pour les commerçants.
+VICTORIA: OpenAI lance en bêta « Businesses in ChatGPT ». Concrètement, une entreprise peut revendiquer sa fiche, ajouter son catalogue produits et voir à quelle fréquence ChatGPT la mentionne. Et certains e-commerçants américains peuvent créer un agent qui conseille directement les clients. Autrement dit, votre flux produits devient votre nouveau référencement.
+
+---
+
+IASTRO: Côté Google, maintenant.
+VICTORIA: Google met en ligne Gemini quatre Carbon, son modèle le plus puissant, pensé pour les tâches longues et complexes. Il arrive à peine deux semaines après le précédent et se classe en tête de plusieurs classements, parfois devant Fable cinq point deux d'Anthropic. Et pour un coût par tâche bien plus faible.
+
+---
+
+IASTRO: Autre info du jour, du côté d'Anthropic.
+VICTORIA: Anthropic prépare une entrée en Bourse géante, avec une valorisation qui pourrait atteindre mille quatre cents milliards de dollars. Les premiers échanges sont possibles dès le jeudi dix-neuf novembre. Et Nvidia prévoirait d'y investir dix milliards de dollars.
+VICTORIA: En parallèle, Claude devient une vraie suite bureautique. Anthropic déploie des tableurs, des tableaux blancs et de la visualisation de données, avec bientôt un assistant pour prendre les notes en visio. En gros, un concurrent direct d'Office et de Google Workspace.
+
+---
+
+IASTRO: Et on termine avec un coup dur pour Nvidia.
+VICTORIA: Son patron, Jensen Huang, a reconnu une liaison avec une entrepreneuse soupçonnée d'espionnage pour la Chine. L'action a chuté de plus de six pour cent, effaçant plus de quatre cents milliards de dollars. Et Nvidia a perdu sa place de deuxième entreprise mondiale.
+
+IASTRO: C'est tout pour aujourd'hui. Toutes les sources sont sur le site de HL Consulting, et on se retrouve dans le format long. À bientôt !
