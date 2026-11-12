@@ -1,0 +1,21 @@
+IASTRO: Salut, c'est iAstro ! Bienvenue dans le flash du Podcast I. A. du douze novembre. Reste avec nous, on fait vite et complet.
+
+IASTRO: On commence par un vrai séisme chez Nvidia.
+VICTORIA: Selon le Wall Street Journal, le conseil d'administration de Nvidia se préparait à révoquer son fondateur, Jensen Huang, en poste depuis trente-trois ans. En cause, la révélation d'une seconde liaison présumée, après une affaire soulevant des questions de sécurité nationale. L'action a chuté de plus de huit pour cent hors séance, et l'entreprise n'a aucun plan de succession officiel.
+
+---
+
+IASTRO: Côté Google, maintenant.
+VICTORIA: Sundar Pichai a dévoilé Gemini Decisions, une API qui ne génère pas de texte mais tranche des questions fermées. Elle traite jusqu'à mille questions d'un coup, à dix centimes le million de mots en entrée, soit environ cinq fois moins cher qu'un modèle léger classique. Concrètement, pour une PME, c'est automatiser des petites décisions répétitives pour quelques centimes.
+
+---
+
+IASTRO: Et on enchaîne avec DeepMind.
+VICTORIA: Demis Hassabis a présenté AlphaGenome deux, un modèle qui prédit l'effet des variations de l'ADN cellule par cellule, pour mieux comprendre les maladies complexes. DeepMind annonce aussi avoir prouvé mathématiquement la sécurité du protocole de messagerie chiffrée Signal, en quatre semaines au lieu de plusieurs années.
+
+---
+
+IASTRO: Autre info du jour, du côté des agents.
+VICTORIA: United Airlines refuse désormais que les assistants I. A. réservent des vols à votre place, invoquant la protection des données et la réglementation. Ça tranche avec le discours des investisseurs, qui parlent d'une économie des agents déjà florissante. Si vous vendez en ligne, la question d'autoriser les I. A. à acheter chez vous va vite devenir concrète.
+
+IASTRO: Voilà pour ce flash. Les sources sont sur le site de HL Consulting, et on se retrouve dans le format long pour creuser tout ça.
