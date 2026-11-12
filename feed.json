@@ -17908,5 +17908,165 @@
     "tweet_url": "https://x.com/Alibaba_Qwen/status/2120335993643684315",
     "media": true,
     "auteur_x": "@Alibaba_Qwen"
+  },
+  {
+    "date": "2026-11-11",
+    "titre_fr": "Google lance l'API Gemini Decisions et le modèle Gemini Decision 1",
+    "resume_fr": "Google introduit un modèle spécialisé dans les choix fermés (oui/non, QCM jusqu'à 255 options, notation par grille), capable de traiter jusqu'à 1000 questions en une seule passe sur du texte, image, audio, vidéo et PDF. Tarif de 0,10 $ par million de tokens en entrée, sans coût de sortie, soit environ 5 fois moins cher que Flash-Lite.",
+    "tags": [
+      "google",
+      "modeles",
+      "produit",
+      "automatisation"
+    ],
+    "score": 72,
+    "tweet_url": "https://x.com/sundarpichai/status/2120581155078729728",
+    "media": true,
+    "auteur_x": "@sundarpichai"
+  },
+  {
+    "date": "2026-11-11",
+    "titre_fr": "Gemini Decision 1 disponible gratuitement dans l'API",
+    "resume_fr": "Logan Kilpatrick détaille la disponibilité du nouveau modèle de décision de Google : support natif de l'image, l'audio, la vidéo et du PDF, fenêtre de contexte de 256K et possibilité de poser 1000 questions. Accessible gratuitement à l'essai dans l'API.",
+    "tags": [
+      "google",
+      "produit",
+      "modeles"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/OfficialLoganK/status/2120581433639198885",
+    "media": true,
+    "auteur_x": "@OfficialLoganK"
+  },
+  {
+    "date": "2026-11-11",
+    "titre_fr": "DeepMind dévoile AlphaGenome 2",
+    "resume_fr": "Google DeepMind annonce AlphaGenome 2, un modèle de séquences ADN qui prédit l'impact de variants génétiques selon les types cellulaires spécifiques. L'outil vise à mieux comprendre les causes de maladies complexes et est disponible pour la recherche académique via une API.",
+    "tags": [
+      "google",
+      "recherche"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/demishassabis/status/2120565316619284734",
+    "media": false,
+    "auteur_x": "@demishassabis"
+  },
+  {
+    "date": "2026-11-11",
+    "titre_fr": "DeepMind prouve formellement la sécurité du protocole de Signal",
+    "resume_fr": "À l'aide de son cadre AlphaProof Code, Google DeepMind affirme avoir mathématiquement vérifié la sécurité du protocole cryptographique de Signal jusqu'au niveau du code, une première pour une IA appliquée à la vérification d'un système protégeant des milliards de messages.",
+    "tags": [
+      "google",
+      "recherche"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2120484246401777737",
+    "media": true,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-11-11",
+    "titre_fr": "Anthropic : mise à jour Claude Fable 5.2",
+    "resume_fr": "Le modèle Claude Fable 5.2 d'Anthropic est désormais disponible dans OpenClaw. Anthropic revendique une génération de sortie jusqu'à 30 % plus rapide que la version 5.1.",
+    "tags": [
+      "anthropic",
+      "modeles"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/openclaw/status/2120550160128467398",
+    "media": true,
+    "auteur_x": "@openclaw"
+  },
+  {
+    "date": "2026-11-11",
+    "titre_fr": "Mistral teste Voxtral Transcribe 3 en transcription temps réel",
+    "resume_fr": "Mistral a utilisé son modèle Voxtral Transcribe 3 pour transcrire en direct les conférences de l'AI Engineer Paris, en améliorant la précision grâce à un biais contextuel (noms des intervenants, termes techniques tirés du programme).",
+    "tags": [
+      "mistral",
+      "produit"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/MistralAI/status/2120489851615084876",
+    "media": true,
+    "auteur_x": "@MistralAI"
+  },
+  {
+    "date": "2026-11-11",
+    "titre_fr": "Nvidia montre GR00T 2 contrôlant des mains robotiques en temps réel",
+    "resume_fr": "Jim Fan présente GR00T 2, modèle de Nvidia pilotant des mains dextres pour réaliser une expérience de laboratoire de chimie de bout en bout, nettoyage compris. La démo est présentée en temps réel, sans accélération vidéo.",
+    "tags": [
+      "hardware",
+      "recherche"
+    ],
+    "score": 56,
+    "tweet_url": "https://x.com/DrJimFan/status/2120540201994846253",
+    "media": true,
+    "auteur_x": "@DrJimFan"
+  },
+  {
+    "date": "2026-11-11",
+    "titre_fr": "Meta accélère k-means de 10 à 45x sur des milliards d'embeddings",
+    "resume_fr": "Meta a publié une optimisation rendant l'algorithme k-means 10 à 45 fois plus rapide sur 10 milliards d'embeddings. Un gain moins médiatisé que les modèles de pointe mais qui pourrait réduire significativement les coûts d'IA en entreprise.",
+    "tags": [
+      "meta",
+      "recherche",
+      "open-source"
+    ],
+    "score": 54,
+    "tweet_url": "https://x.com/RamaswmySridhar/status/2120596943902806252",
+    "media": false,
+    "auteur_x": "@RamaswmySridhar"
+  },
+  {
+    "date": "2026-11-11",
+    "titre_fr": "Fractile mise sur de la DRAM empilée sur le processeur",
+    "resume_fr": "La startup Fractile, soutenue par certains grands labos, tente un pari matériel ambitieux : empiler de la DRAM directement sur le processeur pour répondre aux besoins en bande passante mémoire des modèles d'IA de pointe.",
+    "tags": [
+      "hardware"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/saranormous/status/2120523343896178922",
+    "media": false,
+    "auteur_x": "@saranormous"
+  },
+  {
+    "date": "2026-11-11",
+    "titre_fr": "Beam de Reflection, poids ouverts, gratuit temporairement",
+    "resume_fr": "Beam par Reflection est proposé gratuitement jusqu'au 12 novembre. Il s'agit de poids ouverts américains avec zéro rétention de données.",
+    "tags": [
+      "open-source",
+      "modeles"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/rauchg/status/2120581196363268265",
+    "media": true,
+    "auteur_x": "@rauchg"
+  },
+  {
+    "date": "2026-11-11",
+    "titre_fr": "a16z décrit l'émergence de l'économie des agents (B2A)",
+    "resume_fr": "Selon a16z, les agents IA représentent désormais la majorité du trafic web, écrivent plus de la moitié des nouveaux articles en ligne et génèrent l'essentiel du code mis en production. Les entreprises devront traiter les agents comme des clients à part entière.",
+    "tags": [
+      "agents",
+      "produit",
+      "vente"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/a16z/status/2120564069010931746",
+    "media": true,
+    "auteur_x": "@a16z"
+  },
+  {
+    "date": "2026-11-11",
+    "titre_fr": "Wilson et plusieurs marques de sport arrivent sur Shopify",
+    "resume_fr": "Wilson, ballon officiel de la NFL, NBA, WNBA et de l'US Open, passe sur Shopify, aux côtés de Louisville Slugger, DeMarini, EvoShield et ATEC. Cinq boutiques lancées en moins d'un mois.",
+    "tags": [
+      "commerce",
+      "shopify"
+    ],
+    "score": 44,
+    "tweet_url": "https://x.com/harleyf/status/2120578050811154569",
+    "media": true,
+    "auteur_x": "@harleyf"
   }
 ]
