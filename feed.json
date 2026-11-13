@@ -18068,5 +18068,187 @@
     "tweet_url": "https://x.com/harleyf/status/2120578050811154569",
     "media": true,
     "auteur_x": "@harleyf"
+  },
+  {
+    "date": "2026-11-12",
+    "titre_fr": "Google lance Gemini 4 Hydrogen, un modèle rapide et abordable",
+    "resume_fr": "Google ajoute Hydrogen à sa gamme Gemini 4 : un modèle optimisé pour la vitesse et le coût, destiné au codage quotidien et aux workflows agentiques. Il est déployé sur AI Studio, l'API Gemini, l'app, Search et les abonnements payants, avec quatre niveaux de « réflexion » ajustables.",
+    "tags": [
+      "google",
+      "modeles",
+      "produit"
+    ],
+    "score": 78,
+    "tweet_url": "https://x.com/OfficialLoganK/status/2120940951292268640",
+    "media": true,
+    "auteur_x": "@OfficialLoganK"
+  },
+  {
+    "date": "2026-11-12",
+    "titre_fr": "Anthropic dépose son introduction en Bourse",
+    "resume_fr": "Anthropic a déposé son prospectus d'IPO auprès de la SEC. L'entreprise afficherait environ 17 Md$ de revenus trimestriels, une forte croissance des gros clients, mais aussi des coûts de calcul massifs. Le titre devrait coter sous le symbole $ANT autour du 18 novembre.",
+    "tags": [
+      "anthropic",
+      "politique-ia"
+    ],
+    "score": 80,
+    "tweet_url": "https://x.com/AnthropicAI/status/2120841731302154708",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-11-12",
+    "titre_fr": "Anthropic lance Claude Meetings",
+    "resume_fr": "Claude peut désormais rejoindre un appel vidéo d'équipe et produire en direct des documents, tableaux blancs et autres artefacts pendant la réunion. En bêta sur les plans Team et Enterprise, pour l'instant limité à Google Meet.",
+    "tags": [
+      "anthropic",
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/claudeai/status/2120973994191094179",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-11-12",
+    "titre_fr": "Thinking Machines ouvre les poids d'Inkling 2 Small",
+    "resume_fr": "Thinking Machines publie les poids de son modèle Inkling 2 Small sous licence Apache 2.0 sur Hugging Face, permettant son usage et sa personnalisation libres.",
+    "tags": [
+      "modeles",
+      "open-source",
+      "recherche"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/thinkymachines/status/2120982625582195011",
+    "media": false,
+    "auteur_x": "@thinkymachines"
+  },
+  {
+    "date": "2026-11-12",
+    "titre_fr": "Replit Agent peut acheter pour votre entreprise",
+    "resume_fr": "Replit permet désormais à son agent d'effectuer des achats pour un business, y compris l'acquisition d'espaces publicitaires pour trouver de nouveaux clients.",
+    "tags": [
+      "agents",
+      "produit",
+      "automatisation",
+      "pub"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/amasad/status/2121018020520931712",
+    "media": true,
+    "auteur_x": "@amasad"
+  },
+  {
+    "date": "2026-11-12",
+    "titre_fr": "Perplexity ouvre ses Decision Models v1.3",
+    "resume_fr": "Perplexity publie en open-source ses modèles Decider v1.3 et Decider Flash v1.3, gratuits une semaine sur OpenRouter. Nouveauté : la fonction « locate » qui retrouve un texte décrit avec ses positions, utile pour l'extraction d'entités et la classification à grande échelle.",
+    "tags": [
+      "open-source",
+      "modeles",
+      "agents"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/AravSrinivas/status/2121020114321703210",
+    "media": false,
+    "auteur_x": "@AravSrinivas"
+  },
+  {
+    "date": "2026-11-12",
+    "titre_fr": "Muse (Scale) passe des appels téléphoniques à votre place",
+    "resume_fr": "L'assistant Muse d'Alexandr Wang peut désormais passer des appels à votre place : assurance, câble, administration, réservations. Disponible pour les abonnés payants aux États-Unis.",
+    "tags": [
+      "agents",
+      "produit",
+      "automatisation",
+      "service-client"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/alexandr_wang/status/2120930586827391350",
+    "media": true,
+    "auteur_x": "@alexandr_wang"
+  },
+  {
+    "date": "2026-11-12",
+    "titre_fr": "OpenAI lance deux produits de cybersécurité Daybreak",
+    "resume_fr": "OpenAI dévoile Daybreak Defense Factory et Daybreak Red Team, deux outils visant à mettre des capacités cyber de pointe au service de la défense des entreprises.",
+    "tags": [
+      "openai",
+      "produit"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/gdb/status/2121004237413142656",
+    "media": false,
+    "auteur_x": "@gdb"
+  },
+  {
+    "date": "2026-11-12",
+    "titre_fr": "HubSpot « se refonde » et rappelle Brian Halligan comme CEO",
+    "resume_fr": "Le cofondateur Dharmesh Shah annonce un retour aux sources de HubSpot avec le rappel de Brian Halligan au poste de CEO, remplaçant Yamini Rangan. L'entreprise veut repenser sa plateforme à l'ère de l'IA, évoquant un « Customer Relationship Harness » et un « Headless HubSpot ».",
+    "tags": [
+      "talents",
+      "saas",
+      "marketing"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/dharmesh/status/2120887352486678980",
+    "media": true,
+    "auteur_x": "@dharmesh"
+  },
+  {
+    "date": "2026-11-12",
+    "titre_fr": "Interrogations autour de Jensen Huang et de la direction de Nvidia",
+    "resume_fr": "Plusieurs figures de la tech réagissent à une enquête visant Jensen Huang sur de présumés liens étrangers et des questions de sécurité nationale, évoquant une possible transition à la tête de Nvidia. Les avis divergent entre soutien au fondateur et appels à la responsabilité.",
+    "tags": [
+      "hardware",
+      "politique-ia",
+      "talents"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/AravSrinivas/status/2120891190333607989",
+    "media": false,
+    "auteur_x": "@AravSrinivas"
+  },
+  {
+    "date": "2026-11-12",
+    "titre_fr": "Primer : un agent pédagogique pour créer des simulations en classe",
+    "resume_fr": "Le Generative AI Lab de Wharton publie Primer, un système où un enseignant décrit sa leçon et obtient une simulation jouable pour ses élèves, fondée sur la pédagogie. Code, prompts et article sont ouverts.",
+    "tags": [
+      "recherche",
+      "open-source",
+      "agents"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/emollick/status/2121001056637431873",
+    "media": true,
+    "auteur_x": "@emollick"
+  },
+  {
+    "date": "2026-11-13",
+    "titre_fr": "Tarification de Gemini 4 jugée confuse",
+    "resume_fr": "Des observateurs notent que la grille tarifaire de Gemini 4 manque de clarté : Argon et Carbon ont le même prix au token, Hydrogen n'offre que 25 % de remise, et les prix de Carbon/Argon doubleront le 1er décembre.",
+    "tags": [
+      "google",
+      "modeles"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/simonw/status/2121039423441981444",
+    "media": true,
+    "auteur_x": "@simonw"
+  },
+  {
+    "date": "2026-11-13",
+    "titre_fr": "Un studio publicitaire décline un angle en dizaines de visuels avec GPT Images 2.6",
+    "resume_fr": "Un nouvel outil « explore an angle » génère, à partir d'un angle gagnant et d'une audience, des dizaines de publicités statiques en différents formats et styles visuels, en s'appuyant sur GPT Images 2.6.",
+    "tags": [
+      "marketing",
+      "pub",
+      "produit"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/mikefutia/status/2121034819656176011",
+    "media": true,
+    "auteur_x": "@mikefutia"
   }
 ]
