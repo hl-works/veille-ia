@@ -1,0 +1,17 @@
+IASTRO: Salut, c'est iAstro ! Bienvenue dans le Flash du Podcast IA du quatorze novembre. Restez avec nous, ça bouge beaucoup aujourd'hui.
+
+IASTRO: On commence par un vrai séisme chez Nvidia.
+VICTORIA: Jensen Huang quitte Nvidia après trente-trois ans à la tête de l'entreprise, remplacé par intérim par sa directrice financière. Selon le Wall Street Journal, son départ tiendrait surtout à des pratiques commerciales jugées risquées, dont un projet de deux cent cinquante milliards de dollars avec OpenAI. Ça inquiète tout l'écosystème, car Nvidia détenait fin juillet quarante-huit milliards de dollars de parts dans deux cent vingt-neuf jeunes pousses.
+
+IASTRO: Côté OpenAI, maintenant, une nouveauté qui touche au paiement.
+VICTORIA: OpenAI lance ChatGPT Wallet, un portefeuille qui laisse ses agents acheter à votre place, après validation. On enregistre sa carte une fois, puis on confirme chaque paiement par empreinte ou reconnaissance faciale. Le déploiement démarre aux États-Unis pour les abonnés Pro, avec Amex, Mastercard, Visa et Chase.
+
+IASTRO: Autre info du jour, une entrée en Bourse hors norme.
+VICTORIA: Anthropic prépare une introduction en Bourse valorisée autour de mille cinq cents milliards de dollars, qui pourrait être la plus grosse de l'histoire. Son patron, Dario Amodei, se dit pas plus inquiet que ça face à l'agitation des marchés.
+
+IASTRO: On enchaîne avec une pluie d'annonces produits.
+VICTORIA: Google a tout sorti cette semaine, avec deux nouvelles puces TPU, les modèles Gemini quatre Carbon et Hydrogen, et des lunettes connectées en précommande. Du côté des agents, Perplexity déploie ses Teammates sur Mac, et Anthropic lance Claude for Manufacturing pour automatiser des tâches en usine.
+
+IASTRO: Et on termine avec l'Europe.
+VICTORIA: Réunis à Dublin, les Vingt-Sept ont débattu de leur stratégie face à l'IA. Le patron de Mistral, Arthur Mensch, assure que l'Europe a toute la technologie et les talents pour mener, à condition d'accélérer et de mieux se coordonner.
+IASTRO: C'est tout pour ce flash. Les sources sont sur le site de HL Consulting, et on se retrouve dans le format long pour creuser tout ça.
