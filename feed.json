@@ -18250,5 +18250,175 @@
     "tweet_url": "https://x.com/mikefutia/status/2121034819656176011",
     "media": true,
     "auteur_x": "@mikefutia"
+  },
+  {
+    "date": "2026-11-13",
+    "titre_fr": "Google détaille une semaine de lancements IA",
+    "resume_fr": "Sundar Pichai récapitule les sorties de la semaine chez Google : deux nouveaux TPU de 8e génération, les modèles Gemini 4 Carbon et Hydrogen, Gemini Robotics 2.5, AlphaGenome 2 pour la recherche médicale, une API Gemini Decisions et des lunettes connectées en précommande.",
+    "tags": [
+      "google",
+      "modeles",
+      "produit",
+      "hardware"
+    ],
+    "score": 82,
+    "tweet_url": "https://x.com/sundarpichai/status/2121338095664808238",
+    "media": false,
+    "auteur_x": "@sundarpichai"
+  },
+  {
+    "date": "2026-11-13",
+    "titre_fr": "Anthropic dépose un dossier d'introduction en bourse",
+    "resume_fr": "Anthropic a déposé une déclaration d'enregistrement auprès de la SEC en vue d'une offre publique, accompagnée d'un prospectus. L'annonce s'accompagne d'une discussion entre Dario Amodei et le PDG de JPMorgan Jamie Dimon.",
+    "tags": [
+      "anthropic",
+      "politique-ia"
+    ],
+    "score": 78,
+    "tweet_url": "https://x.com/AnthropicAI/status/2121272083863011714",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-11-13",
+    "titre_fr": "OpenAI lance les achats sécurisés via son agent",
+    "resume_fr": "OpenAI permet d'effectuer des achats depuis son agent en partenariat avec American Express, Mastercard et Visa, un pas de plus vers le commerce piloté par IA.",
+    "tags": [
+      "openai",
+      "agents",
+      "produit",
+      "commerce",
+      "paiement"
+    ],
+    "score": 72,
+    "tweet_url": "https://x.com/gdb/status/2121295213025194172",
+    "media": false,
+    "auteur_x": "@gdb"
+  },
+  {
+    "date": "2026-11-13",
+    "titre_fr": "Perplexity ouvre ses « Teammates » sur Mac",
+    "resume_fr": "Perplexity déploie ses agents « Teammates » dans son application Mac pour les abonnés Max. Ces agents peuvent prendre en charge des tâches comme la QA, le service client, la recherche et le marketing de croissance, seuls ou en coordination.",
+    "tags": [
+      "produit",
+      "agents",
+      "service-client",
+      "marketing"
+    ],
+    "score": 65,
+    "tweet_url": "https://x.com/perplexity_ai/status/2121294533879267683",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-11-13",
+    "titre_fr": "DeepSeek ouvre les fonctions de son app via API",
+    "resume_fr": "DeepSeek rend accessibles via API les capacités de son application : recherche, fichiers, liens, voix, ainsi que des briques autonomes comme l'OCR, la reconnaissance vocale (ASR) et la synthèse vocale (TTS). Un frontend open source est aussi fourni.",
+    "tags": [
+      "produit",
+      "open-source",
+      "modeles"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/deepseek_ai/status/2121247896918253875",
+    "media": false,
+    "auteur_x": "@deepseek_ai"
+  },
+  {
+    "date": "2026-11-13",
+    "titre_fr": "Thinking Machines entraîne Inkling 2 Small en 4 bits natif",
+    "resume_fr": "Thinking Machines détaille l'entraînement d'Inkling 2 Small avec un passage avant en 4 bits natif, du préentraînement aux rollouts de RL, sur des GPU Nvidia GB300. L'une des optimisations ayant ramené le préentraînement de plusieurs semaines à 68 heures.",
+    "tags": [
+      "recherche",
+      "modeles",
+      "hardware"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/miramurati/status/2121358640418635989",
+    "media": false,
+    "auteur_x": "@miramurati"
+  },
+  {
+    "date": "2026-11-13",
+    "titre_fr": "Google DeepMind publie les jeux de données de WeatherNext 3",
+    "resume_fr": "Google DeepMind met en libre accès PARDIG et SatWeave, les jeux de données qui sous-tendent son modèle météo WeatherNext 3, pour aider chercheurs et développeurs à construire des applications climatiques.",
+    "tags": [
+      "google",
+      "open-source",
+      "recherche"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2121229774865527097",
+    "media": true,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-11-13",
+    "titre_fr": "Premières publicités affichées dans ChatGPT",
+    "resume_fr": "Un utilisateur rapporte avoir vu sa première publicité servie dans ChatGPT, signe du déploiement d'un modèle publicitaire au sein de l'assistant d'OpenAI.",
+    "tags": [
+      "openai",
+      "produit",
+      "pub"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/saranormous/status/2121355728183284216",
+    "media": true,
+    "auteur_x": "@saranormous"
+  },
+  {
+    "date": "2026-11-13",
+    "titre_fr": "LlamaIndex publie ParseBench-2 pour évaluer l'OCR",
+    "resume_fr": "LlamaIndex sort ParseBench-2, un banc d'essai open source comparant 40 outils d'extraction de documents (OCR, modèles de pointe, solutions open-weight) sur six dimensions. L'outil permet de pondérer les critères selon ses propres cas d'usage plutôt que de se fier à un score global.",
+    "tags": [
+      "open-source",
+      "recherche",
+      "automatisation"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/jerryjliu0/status/2121278045013377092",
+    "media": true,
+    "auteur_x": "@jerryjliu0"
+  },
+  {
+    "date": "2026-11-13",
+    "titre_fr": "Vercel dévoile Workflow SDK 5 pour les agents",
+    "resume_fr": "Vercel présente Workflow SDK 5 et ses Workflows, avec des temps de démarrage et d'enchaînement entre étapes réduits, un chiffrement renforcé et une couche de durabilité réutilisable pour n'importe quel harnais d'agents.",
+    "tags": [
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/rauchg/status/2121277727940776114",
+    "media": false,
+    "auteur_x": "@rauchg"
+  },
+  {
+    "date": "2026-11-14",
+    "titre_fr": "Cursor publie un bilan de son incident de sécurité",
+    "resume_fr": "L'éditeur de l'IDE IA Cursor a publié un compte rendu détaillé de son récent incident de sécurité et des mesures de remédiation mises en place.",
+    "tags": [
+      "produit",
+      "politique-ia"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/cursor_ai/status/2121411147714970092",
+    "media": false,
+    "auteur_x": "@cursor_ai"
+  },
+  {
+    "date": "2026-11-14",
+    "titre_fr": "Comparatif de coût entre Opus 5.5 et Fable 5.2 pour le code",
+    "resume_fr": "Sur 52 tâches de codage dans Claude Code, Fable 5.2 résout à peu près autant de problèmes qu'Opus 5.5 (82,7 % contre 84,6 %) mais coûte 2,8 fois plus cher par tâche résolue, d'après une évaluation open source.",
+    "tags": [
+      "modeles",
+      "anthropic",
+      "recherche"
+    ],
+    "score": 40,
+    "tweet_url": "https://x.com/garrytan/status/2121464508225053153",
+    "media": true,
+    "auteur_x": "@garrytan"
   }
 ]
