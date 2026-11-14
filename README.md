@@ -189,7 +189,7 @@ Ou via GitHub : onglet **Actions → Backfill feed.json → Run workflow** (coch
 ### Bridge vers le site (`knowledge-hub`)
 
 Le run pousse `feed.json` dans le repo du site **uniquement si** le secret
-`KH_REPO_TOKEN` est défini (un token avec accès en écriture à `knowledge-hub`).
+`KH_REPO_TOKEN` est défini (un token avec accès en écriture à `hl-consulting.tech`).
 Tant qu'il n'existe pas, l'étape est silencieusement sautée et `feed.json` reste
 versionné dans ce repo. Ajuste `KH_REPO` / `KH_FEED_PATH` dans
 `.github/workflows/veille.yml` au repo et chemin réels du site.
@@ -258,7 +258,7 @@ uniquement après validation du test et du budget de calcul.
 
 ### Pochette audio commune (17 octobre 2026)
 
-Le job audio charge le composant graphique du dépôt `hl-works/knowledge-hub`
+Le job audio charge le composant graphique du dépôt `hl-works/hl-consulting.tech`
 (portrait mensuel et mise en page) avant la génération. Après mesure de chaque
 MP3, `veille/podcast_media.py` prépare les images, intègre un JPEG 1080 en ID3
 sans réencoder le son et produit la miniature JPEG 320 (< 200 ko) de Telegram.

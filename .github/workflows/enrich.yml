@@ -58,11 +58,11 @@ jobs:
           fi
 
       # Republie vers le site (même logique d'écrasement que veille.yml).
-      - name: Publier feed.json vers knowledge-hub
+      - name: Publier feed.json vers hl-consulting.tech
         if: ${{ inputs.write }}
         env:
           KH_REPO_TOKEN: ${{ secrets.KH_REPO_TOKEN }}
-          KH_REPO: hl-works/knowledge-hub
+          KH_REPO: hl-works/hl-consulting.tech
           KH_BRANCH: main
           KH_FEED_PATH: knowledge-hub/veille-ia/feed.json
         run: |

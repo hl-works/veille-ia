@@ -94,7 +94,7 @@ où c'est ce dépôt qui doit alimenter les autres.
 Le token fine-grained `veille-ia → knowledge-hub` est marqué **« Never used »**
 côté GitHub. Si c'est exact, le pont `feed.json` vers le site **n'a jamais
 tourné** — le README le dit à demi-mot : l'étape de push est sautée en silence si
-`KH_REPO_TOKEN` n'est pas défini. À confirmer côté `knowledge-hub` avant de
+`KH_REPO_TOKEN` n'est pas défini. À confirmer côté `hl-consulting.tech` avant de
 reproduire ce pont dans l'usine.
 
 ## Ordre des travaux

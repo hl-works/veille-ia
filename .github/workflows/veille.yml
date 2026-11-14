@@ -176,11 +176,11 @@ jobs:
       # Bridge vers le site : pousse feed.json dans knowledge-hub.
       # Le garde-fou « token absent → on saute » est dans le script (le
       # contexte `secrets` n'est PAS autorisé dans un `if:` GitHub Actions).
-      - name: Publier feed.json vers knowledge-hub
+      - name: Publier feed.json vers hl-consulting.tech
         if: ${{ steps.gate.outputs.run == 'true' && !inputs.dry_run && !inputs.audio_preview }}
         env:
           KH_REPO_TOKEN: ${{ secrets.KH_REPO_TOKEN }}
-          KH_REPO: hl-works/knowledge-hub
+          KH_REPO: hl-works/hl-consulting.tech
           KH_BRANCH: main
           KH_FEED_PATH: knowledge-hub/veille-ia/feed.json
         run: |
@@ -228,7 +228,7 @@ jobs:
             echo "Push rejeté (tentative $attempt), resynchronisation…"
             sleep 3
           done
-          echo "Échec du push vers knowledge-hub après 3 tentatives." >&2
+          echo "Échec du push vers hl-consulting.tech après 3 tentatives." >&2
           exit 1
 
   audio:
@@ -271,7 +271,7 @@ jobs:
         timeout-minutes: 2
         uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
         with:
-          repository: hl-works/knowledge-hub
+          repository: hl-works/hl-consulting.tech
           ref: main
           path: .podcast-design
           persist-credentials: false
@@ -313,7 +313,7 @@ jobs:
         if: ${{ success() && !inputs.audio_preview && !inputs.dry_run && github.run_attempt == 1 }}
         env:
           KH_REPO_TOKEN: ${{ secrets.KH_REPO_TOKEN }}
-          KH_REPO: hl-works/knowledge-hub
+          KH_REPO: hl-works/hl-consulting.tech
         run: bash scripts/push-podcast-site.sh
       # Le MP3 + la transcription du jour vont sur la branche `ecoute` pour
       # qu'Hugo (et Claude) puissent l'écouter et le valider. Rien n'est publié.

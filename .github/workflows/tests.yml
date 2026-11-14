@@ -24,7 +24,7 @@ jobs:
           python-version: '3.12'
       - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
         with:
-          repository: hl-works/knowledge-hub
+          repository: hl-works/hl-consulting.tech
           ref: c5dba07cc7fbd1d0ba76f265f2f700498329d88c
           path: .podcast-design
           persist-credentials: false

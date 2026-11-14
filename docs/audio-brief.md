@@ -31,7 +31,7 @@ changement de secret, envoi Telegram ou service payant créé pendant ce travail
   Europe/Paris à partir de 08:00 et état `.state/last_run.txt`. Les déclenchements
   manuels passent le garde-fou ; groupe de concurrence sans annulation.
   GitHub ne garantit pas l'heure exacte de démarrage.
-- Le job committe feed/seen/état puis copie le feed vers `hl-works/knowledge-hub`,
+- Le job committe feed/seen/état puis copie le feed vers `hl-works/hl-consulting.tech`,
   à `knowledge-hub/veille-ia/feed.json`. Le site a déjà `index.html`, `feed.json`
   et `feed.xml`, avec URL canonique `https://hl-consulting.tech/knowledge-hub/veille-ia/`.
   Pas de stockage du digest Telegram complet ou de lecteur audio dans cette page.

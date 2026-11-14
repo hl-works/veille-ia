@@ -53,7 +53,7 @@ jobs:
         timeout-minutes: 2
         uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
         with:
-          repository: hl-works/knowledge-hub
+          repository: hl-works/hl-consulting.tech
           ref: main
           path: .podcast-design
           persist-credentials: false

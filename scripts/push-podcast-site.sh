@@ -11,7 +11,7 @@ WORK="$(mktemp -d)"
 trap 'rm -rf "$WORK"' EXIT
 # Authenticate without embedding the token in a remote URL.
 gh auth setup-git
-gh repo clone "${KH_REPO:-hl-works/knowledge-hub}" "$WORK/site" -- --depth 1 --branch main --quiet
+gh repo clone "${KH_REPO:-hl-works/hl-consulting.tech}" "$WORK/site" -- --depth 1 --branch main --quiet
 cd "$WORK/site"
 git config user.name veille-bot
 git config user.email veille-bot@users.noreply.github.com
