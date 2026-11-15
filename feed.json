@@ -18420,5 +18420,116 @@
     "tweet_url": "https://x.com/garrytan/status/2121464508225053153",
     "media": true,
     "auteur_x": "@garrytan"
+  },
+  {
+    "date": "2026-11-14",
+    "titre_fr": "Grok Bot : des coéquipiers IA autonomes qui travaillent en arrière-plan",
+    "resume_fr": "Y Combinator met en avant Grok Bot, un outil permettant de créer des « coéquipiers IA » dotés de leur propre identité et de leurs accès, qui travaillent en continu. Une équipe marketing aurait même confié un budget pub à un bot ; l'équipe raconte être passée du code à sept semaines de lancement.",
+    "tags": [
+      "xai",
+      "agents",
+      "produit",
+      "automatisation"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/ycombinator/status/2121632207303582049",
+    "media": true,
+    "auteur_x": "@ycombinator"
+  },
+  {
+    "date": "2026-11-14",
+    "titre_fr": "SatBench : 63 % des benchmarks IA sont déjà saturés",
+    "resume_fr": "Ethan Mollick a construit SatBench, qui mesure la vitesse à laquelle les grands benchmarks IA sont « battus ». Sur 173 tests cités par les labos depuis 2023, 63 % seraient déjà saturés, et le phénomène s'accélère chaque année, signe que les mesures peinent à suivre les progrès des modèles.",
+    "tags": [
+      "recherche",
+      "modeles"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/emollick/status/2121751565845360769",
+    "media": true,
+    "auteur_x": "@emollick"
+  },
+  {
+    "date": "2026-11-14",
+    "titre_fr": "Le monde des modèles ouverts fragilisé après le départ de Jensen Huang",
+    "resume_fr": "Nathan Lambert estime que l'écosystème open source de l'IA, largement soutenu par Nvidia, fait face à deux risques majeurs après le départ de Jensen Huang : un recul politique de ses alliés à Washington et une pression accrue pour trouver rapidement des produits rentables.",
+    "tags": [
+      "open-source",
+      "hardware",
+      "politique-ia"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/natolambert/status/2121581040972255257",
+    "media": true,
+    "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-11-14",
+    "titre_fr": "HubSpot se « refonde » autour de l'IA et d'une version headless via MCP",
+    "resume_fr": "Dharmesh Shah détaille le « refounding » de HubSpot avec le retour de Brian Halligan au poste de CEO. L'entreprise mise sur une version headless de son CRM, consommable par des agents IA comme Claude ou ChatGPT via MCP, et sur une simplification de la tarification et du produit.",
+    "tags": [
+      "produit",
+      "agents",
+      "marketing",
+      "saas"
+    ],
+    "score": 57,
+    "tweet_url": "https://x.com/dharmesh/status/2121506026054647854",
+    "media": true,
+    "auteur_x": "@dharmesh"
+  },
+  {
+    "date": "2026-11-14",
+    "titre_fr": "ParseBench-2 : mesurer l'analyse de documents selon la gravité des erreurs",
+    "resume_fr": "LlamaIndex publie ParseBench-2, un benchmark d'extraction de documents qui pondère les erreurs selon leur gravité (une inversion de signe en finance pénalise beaucoup plus qu'une différence de formatage), avec une taxonomie de plus de 330 types d'erreurs, notamment sur les tableaux complexes.",
+    "tags": [
+      "recherche",
+      "produit"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/jerryjliu0/status/2121645971096707492",
+    "media": true,
+    "auteur_x": "@jerryjliu0"
+  },
+  {
+    "date": "2026-11-14",
+    "titre_fr": "ChatGPT peut désormais résoudre les captchas automatiquement",
+    "resume_fr": "Selon swyx, l'agent web d'OpenAI dispose d'un réglage pour résoudre automatiquement tous les captchas, un signe de plus de l'autonomie croissante des agents de navigation.",
+    "tags": [
+      "openai",
+      "agents",
+      "produit"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/swyx/status/2121681368224797014",
+    "media": true,
+    "auteur_x": "@swyx"
+  },
+  {
+    "date": "2026-11-14",
+    "titre_fr": "Vercel outille le déploiement de code écrit par des agents",
+    "resume_fr": "Guillermo Rauch décrit un flux où l'agent écrit du code derrière des feature flags, soumis à des contrôles automatiques (vérification, audits de sécurité) avant déploiement, le tout via les commandes du CLI Vercel. Une vision de la manière dont les agents livreront du code.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/rauchg/status/2121711321347715093",
+    "media": false,
+    "auteur_x": "@rauchg"
+  },
+  {
+    "date": "2026-11-15",
+    "titre_fr": "Perplexity : forte croissance de l'usage de son agent Teammate",
+    "resume_fr": "Aravind Srinivas affirme que l'agent Teammate de Perplexity progresse de plus de 50 % par semaine, avec un nombre d'employés gagnant une journée ou une semaine de travail supplémentaire qui a triplé. Il avance une valeur de travail de 80 à 180 M$/an pour environ 10 M$ de coûts en tokens, chiffres à prendre avec recul.",
+    "tags": [
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/AravSrinivas/status/2121803009432953255",
+    "media": true,
+    "auteur_x": "@AravSrinivas"
   }
 ]
