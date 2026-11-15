@@ -1,0 +1,25 @@
+IASTRO: Salut, c'est iAstro ! Bienvenue dans le flash du Podcast I. A. du quinze novembre. Reste avec nous, c'est dense aujourd'hui.
+
+IASTRO: On commence par un vrai séisme chez Nvidia.
+
+VICTORIA: Jensen Huang, le patron emblématique de Nvidia, a démissionné après la révélation d'une relation dissimulée avec une dirigeante liée à un détournement présumé de puces vers la Chine. Plusieurs patrons de la tech, dont Elon Musk, réclament son retour, avec plus de cent quinze mille signatures. Pour une PME, retenez que le fournisseur central de l'I. A. mondiale traverse une crise de gouvernance, source d'incertitude sur les prix et le matériel.
+
+---
+
+IASTRO: Côté marchés, maintenant, ça tangue sérieusement.
+
+VICTORIA: Les sociétés d'infrastructure de l'I. A. ont perdu quatre mille deux cents milliards de dollars lors de la correction récente. En parallèle, Anthropic prépare une entrée en Bourse largement sur-souscrite. Son patron, Dario Amodei, reconnaît lui-même une énorme incertitude sur ce qui va se passer l'an prochain.
+
+---
+
+IASTRO: Autre info du jour, les collègues I. A. débarquent au bureau.
+
+VICTORIA: Les agents autonomes passent du concept à la pratique. Chez Perplexity, le produit Teammate génère aujourd'hui onze fois plus d'heures de travail par semaine qu'au lancement. Pour une PME, le message est concret, certaines tâches répétitives se délèguent déjà, mais la supervision humaine reste la clé.
+
+---
+
+IASTRO: Et on termine avec la course aux modèles.
+
+VICTORIA: Pour la première fois depuis longtemps, OpenAI perd sa place de leader sur le classement de maths MathArena. Gemini quatre Carbon et Fable cinq point deux passent devant. Mais Gemini reviendrait jusqu'à quinze fois plus cher. La leçon, le meilleur modèle dépend vraiment de l'usage.
+
+IASTRO: C'est tout pour ce flash. Les sources sont sur le site de HL Consulting, et on se retrouve dans le format long. À bientôt !
