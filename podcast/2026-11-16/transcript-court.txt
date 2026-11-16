@@ -1,0 +1,21 @@
+IASTRO: Salut, c'est iAstro ! Bienvenue dans le flash du Podcast IA du seize novembre. Reste avec nous, on fait le tour de l'actu en quelques minutes. On commence avec un vrai séisme chez Nvidia.
+
+VICTORIA: Une semaine après l'éviction de son patron Jensen Huang, l'onde de choc se propage dans toute la filière. En cause, un scandale d'espionnage lié à la société Megaspeed, qui aurait orchestré près de douze milliards de dollars de commandes de puces vers la Chine. Son départ affaiblit un défenseur des modèles ouverts, au bénéfice d'OpenAI et Anthropic.
+
+IASTRO: Pendant ce temps, la Chine avance de son côté.
+
+VICTORIA: Alibaba a lancé Qwen quatre Max, un modèle généraliste avec une fenêtre de contexte d'un million de tokens. Il revendique un coût par tâche réduit de plus de soixante pour cent. Et le chinois Meituan a publié un modèle entraîné entièrement sur du matériel chinois, sans aucun GPU Nvidia.
+
+IASTRO: Autre info du jour, OpenAI mise sur la science.
+
+VICTORIA: OpenAI a inauguré un blog dédié à la recherche. Le premier article raconte comment un physicien a travaillé avec GPT six Astra pour proposer une nouvelle définition du Modèle standard. Concrètement, les labos veulent prouver que leurs modèles ne servent pas qu'à écrire des e-mails.
+
+IASTRO: Côté Bourse, maintenant.
+
+VICTORIA: La fièvre IA retombe nettement. Les dix plus grosses introductions de cette année ont perdu en moyenne plus de vingt pour cent. Tous les regards se tournent vers l'entrée en Bourse très attendue d'Anthropic, dont les dépenses inquiètent Wall Street.
+
+IASTRO: Et on termine avec la santé et l'armement.
+
+VICTORIA: Apple a lancé une étude avec OpenEvidence pour comprendre comment les gens utilisent l'IA pour des questions médicales. À Genève, plusieurs capitales européennes plaident pour encadrer les systèmes d'armes autonomes, dans un contexte de course aux armements.
+
+IASTRO: C'est tout pour ce flash. Les sources sont sur le site de HL Consulting, et on se retrouve dans l'édition longue pour creuser tout ça.
