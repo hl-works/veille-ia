@@ -18531,5 +18531,46 @@
     "tweet_url": "https://x.com/AravSrinivas/status/2121803009432953255",
     "media": true,
     "auteur_x": "@AravSrinivas"
+  },
+  {
+    "date": "2026-11-16",
+    "titre_fr": "Alibaba lance Qwen4-Max",
+    "resume_fr": "Alibaba dévoile Qwen4-Max, un modèle à architecture MoE avec vision native et une fenêtre de contexte d'un million de tokens. Il promet de meilleures performances que la génération précédente tout en réduisant fortement les coûts (1,5 $/M en entrée, 4,5 $/M en sortie), avec des versions plus petites en poids ouverts à venir.",
+    "tags": [
+      "modeles",
+      "produit",
+      "open-source"
+    ],
+    "score": 72,
+    "tweet_url": "https://x.com/Alibaba_Qwen/status/2122148127520289151",
+    "media": true,
+    "auteur_x": "@Alibaba_Qwen"
+  },
+  {
+    "date": "2026-11-16",
+    "titre_fr": "OpenAI met GPT-6 au service de la physique théorique",
+    "resume_fr": "OpenAI lance un blog scientifique dont le premier billet décrit comment le physicien Nathaniel Craig a utilisé GPT-6 Astra pour développer une définition candidate du Modèle Standard sur réseau. Une illustration de l'usage des modèles pour la recherche de pointe.",
+    "tags": [
+      "openai",
+      "recherche",
+      "modeles"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/OpenAI/status/2122123437141553630",
+    "media": false,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-11-16",
+    "titre_fr": "Étude de recherche Apple Health x OpenEvidence",
+    "resume_fr": "Apple et OpenEvidence annoncent une collaboration de recherche autour de l'IA appliquée à la santé, combinant les données d'Apple Health à l'expertise médicale d'OpenEvidence.",
+    "tags": [
+      "produit",
+      "recherche"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/saranormous/status/2122145029548630264",
+    "media": false,
+    "auteur_x": "@saranormous"
   }
 ]
