@@ -1,0 +1,14 @@
+{
+  "name": "hugo-signature-v1",
+  "items": [
+    {
+      "file": "hugo-signature-v1.png",
+      "aspect_ratio": "1:1",
+      "refs": [
+        "knowledge-hub/comics/kit/assets/characters/duo-reference-v2.png",
+        "knowledge-hub/comics/kit/assets/characters/hugo-expressions-poses-v1.png"
+      ],
+      "prompt": "Square editorial portrait illustration, no text. ONLY Hugo, the adult man from the references (brown hair, short beard, teal eyes, dark watch on left wrist): keep his exact face and identity. Head and shoulders, head upright, friendly confident smile, one hand raised in a small wave, cream overshirt over a white t-shirt. Match the approved manga ink and subtle watercolor style. Warm ivory paper #FFFCF8 background with sparse halftone texture, small violet accent. Centered, hair fully in frame. No text, no letters, no logo, no other character."
+    }
+  ]
+}
