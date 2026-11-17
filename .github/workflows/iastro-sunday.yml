@@ -1,20 +1,28 @@
-name: Annonce iAstro Sunday (hebdo)
+name: iAstro Sunday (hebdo, automatique)
 
-# Chaque dimanche, annonce dans Le Radar iA le dernier numéro iAstro Sunday
-# publié sur hl-consulting.tech, s'il n'a pas encore été annoncé.
+# Chaque dimanche, sans validation préalable (autorisation permanente de Hugo,
+# 17 novembre 2026) :
+#   1. fabrique : sélection des 4 actus de la semaine + sources primaires
+#      vérifiées (Claude + recherche web), scénario, 5 dessins GPT Image (OpenAI),
+#      publication sur hl-consulting.tech/knowledge-hub/comics/ ;
+#   2. annonce : post dans Le Radar iA (couverture + bouton « Lire la BD »).
 #
-# Déclencheur : le même top départ que la veille (push de `.state/tick` par la
-# tâche planifiée Claude de 08:10 Europe/Paris). Le script ne fait rien les
-# autres jours, ni s'il n'y a pas de numéro récent non annoncé.
-# Un reçu par numéro (data/comics-publications/) empêche tout doublon.
+# Déclencheur : le top départ de 08:10 Europe/Paris (push de `.state/tick` par
+# la tâche planifiée Claude). Les autres jours, rien ne se passe.
+# Secrets : ANTHROPIC_API_KEY, OPENAI_API_KEY, KH_REPO_TOKEN, TELEGRAM_*.
+# En cas d'échec, Hugo reçoit un message Telegram privé.
 on:
   push:
     branches: [main]
     paths: [".state/tick"]
   workflow_dispatch:
     inputs:
+      fabriquer:
+        description: "Fabriquer le numéro de la semaine s'il n'existe pas"
+        type: boolean
+        default: true
       send:
-        description: "Envoyer pour de vrai (sinon : vérification à vide)"
+        description: "Annoncer pour de vrai dans Le Radar iA (sinon : vérification à vide)"
         type: boolean
         default: false
 permissions:
@@ -23,7 +31,91 @@ concurrency:
   group: iastro-sunday
   cancel-in-progress: false
 jobs:
-  announce:
+  fabriquer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    outputs:
+      run: ${{ steps.gate.outputs.run }}
+    steps:
+      - name: Dimanche ?
+        id: gate
+        env:
+          EVENT: ${{ github.event_name }}
+          FORCE: ${{ inputs.fabriquer }}
+        run: |
+          if [[ "$EVENT" == "workflow_dispatch" ]]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"; echo "make=$FORCE" >> "$GITHUB_OUTPUT"
+          elif [[ "$(TZ=Europe/Paris date +%u)" == "7" ]]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"; echo "make=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Pas dimanche à Paris : rien à faire."; echo "run=false" >> "$GITHUB_OUTPUT"
+          fi
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
+        if: steps.gate.outputs.make == 'true'
+        with:
+          ref: main
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
+        if: steps.gate.outputs.make == 'true'
+        with:
+          python-version: "3.12"
+      - name: Fabriquer et publier le numéro de la semaine
+        if: steps.gate.outputs.make == 'true'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          KH_REPO_TOKEN: ${{ secrets.KH_REPO_TOKEN }}
+          IASTRO_IMAGE_MODEL: ${{ vars.IASTRO_IMAGE_MODEL || 'gpt-image-2' }}
+          IASTRO_IMAGE_QUALITY: ${{ vars.IASTRO_IMAGE_QUALITY || 'high' }}
+        run: |
+          set -euo pipefail
+          for v in ANTHROPIC_API_KEY OPENAI_API_KEY KH_REPO_TOKEN; do
+            if [[ -z "${!v}" ]]; then echo "Secret $v manquant dans hl-works/veille-ia." >&2; exit 1; fi
+          done
+          pip install -q -r requirements.txt
+          git clone --depth 1 --filter=blob:none --sparse \
+            "https://x-access-token:${KH_REPO_TOKEN}@github.com/hl-works/hl-consulting.tech.git" site
+          git -C site sparse-checkout set scripts knowledge-hub/comics knowledge-hub/en/comics
+          git -C site config user.name veille-bot
+          git -C site config user.email veille-bot@users.noreply.github.com
+
+          python scripts/iastro-weekly.py --site site --feed feed.json | tee fabrication.log
+          if grep -q '^SKIP' fabrication.log; then exit 0; fi
+
+          cd site
+          python3 scripts/build_comics.py --check --refresh-reader
+          python3 scripts/build_comics.py --refresh-reader
+          python3 scripts/test_comics.py
+          git add knowledge-hub
+          ISSUE=$(python3 -c "import json;print(json.load(open('knowledge-hub/comics/latest.json'))['id'])")
+          git commit -q -m "feat: iAstro Sunday ${ISSUE} (fabrication automatique du dimanche)"
+          for attempt in 1 2 3; do
+            if git push -q origin HEAD:main; then echo "Publié : ${ISSUE}"; break; fi
+            [[ $attempt == 3 ]] && { echo "Push impossible" >&2; exit 1; }
+            git fetch -q --depth 50 origin main && git rebase -q origin/main
+          done
+
+          # Attendre que GitHub Pages serve le nouveau numéro (≈1-3 min).
+          for i in $(seq 1 40); do
+            live=$(curl -fsS "https://hl-consulting.tech/knowledge-hub/comics/latest.json?t=$(date +%s)" || true)
+            if grep -q "\"${ISSUE}\"" <<<"$live"; then echo "En ligne."; exit 0; fi
+            sleep 30
+          done
+          echo "Le numéro n'est pas en ligne après 20 min." >&2; exit 1
+      - name: Garder la trace de fabrication
+        if: always() && steps.gate.outputs.make == 'true'
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: iastro-fabrication
+          path: |
+            fabrication.log
+            site/knowledge-hub/comics/episodes/
+            site/knowledge-hub/comics/art/*/production.json
+          if-no-files-found: ignore
+          retention-days: 30
+
+  annoncer:
+    needs: fabriquer
+    if: needs.fabriquer.outputs.run == 'true'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
@@ -43,8 +135,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           args=()
-          if [[ "$EVENT" == "push" ]]; then args+=(--send --only-sunday); fi
-          if [[ "$SEND" == "true" ]]; then args+=(--send); fi
+          if [[ "$EVENT" == "push" || "$SEND" == "true" ]]; then args+=(--send); fi
           python scripts/announce-iastro-sunday.py "${args[@]}"
       - name: Conserver le reçu même si l’écriture Git échoue
         if: always()
@@ -54,3 +145,19 @@ jobs:
           path: data/comics-publications/
           if-no-files-found: ignore
           retention-days: 30
+
+  alerter:
+    needs: [fabriquer, annoncer]
+    if: failure()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Prévenir Hugo en privé
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          HUGO: ${{ secrets.TELEGRAM_AUTHORIZED_USER_ID }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          [[ -z "$HUGO" ]] && exit 0
+          curl -fsS "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            --data-urlencode "chat_id=${HUGO}" \
+            --data-urlencode "text=⚠️ iAstro Sunday n'est pas parti ce dimanche. Détail : ${RUN_URL}" > /dev/null
