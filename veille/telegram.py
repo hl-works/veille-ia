@@ -217,7 +217,7 @@ PODCAST_LINKS = {'inline_keyboard': [
 
 def send_audio(path, *, day: str, duration: int, bot_token: str, chat_id: str,
                title_prefix: str = 'Brief IA', caption_suffix: str = '', thumbnail=None,
-               podcast_links: bool = False) -> dict:
+               podcast_links: bool = False, reply_markup: dict | None = None) -> dict:
     """Native Telegram music player. Never retry an ambiguous upload timeout."""
     from pathlib import Path
     from datetime import date
@@ -237,6 +237,8 @@ def send_audio(path, *, day: str, duration: int, bot_token: str, chat_id: str,
     if podcast_links:
         data['caption'] += '\n\nSuis Le Débrief sur Spotify ou Apple Podcasts ↓'
         data['reply_markup'] = json.dumps(PODCAST_LINKS, ensure_ascii=False)
+    if reply_markup:
+        data['reply_markup'] = json.dumps(reply_markup, ensure_ascii=False)
     from contextlib import ExitStack
     from .podcast_media import validate_thumbnail
     if thumbnail is not None:

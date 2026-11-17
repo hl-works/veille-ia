@@ -14,6 +14,8 @@ from __future__ import annotations
 import argparse
 import logging
 import os
+from pathlib import Path
+import json
 import sys
 from zoneinfo import ZoneInfo
 from datetime import datetime, timezone
@@ -118,22 +120,33 @@ def run(config_path: str, *, dry_run: bool) -> int:
         # Un seul message « grands titres » + bouton vers le journal mis en page
         # (demande de Hugo, 17/11/2026). RADAR_FORMAT=classique rétablit l'ancien envoi.
         text, markup = message, None
-        if os.environ.get("RADAR_FORMAT", "journal").lower() != "classique":
+        deferred = False
+        fmt = os.environ.get("RADAR_FORMAT", "pages").lower()
+        if fmt != "classique":
             try:
                 from . import journal
                 day = datetime.now(ZoneInfo("Europe/Paris")).date()
                 journal.save(digest, day)
                 text, markup = journal.teaser(digest, day)
+                if fmt == "pages" and os.environ.get("RADAR_DEFER_SEND", "").lower() == "true":
+                    # Envoi différé : après la mise en ligne de la page du jour (veille.radar_send).
+                    Path("radar-pending.json").write_text(json.dumps(
+                        {"date": day.isoformat(), "digest": digest, "message": message},
+                        ensure_ascii=False), encoding="utf-8")
+                    deferred = True
             except Exception as exc:  # noqa: BLE001 — repli : digest complet
                 logging.warning("Journal indisponible (%s) → envoi du digest complet.", exc)
                 text, markup = message, None
-        send_message(
-            text,
-            bot_token=settings.telegram_bot_token,
-            chat_id=settings.telegram_chat_id,
-            reply_markup=markup or None,
-        )
-        logging.info("Veille publiée sur Telegram. ✅")
+        if deferred:
+            logging.info("Le Radar iA sera envoyé après la mise en ligne du journal du jour.")
+        else:
+            send_message(
+                text,
+                bot_token=settings.telegram_bot_token,
+                chat_id=settings.telegram_chat_id,
+                reply_markup=markup or None,
+            )
+            logging.info("Veille publiée sur Telegram. ✅")
         # Only hand off the exact, successfully delivered editorial selection.
         # No model call or TTS runs in the written-brief process.
         if os.environ.get("DAILY_AUDIO_BRIEF", "").lower() == "true":

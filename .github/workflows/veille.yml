@@ -61,7 +61,8 @@ env:
 
 jobs:
   veille:
-    runs-on: ubuntu-latest
+    # 24.04 : Playwright ne gère pas encore Chromium sur ubuntu-latest (26.04).
+    runs-on: ubuntu-24.04
     outputs:
       audio_artifact: ${{ steps.audio_input.outputs.artifact-id }}
     steps:
@@ -132,7 +133,8 @@ jobs:
         env:
           DRY_RUN: ${{ inputs.dry_run || inputs.audio_preview }}
           DAILY_AUDIO_BRIEF: ${{ vars.DAILY_AUDIO_BRIEF || 'true' }}
-          RADAR_FORMAT: ${{ vars.RADAR_FORMAT || 'journal' }}
+          RADAR_FORMAT: ${{ vars.RADAR_FORMAT || 'pages' }}
+          RADAR_DEFER_SEND: "true"
           AUDIO_PREVIEW: ${{ inputs.audio_preview }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           TWITTERAPI_IO_KEY: ${{ secrets.TWITTERAPI_IO_KEY }}
@@ -238,11 +240,29 @@ jobs:
           echo "Échec du push vers hl-consulting.tech après 3 tentatives." >&2
           exit 1
 
+      # ── Le Radar iA : envoi APRÈS la mise en ligne de la page du jour ──
+      #  Pages-images (album) + titres en légende ; replis : titres + bouton,
+      #  puis digest complet. Ne bloque jamais le job audio.
+      - name: Installer le rendu des pages du Radar
+        if: always() && steps.gate.outputs.run == 'true' && hashFiles('radar-pending.json') != ''
+        continue-on-error: true
+        run: |
+          pip install -q playwright
+          python -m playwright install --with-deps chromium
+      - name: Envoyer Le Radar iA
+        if: always() && steps.gate.outputs.run == 'true' && hashFiles('radar-pending.json') != ''
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          TWITTERAPI_IO_KEY: ${{ secrets.TWITTERAPI_IO_KEY }}
+        run: python -m veille.radar_send
+
   audio:
     needs: veille
     # Independent from subsequent feed/bridge failures. Never delay the written send.
     if: ${{ always() && !cancelled() && needs.veille.outputs.audio_artifact != '' }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 25
     # Audio failure must fail the run; the written digest has already been sent.
     permissions:

@@ -56,17 +56,24 @@ class HabillageTests(unittest.TestCase):
                  patch.object(audio, 'get_provider', return_value=provider), \
                  patch.object(audio, 'duration_seconds', side_effect=lambda p: 90 if p.name == 'court.mp3' else 390), \
                  patch('veille.podcast_media.prepare_with_fallback', return_value=None), \
-                 patch.object(telegram, 'send_audio_group', return_value=[{'message_id': 1}, {'message_id': 2}]) as group, \
-                 patch.object(telegram, 'send_audio', return_value={}) as send:
+                 patch.object(telegram, 'send_audio', return_value={'message_id': 3}) as send:
                 audio.run(source, root / 'out', settings, send=True, cfg=cfg)
-            # Un seul envoi : album Flash puis Débrief.
-            send.assert_not_called()
-            tracks = group.call_args.args[0]
-            self.assertEqual([t['path'].name for t in tracks], ['court.mp3', 'brief.mp3'])
-            self.assertIn('1 min 30', tracks[0]['caption']); self.assertIn('6 min 30', tracks[1]['caption'])
+            # Par défaut : un seul audio, le Débrief, avec bouton vers le Flash et le journal.
+            self.assertEqual([c.args[0].name for c in send.call_args_list], ['brief.mp3'])
+            rows = send.call_args.kwargs['reply_markup']['inline_keyboard']
+            self.assertIn('1 min 30', rows[0][0]['text']); self.assertTrue(rows[0][0]['url'].endswith('#ecouter'))
             meta = json.loads((root / 'out/brief.json').read_text())
-            self.assertEqual((meta['court_duration_seconds'], meta['telegram_sent'], meta['court_telegram_sent']), (90, True, True))
-            # Album désactivé (album: false) : ancien envoi en deux messages.
+            self.assertEqual((meta['telegram_sent'], meta['court_published']), (True, True))
+            # envoi_audio: album → Flash + Débrief en un album.
+            with patch.dict('os.environ', {'TELEGRAM_AUTHORIZED_USER_ID': '42'}), \
+                 patch.object(audio, 'build_script', side_effect=scripts), \
+                 patch.object(audio, 'get_provider', return_value=provider), \
+                 patch.object(audio, 'duration_seconds', side_effect=lambda p: 90 if p.name == 'court.mp3' else 390), \
+                 patch('veille.podcast_media.prepare_with_fallback', return_value=None), \
+                 patch.object(telegram, 'send_audio_group', return_value=[{'message_id': 1}, {'message_id': 2}]) as group:
+                audio.run(source, root / 'out2', settings, send=True, cfg={**cfg, 'envoi_audio': 'album'})
+            self.assertEqual([t['path'].name for t in group.call_args.args[0]], ['court.mp3', 'brief.mp3'])
+            # album: false → ancien envoi en deux messages.
             with patch.dict('os.environ', {'TELEGRAM_AUTHORIZED_USER_ID': '42'}), \
                  patch.object(audio, 'build_script', side_effect=scripts), \
                  patch.object(audio, 'get_provider', return_value=provider), \

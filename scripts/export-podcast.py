@@ -65,7 +65,7 @@ def export(source: Path, destination: Path) -> bool:
             and data.get('court_duration_seconds') == 0):
         return export_full_only(source, destination, data)
     if (data.get('destination') != 'canal' or data.get('telegram_sent') is not True
-            or data.get('court_telegram_sent') is not True):
+            or not (data.get('court_telegram_sent') is True or data.get('court_published') is True)):
         return False
     day = date.fromisoformat(data['date']).isoformat()
     previous = destination / 'latest.json'

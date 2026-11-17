@@ -133,8 +133,12 @@ CSS = """
 .jr-more summary{cursor:pointer; padding:var(--space-3) var(--space-4); font-weight:700; font-size:.95rem;}
 .jr-more__body{padding:0 var(--space-4) var(--space-2); font-size:.98rem;}
 .jr-quote-title + p{font-family:var(--font-display); font-size:1.3rem; line-height:1.35;}
-.jr-listen{margin-top:var(--space-12); padding:var(--space-6); border:2px solid var(--text); border-radius:var(--radius); background:var(--surface-alt);}
+.jr-listen{margin:0 0 var(--space-12); padding:var(--space-6); border:2px solid var(--text); border-radius:var(--radius); background:var(--surface-alt); scroll-margin-top:90px;}
 .jr-listen a{font-weight:700;}
+.jr-player{margin:var(--space-3) 0;}
+.jr-player p{margin:0 0 var(--space-2);}
+.jr-player audio{width:100%;}
+.jr-follow{margin:var(--space-4) 0 0; font-size:.92rem;}
 .jr-nav{display:flex; justify-content:space-between; gap:var(--space-4); margin-top:var(--space-8); font-weight:600;}
 """
 
@@ -197,13 +201,17 @@ def page_html(digest: str, day: date, *, prev_day: str | None = None, next_day: 
     <p class="jr-date">{long_date(day)}</p>
     <ul class="jr-toc">{toc}</ul>
   </header>
+  <section id="ecouter" class="jr-listen" aria-label="Écouter">
+    <p class="kicker">Le Podcast iA du jour</p>
+    <div class="jr-player"><p><b>⚡ Le Flash</b> · l'essentiel en deux minutes</p>
+      <audio controls preload="none" src="/assets/podcast/archive/{day.isoformat()}/short.mp3"></audio></div>
+    <div class="jr-player"><p><b>🎧 Le Débrief</b> · la veille en détail</p>
+      <audio controls preload="none" src="/assets/podcast/archive/{day.isoformat()}/full.mp3"></audio></div>
+    <p class="jr-follow">Aussi sur <a href="https://open.spotify.com/show/10f9eIN4y5iCxx0hc17FUK">Spotify</a> · <a href="https://podcasts.apple.com/us/podcast/le-podcast-ia/id6823971009?l=fr">Apple Podcasts</a> · chaque matin sur <a href="https://t.me/VeilleIA_HL">Telegram</a>.</p>
+  </section>
   <article class="jr-body">
 {body_html(digest)}
   </article>
-  <aside class="jr-listen">
-    <p class="kicker">Le Podcast iA</p>
-    <p>La version audio du jour : <a href="https://open.spotify.com/show/10f9eIN4y5iCxx0hc17FUK">Spotify</a> · <a href="https://podcasts.apple.com/us/podcast/le-podcast-ia/id6823971009?l=fr">Apple Podcasts</a> · <a href="/knowledge-hub/immersion-ia/#podcasts">sur le site</a>. Chaque matin sur <a href="https://t.me/VeilleIA_HL">Telegram</a>.</p>
-  </aside>
   {nav}
 </main>
 <footer class="footer"><div class="container"><p class="caption">Hugo Lahutte · Le Radar iA · © {day.year}</p></div></footer>
@@ -245,3 +253,19 @@ if __name__ == "__main__":
     import sys
     for p in build_site(sys.argv[1], sys.argv[2]):
         print("Page journal :", p)
+
+
+def sections(digest: str) -> list[dict]:
+    """Sujets du jour pour les pages-images : titre + texte essentiel (sans « Pour aller plus loin »)."""
+    html = body_html(digest)
+    out, current = [], None
+    for m in re.finditer(r'<h2(?P<attrs>[^>]*)>(?P<title>.*?)</h2>|<p>(?P<p>.*?)</p>|<details.*?</details>', html, re.S):
+        if m.group("title") is not None:
+            current = {"title": m.group("title"), "quote": "jr-quote-title" in m.group("attrs"), "paragraphs": []}
+            out.append(current)
+        elif m.group("p") is not None:
+            if current is None:
+                current = {"title": "", "quote": False, "paragraphs": []}
+                out.append(current)
+            current["paragraphs"].append(m.group("p"))
+    return [s for s in out if s["title"] or s["paragraphs"]]

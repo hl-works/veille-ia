@@ -603,7 +603,27 @@ def run(snapshot_path: Path, output: Path, settings, *, send: bool = False,
                 log.warning("Annonce non envoyée (%s).", type(exc).__name__)
         full_thumb = output / 'full-thumbnail.jpg' if metadata.get('artwork') else None
         short_thumb = output / 'short-thumbnail.jpg' if metadata.get('artwork') else None
-        if court_seconds and str(cfg.get('album', 'true')).lower() != 'false':
+        envoi = str(cfg.get('envoi_audio', 'debrief')).strip().lower()
+        if str(cfg.get('album', '')).lower() == 'false':
+            envoi = 'deux'
+        if envoi == 'debrief':
+            # Un seul audio : le Débrief, avec boutons vers le Flash et le journal (choix de Hugo, 17/11/2026).
+            from .telegram import PODCAST_LINKS
+            from .journal import journal_url
+            page = journal_url(datetime.strptime(snapshot['date'], '%Y-%m-%d').date())
+            rows = [[{'text': f'⚡ Le Flash · {_minutes(court_seconds)}', 'url': page + '#ecouter'}]] if court_seconds else []
+            rows.append([{'text': '📰 Le journal du jour', 'url': page}])
+            metadata['telegram_receipt'] = send_audio(
+                audio, thumbnail=full_thumb, day=snapshot['date'], duration=seconds,
+                bot_token=settings.telegram_bot_token, chat_id=chat_id,
+                title_prefix='Le Débrief · Le Podcast IA',
+                caption_suffix='la veille de ce matin, en détail',
+                reply_markup={'inline_keyboard': rows + PODCAST_LINKS['inline_keyboard']})
+            metadata['telegram_sent'] = True
+            # Le Flash n'est plus envoyé sur Telegram mais reste publié (site, page du jour).
+            metadata['court_published'] = bool(court_seconds)
+            metadata_path.write_text(json.dumps(metadata, ensure_ascii=False, indent=2), encoding='utf-8')
+        elif court_seconds and envoi == 'album':
             # Un seul envoi : Flash + Débrief en album (demande de Hugo, 17/11/2026).
             from .telegram import send_audio_group, PODCAST_LINKS_HTML
             label = _day_label(snapshot['date'])
