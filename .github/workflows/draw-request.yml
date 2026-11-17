@@ -1,0 +1,37 @@
+name: Dessins à la demande (propositions)
+
+# Push de .state/image-request.json → dessins OpenRouter (GPT Image) publiés
+# sur la branche ecoute, dans propositions/<name>/. Rien n'est publié ailleurs.
+on:
+  push:
+    branches: [main]
+    paths: [".state/image-request.json"]
+permissions:
+  contents: write
+jobs:
+  draw:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
+        with:
+          ref: main
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
+        with:
+          python-version: "3.12"
+      - name: Dessiner
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          KH_REPO_TOKEN: ${{ secrets.KH_REPO_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+          IASTRO_IMAGE_MODEL: ${{ vars.IASTRO_IMAGE_MODEL || 'openai/gpt-image-2' }}
+          IASTRO_IMAGE_QUALITY: ${{ vars.IASTRO_IMAGE_QUALITY || 'high' }}
+        run: |
+          set -euo pipefail
+          pip install -q -r requirements.txt
+          git clone --depth 1 --filter=blob:none --sparse \
+            "https://x-access-token:${KH_REPO_TOKEN}@github.com/hl-works/hl-consulting.tech.git" site
+          git -C site sparse-checkout set knowledge-hub/comics/kit assets/podcast/art
+          NAME=$(python3 -c "import json;print(json.load(open('.state/image-request.json'))['name'])")
+          python scripts/draw-request.py site draw-output
+          bash scripts/push-ecoute.sh "propositions/$NAME" draw-output

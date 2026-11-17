@@ -1,0 +1,37 @@
+{
+  "name": "hebdo-univers-v1",
+  "items": [
+    {
+      "file": "01-radio-de-nuit.png",
+      "aspect_ratio": "1:1",
+      "refs": [
+        "knowledge-hub/comics/kit/assets/characters/duo-reference-v2.png"
+      ],
+      "prompt": "Square podcast show cover artwork, 3000x3000 composition, for a weekly French AI news podcast. Characters from reference image: Hugo (adult man, brown hair, short beard, teal eyes, dark watch on left wrist) and iAstro (child android boy with HUMAN face, black spiky quiff, big black anime eyes, cyan dot on temple, cyan heart on white shirt, purple accents, purple studio headphones). Keep their exact faces and identity, expressive manga ink and watercolor style. Neutral year-round clothing, no seasonal accessory. Large, perfectly legible title lettering: \"LA SEMAINE iA\" (exact casing: lowercase i, uppercase A), small subtitle \"Le Podcast iA · l'hebdo\". No date, no other text, no logos. Strong readable composition at thumbnail size. Universe: late-night city-pop radio. Neon-lit Tokyo-style city skyline at night through a big studio window, vinyl records, warm VU meters, on-air light. Hugo and iAstro side by side at microphones, relaxed and smiling. Palette: deep indigo night, magenta and cyan neon, warm amber."
+    },
+    {
+      "file": "02-magazine-du-dimanche.png",
+      "aspect_ratio": "1:1",
+      "refs": [
+        "knowledge-hub/comics/kit/assets/characters/duo-reference-v2.png"
+      ],
+      "prompt": "Square podcast show cover artwork, 3000x3000 composition, for a weekly French AI news podcast. Characters from reference image: Hugo (adult man, brown hair, short beard, teal eyes, dark watch on left wrist) and iAstro (child android boy with HUMAN face, black spiky quiff, big black anime eyes, cyan dot on temple, cyan heart on white shirt, purple accents, purple studio headphones). Keep their exact faces and identity, expressive manga ink and watercolor style. Neutral year-round clothing, no seasonal accessory. Large, perfectly legible title lettering: \"LA SEMAINE iA\" (exact casing: lowercase i, uppercase A), small subtitle \"Le Podcast iA · l'hebdo\". No date, no other text, no logos. Strong readable composition at thumbnail size. Universe: Sunday magazine. A bold newspaper front page design on cream paper, big black condensed masthead typography, halftone dots. Hugo and iAstro sit on a sofa reading a giant newspaper together, coffee cups, Sunday morning light. Palette: cream, ink black, one gold accent."
+    },
+    {
+      "file": "03-plateau-tv-retro.png",
+      "aspect_ratio": "1:1",
+      "refs": [
+        "knowledge-hub/comics/kit/assets/characters/duo-reference-v2.png"
+      ],
+      "prompt": "Square podcast show cover artwork, 3000x3000 composition, for a weekly French AI news podcast. Characters from reference image: Hugo (adult man, brown hair, short beard, teal eyes, dark watch on left wrist) and iAstro (child android boy with HUMAN face, black spiky quiff, big black anime eyes, cyan dot on temple, cyan heart on white shirt, purple accents, purple studio headphones). Keep their exact faces and identity, expressive manga ink and watercolor style. Neutral year-round clothing, no seasonal accessory. Large, perfectly legible title lettering: \"LA SEMAINE iA\" (exact casing: lowercase i, uppercase A), small subtitle \"Le Podcast iA · l'hebdo\". No date, no other text, no logos. Strong readable composition at thumbnail size. Universe: retro 1980s TV news studio. iAstro as the confident anchor at a curved desk, Hugo beside him as co-host, a big CRT screen wall behind them showing abstract AI icons, studio lights. Palette: teal, orange, cream, retro gradients."
+    },
+    {
+      "file": "04-observatoire.png",
+      "aspect_ratio": "1:1",
+      "refs": [
+        "knowledge-hub/comics/kit/assets/characters/duo-reference-v2.png"
+      ],
+      "prompt": "Square podcast show cover artwork, 3000x3000 composition, for a weekly French AI news podcast. Characters from reference image: Hugo (adult man, brown hair, short beard, teal eyes, dark watch on left wrist) and iAstro (child android boy with HUMAN face, black spiky quiff, big black anime eyes, cyan dot on temple, cyan heart on white shirt, purple accents, purple studio headphones). Keep their exact faces and identity, expressive manga ink and watercolor style. Neutral year-round clothing, no seasonal accessory. Large, perfectly legible title lettering: \"LA SEMAINE iA\" (exact casing: lowercase i, uppercase A), small subtitle \"Le Podcast iA · l'hebdo\". No date, no other text, no logos. Strong readable composition at thumbnail size. Universe: an observatory at night (wordplay on iAstro). Hugo and iAstro look through a big brass telescope at a sky where constellations form AI icons (a chip, a speech bubble, a robot head), dome opened on a starry violet sky. Palette: deep violet, gold, cream starlight."
+    }
+  ]
+}
