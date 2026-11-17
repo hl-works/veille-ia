@@ -250,13 +250,14 @@ EXPRESSIONS = [
 ]
 
 
-def ensure_portraits(site, today, comics):
+def ensure_portraits(site, today, comics, days=None):
     """Portrait mensuel d'iAstro des pochettes podcast : mois en cours et, la dernière semaine, mois suivant."""
     art = site / "assets/podcast/art"
     if not art.exists():
         return []
     made = []
-    for day in (today, today + dt.timedelta(days=7)):
+    days = days or (today, today + dt.timedelta(days=7))
+    for day in days:
         m = day.month
         dest = art / f"iastro-{m:02d}-v1.png"
         if dest.exists() or m in [x[0] for x in made]:
@@ -282,7 +283,7 @@ def ensure_portraits(site, today, comics):
         print(f"PORTRAIT : iastro-{m:02d}-v1.png créé")
     # Pochettes mensuelles du podcast (une par format) dès que le portrait existe.
     composer = site / "scripts/build_monthly_podcast_covers.py"
-    for day in (today, today + dt.timedelta(days=7)):
+    for day in days:
         if composer.exists() and (art / f"iastro-{day.month:02d}-v1.png").exists():
             subprocess.run([sys.executable, str(composer), "--month", f"{day.year}-{day.month:02d}"], check=True)
     return made
@@ -293,11 +294,17 @@ def main():
     ap.add_argument("--site", required=True, type=Path)
     ap.add_argument("--feed", default="feed.json", type=Path)
     ap.add_argument("--date", help="Date de publication (défaut : aujourd'hui à Paris)")
+    ap.add_argument("--portrait-month", help="AAAA-MM : dessiner seulement ce portrait (et ses pochettes)")
     args = ap.parse_args()
 
     today = dt.date.fromisoformat(args.date) if args.date else dt.datetime.now(PARIS).date()
     issue, monday, sunday = week(today)
     comics = args.site / "knowledge-hub/comics"
+    if args.portrait_month:
+        y, m = map(int, args.portrait_month.split("-"))
+        ensure_portraits(args.site, today, comics, days=(dt.date(y, m, 1),))
+        print("SKIP : portrait seul demandé.")
+        return
     ensure_portraits(args.site, today, comics)
     episode_path = comics / "episodes" / f"{issue}.json"
     if episode_path.exists():

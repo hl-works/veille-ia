@@ -1,0 +1,59 @@
+name: iAstro — portrait du mois (à la demande)
+
+# Dessine le portrait d'iAstro d'un mois donné (tenue du mois) et ses pochettes
+# podcast, puis les publie sur hl-consulting.tech (assets/podcast/art).
+# Déclenchement : push de `.state/portrait-request` contenant « AAAA-MM »,
+# ou lancement manuel. Le job du dimanche fait la même chose tout seul la
+# dernière semaine de chaque mois.
+on:
+  push:
+    branches: [main]
+    paths: [".state/portrait-request"]
+  workflow_dispatch:
+    inputs:
+      month:
+        description: "Mois AAAA-MM"
+        required: true
+permissions:
+  contents: read
+jobs:
+  portrait:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
+        with:
+          ref: main
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
+        with:
+          python-version: "3.12"
+      - name: Dessiner et publier
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          KH_REPO_TOKEN: ${{ secrets.KH_REPO_TOKEN }}
+          IASTRO_IMAGE_MODEL: ${{ vars.IASTRO_IMAGE_MODEL || 'openai/gpt-image-2' }}
+          IASTRO_IMAGE_QUALITY: ${{ vars.IASTRO_IMAGE_QUALITY || 'high' }}
+          INPUT_MONTH: ${{ inputs.month }}
+        run: |
+          set -euo pipefail
+          MONTH="${INPUT_MONTH:-$(tr -d '[:space:]' < .state/portrait-request)}"
+          [[ "$MONTH" =~ ^20[0-9]{2}-(0[1-9]|1[0-2])$ ]] || { echo "Mois invalide : $MONTH" >&2; exit 1; }
+          for v in OPENROUTER_API_KEY KH_REPO_TOKEN; do
+            [[ -n "${!v}" ]] || { echo "Secret $v manquant." >&2; exit 1; }
+          done
+          pip install -q -r requirements.txt pillow
+          git clone --depth 1 --filter=blob:none --sparse \
+            "https://x-access-token:${KH_REPO_TOKEN}@github.com/hl-works/hl-consulting.tech.git" site
+          git -C site sparse-checkout set scripts knowledge-hub/comics/kit assets/podcast/art
+          python scripts/iastro-weekly.py --site site --portrait-month "$MONTH"
+          cd site
+          git config user.name veille-bot
+          git config user.email veille-bot@users.noreply.github.com
+          git add assets/podcast/art
+          if git diff --cached --quiet; then echo "Portrait déjà présent : rien à faire."; exit 0; fi
+          git commit -q -m "feat: portrait iAstro et pochettes podcast ${MONTH} (OpenRouter)"
+          for attempt in 1 2 3; do
+            git push -q origin HEAD:main && exit 0
+            git fetch -q --depth 50 origin main && git rebase -q origin/main
+          done
+          echo "Push impossible" >&2; exit 1
