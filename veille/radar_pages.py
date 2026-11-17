@@ -65,8 +65,8 @@ body{background:#222;font-family:Inter,'Liberation Sans',Arial,sans-serif;color:
 .quote{background:#0c0c0c;color:#FFFCF8;border-radius:28px;padding:56px 56px 50px}
 .quote .kicker{color:#E8B730}
 .quote p{font-family:Archivo,'Liberation Sans',sans-serif;font-weight:800;font-size:56px;line-height:1.16;margin-top:22px}
-.sign{display:flex;align-items:center;gap:36px;margin-top:10px}
-.sign img{width:300px;height:300px;object-fit:cover;border-radius:50%;border:4px solid #0c0c0c;flex:none}
+.sign{display:flex;flex-direction:column;align-items:flex-start;gap:26px;margin-top:10px}
+.sign img{width:520px;height:520px;object-fit:cover;border-radius:28px;border:4px solid #0c0c0c;flex:none}
 .sign .who{font-family:Archivo,'Liberation Sans',sans-serif;font-weight:900;font-size:58px;line-height:1}
 .sign .role{font-size:32px;color:#444;margin-top:12px;line-height:1.3}
 .cta{border:4px solid #0c0c0c;border-radius:28px;padding:34px 40px;font-size:36px;line-height:1.35;font-weight:600}
