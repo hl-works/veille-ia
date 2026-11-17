@@ -17,7 +17,8 @@ site, out = Path(sys.argv[1]), Path(sys.argv[2])
 request = json.loads(Path(".state/image-request.json").read_text())
 out.mkdir(parents=True, exist_ok=True)
 for item in request["items"]:
-    refs = [site / r for r in item.get("refs", [])]
+    # « local:chemin » = fichier de ce dépôt (ex. une proposition retenue à retoucher).
+    refs = [Path(r[6:]) if r.startswith("local:") else site / r for r in item.get("refs", [])]
     weekly.draw(item["prompt"], refs, item.get("aspect_ratio", "1:1"), out / item["file"])
 (out / "request.json").write_text(json.dumps(request, ensure_ascii=False, indent=2))
 print(f"Coût total : {sum(weekly.COSTS):.2f} $")
