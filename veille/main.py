@@ -15,6 +15,7 @@ import argparse
 import logging
 import os
 import sys
+from zoneinfo import ZoneInfo
 from datetime import datetime, timezone
 
 from .config import load_settings
@@ -114,10 +115,23 @@ def run(config_path: str, *, dry_run: bool) -> int:
     # en cas d'échec (bot pas admin du canal, réseau, 403…), on logue et on
     # continue. Le feed.json a déjà été produit plus haut.
     try:
+        # Un seul message « grands titres » + bouton vers le journal mis en page
+        # (demande de Hugo, 17/11/2026). RADAR_FORMAT=classique rétablit l'ancien envoi.
+        text, markup = message, None
+        if os.environ.get("RADAR_FORMAT", "journal").lower() != "classique":
+            try:
+                from . import journal
+                day = datetime.now(ZoneInfo("Europe/Paris")).date()
+                journal.save(digest, day)
+                text, markup = journal.teaser(digest, day)
+            except Exception as exc:  # noqa: BLE001 — repli : digest complet
+                logging.warning("Journal indisponible (%s) → envoi du digest complet.", exc)
+                text, markup = message, None
         send_message(
-            message,
+            text,
             bot_token=settings.telegram_bot_token,
             chat_id=settings.telegram_chat_id,
+            reply_markup=markup or None,
         )
         logging.info("Veille publiée sur Telegram. ✅")
         # Only hand off the exact, successfully delivered editorial selection.

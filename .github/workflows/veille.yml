@@ -132,6 +132,7 @@ jobs:
         env:
           DRY_RUN: ${{ inputs.dry_run || inputs.audio_preview }}
           DAILY_AUDIO_BRIEF: ${{ vars.DAILY_AUDIO_BRIEF || 'true' }}
+          RADAR_FORMAT: ${{ vars.RADAR_FORMAT || 'journal' }}
           AUDIO_PREVIEW: ${{ inputs.audio_preview }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           TWITTERAPI_IO_KEY: ${{ secrets.TWITTERAPI_IO_KEY }}
@@ -161,10 +162,11 @@ jobs:
         run: |
           mkdir -p "$(dirname "$STATE_FILE")"
           printf '%s\n' "$TODAY" > "$STATE_FILE"
-          if [ -n "$(git status --porcelain feed.json seen.json "$STATE_FILE")" ]; then
+          if [ -n "$(git status --porcelain feed.json seen.json "$STATE_FILE" journal)" ]; then
             git config user.name "veille-bot"
             git config user.email "veille-bot@users.noreply.github.com"
             git add feed.json seen.json "$STATE_FILE"
+            if [ -d journal ]; then git add journal; fi
             git commit -m "data: maj feed.json/seen.json ($TODAY)"
             # Une autre action a pu pousser entre-temps (enrichissement…).
             git pull --rebase --autostash origin "${GITHUB_REF_NAME}" || true
@@ -212,13 +214,18 @@ jobs:
 
             mkdir -p "$(dirname "$KH_FEED_PATH")"
             cp ../feed.json "$KH_FEED_PATH"
+            # Journal du jour mis en page (Le Radar iA en un message).
+            if [ -d ../journal ]; then
+              (cd .. && python -m veille.journal journal kh) || echo "Pages journal non générées."
+            fi
 
-            if [ -z "$(git status --porcelain "$KH_FEED_PATH")" ]; then
+            if [ -z "$(git status --porcelain "$KH_FEED_PATH" knowledge-hub/veille-ia/journal)" ]; then
               echo "feed.json déjà à jour dans knowledge-hub, rien à pousser."
               exit 0
             fi
 
             git add "$KH_FEED_PATH"
+            if [ -d knowledge-hub/veille-ia/journal ]; then git add knowledge-hub/veille-ia/journal; fi
             git commit -m "data: maj feed.json depuis veille-ia ($(date -u +%F))"
 
             if git push origin "HEAD:$KH_BRANCH"; then

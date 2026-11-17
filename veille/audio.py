@@ -504,6 +504,13 @@ def _chat_id(settings, cfg: dict) -> str:
     return chat_id
 
 
+def _day_label(day: str) -> str:
+    months = ('janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet',
+              'août', 'septembre', 'octobre', 'novembre', 'décembre')
+    d = datetime.strptime(day, '%Y-%m-%d')
+    return f'{d.day} {months[d.month - 1]}'
+
+
 def _minutes(seconds: int) -> str:
     return f'{seconds // 60} min {seconds % 60:02d}'
 
@@ -579,22 +586,42 @@ def run(snapshot_path: Path, output: Path, settings, *, send: bool = False,
                 metadata['annonce_sent'] = True
             except Exception as exc:  # noqa: BLE001 — l'annonce ne bloque jamais les audios
                 log.warning("Annonce non envoyée (%s).", type(exc).__name__)
-        if court_seconds:
-            try:
-                metadata['court_telegram_receipt'] = send_audio(court, thumbnail=(output / 'short-thumbnail.jpg' if metadata.get('artwork') else None), day=snapshot['date'], duration=court_seconds,
-                           bot_token=settings.telegram_bot_token, chat_id=chat_id,
-                           title_prefix='Le Flash · Le Podcast IA', podcast_links=True,
-                           caption_suffix=f'Le Débrief complet juste en dessous ({_minutes(seconds)})')
-                metadata['court_telegram_sent'] = True
-                metadata_path.write_text(json.dumps(metadata, ensure_ascii=False, indent=2), encoding='utf-8')
-            except Exception as exc:  # noqa: BLE001
-                log.warning('Envoi de la version courte non confirmé (%s).', type(exc).__name__)
-        metadata['telegram_receipt'] = send_audio(audio, thumbnail=(output / 'full-thumbnail.jpg' if metadata.get('artwork') else None), day=snapshot['date'], duration=seconds,
-                   bot_token=settings.telegram_bot_token, chat_id=chat_id,
-                   title_prefix='Le Débrief · Le Podcast IA', podcast_links=True,
-                   caption_suffix='version audio de la veille de ce matin')
-        metadata['telegram_sent'] = True
-        metadata_path.write_text(json.dumps(metadata, ensure_ascii=False, indent=2), encoding='utf-8')
+        full_thumb = output / 'full-thumbnail.jpg' if metadata.get('artwork') else None
+        short_thumb = output / 'short-thumbnail.jpg' if metadata.get('artwork') else None
+        if court_seconds and str(cfg.get('album', 'true')).lower() != 'false':
+            # Un seul envoi : Flash + Débrief en album (demande de Hugo, 17/11/2026).
+            from .telegram import send_audio_group, PODCAST_LINKS_HTML
+            label = _day_label(snapshot['date'])
+            receipts = send_audio_group([
+                {'path': court, 'duration': court_seconds, 'thumbnail': short_thumb,
+                 'title': f'Le Flash · Le Podcast IA — {label}',
+                 'caption': f'⚡ <b>Le Flash</b> · {_minutes(court_seconds)} — l\'essentiel en deux minutes'},
+                {'path': audio, 'duration': seconds, 'thumbnail': full_thumb,
+                 'title': f'Le Débrief · Le Podcast IA — {label}',
+                 'caption': (f'🎧 <b>Le Débrief</b> · {_minutes(seconds)} — la veille de ce matin, en détail\n\n'
+                             f'Suis Le Podcast iA : {PODCAST_LINKS_HTML}')},
+            ], bot_token=settings.telegram_bot_token, chat_id=chat_id)
+            metadata['court_telegram_receipt'], metadata['telegram_receipt'] = receipts[0], receipts[-1]
+            metadata['court_telegram_sent'] = metadata['telegram_sent'] = True
+            metadata['telegram_album'] = True
+            metadata_path.write_text(json.dumps(metadata, ensure_ascii=False, indent=2), encoding='utf-8')
+        else:
+            if court_seconds:
+                try:
+                    metadata['court_telegram_receipt'] = send_audio(court, thumbnail=short_thumb, day=snapshot['date'], duration=court_seconds,
+                               bot_token=settings.telegram_bot_token, chat_id=chat_id,
+                               title_prefix='Le Flash · Le Podcast IA', podcast_links=True,
+                               caption_suffix=f'Le Débrief complet juste en dessous ({_minutes(seconds)})')
+                    metadata['court_telegram_sent'] = True
+                    metadata_path.write_text(json.dumps(metadata, ensure_ascii=False, indent=2), encoding='utf-8')
+                except Exception as exc:  # noqa: BLE001
+                    log.warning('Envoi de la version courte non confirmé (%s).', type(exc).__name__)
+            metadata['telegram_receipt'] = send_audio(audio, thumbnail=full_thumb, day=snapshot['date'], duration=seconds,
+                       bot_token=settings.telegram_bot_token, chat_id=chat_id,
+                       title_prefix='Le Débrief · Le Podcast IA', podcast_links=True,
+                       caption_suffix='version audio de la veille de ce matin')
+            metadata['telegram_sent'] = True
+            metadata_path.write_text(json.dumps(metadata, ensure_ascii=False, indent=2), encoding='utf-8')
     if incomplete:
         raise RuntimeError('Flash manquant : Débrief conservé, reprise ciblée nécessaire ; ne pas relancer les envois.')
 

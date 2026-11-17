@@ -123,6 +123,7 @@ def send_message(
     bot_token: str,
     chat_id: str,
     timeout: int = 30,
+    reply_markup: dict | None = None,
 ) -> None:
     """Envoie `text` sur le chat/canal Telegram, en plusieurs messages si besoin.
     Quand le texte dépasse la limite Telegram (4096 car.) et se découpe, on ajoute
@@ -134,7 +135,8 @@ def send_message(
     for i, chunk in enumerate(chunks, 1):
         # Repère de pagination seulement s'il y a plusieurs messages.
         body = f"<i>({i}/{total})</i>\n{chunk}" if total > 1 else chunk
-        _send_chunk(url, chat_id, body, index=i, total=total, timeout=timeout)
+        _send_chunk(url, chat_id, body, index=i, total=total, timeout=timeout,
+                    reply_markup=reply_markup if i == total else None)
         log.info("Message Telegram envoyé (%d/%d).", i, total)
         if i < total:
             time.sleep(1)  # petite pause pour rester sous les limites de débit
@@ -149,6 +151,7 @@ def _send_chunk(
     total: int,
     timeout: int,
     max_retries: int = 3,
+    reply_markup: dict | None = None,
 ) -> None:
     """Envoie un morceau, avec quelques tentatives sur les erreurs transitoires
     (réseau, rate-limit 429, 5xx). Les erreurs « métier » (400 HTML invalide,
@@ -159,6 +162,8 @@ def _send_chunk(
         "parse_mode": "HTML",
         "disable_web_page_preview": True,
     }
+    if reply_markup:
+        payload["reply_markup"] = reply_markup
     for attempt in range(1, max_retries + 1):
         try:
             resp = requests.post(url, json=payload, timeout=timeout)
@@ -261,5 +266,51 @@ def send_audio(path, *, day: str, duration: int, bot_token: str, chat_id: str,
             return {'message_id': message.get('message_id'),
                     'thumbnail_width': thumb.get('width'), 'thumbnail_height': thumb.get('height'),
                     'podcast_links_confirmed': message.get('reply_markup') == PODCAST_LINKS}
+        except (requests.RequestException, ValueError):
+            raise RuntimeError('Envoi audio Telegram non confirmé ; pas de réessai automatique') from None
+
+
+PODCAST_LINKS_HTML = ('<a href="https://open.spotify.com/show/10f9eIN4y5iCxx0hc17FUK">Spotify</a> · '
+                      '<a href="https://podcasts.apple.com/us/podcast/le-podcast-ia/id6823971009?l=fr">Apple Podcasts</a> · '
+                      '<a href="https://hl-consulting.tech/knowledge-hub/immersion-ia/#podcasts">sur le site</a>')
+
+
+def send_audio_group(tracks, *, bot_token: str, chat_id: str) -> list[dict]:
+    """Un seul envoi Telegram (album) pour plusieurs audios — demande de Hugo (17/11/2026).
+
+    tracks : liste de dict {path, title, duration, caption, thumbnail?}. Les albums
+    n'acceptent pas de boutons : les liens sont dans la légende (HTML).
+    Jamais de nouvel essai automatique sur un envoi ambigu.
+    """
+    from contextlib import ExitStack
+    from pathlib import Path
+    from .podcast_media import validate_thumbnail
+    media, files = [], {}
+    with ExitStack() as stack:
+        for i, t in enumerate(tracks):
+            path = Path(t['path'])
+            if path.suffix.lower() != '.mp3' or not 0 < path.stat().st_size < 49_000_000:
+                raise ValueError('MP3 absent, vide ou trop volumineux')
+            files[f'audio{i}'] = (path.name, stack.enter_context(path.open('rb')), 'audio/mpeg')
+            item = {'type': 'audio', 'media': f'attach://audio{i}', 'title': t['title'],
+                    'performer': 'Hugo LaHutte', 'duration': t['duration'],
+                    'caption': t.get('caption', ''), 'parse_mode': 'HTML'}
+            thumb = t.get('thumbnail')
+            if thumb is not None:
+                try:
+                    validate_thumbnail(thumb)
+                    files[f'thumb{i}'] = (Path(thumb).name, stack.enter_context(Path(thumb).open('rb')), 'image/jpeg')
+                    item['thumbnail'] = f'attach://thumb{i}'
+                except Exception:  # noqa: BLE001 — miniature facultative
+                    pass
+            media.append(item)
+        try:
+            response = requests.post(f'https://api.telegram.org/bot{bot_token}/sendMediaGroup',
+                                     data={'chat_id': chat_id, 'media': json.dumps(media, ensure_ascii=False)},
+                                     files=files, timeout=(10, 180))
+            payload = response.json()
+            if not response.ok or payload.get('ok') is not True:
+                raise RuntimeError('Envoi audio Telegram refusé')
+            return [{'message_id': m.get('message_id')} for m in payload.get('result', [])]
         except (requests.RequestException, ValueError):
             raise RuntimeError('Envoi audio Telegram non confirmé ; pas de réessai automatique') from None
