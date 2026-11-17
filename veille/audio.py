@@ -147,14 +147,14 @@ Pas de didascalies, de bruitages écrits ou de prénom lu comme une étiquette.
 SEMAINE_FORMAT = (
     "\nFORMAT : La Semaine. Le brief fourni contient les veilles de TOUS les jours de la "
     "semaine écoulée, datées. Pour un auditeur qui n'a rien suivi et veut tout rattraper "
-    "en un seul épisode, à écouter le lundi. Entre 2 200 et 2 800 mots (15 à 18 minutes). "
+    "en un seul épisode, à écouter le lundi. Entre 2 500 et 3 100 mots (16 à 20 minutes). "
     "Ouvre par « Salut, c'est iAstro ! Bienvenue dans La Semaine du Podcast IA, » puis la "
     "période en toutes lettres (ex. « du lundi 16 au dimanche 22 novembre »), sans année. "
-    "Retiens les 5 à 7 sujets les plus importants de la semaine : fusionne ce qui revient "
+    "Retiens les sujets les plus importants de la semaine (en général 6 à 9, davantage si l'actualité le justifie) : fusionne ce qui revient "
     "plusieurs jours, raconte comment chaque histoire a évolué au fil de la semaine, explique "
     "pourquoi elle compte, sans inventer aucun fait absent des veilles. Dans la dernière "
     "section, Victoria donne en quelques phrases ce qu'il faut surveiller la semaine prochaine "
-    "(uniquement d'après les veilles). Huit séparateurs maximum. La fermeture d'iAstro renvoie "
+    "(uniquement d'après les veilles). Dix séparateurs maximum. La fermeture d'iAstro renvoie "
     "vers le Flash et le Débrief quotidiens et vers le journal du jour sur le site de HL Consulting."
 )
 

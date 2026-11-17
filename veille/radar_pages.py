@@ -106,6 +106,24 @@ JS = """
       }
     }
   }
+  // Pages de sujets peu remplies : on agrandit le texte (plus lisible, moins de blanc).
+  for (const pg of book.querySelectorAll('.page:not(.une)')) {
+    const c = pg.querySelector('.content');
+    const ps = c.querySelectorAll('.topic p:not(.num)');
+    const hs = c.querySelectorAll('.topic h2');
+    if (!ps.length) continue;
+    let size = parseFloat(getComputedStyle(ps[0]).fontSize);
+    while (size < 48 && c.scrollHeight <= c.clientHeight) {
+      size += 1;
+      ps.forEach(p => p.style.fontSize = size + 'px');
+      hs.forEach(h => h.style.fontSize = Math.round(size * 1.5) + 'px');
+    }
+    if (c.scrollHeight > c.clientHeight) {
+      size -= 1;
+      ps.forEach(p => p.style.fontSize = size + 'px');
+      hs.forEach(h => h.style.fontSize = Math.round(size * 1.5) + 'px');
+    }
+  }
   const pages = [...book.querySelectorAll('.page')];
   pages.forEach((p, i) => { const f = p.querySelector('.folio'); if (f) f.textContent = `${i + 1} / ${pages.length}`; });
   window.__pages = pages.length;
