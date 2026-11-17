@@ -188,7 +188,7 @@ jobs:
           bash scripts/push-ecoute.sh "podcast/$(python3 -c "import json;print(json.load(open('semaine-output/semaine.json'))['id'])")" semaine-output || true
           if [[ "${WEEKLY_PUBLIC,,}" == "true" ]]; then
             cd site
-            python3 scripts/build_podcast_feed.py
+            python3 scripts/build_podcast_feed.py --semaine
             git config user.name veille-bot
             git config user.email veille-bot@users.noreply.github.com
             git add assets/podcast

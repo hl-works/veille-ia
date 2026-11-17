@@ -51,10 +51,10 @@ class SemaineTests(unittest.TestCase):
                     meta = semaine.run(date(2026, 11, 22), root / "out", send=True, site=site)
                 self.assertEqual(send.call_args.kwargs["chat_id"], "42")
                 self.assertIn("À VALIDER", send.call_args.kwargs["caption_suffix"])
-                self.assertFalse((site / "assets/podcast/platform-episodes.json").exists())
+                self.assertFalse((site / "assets/podcast/semaine/episodes.json").exists())
                 with patch.dict(os.environ, {"TELEGRAM_AUTHORIZED_USER_ID": "42", "WEEKLY_PUBLIC": "true"}):
                     meta = semaine.run(date(2026, 11, 22), root / "out2", send=False, site=site)
-                entry = json.loads((site / "assets/podcast/platform-episodes.json").read_text())["episodes"][0]
+                entry = json.loads((site / "assets/podcast/semaine/episodes.json").read_text())["episodes"][0]
                 self.assertEqual((entry["id"], entry["date"], entry["full"]["seconds"]), ("semaine-2026-W47", "2026-11-22", 980))
                 self.assertTrue((site / "assets/podcast/archive/semaine-2026-W47/full.mp3").is_file())
             finally:

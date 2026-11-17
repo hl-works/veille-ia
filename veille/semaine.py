@@ -81,7 +81,7 @@ def run(today: date, out: Path, *, send: bool, site: Path | None) -> dict:
     public = os.environ.get("WEEKLY_PUBLIC", "").lower() == "true"
     meta = {"id": slot, "date": sunday.isoformat(), "period": period_label(monday, sunday),
             "days": snapshot["days"], "seconds": seconds, "public": public, "telegram_sent": False}
-    cover = site / f"assets/podcast/art/cover-{sunday:%Y-%m}-week-v1.jpg" if site else None
+    cover = site / "assets/podcast/semaine/cover.jpg" if site else None
     thumb = None
     if cover and cover.is_file():
         thumb = out / "semaine-thumbnail.jpg"
@@ -115,15 +115,17 @@ def publish_site(site: Path, out: Path, meta: dict, cover: Path | None) -> None:
         shutil.copyfile(cover, folder / "full-cover-v2.jpg")
         track.update(image=f"/assets/podcast/archive/{meta['id']}/full-cover-v2.jpg",
                      image_sha256=hashlib.sha256((folder / "full-cover-v2.jpg").read_bytes()).hexdigest())
-    manifest_path = site / "assets/podcast/platform-episodes.json"
+    # 3e émission « La Semaine iA » : flux séparé (assets/podcast/semaine/feed.xml).
+    manifest_path = site / "assets/podcast/semaine/episodes.json"
+    manifest_path.parent.mkdir(parents=True, exist_ok=True)
     manifest = json.loads(manifest_path.read_text()) if manifest_path.exists() else {"episodes": []}
     manifest["episodes"] = [e for e in manifest["episodes"] if e.get("id") != meta["id"]] + [{
         "date": meta["date"], "id": meta["id"], "title": f"La Semaine iA — {meta['period']}",
         "description": (f"Toute l'actualité IA de la semaine {meta['period']}, en un seul épisode : "
                         "les sujets qui ont compté, comment ils ont évolué, ce qu'il faut surveiller. "
-                        "Émission de Hugo LaHutte, avec des voix de synthèse."),
+                        "Émission de Hugo LaHutte, avec iAstro et des voix de synthèse."),
         "full": track}]
-    manifest["episodes"].sort(key=lambda e: (e["date"], "id" in e), reverse=True)
+    manifest["episodes"].sort(key=lambda e: e["date"], reverse=True)
     manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n")
 
 
