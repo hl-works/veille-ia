@@ -18,6 +18,7 @@ Code de sortie 0 + « SKIP » si le numéro de la semaine existe déjà.
 """
 import argparse
 import base64
+import hashlib
 import datetime as dt
 import json
 import os
@@ -213,6 +214,74 @@ def add_to_index(site, issue, period, title):
         llms.write_text(txt[:end] + "\n" + line + txt[end:])
 
 
+PORTRAIT_BASE = (
+    "Create a square editorial portrait illustration without any text for a podcast cover. Reference 1 fixes the "
+    "identity of Iastro, the small android BOY (not the adult man): black sculpted quiff, big anime eyes, pale warm "
+    "skin, cyan temple dot, white shirt with cyan heart, purple accents. Reference 2 fixes this month's outfit. ONLY "
+    "Iastro, close head and upper chest portrait, head upright (no sideways tilt), slim dark purple studio over-ear "
+    "headphones fitting around the quiff. Match approved manga/comic confident ink and subtle watercolor shading. Hair "
+    "completely in frame, centered, bottom cropped at mid chest. Warm ivory paper #FFFCF8 backdrop, sparse halftone "
+    "texture. No text, no title, no letters, no other characters, no logo, no border. {month}: {accent} "
+    "{expression} {backdrop} Same identity, fresh expression."
+)
+# Accent de l'IA par mois (bible graphique, calendrier vestimentaire) + fond de saison.
+PORTRAIT_MONTHS = {
+    1: ("JANUARY", "small navy blue knitted vest over his white shirt, as in reference.", "sparse pale blue halftone and a few tiny snowflakes."),
+    2: ("FEBRUARY", "plum knitted cuffs on his sleeves, as in reference.", "sparse plum halftone and a tiny winter twig."),
+    3: ("MARCH", "small sage green neck scarf, as in reference.", "sparse sage halftone and two tiny green buds."),
+    4: ("APRIL", "open yellow rain jacket over his white shirt, as in reference.", "sparse soft yellow halftone and a few tiny raindrops."),
+    5: ("MAY", "small lilac detail on his wrist, as in reference.", "sparse lilac halftone and two tiny lilac blossoms."),
+    6: ("JUNE", "small sky blue neck scarf, as in reference.", "sparse sky blue halftone rays and a tiny sun."),
+    7: ("JULY", "coral bracelet on his wrist, as in reference.", "sparse coral halftone sunburst and a tiny seashell."),
+    8: ("AUGUST", "small crossbody satchel strap across his chest, as in reference.", "sparse olive halftone and a tiny palm leaf."),
+    9: ("SEPTEMBER", "school backpack straps on his shoulders, as in reference.", "sparse beige halftone and a tiny pencil."),
+    10: ("OCTOBER", "purple Halloween cape with small orange pumpkin clasp, as in reference.", "sparse orange halftone sunburst and two tiny autumn leaves."),
+    11: ("NOVEMBER", "cream knitted scarf, as in reference.", "two tiny dry ochre leaves in muted olive halftone backdrop."),
+    12: ("DECEMBER", "burgundy knitted scarf, as in reference.", "sparse icy blue halftone rays and tiny snowflakes."),
+}
+EXPRESSIONS = [
+    "Frontal face, joyful open-mouth smile, eyes to the reader.",
+    "Warm knowing closed-mouth smile, one eyebrow slightly raised, three-quarter face but eyes toward the reader.",
+    "Curious wide eyes and small 'oh' mouth, one hand touching one headphone earcup.",
+    "Delighted laugh with eyes squeezed happily, frontal face.",
+    "Confident grin, thumbs-up near his chin, eyes to the reader.",
+    "Focused listening expression with a slight smile, both hands on the headphones.",
+]
+
+
+def ensure_portraits(site, today, comics):
+    """Portrait mensuel d'iAstro des pochettes podcast : mois en cours et, la dernière semaine, mois suivant."""
+    art = site / "assets/podcast/art"
+    if not art.exists():
+        return []
+    made = []
+    for day in (today, today + dt.timedelta(days=7)):
+        m = day.month
+        dest = art / f"iastro-{m:02d}-v1.png"
+        if dest.exists() or m in [x[0] for x in made]:
+            continue
+        label, accent, backdrop = PORTRAIT_MONTHS[m]
+        prompt = PORTRAIT_BASE.format(month=label, accent=accent, expression=EXPRESSIONS[m % len(EXPRESSIONS)],
+                                      backdrop=backdrop)
+        tile = comics / "kit/assets/tiles" / f"month-{m:02d}-{MONTHS[m]}-v1.png"
+        w, h = draw(prompt, [comics / "kit/assets/characters/duo-reference-v2.png", tile], "1:1", dest)
+        made.append((m, prompt, w, h))
+        manifest_path, prompts_path = art / "manifest.json", art / "prompts.json"
+        manifest = json.loads(manifest_path.read_text())
+        manifest["portraits"] = [x for x in manifest["portraits"] if x["month"] != m] + [{
+            "path": dest.name, "month": m, "width": w, "height": h,
+            "sha256": hashlib.sha256(dest.read_bytes()).hexdigest(), "status": "auto",
+            "method": f"{IMAGE_MODEL} via OpenRouter", "created": today.isoformat()}]
+        manifest["portraits"].sort(key=lambda x: x["month"])
+        manifest["pending_months"] = [x for x in manifest.get("pending_months", []) if x != m]
+        manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n")
+        prompts = json.loads(prompts_path.read_text())
+        prompts.setdefault("portraits", {})[str(m)] = prompt
+        prompts_path.write_text(json.dumps(prompts, ensure_ascii=False, indent=2) + "\n")
+        print(f"PORTRAIT : iastro-{m:02d}-v1.png créé")
+    return made
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--site", required=True, type=Path)
@@ -223,6 +292,7 @@ def main():
     today = dt.date.fromisoformat(args.date) if args.date else dt.datetime.now(PARIS).date()
     issue, monday, sunday = week(today)
     comics = args.site / "knowledge-hub/comics"
+    ensure_portraits(args.site, today, comics)
     episode_path = comics / "episodes" / f"{issue}.json"
     if episode_path.exists():
         print(f"SKIP : {issue} existe déjà.")

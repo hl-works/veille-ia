@@ -49,5 +49,29 @@ class WeeklyTests(unittest.TestCase):
             self.assertEqual((kh / "llms.txt").read_text().count("2026-W47"), 1)
 
 
+class PortraitTests(unittest.TestCase):
+    def test_next_month_portrait_only_last_week(self):
+        with tempfile.TemporaryDirectory() as d:
+            site = Path(d); art = site / "assets/podcast/art"; art.mkdir(parents=True)
+            (art / "manifest.json").write_text('{"portraits": [], "pending_months": [1, 2]}')
+            (art / "prompts.json").write_text('{"portraits": {}}')
+            (art / "iastro-12-v1.png").write_bytes(b"x")
+            calls = []
+            def fake(prompt, refs, ar, dest):
+                calls.append(dest.name); dest.write_bytes(b"png"); return 1024, 1024
+            orig, w.draw = w.draw, fake
+            try:
+                self.assertEqual(w.ensure_portraits(site, dt.date(2026, 12, 13), site), [])
+                made = w.ensure_portraits(site, dt.date(2026, 12, 27), site)
+                self.assertEqual(calls, ["iastro-01-v1.png"])
+                self.assertIn("JANUARY", made[0][1])
+                self.assertEqual(w.ensure_portraits(site, dt.date(2026, 12, 27), site), [])
+            finally:
+                w.draw = orig
+            import json
+            m = json.loads((art / "manifest.json").read_text())
+            self.assertEqual(m["pending_months"], [2]); self.assertEqual(m["portraits"][0]["month"], 1)
+
+
 if __name__ == "__main__":
     unittest.main()

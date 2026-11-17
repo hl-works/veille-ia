@@ -5,6 +5,8 @@ name: iAstro Sunday (hebdo, automatique)
 #   1. fabrique : sélection des 4 actus de la semaine + sources primaires
 #      vérifiées (Claude + recherche web), scénario, 5 dessins GPT Image (OpenAI via OpenRouter),
 #      publication sur hl-consulting.tech/knowledge-hub/comics/ ;
+#      + portrait mensuel d'iAstro des pochettes podcast (tenue du mois),
+#        créé la dernière semaine du mois pour le mois suivant ;
 #   2. annonce : post dans Le Radar iA (couverture + bouton « Lire la BD »).
 #
 # Déclencheur : le top départ de 08:10 Europe/Paris (push de `.state/tick` par
@@ -74,25 +76,29 @@ jobs:
           pip install -q -r requirements.txt
           git clone --depth 1 --filter=blob:none --sparse \
             "https://x-access-token:${KH_REPO_TOKEN}@github.com/hl-works/hl-consulting.tech.git" site
-          git -C site sparse-checkout set scripts knowledge-hub/comics knowledge-hub/en/comics
+          git -C site sparse-checkout set scripts knowledge-hub/comics knowledge-hub/en/comics assets/podcast/art
           git -C site config user.name veille-bot
           git -C site config user.email veille-bot@users.noreply.github.com
 
+          # Portrait mensuel des pochettes podcast (si manquant) + numéro de la semaine.
           python scripts/iastro-weekly.py --site site --feed feed.json | tee fabrication.log
-          if grep -q '^SKIP' fabrication.log; then exit 0; fi
-
+          ISSUE=""
           cd site
-          python3 scripts/build_comics.py --check --refresh-reader
-          python3 scripts/build_comics.py --refresh-reader
-          python3 scripts/test_comics.py
-          git add knowledge-hub
-          ISSUE=$(python3 -c "import json;print(json.load(open('knowledge-hub/comics/latest.json'))['id'])")
-          git commit -q -m "feat: iAstro Sunday ${ISSUE} (fabrication automatique du dimanche)"
+          if ! grep -q '^SKIP' ../fabrication.log; then
+            python3 scripts/build_comics.py --check --refresh-reader
+            python3 scripts/build_comics.py --refresh-reader
+            python3 scripts/test_comics.py
+            ISSUE=$(python3 -c "import json;print(json.load(open('knowledge-hub/comics/latest.json'))['id'])")
+          fi
+          git add knowledge-hub assets/podcast/art
+          if git diff --cached --quiet; then echo "Rien de nouveau à publier."; exit 0; fi
+          git commit -q -m "feat: iAstro Sunday ${ISSUE:-portrait mensuel} (fabrication automatique du dimanche)"
           for attempt in 1 2 3; do
-            if git push -q origin HEAD:main; then echo "Publié : ${ISSUE}"; break; fi
+            if git push -q origin HEAD:main; then echo "Publié."; break; fi
             [[ $attempt == 3 ]] && { echo "Push impossible" >&2; exit 1; }
             git fetch -q --depth 50 origin main && git rebase -q origin/main
           done
+          [[ -z "$ISSUE" ]] && exit 0
 
           # Attendre que GitHub Pages serve le nouveau numéro (≈1-3 min).
           for i in $(seq 1 40); do
