@@ -227,13 +227,13 @@ PORTRAIT_BASE = (
 )
 # Accent de l'IA par mois (bible graphique, calendrier vestimentaire) + fond de saison.
 PORTRAIT_MONTHS = {
-    1: ("JANUARY", "small navy blue knitted vest over his white shirt, as in reference.", "sparse pale blue halftone and a few tiny snowflakes."),
+    1: ("JANUARY", "light blue quilted puffer vest over his white shirt, as in reference.", "sparse pale blue halftone and a few tiny snowflakes."),
     2: ("FEBRUARY", "plum knitted cuffs on his sleeves, as in reference.", "sparse plum halftone and a tiny winter twig."),
     3: ("MARCH", "small sage green neck scarf, as in reference.", "sparse sage halftone and two tiny green buds."),
     4: ("APRIL", "open yellow rain jacket over his white shirt, as in reference.", "sparse soft yellow halftone and a few tiny raindrops."),
     5: ("MAY", "small lilac detail on his wrist, as in reference.", "sparse lilac halftone and two tiny lilac blossoms."),
     6: ("JUNE", "small sky blue neck scarf, as in reference.", "sparse sky blue halftone rays and a tiny sun."),
-    7: ("JULY", "coral bracelet on his wrist, as in reference.", "sparse coral halftone sunburst and a tiny seashell."),
+    7: ("JULY", "coral bracelet on his wrist and a small folding hand fan, as in reference.", "sparse coral halftone sunburst and a tiny seashell."),
     8: ("AUGUST", "small crossbody satchel strap across his chest, as in reference.", "sparse olive halftone and a tiny palm leaf."),
     9: ("SEPTEMBER", "school backpack straps on his shoulders, as in reference.", "sparse beige halftone and a tiny pencil."),
     10: ("OCTOBER", "purple Halloween cape with small orange pumpkin clasp, as in reference.", "sparse orange halftone sunburst and two tiny autumn leaves."),
