@@ -8,7 +8,7 @@ publié chaque dimanche sans validation préalable.
 2. Claude (+ recherche web) choisit 4 actus, vérifie chacune sur une source
    primaire, écrit le scénario (4 histoires × 6 cases) au format des numéros
    publiés. Seuls Hugo et iAstro apparaissent (pas de personnalité réelle).
-3. GPT Image (OpenAI) dessine 4 planches 3×2 + 1 couverture à partir des
+3. GPT Image (OpenAI, via OpenRouter) dessine 4 planches 3×2 + 1 couverture à partir des
    références de personnages et de la tenue du mois.
 4. Écrit l'épisode + l'art dans le checkout du site ; la publication (build,
    commit, push) est faite par le workflow.
@@ -25,7 +25,6 @@ from pathlib import Path
 import re
 import sys
 import time
-import uuid
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError
 from zoneinfo import ZoneInfo
@@ -34,7 +33,8 @@ import anthropic
 import yaml
 
 PARIS = ZoneInfo("Europe/Paris")
-IMAGE_MODEL = os.environ.get("IASTRO_IMAGE_MODEL", "gpt-image-2")
+IMAGE_MODEL = os.environ.get("IASTRO_IMAGE_MODEL", "openai/gpt-image-2")
+COSTS = []
 IMAGE_QUALITY = os.environ.get("IASTRO_IMAGE_QUALITY", "high")
 NEWS_COUNT = 4
 APPROVAL_REFERENCE = (
@@ -161,19 +161,14 @@ def check_plan(plan, monday, sunday):
                 line["side"] = "left" if line["speaker"] == "Hugo" else "right"
 
 
-def openai_image(prompt, refs, size, dest):
-    boundary = uuid.uuid4().hex
-    parts = []
-    fields = {"model": IMAGE_MODEL, "prompt": prompt, "size": size, "quality": IMAGE_QUALITY, "n": "1"}
-    for k, v in fields.items():
-        parts.append(f'--{boundary}\r\nContent-Disposition: form-data; name="{k}"\r\n\r\n{v}\r\n'.encode())
-    for ref in refs:
-        parts.append(f'--{boundary}\r\nContent-Disposition: form-data; name="image[]"; filename="{ref.name}"\r\n'
-                     f'Content-Type: image/png\r\n\r\n'.encode() + ref.read_bytes() + b"\r\n")
-    parts.append(f"--{boundary}--\r\n".encode())
-    req = Request("https://api.openai.com/v1/images/edits", data=b"".join(parts), headers={
-        "Authorization": "Bearer " + os.environ["OPENAI_API_KEY"],
-        "Content-Type": f"multipart/form-data; boundary={boundary}"})
+def draw(prompt, refs, aspect_ratio, dest):
+    """Dessin GPT Image via l'API Images d'OpenRouter (références en data URL)."""
+    body = {"model": IMAGE_MODEL, "prompt": prompt, "aspect_ratio": aspect_ratio, "quality": IMAGE_QUALITY, "n": 1,
+            "input_references": [{"type": "image_url", "image_url": {
+                "url": "data:image/png;base64," + base64.b64encode(r.read_bytes()).decode()}} for r in refs]}
+    req = Request("https://openrouter.ai/api/v1/images", data=json.dumps(body).encode(), headers={
+        "Authorization": "Bearer " + os.environ["OPENROUTER_API_KEY"], "Content-Type": "application/json",
+        "HTTP-Referer": "https://hl-consulting.tech", "X-Title": "iAstro Sunday"})
     for attempt in range(3):
         try:
             with urlopen(req, timeout=600) as r:
@@ -182,17 +177,18 @@ def openai_image(prompt, refs, size, dest):
         except HTTPError as exc:
             detail = exc.read().decode(errors="replace")[:400]
             if exc.code < 500 and exc.code != 429:
-                raise RuntimeError(f"OpenAI images {exc.code} : {detail}") from None
-            print(f"OpenAI images {exc.code}, nouvel essai…")
+                raise RuntimeError(f"OpenRouter images {exc.code} : {detail}") from None
+            print(f"OpenRouter images {exc.code}, nouvel essai…")
             time.sleep(20 * (attempt + 1))
     else:
-        raise RuntimeError("OpenAI images indisponible")
+        raise RuntimeError("OpenRouter images indisponible")
     png = base64.b64decode(data["data"][0]["b64_json"])
     assert png[:8] == b"\x89PNG\r\n\x1a\n", "Image non PNG"
     dest.write_bytes(png)
     w, h = int.from_bytes(png[16:20], "big"), int.from_bytes(png[20:24], "big")
-    usage = data.get("usage", {})
-    print(f"Image {dest.name} : {w}×{h}, {usage.get('total_tokens', '?')} tokens")
+    cost = data.get("usage", {}).get("cost")
+    COSTS.append(cost or 0)
+    print(f"Image {dest.name} : {w}×{h}, coût {cost} $")
     return w, h
 
 
@@ -244,14 +240,14 @@ def main():
 
     art_dir = comics / "art" / issue
     art_dir.mkdir(parents=True, exist_ok=True)
-    production = {"generated_at": today.isoformat(), "method": f"OpenAI {IMAGE_MODEL} ({IMAGE_QUALITY}), /v1/images/edits",
+    production = {"generated_at": today.isoformat(), "method": f"{IMAGE_MODEL} ({IMAGE_QUALITY}) via OpenRouter /api/v1/images",
                   "reference_files": [str(r.relative_to(comics)) for r in refs], "art": []}
     news_out, panels_out = [], []
     for n in plan["news"]:
         prompt = STYLE.format(outfits=plan["outfits_en"], setting=plan["setting_en"], story=n["story_en"],
                               panels=" ".join(f"({i}) {p['scene_en']}" for i, p in enumerate(n["panels"], 1)))
         name = f"{n['id']}-v1.png"
-        w, h = openai_image(prompt, refs, "1536x1024", art_dir / name)
+        w, h = draw(prompt, refs, "3:2", art_dir / name)
         production["art"].append({"file": name, "prompt": prompt, "width": w, "height": h})
         news_out.append({"id": n["id"], "brand_id": n["brand_id"], "model_label": n["model_label"], "title": n["title"],
                          "fact": n["fact"], "intro": n["intro"],
@@ -269,8 +265,10 @@ def main():
                     f"{plan['cover_en']}. {plan['setting_en']} Clean cream title band: iAstro Sunday; subtitle: "
                     f"Le best of IA en BD; bottom: {dates}. Clear faces and large legible lettering for Telegram, "
                     f"no other text or logos.")
-    w, h = openai_image(cover_prompt, refs, "1024x1024", art_dir / "cover-v1.png")
+    w, h = draw(cover_prompt, refs, "1:1", art_dir / "cover-v1.png")
     production["cover"] = {"file": "cover-v1.png", "prompt": cover_prompt, "width": w, "height": h}
+    production["images_cost_usd"] = round(sum(COSTS), 4)
+    print(f"Coût des dessins : {sum(COSTS):.2f} $")
     production["authorization"] = APPROVAL_REFERENCE
     production["editorial_cutoff"] = dt.datetime.now(PARIS).isoformat(timespec="minutes")
     (art_dir / "production.json").write_text(json.dumps(production, ensure_ascii=False, indent=2) + "\n")

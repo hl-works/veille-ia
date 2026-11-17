@@ -3,13 +3,13 @@ name: iAstro Sunday (hebdo, automatique)
 # Chaque dimanche, sans validation préalable (autorisation permanente de Hugo,
 # 17 novembre 2026) :
 #   1. fabrique : sélection des 4 actus de la semaine + sources primaires
-#      vérifiées (Claude + recherche web), scénario, 5 dessins GPT Image (OpenAI),
+#      vérifiées (Claude + recherche web), scénario, 5 dessins GPT Image (OpenAI via OpenRouter),
 #      publication sur hl-consulting.tech/knowledge-hub/comics/ ;
 #   2. annonce : post dans Le Radar iA (couverture + bouton « Lire la BD »).
 #
 # Déclencheur : le top départ de 08:10 Europe/Paris (push de `.state/tick` par
 # la tâche planifiée Claude). Les autres jours, rien ne se passe.
-# Secrets : ANTHROPIC_API_KEY, OPENAI_API_KEY, KH_REPO_TOKEN, TELEGRAM_*.
+# Secrets : ANTHROPIC_API_KEY, OPENROUTER_API_KEY, KH_REPO_TOKEN, TELEGRAM_*.
 # En cas d'échec, Hugo reçoit un message Telegram privé.
 on:
   push:
@@ -62,13 +62,13 @@ jobs:
         if: steps.gate.outputs.make == 'true'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           KH_REPO_TOKEN: ${{ secrets.KH_REPO_TOKEN }}
-          IASTRO_IMAGE_MODEL: ${{ vars.IASTRO_IMAGE_MODEL || 'gpt-image-2' }}
+          IASTRO_IMAGE_MODEL: ${{ vars.IASTRO_IMAGE_MODEL || 'openai/gpt-image-2' }}
           IASTRO_IMAGE_QUALITY: ${{ vars.IASTRO_IMAGE_QUALITY || 'high' }}
         run: |
           set -euo pipefail
-          for v in ANTHROPIC_API_KEY OPENAI_API_KEY KH_REPO_TOKEN; do
+          for v in ANTHROPIC_API_KEY OPENROUTER_API_KEY KH_REPO_TOKEN; do
             if [[ -z "${!v}" ]]; then echo "Secret $v manquant dans hl-works/veille-ia." >&2; exit 1; fi
           done
           pip install -q -r requirements.txt
