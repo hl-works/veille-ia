@@ -67,18 +67,46 @@ def validate_prepared(output, metadata):
     return artwork
 
 
+def monthly_artwork(design, output, metadata):
+    """Pochette du mois (une par format, demande de Hugo du 17/11/2026), sans navigateur.
+
+    Retourne None si les pochettes du mois n'existent pas encore.
+    """
+    day = date.fromisoformat(metadata['date']).isoformat()
+    art = design / 'assets/podcast/art'
+    episode = {'date': day, 'full': {'seconds': metadata['duration_seconds']}}
+    if metadata['court_duration_seconds'] != 0:
+        episode['short'] = {'seconds': metadata['court_duration_seconds']}
+    sources = {kind: art / f'cover-{day[:7]}-{kind}-v1.jpg' for kind in episode if kind != 'date'}
+    if not all(p.is_file() for p in sources.values()):
+        return None
+    output.mkdir(parents=True, exist_ok=True)
+    for kind, source in sources.items():
+        cover = output / f'{kind}-cover.jpg'
+        shutil.copyfile(source, cover)
+        image_info(cover, 3000)
+        command('ffmpeg', '-nostdin', '-y', '-v', 'error', '-i', str(cover),
+                '-vf', 'scale=1080:1080', '-frames:v', '1', str(output / f'{kind}-cover.png'))
+        episode[kind].update(image=f'/assets/podcast/archive/{day}/{kind}-cover-v2.jpg', image_sha256=sha(cover))
+    (output / 'artwork.json').write_text(json.dumps(episode, indent=2) + '\n')
+    return episode
+
+
 def prepare_media(output, metadata):
     """Render once, attach artwork without re-encoding, then seal the association."""
     design = os.environ.get('PODCAST_DESIGN_ROOT')
     if not design:
         raise RuntimeError('PODCAST_DESIGN_ROOT is required for artwork rendering')
-    renderer = Path(design).resolve() / 'scripts/render_podcast_covers.py'
     output = Path(output).resolve()
-    # Missing/invalid short or full duration fails before any Telegram request.
-    command(sys.executable, str(renderer), '--daily', metadata['date'],
-            '--short-seconds', str(metadata['court_duration_seconds']),
-            '--full-seconds', str(metadata['duration_seconds']), '--output', str(output))
-    artwork = json.loads((output / 'artwork.json').read_text())
+    artwork = monthly_artwork(Path(design).resolve(), output, metadata)
+    if artwork is None:
+        # Ancien rendu quotidien (date + durée) si la pochette du mois manque.
+        renderer = Path(design).resolve() / 'scripts/render_podcast_covers.py'
+        # Missing/invalid short or full duration fails before any Telegram request.
+        command(sys.executable, str(renderer), '--daily', metadata['date'],
+                '--short-seconds', str(metadata['court_duration_seconds']),
+                '--full-seconds', str(metadata['duration_seconds']), '--output', str(output))
+        artwork = json.loads((output / 'artwork.json').read_text())
     with tempfile.TemporaryDirectory(dir=output) as directory:
         stage = Path(directory)
         for kind, (filename, _) in TRACKS.items():

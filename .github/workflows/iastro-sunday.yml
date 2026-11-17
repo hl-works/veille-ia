@@ -5,7 +5,7 @@ name: iAstro Sunday (hebdo, automatique)
 #   1. fabrique : sélection des 4 actus de la semaine + sources primaires
 #      vérifiées (Claude + recherche web), scénario, 5 dessins GPT Image (OpenAI via OpenRouter),
 #      publication sur hl-consulting.tech/knowledge-hub/comics/ ;
-#      + portrait mensuel d'iAstro des pochettes podcast (tenue du mois),
+#      + portrait mensuel d'iAstro et pochettes mensuelles du podcast (tenue du mois),
 #        créé la dernière semaine du mois pour le mois suivant ;
 #   2. annonce : post dans Le Radar iA (couverture + bouton « Lire la BD »).
 #
@@ -73,7 +73,7 @@ jobs:
           for v in ANTHROPIC_API_KEY OPENROUTER_API_KEY KH_REPO_TOKEN; do
             if [[ -z "${!v}" ]]; then echo "Secret $v manquant dans hl-works/veille-ia." >&2; exit 1; fi
           done
-          pip install -q -r requirements.txt
+          pip install -q -r requirements.txt pillow
           git clone --depth 1 --filter=blob:none --sparse \
             "https://x-access-token:${KH_REPO_TOKEN}@github.com/hl-works/hl-consulting.tech.git" site
           git -C site sparse-checkout set scripts knowledge-hub/comics knowledge-hub/en/comics assets/podcast/art

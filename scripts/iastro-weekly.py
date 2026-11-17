@@ -24,6 +24,7 @@ import json
 import os
 from pathlib import Path
 import re
+import subprocess
 import sys
 import time
 from urllib.request import Request, urlopen
@@ -279,6 +280,11 @@ def ensure_portraits(site, today, comics):
         prompts.setdefault("portraits", {})[str(m)] = prompt
         prompts_path.write_text(json.dumps(prompts, ensure_ascii=False, indent=2) + "\n")
         print(f"PORTRAIT : iastro-{m:02d}-v1.png créé")
+    # Pochettes mensuelles du podcast (une par format) dès que le portrait existe.
+    composer = site / "scripts/build_monthly_podcast_covers.py"
+    for day in (today, today + dt.timedelta(days=7)):
+        if composer.exists() and (art / f"iastro-{day.month:02d}-v1.png").exists():
+            subprocess.run([sys.executable, str(composer), "--month", f"{day.year}-{day.month:02d}"], check=True)
     return made
 
 
