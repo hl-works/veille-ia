@@ -1,0 +1,14 @@
+{
+  "name": "hebdo-v3-2vu",
+  "items": [
+    {
+      "file": "hebdo-v3-hifi-bar-tokyo-2vu.png",
+      "aspect_ratio": "1:1",
+      "refs": [
+        "local:assets/hebdo/hebdo-v2-hifi-bar-tokyo.png",
+        "knowledge-hub/comics/kit/assets/characters/duo-reference-v2.png"
+      ],
+      "prompt": "Edit reference 1, the approved cover: keep it as identical as possible (same composition, same characters and faces from reference 2, same poses, same title lettering \"LA SEMAINE iA\" and subtitle, same hi-fi bar with vinyl wall, loudspeakers, tube amplifiers and the neo-Tokyo night skyline through the window, same colors and style). ONLY CHANGE: on the desk there must be exactly ONE pair of analog VU meters: two round-cornered amber VU meter dials side by side, centered between the two characters, instead of four. Keep the mixing console, microphones and turntable. Heads perfectly upright. No other text, no logos, no date."
+    }
+  ]
+}
