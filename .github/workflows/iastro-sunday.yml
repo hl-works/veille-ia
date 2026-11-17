@@ -1,0 +1,56 @@
+name: Annonce iAstro Sunday (hebdo)
+
+# Chaque dimanche, annonce dans Le Radar iA le dernier numéro iAstro Sunday
+# publié sur hl-consulting.tech, s'il n'a pas encore été annoncé.
+#
+# Déclencheur : le même top départ que la veille (push de `.state/tick` par la
+# tâche planifiée Claude de 08:10 Europe/Paris). Le script ne fait rien les
+# autres jours, ni s'il n'y a pas de numéro récent non annoncé.
+# Un reçu par numéro (data/comics-publications/) empêche tout doublon.
+on:
+  push:
+    branches: [main]
+    paths: [".state/tick"]
+  workflow_dispatch:
+    inputs:
+      send:
+        description: "Envoyer pour de vrai (sinon : vérification à vide)"
+        type: boolean
+        default: false
+permissions:
+  contents: write
+concurrency:
+  group: iastro-sunday
+  cancel-in-progress: false
+jobs:
+  announce:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
+        with:
+          python-version: "3.12"
+      - name: Annoncer le numéro de la semaine
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+          EVENT: ${{ github.event_name }}
+          SEND: ${{ inputs.send }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          args=()
+          if [[ "$EVENT" == "push" ]]; then args+=(--send --only-sunday); fi
+          if [[ "$SEND" == "true" ]]; then args+=(--send); fi
+          python scripts/announce-iastro-sunday.py "${args[@]}"
+      - name: Conserver le reçu même si l’écriture Git échoue
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: iastro-sunday-telegram-receipt
+          path: data/comics-publications/
+          if-no-files-found: ignore
+          retention-days: 30
