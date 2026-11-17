@@ -19,10 +19,15 @@ for attempt in 1 2 3; do
   git fetch --quiet origin main
   git reset --hard origin/main >/dev/null
   python3 "$ROOT/scripts/export-podcast.py" "$ROOT/audio-output" assets/podcast
-  git add assets/podcast/short.mp3 assets/podcast/full.mp3 assets/podcast/latest.json 2>/dev/null || {
+  # Duo du site et/ou Débrief seul (jour sans Flash) pour les plateformes.
+  for path in assets/podcast/short.mp3 assets/podcast/full.mp3 assets/podcast/latest.json \
+              assets/podcast/platform-episodes.json assets/podcast/archive; do
+    if [ -e "$path" ]; then git add "$path"; fi
+  done
+  if git diff --cached --quiet; then
     echo 'Pas encore de duo public à exporter.'
     exit 0
-  }
+  fi
   # Enabled only once the site feed/contact have been validated and published.
   # Build in this throwaway checkout before committing: an invalid archive or
   # RSS stops publication; the previous public site remains untouched.

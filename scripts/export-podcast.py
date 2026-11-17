@@ -14,11 +14,56 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from veille.podcast_media import validate_prepared
 
 
+def export_full_only(source: Path, destination: Path, data: dict) -> bool:
+    """Jour sans Flash : le Débrief part quand même sur les plateformes (RSS/Spotify).
+
+    Ajouté à platform-episodes.json, sans toucher au duo du site (latest.json).
+    """
+    day = date.fromisoformat(data['date']).isoformat()
+    platform = destination / 'platform-episodes.json'
+    manifest = json.loads(platform.read_text()) if platform.exists() else {'episodes': []}
+    known = {e['date'] for e in manifest['episodes']}
+    site = destination / 'episodes.json'
+    if site.exists():
+        known |= {e['date'] for e in json.loads(site.read_text())['episodes']}
+    if day in known:
+        return False
+    audio = source / 'brief.mp3'
+    seconds = data['duration_seconds']
+    actual = float(subprocess.check_output([
+        'ffprobe', '-v', 'error', '-show_entries', 'format=duration',
+        '-of', 'default=nw=1:nk=1', str(audio)], text=True, timeout=30))
+    if not 1024 < audio.stat().st_size < 25_000_000 or not math.isfinite(actual) \
+            or not isinstance(seconds, int) or not 0 < seconds < 1800 or abs(actual - seconds) > 2:
+        raise ValueError('Invalid audio duration')
+    folder = destination / 'archive' / day
+    folder.mkdir(parents=True, exist_ok=True)
+    shutil.copyfile(audio, folder / 'full.mp3')
+    track = {'src': f'/assets/podcast/archive/{day}/full.mp3', 'seconds': seconds,
+             'bytes': audio.stat().st_size, 'sha256': hashlib.sha256(audio.read_bytes()).hexdigest()}
+    cover = source / 'full-cover.jpg'
+    if data.get('artwork') and cover.is_file():
+        try:
+            validate_prepared(source, data)
+            shutil.copyfile(cover, folder / 'full-cover-v2.jpg')
+            track.update(image=f'/assets/podcast/archive/{day}/full-cover-v2.jpg',
+                         image_sha256=hashlib.sha256(cover.read_bytes()).hexdigest())
+        except Exception as exc:
+            logging.warning('Pochette indisponible à l’export (%s).', type(exc).__name__)
+    manifest['episodes'].append({'date': day, 'full': track})
+    manifest['episodes'].sort(key=lambda e: e['date'], reverse=True)
+    platform.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n')
+    return True
+
+
 def export(source: Path, destination: Path) -> bool:
     metadata = source / 'brief.json'
     if not metadata.exists():
         return False
     data = json.loads(metadata.read_text())
+    if (data.get('destination') == 'canal' and data.get('telegram_sent') is True
+            and data.get('court_duration_seconds') == 0):
+        return export_full_only(source, destination, data)
     if (data.get('destination') != 'canal' or data.get('telegram_sent') is not True
             or data.get('court_telegram_sent') is not True):
         return False
