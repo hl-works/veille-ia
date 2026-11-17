@@ -126,7 +126,7 @@ def run(config_path: str, *, dry_run: bool) -> int:
             try:
                 from . import journal
                 day = datetime.now(ZoneInfo("Europe/Paris")).date()
-                journal.save(digest, day)
+                journal.save(digest, day, os.environ.get("JOURNAL_DIR", "journal"))
                 text, markup = journal.teaser(digest, day)
                 if fmt == "pages" and os.environ.get("RADAR_DEFER_SEND", "").lower() == "true":
                     # Envoi différé : après la mise en ligne de la page du jour (veille.radar_send).
