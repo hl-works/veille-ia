@@ -152,8 +152,57 @@ jobs:
           if-no-files-found: ignore
           retention-days: 30
 
+  semaine:
+    # « La Semaine » du Podcast iA : l'épisode long qui résume la semaine (pour le lundi).
+    # En privé à Hugo tant que la variable WEEKLY_PUBLIC n'est pas « true ».
+    needs: fabriquer
+    if: ${{ always() && !cancelled() && needs.fabriquer.outputs.run == 'true' && github.event_name == 'push' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
+        with:
+          ref: main
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
+        with:
+          python-version: "3.12"
+      - name: Fabriquer et envoyer La Semaine
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+          TELEGRAM_AUTHORIZED_USER_ID: ${{ secrets.TELEGRAM_AUTHORIZED_USER_ID }}
+          KH_REPO_TOKEN: ${{ secrets.KH_REPO_TOKEN }}
+          WEEKLY_PUBLIC: ${{ vars.WEEKLY_PUBLIC }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          pip install -q -r requirements.txt -r requirements-audio.txt
+          git clone --depth 1 --filter=blob:none --sparse \
+            "https://x-access-token:${KH_REPO_TOKEN}@github.com/hl-works/hl-consulting.tech.git" site
+          git -C site sparse-checkout set scripts assets/podcast
+          python -m veille.semaine --send --site site --output semaine-output
+          # Écoute interne (branche ecoute), quel que soit le mode.
+          bash scripts/push-ecoute.sh "podcast/$(python3 -c "import json;print(json.load(open('semaine-output/semaine.json'))['id'])")" semaine-output || true
+          if [[ "${WEEKLY_PUBLIC,,}" == "true" ]]; then
+            cd site
+            python3 scripts/build_podcast_feed.py
+            git config user.name veille-bot
+            git config user.email veille-bot@users.noreply.github.com
+            git add assets/podcast
+            git diff --cached --quiet && exit 0
+            git commit -q -m "feat: La Semaine du Podcast iA ($(date +%F))"
+            for attempt in 1 2 3; do
+              git push -q origin HEAD:main && exit 0
+              git fetch -q --depth 50 origin main && git rebase -q origin/main
+            done
+            echo "Push impossible" >&2; exit 1
+          fi
+
   alerter:
-    needs: [fabriquer, annoncer]
+    needs: [fabriquer, annoncer, semaine]
     if: failure()
     runs-on: ubuntu-latest
     steps:

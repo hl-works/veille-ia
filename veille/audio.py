@@ -144,12 +144,27 @@ Pas de didascalies, de bruitages écrits ou de prénom lu comme une étiquette.
 """
 
 
+SEMAINE_FORMAT = (
+    "\nFORMAT : La Semaine. Le brief fourni contient les veilles de TOUS les jours de la "
+    "semaine écoulée, datées. Pour un auditeur qui n'a rien suivi et veut tout rattraper "
+    "en un seul épisode, à écouter le lundi. Entre 2 200 et 2 800 mots (15 à 18 minutes). "
+    "Ouvre par « Salut, c'est iAstro ! Bienvenue dans La Semaine du Podcast IA, » puis la "
+    "période en toutes lettres (ex. « du lundi 16 au dimanche 22 novembre »), sans année. "
+    "Retiens les 5 à 7 sujets les plus importants de la semaine : fusionne ce qui revient "
+    "plusieurs jours, raconte comment chaque histoire a évolué au fil de la semaine, explique "
+    "pourquoi elle compte, sans inventer aucun fait absent des veilles. Dans la dernière "
+    "section, Victoria donne en quelques phrases ce qu'il faut surveiller la semaine prochaine "
+    "(uniquement d'après les veilles). Huit séparateurs maximum. La fermeture d'iAstro renvoie "
+    "vers le Flash et le Débrief quotidiens et vers le journal du jour sur le site de HL Consulting."
+)
+
+
 def script_prompt(fmt: str, version: str) -> str:
     if fmt == 'iastro':
         return IASTRO_PROMPT + (
             "\nFORMAT : Flash. 180 à 260 mots, habillage parlé compris. Une à trois "
             "phrases de Victoria par sujet. Trois séparateurs maximum."
-            if version == 'courte' else
+            if version == 'courte' else SEMAINE_FORMAT if version == 'semaine' else
             "\nFORMAT : Débrief. Explique les sujets du brief sans inventer de faits. "
             "Six séparateurs maximum.")
     return COURT_PROMPT if version == 'courte' else DUO_PROMPT if fmt == 'duo' else SCRIPT_PROMPT
