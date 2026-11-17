@@ -1,14 +1,56 @@
 {
-  "name": "hugo-signature-v1",
+  "name": "signature-mensuelle-et-hebdo-v2",
   "items": [
     {
-      "file": "hugo-signature-v1.png",
+      "file": "hugo-signature-11-v1.png",
       "aspect_ratio": "1:1",
       "refs": [
         "knowledge-hub/comics/kit/assets/characters/duo-reference-v2.png",
-        "knowledge-hub/comics/kit/assets/characters/hugo-expressions-poses-v1.png"
+        "knowledge-hub/comics/kit/assets/tiles/month-11-novembre-v1.png"
       ],
-      "prompt": "Square editorial portrait illustration, no text. ONLY Hugo, the adult man from the references (brown hair, short beard, teal eyes, dark watch on left wrist): keep his exact face and identity. Head and shoulders, head upright, friendly confident smile, one hand raised in a small wave, cream overshirt over a white t-shirt. Match the approved manga ink and subtle watercolor style. Warm ivory paper #FFFCF8 background with sparse halftone texture, small violet accent. Centered, hair fully in frame. No text, no letters, no logo, no other character."
+      "prompt": "Square editorial portrait illustration, no text. ONLY Hugo, the adult man from reference 1 (brown hair, short beard, teal eyes, dark watch on left wrist): keep his exact face and identity. Reference 2 is the outfit sheet for NOVEMBER: dress Hugo exactly in the clothes the adult man wears in reference 2 (ignore the child). Head and shoulders, frontal view, HEAD PERFECTLY UPRIGHT: vertical face axis, horizontal eye line, absolutely no head tilt to either side (this is critical, the previous drawings tilted the head to the left). friendly confident smile, eyes to the viewer, one hand raised in a small wave. Approved manga ink and subtle watercolor style. Warm ivory paper #FFFCF8 background with sparse halftone texture and a small seasonal accent. Centered, hair fully in frame. No text, no letters, no logo, no other character."
+    },
+    {
+      "file": "hugo-signature-12-v1.png",
+      "aspect_ratio": "1:1",
+      "refs": [
+        "knowledge-hub/comics/kit/assets/characters/duo-reference-v2.png",
+        "knowledge-hub/comics/kit/assets/tiles/month-12-decembre-v1.png"
+      ],
+      "prompt": "Square editorial portrait illustration, no text. ONLY Hugo, the adult man from reference 1 (brown hair, short beard, teal eyes, dark watch on left wrist): keep his exact face and identity. Reference 2 is the outfit sheet for DECEMBER: dress Hugo exactly in the clothes the adult man wears in reference 2 (ignore the child). Head and shoulders, frontal view, HEAD PERFECTLY UPRIGHT: vertical face axis, horizontal eye line, absolutely no head tilt to either side (this is critical, the previous drawings tilted the head to the left). friendly confident smile, eyes to the viewer, one hand raised in a small wave. Approved manga ink and subtle watercolor style. Warm ivory paper #FFFCF8 background with sparse halftone texture and a small seasonal accent. Centered, hair fully in frame. No text, no letters, no logo, no other character."
+    },
+    {
+      "file": "hugo-signature-01-v1.png",
+      "aspect_ratio": "1:1",
+      "refs": [
+        "knowledge-hub/comics/kit/assets/characters/duo-reference-v2.png",
+        "knowledge-hub/comics/kit/assets/tiles/month-01-janvier-v1.png"
+      ],
+      "prompt": "Square editorial portrait illustration, no text. ONLY Hugo, the adult man from reference 1 (brown hair, short beard, teal eyes, dark watch on left wrist): keep his exact face and identity. Reference 2 is the outfit sheet for JANUARY: dress Hugo exactly in the clothes the adult man wears in reference 2 (ignore the child). Head and shoulders, frontal view, HEAD PERFECTLY UPRIGHT: vertical face axis, horizontal eye line, absolutely no head tilt to either side (this is critical, the previous drawings tilted the head to the left). friendly confident smile, eyes to the viewer, one hand raised in a small wave. Approved manga ink and subtle watercolor style. Warm ivory paper #FFFCF8 background with sparse halftone texture and a small seasonal accent. Centered, hair fully in frame. No text, no letters, no logo, no other character."
+    },
+    {
+      "file": "hebdo-v2-neo-tokyo.png",
+      "aspect_ratio": "1:1",
+      "refs": [
+        "knowledge-hub/comics/kit/assets/characters/duo-reference-v2.png"
+      ],
+      "prompt": "Square podcast show cover artwork for a weekly French AI news podcast. Characters from reference 1: Hugo (adult man, brown hair, short beard, teal eyes, dark watch on left wrist) and iAstro (child android boy with HUMAN face, black spiky quiff, big black anime eyes, cyan dot on temple, cyan heart on white shirt, purple accents, purple studio headphones). Keep their exact faces; neutral year-round clothing. HEAD PERFECTLY UPRIGHT: vertical face axis, horizontal eye line, absolutely no head tilt to either side (this is critical, the previous drawings tilted the head to the left). Both look at the viewer, happy and confident. Expressive manga ink and watercolor style. FOREGROUND (most important): a gorgeous podcast studio desk: two broadcast microphones on arms, glowing warm analog VU meters, a mixing console, a turntable with a vinyl record, both wear headphones. Large, perfectly legible title lettering: \"LA SEMAINE iA\" (exact casing: lowercase i, uppercase A, with a space between LA and SEMAINE), small subtitle \"Le Podcast iA · l'hebdo\". No date, no other text, no logos. Strong readable composition at thumbnail size. BACKGROUND: a big studio window on a neo-Tokyo night skyline, neon signs in magenta and cyan, light rain reflections, deep indigo night. On-air light."
+    },
+    {
+      "file": "hebdo-v2-hifi-bar.png",
+      "aspect_ratio": "1:1",
+      "refs": [
+        "knowledge-hub/comics/kit/assets/characters/duo-reference-v2.png"
+      ],
+      "prompt": "Square podcast show cover artwork for a weekly French AI news podcast. Characters from reference 1: Hugo (adult man, brown hair, short beard, teal eyes, dark watch on left wrist) and iAstro (child android boy with HUMAN face, black spiky quiff, big black anime eyes, cyan dot on temple, cyan heart on white shirt, purple accents, purple studio headphones). Keep their exact faces; neutral year-round clothing. HEAD PERFECTLY UPRIGHT: vertical face axis, horizontal eye line, absolutely no head tilt to either side (this is critical, the previous drawings tilted the head to the left). Both look at the viewer, happy and confident. Expressive manga ink and watercolor style. FOREGROUND (most important): a gorgeous podcast studio desk: two broadcast microphones on arms, glowing warm analog VU meters, a mixing console, a turntable with a vinyl record, both wear headphones. Large, perfectly legible title lettering: \"LA SEMAINE iA\" (exact casing: lowercase i, uppercase A, with a space between LA and SEMAINE), small subtitle \"Le Podcast iA · l'hebdo\". No date, no other text, no logos. Strong readable composition at thumbnail size. BACKGROUND: a cozy Japanese-style hi-fi listening bar (jazz kissa): wall of vinyl records, big vintage wooden loudspeakers, tube amplifiers glowing orange, warm amber lamps, wood and brass."
+    },
+    {
+      "file": "hebdo-v2-hifi-bar-tokyo.png",
+      "aspect_ratio": "1:1",
+      "refs": [
+        "knowledge-hub/comics/kit/assets/characters/duo-reference-v2.png"
+      ],
+      "prompt": "Square podcast show cover artwork for a weekly French AI news podcast. Characters from reference 1: Hugo (adult man, brown hair, short beard, teal eyes, dark watch on left wrist) and iAstro (child android boy with HUMAN face, black spiky quiff, big black anime eyes, cyan dot on temple, cyan heart on white shirt, purple accents, purple studio headphones). Keep their exact faces; neutral year-round clothing. HEAD PERFECTLY UPRIGHT: vertical face axis, horizontal eye line, absolutely no head tilt to either side (this is critical, the previous drawings tilted the head to the left). Both look at the viewer, happy and confident. Expressive manga ink and watercolor style. FOREGROUND (most important): a gorgeous podcast studio desk: two broadcast microphones on arms, glowing warm analog VU meters, a mixing console, a turntable with a vinyl record, both wear headphones. Large, perfectly legible title lettering: \"LA SEMAINE iA\" (exact casing: lowercase i, uppercase A, with a space between LA and SEMAINE), small subtitle \"Le Podcast iA · l'hebdo\". No date, no other text, no logos. Strong readable composition at thumbnail size. BACKGROUND: a hi-fi listening bar high up in a tower, wall of vinyl and vintage loudspeakers on the sides, tube amplifiers glowing, and through a large window behind them a neo-Tokyo neon night skyline. Warm amber inside, magenta and cyan outside."
     }
   ]
 }

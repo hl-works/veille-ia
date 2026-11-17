@@ -113,7 +113,8 @@ def main() -> int:
         from .radar_pages import render
         work = Path(tempfile.mkdtemp())
         portrait = fetch(f"{SITE}/assets/podcast/art/iastro-{day.month:02d}-v1.png", work / "portrait.png")
-        signature = fetch(f"{SITE}/assets/podcast/art/hugo-signature-v1.png", work / "signature.png")
+        signature = (fetch(f"{SITE}/assets/podcast/art/hugo-signature-{day.month:02d}-v1.png", work / "signature.png")
+                     or fetch(f"{SITE}/assets/podcast/art/hugo-signature-v1.png", work / "signature.png"))
         pages = render(digest, day, work / "pages", portrait=portrait, signature=signature)
     except Exception as exc:  # noqa: BLE001
         log.warning("Pages-images indisponibles (%s) → message titres + bouton.", exc)

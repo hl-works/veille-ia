@@ -57,7 +57,7 @@ STYLE = (
     "characters' faces and proportions; second fixes this month's clothing only. Match the original expressive "
     "manga ink-and-watercolor comic style, varied line weights and lively acting. {outfits} Keep head axes "
     "generally upright, vary profile, front, three-quarter, wide shots and closeups; expressive big open mouths, "
-    "eyebrows, gestures. Hugo generally left, iAstro right. {setting} Maintain clear anatomy, only these two "
+    "eyebrows, gestures. Heads upright by default: no systematic head tilt, never tilt heads to the left by habit. Hugo generally left, iAstro right. {setting} Maintain clear anatomy, only these two "
     "recurring people, no real public figures. Preserve exact identity and outfits across all six panels. "
     "Story: {story} SIX PANELS IN ORDER: {panels} This is an imaginary metaphor, NOT documentation of a real product."
 )
@@ -219,11 +219,20 @@ PORTRAIT_BASE = (
     "Create a square editorial portrait illustration without any text for a podcast cover. Reference 1 fixes the "
     "identity of Iastro, the small android BOY (not the adult man): black sculpted quiff, big anime eyes, pale warm "
     "skin, cyan temple dot, white shirt with cyan heart, purple accents. Reference 2 fixes this month's outfit. ONLY "
-    "Iastro, close head and upper chest portrait, head upright (no sideways tilt), slim dark purple studio over-ear "
+    "Iastro, close head and upper chest portrait, HEAD PERFECTLY UPRIGHT (vertical face axis, horizontal eye line, no tilt to either side), slim dark purple studio over-ear "
     "headphones fitting around the quiff. Match approved manga/comic confident ink and subtle watercolor shading. Hair "
     "completely in frame, centered, bottom cropped at mid chest. Warm ivory paper #FFFCF8 backdrop, sparse halftone "
     "texture. No text, no title, no letters, no other characters, no logo, no border. {month}: {accent} "
     "{expression} {backdrop} Same identity, fresh expression."
+)
+HUGO_SIGNATURE = (
+    "Square editorial portrait illustration, no text. ONLY Hugo, the adult man from reference 1 (brown hair, short "
+    "beard, teal eyes, dark watch on left wrist): keep his exact face and identity. Reference 2 is the outfit sheet "
+    "for {month}: dress Hugo exactly in the clothes the adult man wears in reference 2 (ignore the child). Head and "
+    "shoulders, frontal view, HEAD PERFECTLY UPRIGHT: vertical face axis, horizontal eye line, absolutely no head "
+    "tilt to either side. Friendly confident smile, eyes to the viewer, one hand raised in a small wave. Approved "
+    "manga ink and subtle watercolor style. Warm ivory paper #FFFCF8 background with sparse halftone texture and a "
+    "small seasonal accent. Centered, hair fully in frame. No text, no letters, no logo, no other character."
 )
 # Accent de l'IA par mois (bible graphique, calendrier vestimentaire) + fond de saison.
 PORTRAIT_MONTHS = {
@@ -281,6 +290,16 @@ def ensure_portraits(site, today, comics, days=None):
         prompts.setdefault("portraits", {})[str(m)] = prompt
         prompts_path.write_text(json.dumps(prompts, ensure_ascii=False, indent=2) + "\n")
         print(f"PORTRAIT : iastro-{m:02d}-v1.png créé")
+    # Signature de Hugo du mois (pages du Radar iA), même tenue que la fiche du mois.
+    for day in days:
+        m = day.month
+        dest = art / f"hugo-signature-{m:02d}-v1.png"
+        tile = comics / "kit/assets/tiles" / f"month-{m:02d}-{MONTHS[m]}-v1.png"
+        if dest.exists() or not tile.exists():
+            continue
+        prompt = HUGO_SIGNATURE.format(month=PORTRAIT_MONTHS[m][0])
+        draw(prompt, [comics / "kit/assets/characters/duo-reference-v2.png", tile], "1:1", dest)
+        print(f"SIGNATURE : hugo-signature-{m:02d}-v1.png créée")
     # Pochettes mensuelles du podcast (une par format) dès que le portrait existe.
     composer = site / "scripts/build_monthly_podcast_covers.py"
     for day in days:
