@@ -18724,5 +18724,198 @@
     "tweet_url": "https://x.com/a16z/status/2122480372713951345",
     "media": true,
     "auteur_x": "@a16z"
+  },
+  {
+    "date": "2026-11-17",
+    "titre_fr": "OpenAI lance GPT-6.2 Astra et Sol",
+    "resume_fr": "OpenAI a mis en ligne ses nouveaux modèles GPT-6.2 Astra et Sol, présentés comme très efficaces en coûts et orientés vers le travail professionnel et la recherche. L'accueil est partagé : certains testeurs saluent les gains d'efficacité, d'autres jugent le modèle difficile à piloter et en retrait face à la concurrence.",
+    "tags": [
+      "openai",
+      "modeles",
+      "produit"
+    ],
+    "score": 84,
+    "tweet_url": "https://x.com/OpenAI/status/2122750124543926515",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-11-17",
+    "titre_fr": "Google étend gratuitement le mode Tasks de Gemini",
+    "resume_fr": "Google déploie gratuitement le mode Tasks de Gemini dans six pays, propulsé par Gemini 4 Hydrogen. L'assistant peut gérer des tâches du quotidien : appeler des commerces pour comparer les prix et vérifier les stocks, régler via Google Pay (protocole AP2) et gérer des RSVP par email.",
+    "tags": [
+      "google",
+      "agents",
+      "produit",
+      "service-client",
+      "paiement"
+    ],
+    "score": 78,
+    "tweet_url": "https://x.com/sundarpichai/status/2122741728247738688",
+    "media": true,
+    "auteur_x": "@sundarpichai"
+  },
+  {
+    "date": "2026-11-17",
+    "titre_fr": "Microsoft dévoile 7 nouveaux modèles MAI à Ignite",
+    "resume_fr": "Lors de sa conférence Ignite, Microsoft a présenté sept nouveaux modèles MAI. MAI Code 2 se rapprocherait de Claude Opus 5.5 en programmation pour un vingtième du prix, et MAI Image 2.7 arrive en tête du classement d'édition d'images d'Artificial Analysis à environ un sixième du tarif d'OpenAI.",
+    "tags": [
+      "meta",
+      "modeles",
+      "produit"
+    ],
+    "score": 70,
+    "tweet_url": "https://x.com/rowancheung/status/2122821908680860146",
+    "media": false,
+    "auteur_x": "@rowancheung"
+  },
+  {
+    "date": "2026-11-17",
+    "titre_fr": "Alibaba sort Qwen4-Max en modèle propriétaire",
+    "resume_fr": "Alibaba a lancé Qwen4-Max, son modèle phare disponible uniquement via API. Contrairement aux rumeurs d'un abandon de l'open-weight, Qwen conserve sa stratégie habituelle : garder son modèle le plus puissant fermé tout en proposant de nombreux modèles ouverts en dessous.",
+    "tags": [
+      "modeles",
+      "open-source"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/natolambert/status/2122699342276370434",
+    "media": true,
+    "auteur_x": "@natolambert"
+  },
+  {
+    "date": "2026-11-17",
+    "titre_fr": "Isomorphic Labs lève 5 milliards de dollars",
+    "resume_fr": "La startup de découverte de médicaments de Demis Hassabis (DeepMind) a annoncé une levée de 5 milliards de dollars. L'entreprise affirme que ses candidats médicaments conçus par IA, contre le cancer et les maladies immunitaires, approchent des essais cliniques humains.",
+    "tags": [
+      "google",
+      "recherche"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/demishassabis/status/2122662616367853670",
+    "media": true,
+    "auteur_x": "@demishassabis"
+  },
+  {
+    "date": "2026-11-17",
+    "titre_fr": "Perplexity lance son Orchestrator API",
+    "resume_fr": "Perplexity propose une API d'orchestration qui sélectionne automatiquement le modèle adapté à chaque tâche selon capacité, disponibilité et latence. Plus de 45 modèles ouverts et propriétaires sont accessibles via une facturation unifiée.",
+    "tags": [
+      "produit",
+      "agents",
+      "saas"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/perplexity_ai/status/2122785177135096053",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-11-17",
+    "titre_fr": "Replit introduit Missions, des essaims d'agents",
+    "resume_fr": "Replit lance Missions, présenté comme un cadre d'agents en essaim capable d'accomplir un objectif donné dans un budget défini. L'outil se veut accessible à tous, avec des exemples concrets comme « obtiens-moi mes 10 premiers clients ».",
+    "tags": [
+      "produit",
+      "agents",
+      "automatisation",
+      "no-code"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/amasad/status/2122754439886905593",
+    "media": true,
+    "auteur_x": "@amasad"
+  },
+  {
+    "date": "2026-11-17",
+    "titre_fr": "Mistral rend Vibe gratuit en Europe pendant 3 mois",
+    "resume_fr": "Mistral offre son outil de code Vibe gratuitement en Europe pour les trois premiers mois, associé à son modèle Le Chonk. L'entreprise revendique de meilleures performances que GLM et DeepSeek en programmation.",
+    "tags": [
+      "mistral",
+      "produit",
+      "open-source"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/MistralAI/status/2122713540666806397",
+    "media": true,
+    "auteur_x": "@MistralAI"
+  },
+  {
+    "date": "2026-11-17",
+    "titre_fr": "Nvidia : départ puis possible retour de Jensen Huang",
+    "resume_fr": "Jensen Huang s'est exprimé publiquement pour la première fois depuis sa démission de la direction de Nvidia, présentant des excuses pour de « graves erreurs » et se disant prêt à revenir. Plusieurs dirigeants de la tech appellent à son retour, tandis que le conseil examine d'éventuels risques pour la sécurité nationale.",
+    "tags": [
+      "hardware",
+      "talents"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/tobi/status/2122811342423826728",
+    "media": false,
+    "auteur_x": "@tobi"
+  },
+  {
+    "date": "2026-11-17",
+    "titre_fr": "Mises à jour de Google AI Studio",
+    "resume_fr": "Google AI Studio permet désormais d'acheter des domaines personnalisés directement, de créer une application Android et de la publier sur le Play Store (États-Unis d'abord), ainsi que d'intégrer de l'IA de façon sécurisée dans ses applications Android.",
+    "tags": [
+      "google",
+      "produit",
+      "no-code"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/OfficialLoganK/status/2122818500763009273",
+    "media": true,
+    "auteur_x": "@OfficialLoganK"
+  },
+  {
+    "date": "2026-11-17",
+    "titre_fr": "Perplexity introduit le mode Multiagent",
+    "resume_fr": "Perplexity déploie Multiagent, un niveau d'effort où un agent principal répartit une tâche entre plusieurs agents utilisant différents modèles de pointe, qui partagent leurs résultats avant de les combiner. Visé notamment pour la recherche financière et l'analyse de documents.",
+    "tags": [
+      "produit",
+      "agents",
+      "saas"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/perplexity_ai/status/2122728603909783741",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-11-17",
+    "titre_fr": "HubSpot propose un accès MCP « sans frais cachés »",
+    "resume_fr": "HubSpot annonce un accès « headless » via connecteur MCP sans surcoût : pas de montée en gamme obligatoire ni d'add-on, l'usage réutilisant les crédits déjà inclus dans la licence. Objectif : brancher HubSpot sur Claude, ChatGPT ou Grok pour exploiter ses données CRM.",
+    "tags": [
+      "produit",
+      "automatisation",
+      "vente",
+      "saas"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/dharmesh/status/2122738235981906017",
+    "media": true,
+    "auteur_x": "@dharmesh"
+  },
+  {
+    "date": "2026-11-17",
+    "titre_fr": "Perplexity franchit le milliard de dollars d'ARR",
+    "resume_fr": "Arvind Srinivas a révélé que Perplexity a dépassé 1 milliard de dollars de revenus annuels récurrents, avec selon lui de bonnes marges et une croissance saine.",
+    "tags": [
+      "produit"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/AravSrinivas/status/2122734422445445629",
+    "media": false,
+    "auteur_x": "@AravSrinivas"
+  },
+  {
+    "date": "2026-11-18",
+    "titre_fr": "La Californie retire les Waymo de ses autoroutes",
+    "resume_fr": "Le Département des véhicules à moteur de Californie a ordonné le retrait des robotaxis Waymo des autoroutes de l'État, invoquant un « danger imminent » après que trois voitures sont entrées dans une zone de chantier fermée. Un rappel que la conduite 100% autonome bute encore sur de nombreux cas limites.",
+    "tags": [
+      "politique-ia"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/GaryMarcus/status/2122867931667104010",
+    "media": false,
+    "auteur_x": "@GaryMarcus"
   }
 ]
