@@ -1,0 +1,125 @@
+name: Podcast du jour — rattrapage
+
+# Rejoue UNIQUEMENT le job audio d'un run « Veille IA » qui a échoué (le texte
+# est déjà parti) : génère le Débrief + le Flash du brief sauvegardé dans
+# l'artefact audio-input de ce run, l'envoie et le publie sur le site.
+# Lancement manuel : run_id du run échoué.
+on:
+  workflow_dispatch:
+    inputs:
+      run_id:
+        description: "ID du run « Veille IA » dont l'audio a échoué"
+        required: true
+      send:
+        description: "Envoyer sur Telegram et publier (sinon : génération seule)"
+        type: boolean
+        default: true
+concurrency:
+  group: veille-ia-audio-rattrapage
+  cancel-in-progress: false
+permissions:
+  contents: write
+  actions: read
+env:
+  PARIS_EARLIEST: "08:00"
+jobs:
+  audio:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: "3.12"
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          name: audio-input
+          path: audio-input
+          run-id: ${{ inputs.run_id }}
+          github-token: ${{ github.token }}
+      - name: Installer le moteur vocal
+        run: |
+          bash scripts/install-ffmpeg.sh
+          pip install -q pyyaml
+          provider=$(python3 -c "import yaml;print(((yaml.safe_load(open('config.yaml')) or {}).get('audio') or {}).get('provider','edge'))" 2>/dev/null || echo edge)
+          provider=${AUDIO_TTS_PROVIDER:-$provider}
+          echo "Moteur vocal : $provider"
+          if [[ "$provider" == "qwen" ]]; then
+            sudo apt-get install -y -qq sox
+            pip install -r requirements-qwen.txt
+          else
+            pip install -r requirements-audio.txt
+          fi
+        env:
+          AUDIO_TTS_PROVIDER: ${{ vars.AUDIO_TTS_PROVIDER }}
+      - name: Charger le modèle unique des pochettes
+        continue-on-error: true
+        timeout-minutes: 2
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          repository: hl-works/hl-consulting.tech
+          ref: main
+          path: .podcast-design
+          persist-credentials: false
+          sparse-checkout: |
+            scripts
+            assets/podcast/art
+      # Pochettes : celles du mois (assets/podcast/art), sans navigateur. Le rendu
+      # daté n'est installé que si la pochette du mois manque.
+      - name: Mois en cours (pochettes)
+        run: echo "MONTH=$(TZ=Europe/Paris date +%Y-%m)" >> "$GITHUB_ENV"
+      - name: Installer le rendu des pochettes (repli)
+        if: hashFiles(format('.podcast-design/assets/podcast/art/cover-{0}-full-v1.jpg', env.MONTH)) == ''
+        continue-on-error: true
+        timeout-minutes: 4
+        run: |
+          pip install -r .podcast-design/scripts/requirements-podcast-covers.txt
+          python -m playwright install --with-deps chromium
+      - name: Générer le podcast et le publier
+        env:
+          PODCAST_DESIGN_ROOT: ${{ github.workspace }}/.podcast-design
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+          # Destination « prive » : le podcast part en message privé à Hugo
+          # (même ID que celui qui autorise les commandes /maj).
+          TELEGRAM_AUTHORIZED_USER_ID: ${{ secrets.TELEGRAM_AUTHORIZED_USER_ID }}
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          # Envoi Telegram BLOQUÉ tant que Hugo n'a pas validé le podcast :
+          # il faut poser la variable de dépôt AUDIO_SEND=true (décision humaine).
+          # D'ici là, le MP3 + la transcription restent dans l'artefact « brief-audio ».
+          SEND_AUDIO: ${{ vars.AUDIO_SEND == 'true' && inputs.send }}
+          # Surcharges optionnelles (variables de dépôt) ; sinon config.yaml → audio.
+          AUDIO_TTS_PROVIDER: ${{ vars.AUDIO_TTS_PROVIDER }}
+          AUDIO_FORMAT: ${{ vars.AUDIO_FORMAT }}
+          AUDIO_DESTINATION: ${{ vars.AUDIO_DESTINATION }}
+          QWEN_DEVICE: cpu
+          QWEN_MODEL: ${{ vars.QWEN_MODEL || 'Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice' }}
+          QWEN_SPEAKER: ${{ vars.QWEN_SPEAKER || 'Ryan' }}
+        run: |
+          args=()
+          if [[ "$SEND_AUDIO" == "true" ]]; then args+=(--send); fi
+          python -m veille.audio "${args[@]}"
+      - name: Publier les deux podcasts publics sur la home
+        if: ${{ success() && inputs.send }}
+        env:
+          KH_REPO_TOKEN: ${{ secrets.KH_REPO_TOKEN }}
+          KH_REPO: hl-works/hl-consulting.tech
+        run: bash scripts/push-podcast-site.sh
+      # Le MP3 + la transcription du jour vont sur la branche `ecoute` pour
+      # qu'Hugo (et Claude) puissent l'écouter et le valider. Rien n'est publié.
+      - name: Publier l'écoute du jour (branche ecoute)
+        if: ${{ always() }}
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: bash scripts/push-ecoute.sh "podcast/$(TZ=Europe/Paris date +%Y-%m-%d)"
+      - name: Conserver l'aperçu et le diagnostic éditorial 14 jours
+        if: ${{ always() }}
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: brief-audio
+          path: audio-output/
+          retention-days: 14
+          overwrite: true
+          if-no-files-found: ignore
