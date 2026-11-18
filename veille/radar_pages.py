@@ -36,7 +36,8 @@ body{background:#222;font-family:Inter,'Liberation Sans',Arial,sans-serif;color:
 .bar{height:118px;display:flex;align-items:center;justify-content:space-between;padding:0 64px;border-bottom:4px solid #0c0c0c;flex:none}
 .brand{font-family:Archivo,'Liberation Sans',sans-serif;font-weight:900;font-size:52px;letter-spacing:-.5px}
 .brand em{font-style:normal;color:#39359E}
-.folio{font-family:'IBM Plex Mono',monospace;font-size:28px;color:#555}
+.folio{font-family:'IBM Plex Mono',monospace;font-size:28px;color:#555;min-width:110px;text-align:right}
+.hdate{font-family:'IBM Plex Mono',monospace;font-size:28px;font-weight:500;text-transform:uppercase;letter-spacing:1px;color:#0c0c0c}
 .content{flex:1;padding:56px 64px 0;overflow:hidden;display:flex;flex-direction:column;gap:40px}
 .foot{height:96px;flex:none;border-top:4px solid #0c0c0c;display:flex;align-items:center;justify-content:space-between;padding:0 64px;font-family:'IBM Plex Mono',monospace;font-size:26px;color:#333}
 .foot b{color:#39359E}
@@ -137,8 +138,9 @@ def build_html(digest: str, day: date, portrait: Path | None = None, signature: 
     topics = [s for s in secs if s["title"] and not s["quote"]]
     quote = next((s for s in secs if s["quote"]), None)
     date_txt = f"{DAYS[day.weekday()]} {day.day} {MONTHS[day.month - 1]} {day.year}"
+    short_date = f"{DAYS[day.weekday()][:3]}. {day.day} {MONTHS[day.month - 1]} {day.year}"
     bar = ('<div class="bar"><span class="brand">LE RADAR <em>iA</em></span>'
-           '<span class="folio"></span></div>')
+           f'<span class="hdate">{short_date}</span><span class="folio"></span></div>')
     foot = ('<div class="foot"><span>Le détail et les sources : <b>hl-consulting.tech</b></span>'
             '<span>iAstro × Hugo</span></div>')
     pic = _data_uri(portrait)
