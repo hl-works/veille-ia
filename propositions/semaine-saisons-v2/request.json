@@ -1,0 +1,23 @@
+{
+  "name": "semaine-saisons-v2",
+  "items": [
+    {
+      "file": "semaine-printemps-v2.png",
+      "aspect_ratio": "1:1",
+      "refs": [
+        "local:assets/hebdo/semaine-printemps.png",
+        "local:assets/hebdo/hebdo-v3-hifi-bar-tokyo-2vu.png"
+      ],
+      "prompt": "Edit reference 1: keep it strictly identical (characters, clothes, faces, title, window view, objects, colors). ONLY CHANGE: the VU meter box on the desk must contain exactly TWO analog VU meter dials side by side (one pair, like in reference 2), not one. Heads perfectly upright. No other change."
+    },
+    {
+      "file": "semaine-automne-v2.png",
+      "aspect_ratio": "1:1",
+      "refs": [
+        "local:assets/hebdo/semaine-automne.png",
+        "local:assets/hebdo/hebdo-v3-hifi-bar-tokyo-2vu.png"
+      ],
+      "prompt": "Edit reference 1: keep it strictly identical (characters, clothes, faces, title, window view, objects, colors). ONLY CHANGE: the VU meter box on the desk must contain exactly TWO analog VU meter dials side by side (one pair, like in reference 2), not one. Heads perfectly upright. No other change."
+    }
+  ]
+}
