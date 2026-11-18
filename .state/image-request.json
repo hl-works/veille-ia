@@ -1,45 +1,23 @@
 {
-  "name": "semaine-saisons-v1",
+  "name": "semaine-saisons-v2",
   "items": [
     {
-      "file": "semaine-hiver.png",
+      "file": "semaine-printemps-v2.png",
       "aspect_ratio": "1:1",
       "refs": [
-        "local:assets/hebdo/hebdo-v3-hifi-bar-tokyo-2vu.png",
-        "knowledge-hub/comics/kit/assets/characters/duo-reference-v2.png",
-        "knowledge-hub/comics/kit/assets/tiles/month-01-janvier-v1.png"
+        "local:assets/hebdo/semaine-printemps.png",
+        "local:assets/hebdo/hebdo-v3-hifi-bar-tokyo-2vu.png"
       ],
-      "prompt": "Edit reference 1, the approved podcast cover: keep the same composition, the same title lettering \"LA SEMAINE iA\" and subtitle \"Le Podcast iA · l'hebdo\", the same hi-fi bar (vinyl wall, vintage loudspeakers, tube amplifiers), the same desk with exactly ONE pair of VU meters, microphones, mixing console and turntable, same style. Faces and identity of Hugo and iAstro from reference 2. WINTER VERSION: dress Hugo and iAstro exactly in the clothes they wear in reference 3 (the outfit sheet of the season), and make the view through the window seasonal: heavy snow gently falling over the neon Tokyo skyline, frosted window corners, a steaming tea cup on the desk. Heads perfectly upright (vertical face axis, no tilt), both smiling at the viewer. No other text, no logos, no date."
+      "prompt": "Edit reference 1: keep it strictly identical (characters, clothes, faces, title, window view, objects, colors). ONLY CHANGE: the VU meter box on the desk must contain exactly TWO analog VU meter dials side by side (one pair, like in reference 2), not one. Heads perfectly upright. No other change."
     },
     {
-      "file": "semaine-printemps.png",
+      "file": "semaine-automne-v2.png",
       "aspect_ratio": "1:1",
       "refs": [
-        "local:assets/hebdo/hebdo-v3-hifi-bar-tokyo-2vu.png",
-        "knowledge-hub/comics/kit/assets/characters/duo-reference-v2.png",
-        "knowledge-hub/comics/kit/assets/tiles/month-04-avril-v1.png"
+        "local:assets/hebdo/semaine-automne.png",
+        "local:assets/hebdo/hebdo-v3-hifi-bar-tokyo-2vu.png"
       ],
-      "prompt": "Edit reference 1, the approved podcast cover: keep the same composition, the same title lettering \"LA SEMAINE iA\" and subtitle \"Le Podcast iA · l'hebdo\", the same hi-fi bar (vinyl wall, vintage loudspeakers, tube amplifiers), the same desk with exactly ONE pair of VU meters, microphones, mixing console and turntable, same style. Faces and identity of Hugo and iAstro from reference 2. SPRING VERSION: dress Hugo and iAstro exactly in the clothes they wear in reference 3 (the outfit sheet of the season), and make the view through the window seasonal: cherry blossom trees in bloom along the neon Tokyo streets, pink petals drifting past the window, a small sakura branch in a vase on the desk. Heads perfectly upright (vertical face axis, no tilt), both smiling at the viewer. No other text, no logos, no date."
-    },
-    {
-      "file": "semaine-ete.png",
-      "aspect_ratio": "1:1",
-      "refs": [
-        "local:assets/hebdo/hebdo-v3-hifi-bar-tokyo-2vu.png",
-        "knowledge-hub/comics/kit/assets/characters/duo-reference-v2.png",
-        "knowledge-hub/comics/kit/assets/tiles/month-07-juillet-v1.png"
-      ],
-      "prompt": "Edit reference 1, the approved podcast cover: keep the same composition, the same title lettering \"LA SEMAINE iA\" and subtitle \"Le Podcast iA · l'hebdo\", the same hi-fi bar (vinyl wall, vintage loudspeakers, tube amplifiers), the same desk with exactly ONE pair of VU meters, microphones, mixing console and turntable, same style. Faces and identity of Hugo and iAstro from reference 2. SUMMER VERSION: dress Hugo and iAstro exactly in the clothes they wear in reference 3 (the outfit sheet of the season), and make the view through the window seasonal: colorful fireworks bursting over Tokyo bay on a warm summer night, a paper wind chime and an iced drink on the desk. Heads perfectly upright (vertical face axis, no tilt), both smiling at the viewer. No other text, no logos, no date."
-    },
-    {
-      "file": "semaine-automne.png",
-      "aspect_ratio": "1:1",
-      "refs": [
-        "local:assets/hebdo/hebdo-v3-hifi-bar-tokyo-2vu.png",
-        "knowledge-hub/comics/kit/assets/characters/duo-reference-v2.png",
-        "knowledge-hub/comics/kit/assets/tiles/month-11-novembre-v1.png"
-      ],
-      "prompt": "Edit reference 1, the approved podcast cover: keep the same composition, the same title lettering \"LA SEMAINE iA\" and subtitle \"Le Podcast iA · l'hebdo\", the same hi-fi bar (vinyl wall, vintage loudspeakers, tube amplifiers), the same desk with exactly ONE pair of VU meters, microphones, mixing console and turntable, same style. Faces and identity of Hugo and iAstro from reference 2. AUTUMN VERSION: dress Hugo and iAstro exactly in the clothes they wear in reference 3 (the outfit sheet of the season), and make the view through the window seasonal: red and orange maple leaves swirling past the window, light autumn rain and neon reflections, a warm lamp glow. Heads perfectly upright (vertical face axis, no tilt), both smiling at the viewer. No other text, no logos, no date."
+      "prompt": "Edit reference 1: keep it strictly identical (characters, clothes, faces, title, window view, objects, colors). ONLY CHANGE: the VU meter box on the desk must contain exactly TWO analog VU meter dials side by side (one pair, like in reference 2), not one. Heads perfectly upright. No other change."
     }
   ]
 }
