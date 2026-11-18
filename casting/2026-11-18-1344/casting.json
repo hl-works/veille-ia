@@ -1,0 +1,13 @@
+[
+  {
+    "variante": "court-v4-victoria",
+    "format": "solo",
+    "voix_femme_elevenlabs": "uOw88F5bjqRiVuZLhXEA",
+    "voix_homme_elevenlabs": "",
+    "modele_elevenlabs": "eleven_v4",
+    "vitesse": 1.0,
+    "moteur": "dialogue",
+    "seed": "42",
+    "fichier": "01-court-v4-victoria.mp3"
+  }
+]
