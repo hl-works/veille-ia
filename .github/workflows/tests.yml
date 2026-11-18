@@ -32,8 +32,7 @@ jobs:
             scripts
             assets/podcast
       - run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq ffmpeg
+          bash scripts/install-ffmpeg.sh
           pip install -r requirements.txt -r .podcast-design/scripts/requirements-podcast-covers.txt
           python -m playwright install --with-deps chromium
       - run: python -m unittest discover -s tests -p 'test_podcast_media.py' -v

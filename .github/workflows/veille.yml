@@ -263,7 +263,7 @@ jobs:
     # Independent from subsequent feed/bridge failures. Never delay the written send.
     if: ${{ always() && !cancelled() && needs.veille.outputs.audio_artifact != '' }}
     runs-on: ubuntu-24.04
-    timeout-minutes: 25
+    timeout-minutes: 35
     # Audio failure must fail the run; the written digest has already been sent.
     permissions:
       # write : uniquement pour pousser le MP3 du jour sur la branche `ecoute`.
@@ -279,8 +279,7 @@ jobs:
           path: audio-input
       - name: Installer le moteur vocal
         run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq ffmpeg
+          bash scripts/install-ffmpeg.sh
           pip install -q pyyaml
           provider=$(python3 -c "import yaml;print(((yaml.safe_load(open('config.yaml')) or {}).get('audio') or {}).get('provider','edge'))" 2>/dev/null || echo edge)
           provider=${AUDIO_TTS_PROVIDER:-$provider}
@@ -305,9 +304,14 @@ jobs:
           sparse-checkout: |
             scripts
             assets/podcast/art
-      - name: Installer le rendu des pochettes
+      # Pochettes : celles du mois (assets/podcast/art), sans navigateur. Le rendu
+      # daté n'est installé que si la pochette du mois manque.
+      - name: Mois en cours (pochettes)
+        run: echo "MONTH=$(TZ=Europe/Paris date +%Y-%m)" >> "$GITHUB_ENV"
+      - name: Installer le rendu des pochettes (repli)
+        if: hashFiles(format('.podcast-design/assets/podcast/art/cover-{0}-full-v1.jpg', env.MONTH)) == ''
         continue-on-error: true
-        timeout-minutes: 3
+        timeout-minutes: 4
         run: |
           pip install -r .podcast-design/scripts/requirements-podcast-covers.txt
           python -m playwright install --with-deps chromium

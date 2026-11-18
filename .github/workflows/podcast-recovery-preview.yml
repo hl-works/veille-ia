@@ -45,8 +45,7 @@ jobs:
           assert hashlib.sha256(data['message'].encode()).hexdigest() == data['digest_sha256']
           PY
       - run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq ffmpeg
+          bash scripts/install-ffmpeg.sh
           pip install -r requirements.txt
       - name: Load shared artwork renderer
         continue-on-error: true
