@@ -81,7 +81,13 @@ def run(today: date, out: Path, *, send: bool, site: Path | None) -> dict:
     public = os.environ.get("WEEKLY_PUBLIC", "").lower() == "true"
     meta = {"id": slot, "date": sunday.isoformat(), "period": period_label(monday, sunday),
             "days": snapshot["days"], "seconds": seconds, "public": public, "telegram_sent": False}
-    cover = site / "assets/podcast/semaine/cover.jpg" if site else None
+    season = {12: "hiver", 1: "hiver", 2: "hiver", 3: "printemps", 4: "printemps", 5: "printemps",
+              6: "ete", 7: "ete", 8: "ete"}.get(sunday.month, "automne")
+    cover = None
+    if site:
+        cover = site / f"assets/podcast/semaine/cover-{season}.jpg"
+        if not cover.is_file():
+            cover = site / "assets/podcast/semaine/cover.jpg"
     thumb = None
     if cover and cover.is_file():
         thumb = out / "semaine-thumbnail.jpg"
