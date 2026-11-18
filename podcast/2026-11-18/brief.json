@@ -26,27 +26,43 @@
     "https://x.com/natolambert/status/2122699342276370434"
   ],
   "digest_sha256": "b4dfe21d7c435f902c418eaae4f852f82cfe4f523e1124493662060c8130fa1a",
-  "duration_seconds": 461,
+  "duration_seconds": 449,
   "provider": "elevenlabs",
   "format": "iastro",
   "destination": "canal",
   "habillage": true,
-  "court_duration_seconds": 0,
-  "telegram_sent": false,
-  "audio_complete": false,
+  "court_duration_seconds": 121,
+  "telegram_sent": true,
+  "audio_complete": true,
   "artwork": {
     "date": "2026-11-18",
     "full": {
-      "seconds": 461,
+      "seconds": 449,
       "image": "/assets/podcast/archive/2026-11-18/full-cover-v2.jpg",
       "image_sha256": "42863255e7cf63f704637746217c3cd518acc12f0440b6c2fe494107b8016d9f",
-      "audio_sha256": "3524681ac0bf6025358b8edae1f2714a1b55e5957c720284b1c3fa575124c3f3",
-      "png_sha256": "7600796ffcaaf8a1e1bbbf260e5e0a1c5630d480835607f06bbb7aea62c9b610",
-      "thumbnail_sha256": "91721ba6a6a86498944751531a1f0d85923cf03971ba3db714b985353f985f24"
+      "audio_sha256": "50853abf3b627374cd3f4dda5a696b7cb16000c961d9ff62a75640a91beb3d32",
+      "png_sha256": "4bebf8c2c0e3c8cd4c3e91718994b8bbfe7be5e29d7d957182924be1b942e2ba",
+      "thumbnail_sha256": "346bf5276f3d93f526eda951db10ebd282af80387fcecbfa8ab578ad76f5f8a2"
+    },
+    "short": {
+      "seconds": 121,
+      "image": "/assets/podcast/archive/2026-11-18/short-cover-v2.jpg",
+      "image_sha256": "07f425caaf6de2accbdbc8cbb32ad0e575abec7e8dde6715a444a702ba5096d9",
+      "audio_sha256": "d1a29e1ff47368d995f22c7452daf92d8248d6c5af2ca61e2efa3e908f6369db",
+      "png_sha256": "1109498459e9920733016ecd254f62d61fa3c31dde19047227851758f5099d4c",
+      "thumbnail_sha256": "ce9b8847a4086d6de9871fc59bc34900d0cb55bf625ef95ff2bd2646a07288c2"
     }
   },
   "audio_sha256": {
-    "full": "3524681ac0bf6025358b8edae1f2714a1b55e5957c720284b1c3fa575124c3f3"
+    "short": "d1a29e1ff47368d995f22c7452daf92d8248d6c5af2ca61e2efa3e908f6369db",
+    "full": "50853abf3b627374cd3f4dda5a696b7cb16000c961d9ff62a75640a91beb3d32"
   },
-  "artwork_status": "ready"
+  "artwork_status": "ready",
+  "telegram_receipt": {
+    "message_id": 513,
+    "thumbnail_width": 320,
+    "thumbnail_height": 320,
+    "podcast_links_confirmed": false
+  },
+  "court_published": true
 }

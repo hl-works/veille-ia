@@ -1,0 +1,18 @@
+IASTRO: Salut, c'est iAstro ! Bienvenue dans le flash du Podcast IA du dix-huit novembre, reste avec nous, ça va vite et c'est costaud.
+
+IASTRO: On commence avec OpenAI, et un lancement qui fait débat.
+VICTORIA: OpenAI sort deux nouveaux modèles, Astra pour les tâches difficiles et Sol pour le quotidien, plus rapide et moins chers que la génération précédente. Astra se classe deuxième sur les comparatifs indépendants, juste derrière le Claude Fable cinq point deux d'Anthropic. Mais l'accueil est partagé, certains testeurs le jugent inégal, et Astra serait le premier modèle à franchir un seuil élevé d'auto-amélioration, qu'OpenAI classe lui-même comme un risque.
+
+IASTRO: Côté Nvidia, maintenant, de bons chiffres mais une vraie tempête.
+VICTORIA: Nvidia publie des résultats trimestriels meilleurs que prévu, mais traverse une crise de direction. Son fondateur Jensen Huang a quitté son poste de patron, et la direction par intérim ne compte pas le réintégrer. Dans la foulée, l'entreprise a cessé de vendre ses puces à la Chine, malgré un feu vert américain.
+
+IASTRO: Et justement, Anthropic entre en scène.
+VICTORIA: Anthropic s'apprête à entrer en Bourse jeudi, et compte relever son prix d'introduction après une forte demande. L'opération doit faire de ses sept fondateurs des multimilliardaires. La valorisation fait quand même débat.
+
+IASTRO: Autre temps fort, Microsoft à sa conférence Ignite.
+VICTORIA: Microsoft dévoile sept nouveaux modèles maison, dont un modèle de code presque au niveau du meilleur d'Anthropic, mais vingt fois moins cher, et un modèle d'images classé numéro un. Son patron Satya Nadella se dit désormais convaincu que l'IA va transformer l'économie en profondeur.
+
+IASTRO: Et on termine avec les agents qui agissent à votre place.
+VICTORIA: Google rend gratuit son agent Tasks dans six pays. Il peut appeler des commerces, prendre des rendez-vous ou payer pour vous. Et Perplexity a dépassé le milliard de dollars de revenus, en lançant des outils où plusieurs IA collaborent en parallèle.
+
+IASTRO: C'est tout pour ce flash. Toutes les sources sont sur le site de HL Consulting, et on se retrouve dans le format long. À très vite !
