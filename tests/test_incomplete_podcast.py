@@ -35,7 +35,7 @@ class IncompletePodcastTests(unittest.TestCase):
                 audio.build_script({'date':'2026-10-19','text':'SOURCE'}, Settings(), 'iastro', 'courte')
         self.assertEqual(client.messages.create.call_count, 3)
 
-    def test_missing_flash_keeps_full_receipt_but_fails_run(self):
+    def test_missing_flash_keeps_full_receipt_and_succeeds_in_debrief_mode(self):
         with tempfile.TemporaryDirectory() as directory:
             root=Path(directory); source=root/'input.json'; output=root/'out'
             source.write_text(json.dumps({'date':'2026-10-19','text':'News','sources':['https://example.org/news']}))
@@ -47,8 +47,15 @@ class IncompletePodcastTests(unittest.TestCase):
                  patch.object(audio,'render',side_effect=render), patch.object(audio,'duration_seconds',return_value=60), \
                  patch.object(audio,'write_archive'), patch('veille.podcast_media.prepare_with_fallback'), \
                  patch.object(telegram,'send_audio',return_value=receipt) as send:
+                audio.run(source,output,Settings(telegram_bot_token='test',telegram_chat_id='test'),send=True,cfg=cfg)
+            with patch.object(audio,'build_script',side_effect=['News',ValueError('Invalid roles')]), \
+                 patch.object(audio,'get_provider'), patch.object(audio,'_pieces',return_value=None), \
+                 patch.object(audio,'render',side_effect=render), patch.object(audio,'duration_seconds',return_value=60), \
+                 patch.object(audio,'write_archive'), patch('veille.podcast_media.prepare_with_fallback'), \
+                 patch.object(telegram,'send_audio',return_value=receipt) as send2:
                 with self.assertRaisesRegex(RuntimeError,'Flash manquant'):
-                    audio.run(source,output,Settings(telegram_bot_token='test',telegram_chat_id='test'),send=True,cfg=cfg)
+                    audio.run(source,root/'out2',Settings(telegram_bot_token='test',telegram_chat_id='test'),send=True,
+                              cfg={**cfg,'envoi_audio':'deux'})
             self.assertEqual(send.call_count,1)
             data=json.loads((output/'brief.json').read_text())
             self.assertTrue(data['telegram_sent'])

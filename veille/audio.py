@@ -657,8 +657,12 @@ def run(snapshot_path: Path, output: Path, settings, *, send: bool = False,
                        caption_suffix='version audio de la veille de ce matin')
             metadata['telegram_sent'] = True
             metadata_path.write_text(json.dumps(metadata, ensure_ascii=False, indent=2), encoding='utf-8')
-    if incomplete:
+    # Avec l'envoi « Débrief seul », un Flash manquant ne bloque plus rien : le Débrief
+    # part et se publie (jour sans Flash → plateformes uniquement).
+    if incomplete and str(cfg.get('envoi_audio', 'debrief')).strip().lower() != 'debrief':
         raise RuntimeError('Flash manquant : Débrief conservé, reprise ciblée nécessaire ; ne pas relancer les envois.')
+    if incomplete:
+        log.warning('Flash indisponible : Débrief seul envoyé et publié.')
 
 
 def auto_send(cfg: dict) -> bool:
