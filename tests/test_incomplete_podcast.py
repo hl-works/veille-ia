@@ -62,3 +62,14 @@ class IncompletePodcastTests(unittest.TestCase):
             self.assertEqual(data['telegram_receipt'],receipt)
             self.assertFalse(data['audio_complete'])
             self.assertTrue((output/'brief.mp3').exists())
+
+
+class CanalRetardTests(unittest.TestCase):
+    def test_canal_retard_rules(self):
+        from datetime import datetime
+        from zoneinfo import ZoneInfo
+        paris = ZoneInfo("Europe/Paris")
+        cfg = {"heure_limite_canal": "10:00"}
+        self.assertFalse(audio.canal_trop_tard("2026-11-18", cfg, datetime(2026, 11, 18, 8, 25, tzinfo=paris)))
+        self.assertTrue(audio.canal_trop_tard("2026-11-18", cfg, datetime(2026, 11, 18, 14, 25, tzinfo=paris)))
+        self.assertTrue(audio.canal_trop_tard("2026-11-17", cfg, datetime(2026, 11, 18, 8, 0, tzinfo=paris)))

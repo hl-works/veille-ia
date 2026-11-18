@@ -10,6 +10,7 @@ import math
 import os
 import re
 from datetime import datetime
+from zoneinfo import ZoneInfo
 from html.parser import HTMLParser
 from pathlib import Path
 import subprocess
@@ -510,6 +511,14 @@ pre{{white-space:pre-wrap;font:inherit}}audio{{width:100%}}</style>
     (output / 'index.html').write_text(page, encoding='utf-8')
 
 
+def canal_trop_tard(day: str, cfg: dict, now: datetime | None = None) -> bool:
+    """Vrai si l'envoi dans le canal serait en décalé : autre jour, ou après l'heure
+    limite (audio.yaml `heure_limite_canal`, 10:00 par défaut, heure de Paris)."""
+    now = now or datetime.now(ZoneInfo('Europe/Paris'))
+    limite = str(cfg.get('heure_limite_canal', '10:00'))
+    return day != now.strftime('%Y-%m-%d') or now.strftime('%H:%M') > limite
+
+
 def _chat_id(settings, cfg: dict) -> str:
     chat_id = (settings.telegram_chat_id if cfg['destination'] == 'canal'
                else os.environ.get('TELEGRAM_AUTHORIZED_USER_ID', ''))
@@ -593,6 +602,12 @@ def run(snapshot_path: Path, output: Path, settings, *, send: bool = False,
     if send:
         from .telegram import send_audio, send_message
         chat_id = _chat_id(settings, cfg)
+        if cfg['destination'] == 'canal' and canal_trop_tard(snapshot['date'], cfg):
+            # Règle de Hugo (18/11/2026) : rien ne part en décalé dans le canal.
+            # Le podcast va en privé à Hugo ; site et Spotify sont publiés normalement.
+            log.warning('Heure limite du canal dépassée : podcast envoyé en privé à Hugo seulement.')
+            chat_id = os.environ.get('TELEGRAM_AUTHORIZED_USER_ID', '') or chat_id
+            metadata['canal_late_private'] = True
         # Message d'annonce ponctuel (validé par Hugo), envoyé une seule fois avant les audios.
         annonce = str(cfg.get('annonce', '')).strip()
         if annonce and str(cfg.get('annonce_date', '')).strip() == snapshot['date']:
@@ -617,7 +632,8 @@ def run(snapshot_path: Path, output: Path, settings, *, send: bool = False,
                 audio, thumbnail=full_thumb, day=snapshot['date'], duration=seconds,
                 bot_token=settings.telegram_bot_token, chat_id=chat_id,
                 title_prefix='Le Débrief · Le Podcast IA',
-                caption_suffix='la veille de ce matin, en détail',
+                caption_suffix=('EN RETARD — non publié dans le canal' if metadata.get('canal_late_private')
+                                else 'la veille de ce matin, en détail'),
                 reply_markup={'inline_keyboard': rows + PODCAST_LINKS['inline_keyboard']})
             metadata['telegram_sent'] = True
             # Le Flash n'est plus envoyé sur Telegram mais reste publié (site, page du jour).

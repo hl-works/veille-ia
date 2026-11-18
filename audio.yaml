@@ -18,6 +18,7 @@ voix_iastro_elevenlabs: Yx2a8qp2EqI9c5i8MzBo  # Philippine - Animation Creator
 vitesse_iastro: 1.15  # atempo : hauteur préservée ; de-esser léger uniquement sur iAstro
 destination: canal    # canal (sous le post texte, choix Hugo 09/10) | prive (MP à Hugo)
 envoi_telegram: true  # false = MP3 seulement sur la branche ecoute
+heure_limite_canal: "10:00"  # après cette heure (Paris) ou un autre jour : jamais dans le canal, envoi privé à Hugo (règle du 18/11)
 version_courte: true  # « l'essentiel » 1–2 min, envoyé avant la version complète (08/10)
 habillage: ecoute:casting/2026-10-08-0911/02-city-pop-A2  # jingles city pop A2 choisis par Hugo le 08/10
 # Annonce ponctuelle dans le canal, avant les audios du jour indiqué (validée par Hugo le 09/10).
