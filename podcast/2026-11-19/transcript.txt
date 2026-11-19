@@ -1,0 +1,59 @@
+IASTRO: Salut, c'est iAstro ! Bienvenue dans le débrief du Podcast IA du dix-neuf novembre. Installez-vous, on décortique ensemble les infos qui comptent aujourd'hui.
+
+IASTRO: On commence avec une grande première pour le secteur.
+
+VICTORIA: Anthropic entre en Bourse, et c'est un événement. L'entreprise qui a créé l'assistant Claude devient le premier grand laboratoire d'IA à être coté. Concrètement, elle a fixé le prix de son action à quatre-vingt-trois dollars. Ça la valorise autour de mille cinq cents milliards de dollars. Les échanges commencent ce jeudi sur le Nasdaq.
+
+VICTORIA: Et pourquoi c'est important ? Parce que l'opération lui permet de lever plusieurs dizaines de milliards de dollars. Le Financial Times parle d'environ quatre-vingt-un milliards. Bloomberg monte même à cent sept milliards en comptant un placement privé associé. Le prix a d'ailleurs été relevé mercredi soir, face à une demande très forte.
+
+VICTORIA: Cet argent doit financer les engagements de long terme liés à la puissance de calcul et aux centres de données. Fait notable, le Wall Street Journal souligne qu'Anthropic arrive avec un avantage de revenus sur son rival OpenAI, et des pertes moins lourdes. Le Monde titre carrément sur la façon dont Anthropic a détrôné OpenAI.
+
+VICTORIA: Un bémol quand même. Le Financial Times note que les petits investisseurs particuliers pourraient être lésés dans la ruée sur l'action. Pour une PME, le signal est simple. Les fournisseurs d'IA sur lesquels s'appuient de plus en plus d'outils du quotidien deviennent des géants cotés, scrutés par les marchés.
+
+IASTRO: Côté Google, maintenant, un nouveau modèle qui fait beaucoup parler.
+
+VICTORIA: Google a lancé Gemini quatre Neon. C'est un modèle intermédiaire, taillé pour le développement logiciel, le travail de bureau et les usages scientifiques. Son argument, c'est de la performance de haut niveau, mais plus rapide et moins chère. En gros, trois dollars le million de mots en entrée, quinze en sortie.
+
+VICTORIA: Et ça marche bien. Plusieurs testeurs rapportent des résultats proches du meilleur modèle d'Anthropic en programmation, pour environ moitié prix. C'est déjà le quatrième modèle Gemini lancé par Google en un mois. Neon se place entre les versions Carbon et Hydrogen de la gamme.
+
+VICTORIA: Google met en avant une édition de code très précise sur plusieurs fichiers, un taux de réponses inventées au plus bas lors de ses tests, et une fenêtre de contexte d'un million de mots. Autrement dit, la capacité à traiter d'énormes documents d'un coup. L'entrepreneur Greg Isenberg, qui l'a testé en avance, le décrit comme vraiment bon, rapide et environ deux fois moins cher. Il précise quand même garder Claude pour les problèmes les plus difficiles.
+
+VICTORIA: Le même jour, Google DeepMind a aussi mis à jour Project Genie avec Genie quatre. C'est son modèle de monde le plus réaliste. Il génère des univers en trois dimensions interactifs, modifiables en temps réel par simple texte. Pour un indépendant ou une PME, la tendance est claire. La concurrence tire les prix de l'IA vers le bas.
+
+IASTRO: Autre acteur du jour, Microsoft, qui mise sur ses propres modèles.
+
+VICTORIA: Lors de sa conférence Ignite, Microsoft a dévoilé sept modèles maison. Du code, de la sécurité, des images, du langage. Et l'entreprise annonce remplacer certains modèles externes par ces alternatives moins chères. La division concernée affirme que son modèle de code atteint quatre-vingt-dix-huit pour cent des performances d'un modèle de référence d'OpenAI, pour quarante pour cent du coût.
+
+VICTORIA: L'idée de fond, c'est Copilot vu comme un système d'exploitation du travail. Microsoft y intègre par exemple Salesforce. Et puis il y a une info plus sensible. Le PDG Satya Nadella a expliqué pourquoi il a proposé à soixante mille employés de partir volontairement. Selon lui, ça tient à l'IA, mais pas comme on l'imagine.
+
+VICTORIA: Concrètement, ces rachats de postes visaient à laisser partir ceux qui ne se projettent pas dans cette transformation, plutôt que de licencier massivement. Nadella a aussi minimisé une récente panne d'Outlook. Il reconnaît toutefois qu'une grande partie des infrastructures critiques est impossible à corriger face aux cyberattaques dopées à l'IA. Pour une PME, le signal est double. Les outils du quotidien intègrent de plus en plus d'agents IA, mais la sécurité devient centrale.
+
+IASTRO: Et chez OpenAI, l'IA qui accélère sa propre recherche.
+
+VICTORIA: OpenAI affirme que ses modèles ont permis, avec AMD, d'améliorer jusqu'à quatorze pour cent l'efficacité d'une puce graphique phare. Et ça, en moins de cinq mois. Soit environ un an de progrès habituel, intégré dans un design déjà envoyé en production.
+
+VICTORIA: Ces gains ont été identifiés sur une puce qu'AMD optimisait pourtant depuis des années. Et les améliorations ont été vérifiées sur du silicium réel. Un partenariat avec Synopsys doit étendre ces capacités à davantage de concepteurs de puces. Greg Brockman, le président d'OpenAI, parle de résultats sans précédent.
+
+VICTORIA: L'entreprise publie aussi un second rapport. Elle mesure ce qu'elle appelle l'auto-amélioration récursive. En gros, le fait que l'IA accélère le développement des IA futures. Et elle plaide pour que les laboratoires soient tenus de suivre et publier ces indicateurs, tout en insistant sur la sécurité.
+
+VICTORIA: Un contrepoint important, signalé par le New York Times. Une étude d'un organisme de contrôle américain a réussi à pousser des chatbots à générer des informations potentiellement utilisables pour des attaques de masse.
+
+IASTRO: On passe maintenant à la régulation et à une affaire qui secoue l'industrie.
+
+VICTORIA: Donald Trump a mis en garde contre toute régulation musclée de l'IA. Selon lui, ça étoufferait le développement. Il affirme que les Américains ont inventé la superintelligence. Et ça, alors même que Washington durcit l'accès aux technologies IA les plus avancées.
+
+VICTORIA: En toile de fond, il y a le départ forcé du patron de Nvidia, Jensen Huang. C'est lié à une affaire d'espionnage. Et ça relance le camp des faucons anti-Chine à Washington. Ce départ divise. Elon Musk a comparé son éviction au fait de sortir Michael Jordan de son équipe. L'investisseuse Sarah Guo a rappelé qu'il avait été élu PDG le plus apprécié au monde cette année.
+
+VICTORIA: The Verge souligne de son côté la puissance financière de Nvidia. On parle d'environ huit mille trois cents dollars de profit par seconde. Le PDG par intérim est désormais Colette Kress. Et sur les marchés, Le Monde note que Wall Street met fin à l'euphorie généralisée sur l'IA. Après la chute en Bourse de Nvidia, les investisseurs commencent à trier gagnants et perdants.
+
+IASTRO: Et on termine avec quelques nouveautés côté produits.
+
+VICTORIA: Mistral a lancé Mistral Vibe sur ordinateur, Mac et Windows. Ça permet de faire tourner des agents en local ou à distance. Avec un plan Pro offert en essai aux développeurs européens, via un code promo.
+
+VICTORIA: Perplexity, de son côté, a sorti plusieurs briques pour développeurs. Trois nouvelles interfaces, pour des alertes programmables, du routage de tâches entre modèles, et la transformation de pages web en contenu exploitable par des agents. L'entreprise affirme que son activité de ce côté a été multipliée par quatre en un an. Elle a aussi déployé ses fonctions Teammates et multi-agents sur iPhone et Android, pilotables à la voix.
+
+VICTORIA: Côté commerce, Shopify communique sur le passage complet d'une chaîne de cent cinquante magasins à sa plateforme, juste avant le Black Friday. Et l'entrepreneur Alexandr Wang, chez Meta, a lancé en Australie son application Muse. Elle propose un essayage virtuel de vêtements avant achat. Pour un commerçant, ces outils illustrent la montée en puissance des agents IA capables d'enchaîner des tâches concrètes.
+
+VICTORIA: Et pour finir, la phrase du jour. Guillermo Rauch, de Vercel, résume une idée qui monte. Le calcul serait la nouvelle économie, et les jetons de traitement la nouvelle unité d'énergie. Autrement dit, l'IA ressemblerait moins à une mode passagère qu'à une nouvelle révolution industrielle durable. Plus proche d'une ruée vers le pétrole que d'une ruée vers l'or.
+
+IASTRO: Voilà pour aujourd'hui. Retrouvez toutes les sources sur le site de HL Consulting, et l'autre format pour aller plus loin. À très vite !
