@@ -18917,5 +18917,204 @@
     "tweet_url": "https://x.com/GaryMarcus/status/2122867931667104010",
     "media": false,
     "auteur_x": "@GaryMarcus"
+  },
+  {
+    "date": "2026-11-18",
+    "titre_fr": "Google lance Gemini 4 Neon",
+    "resume_fr": "Google introduit Gemini 4 Neon, un modèle qui vise un bon équilibre entre intelligence, vitesse et coût. Il offre une fenêtre de contexte de 1M de tokens, quatre niveaux de réflexion ajustables et de solides performances en codage multi-fichiers, désormais disponible dans l'API, AI Studio et l'app Gemini pour les abonnés Pro et Ultra.",
+    "tags": [
+      "google",
+      "modeles",
+      "produit"
+    ],
+    "score": 84,
+    "tweet_url": "https://x.com/GoogleAI/status/2123168242797809944",
+    "media": true,
+    "auteur_x": "@GoogleAI"
+  },
+  {
+    "date": "2026-11-18",
+    "titre_fr": "Anthropic fixe le prix de son IPO à 83 $ par action",
+    "resume_fr": "Anthropic a fixé le prix de son introduction en bourse à 83 dollars par action, avec un début des échanges prévu sur le Nasdaq. C'est une étape majeure pour l'un des principaux laboratoires d'IA.",
+    "tags": [
+      "anthropic",
+      "politique-ia"
+    ],
+    "score": 78,
+    "tweet_url": "https://x.com/AnthropicAI/status/2123196808675405860",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-11-18",
+    "titre_fr": "OpenAI et AMD : les modèles accélèrent la conception de puces",
+    "resume_fr": "OpenAI indique que ses modèles ont identifié jusqu'à 14 % d'amélioration (PPA) sur des blocs IP de GPU AMD en moins de cinq mois, sur des designs déjà optimisés depuis des années. Les gains ont été vérifiés sur du silicium réel et appliqués à la puce d'inférence maison d'OpenAI.",
+    "tags": [
+      "openai",
+      "hardware",
+      "recherche"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/OpenAI/status/2123100386638877054",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-11-18",
+    "titre_fr": "Google ouvre Genie 4, son modèle de mondes interactifs",
+    "resume_fr": "Google DeepMind rend disponible Genie 4 dans Project Genie : un modèle de monde interactif avec édition en temps réel, audio natif et un agent de création conversationnel. Accessible aux abonnés Google AI Ultra éligibles.",
+    "tags": [
+      "google",
+      "modeles",
+      "produit"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/demishassabis/status/2123130606162985350",
+    "media": true,
+    "auteur_x": "@demishassabis"
+  },
+  {
+    "date": "2026-11-18",
+    "titre_fr": "Mistral Vibe arrive sur ordinateur",
+    "resume_fr": "Mistral rend son outil Vibe disponible en application de bureau sur macOS et Windows, permettant d'exécuter des agents localement ou à distance. Le plan Pro est offert gratuitement aux utilisateurs qui construisent en Europe.",
+    "tags": [
+      "mistral",
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/MistralAI/status/2123073168659141119",
+    "media": true,
+    "auteur_x": "@MistralAI"
+  },
+  {
+    "date": "2026-11-18",
+    "titre_fr": "Microsoft intègre Salesforce à Copilot",
+    "resume_fr": "Microsoft annonce l'intégration de Salesforce dans Copilot, dans sa stratégie de faire de Copilot le « système d'exploitation du travail ». Cela rapproche données CRM et assistant IA au sein des outils bureautiques.",
+    "tags": [
+      "produit",
+      "agents",
+      "service-client"
+    ],
+    "score": 57,
+    "tweet_url": "https://x.com/satyanadella/status/2123119560803176533",
+    "media": false,
+    "auteur_x": "@satyanadella"
+  },
+  {
+    "date": "2026-11-18",
+    "titre_fr": "Muse ajoute l'essayage virtuel de vêtements",
+    "resume_fr": "L'application Muse d'Alexandr Wang propose désormais d'essayer virtuellement des vêtements pendant le shopping, en montrant un rendu de l'utilisateur dans l'article avant achat. Lancement récent aussi en Australie.",
+    "tags": [
+      "produit",
+      "commerce",
+      "vente"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/alexandr_wang/status/2123138025366704149",
+    "media": true,
+    "auteur_x": "@alexandr_wang"
+  },
+  {
+    "date": "2026-11-18",
+    "titre_fr": "Qwen4-Max disponible chez Alibaba",
+    "resume_fr": "Alibaba met son modèle Qwen4-Max à disposition, positionné pour des tâches de travail concrètes, désormais accessible via TokenHarbor.",
+    "tags": [
+      "modeles",
+      "open-source"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/Alibaba_Qwen/status/2122958542982508901",
+    "media": false,
+    "auteur_x": "@Alibaba_Qwen"
+  },
+  {
+    "date": "2026-11-18",
+    "titre_fr": "LlamaIndex publie OCRia-1.5 pour l'analyse de documents",
+    "resume_fr": "OCRia-1.5 est une nouvelle famille de modèles d'extraction de documents qui améliore nettement la lecture de tableaux, graphiques, formulaires et manuscrits. La version économique est présentée comme la moins chère et la plus précise pour ces usages.",
+    "tags": [
+      "modeles",
+      "produit",
+      "automatisation"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/jerryjliu0/status/2123103740710498448",
+    "media": true,
+    "auteur_x": "@jerryjliu0"
+  },
+  {
+    "date": "2026-11-18",
+    "titre_fr": "Google présente Stitch Loop, un agent d'amélioration produit",
+    "resume_fr": "Stitch Loop est une expérimentation de Google : un agent qui surveille les données de production et exécute des boucles d'optimisation continues (sécurité, latence, accessibilité) jusqu'à l'atteinte d'objectifs définis. Inscription en liste d'attente.",
+    "tags": [
+      "google",
+      "produit",
+      "agents",
+      "saas"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/stitchbygoogle/status/2123100817863663686",
+    "media": true,
+    "auteur_x": "@stitchbygoogle"
+  },
+  {
+    "date": "2026-11-18",
+    "titre_fr": "OpenAI publie des données sur l'IA dans sa propre recherche",
+    "resume_fr": "OpenAI partage un rapport montrant que l'usage de l'IA par ses chercheurs croît de façon exponentielle et que les agents accomplissent des tâches plus longues, tout en soulignant que l'implication humaine reste centrale, notamment sur la sécurité. L'entreprise plaide pour un suivi public des indicateurs d'auto-amélioration récursive.",
+    "tags": [
+      "openai",
+      "recherche",
+      "politique-ia"
+    ],
+    "score": 44,
+    "tweet_url": "https://x.com/OpenAI/status/2123191365983248653",
+    "media": false,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-11-18",
+    "titre_fr": "BevMo bascule entièrement sur Shopify",
+    "resume_fr": "BevMo (groupe Gopuff) fait tourner ses plus de 150 magasins, en ligne et en point de vente, sur une seule plateforme Shopify. Un exemple d'unification commerce physique et numérique à grande échelle.",
+    "tags": [
+      "produit",
+      "commerce",
+      "shopify",
+      "vente"
+    ],
+    "score": 46,
+    "tweet_url": "https://x.com/harleyf/status/2123112518675824717",
+    "media": true,
+    "auteur_x": "@harleyf"
+  },
+  {
+    "date": "2026-11-19",
+    "titre_fr": "Gemini 4 Neon : performances comparables à Opus 5.5 pour moitié prix",
+    "resume_fr": "Selon des premiers tests, Gemini 4 Neon atteint un niveau proche d'Opus 5.5 d'Anthropic sur le codage pour environ la moitié du coût par tâche. Claude reste privilégié pour les problèmes les plus difficiles, mais cette concurrence tire les prix vers le bas pour les utilisateurs d'agents.",
+    "tags": [
+      "google",
+      "anthropic",
+      "modeles",
+      "automatisation"
+    ],
+    "score": 66,
+    "tweet_url": "https://x.com/gregisenberg/status/2123214879192502517",
+    "media": false,
+    "auteur_x": "@gregisenberg"
+  },
+  {
+    "date": "2026-11-19",
+    "titre_fr": "Perplexity lance trois nouvelles API",
+    "resume_fr": "Perplexity dévoile Monitor (alertes programmables sur événements), Orchestrator (routage de tâches entre modèles frontière et open-weight) et Context (transformation d'URL en contenu exploitable par les agents). L'entreprise dit avoir multiplié par 4,3 son activité API sur un an.",
+    "tags": [
+      "produit",
+      "agents",
+      "automatisation",
+      "saas"
+    ],
+    "score": 54,
+    "tweet_url": "https://x.com/AravSrinivas/status/2123224126248906811",
+    "media": false,
+    "auteur_x": "@AravSrinivas"
   }
 ]
