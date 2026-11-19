@@ -121,8 +121,17 @@ def run(config_path: str, *, dry_run: bool) -> int:
         # (demande de Hugo, 17/11/2026). RADAR_FORMAT=classique rétablit l'ancien envoi.
         text, markup = message, None
         deferred = False
-        fmt = os.environ.get("RADAR_FORMAT", "pages").lower()
-        if fmt != "classique":
+        fmt = os.environ.get("RADAR_FORMAT", "classique").lower()
+        if fmt == "classique":
+            # Messages comme avant (retour demandé par les abonnés, 19/11/2026) ; on garde
+            # la veille du jour pour La Semaine et la page web.
+            try:
+                from . import journal
+                journal.save(digest, datetime.now(ZoneInfo("Europe/Paris")).date(),
+                              os.environ.get("JOURNAL_DIR", "journal"))
+            except Exception as exc:  # noqa: BLE001
+                logging.warning("Journal non sauvegardé (%s).", exc)
+        else:
             try:
                 from . import journal
                 day = datetime.now(ZoneInfo("Europe/Paris")).date()

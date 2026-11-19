@@ -133,7 +133,7 @@ jobs:
         env:
           DRY_RUN: ${{ inputs.dry_run || inputs.audio_preview }}
           DAILY_AUDIO_BRIEF: ${{ vars.DAILY_AUDIO_BRIEF || 'true' }}
-          RADAR_FORMAT: ${{ vars.RADAR_FORMAT || 'pages' }}
+          RADAR_FORMAT: ${{ vars.RADAR_FORMAT || 'classique' }}
           RADAR_DEFER_SEND: "true"
           AUDIO_PREVIEW: ${{ inputs.audio_preview }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
