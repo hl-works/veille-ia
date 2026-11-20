@@ -19116,5 +19116,142 @@
     "tweet_url": "https://x.com/AravSrinivas/status/2123224126248906811",
     "media": false,
     "auteur_x": "@AravSrinivas"
+  },
+  {
+    "date": "2026-11-19",
+    "titre_fr": "Anthropic entre en bourse",
+    "resume_fr": "Anthropic a réalisé son introduction en bourse. Dans sa déclaration, le PDG Dario Amodei met en avant la mission de l'entreprise, le potentiel de l'IA pour accélérer la recherche médicale et son engagement affiché sur la sécurité, en promettant de ne pas céder aux pressions commerciales ou politiques.",
+    "tags": [
+      "anthropic",
+      "modeles",
+      "politique-ia"
+    ],
+    "score": 82,
+    "tweet_url": "https://x.com/AnthropicAI/status/2123461658890686863",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-11-19",
+    "titre_fr": "Google lance Genie 4, un modèle de monde pour développeurs",
+    "resume_fr": "Google met à disposition Genie 4 dans l'API Gemini et AI Studio. C'est son premier « modèle de monde » ouvert aux développeurs pour créer des environnements et expériences interactifs générés par l'IA.",
+    "tags": [
+      "google",
+      "modeles",
+      "produit"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/OfficialLoganK/status/2123467449257623770",
+    "media": false,
+    "auteur_x": "@OfficialLoganK"
+  },
+  {
+    "date": "2026-11-19",
+    "titre_fr": "Nvidia montre GR00T 2 pilotant des mains robotiques",
+    "resume_fr": "Jim Fan présente GR00T 2 contrôlant de vraies mains dextres de manière autonome, de bout en bout et en vitesse réelle. Une démonstration de progrès notable pour la robotique généraliste.",
+    "tags": [
+      "recherche",
+      "hardware"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/DrJimFan/status/2123470587259732200",
+    "media": true,
+    "auteur_x": "@DrJimFan"
+  },
+  {
+    "date": "2026-11-19",
+    "titre_fr": "Google exploite la contextualité quantique sur son processeur Willow",
+    "resume_fr": "Dans un article en couverture de Science, Google met en œuvre la « contextualité quantique » sur son processeur Willow, remportant des jeux réputés impossibles pour un calcul classique et exécutant un algorithme à grande échelle jusqu'à 105 qubits.",
+    "tags": [
+      "google",
+      "recherche",
+      "hardware"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/sundarpichai/status/2123529356089946543",
+    "media": true,
+    "auteur_x": "@sundarpichai"
+  },
+  {
+    "date": "2026-11-19",
+    "titre_fr": "Le modèle Muse Wonder de Meta en tête d'un benchmark juridique",
+    "resume_fr": "Meta indique que son modèle Muse Wonder a obtenu le meilleur score de qualité global dans le benchmark juridique BAR de Legora pour novembre, sur des tâches complexes utiles aux entreprises.",
+    "tags": [
+      "meta",
+      "modeles"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/AIatMeta/status/2123484005089558692",
+    "media": false,
+    "auteur_x": "@AIatMeta"
+  },
+  {
+    "date": "2026-11-19",
+    "titre_fr": "Perplexity : des compétences d'agent qui s'améliorent seules",
+    "resume_fr": "Perplexity ajoute à son produit Computer un mécanisme où l'agent « Brain » analyse les sessions passées pour écrire et mettre à jour automatiquement des compétences personnalisées. En test, 72,9 % des utilisateurs ont reçu une nouvelle compétence, avec une baisse des échecs d'appels d'outils.",
+    "tags": [
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/AravSrinivas/status/2123451045657690627",
+    "media": false,
+    "auteur_x": "@AravSrinivas"
+  },
+  {
+    "date": "2026-11-19",
+    "titre_fr": "Perplexity déploie ses « teammates » avec appels vocaux",
+    "resume_fr": "Perplexity étend ses agents « teammates » sur iOS et Android et permet de les appeler par la voix depuis l'application, pour leur confier des tâches comme construire des applis ou automatiser des parties d'une activité.",
+    "tags": [
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 46,
+    "tweet_url": "https://x.com/perplexity_ai/status/2123486281644560724",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-11-19",
+    "titre_fr": "Shopify pousse le commerce agentique avec Sidekick",
+    "resume_fr": "Shopify met en avant son assistant Sidekick, désormais capable d'effectuer des modifications multi-étapes au nom des marchands, dans le cadre de sa vision du commerce agentique.",
+    "tags": [
+      "produit",
+      "agents",
+      "commerce",
+      "shopify"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/jessicarhertz/status/2123513990013919452",
+    "media": true,
+    "auteur_x": "@jessicarhertz"
+  },
+  {
+    "date": "2026-11-19",
+    "titre_fr": "Alibaba met Qwen4-Max en accès via Nous Portal",
+    "resume_fr": "Alibaba invite les utilisateurs à tester son modèle Qwen4-Max, disponible via le portail de Nous Research.",
+    "tags": [
+      "modeles",
+      "open-source"
+    ],
+    "score": 40,
+    "tweet_url": "https://x.com/Alibaba_Qwen/status/2123328957022081036",
+    "media": false,
+    "auteur_x": "@Alibaba_Qwen"
+  },
+  {
+    "date": "2026-11-20",
+    "titre_fr": "Nouveau modèle Google Gemini 4 Neon orienté coût",
+    "resume_fr": "Google présente Gemini 4 Neon, un modèle pensé pour accomplir des tâches de code plus vite et à moindre coût. Google annonce environ 32 % de coût par tâche en moins que son modèle « Carbon » sur un indice d'intelligence de référence.",
+    "tags": [
+      "google",
+      "modeles"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/openclaw/status/2123640619931484511",
+    "media": true,
+    "auteur_x": "@openclaw"
   }
 ]
