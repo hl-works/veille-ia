@@ -19253,5 +19253,171 @@
     "tweet_url": "https://x.com/openclaw/status/2123640619931484511",
     "media": true,
     "auteur_x": "@openclaw"
+  },
+  {
+    "date": "2026-11-20",
+    "titre_fr": "Google détaille sa vague de lancements : Gemini 4 Neon, Hydrogen, Carbon et plus",
+    "resume_fr": "Google récapitule plusieurs sorties : la famille de modèles Gemini 4 (Neon pour les tâches complexes, Hydrogen pour la rapidité, Carbon pour les projets longs), le modèle de monde interactif Genie 4, Gemini Robotics 2.5 et AlphaGenome 2 pour la recherche biomédicale. Un déploiement large couvrant code, agents et science.",
+    "tags": [
+      "google",
+      "modeles",
+      "produit",
+      "agents"
+    ],
+    "score": 82,
+    "tweet_url": "https://x.com/GoogleAI/status/2123828467124851025",
+    "media": false,
+    "auteur_x": "@GoogleAI"
+  },
+  {
+    "date": "2026-11-20",
+    "titre_fr": "Thinking Machines lance Inkling 2 Mini, un modèle de 26B qui tourne sur un portable",
+    "resume_fr": "Thinking Machines présente Inkling 2 Mini, un « looped transformer » de seulement 26 milliards de paramètres capable de tourner sur un ordinateur portable tout en restant exploitable pour des tâches agentiques. Le principe du bouclage permet au modèle de « réfléchir » davantage en produisant moins de texte.",
+    "tags": [
+      "modeles",
+      "recherche",
+      "agents"
+    ],
+    "score": 66,
+    "tweet_url": "https://x.com/thinkymachines/status/2123871643797995872",
+    "media": false,
+    "auteur_x": "@thinkymachines"
+  },
+  {
+    "date": "2026-11-20",
+    "titre_fr": "Perplexity Computer s'intègre aux navigateurs Chromium",
+    "resume_fr": "Perplexity permet désormais de déléguer des tâches à son agent « Computer » directement dans les navigateurs Chromium via une extension. L'agent peut travailler à travers les onglets et outils de l'utilisateur à partir d'un panneau latéral.",
+    "tags": [
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/perplexity_ai/status/2123896048510996827",
+    "media": true,
+    "auteur_x": "@perplexity_ai"
+  },
+  {
+    "date": "2026-11-20",
+    "titre_fr": "OpenAI publie des travaux contre la distillation de ses modèles",
+    "resume_fr": "OpenAI partage une recherche sur la distillation, qui permet de reproduire les capacités d'un modèle sans ses garde-fous. L'entreprise explique comment elle détecte et perturbe ces tentatives, un sujet qui pourrait aussi expliquer le ralentissement des modèles open-weight.",
+    "tags": [
+      "openai",
+      "recherche",
+      "politique-ia"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/OpenAI/status/2123862344422088794",
+    "media": false,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-11-20",
+    "titre_fr": "L'hypothèse de Riemann aurait été résolue avec l'aide de l'IA",
+    "resume_fr": "Des travaux attribués au mathématicien Alpöge suggèrent une avancée majeure sur l'hypothèse de Riemann, avec l'assistance de Claude et d'outils de preuve formelle. Le rôle respectif de l'humain et de la machine fait débat, le travail restant largement piloté par un chercheur.",
+    "tags": [
+      "anthropic",
+      "recherche"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/emollick/status/2123800664845500602",
+    "media": true,
+    "auteur_x": "@emollick"
+  },
+  {
+    "date": "2026-11-20",
+    "titre_fr": "OpenAI dévoile MedChemBench pour mesurer l'IA en chimie médicinale",
+    "resume_fr": "OpenAI présente MedChemBench, un nouveau benchmark évaluant le raisonnement des modèles en chimie médicinale, et met en avant les progrès de ses modèles pour aider à identifier des candidats-médicaments prometteurs.",
+    "tags": [
+      "openai",
+      "recherche"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/OpenAI/status/2123856316187975756",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-11-20",
+    "titre_fr": "Isomorphic Labs collabore avec Merck sur un médicament anticancéreux",
+    "resume_fr": "Demis Hassabis annonce une collaboration entre Isomorphic Labs et Merck pour concevoir un nouveau traitement contre le cancer, présentée comme une preuve supplémentaire des progrès de l'IA appliquée à la découverte de médicaments.",
+    "tags": [
+      "google",
+      "recherche"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/demishassabis/status/2123871861843075099",
+    "media": false,
+    "auteur_x": "@demishassabis"
+  },
+  {
+    "date": "2026-11-20",
+    "titre_fr": "Meta met en avant ses modèles ouverts pour la science",
+    "resume_fr": "Meta a réuni chercheurs et institutions lors d'un sommet dédié à l'IA open source pour la science, illustrant des usages de ses modèles ouverts (Muse Glimmer, SAM, DINO v3, UMA) en robotique assistive médicale et en chimie, notamment la simulation d'enzymes atome par atome.",
+    "tags": [
+      "meta",
+      "open-source",
+      "recherche"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/AIatMeta/status/2123882678332322134",
+    "media": true,
+    "auteur_x": "@AIatMeta"
+  },
+  {
+    "date": "2026-11-20",
+    "titre_fr": "Shopify : le trafic venant des IA vers ses boutiques a bondi de 2,6x",
+    "resume_fr": "Selon Shopify, le trafic généré par les IA vers les boutiques a progressé de 2,6x sur un an au T3, et les commandes de 3,3x. L'entreprise annonce aussi Universal Checkout, qui permet d'acheter des produits de plusieurs marques dans un seul panier.",
+    "tags": [
+      "shopify",
+      "commerce",
+      "produit",
+      "paiement"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/jessicarhertz/status/2123860976164548781",
+    "media": false,
+    "auteur_x": "@jessicarhertz"
+  },
+  {
+    "date": "2026-11-20",
+    "titre_fr": "Muse transforme des photos de téléphone en visuels produits vendeurs",
+    "resume_fr": "Une nouvelle fonction de Muse convertit des photos prises avec son téléphone en visuels produits soignés, pensés pour la vente en ligne. Un outil potentiellement utile pour les petits commerçants qui créent leurs fiches et annonces.",
+    "tags": [
+      "produit",
+      "commerce",
+      "marketing",
+      "vente"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/alexandr_wang/status/2123883550382674150",
+    "media": true,
+    "auteur_x": "@alexandr_wang"
+  },
+  {
+    "date": "2026-11-20",
+    "titre_fr": "Neuralink : le produit Blindsight en attente d'approbation réglementaire",
+    "resume_fr": "Elon Musk indique que Blindsight, l'implant de Neuralink destiné à restaurer une forme de vision, est désormais prêt et n'attend plus que le feu vert réglementaire.",
+    "tags": [
+      "hardware",
+      "politique-ia"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/elonmusk/status/2123817232849567933",
+    "media": false,
+    "auteur_x": "@elonmusk"
+  },
+  {
+    "date": "2026-11-20",
+    "titre_fr": "DHH mise sur Omarchy, une distribution Linux pensée pour les agents",
+    "resume_fr": "Le créateur de Ruby on Rails, DHH, explique dans un entretien avec a16z pourquoi il développe Omarchy, une distribution Linux « agent-first ». Il soutient que les anciennes faiblesses de Linux (ligne de commande, fichiers de config, messages d'erreur détaillés) deviennent des atouts pour les agents IA.",
+    "tags": [
+      "agents",
+      "open-source"
+    ],
+    "score": 46,
+    "tweet_url": "https://x.com/a16z/status/2123813224504037416",
+    "media": true,
+    "auteur_x": "@a16z"
   }
 ]
