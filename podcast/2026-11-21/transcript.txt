@@ -1,0 +1,47 @@
+IASTRO: Salut, c'est iAstro ! Bienvenue dans le débrief du Podcast IA du vingt et un novembre. Reste avec nous, on a une journée énorme à te raconter.
+
+IASTRO: On commence avec un vrai séisme du côté des mathématiques.
+
+VICTORIA: Un mathématicien chez Anthropic, Levent Alpöge, affirme avoir démontré l'hypothèse de Riemann. Et il l'aurait fait avec l'aide de Claude. Pourquoi c'est énorme ? Parce que ce problème reste ouvert depuis cent soixante-sept ans. Il est même doté d'un prix du millénaire, d'un million de dollars. Alpöge écrit avoir découvert une preuve en travaillant avec Claude. Il précise que sa méthode s'étendrait aussi à des versions généralisées. Et il ajoute que les arguments ont été formalisés sans hypothèses non prouvées.
+
+VICTORIA: Mais voilà la coïncidence rare. Une preuve concurrente, cette fois entièrement humaine, serait apparue presque en même temps. Elle vient d'Alessandro Masullo. Simon Willison relaie d'ailleurs le témoignage du mathématicien Ravi Vakil. Selon lui, cette preuve humaine était déjà en relecture avancée à Stanford. Plusieurs grands médias ont confirmé l'affaire. Le New York Times, Bloomberg, le Wall Street Journal, The Verge et TechCrunch.
+
+VICTORIA: Attention quand même, rien n'est encore vérifié. Plusieurs voix appellent à la prudence. Le chercheur Gary Marcus, sceptique, demande une description précise du système utilisé. Quels outils ? Un interpréteur de code ? Un prouveur de théorèmes ? Il veut des faits, pas des suppositions. De son côté, Amjad Masad trouve qu'il sera intéressant de comparer l'élégance des deux preuves, si elles se confirment. Concrètement, pour vous, ça ne change rien dans l'immédiat. Mais c'est un symbole fort de ce que l'IA commence à faire sur des tâches difficiles et vérifiables. À confirmer avant de crier victoire.
+
+IASTRO: Et pendant que l'IA frôlait un exploit, la Bourse, elle, dégringolait.
+
+VICTORIA: Les marchés technologiques américains ont plongé. Le Financial Times parle de leur pire semaine depuis le Covid. On bascule carrément en marché baissier. Anthropic et Nvidia ont dévissé. Et le Nasdaq a effacé tous ses gains de l'année. Le timing est cruel. Anthropic venait juste de réaliser une introduction en Bourse record. Une opération qui a fait de nombreux salariés des millionnaires du jour au lendemain.
+
+VICTORIA: Selon le Financial Times, ce sont les craintes autour des dépenses d'IA qui ont saisi Wall Street. Anthropic a chuté jusqu'à dix pour cent avant l'ouverture. Le Wall Street Journal consacre un portrait au duo frère-sœur, Dario et Daniela Amodei. Au sommet de la plus grosse introduction de l'histoire un jour, puis dans la tourmente le lendemain. Dans une tribune au Monde, l'entrepreneur Guy Halfteck juge que cette entrée en Bourse est davantage dictée par la peur que par la foi en l'avenir de l'IA. Il soupçonne un transfert du risque vers les épargnants.
+
+VICTORIA: Et puis il y a une remarque ironique de François Chollet, chez Google. Même en connaissant à l'avance tous les succès de l'IA et la domination de Nvidia, un investisseur serait aujourd'hui en perte sur l'action. Autrement dit, le progrès technologique et le rendement boursier, ce sont deux choses différentes. Ce que ça change pour vous ? La vague IA reste puissante côté produits. Mais la fièvre financière se dégonfle. Prudence avec le discours tout va exploser.
+
+IASTRO: Côté Google maintenant, et là c'est une véritable pluie de nouveautés.
+
+VICTORIA: Google a dévoilé Gemini 4 Neon, son nouveau modèle de pointe. Il est rapide pour le code, le travail de la connaissance et la science. S'y ajoutent deux déclinaisons. Hydrogen, pensée pour la vitesse et le coût. Et Carbon, pour les projets longs. Mais ce n'est pas tout. Il y a aussi Genie 4, un monde interactif. Gemini Robotics deux point cinq. Et un Computer Use capable de piloter des applications Mac en tâche de fond.
+
+VICTORIA: Le récapitulatif officiel liste encore d'autres sorties. Gemini 3.5 Transcribe pour l'édition vocale. AlphaGenome 2 pour la recherche sur les maladies. Et Stitch Loop, qui améliore des designs en continu. DeepMind a même montré un simulateur de ski. Il reproduit le terrain réel du Mont-Blanc. Il a été codé par Neon, sans modèles 3D préfabriqués.
+
+VICTORIA: Les retours de développeurs sont très positifs. Nathan Lambert le place dans la lignée de Claude Code et Codex, dans le bon sens. Aravind Srinivas, chez Perplexity, va plus loin. Il aurait entendu que Gemini Neon est meilleur qu'Opus cinq point cinq. Et il envisage d'en faire son modèle par défaut. L'entrepreneur Greg Isenberg cite des usages concrets pour les petites entreprises. Transformer des factures en modèle financier. Nettoyer un fichier clients. Ou router des prospects. Enfin, le Computer Use sur Mac travaille dans une fenêtre isolée pendant que vous continuez votre tâche. Ce que ça change pour vous ? Des assistants qui exécutent des tâches, pas seulement qui répondent. À surveiller pour automatiser l'administratif.
+
+IASTRO: Autre info du jour, une IA puissante qui tient sur un simple portable.
+
+VICTORIA: La start-up de Mira Murati, l'ancienne d'OpenAI, a dévoilé Inkling 2 Mini. C'est un modèle de seulement vingt-six milliards de paramètres. Assez léger pour fonctionner sur un ordinateur portable. Et pourtant, il reste capable de travail agentique. Autrement dit, exécuter des tâches en autonomie. Sa particularité, c'est une architecture à boucles. Ça lui permet de réfléchir davantage en écrivant moins.
+
+VICTORIA: Thinking Machines explique avoir répondu aux utilisateurs. Ils trouvaient le précédent modèle, Inkling 2 Small, trop gros. Lui, il pesait cinq cent quatre-vingt-quatorze milliards de paramètres. Le nouveau fonctionne autrement. Il recycle ses propres couches plusieurs fois pour approfondir son raisonnement, sans gonfler sa taille. Mira Murati souligne un point de sécurité. À cette échelle, le processus de pensée du modèle reste surveillable. Mais elle prévient que ça pourrait ne pas durer. Ce que ça change pour vous ? Des IA puissantes qui tournent localement, sans envoyer vos données dans le cloud. Un vrai atout pour la confidentialité et le coût.
+
+IASTRO: On passe maintenant du côté de la santé.
+
+VICTORIA: Plusieurs labos ont mis en avant des avancées pour la médecine. OpenAI a présenté MedChemBench. C'est un test qui mesure les progrès de ses modèles en chimie médicinale. En gros, identifier des candidats-médicaments. Il y a aussi une collaboration sur les maladies neurodégénératives. Et de son côté, Demis Hassabis, chez Google DeepMind, annonce un partenariat avec Merck. L'objectif, concevoir un nouveau médicament anticancéreux via Isomorphic.
+
+VICTORIA: OpenAI met en avant une très forte progression de ses modèles de pointe. L'idée, aider les scientifiques à repérer des pistes thérapeutiques prometteuses. Notamment sur les maladies du cerveau. Ce travail se fait en lien avec Perturb point ai et le Scripps Research. Greg Brockman, chez OpenAI, relaie ces résultats. Demis Hassabis, lui, présente la collaboration avec Merck comme une nouvelle preuve concrète des progrès rapides d'Isomorphic Labs.
+
+VICTORIA: Meta aussi s'y met. L'entreprise a réuni des chercheurs académiques, des laboratoires nationaux et des acteurs de santé autour de ses modèles ouverts. Parmi les exemples cités, un système d'assistance robotique pour aider une personne à manger. Ou encore la simulation d'enzymes entières, atome par atome. Ce que ça change pour vous ? La promesse de traitements plus rapides et moins chers à long terme. Mais attention, ce sont encore des travaux de recherche, pas des produits.
+
+IASTRO: Et on termine avec la vie privée et un peu de politique.
+
+VICTORIA: L'application de messagerie Signal a commencé à bloquer les captures d'écran. Ça concerne iPhone et Android. Le but, empêcher les assistants IA de lire les conversations privées. On parle de Siri, de Gemini ou encore de Muse, chez Meta. Signal qualifie ça de menace existentielle pour la vie privée. L'entreprise reconnaît quand même que sa protection reste incomplète, notamment sur macOS. Et elle appelle Apple, Google et Microsoft à suivre le mouvement. Le sujet a beaucoup circulé, il fait partie des discussions les plus suivies sur Hacker News.
+
+VICTORIA: En toile de fond, il y a cette vraie question. Ces nouveaux agents lisent l'écran pour mieux vous assister. Mais du coup, ils accèdent à ce qui s'affiche. Côté politique, Donald Trump a menacé d'une taxe considérable les entreprises qui construiraient leurs centres de données hors des États-Unis. Il a affirmé ne pas vouloir laisser les entreprises américaines construire ailleurs. Sans préciser comment il appliquerait cette mesure. Ce que ça change pour vous ? Si vous utilisez des assistants IA sur mobile, soyez conscient qu'ils peuvent accéder à votre écran. Pensez à vérifier vos réglages de confidentialité.
+
+IASTRO: Voilà pour ce débrief. Retrouvez toutes les sources sur le site de HL Consulting, et à bientôt pour l'autre format. Salut !
