@@ -27,6 +27,7 @@ import re
 import subprocess
 import sys
 import time
+from urllib.parse import urlsplit
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError
 from zoneinfo import ZoneInfo
@@ -101,7 +102,8 @@ Candidats issus de la veille (tweets d'annonce, triés par score) :
 
 Travail :
 1. Choisis EXACTEMENT {NEWS_COUNT} grandes annonces de la semaine, variées (pas deux fois la même entreprise si possible), compréhensibles par un public large. Uniquement des annonces dont l'entreprise a un logo disponible : brand_id parmi {BRANDS} (« shop » = Shopify).
-2. Pour CHAQUE annonce, utilise la recherche web pour trouver et lire la source primaire officielle (blog, changelog, communiqué de l'entreprise). Le fait doit être exact, daté et sans chiffre inventé. Si tu ne peux pas vérifier une annonce, remplace-la.
+2. Les tweet_url des candidats servent uniquement de pistes : ne les utilise JAMAIS dans sources. Aucun lien x.com ou twitter.com (y compris leurs sous-domaines) dans sources ; utilise un blog, changelog ou communiqué officiel hors réseau social. Si seule une annonce sur X existe, remplace cette actualité.
+Pour CHAQUE annonce, utilise la recherche web pour trouver et lire la source primaire officielle (blog, changelog, communiqué de l'entreprise). Le fait doit être exact, daté et sans chiffre inventé. Si tu ne peux pas vérifier une annonce, remplace-la.
 3. Pour chaque annonce, écris une histoire de 6 cases dans l'atelier des possibles, avec une métaphore claire et une chute drôle qui se comprend immédiatement (règles Humour). Hugo et iAstro seulement. Dialogue court (1 ligne par case, speaker « Hugo » côté left ou « Iastro » côté right). Chaque case a une explication factuelle courte.
 4. Décris chaque case pour l'illustrateur, en anglais, comme dans les prompts W42 (sans aucun texte dans l'image).
 
@@ -155,12 +157,37 @@ def check_plan(plan, monday, sunday):
         for s in n["sources"]:
             published = dt.date.fromisoformat(s["published_at"])
             assert published <= sunday, f"source datée après la semaine : {s['url']}"
-            assert not s["url"].startswith(("https://x.com", "https://twitter.com")), "source primaire requise, pas un tweet"
+            host = (urlsplit(s["url"]).hostname or "").lower().rstrip(".")
+            assert not any(host == d or host.endswith("." + d) for d in ("x.com", "twitter.com")), \
+                f"{n['id']} : source primaire requise, pas un tweet : {s['url']}"
         for p in n["panels"]:
             assert p["scene_en"].strip() and p["alt"].strip() and p["dialogue"], "case incomplète"
             for line in p["dialogue"]:
                 assert line["speaker"] in ("Hugo", "Iastro") and line["text"].strip(), "dialogue invalide"
                 line["side"] = "left" if line["speaker"] == "Hugo" else "right"
+
+
+def validated_plan(model, system, user, monday, sunday, attempts=3):
+    """Corrige un plan refusé avant toute génération d'images ; contrôle toujours bloquant."""
+    request = user
+    for attempt in range(attempts):
+        plan = ask_claude(model, system, request)
+        try:
+            check_plan(plan, monday, sunday)
+        except (AssertionError, KeyError, TypeError, ValueError) as exc:
+            if attempt == attempts - 1:
+                raise RuntimeError(f"Plan refusé après {attempts} tentatives : {exc}") from exc
+            print(f"Plan refusé ({attempt + 1}/{attempts}) : {exc}. Correction demandée.", flush=True)
+            request = (
+                user + "\n\nLe plan précédent a été REFUSÉ par le contrôle éditorial : "
+                + str(exc)
+                + "\nCorrige ce problème et revérifie TOUTES les sources par recherche web. "
+                "Remplace toute actualité sans source officielle hors réseau social. "
+                "Garde exactement le format JSON demandé et rends un plan COMPLET corrigé.\n"
+                "Plan refusé :\n" + json.dumps(plan, ensure_ascii=False)
+            )
+        else:
+            return plan
 
 
 def draw(prompt, refs, aspect_ratio, dest):
@@ -337,8 +364,8 @@ def main():
     items = candidates(json.loads(args.feed.read_text()), monday, sunday)
     assert len(items) >= NEWS_COUNT, "Pas assez d'actus dans la veille cette semaine"
     model = yaml.safe_load(Path("config.yaml").read_text()).get("model", "claude-opus-4-8")
-    plan = ask_claude(model, system_prompt(args.site), user_prompt(issue, monday, sunday, items, MONTHS[month]))
-    check_plan(plan, monday, sunday)
+    plan = validated_plan(model, system_prompt(args.site),
+                          user_prompt(issue, monday, sunday, items, MONTHS[month]), monday, sunday)
 
     art_dir = comics / "art" / issue
     art_dir.mkdir(parents=True, exist_ok=True)
