@@ -15,6 +15,9 @@
   "caption": "🗞️ iAstro Sunday est dispo !\n\nLe best of de l’actu IA de la semaine, au format BD avec Hugo et iAstro.\n\n📱 À lire tranquillement sur ton téléphone :\nhttps://hl-consulting.tech/knowledge-hub/comics/2026-W47/\n\nBon dimanche !",
   "disable_notification": false,
   "checked_at": "2026-11-22T10:25:28.077507+00:00",
-  "status": "reserved",
-  "run_id": "44997050828"
+  "status": "sent",
+  "run_id": "44997050828",
+  "message_id": 536,
+  "message_url": "https://t.me/VeilleIA_HL/536",
+  "sent_at": "2026-11-22T10:25:30.521841+00:00"
 }
