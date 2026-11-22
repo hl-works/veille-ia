@@ -1,0 +1,25 @@
+IASTRO: Salut, c'est iAstro ! Bienvenue dans le Flash du Podcast I. A. du vingt-deux novembre. Reste avec nous, on fait le tour de l'actu.
+
+IASTRO: On commence avec un moment historique pour les maths.
+
+VICTORIA: Un mathématicien d'Anthropic affirme avoir résolu l'hypothèse de Riemann avec l'aide de Claude. Quelques heures plus tard, des chercheurs de Stanford ont publié une preuve concurrente, cette fois entièrement humaine. La leçon est simple. L'I. A. ne remplace pas l'expertise, elle la démultiplie quand on sait ce qu'on cherche.
+
+---
+
+IASTRO: Côté Bourse, maintenant.
+
+VICTORIA: L'introduction en Bourse record d'Anthropic a été suivie d'une chute du titre dès le lendemain. Les fournisseurs de serveurs ont relevé leurs prix jusqu'à quarante-cinq pour cent après signature des contrats. Pour une PME, les coûts d'infrastructure restent tendus et peuvent se répercuter sur les prix des services.
+
+---
+
+IASTRO: Autre info du jour, chez Google.
+
+VICTORIA: Google DeepMind a déployé sa nouvelle génération de modèles, Gemini quatre. Le patron de Perplexity, pourtant un concurrent, salue un modèle intelligent et rapide à la fois. Mais attention, plus un modèle réfléchit, plus il coûte cher, donc il faut calibrer selon le besoin réel.
+
+---
+
+IASTRO: Et on termine avec un débat autour de la création.
+
+VICTORIA: La sortie de GTA six, fruit de treize ans de travail chez Rockstar, relance la question de l'avenir de la création. Beaucoup y voient le dernier grand jeu conçu quasi entièrement par des humains. La leçon, c'est que l'I. A. démocratise la production, mais la valeur se déplace vers l'idée et le goût.
+
+IASTRO: C'est tout pour aujourd'hui. Les sources sont sur le site de HL Consulting, et on se retrouve dans l'édition complète. À bientôt !
