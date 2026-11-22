@@ -19419,5 +19419,87 @@
     "tweet_url": "https://x.com/a16z/status/2123813224504037416",
     "media": true,
     "auteur_x": "@a16z"
+  },
+  {
+    "date": "2026-11-21",
+    "titre_fr": "Google lance Gemini 4 avec plusieurs niveaux de « réflexion »",
+    "resume_fr": "Google DeepMind déploie sa nouvelle génération de modèles Gemini 4 (déclinaisons Neon, Hydrogen), avec des réglages d'effort de raisonnement. Les premiers tests montrent de gros écarts de coût et de qualité entre les modes « high » et « xhigh », et plusieurs utilisateurs saluent un modèle à la fois rapide et performant.",
+    "tags": [
+      "google",
+      "modeles",
+      "produit"
+    ],
+    "score": 78,
+    "tweet_url": "https://x.com/simonw/status/2124217876777464269",
+    "media": true,
+    "auteur_x": "@simonw"
+  },
+  {
+    "date": "2026-11-21",
+    "titre_fr": "OpenAI en tête de benchmarks d'alignement",
+    "resume_fr": "Greg Brockman met en avant le fait que les modèles d'OpenAI dominent certains classements de sécurité et d'alignement. Une information à relativiser, ces benchmarks variant selon les critères retenus.",
+    "tags": [
+      "openai",
+      "recherche"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/gdb/status/2124283509418422305",
+    "media": false,
+    "auteur_x": "@gdb"
+  },
+  {
+    "date": "2026-11-21",
+    "titre_fr": "ParseBench-2 : classement des modèles ouverts pour l'analyse de documents",
+    "resume_fr": "LlamaIndex a comparé 59 modèles, dont 20 à poids ouverts, sur des tâches d'extraction et de parsing de documents. En tête des modèles ouverts : KDL, Infinity-Parser2, LightOnOCR-3 et Chandra 2. Utile pour qui veut automatiser le traitement de factures ou de documents.",
+    "tags": [
+      "open-source",
+      "modeles",
+      "automatisation"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/jerryjliu0/status/2124210869299277985",
+    "media": true,
+    "auteur_x": "@jerryjliu0"
+  },
+  {
+    "date": "2026-11-21",
+    "titre_fr": "Un outil pour recréer n'importe quelle publicité statique avec l'IA",
+    "resume_fr": "ScaleBot propose désormais de « remixer » une publicité statique performante en l'adaptant automatiquement à son propre produit et à sa marque, puis de générer des variations. Un cas d'usage concret pour les équipes marketing de PME.",
+    "tags": [
+      "marketing",
+      "pub",
+      "produit",
+      "automatisation"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/mikefutia/status/2124231794589348272",
+    "media": true,
+    "auteur_x": "@mikefutia"
+  },
+  {
+    "date": "2026-11-21",
+    "titre_fr": "Mustafa Suleyman plaide pour financer la « science des évaluations »",
+    "resume_fr": "Le patron de Microsoft AI estime que les capacités des modèles doublent tous les 3,6 mois tout en devenant plus difficiles à mesurer. Il réclame des financements massifs pour les méthodes d'évaluation, suggérant qu'elles devraient à terme être imposées par la loi.",
+    "tags": [
+      "politique-ia",
+      "recherche"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/mustafasuleyman/status/2124289221808808335",
+    "media": false,
+    "auteur_x": "@mustafasuleyman"
+  },
+  {
+    "date": "2026-11-22",
+    "titre_fr": "Tesla publie FSD V15 avec une nouvelle architecture",
+    "resume_fr": "Elon Musk annonce la sortie de la conduite assistée FSD version 15, basée sur une architecture entièrement repensée. Il affirme qu'elle conduit mieux qu'un humain, même si ces performances restent à confirmer indépendamment.",
+    "tags": [
+      "xai",
+      "produit"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/elonmusk/status/2124294755316310346",
+    "media": false,
+    "auteur_x": "@elonmusk"
   }
 ]
