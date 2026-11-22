@@ -3,6 +3,7 @@ import importlib.util
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
 
 spec = importlib.util.spec_from_file_location("weekly", Path(__file__).parents[1] / "scripts/iastro-weekly.py")
 w = importlib.util.module_from_spec(spec); spec.loader.exec_module(w)
@@ -17,6 +18,27 @@ def plan(**over):
 
 
 class WeeklyTests(unittest.TestCase):
+    def test_invalid_sources_are_repaired_before_returning_plan(self):
+        bad = plan(sources=[{"url": "https://x.com/a", "published_at": "2026-11-18"}])
+        with patch.object(w, "ask_claude", side_effect=[bad, plan()]) as ask:
+            result = w.validated_plan("model", "system", "brief", dt.date(2026, 11, 16), dt.date(2026, 11, 22))
+        self.assertEqual(result["news"][0]["sources"][0]["url"], "https://openai.com/x")
+        self.assertEqual(ask.call_count, 2)
+        self.assertIn("https://x.com/a", ask.call_args.args[2])
+        self.assertIn("source primaire requise", ask.call_args.args[2])
+
+    def test_repeated_invalid_plan_still_blocks_publication(self):
+        bad = plan(sources=[{"url": "https://mobile.twitter.com/a", "published_at": "2026-11-18"}])
+        with patch.object(w, "ask_claude", return_value=bad) as ask:
+            with self.assertRaisesRegex(RuntimeError, "après 3 tentatives"):
+                w.validated_plan("model", "system", "brief", dt.date(2026, 11, 16), dt.date(2026, 11, 22))
+        self.assertEqual(ask.call_count, 3)
+
+    def test_valid_plan_does_not_retry(self):
+        with patch.object(w, "ask_claude", return_value=plan()) as ask:
+            w.validated_plan("model", "system", "brief", dt.date(2026, 11, 16), dt.date(2026, 11, 22))
+        ask.assert_called_once()
+
     def test_week_of_sunday(self):
         self.assertEqual(w.week(dt.date(2026, 11, 22)), ("2026-W47", dt.date(2026, 11, 16), dt.date(2026, 11, 22)))
 
