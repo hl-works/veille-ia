@@ -1,0 +1,15 @@
+{
+  "id": "semaine-2026-W47",
+  "date": "2026-11-22",
+  "period": "du 16 au 22 novembre",
+  "days": 6,
+  "seconds": 734,
+  "public": false,
+  "telegram_sent": true,
+  "telegram_receipt": {
+    "message_id": 11,
+    "thumbnail_width": 320,
+    "thumbnail_height": 320,
+    "podcast_links_confirmed": false
+  }
+}
