@@ -81,7 +81,7 @@ jobs:
           git -C site config user.email veille-bot@users.noreply.github.com
 
           # Portrait mensuel des pochettes podcast (si manquant) + numéro de la semaine.
-          python scripts/iastro-weekly.py --site site --feed feed.json | tee fabrication.log
+          python -u scripts/iastro-weekly.py --site site --feed feed.json 2>&1 | tee fabrication.log
           ISSUE=""
           cd site
           if ! grep -q '^SKIP' ../fabrication.log; then
@@ -210,9 +210,24 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           HUGO: ${{ secrets.TELEGRAM_AUTHORIZED_USER_ID }}
+          COMICS_RESULT: ${{ needs.fabriquer.result }}
+          ANNOUNCE_RESULT: ${{ needs.annoncer.result }}
+          PODCAST_RESULT: ${{ needs.semaine.result }}
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: |
           [[ -z "$HUGO" ]] && exit 0
+          status_label() {
+            case "$1" in
+              success) echo "réussi" ;;
+              failure) echo "en échec" ;;
+              skipped) echo "non exécuté" ;;
+              cancelled) echo "annulé" ;;
+              *) echo "$1" ;;
+            esac
+          }
+          text=$(printf '⚠️ Bilan du dimanche\nBD — fabrication/publication : %s\nBD — annonce Telegram : %s\nPodcast La Semaine : %s\nDétail : %s' \
+            "$(status_label "$COMICS_RESULT")" "$(status_label "$ANNOUNCE_RESULT")" \
+            "$(status_label "$PODCAST_RESULT")" "$RUN_URL")
           curl -fsS "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
             --data-urlencode "chat_id=${HUGO}" \
-            --data-urlencode "text=⚠️ iAstro Sunday n'est pas parti ce dimanche. Détail : ${RUN_URL}" > /dev/null
+            --data-urlencode "text=${text}" > /dev/null
