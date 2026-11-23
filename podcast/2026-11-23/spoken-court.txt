@@ -1,0 +1,21 @@
+IASTRO: Salut, c'est iAstro ! Bienvenue dans le Flash du Podcast I. A. du vingt-trois novembre. Restez avec nous, ça va vite.
+
+IASTRO: On commence avec OpenAI, qui relance le débat sur la vitesse de l'I. A.
+VICTORIA: OpenAI propose de fixer des limites communes à toute l'industrie, pour ne pas développer les modèles plus vite qu'on ne peut les comprendre. Fait rare, les concurrents applaudissent, de Microsoft à Meta. L'idée, c'est de mesurer l'intelligence par la perplexité, et de s'accorder sur un seuil à ne pas franchir tant que la surveillance ne suit pas.
+
+---
+
+IASTRO: Côté marchés, maintenant, ça tremble autour de la bulle de l'I. A.
+VICTORIA: Après une semaine difficile, les régulateurs asiatiques tentent de soutenir leurs Bourses. Le chantier d'infrastructures I. A. aspirerait tant de ressources qu'il étouffe le reste de l'économie. Mais rien n'indique un krach, et pour une PME, ça concerne surtout la valorisation des géants, pas l'utilité des outils.
+
+---
+
+IASTRO: Et attention, alerte sécurité.
+VICTORIA: Des chercheurs ont trouvé de graves failles chez des fournisseurs d'I. A. bon marché, avec des centaines de clés AWS volées et des requêtes lues en clair. Le conseil, c'est d'éviter de confier des données sensibles à des services gratuits inconnus.
+
+---
+
+IASTRO: On termine côté produits.
+VICTORIA: Perplexity lance une interface qui surveille le web en continu et n'alerte qu'en cas de vrai changement. Mais une étude rappelle que les agents de code échouent sur le terrain, avec moins d'une tâche sur dix menée à bout dans un vrai poste.
+
+IASTRO: C'est tout pour ce Flash. Les sources sont sur le site de HL Consulting, et on se retrouve dans le format long. À bientôt !
