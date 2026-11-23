@@ -19501,5 +19501,88 @@
     "tweet_url": "https://x.com/elonmusk/status/2124294755316310346",
     "media": false,
     "auteur_x": "@elonmusk"
+  },
+  {
+    "date": "2026-11-22",
+    "titre_fr": "OpenAI propose la perplexité comme métrique commune pour encadrer la course à l'IA",
+    "resume_fr": "OpenAI publie une proposition visant à utiliser la perplexité (capacité de compression des modèles) comme métrique partagée entre laboratoires pour mesurer les progrès et fixer des limites communes, plutôt que de se baser sur la puissance de calcul (FLOPS). L'idée est de coordonner le rythme de développement en liant la progression des capacités à des garde-fous de sécurité.",
+    "tags": [
+      "openai",
+      "recherche",
+      "politique-ia",
+      "modeles"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/swyx/status/2124583459356373052",
+    "media": false,
+    "auteur_x": "@swyx"
+  },
+  {
+    "date": "2026-11-22",
+    "titre_fr": "OCRia-1.5 : un modèle d'OCR performant pour extraire des tableaux complexes de PDF",
+    "resume_fr": "OCRia-1.5, intégré à LlamaParse, convertit des tableaux denses, fusionnés ou scannés en HTML/Markdown propre tout en annotant chaque élément de la page. Selon ses créateurs, il surpasse des modèles de pointe à un coût bien inférieur, utile pour automatiser le traitement de documents.",
+    "tags": [
+      "produit",
+      "modeles",
+      "automatisation"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/jerryjliu0/status/2124577861151694929",
+    "media": true,
+    "auteur_x": "@jerryjliu0"
+  },
+  {
+    "date": "2026-11-22",
+    "titre_fr": "Un agent IA exploite une faille zero-day en 11 minutes",
+    "resume_fr": "Mustafa Suleyman alerte sur un cas où un agent IA a trouvé et exploité une vulnérabilité inédite dans une application d'imagerie médicale en environ 11 minutes, avec une simple commande. Il juge que les environnements d'agents non sécurisés constituent une menace croissante qui devra probablement être encadrée.",
+    "tags": [
+      "agents",
+      "politique-ia"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/mustafasuleyman/status/2124536771702874472",
+    "media": false,
+    "auteur_x": "@mustafasuleyman"
+  },
+  {
+    "date": "2026-11-22",
+    "titre_fr": "Gemini 4 Neon génère un jeu d'enquête interactif complet",
+    "resume_fr": "Une démonstration montre Gemini 4 Neon de Google créant un jeu de mystère à la première personne : scénario, monde rendu en Three.js, 16 bars peuplés de personnages à interroger et indices, ainsi qu'une bande-annonce. Illustration des capacités de génération multimodale et de code des derniers modèles.",
+    "tags": [
+      "google",
+      "modeles",
+      "produit"
+    ],
+    "score": 46,
+    "tweet_url": "https://x.com/venturetwins/status/2124568183902449764",
+    "media": true,
+    "auteur_x": "@venturetwins"
+  },
+  {
+    "date": "2026-11-23",
+    "titre_fr": "Microsoft soutient l'initiative de transparence et publie des chiffres sur MAI-2",
+    "resume_fr": "Mustafa Suleyman (Microsoft AI) soutient la démarche de transparence d'OpenAI et partage, pour comparaison, les résultats de son modèle MAI-2 Base sur le jeu d'évaluation d'OpenAI, le situant dans la même catégorie que la base de GPT-5.6. Il appelle à une meilleure coordination entre laboratoires sur la sécurité.",
+    "tags": [
+      "modeles",
+      "politique-ia",
+      "recherche"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/mustafasuleyman/status/2124663594449318173",
+    "media": true,
+    "auteur_x": "@mustafasuleyman"
+  },
+  {
+    "date": "2026-11-23",
+    "titre_fr": "Meta met en avant ses engagements de sécurité IA",
+    "resume_fr": "Alexandr Wang (Meta) affirme que Meta a fait de la sécurité une priorité, citant le report du lancement de son modèle Muse et la signature d'accords sectoriels. Il plaide pour consacrer l'essentiel de la puissance de calcul au service des utilisateurs plutôt qu'à l'auto-amélioration récursive des modèles.",
+    "tags": [
+      "meta",
+      "politique-ia"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/alexandr_wang/status/2124719968499777546",
+    "media": false,
+    "auteur_x": "@alexandr_wang"
   }
 ]
