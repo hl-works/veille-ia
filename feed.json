@@ -19584,5 +19584,241 @@
     "tweet_url": "https://x.com/alexandr_wang/status/2124719968499777546",
     "media": false,
     "auteur_x": "@alexandr_wang"
+  },
+  {
+    "date": "2026-11-23",
+    "titre_fr": "Claude unifie connecteurs et compétences dans des « plugins »",
+    "resume_fr": "Anthropic regroupe ses connecteurs d'outils et ses skills sous un format unique de plugins, avec plus de 10 000 plugins disponibles. Accessible dès les offres Free, Pro, Max et Ultra, avec Team et Enterprise à venir.",
+    "tags": [
+      "anthropic",
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/claudeai/status/2124970294523945328",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-11-23",
+    "titre_fr": "Anthropic lance Claude Ship en bêta",
+    "resume_fr": "Anthropic ouvre en bêta Claude Ship pour les offres Team et Enterprise, un outil destiné à faciliter la publication de code (pull requests) après génération par l'IA.",
+    "tags": [
+      "anthropic",
+      "produit",
+      "agents"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/bcherny/status/2124961485801836573",
+    "media": false,
+    "auteur_x": "@bcherny"
+  },
+  {
+    "date": "2026-11-23",
+    "titre_fr": "OpenAI et Cisco présentent Shirudo, runtime Linux open-source pour agents défensifs",
+    "resume_fr": "OpenAI et Cisco dévoilent Shirudo, un runtime Linux open-source permettant à des agents d'écrire des contrôles eBPF dynamiques pour protéger les systèmes des exploits sans interruption de service. OpenAI indique par ailleurs avoir validé des centaines de failles du noyau Linux avec GPT-6 Cyber.",
+    "tags": [
+      "openai",
+      "open-source",
+      "recherche",
+      "agents"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/OpenAI/status/2124980590717911527",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-11-23",
+    "titre_fr": "Mistral offre un mois de Vibe Pro gratuit en Europe",
+    "resume_fr": "Après une première offre épuisée en moins d'une heure, Mistral propose désormais sans limite un mois gratuit de Vibe Pro aux développeurs européens, avec le code MISTRALVIBE. L'entreprise met en avant un produit, un modèle et une inférence 100 % européens.",
+    "tags": [
+      "mistral",
+      "produit"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/MistralAI/status/2124905610386780451",
+    "media": true,
+    "auteur_x": "@MistralAI"
+  },
+  {
+    "date": "2026-11-23",
+    "titre_fr": "Walmart embrasse le commerce agentique, les données Stripe confirment la tendance",
+    "resume_fr": "Contrairement à Amazon qui bloque les agents, Walmart choisit de les accueillir pour les achats. De nouvelles données de Stripe suggèrent que le shopping piloté par des agents démarre réellement et devient récurrent.",
+    "tags": [
+      "produit",
+      "agents",
+      "commerce",
+      "vente"
+    ],
+    "score": 70,
+    "tweet_url": "https://x.com/emollick/status/2124895744775667767",
+    "media": true,
+    "auteur_x": "@emollick"
+  },
+  {
+    "date": "2026-11-23",
+    "titre_fr": "a16z : comment les agents IA choisissent les produits qu'ils recommandent",
+    "resume_fr": "a16z et The Prompting Company ont testé quatre agents consommateurs sur plus de 1 270 requêtes et 11 000 exécutions. Résultat : la livraison, les retours, la crédibilité du vendeur et l'obligation de créer un compte influencent fortement les recommandations et l'aboutissement de l'achat.",
+    "tags": [
+      "recherche",
+      "agents",
+      "commerce",
+      "marketing"
+    ],
+    "score": 66,
+    "tweet_url": "https://x.com/a16z/status/2124975031923122236",
+    "media": true,
+    "auteur_x": "@a16z"
+  },
+  {
+    "date": "2026-11-23",
+    "titre_fr": "Replit publie des lois d'échelle pour les « essaims » d'agents",
+    "resume_fr": "Replit montre qu'augmenter le nombre d'agents peut apporter d'énormes gains, mais pas toujours : l'organisation des agents compte plus que la puissance brute, les structures décentralisées s'échelonnant mieux. L'entreprise ouvre aussi en open-source son outil Optimization-Bench.",
+    "tags": [
+      "recherche",
+      "agents",
+      "open-source"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/amasad/status/2124969305674748175",
+    "media": true,
+    "auteur_x": "@amasad"
+  },
+  {
+    "date": "2026-11-23",
+    "titre_fr": "Microsoft détaille Rocket, son infrastructure RL maison",
+    "resume_fr": "Microsoft présente Rocket, son infrastructure interne d'apprentissage par renforcement, dans un billet technique. Satya Nadella met en avant une série de nouveaux modèles MAI axés sur l'efficacité et le « résultat par dollar ».",
+    "tags": [
+      "modeles",
+      "recherche"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/mustafasuleyman/status/2124933527066325243",
+    "media": false,
+    "auteur_x": "@mustafasuleyman"
+  },
+  {
+    "date": "2026-11-23",
+    "titre_fr": "OpenAI lance OpenWorks pour aider les petites entreprises avec l'IA",
+    "resume_fr": "OpenAI finance des experts IA locaux pour accompagner gratuitement les petites entreprises dans l'adoption d'outils d'IA. Le programme s'adresse aux experts qui aiment enseigner et aux dirigeants de PME voulant se former.",
+    "tags": [
+      "openai",
+      "politique-ia",
+      "automatisation"
+    ],
+    "score": 60,
+    "tweet_url": "https://x.com/gdb/status/2124940416072200521",
+    "media": false,
+    "auteur_x": "@gdb"
+  },
+  {
+    "date": "2026-11-23",
+    "titre_fr": "L'API Gemini accepte PDF, fichiers Office, audio et vidéo",
+    "resume_fr": "Google permet désormais d'envoyer directement à l'API Gemini des PDF, documents Office, feuilles de calcul, audio et vidéo, en ne demandant que les pages, cellules, segments ou couches nécessaires.",
+    "tags": [
+      "google",
+      "produit"
+    ],
+    "score": 54,
+    "tweet_url": "https://x.com/OfficialLoganK/status/2124938672399384681",
+    "media": false,
+    "auteur_x": "@OfficialLoganK"
+  },
+  {
+    "date": "2026-11-23",
+    "titre_fr": "Anthropic ouvre en bêta la rétention zéro de données pour les entreprises",
+    "resume_fr": "Anthropic lance en bêta publique une option de rétention zéro de données (ZDR) couplée à des garde-fous entreprise, capable de détecter les abus tout en restant compatible avec la non-conservation des données. Développé avec plus de 100 clients.",
+    "tags": [
+      "anthropic",
+      "produit",
+      "politique-ia"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/claudeai/status/2124929944530587712",
+    "media": true,
+    "auteur_x": "@claudeai"
+  },
+  {
+    "date": "2026-11-23",
+    "titre_fr": "Google DeepMind : des agents Gemini conçoivent des circuits quantiques plus efficaces",
+    "resume_fr": "En faisant collaborer des équipes d'agents Gemini 4, DeepMind a construit de nouveaux circuits quantiques réduisant jusqu'à dix fois le coût de futures simulations, un pas vers des applications en fusion, chimie et découverte de médicaments.",
+    "tags": [
+      "google",
+      "recherche",
+      "agents"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/GoogleDeepMind/status/2124911073266413634",
+    "media": true,
+    "auteur_x": "@GoogleDeepMind"
+  },
+  {
+    "date": "2026-11-23",
+    "titre_fr": "Jensen Huang de retour à la tête de Nvidia",
+    "resume_fr": "Après une période d'incertitude, le conseil d'administration de Nvidia réinstalle Jensen Huang. Le retour est largement salué dans l'écosystème IA et chez les concurrents, Elon Musk et plusieurs figures du secteur soulignant son rôle clé.",
+    "tags": [
+      "hardware",
+      "talents"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/saranormous/status/2124899838999552362",
+    "media": false,
+    "auteur_x": "@saranormous"
+  },
+  {
+    "date": "2026-11-24",
+    "titre_fr": "Gemini 4 Neon déployé dans Google Workspace",
+    "resume_fr": "Google généralise son modèle Gemini 4 Neon aux clients Workspace via l'application Gemini. Plusieurs retours d'utilisateurs évoquent de forts gains de qualité, notamment sur la recherche et les tâches agentiques.",
+    "tags": [
+      "google",
+      "modeles",
+      "produit"
+    ],
+    "score": 72,
+    "tweet_url": "https://x.com/OfficialLoganK/status/2125018427790344654",
+    "media": false,
+    "auteur_x": "@OfficialLoganK"
+  },
+  {
+    "date": "2026-11-24",
+    "titre_fr": "Sortie du modèle GLM-5.4",
+    "resume_fr": "Le modèle GLM-5.4 est disponible. Des tests comparatifs informels montrent un changement de style marqué par rapport aux versions précédentes de la famille GLM.",
+    "tags": [
+      "modeles",
+      "open-source"
+    ],
+    "score": 44,
+    "tweet_url": "https://x.com/simonw/status/2125017693917155424",
+    "media": true,
+    "auteur_x": "@simonw"
+  },
+  {
+    "date": "2026-11-24",
+    "titre_fr": "Anthropic : la valeur de l'IA vient surtout du changement organisationnel",
+    "resume_fr": "Un nouveau papier d'Anthropic avance deux points : l'essentiel de la valeur de l'IA provient de la transformation de l'organisation, et il existe une large résistance des salariés à l'adoption. Partager les gains et élargir les rôles pourrait aider.",
+    "tags": [
+      "anthropic",
+      "recherche"
+    ],
+    "score": 49,
+    "tweet_url": "https://x.com/emollick/status/2125098309928812898",
+    "media": true,
+    "auteur_x": "@emollick"
+  },
+  {
+    "date": "2026-11-24",
+    "titre_fr": "OpenAI met en avant les progrès de GPT-6.2 Astra en robotique",
+    "resume_fr": "Greg Brockman présente GPT-6.2 Astra comme une avancée notable pour le contrôle robotique et la compréhension du monde en 3D, dans un contexte où plusieurs acteurs annoncent des progrès en robotique.",
+    "tags": [
+      "openai",
+      "modeles",
+      "recherche"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/gdb/status/2125041014587146384",
+    "media": false,
+    "auteur_x": "@gdb"
   }
 ]
