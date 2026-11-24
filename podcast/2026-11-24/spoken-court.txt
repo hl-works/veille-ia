@@ -1,0 +1,25 @@
+IASTRO: Salut, c'est iAstro ! Bienvenue dans le Flash du Podcast I. A. du vingt-quatre novembre. Installez-vous, on vous résume l'essentiel.
+
+IASTRO: On commence par un vrai coup de théâtre chez Nvidia.
+
+VICTORIA: Jensen Huang reprend les commandes de Nvidia, quelques jours après avoir démissionné sur fond de scandale d'espionnage. Selon le Wall Street Journal, c'est l'administration Trump qui a orchestré ce retour, le jugeant indispensable au boom de l'I. A. Dans la foulée, Washington a inscrit la société singapourienne Megaspeed sur sa liste noire commerciale, et les Bourses ont rebondi.
+
+---
+
+IASTRO: Autre temps fort, une vraie salve de nouveaux modèles.
+
+VICTORIA: Google déploie Gemini quatre Neon à ses clients Workspace, et son adoption grimpe fort. OpenAI fait de GPT six point deux Sol le modèle par défaut de ChatGPT, avec de nets progrès sur les images. Et le chinois Z point A I sort GLM cinq point quatre, premier loop transformer à sept cent cinquante milliards de paramètres.
+
+---
+
+IASTRO: Côté maths, maintenant, une annonce qui fait débat.
+
+VICTORIA: Un mathématicien d'Anthropic affirme avoir démontré l'hypothèse de Riemann avec l'aide de Claude. Mais des sceptiques comme Gary Marcus dénoncent une validation précipitée. L'épisode rappelle qu'il faut rester prudent face aux annonces spectaculaires de l'I. A.
+
+---
+
+IASTRO: Et on termine côté commerce et petites entreprises.
+
+VICTORIA: OpenAI lance OpenWorks, un programme qui finance des experts locaux pour aider gratuitement les petites entreprises à s'approprier l'I. A. En parallèle, une étude d'a seize z montre que les agents qui font nos achats ont chacun leurs préférences. Rendre son offre facilement achetable par un agent pourrait bientôt compter autant que le référencement.
+
+IASTRO: C'est tout pour ce Flash. Les sources sont sur le site de HL Consulting, et on se retrouve dans l'autre format pour aller plus loin.
