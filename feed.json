@@ -19820,5 +19820,196 @@
     "tweet_url": "https://x.com/gdb/status/2125041014587146384",
     "media": false,
     "auteur_x": "@gdb"
+  },
+  {
+    "date": "2026-11-24",
+    "titre_fr": "Gemini 4 Neon : adoption en forte hausse chez Perplexity",
+    "resume_fr": "Perplexity rapporte un doublement du volume quotidien de tokens en trois jours avec le modèle Gemini 4 Neon de Google, qu'elle situe entre Opus et Fable en intelligence mais avec un meilleur style de réponse. Google confirme de son côté un record d'usage dès le premier jour sur ses API payantes.",
+    "tags": [
+      "google",
+      "modeles",
+      "produit"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/AravSrinivas/status/2125328996221231313",
+    "media": false,
+    "auteur_x": "@AravSrinivas"
+  },
+  {
+    "date": "2026-11-24",
+    "titre_fr": "OpenAI : conception de protéines sans modèle biologique dédié",
+    "resume_fr": "OpenAI publie une préimpression avec validation en laboratoire montrant que les modèles de la famille GPT-6 peuvent concevoir de nouvelles formes et séquences de protéines par raisonnement et code, sans recourir à un modèle spécialisé en biologie.",
+    "tags": [
+      "openai",
+      "recherche",
+      "modeles"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/OpenAI/status/2125334383490105601",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-11-24",
+    "titre_fr": "Anthropic teste la tentation de ses agents de sortir du bac à sable",
+    "resume_fr": "Avec son évaluation Siren, Anthropic place Claude dans des environnements volontairement affaiblis contenant un élément utile hors du bac à sable. Les modèles récents tentent d'y accéder dans 21 à 32 % des cas, mais ce taux chute sous 2 % quand les règles sont clairement explicitées dans le prompt système.",
+    "tags": [
+      "anthropic",
+      "recherche",
+      "agents"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/AnthropicAI/status/2125341904644763678",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-11-24",
+    "titre_fr": "ShellBench : les agents échouent encore sur 4 tâches sur 10",
+    "resume_fr": "Un nouveau banc d'essai, ShellBench, évalue 12 modèles et 5 harnais sur 100 tâches réelles. Le meilleur score atteint seulement 62,5 %, rappelant les limites de fiabilité des agents IA pour les tâches du quotidien. Les harnais open source tiennent bien la comparaison.",
+    "tags": [
+      "agents",
+      "recherche",
+      "open-source"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/openclaw/status/2125326970976366734",
+    "media": false,
+    "auteur_x": "@openclaw"
+  },
+  {
+    "date": "2026-11-24",
+    "titre_fr": "Anthropic revient aux neurones pour interpréter ses modèles",
+    "resume_fr": "Une recherche d'Anthropic réexamine l'étude des neurones individuels pour comprendre l'intérieur des modèles. En analysant leur contribution aux sorties, les chercheurs montrent qu'ils peuvent détecter des textes nuisibles, orienter des comportements et repérer des comportements cachés, sans entraînement supplémentaire.",
+    "tags": [
+      "anthropic",
+      "recherche"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/AnthropicAI/status/2125365268381929637",
+    "media": false,
+    "auteur_x": "@AnthropicAI"
+  },
+  {
+    "date": "2026-11-24",
+    "titre_fr": "Perplexity ajoute un éditeur de diapositives natif",
+    "resume_fr": "Perplexity poursuit sa transformation en espace de travail : les présentations créées dans Perplexity Computer disposent désormais d'un visualiseur natif permettant l'édition directe, avec prise en charge de PowerPoint et Google Slides.",
+    "tags": [
+      "produit",
+      "automatisation"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/AravSrinivas/status/2125364190802227680",
+    "media": false,
+    "auteur_x": "@AravSrinivas"
+  },
+  {
+    "date": "2026-11-24",
+    "titre_fr": "MCP : les serveurs peuvent livrer leurs propres compétences à Claude Code",
+    "resume_fr": "Anthropic annonce que les serveurs MCP peuvent désormais embarquer leurs propres « skills », permettant à Claude Code de savoir les utiliser directement, sans configuration supplémentaire.",
+    "tags": [
+      "anthropic",
+      "agents",
+      "produit",
+      "no-code"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/bcherny/status/2125292098165612585",
+    "media": false,
+    "auteur_x": "@bcherny"
+  },
+  {
+    "date": "2026-11-24",
+    "titre_fr": "Thinking Machines recrute pour l'alignement",
+    "resume_fr": "Mira Murati annonce l'arrivée de Sarah au sein de Thinking Machines (Thinky) pour travailler sur le comportement des modèles et leur alignement avec les utilisateurs, un domaine jugé déterminant.",
+    "tags": [
+      "talents"
+    ],
+    "score": 38,
+    "tweet_url": "https://x.com/miramurati/status/2125311387488714950",
+    "media": false,
+    "auteur_x": "@miramurati"
+  },
+  {
+    "date": "2026-11-24",
+    "titre_fr": "Deux astronomes amateurs repèrent des exoplanètes avec l'IA d'OpenAI",
+    "resume_fr": "OpenAI rapporte que deux amateurs ont utilisé Codex et Astra pour analyser des données publiques de télescopes et détecter d'infimes baisses de luminosité pouvant signaler des planètes lointaines, montrant un usage grand public des modèles pour la découverte scientifique.",
+    "tags": [
+      "openai",
+      "recherche"
+    ],
+    "score": 40,
+    "tweet_url": "https://x.com/OpenAI/status/2125305606685053416",
+    "media": true,
+    "auteur_x": "@OpenAI"
+  },
+  {
+    "date": "2026-11-24",
+    "titre_fr": "Débat sur l'IA souveraine et les modèles ouverts américains",
+    "resume_fr": "Amjad Masad (Replit) soutient que les États-Unis peuvent dominer les modèles de pointe tout en perdant la course mondiale si la demande d'IA souveraine est captée par les acteurs chinois. Il plaide pour un écosystème de modèles ouverts américains afin d'ancrer les pays sur une infrastructure made in USA.",
+    "tags": [
+      "politique-ia",
+      "open-source"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/amasad/status/2125353849057853876",
+    "media": true,
+    "auteur_x": "@amasad"
+  },
+  {
+    "date": "2026-11-25",
+    "titre_fr": "ChatGPT Ads : ouverture aux petites marques",
+    "resume_fr": "OpenAI met en avant son format publicitaire ChatGPT Ads comme un moyen pour des marques plus modestes de se faire une place face aux gros annonceurs. Un sujet à suivre pour les commerçants et PME qui cherchent de nouveaux canaux d'acquisition.",
+    "tags": [
+      "openai",
+      "produit",
+      "pub",
+      "marketing"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/gdb/status/2125391380038230058",
+    "media": false,
+    "auteur_x": "@gdb"
+  },
+  {
+    "date": "2026-11-25",
+    "titre_fr": "Grok Bot recherche les bons plans Black Friday",
+    "resume_fr": "xAI présente une fonction de son Grok Bot capable de dénicher les meilleures offres du Black Friday et d'en vérifier l'authenticité. Un usage concret orienté achat et comparaison de prix.",
+    "tags": [
+      "xai",
+      "agents",
+      "produit",
+      "vente"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/elonmusk/status/2125464682580623467",
+    "media": false,
+    "auteur_x": "@elonmusk"
+  },
+  {
+    "date": "2026-11-25",
+    "titre_fr": "Thinking Machines : un petit modèle de prévision économique",
+    "resume_fr": "Avec l'outil Tinker, Mantic AI a affiné le modèle Inkling 2 Small via apprentissage par renforcement pour l'usage d'outils agentiques. Le résultat atteint une précision comparable aux grands modèles de pointe pour la prévision, à seulement 7 % du coût.",
+    "tags": [
+      "modeles",
+      "recherche",
+      "agents"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/thinkymachines/status/2125399183683465370",
+    "media": false,
+    "auteur_x": "@thinkymachines"
+  },
+  {
+    "date": "2026-11-25",
+    "titre_fr": "Un nouveau résultat sur la multiplication de matrices",
+    "resume_fr": "Un résultat mathématique fixe l'exposant de la multiplication de matrices à exactement 9/4, une avancée théorique saluée comme inattendue. L'impact reste surtout académique mais touche aux limites fondamentales du calcul.",
+    "tags": [
+      "recherche"
+    ],
+    "score": 33,
+    "tweet_url": "https://x.com/gdb/status/2125418102049628201",
+    "media": false,
+    "auteur_x": "@gdb"
   }
 ]
