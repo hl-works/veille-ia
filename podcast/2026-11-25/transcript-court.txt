@@ -1,0 +1,23 @@
+IASTRO: Salut, c'est iAstro ! Bienvenue dans le flash du Podcast IA du vingt-cinq novembre. Installez-vous, on fait le tour de l'actu en quelques minutes.
+
+IASTRO: On commence avec Google, qui frappe fort.
+
+VICTORIA: Son nouveau modèle, Gemini quatre Neon, signe un démarrage record dès le premier jour sur les API payantes. Chez Perplexity, l'usage a plus que doublé en trois jours, dépassant les cent vingt milliards de tokens traités. Après des mois en retrait, Google est clairement de retour dans la course.
+
+IASTRO: Et maintenant, l'IA qui fait de la science.
+
+VICTORIA: OpenAI publie une étude où ses modèles GPT six conçoivent de nouvelles structures de protéines par simple raisonnement, avec des validations en laboratoire. En parallèle, deux astronomes amateurs ont repéré de possibles planètes lointaines dans des données publiques de la NASA. Greg Brockman parle de l'efficacité déraisonnable du raisonnement.
+
+IASTRO: Côté marchés, maintenant, ça tangue.
+
+VICTORIA: Les Bourses asiatiques ont rechuté, avec une baisse de plus de six pour cent en Corée du Sud. En cause, les doutes sur la durabilité du boom de l'IA et sur les fabricants de puces. Et Jensen Huang, réinstallé à la tête de Nvidia, s'est excusé auprès de ses équipes sur fond d'enquête concernant des puces détournées vers la Chine.
+
+IASTRO: Autre info, du côté d'Anthropic.
+
+VICTORIA: Son action est passée sous son prix d'introduction de quatre-vingt-trois dollars peu après son entrée en Bourse. Côté technique, son protocole MCP dépasse sept cents millions de téléchargements par mois. Et deux études sur la sécurité rappellent une vraie question du moment, à savoir à qui obéit vraiment un agent IA.
+
+IASTRO: Et on termine avec deux débats qui agitent le secteur.
+
+VICTORIA: La plateforme Tidal va interdire la musique générée par IA à partir du neuf décembre, supprimant environ vingt-neuf millions de titres. En parallèle, un nouveau test rappelle que les meilleurs agents échouent encore à près de quatre tâches du quotidien sur dix. Un utile rappel que la réalité reste en deçà des promesses.
+
+IASTRO: C'est tout pour aujourd'hui. Les sources sont sur le site de HL Consulting, et on se retrouve dans le format long pour creuser tout ça. À bientôt !
