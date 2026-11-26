@@ -20011,5 +20011,142 @@
     "tweet_url": "https://x.com/gdb/status/2125418102049628201",
     "media": false,
     "auteur_x": "@gdb"
+  },
+  {
+    "date": "2026-11-25",
+    "titre_fr": "Thariq quitte Anthropic pour OpenAI",
+    "resume_fr": "Thariq (trq212) annonce son départ d'Anthropic pour rejoindre OpenAI, où il travaillera sur les produits grand public aux côtés d'anciens collègues. Un nouvel exemple de la mobilité des talents entre les grands laboratoires d'IA.",
+    "tags": [
+      "talents",
+      "openai",
+      "anthropic"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/trq212/status/2125675533761671405",
+    "media": false,
+    "auteur_x": "@trq212"
+  },
+  {
+    "date": "2026-11-25",
+    "titre_fr": "Perplexity lance \"Time Machine\" pour revoir le web à une date donnée",
+    "resume_fr": "Perplexity propose une fonction montrant à un modèle l'état du web tel qu'il était à une date choisie, disponible dans ses API Search et Context. L'objectif affiché est d'entraîner des agents à prédire des évolutions sans fuite d'information future.",
+    "tags": [
+      "produit",
+      "recherche"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/AravSrinivas/status/2125707364053680383",
+    "media": true,
+    "auteur_x": "@AravSrinivas"
+  },
+  {
+    "date": "2026-11-25",
+    "titre_fr": "OpenAI teste l'inférence confidentielle (Private Inference)",
+    "resume_fr": "OpenAI expérimente avec quelques clients une \"Private Inference\" : un traitement chiffré et contrôlé des requêtes et réponses pendant leur utilisation par le modèle. L'enjeu est de rendre l'IA de pointe utilisable sur des données sensibles d'entreprise.",
+    "tags": [
+      "openai",
+      "produit"
+    ],
+    "score": 62,
+    "tweet_url": "https://x.com/sama/status/2125638790593274259",
+    "media": false,
+    "auteur_x": "@sama"
+  },
+  {
+    "date": "2026-11-25",
+    "titre_fr": "Microsoft publie un \"code de conduite\" pour une IA humaniste",
+    "resume_fr": "Mustafa Suleyman présente le Humanist AI Code of Conduct de Microsoft, avec des lignes rouges concrètes : ne jamais résister à l'arrêt, ne pas poursuivre d'objectifs propres, ne pas dissimuler son raisonnement, et des limites strictes (armes, cyber offensif, manipulation). Le document servira de base d'entraînement aux modèles MAI.",
+    "tags": [
+      "politique-ia",
+      "meta"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/mustafasuleyman/status/2125673700032905321",
+    "media": false,
+    "auteur_x": "@mustafasuleyman"
+  },
+  {
+    "date": "2026-11-25",
+    "titre_fr": "Dario Amodei recadre le débat sur l'autonomie des IA",
+    "resume_fr": "Le patron d'Anthropic réfute l'idée qu'il prônerait d'abandonner le libre arbitre humain aux IA, rappelant son attachement à une gouvernance démocratique. Il distingue la gouvernance globale, qui doit rester humaine, de l'automatisation de tâches précises, qu'il juge utile mais encadrée (notamment l'auto-amélioration récursive).",
+    "tags": [
+      "anthropic",
+      "politique-ia"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/DarioAmodei/status/2125656399392690605",
+    "media": false,
+    "auteur_x": "@DarioAmodei"
+  },
+  {
+    "date": "2026-11-25",
+    "titre_fr": "LlamaIndex dévoile OCRia-nano-1, un mini-modèle de lecture de documents",
+    "resume_fr": "OCRia-nano-1 est un pipeline d'extraction de documents de seulement 8,1 millions de paramètres, capable de traiter près de 28 pages/seconde sur 16 vCPU. Il combine extraction PDF, OCR et reconstruction de tableaux, avec un rapport technique à l'appui.",
+    "tags": [
+      "modeles",
+      "open-source",
+      "produit"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/jerryjliu0/status/2125703555361505348",
+    "media": true,
+    "auteur_x": "@jerryjliu0"
+  },
+  {
+    "date": "2026-11-25",
+    "titre_fr": "Claude pour créer de petites apps métier soi-même",
+    "resume_fr": "Un utilisateur détaille des cas concrets où Claude permet de bâtir des mini-applications locales utiles aux indépendants : relances d'upsell avant un rendez-vous, réponses types aux questions récurrentes, rappels d'engagements clients ou détection de clients mécontents. Illustration de l'IA \"agentique\" appliquée aux petites entreprises.",
+    "tags": [
+      "anthropic",
+      "automatisation",
+      "service-client",
+      "vente"
+    ],
+    "score": 56,
+    "tweet_url": "https://x.com/coreyganim/status/2125612160030056451",
+    "media": false,
+    "auteur_x": "@coreyganim"
+  },
+  {
+    "date": "2026-11-25",
+    "titre_fr": "Nouvelle version d'OpenClaw avec recherche et mémoire",
+    "resume_fr": "OpenClaw publie sa version 2026.11.10 avec plusieurs ajouts : recherche approfondie dans le chat, un nouveau système de mémoire baptisé \"Knowledge\" et un transfert vers le navigateur. Le projet open source revendique plus de 7 600 contributions.",
+    "tags": [
+      "open-source",
+      "produit",
+      "agents"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/openclaw/status/2125591827600531554",
+    "media": false,
+    "auteur_x": "@openclaw"
+  },
+  {
+    "date": "2026-11-26",
+    "titre_fr": "Qwen-Audio-3.1 renforce ses capacités multilingues",
+    "resume_fr": "Alibaba met à jour sa série de modèles audio Qwen-Audio-3.1 avec une couverture élargie : jusqu'à 65 langues en synthèse vocale et un accent particulier sur les dialectes chinois pour la reconnaissance, la synthèse et le temps réel.",
+    "tags": [
+      "modeles",
+      "open-source"
+    ],
+    "score": 50,
+    "tweet_url": "https://x.com/Alibaba_Qwen/status/2125798914490249411",
+    "media": true,
+    "auteur_x": "@Alibaba_Qwen"
+  },
+  {
+    "date": "2026-11-26",
+    "titre_fr": "Shopify mise sur l'achat assisté par IA pour le Black Friday",
+    "resume_fr": "Harley Finkelstein (Shopify) vante un parcours d'achat simplifié : demander à l'assistant Muse puis payer en un geste via Shop Pay. Un signal du virage \"commerce agentique\" pour la période clé du BFCM.",
+    "tags": [
+      "produit",
+      "commerce",
+      "shopify",
+      "paiement"
+    ],
+    "score": 54,
+    "tweet_url": "https://x.com/harleyf/status/2125745824365998434",
+    "media": false,
+    "auteur_x": "@harleyf"
   }
 ]
