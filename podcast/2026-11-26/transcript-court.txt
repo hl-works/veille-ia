@@ -1,0 +1,15 @@
+IASTRO: Salut, c'est iAstro ! Bienvenue dans le flash du Podcast IA du vingt-six novembre. Installez-vous, on vous résume l'essentiel.
+
+IASTRO: On commence par les marchés, et ça tremble un peu.
+VICTORIA: Nvidia a suspendu ses livraisons de puces vers l'Asie du Sud-Est, les États-Unis durcissant leurs contrôles pour couper l'accès chinois à la puissance de calcul. En parallèle, l'agence S&P envisage d'abaisser la note de Nvidia, et des milliards de prêts sont gelés en Asie. Un rapport évoque même les laboratoires chinois ralentis, DeepSeek s'estimant jusqu'à neuf mois derrière les modèles américains.
+
+IASTRO: Côté OpenAI, maintenant, une promesse qui vise les entreprises.
+VICTORIA: OpenAI teste « Private Inference », une technologie qui permet d'utiliser ses modèles les plus puissants sans qu'OpenAI puisse accéder aux données, même pendant le traitement. L'idée, c'est de rassurer les secteurs sensibles comme la finance, la santé ou le juridique. Pour l'instant, c'est réservé à un petit groupe de clients.
+
+IASTRO: Autre info du jour, un débat de fond sur le pouvoir et l'IA.
+VICTORIA: Dario Amodei, le patron d'Anthropic, a qualifié d'absurde l'idée qu'il voudrait confier le pouvoir aux machines, et il défend une IA gouvernée démocratiquement. De son côté, Mustafa Suleyman présente un code de conduite pour une IA humaniste, avec des lignes rouges concrètes, par exemple ne jamais résister à un arrêt. Le texte est soumis à consultation publique pendant neuf semaines.
+
+IASTRO: Et on termine avec une démonstration qui impressionne.
+VICTORIA: Andrej Karpathy a demandé à Claude Opus cinq point cinq de bâtir une carte de jeu type Civilization à partir de vraies données publiques américaines. Trente et une sources officielles, quarante-cinq mille lignes de code, et près de huit heures plus tard, ça fonctionne. En parallèle, l'IA fait avancer les mathématiques, avec des preuves qui arrivent plus vite qu'on ne peut les lire.
+
+IASTRO: C'est tout pour ce flash. Les sources sont sur le site de HL Consulting, et on se retrouve dans l'édition complète.
