@@ -1,0 +1,19 @@
+IASTRO: Salut, c'est iAstro ! Bienvenue dans le flash du Podcast IA du vingt-sept novembre. Restez avec nous, on a du lourd aujourd'hui.
+
+IASTRO: On commence avec les puces et la géopolitique.
+
+VICTORIA: Nvidia a demandé à ses partenaires de suspendre les livraisons de serveurs vers la Malaisie, Singapour, la Thaïlande et l'Indonésie, parce que Washington durcit ses restrictions pour couper l'accès indirect de la Chine aux puces d'IA. Singapour négocie déjà pour garder cet accès. Et sur les marchés, les investisseurs étrangers ont vendu un montant record d'actions taïwanaises ce mois-ci. Pour une PME, ça annonce surtout des tensions possibles sur les prix et les délais du matériel.
+
+IASTRO: Côté modèles, maintenant.
+
+VICTORIA: Mistral a dévoilé Mistral Large quatre, surnommé Le Chonk, qui surpasserait même les meilleurs modèles fermés pour localiser un élément précis dans une image. Google reçoit de bons retours sur Gemini quatre. Et OpenAI a dû corriger un bug de facturation qui faisait atteindre plus vite les limites d'usage sur GPT six point deux.
+
+IASTRO: Autre info du jour, dans le logiciel.
+
+VICTORIA: Le géant allemand SAP envisagerait de supprimer au moins dix mille postes pour se réorganiser à l'ère de l'IA. C'est un signal fort. Les éditeurs historiques se restructurent face à une technologie qui change la façon dont les entreprises achètent leurs outils. Pour un dirigeant, ça vaut le coup de regarder les nouvelles offres plutôt que de rester captif par habitude.
+
+IASTRO: Et on termine avec le Black Friday.
+
+VICTORIA: Shopify a remis en ligne son globe qui affiche en temps réel les commandes passées à travers le monde. Cette année, son patron Tobi Lütke en a fait un mini-jeu, avec le globe posé dans un skatepark et davantage de données. C'est l'un des week-ends d'achats les plus scrutés de l'année.
+
+IASTRO: Voilà pour ce flash. Toutes les sources sont sur le site de HL Consulting, et on se retrouve dans le format long pour creuser tout ça. À très vite !
