@@ -20148,5 +20148,87 @@
     "tweet_url": "https://x.com/harleyf/status/2125745824365998434",
     "media": false,
     "auteur_x": "@harleyf"
+  },
+  {
+    "date": "2026-11-26",
+    "titre_fr": "Mistral lance Large 4 avec de fortes capacités de compréhension visuelle",
+    "resume_fr": "Mistral présente Mistral Large 4 (surnommé « Le Chonk »), qui excelle sur les tâches d'ancrage visuel (localiser précisément un élément dans une image). L'entreprise affirme qu'il dépasse même des modèles fermés de pointe sur ce type de tâches.",
+    "tags": [
+      "mistral",
+      "modeles"
+    ],
+    "score": 68,
+    "tweet_url": "https://x.com/MistralAI/status/2125915743212761359",
+    "media": true,
+    "auteur_x": "@MistralAI"
+  },
+  {
+    "date": "2026-11-26",
+    "titre_fr": "OCRia-nano-1 : un modèle OCR de seulement 8,1 M de paramètres",
+    "resume_fr": "Un modèle OCR ultra-léger capable de lire du texte scanné, des tableaux et plusieurs langues, avec des boîtes d'annotation. Présenté comme très efficace pour numériser de gros volumes de documents à moindre coût, utile pour les systèmes de recherche documentaire (RAG).",
+    "tags": [
+      "modeles",
+      "open-source",
+      "recherche",
+      "automatisation"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/jerryjliu0/status/2126008009759580616",
+    "media": true,
+    "auteur_x": "@jerryjliu0"
+  },
+  {
+    "date": "2026-11-26",
+    "titre_fr": "Perplexity : forte croissance de l'adoption de « Teammates »",
+    "resume_fr": "Perplexity indique que l'usage de ses agents « Teammates » double tous les dix jours, parmi les abonnés du palier Max à 200 $/mois. L'idée : déléguer des rôles entiers à des agents et les orchestrer.",
+    "tags": [
+      "produit",
+      "agents"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/AravSrinivas/status/2126038741622104256",
+    "media": true,
+    "auteur_x": "@AravSrinivas"
+  },
+  {
+    "date": "2026-11-26",
+    "titre_fr": "Claude diagnostique un vieux moteur de voiture pour quelques dollars",
+    "resume_fr": "Un utilisateur a connecté Claude à l'ordinateur de bord d'une Jeep de 1994 via une puce à 3 $, et l'IA a identifié la cause des échecs au contrôle antipollution. Le projet, à environ 15 $ de pièces, est gratuit sur GitHub — une illustration d'usage pratique et accessible.",
+    "tags": [
+      "anthropic",
+      "open-source",
+      "automatisation"
+    ],
+    "score": 42,
+    "tweet_url": "https://x.com/gregisenberg/status/2126004403052445733",
+    "media": true,
+    "auteur_x": "@gregisenberg"
+  },
+  {
+    "date": "2026-11-26",
+    "titre_fr": "Gary Marcus alerte sur les risques juridiques autour de Nvidia",
+    "resume_fr": "Gary Marcus soutient que le réembauche de Jensen Huang avant toute enquête formelle expose le conseil d'administration de Nvidia à des poursuites s'il était jugé fautif. À prendre comme une opinion polémique plutôt qu'une information confirmée.",
+    "tags": [
+      "politique-ia",
+      "hardware"
+    ],
+    "score": 35,
+    "tweet_url": "https://x.com/GaryMarcus/status/2125956463306920040",
+    "media": false,
+    "auteur_x": "@GaryMarcus"
+  },
+  {
+    "date": "2026-11-27",
+    "titre_fr": "Shopify relance son « globe » en direct pour le Black Friday",
+    "resume_fr": "Shopify rend à nouveau visible en temps réel les ventes mondiales du week-end de Black Friday/Cyber Monday via une visualisation en 3D (WebGPU). Un repère concret de l'activité e-commerce pour les marchands.",
+    "tags": [
+      "shopify",
+      "commerce",
+      "vente"
+    ],
+    "score": 45,
+    "tweet_url": "https://x.com/tobi/status/2126118398203727896",
+    "media": true,
+    "auteur_x": "@tobi"
   }
 ]
