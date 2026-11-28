@@ -1,0 +1,19 @@
+IASTRO: Salut, c'est iAstro ! Bienvenue dans le Flash du Podcast IA du vingt-huit novembre. Installez-vous, on vous résume l'essentiel du jour.
+
+IASTRO: On commence par un gros bras de fer judiciaire.
+
+VICTORIA: OpenAI poursuit désormais Apple devant un tribunal californien, en l'accusant de vol de secrets industriels et de pressions sur des fournisseurs communs. C'est la riposte à la plainte déposée cet été par Apple. Il y a deux ans, les deux entreprises s'alliaient pour mettre ChatGPT dans l'iPhone, et les voilà aujourd'hui rivales.
+
+IASTRO: Autre dossier sensible, maintenant.
+
+VICTORIA: Plusieurs procureurs américains attaquent SpaceX, maison mère de X et de xAI, pour faire cesser la génération par Grok d'images sexuelles d'enfants et de contenus intimes non consentis. Le débat sur les limites et la modération des modèles revient en force. En écho, Le Monde explore ces IA débridées, auxquelles on a retiré les garde-fous.
+
+IASTRO: Côté science, maintenant.
+
+VICTORIA: Le mathématicien Terence Tao explique comment les derniers modèles transforment la recherche en maths. Mais l'IA peut résoudre un problème sans pouvoir expliquer comment elle y arrive. En face, François Chollet dénonce une exagération, puisque selon lui notre compréhension des maths n'a presque pas bougé cette année.
+
+IASTRO: Et on termine côté commerce et agents.
+
+VICTORIA: Les marchands Shopify ont battu leur record, avec un pic de six virgule huit millions de dollars par minute. Et les agents IA accélèrent fort. Chez Perplexity, les automatisations ont été multipliées par vingt-sept en trois semaines. Côté Google, la technique DeepCrossAttention atteindrait une qualité comparable jusqu'à trois fois plus vite.
+
+IASTRO: C'est tout pour aujourd'hui. Les sources sont sur le site de HL Consulting, et on se retrouve dans le format long pour creuser tout ça.
