@@ -20230,5 +20230,91 @@
     "tweet_url": "https://x.com/tobi/status/2126118398203727896",
     "media": true,
     "auteur_x": "@tobi"
+  },
+  {
+    "date": "2026-11-27",
+    "titre_fr": "Shopify bat son record de ventes du Black Friday",
+    "resume_fr": "Les marchands Shopify ont dépassé leur pic de l'an dernier, atteignant 6,8 millions de dollars de ventes par minute au plus fort de la journée. Un signal fort pour les petits commerçants et marques indépendantes.",
+    "tags": [
+      "produit",
+      "commerce",
+      "shopify",
+      "vente"
+    ],
+    "score": 72,
+    "tweet_url": "https://x.com/harleyf/status/2126456072684863759",
+    "media": true,
+    "auteur_x": "@harleyf"
+  },
+  {
+    "date": "2026-11-27",
+    "titre_fr": "Grok Bot (xAI) comparé à un « moment ChatGPT »",
+    "resume_fr": "L'investisseur Gavin Baker affirme que Grok Bot de xAI permet de créer en quelques secondes des agents (résumeurs de podcasts, suivis de sentiment, etc.) qui prenaient auparavant des heures avec d'autres outils. Il y voit un tournant d'usage comparable à l'arrivée de ChatGPT.",
+    "tags": [
+      "xai",
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 66,
+    "tweet_url": "https://x.com/a16z/status/2126331346180276262",
+    "media": true,
+    "auteur_x": "@a16z"
+  },
+  {
+    "date": "2026-11-27",
+    "titre_fr": "Mistral : Voxtral bien classé en transcription",
+    "resume_fr": "Mistral annonce que cinq de ses modèles figurent dans le top 40 des classements de précision de transcription d'Artificial Analysis, couvrant notamment l'anglais, le français et le japonais via Voxtral.",
+    "tags": [
+      "mistral",
+      "modeles",
+      "recherche"
+    ],
+    "score": 55,
+    "tweet_url": "https://x.com/MistralAI/status/2126292459265442028",
+    "media": true,
+    "auteur_x": "@MistralAI"
+  },
+  {
+    "date": "2026-11-27",
+    "titre_fr": "LlamaIndex ouvre les poids de son modèle OCR OCRia-1",
+    "resume_fr": "LlamaIndex a publié en open source les poids de son modèle OCR phare OCRia-1, présenté comme état de l'art sur ParseBench et capable de traiter des PDF complexes, exécutable localement sur une machine modeste comme un Mac mini.",
+    "tags": [
+      "open-source",
+      "modeles",
+      "produit"
+    ],
+    "score": 52,
+    "tweet_url": "https://x.com/jerryjliu0/status/2126369240001466664",
+    "media": true,
+    "auteur_x": "@jerryjliu0"
+  },
+  {
+    "date": "2026-11-27",
+    "titre_fr": "Google : une revitalisation des modèles frontière",
+    "resume_fr": "Selon swyx, Google DeepMind connaît un net regain avec de nouveaux modèles de pointe (dont « Neon »), illustrant une multiplication des laboratoires proches de la frontière. Il y voit un facteur macro clé pour l'écosystème des agents.",
+    "tags": [
+      "google",
+      "modeles",
+      "recherche"
+    ],
+    "score": 48,
+    "tweet_url": "https://x.com/swyx/status/2126352854394790172",
+    "media": false,
+    "auteur_x": "@swyx"
+  },
+  {
+    "date": "2026-11-28",
+    "titre_fr": "Forte croissance des automatisations chez Perplexity",
+    "resume_fr": "Perplexity indique que les automatisations de ses « Teammates » pour utilisateurs externes ont été multipliées par 27 depuis leur lancement il y a trois semaines. Pendant Thanksgiving, les exécutions automatiques ont dépassé le nombre de messages humains.",
+    "tags": [
+      "produit",
+      "agents",
+      "automatisation"
+    ],
+    "score": 58,
+    "tweet_url": "https://x.com/AravSrinivas/status/2126529117466345619",
+    "media": false,
+    "auteur_x": "@AravSrinivas"
   }
 ]
